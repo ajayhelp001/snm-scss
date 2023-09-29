@@ -31,11 +31,11 @@ new Chart(
     {
         type: 'line',
         data: {
-            labels: ['2h', '6h', '8h', '10h', '12h', '16h', '18h', '20h', '22h'],
+            labels: ['','2h', '6h', '8h', '10h', '12h', '16h', '18h', '20h', '22h'],
             datasets: [
                 {
                     // label: 'Spending',
-                    data: [200, 250, 300, 350, 290, 360, 310, 390, 400],
+                    data: [200, 250, 300, 350, 290, 360, 310, 390, 400, 500],
                     ...options,
                     borderColor: '#916BFF',
                     fill: 'start',
@@ -43,7 +43,7 @@ new Chart(
                 },
                 {
                     // label: 'Emergency',
-                    data: [50, 70, 40, 100, 200, 100, 170, 150, 190],
+                    data: [50, 70, 40, 100, 200, 100, 170, 150, 190, 200],
                     ...options,
                     borderColor: '#4599E5',
                     fill: 'start',
@@ -51,7 +51,7 @@ new Chart(
                 },
                 {
                     // label: 'redzone',
-                    data: [240, 230, 250, 220, 100, 190, 50, 100, 60],
+                    data: [240, 230, 250, 220, 100, 190, 50, 100, 60, 40],
                     ...options,
                     borderColor: '#EA4335',
                     fill: 'start',
@@ -59,7 +59,7 @@ new Chart(
                 },
                 {
                     // label: 'highzone',
-                    data: [500, 480, 420, 450, 400, 470, 410, 350, 340],
+                    data: [500, 480, 420, 450, 400, 470, 410, 350, 340, 360],
                     ...options,
                     borderColor: '#4599E5',
                     fill: 'start',
@@ -107,11 +107,11 @@ new Chart(
     {
         type: 'line',
         data: {
-            labels: ['2h', '6h', '8h', '10h', '12h', '16h', '18h', '20h', '22h'],
+            labels: ['','2h', '6h', '8h', '10h', '12h', '16h', '18h', '20h', '22h'],
             datasets: [
                 {
                     label: 'Spending',
-                    data: [800, 1800, 1500, 1800, 2500, 2200, 1500, 2200, 2850],
+                    data: [800, 1800, 1500, 1800, 2500, 2200, 1500, 2200, 2850, 3950],
                     ...options,
                     borderColor: '#916BFF',
                     fill: 'start',
@@ -119,7 +119,7 @@ new Chart(
                 },
                 {
                     label: 'Emergency',
-                    data: [500, 550, 1150, 700, 1500, 1200, 550, 1000, 600],
+                    data: [500, 550, 1150, 700, 1500, 1200, 550, 1000, 600, 700],
                     ...options,
                     borderColor: '#4599E5',
                     fill: 'start',
@@ -127,7 +127,7 @@ new Chart(
                 },
                 {
                     label: 'redzone',
-                    data: [1000, 850, 600, 950, 500, 750, 900, 600, 850],
+                    data: [1000, 850, 600, 950, 500, 750, 900, 600, 850, 950],
                     ...options,
                     borderColor: '#EA4335',
                     fill: 'start',
@@ -135,7 +135,7 @@ new Chart(
                 },
                 {
                     label: 'highzone',
-                    data: [2850, 2800, 2600, 2900, 2000, 1400, 2500, 1900, 1600],
+                    data: [2850, 2800, 2600, 2900, 2000, 1400, 2500, 1900, 1600, 1700],
                     ...options,
                     borderColor: '#4599E5',
                     fill: 'start',

@@ -166,12 +166,15 @@
     }
 }
 .breadcrumb_Bar{
-    height: 41px;
+    height: 37px;
     padding: 8px 0px 8px 40px;
     border-bottom: 2px solid var(--neutral);
     border-top: 2px solid var(--neutral);
     background-color: var(--neutralBlack);
+    display: flex;
+    align-items: center;
     & .breadcrumb {
+        margin: 0px;
         & .breadcrumb-item {
             color: var(--active);
             font-size: 14px;
@@ -458,36 +461,7 @@
                         font-style: normal;
                         font-weight: 700;
                         line-height: 160%; /* 25.6px */
-                        & .viewDetailsBtn {
-                            color: var(--blue);
-                            font-size: 14px;
-                            font-style: normal;
-                            font-weight: 400;
-                            line-height: 150%; /* 21px */
-                            letter-spacing: -0.25px;
-                            text-decoration: none;
-                            display: flex;
-                            align-items: center;
-                            gap: 4px;
-                            transition: all ease-in-out 0.3s;
-                            & .moreImg {
-                                display: inline-flex;
-                                width: 16px;
-                                height: 16px;
-                                align-items: center;
-                                & img {
-                                    transition: all ease-in-out 0.3s;
-                                }
-                            }
-                            &:hover{
-                                color: var(--neutral);
-                                & .moreImg {
-                                    & img {
-                                        filter: grayscale(7) brightness(0.7);
-                                    }
-                                }
-                            }
-                        }
+                        
                     }
                     & .posted {
                         gap: 8px;
@@ -766,7 +740,8 @@
                 }
                 &.selected{
                     & td, & th {
-                        background-color: var(--active);
+                        background-color: var(--theme1);
+                        // background-color: var(--active);
                     }
                 }
             }

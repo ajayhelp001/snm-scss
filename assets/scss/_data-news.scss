@@ -454,6 +454,9 @@
     }
 }
 
+
+
+
 // *------------------------------------------------------******************--------------------------------------------
 .sourcetab_table {
     max-width: 550px;
@@ -822,7 +825,7 @@
 
 
 
-// *******************************************************  [ Fb Post Details  Css ] ***********************************************
+// *******************************************************  [ Fb Post-List  Css Start ] ***********************************************
 .account_datatable {
     & .table {
         & thead {
@@ -892,7 +895,7 @@
                     }
                     & .view{
                         & .type_icon {
-                            height: 24px;
+                            width: 24px;
                             height: 24px;
                         }
                         & .eye {
@@ -979,3 +982,236 @@
         }
     }
 }
+
+
+.mediaGallery{
+    &>div{
+        padding: 6px;
+    }
+    & .mediaImg {
+        border-radius: 4px;
+        overflow: hidden;
+        & img {
+            object-fit: cover;
+        }
+        &:hover{
+            & img {
+                transform: scale(1.1);
+            }
+        }
+        &.videos{
+            display: flex;
+            position: relative;
+            &::before, &::after{
+                content: '';
+                position: absolute;
+            }
+            &::before{
+                width: 100%;
+                height: 100%;
+                background-color: var(--black-75);
+                top: 0;
+                left: 0;
+                z-index: 1;
+            }
+            &::after{
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 50px;
+                height: 50px;
+                background: url(../image/icon/play-icon.svg) no-repeat center;
+                background-size: cover;
+                z-index: 2;
+            }
+        }
+    }
+}
+
+// *******************************************************  [ Fb Post-List  Css End ] ***********************************************
+
+// *******************************************************  [ Fb Post-Details  Css Start ] *********************************************
+
+// *------------------------------------------------------******************--------------------------------------------
+.mainpostcard{
+    max-width: 460px;
+    width: 100%;
+}
+.commentcard {
+    max-width: 412px;
+    width: 100%;
+}
+.postdetailmediacard{
+    max-width: 372px;
+    width: 100%;
+}
+.post_detailsMaping_crad{
+    // max-width: calc(100% - 468px - 420px - 380px - 10px);
+    max-width: 412px;
+    width: 100%;
+}
+// *------------------------------------------------------******************--------------------------------------------
+
+.facebook-postDetails-overview{
+
+}
+.mainpostcard {
+    & .informationCard{
+        & .postImg {
+            max-height: 300px;
+            height: 100%;
+            & img {
+                object-fit: cover;
+                height: 100%;
+            }
+        }
+        & .postDetails{
+            color: var(--white);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 160%; /* 25.6px */
+            & span{
+                color: var(--light-gray);
+            }
+        }
+        & .postAllDetails{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 4px;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%; /* 21px */
+            letter-spacing: -0.25px;
+            & .detailImg {
+                height: 16px;
+                width: 16px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                & img {
+                    width: 100%;
+                }
+            }
+        }
+        & .socialMetricsCard {
+            & .cardbody {
+                & .items {
+                    border-bottom: 1px solid var(--balck--light);
+                }
+                & .socialmetrics{
+                    color: var(--white);
+                    text-align: center;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 120%; /* 16.8px */
+                }
+                & .rate {
+                    display: flex;
+                    align-items: center;
+                    gap: 4px;
+                    justify-content: center;
+                    & .tredMap {
+                        display: inline-flex;
+                        align-items: center;
+                        gap: 6px;
+                        & .tredingImg {
+                            height: 18px;
+                            width: 18px;
+                            display: flex;
+                            & img {
+                                object-fit: contain;
+                            }
+                        }
+                        & span {
+                            color: var(--theme-red);
+                            font-size: 12px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 160%; /* 25.6px */
+                        }
+                        &.greenzone{
+                            & span {
+                                color: var(--successful);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.comment_card {
+    & .comment_item_Body {
+        padding: 12px;
+        border-radius: 8px;
+        background-color: var(--balck--light);
+        gap: 16px;
+        display: flex;
+        &:hover{
+            background-color: var(--neutral);
+        }
+        & .commitUser {
+            height: 27px;
+            min-width: 27px;
+            border-radius: 27px;
+            display: flex;
+            overflow: hidden;
+            & img {
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+        & .content_side {
+            & .userName, & .commitcontent{
+                color: var(--white);
+            }
+            & .userName, & .commitcontent, & .tag{
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 140%; /* 19.6px */
+            }
+            & .tag {
+                color: var(--active);
+            }
+        }
+        
+    }
+    &.commitAnswer{
+        position: relative;
+        &::before{
+            content: '';
+            height: 50px;
+            width: 16px;
+            border: 2px solid var(--balck--light);
+            border-bottom-left-radius: 10px;
+            position: absolute;
+            top: -8px;
+            left: 15px;
+            border-top: 0px;
+            border-right: 0px;
+        }
+        & .comment_item_Body {
+            max-width: calc(100% - 30px);
+            margin-left: auto;
+        }
+    }
+}
+.multipalCommit{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+
+
+// *******************************************************  [ Fb Post-Details  Css End ] ***********************************************
+
+

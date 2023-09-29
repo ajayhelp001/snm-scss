@@ -12,6 +12,7 @@
     --black--dark: #161616;
     --balck--light: #3A3A3A;
     --black-40: #00000040;
+    --black-75: #00000075;
     --black: #000;
     --white: #fff;
     --white-50: #ffffff80;
@@ -20,6 +21,7 @@
     --alert: #F5B060;
     --dark-red: #81251D;
     --light-green: #00FFD1;
+    --light-gray: #BBBABD
 }
 
 
@@ -138,4 +140,5 @@
 @import 'chart';
 @import 'data-news';
 @import 'select2';
+@import 'button';
 @import 'responsive';

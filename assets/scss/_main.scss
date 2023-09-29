@@ -32,11 +32,11 @@ img {
     -ms-transition: all 0.45s ease;          
     transition: all 0.45s ease;
 }
-.gap_12 {
-    gap: 12px;
+.gap-12 {
+    gap: 12px !important;
 }
 .gap-8{
-    gap: 8px;
+    gap: 8px !important;
 }
 // ****************** Dashboard Body ***************
 
@@ -57,182 +57,6 @@ img {
 }
 
 
-
-// *** -----------------Radio & Checkbox btn-group ------------
-.btn-group {
-    & .btn-check {
-        &:checked+.radioBtn{
-            background-color: var(--active);
-            font-size: 12px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 140%; /* 16.8px */
-            color: var(--white);
-        }
-    }
-    & .radioBtn {
-        border-radius: 8px;
-        padding: 5px 0px;
-        width: 64px;
-        background-color: var(--black--dark);
-        color: var(--white);
-        text-align: center;
-        font-size: 12px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 140%; /* 16.8px */
-        outline: none;
-        border: none;
-        cursor: pointer;
-        transition: all ease-in-out 0.3s;
-        min-width: 74px;
-        &:hover{
-            background-color: var(--active);
-        }
-    }
-}
-
-.form-check{
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    & .form-check-label, & .form-check-input {
-        cursor: pointer;
-    }
-    & .form-check-input {
-        margin-top: -1.5px;
-        border-radius: 4px;
-        border: 1px solid var(--checkbox);
-        height: 16px;
-        width: 16px;
-        box-shadow: none;
-    }
-    & .form-check-label {
-        cursor: pointer;
-        font-size: 12px;
-        font-weight: 400;
-        line-height: 140%; /* 16.8px */
-        color: var(--white);
-    }
-}
-
-// **** Buttons****
-.applybtn {
-    color: var(--white);
-    text-align: center;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 160%; /* 25.6px */
-    border-radius: 8px;
-    background-color: var(--active);
-    height: 34px;
-    transition: all ease-in-out 0.3s;
-    &:hover{
-        background-color: var(--blue);
-    }
-}
-
-.categoryBtn {
-    box-shadow: none;
-    border: none;
-    border-radius: 8px;
-    padding: 4px 10px;
-    text-align: center;
-    background-color: var(--balck--light);
-    color: var(--white);
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 140%; /* 16.8px */
-}
-
-.appendBtn {
-    width: 40px;
-    height: 40px;
-    border-radius: 8px;
-    box-shadow: none;
-    border: none;
-    background-color: var(--netural-dark);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all ease-in-out 0.3s;
-    &:hover{
-        background-color: var(--neutral);
-    }
-    &.moniter{
-        width: auto;
-        & img{
-            width: 24px;
-        }
-    }
-}
-
-.postbutoon {
-    position: relative;
-    border: 3px solid var(--theme-red);
-    margin-left: 64px;
-    display: inline-block;
-    border-radius: 8px;
-    &::before{
-        content: '';
-        height: 12px;
-        width: 64px;
-        background: url(../image/icon/post_button.png) no-repeat center;
-        background-size: contain;
-        position: absolute;
-        right: 100%;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-}
- .post_Btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 4px;
-    color: var(--white);
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 160%; /* 25.6px */
-    padding: 4px 8px;
-    border: 1px solid var(--dark-red);
-    background-color: var(--theme-red);
-    border-radius: 8px;
-    margin: 12px;
-    & span {
-        min-width: 13px;
-        height: 13px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        & img {
-            object-fit: contain;
-        }
-    }
-}
-
-.sourcesBtn {
-    display: flex;
-    border: none;
-    box-shadow: none;
-    background-color: var(--neutralBlack);
-    width: 56px;
-    padding: 4px 12px;
-    border-radius: 10px;
-    transition: all ease-in-out 0.3s;
-    &:hover{
-        background-color: var(--balck--light);
-    }
-    &.lightbg{
-        background-color: var(--balck--light);
-        &:hover{
-            background-color: var(--neutral);
-        }
-    }
-}
 
 
 // *** Search Bar ****
@@ -274,3 +98,9 @@ img {
     }
 }
 
+
+
+// ************************************** [Gllobaly Class ]***************
+.text-white-50{
+    color: var(--white-50);
+}

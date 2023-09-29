@@ -1,6 +1,6 @@
 
-       // *** Category Select ****
-       $(document).ready(function () {
+    // *** Category Select ****
+    $(document).ready(function () {
         // Initialize Select2
         $(".mySelect").select2({
         placeholder: "categories to filter",
@@ -19,7 +19,7 @@
             });
     
             selectedItem.append(closeIcon);
-            $(".selectedItems").append(selectedItem);
+            $(".selectitemJs").append(selectedItem);
         }
     
         // Handle item selection
@@ -69,7 +69,7 @@
             });
     
             selectedItem.append(closeIcon);
-            $(".location_selectedItems").append(selectedItem);
+            $(".locationitemJs").append(selectedItem);
         }
     
         // Handle item selection
@@ -99,7 +99,156 @@
             });
         });
     });
+    // *** Account Select1 ****
+    $(document).ready(function () {
+        // Initialize Select2
+        $(".mySelect1").select2({
+        placeholder: "account to filter",
+        // allowClear: true
+        });
+       // Function to add a selected item
+        function addSelectedItem(selectedOption) {
+            var selectedItem = $("<div>").addClass("selected-item");        
+            selectedItem.text(selectedOption.text);
+            var closeIcon = $("<span>").addClass("close-icon").text("×");
+    
+            closeIcon.on("click", function () {
+                selectedItem.remove();
+                $(".mySelect1 option[value='" + selectedOption.id + "']").prop("selected", false);
+                $(".mySelect1").trigger("change");
+            });
+    
+            selectedItem.append(closeIcon);
+            $(".selectitemJs1").append(selectedItem);
+        }
+    
+        // Handle item selection
+        $(".mySelect1").on("select2:select", function (e) {
+            var selectedOption = e.params.data;
+            addSelectedItem(selectedOption);
+        });
+    
+        // Handle item deselection
+        $(".mySelect1").on("select2:unselect", function (e) {
+            var selectedOption = e.params.data;
+            $(".selected-item").each(function () {
+                if ($(this).text() === selectedOption.text) {
+                    $(this).remove();
+                }
+            });
+        });
+        $(".mySelect1").on("select2:unselect", function (e) {
+            var selectedOption = e.params.data;
+            $(".selected-item").each(function () {
+                if ($(this).find('.close-icon').length > 0) {
+                    var textWithoutCloseIcon = $(this).clone().children().remove().end().text().trim();
+                    if (textWithoutCloseIcon === selectedOption.text) {
+                        $(this).remove();
+                    }
+                }
+            });
+        });
+    });
+    // ***Account Filter ****
+    $(document).ready(function () {
+    // Initialize Select2
+    $(".mySelect2").select2({
+    placeholder: "account to filter",
+    // allowClear: true
+    });
+    // Function to add a selected item
+    function addSelectedItem(selectedOption) {
+        var selectedItem = $("<div>").addClass("selected-item");        
+        selectedItem.text(selectedOption.text);
+        var closeIcon = $("<span>").addClass("close-icon").text("×");
 
+        closeIcon.on("click", function () {
+            selectedItem.remove();
+            $(".mySelect2 option[value='" + selectedOption.id + "']").prop("selected", false);
+            $(".mySelect2").trigger("change");
+        });
+
+        selectedItem.append(closeIcon);
+        $(".selectitemJs2").append(selectedItem);
+    }
+
+    // Handle item selection
+    $(".mySelect2").on("select2:select", function (e) {
+        var selectedOption = e.params.data;
+        addSelectedItem(selectedOption);
+    });
+
+    // Handle item deselection
+    $(".mySelect2").on("select2:unselect", function (e) {
+        var selectedOption = e.params.data;
+        $(".selected-item").each(function () {
+            if ($(this).text() === selectedOption.text) {
+                $(this).remove();
+            }
+        });
+    });
+    $(".mySelect2").on("select2:unselect", function (e) {
+        var selectedOption = e.params.data;
+        $(".selected-item").each(function () {
+            if ($(this).find('.close-icon').length > 0) {
+                var textWithoutCloseIcon = $(this).clone().children().remove().end().text().trim();
+                if (textWithoutCloseIcon === selectedOption.text) {
+                    $(this).remove();
+                }
+            }
+        });
+    });
+    });
+    //  ** Location filter2 *****
+    $(document).ready(function () {
+        // Initialize Select2
+        $(".locationSelect2").select2({
+        placeholder: "location to filter ",
+        // allowClear: true
+        });
+        // Function to add a selected item
+        function addSelectedItem(selectedOption) {
+            var selectedItem = $("<div>").addClass("selected-item");        
+            selectedItem.text(selectedOption.text);
+            var closeIcon = $("<span>").addClass("close-icon").text("×");
+
+            closeIcon.on("click", function () {
+                selectedItem.remove();
+                $(".locationSelect2 option[value='" + selectedOption.id + "']").prop("selected", false);
+                $(".locationSelect2").trigger("change");
+            });
+
+            selectedItem.append(closeIcon);
+            $(".locationitemJs2").append(selectedItem);
+        }
+
+        // Handle item selection
+        $(".locationSelect2").on("select2:select", function (e) {
+            var selectedOption = e.params.data;
+            addSelectedItem(selectedOption);
+        });
+
+        // Handle item deselection
+        $(".locationSelect2").on("select2:unselect", function (e) {
+            var selectedOption = e.params.data;
+            $(".selected-item").each(function () {
+                if ($(this).text() === selectedOption.text) {
+                    $(this).remove();
+                }
+            });
+        });
+        $(".locationSelect2").on("select2:unselect", function (e) {
+            var selectedOption = e.params.data;
+            $(".selected-item").each(function () {
+                if ($(this).find('.close-icon').length > 0) {
+                    var textWithoutCloseIcon = $(this).clone().children().remove().end().text().trim();
+                    if (textWithoutCloseIcon === selectedOption.text) {
+                        $(this).remove();
+                    }
+                }
+            });
+        });
+    });
 
 // ***************** [ select key  tag ] *****
 const ul = document.querySelector(".keygroup"),
