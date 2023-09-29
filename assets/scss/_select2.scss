@@ -1,0 +1,150 @@
+.selctbox {
+    & .select2 {
+        width: 100% !important;
+        & .selection {
+            & .select2-selection {
+                height: 36px;
+                background-color: var(--balck--light);
+                border: 1px solid var(--black--dark);
+                box-shadow: 0px 0px 4px 0px var(--black-40);
+                border-radius: 50px;
+                padding: 8px 35px 8px 12px;
+                display: flex;
+                align-items: center;
+                position: relative;
+                &::after{
+                    content: '';
+                    width: 20px;
+                    height: 20px;
+                    background: url(../image/icon/filter-arrow.svg) no-repeat center;
+                    background-size: cover;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: 12px;
+                    cursor: pointer;
+                }
+                & .select2-selection__rendered {
+                    padding: 0px;
+                    width: 100%;
+                    max-height: 250px;
+                    overflow: hidden auto;
+                    & li {
+                        display: none;
+                        &.select2-search--inline{
+                            display: inline-flex;
+                            & .select2-search__field {
+                                margin: 0px;
+                                font-size: 12px;
+                                font-weight: 400;
+                                color: var(--white);
+                                line-height: 132%; /* 15.84px */
+                                font-style: normal;
+                                &::placeholder{
+                                    font-size: 12px;
+                                    font-weight: 400;
+                                    color: var(--white-50);
+                                    line-height: 132%; /* 15.84px */
+                                    font-style: normal;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    & .multipal_opetions {
+        margin-top: 8px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px;
+        & .selected-item {
+            display: inline-flex;
+            gap: 4px;
+            align-items: center;
+            padding: 4px 10px;
+            border: 1px solid var(--black--dark);
+            background-color: var(--balck--light);
+            box-shadow: 0px 0px 4px 0px var(--black-40);
+            color: var(--white);
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 130%;
+            border-radius: 8px;
+            transition: all ease-in-out 0.3s;
+            &:hover{
+                background-color: var(--neutral);
+            }
+            & span {
+                font-size: 30px;
+                line-height: 11px;
+                font-weight: 100;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 16px;
+                height: 16px;
+            }
+        }
+    }
+    &.location{
+        & .multipal_opetions {
+            & .selected-item{
+                position: relative;
+                padding: 4px 10px 4px 30px;
+                &::after{
+                    content: '';
+                    width: 16px;
+                    height: 16px;
+                    background: url(../image/icon/location.svg) no-repeat center;
+                    background-size: cover;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: 10px;
+                }
+            }
+        }
+        &.byAccount{
+            & .multipal_opetions {
+                & .selected-item{
+                    &::after{
+                        border-radius: 16px;
+                        overflow: hidden;
+                        background: url(../image/account_avtar.png) no-repeat center;
+                    }
+                }
+            }
+        }
+    }
+}
+// .select2-selection__rendered li {
+//     display: none;
+// }
+
+// .select2-container--default .select2-selection__rendered li.select2-search--inline {
+//     display: block;
+//   }
+// **** select2-container
+.select2-container {
+    & .select2-dropdown  {
+        border: 1px solid var(--black--dark);
+        background-color: var(--balck--light);
+        overflow: hidden;
+        & .select2-results {
+            & .select2-results__options {
+                background-color: var(--balck--light);
+                color: var(--white);
+                font-size: 12px;
+                & .select2-results__option{
+                    &.select2-results__option--highlighted, &[aria-selected=true]{
+                        background-color: var(--neutral);
+                    }
+                }
+            }
+        }
+    }
+}

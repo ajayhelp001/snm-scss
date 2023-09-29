@@ -1,0 +1,141 @@
+:root{
+    --theme1: #916BFF;
+    --superDark: #09080cf2;
+    --neutral: #5A5A5A;
+    --netural-dark: #878787;
+    --neutralBlack: #262626;
+    --bodyBg: #404040;
+    --successful: #00B492;
+    --theme-red: #EA4335;
+    --active: #4599E5;
+    --theme-blue: #BD00FF;
+    --black--dark: #161616;
+    --balck--light: #3A3A3A;
+    --black-40: #00000040;
+    --black: #000;
+    --white: #fff;
+    --white-50: #ffffff80;
+    --checkbox: #00000026;
+    --blue: #3B82F6;
+    --alert: #F5B060;
+    --dark-red: #81251D;
+    --light-green: #00FFD1;
+}
+
+
+@mixin media-breakpoint($name) {
+    @if $name == basic {
+        @content;
+    }
+}
+
+@mixin dark-media-breakpoint($name) {
+    @if $name == basic {
+        @content;
+    }
+}
+
+@mixin media-breakpoint-up($name) {
+    @if $name ==sm {
+        @media (min-width: 576px) {
+            @content;
+        }
+    } @else if $name ==md {
+        @media (min-width: 768px) {
+            @content;
+        }
+    } @else if $name ==lg {
+        @media (min-width: 992px) {
+            @content;
+        }
+    } @else if $name ==xl {
+        @media (min-width: 1200px) {
+            @content;
+        }
+    } @else if $name ==xxl {
+        @media (min-width: 1450px) {
+            @content;
+        }
+    }
+}
+
+@mixin media-breakpoint-down($name) {
+    @if $name ==sm {
+        @media (max-width: 575.98px) {
+            @content;
+        }
+    } @else if $name ==md {
+        @media (max-width: 767.98px) {
+            @content;
+        }
+    } @else if $name ==lg {
+        @media (max-width: 991.98px) {
+            @content;
+        }
+    } @else if $name ==xl {
+        @media (max-width: 1199.98px) {
+            @content;
+        }
+    } @else if $name ==xxl {
+        @media (max-width: 1449.98px) {
+            @content;
+        }
+    }
+}
+
+@mixin dark-media-breakpoint-up($name) {
+    @if $name ==sm {
+        @media (min-width: 576px) {
+            @content;
+        }
+    } @else if $name ==md {
+        @media (min-width: 768px) {
+            @content;
+        }
+    } @else if $name ==lg {
+        @media (min-width: 992px) {
+            @content;
+        }
+    } @else if $name ==xl {
+        @media (min-width: 1200px) {
+            @content;
+        }
+    } @else if $name ==xxl {
+        @media (min-width: 1450px) {
+            @content;
+        }
+    }
+}
+
+@mixin dark-media-breakpoint-down($name) {
+    @if $name ==sm {
+        @media (max-width: 575.98px) {
+            @content;
+        }
+    } @else if $name ==md {
+        @media (max-width: 767.98px) {
+            @content;
+        }
+    } @else if $name ==lg {
+        @media (max-width: 991.98px) {
+            @content;
+        }
+    } @else if $name ==xl {
+        @media (max-width: 1199.98px) {
+            @content;
+        }
+    } @else if $name ==xxl {
+        @media (max-width: 1449.98px) {
+            @content;
+        }
+    }
+}
+
+
+@import 'font';
+@import 'main';
+@import 'index';
+@import 'chart';
+@import 'data-news';
+@import 'select2';
+@import 'responsive';

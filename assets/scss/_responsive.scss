@@ -1,0 +1,401 @@
+// @include media-breakpoint(basic) {
+// }
+// @include media-breakpoint-up(sm) {}
+
+// @include media-breakpoint-up(md) {}
+
+// @include media-breakpoint-up(lg) {}
+
+// @include media-breakpoint-up(xl) {}
+
+// @include media-breakpoint-up(xxl) {}
+
+
+// @include media-breakpoint-down(xxl) {}
+
+// @include media-breakpoint-down(xl) {}
+
+// @include media-breakpoint-down(lg) {}
+
+// @include media-breakpoint-down(md) {}
+
+// @include media-breakpoint-down(sm) {}
+.bootomtreackchart{
+    display: none;
+}
+
+@media screen and (min-width: 1700px){
+    .maincontent{
+        & .manin_content_Body {
+            // ***
+            & .levelCard  {
+                & .card-body{
+                }
+                &.stackedChartCard{
+                    & .stackedChart{
+                        height: 380px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1750px) {
+    .maincontent{
+        & .manin_content_Body {
+            & .levelCard  {
+                & .card-body{
+                }
+            }
+            & .pichart {
+                & .card-body {
+                    & .innerbody {
+                        gap: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1700px) {
+    .maincontent{
+        & .manin_content_Body {
+            & .levelCard  {
+                & .card-body{
+                    padding: 12px 16px;
+                }
+                &.pichart{
+                    & .card-body {
+                        & .innerbody {
+                            & .cardSubTitle {
+                                &.desktop {
+                                    display: none;
+                                }
+                                &.tablet {
+                                    display: flex;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            & .pichart {
+                & .card-body {
+                    & .chartvalue{
+                        & .ratingUser {
+                            display: none
+                        }
+                    }
+                    & .innerbody {
+                        gap: 12px;
+                    }
+                }
+            }
+            & .top_post  {
+                & .card-body {
+                    & .card_title  {
+                        &.keywords{
+                            display: block;
+                        }
+                    }
+                    & .tab-content {
+                        & .post_table {
+                            & .table {
+                                & tbody {
+                                    & .postContent {
+                                        max-width: 115px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .bootomtreackchart {
+        display: block
+    }
+}
+
+
+@media screen and (max-width: 1600px) {
+    .maincontent{
+        & .manin_content_Body {
+            // ***
+            & .levelCard  {
+                & .card-body{
+                }
+            }
+            // ****
+            & .pichart {
+                & .card-body {
+                    & .chartvalue{
+                        & .ratingUser {
+                        }
+                    }
+                    & .innerbody {
+                    }
+                }
+            }
+            // ***
+            & .top_post  {
+                & .card-body {
+                    & .card_title  {
+                        &.keywords{
+                        }
+                    }
+                    & .tab-content {
+                        & .post_table {
+                            & .table {
+                                & tbody {
+                                    & .postContent {
+                                        max-width: 100px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            // ****
+            & .informationCard {
+                & .card-body {
+                    padding: 8px 14px 16px 14px;
+                    & .innerbody {
+                        & .card_title {
+                            & .viewDetailsBtn {
+                                & .moreImg {
+                                }
+                                &:hover{
+                                    & .moreImg {
+                                        & img {
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        & .posted {
+                            & .accountPost {
+                                // font-size: 12px;
+                            }
+                            & .accounts {
+                                font-size: 13px;
+                                & .userName {
+                                    max-width: 130px;
+                                }
+                            }
+                            & .accountUser {
+                                & img {
+                                }
+                            }
+                            & .socialImg {
+                                & img {
+                                }
+                            }
+                        }
+                        & .socialMetricsCard {
+                            & .cardbody {
+                                &>div{
+                                    border-left: 1px solid var( --balck--light);
+                                    padding: 4px 0px;
+                                    &:first-child{
+                                        border-left: none;
+                                    }
+                                }
+                                & .metrics{
+                                    font-size: 9px;
+                                    letter-spacing: 0.3px;
+                                }
+                                & .rate{
+                                    font-size: 15px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .bootomtreackchart {
+        display: block
+    }
+}
+
+
+@media screen and (max-width: 1560px) {
+    .maincontent .manin_content_Body .navigationBar .card-body .tred_card {
+        padding: 0px 12px;
+    }
+    .maincontent{
+        & .manin_content_Body {
+            // ***
+            & .levelCard  {
+                & .card-body{
+                }
+            }
+            // ****
+            & .pichart {
+                & .card-body {
+                    & .chartvalue{
+                        & .ratingUser {
+                        }
+                    }
+                    & .innerbody {
+                    }
+                }
+            }
+            // ***
+            & .top_post  {
+                & .card-body {
+                    & .card_title  {
+                        &.keywords{
+                        }
+                    }
+                    & .tab-content {
+                        & .post_table {
+                            & .table {
+                                & tbody {
+                                    & .postContent {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            // ****
+            & .informationCard {
+                & .card-body {
+                    padding: 8px 14px 16px 14px;
+                    & .innerbody {
+                        & .card_title {
+                            & .viewDetailsBtn {
+                                & .moreImg {
+                                }
+                                &:hover{
+                                    & .moreImg {
+                                        & img {
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        & .posted {
+                            & .accountPost {
+                            }
+                            & .accounts {
+                                & .userName {
+                                }
+                            }
+                            & .accountUser {
+                                & img {
+                                }
+                            }
+                            & .socialImg {
+                                & img {
+                                }
+                            }
+                        }
+                        & .socialMetricsCard {
+                            & .cardbody {
+                                & .metrics{
+                                    font-size: 8px;
+                                    letter-spacing: 0.3px;
+                                }
+                                & .rate{
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 1500px) {
+    .maincontent .manin_content_Body .navigationBar .card-body .tred_card {
+        padding: 0px 12px;
+    }
+    .maincontent{
+        & .manin_content_Body {
+            // ***
+            & .levelCard  {
+                & .card-body{
+                }
+            }
+            // ****
+            & .pichart {
+                & .card-body {
+                    & .chartvalue{
+                        & .ratingUser {
+                        }
+                    }
+                    & .innerbody {
+                    }
+                }
+            }
+            // ***
+            & .top_post  {
+                & .card-body {
+                    & .card_title  {
+                        &.keywords{
+                        }
+                    }
+                    & .tab-content {
+                        & .post_table {
+                            & .table {
+                                & tbody {
+                                    & .postContent {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            // ****
+            & .informationCard {
+                & .card-body {
+                    & .innerbody {
+                        & .posted {
+                            & .accountedPosted {
+                                max-width: 110px;
+                            }
+                            & .accountPost {
+                                
+                            }
+                            & .accounts {
+                                & .userName {
+                                }
+                            }
+                            & .accountUser {
+                                & img {
+                                }
+                            }
+                            & .socialImg {
+                                & img {
+                                }
+                            }
+                        }
+                        & .socialMetricsCard {
+                            & .cardbody {
+                                & .metrics{
+                                    font-size: 8px;
+                                    letter-spacing: 0.3px;
+                                }
+                                & .rate{
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
