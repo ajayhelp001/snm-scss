@@ -740,8 +740,8 @@
                 }
                 &.selected{
                     & td, & th {
-                        background-color: var(--theme1);
-                        // background-color: var(--active);
+                        // background-color: var(--theme1);
+                        background-color: var(--active);
                     }
                 }
             }
