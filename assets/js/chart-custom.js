@@ -45,7 +45,7 @@ new Chart(
                     // label: 'Emergency',
                     data: [50, 70, 40, 100, 200, 100, 170, 150, 190, 200],
                     ...options,
-                    borderColor: '#4599E5',
+                    borderColor: '#bd00ff',
                     fill: 'start',
                     backgroundColor: gradientOne
                 },
@@ -137,7 +137,7 @@ new Chart(
                     label: 'highzone',
                     data: [2850, 2800, 2600, 2900, 2000, 1400, 2500, 1900, 1600, 1700],
                     ...options,
-                    borderColor: '#4599E5',
+                    borderColor: '#bd00ff',
                     fill: 'start',
                     backgroundColor: gradientOne
                 }

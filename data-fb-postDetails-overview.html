@@ -153,7 +153,7 @@
                                                         <button class="nav-link" id="pills-keyword-tab" data-bs-toggle="pill" data-bs-target="#pills-keyword" type="button" role="tab" aria-controls="pills-keyword" aria-selected="true">Geo-map</button>
                                                     </li>
                                                     <li class="nav-item " role="presentation">
-                                                        <button class="nav-link" id="pills-keyword-tab" data-bs-toggle="pill" data-bs-target="#pills-keyword" type="button" role="tab" aria-controls="pills-keyword" aria-selected="true">Connect-link</button>
+                                                        <button class="nav-link" id="pills-connect-tab" data-bs-toggle="pill" data-bs-target="#pills-connect" type="button" role="tab" aria-controls="pills-connect" aria-selected="true">Connect-link</button>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -911,7 +911,8 @@
                                 <!-- ** Media Tab Start -->
                                 <div class="tab-pane fade h-100" id="pills-media" role="tabpanel" aria-labelledby="pills-media-tab" tabindex="0">
                                     <div class="row gx-2 overflow-y-auto justify-content-center row-gap-2 h-100">
-                                        <div class="col-auto h-100">
+                                        <!-- ! -->
+                                        <div class="col-auto h-100 d-none">
                                             <div class="card levelCard newsFilterCard h-100 ">
                                                 <form class="card-body h-100">
                                                     <div class="row flex-column flex-nowrap h-100">
@@ -984,7 +985,8 @@
                                                 </form>
                                             </div>
                                         </div>
-                                        <div class="col h-100 apendDataTable">
+                                        <!-- ! -->
+                                        <div class="col-5 h-100 apendDataTable">
                                             <div class="card top_post h-100 levelCard list_post_Table">
                                                 <div class="card-body h-100">
                                                     <div class="row flex-column flex-nowrap h-100 list">
@@ -1030,7 +1032,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col h-100 apendDataTable">
+                                        <div class="col-5 h-100 apendDataTable">
                                             <div class="card top_post h-100 levelCard list_post_Table">
                                                 <div class="card-body h-100">
                                                     <div class="row flex-column flex-nowrap h-100 list">
@@ -1082,61 +1084,14 @@
                                 <!-- ** keyword Tab Start -->
                                 <div class="tab-pane fade h-100" id="pills-keyword" role="tabpanel" aria-labelledby="pills-keyword-tab" tabindex="0">
                                     <div class="row gx-2 overflow-y-auto justify-content-center row-gap-2 h-100">
-                                        <div class="col-auto h-100 keyword_category_name">
-                                            <div class="card top_post h-100 levelCard list_post_Table">
-                                                <div class="card-body h-100">
-                                                    <div class="row flex-column flex-nowrap h-100 list">
-                                                        <div class="col-12">
-                                                            <div class="card_title keywords d-flex m-0">Categories</div> 
-                                                        </div>
-                                                        <div class="col-12 h-100 flex-fill overflow-y-auto">
-                                                            <ul class="row mx-0 gx-0 list-unstyled m-0 p-0 posttableSide post_listTable position-relative">
-                                                                <li class="col-12"><a href="javascript:;" class="categoryLink">Crime</a></li>
-                                                                <li class="col-12"><a href="javascript:;" class="categoryLink">Drug</a></li>
-                                                                <li class="col-12"><a href="javascript:;" class="categoryLink">Sexual</a></li>
-                                                                <li class="col-12"><a href="javascript:;" class="categoryLink">Hated</a></li>
-                                                                <li class="col-12"><a href="javascript:;" class="categoryLink">War</a></li>
-                                                                <li class="col-12"><a href="javascript:;" class="categoryLink">Violence</a></li>
-                                                                <li class="col-12"><a href="javascript:;" class="categoryLink active">Weapon</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-auto h-100 keyword_category_KEY">
-                                            <div class="card top_post h-100 levelCard list_post_Table">
-                                                <div class="card-body h-100">
-                                                    <div class="row flex-column flex-nowrap h-100 list">
-                                                        <div class="col-12">
-                                                            <div class="card_title keywords d-flex">Keyword</div> 
-                                                            <div class="search_bar rounded-3 listSearch">
-                                                                <div class="input-group">
-                                                                    <button type="button" class="input-group-text" id="basic-addon1"><img src="assets/image/icon/search_icon.svg" alt="search"></button>
-                                                                    <input type="search" class="form-control shadow-none" placeholder="input keywords" aria-label="Username" aria-describedby="basic-addon1">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12 h-100 flex-fill overflow-hidden">
-                                                            <div class="row mx-0 gx-0 posttableSide post_listTable h-100 position-relative">
-                                                                <div class="col-12 post_table table-responsive h-100">
-                                                                    <div class="input_wrapper">
-                                                                        <div class="content">
-                                                                            <ul class="keygroup"><input type="text" class="input_keys" spellcheck="false"></ul>
-                                                                        </div>
-                                                                        <div class="details d-none">
-                                                                            <p><span>10</span> tags are remaining</p>
-                                                                            <button>Remove All</button>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12 text-end"><button type="button" class="applybtn shadow-none border-0 px-5">Save</button></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <!-- ** keyword Tab End -->
+                                <!-- ** keyword Tab Start -->
+                                <div class="tab-pane fade h-100" id="pills-connect" role="tabpanel" aria-labelledby="pills-connect-tab" tabindex="0">
+                                    <div class="row gx-2 overflow-y-auto justify-content-center row-gap-2 h-100">
+                                        
                                     </div>
                                 </div>
                                 <!-- ** keyword Tab End -->
