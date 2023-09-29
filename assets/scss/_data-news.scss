@@ -1209,6 +1209,12 @@
     gap: 8px;
 }
 
+.mapingCard {
+    height: calc(50% - 4px);
+    & .mapImg {
+        cursor: pointer;
+    }
+}
 
 
 
