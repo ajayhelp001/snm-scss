@@ -1050,6 +1050,17 @@
     max-width: 412px;
     width: 100%;
 }
+
+.analysisCommentBox{
+    & .comment_card{
+        max-width: 476px;
+        width: 100%;
+    }
+}
+.actorListCard{
+    max-width: 380px;
+    width: 100%;
+}
 // *------------------------------------------------------******************--------------------------------------------
 
 .facebook-postDetails-overview{
@@ -1142,11 +1153,24 @@
                 }
             }
         }
+        & .violationTangHeading {
+            color: var(--netural-dark);
+        }
+        & .violatinTag {
+            border: 3px solid var(--theme-red);
+            border-radius: 8px;
+            padding: 12px;
+            &.bluetag{
+                border-color: var(--active);
+            }
+        }
     }
 }
 
 
 .comment_card {
+    position: relative;
+    z-index: 3;
     & .comment_item_Body {
         padding: 12px;
         border-radius: 8px;
@@ -1184,18 +1208,21 @@
         
     }
     &.commitAnswer{
+        z-index: 1;
         position: relative;
+        margin-bottom: 8px;
         &::before{
             content: '';
-            height: 50px;
+            height: 100%;
             width: 16px;
             border: 2px solid var(--balck--light);
             border-bottom-left-radius: 10px;
             position: absolute;
-            top: -8px;
+            top: -50%;
             left: 15px;
             border-top: 0px;
             border-right: 0px;
+            z-index: -1;
         }
         & .comment_item_Body {
             max-width: calc(100% - 30px);
@@ -1216,6 +1243,59 @@
     }
 }
 
+.actorListCard{
+    & .card{
+        border: 2px solid var(--theme1);
+    }
+}
+
+.userDistentCard{
+    gap: 4px;
+    & .listItem {
+        padding: 8px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        border-radius: 4px;
+        &:hover{
+            background-color: var(--balck--light);
+        }
+        & .user_img {
+            width: 40px;
+            height: 40px;
+            min-width: 40px;
+            border-radius: 50%;
+            & img {
+                object-fit: cover;
+            }
+        }
+        & .userDetails {
+            color: var(--white);
+            font-style: normal;
+            & .username {
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 140%; /* 25.2px */
+            }
+            & .userAge{
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 150%; /* 21px */
+                letter-spacing: -0.5px;
+                display: flex;
+                gap: 8px;
+                // align-items: center;
+                & .genderImg {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+        }
+    }
+}
 
 
 // *******************************************************  [ Fb Post-Details  Css End ] ***********************************************
