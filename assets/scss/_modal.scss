@@ -6,6 +6,10 @@
             max-width: 935px;
             width: 100%;
         }
+    }
+}
+.modaldesign{
+    & .modal-dialog {
         & .modal-content {
             margin: 0px 20px;
             padding: 16px 24px;
@@ -13,6 +17,7 @@
             background-color: var(--neutralBlack);
             & .modal-header {
                 & .modal-title {
+                    align-items: center;
                     color: var(--white);
                     font-size: 24px;
                     font-style: normal;
@@ -140,9 +145,29 @@
 // **  Media Post Modal**
 .mediapostmodul{
     & .modal-dialog {
-        & .mediaModul {
+        &.mediaModul {
             max-width: 1565px;
             width: 100%;
+        }
+        & .modal-content {
+            background-color: var(--black--dark);
+        }
+    }
+}
+
+.modal{
+    & .modal-dialog {
+        & .closeBtn{
+            width: 40px;
+            height: 40px;
+            & img {
+                filter: brightness(0.9);
+            }
+            &:hover{
+                & img {
+                    filter: brightness(1);
+                }
+            }
         }
     }
 }

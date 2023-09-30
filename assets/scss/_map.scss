@@ -1,7 +1,10 @@
 .geo_map {
     & img {
         object-fit: cover;
-        min-height: 900px;
-        min-width: 1900px;
+        // min-height: 900px;
+        // min-width: 1900px;
     }
+}
+.mapcard{
+    background-color: var(--black--dark) !important;
 }
