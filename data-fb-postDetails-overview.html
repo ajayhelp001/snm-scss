@@ -141,10 +141,10 @@
                                             <div class="nav nav-pills" id="pills-tab" role="tablist">
                                                 <ul class="d-flex flex-wrap m-0 p-0 overviewTabs list-unstyled gap-3">
                                                     <li class="nav-item " role="presentation">
-                                                        <button class="nav-link" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Overview</button>
+                                                        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Overview</button>
                                                     </li>
                                                     <li class="nav-item " role="presentation">
-                                                        <button class="nav-link active" id="pills-sources-tab" data-bs-toggle="pill" data-bs-target="#pills-sources" type="button" role="tab" aria-controls="pills-sources" aria-selected="true">Analysis</button>
+                                                        <button class="nav-link" id="pills-sources-tab" data-bs-toggle="pill" data-bs-target="#pills-sources" type="button" role="tab" aria-controls="pills-sources" aria-selected="true">Analysis</button>
                                                     </li>
                                                     <li class="nav-item " role="presentation">
                                                         <button class="nav-link" id="pills-media-tab" data-bs-toggle="pill" data-bs-target="#pills-media" type="button" role="tab" aria-controls="pills-media" aria-selected="true">Media</button>
@@ -205,14 +205,14 @@
                         <div class="manin_content_Body h-100 overflow-hidden">
                             <div class="tab-content h-100" id="pills-tabContent">
                                 <!-- ** Overview Tab Start -->
-                                <div class="tab-pane fade h-100 " id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                                <div class="tab-pane fade h-100 show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
                                     <div class="d-flex gx2 gap-2 overflow-y-auto row-gap-2 h-100">
                                         <div class="colauto h-100">
                                             <div class="card levelCard mainpostcard  h-100">
                                                 <div class="card-body h-100">
                                                     <div class="row flex-column flex-nowrap h-100">
                                                         <div class="col-12">
-                                                            <div class="card_title d-flex gap-12 justify-content-start">Main post <button type="button" class="appendBtn conectBtn lightbg"><img src="assets/image/icon/conectBold-icon.svg" alt="plus"></button></div>
+                                                            <div class="card_title d-flex gap-12 justify-content-start">Main post <button type="button" class="appendBtn conectBtn lightbg" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><img src="assets/image/icon/conectBold-icon.svg" alt="plus"></button></div>
                                                         </div>
                                                         <div class="col-12 h-100 flex-fill overflow-y-auto">
                                                             <div class="row gap-8 text-white">
@@ -362,8 +362,8 @@
                                                                         <div class="comment_item_Body">
                                                                             <div class="commitUser"><img src="assets/image/user1.png"  alt=""></div>
                                                                             <div class="content_side">
-                                                                                <div class="row row-gap-1">
-                                                                                    <div class="col-12 userName">Ca sĩ Nhi Hà</div>
+                                                                                <div class="d-inline-flex flex-column row-gap-1">
+                                                                                    <div class=" userName">Ca sĩ Nhi Hà</div>
                                                                                     <div class="commitcontent">Xin chào cô bé bóng cười, hẹn t7 này đắp cần sa vào chỗ bị thương nhé ;))</div>
                                                                                 </div>
                                                                             </div>
@@ -376,8 +376,8 @@
                                                                             <div class="comment_item_Body">
                                                                                 <div class="commitUser"><img src="assets/image/actor42.png"  alt=""></div>
                                                                                 <div class="content_side">
-                                                                                    <div class="row row-gap-1">
-                                                                                        <div class="col-12 userName">Long Mệt Rồi</div>
+                                                                                    <div class="d-inline-flex flex-column row-gap-1">
+                                                                                        <div class=" userName">Long Mệt Rồi</div>
                                                                                         <div class="commitcontent">Em bé nay đã lớn hơn nhiều rồi. 
                                                                                             Btw, ai có nhu cầu mua tem giấy liên hệ zalo 039295893 nhé mn</div>
                                                                                     </div>
@@ -388,8 +388,8 @@
                                                                             <div class="comment_item_Body">
                                                                                 <div class="commitUser"><img src="assets/image/fb_user.png"  alt=""></div>
                                                                                 <div class="content_side">
-                                                                                    <div class="row row-gap-1">
-                                                                                        <div class="col-12 userName">Phan Lê Mai Lan</div>
+                                                                                    <div class="d-inline-flex flex-column row-gap-1">
+                                                                                        <div class=" userName">Phan Lê Mai Lan</div>
                                                                                         <div class="commitcontent">Bữa nào ship em 1kg nấm ảo giác nhé, thị trường bên em đang cần</div>
                                                                                     </div>
                                                                                 </div>
@@ -402,8 +402,8 @@
                                                                         <div class="comment_item_Body">
                                                                             <div class="commitUser"><img src="assets/image/pinklu.png"  alt=""></div>
                                                                             <div class="content_side">
-                                                                                <div class="row row-gap-1">
-                                                                                    <div class="col-12 userName">PinkLu</div>
+                                                                                <div class="d-inline-flex flex-column row-gap-1">
+                                                                                    <div class=" userName">PinkLu</div>
                                                                                     <div class="commitcontent">Samyan Club luôn mở cửa chào đón các bóng thủ với các phục vụ cung cấp bóng cười đầy đủ từ A tới Z</div>
                                                                                 </div>
                                                                             </div>
@@ -415,9 +415,9 @@
                                                                         <div class="comment_item_Body">
                                                                             <div class="commitUser"><img src="assets/image/meboon.png"  alt=""></div>
                                                                             <div class="content_side">
-                                                                                <div class="row row-gap-1">
-                                                                                    <div class="col-12 userName">Mẹ Boon</div>
-                                                                                    <div class="col-12 commitcontent"><b>Phan Lê Mai Lan</b> Ở đâu đấy em gái? Nhìn quen thế nhờ</div>
+                                                                                <div class="d-inline-flex flex-column row-gap-1">
+                                                                                    <div class=" userName">Mẹ Boon</div>
+                                                                                    <div class=" commitcontent"><b>Phan Lê Mai Lan</b> Ở đâu đấy em gái? Nhìn quen thế nhờ</div>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
@@ -428,9 +428,9 @@
                                                                         <div class="comment_item_Body">
                                                                             <div class="commitUser"><img src="assets/image/JeaminThao.png"  alt=""></div>
                                                                             <div class="content_side">
-                                                                                <div class="row row-gap-1">
-                                                                                    <div class="col-12 userName">Jeamin Thảo</div>
-                                                                                    <div class="col-12 commitcontent">Chị ơi, check ib giúp em với</div>
+                                                                                <div class="d-inline-flex flex-column row-gap-1">
+                                                                                    <div class=" userName">Jeamin Thảo</div>
+                                                                                    <div class=" commitcontent">Chị ơi, check ib giúp em với</div>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
@@ -441,10 +441,10 @@
                                                                         <div class="comment_item_Body">
                                                                             <div class="commitUser"><img src="assets/image/anaYang.png"  alt=""></div>
                                                                             <div class="content_side">
-                                                                                <div class="row row-gap-1">
-                                                                                    <div class="col-12 userName">Anna</div>
-                                                                                    <div class="col-12"><a href="javascript:;" class="tag">#đổitiềnmới</a></div>
-                                                                                    <div class="col-12 commitcontent">Đổi quanh năm, hỗ trợ ship tỉnh a</div>
+                                                                                <div class="d-inline-flex flex-column row-gap-1">
+                                                                                    <div class=" userName">Anna</div>
+                                                                                    <div class=""><a href="javascript:;" class="tag">#đổitiềnmới</a></div>
+                                                                                    <div class=" commitcontent">Đổi quanh năm, hỗ trợ ship tỉnh a</div>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
@@ -455,9 +455,9 @@
                                                                         <div class="comment_item_Body">
                                                                             <div class="commitUser"><img src="assets/image/thanhhaHN.png"  alt=""></div>
                                                                             <div class="content_side">
-                                                                                <div class="row row-gap-1">
-                                                                                    <div class="col-12 userName">thanhha.hanoi</div>
-                                                                                    <div class="col-12 commitcontent">Bữa nào ship em 1kg nấm ảo giác nhé, thị trường bên em đang cần</div>
+                                                                                <div class="d-inline-flex flex-column row-gap-1">
+                                                                                    <div class=" userName">thanhha.hanoi</div>
+                                                                                    <div class=" commitcontent">Bữa nào ship em 1kg nấm ảo giác nhé, thị trường bên em đang cần</div>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
@@ -468,9 +468,9 @@
                                                                         <div class="comment_item_Body">
                                                                             <div class="commitUser"><img src="assets/image/user1.png"  alt=""></div>
                                                                             <div class="content_side">
-                                                                                <div class="row row-gap-1">
-                                                                                    <div class="col-12 userName">Ca sĩ Nhi Hà</div>
-                                                                                    <div class="commitcontent">Xin chào cô bé bóng cười, hẹn t7 này đắp cần sa vào chỗ bị thương nhé ;))</div>
+                                                                                <div class="d-inline-flex flex-column row-gap-1">
+                                                                                    <div class=" userName">Ca sĩ Nhi Hà</div>
+                                                                                    <div class="images rounded-3 overflow-hidden"><img src="assets/image/media/ima/-mediaExample-8.png" class="w-100" alt=""></div>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
@@ -482,21 +482,22 @@
                                                                             <div class="comment_item_Body">
                                                                                 <div class="commitUser"><img src="assets/image/actor42.png"  alt=""></div>
                                                                                 <div class="content_side">
-                                                                                    <div class="row row-gap-1">
-                                                                                        <div class="col-12 userName">Long Mệt Rồi</div>
-                                                                                        <div class="commitcontent">Em bé nay đã lớn hơn nhiều rồi. 
-                                                                                            Btw, ai có nhu cầu mua tem giấy liên hệ zalo 039295893 nhé mn</div>
+                                                                                    <div class="d-inline-flex flex-column row-gap-1">
+                                                                                        <div class=" userName">Long Mệt Rồi</div>
+                                                                                        <a href="javascript:;" class="commitcontent">https://wajid.hipl-staging5.com/pg-dashboard2/data-fb-postDetails-overview.html</a>
+                                                                                        <a href="javascript:;" class="commitcontent">https://wajid.hipl-staging5.com/pg-dashboard2/data-fb-postDetails-overview.html</a>
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
-                                                                        <div class="comment_card commitAnswer">
+                                                                        <div class="comment_card">
                                                                             <div class="comment_item_Body">
                                                                                 <div class="commitUser"><img src="assets/image/fb_user.png"  alt=""></div>
                                                                                 <div class="content_side">
-                                                                                    <div class="row row-gap-1">
-                                                                                        <div class="col-12 userName">Phan Lê Mai Lan</div>
+                                                                                    <div class="d-inline-flex flex-column row-gap-1">
+                                                                                        <div class=" userName">Phan Lê Mai Lan</div>
                                                                                         <div class="commitcontent">Bữa nào ship em 1kg nấm ảo giác nhé, thị trường bên em đang cần</div>
+                                                                                    <div class="images rounded-3 overflow-hidden"><img src="assets/image/media/ima/-mediaExample-12.png" class="w-100" alt=""></div>
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
@@ -508,8 +509,8 @@
                                                                         <div class="comment_item_Body">
                                                                             <div class="commitUser"><img src="assets/image/pinklu.png"  alt=""></div>
                                                                             <div class="content_side">
-                                                                                <div class="row row-gap-1">
-                                                                                    <div class="col-12 userName">PinkLu</div>
+                                                                                <div class="d-inline-flex flex-column row-gap-1">
+                                                                                    <div class=" userName">PinkLu</div>
                                                                                     <div class="commitcontent">Samyan Club luôn mở cửa chào đón các bóng thủ với các phục vụ cung cấp bóng cười đầy đủ từ A tới Z</div>
                                                                                 </div>
                                                                             </div>
@@ -521,9 +522,9 @@
                                                                         <div class="comment_item_Body">
                                                                             <div class="commitUser"><img src="assets/image/meboon.png"  alt=""></div>
                                                                             <div class="content_side">
-                                                                                <div class="row row-gap-1">
-                                                                                    <div class="col-12 userName">Mẹ Boon</div>
-                                                                                    <div class="col-12 commitcontent"><b>Phan Lê Mai Lan</b> Ở đâu đấy em gái? Nhìn quen thế nhờ</div>
+                                                                                <div class="d-inline-flex flex-column row-gap-1">
+                                                                                    <div class=" userName">Mẹ Boon</div>
+                                                                                    <div class=" commitcontent"><b>Phan Lê Mai Lan</b> Ở đâu đấy em gái? Nhìn quen thế nhờ</div>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
@@ -534,9 +535,9 @@
                                                                         <div class="comment_item_Body">
                                                                             <div class="commitUser"><img src="assets/image/JeaminThao.png"  alt=""></div>
                                                                             <div class="content_side">
-                                                                                <div class="row row-gap-1">
-                                                                                    <div class="col-12 userName">Jeamin Thảo</div>
-                                                                                    <div class="col-12 commitcontent">Chị ơi, check ib giúp em với</div>
+                                                                                <div class="d-inline-flex flex-column row-gap-1">
+                                                                                    <div class=" userName">Jeamin Thảo</div>
+                                                                                    <div class=" commitcontent">Chị ơi, check ib giúp em với</div>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
@@ -547,10 +548,10 @@
                                                                         <div class="comment_item_Body">
                                                                             <div class="commitUser"><img src="assets/image/anaYang.png"  alt=""></div>
                                                                             <div class="content_side">
-                                                                                <div class="row row-gap-1">
-                                                                                    <div class="col-12 userName">Anna</div>
-                                                                                    <div class="col-12"><a href="javascript:;" class="tag">#đổitiềnmới</a></div>
-                                                                                    <div class="col-12 commitcontent">Đổi quanh năm, hỗ trợ ship tỉnh a</div>
+                                                                                <div class="d-inline-flex flex-column row-gap-1">
+                                                                                    <div class=" userName">Anna</div>
+                                                                                    <div class=""><a href="javascript:;" class="tag">#đổitiềnmới</a></div>
+                                                                                    <div class=" commitcontent">Đổi quanh năm, hỗ trợ ship tỉnh a</div>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
@@ -561,9 +562,9 @@
                                                                         <div class="comment_item_Body">
                                                                             <div class="commitUser"><img src="assets/image/thanhhaHN.png"  alt=""></div>
                                                                             <div class="content_side">
-                                                                                <div class="row row-gap-1">
-                                                                                    <div class="col-12 userName">thanhha.hanoi</div>
-                                                                                    <div class="col-12 commitcontent">Bữa nào ship em 1kg nấm ảo giác nhé, thị trường bên em đang cần</div>
+                                                                                <div class="d-inline-flex flex-column row-gap-1">
+                                                                                    <div class=" userName">thanhha.hanoi</div>
+                                                                                    <div class=" commitcontent">Bữa nào ship em 1kg nấm ảo giác nhé, thị trường bên em đang cần</div>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
@@ -683,7 +684,7 @@
                                 </div>
                                 <!-- ** Overview Tab End -->
                                 <!-- ** Aanalysis Tab Start -->
-                                <div class="tab-pane fade h-100 show active" id="pills-sources" role="tabpanel" aria-labelledby="pills-sources-tab" tabindex="0">
+                                <div class="tab-pane fade h-100" id="pills-sources" role="tabpanel" aria-labelledby="pills-sources-tab" tabindex="0">
                                     <div class="row gx-2 overflow-y-auto row-gap-2 h-100">
                                         <div class="col-auto h-100">
                                             <div class="card levelCard newsFilterCard h-100 ">
@@ -912,8 +913,8 @@
                                                         <div class="col-12 card_title">Comment (50) </div>
                                                         <div class="col-12 h-100 flex-fill overflow-hidden innerBody">
                                                             <div class="row h-100 mx-0 flex-column flex-nowrap originalComment rounded-3">
-                                                                <div class="col-12 d-flex align-items-center text-white pb-2 mb-1">
-                                                                    <div class="comment_card">Original comment</div>
+                                                                <div class="col-12 d-flex align-items-center text-white-50 pb-2 mb-1">
+                                                                    <div class="comment_card ">Original comment</div>
                                                                     <div class="text-center w-100">Violation</div>
                                                                 </div>
                                                                 <div class="col-12 px-0 h-100 flex-fill overflow-y-auto">
@@ -1318,7 +1319,7 @@
                                                                                                 <div class="col-12 h-100 flex-fill overflow-x-hidden overflow-y-auto">
                                                                                                     <div class="row userDistentCard">
                                                                                                         <div class="col-12">
-                                                                                                            <div class="listItem">
+                                                                                                            <div class="listItem active">
                                                                                                                 <div class="user_img"><img src="assets/image/fb_user.png" class="w-100" alt="logo"></div>
                                                                                                                 <div class="userDetails">
                                                                                                                     <div class="username">Phan Lê Mai Lan</div>
@@ -1586,8 +1587,8 @@
     <!-- Button trigger modal -->
     <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"></button> -->
     <!-- Modal -->
-    <div class="modal fade detailsPostModal" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+    <div class="modal fade detailsPostModal mediapostmodul" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog mediaModul modal-dialog-scrollable modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header border-0 p-0 d-block w-100">
                     <div class="d-flex align-items-center">
