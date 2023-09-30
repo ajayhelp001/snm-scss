@@ -1052,6 +1052,10 @@
 }
 
 .analysisCommentBox{
+    & .originalComment {
+        padding: 12px;
+        background-color: var(--black--dark) !important;
+    }
     & .comment_card{
         max-width: 476px;
         width: 100%;
