@@ -151,6 +151,15 @@
         }
         & .modal-content {
             background-color: var(--black--dark);
+            padding: 15px 40px 36px 40px;
+            & .modal-body{
+                & .postdetailslist {
+                    max-width: 426px;
+                    & .nav-pills {
+                        margin-bottom: 12px;
+                    }
+                }
+            }
         }
     }
 }

@@ -252,6 +252,19 @@
             }
         }
     }
+    &.themetabs{
+        & .nav-item{
+            & .nav-link{
+                color: var(--netural-dark);
+                &::before{
+                    background-color: var(--theme1);
+                }
+                &.active, &:hover{
+                    color: var(--theme1);
+                }
+            }
+        }
+    }
 }
 //! **** Top Header Css Start*****
 
