@@ -256,11 +256,29 @@
         & .nav-item{
             & .nav-link{
                 color: var(--netural-dark);
-                &::before{
-                    background-color: var(--theme1);
+                &.actor{
+                    &::before{
+                        background-color: var(--theme1);
+                    }
+                    &.active, &:hover{
+                        color: var(--theme1);
+                    }
                 }
-                &.active, &:hover{
-                    color: var(--theme1);
+                &.itemlist{
+                    &::before{
+                        background-color: var(--active);
+                    }
+                    &.active, &:hover{
+                        color: var(--active);
+                    }
+                }
+                &.violation{
+                    &::before{
+                        background-color: var(--theme-red);
+                    }
+                    &.active, &:hover{
+                        color: var(--theme-red);
+                    }
                 }
             }
         }

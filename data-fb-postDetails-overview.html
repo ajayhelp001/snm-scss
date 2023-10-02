@@ -206,7 +206,7 @@
                             <div class="tab-content h-100" id="pills-tabContent">
                                 <!-- ** Overview Tab Start -->
                                 <div class="tab-pane fade h-100 show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
-                                    <div class="d-flex gx2 gap-2 overflow-y-auto row-gap-2 h-100">
+                                    <div class="d-flex gx2 gap-2 justify-content-center verflow-y-auto row-gap-2 h-100">
                                         <div class="colauto h-100">
                                             <div class="card levelCard mainpostcard  h-100">
                                                 <div class="card-body h-100">
@@ -672,6 +672,13 @@
                                                                 <div class="card_title d-flex gap-12 justify-content-between">Connect-link <a href="javascript:;" class="viewDetailsBtn">View Details <span class="moreImg"><img src="assets/image/icon/viewmore.svg" class="w-100" alt="viewmore"></span> </a></div>
                                                                 <div class="col-12 h-100 flex-fill overflow-y-auto innerBody">
                                                                     <div class="mapImg"><img src="assets/image/connect_map.png" class="w-100 h-100" alt=""></div>
+                                                                    <!-- <div class="mapImg position-relative">
+                                                                        <div id="cy" class="connectMap w-100 h-100"></div>
+                                                                        <div class="zoom-buttons-map">
+                                                                            <button id="zoom-in-button"><img src="assets/image/icon/plus.svg" class="w-100" alt="plus"></button>
+                                                                            <button id="zoom-out-button"><img src="assets/image/icon/nagetive.svg" class="w-100" alt="nagetive"></button>	
+                                                                        </div>
+                                                                    </div> -->
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -685,7 +692,7 @@
                                 <!-- ** Overview Tab End -->
                                 <!-- ** Aanalysis Tab Start -->
                                 <div class="tab-pane fade h-100" id="pills-sources" role="tabpanel" aria-labelledby="pills-sources-tab" tabindex="0">
-                                    <div class="row gx-2 overflow-y-auto row-gap-2 h-100">
+                                    <div class="row gx-2 justify-content-center overflow-y-auto row-gap-2 h-100">
                                         <div class="col-auto h-100">
                                             <div class="card levelCard newsFilterCard h-100 ">
                                                 <form class="card-body h-100">
@@ -1446,7 +1453,14 @@
                                                                             <div class="row gx-0 h-100">
                                                                                 <div class="col">
                                                                                     <!-- * Map -->
-                                                                                    <div class="geo_map h-100 overflow-auto"><img src="assets/image/connect-map-big.png" class="w-100 h-100" alt=""></div>
+                                                                                    <!-- <div class="geo_map h-100 overflow-auto"><img src="assets/image/connect-map-big.png" class="w-100 h-100" alt=""></div> -->
+                                                                                    <div class="geo_map h-100 overflow-auto position-relative">
+                                                                                        <div id="cy" class="connectMap w-100 h-100"></div>
+                                                                                        <div class="zoom-buttons-map">
+                                                                                            <button id="zoom-in-button"><img src="assets/image/icon/plus.svg" class="w-100" alt="plus"></button>
+                                                                                            <button id="zoom-out-button"><img src="assets/image/icon/nagetive.svg" class="w-100" alt="nagetive"></button>	
+                                                                                        </div>
+                                                                                    </div>
                                                                                 </div>
                                                                                 <div class="col-auto h-100">
                                                                                     <!-- * List Side start -->
@@ -1623,13 +1637,13 @@
                                                         <div class="nav nav-pills" id="pills-tab" role="tablist">
                                                             <ul class="d-flex flex-wrap m-0 p-0 overviewTabs themetabs list-unstyled gap-4">
                                                                 <li class="nav-item " role="presentation">
-                                                                    <button class="nav-link active" id="pills-actor-tab" data-bs-toggle="pill" data-bs-target="#pills-actor" type="button" role="tab" aria-controls="pills-actor" aria-selected="false" tabindex="-1">Actor list </button>
+                                                                    <button class="nav-link actor active" id="pills-actor-tab" data-bs-toggle="pill" data-bs-target="#pills-actor" type="button" role="tab" aria-controls="pills-actor" aria-selected="false" tabindex="-1">Actor list </button>
                                                                 </li>
                                                                 <li class="nav-item " role="presentation">
-                                                                    <button class="nav-link" id="pills-item-tab" data-bs-toggle="pill" data-bs-target="#pills-item" type="button" role="tab" aria-controls="pills-item" aria-selected="false" tabindex="-1">Item list</button>
+                                                                    <button class="nav-link itemlist" id="pills-item-tab" data-bs-toggle="pill" data-bs-target="#pills-item" type="button" role="tab" aria-controls="pills-item" aria-selected="false" tabindex="-1">Item list</button>
                                                                 </li>
                                                                 <li class="nav-item " role="presentation">
-                                                                    <button class="nav-link" id="pills-violation-tab" data-bs-toggle="pill" data-bs-target="#pills-violation" type="button" role="tab" aria-controls="pills-violation" aria-selected="false" tabindex="-1">Violations</button>
+                                                                    <button class="nav-link violation" id="pills-violation-tab" data-bs-toggle="pill" data-bs-target="#pills-violation" type="button" role="tab" aria-controls="pills-violation" aria-selected="false" tabindex="-1">Violations</button>
                                                                 </li>
                                                             </ul>
                                                         </div>
@@ -2209,7 +2223,14 @@
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- *** Select2 Js *** -->
     <script src="assets/libs/select2/select2.min.js"></script>
+    <!-- *** Cytoscape Map Js *** -->
+    <script src="https://js.cytoscape.org/js/cytoscape.min.js"></script>
+	<script src="assets/libs/cytoscape/cytoscape-popper.js"></script>
+    <!-- <script src="assets/libs/cytoscape/cytoscape.min.js"></script> -->
+    <!-- <script src="assets/libs/cytoscape/cytoscape-popper.min.js"></script> -->
+    <!-- <script src="assets/libs/cytoscape/cytoscape-popper.js"></script> -->
     <!-- **** Custom Js ***** -->
+    <script src="assets/js/cytoscape-custome.js"></script>
     <script src="assets/js/custom.js"></script>
 
 </body>

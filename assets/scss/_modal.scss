@@ -144,15 +144,35 @@
 
 // **  Media Post Modal**
 .mediapostmodul{
+    &.maincontent{
+        padding: 20px 0px;
+        &.show{
+            display: flex !important;
+            align-items: center;
+            justify-content: center;
+        }
+        & .modal-dialog{
+            margin: 0px;
+        }
+    }
     & .modal-dialog {
         &.mediaModul {
             max-width: 1565px;
             width: 100%;
+            max-height: 1000px;
+            height: 100%;
+            min-height: 1px;
         }
         & .modal-content {
             background-color: var(--black--dark);
             padding: 15px 40px 36px 40px;
             & .modal-body{
+                & .youtubeIMg {
+                    & img {
+                        object-fit: cover;
+                        height: 100%;
+                    }
+                }
                 & .postdetailslist {
                     max-width: 426px;
                     & .nav-pills {
