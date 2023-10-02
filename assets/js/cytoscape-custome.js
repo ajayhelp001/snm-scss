@@ -133,11 +133,11 @@ var cy = cytoscape({
       })
       .selector('.edge[arrow]')
       .css({        
-        'target-arrow-shape': 'none'
+        // 'target-arrow-shape': 'none'
       })      
-      .selector('edge[arrow="none"]') // Select edges with arrow="none"
+      .selector('edge[arrow="block"]') // Select edges with arrow="none"
       .css({
-        'target-arrow-shape': 'none' // Remove the arrow shape for these edges
+        'target-arrow-shape': 'block' // Remove the arrow shape for these edges
       }), 
 
 
@@ -168,7 +168,7 @@ var cy = cytoscape({
       { "data": { "id": "e7", "source": "cotsonggenz", "target": "phanlemailan", "arrow": "none" } },
       { "data": { "id": "e8", "source": "nanapham", "target": "traderlollipop", "arrow": "none", "type": "none" } },
       { "data": { "id": "e9", "source": "nanapham", "target": "nguyennhuhang", "arrow": "none", "type": "none" } },
-      { "data": { "id": "e10", "source": "traderlollipop", "target": "nguyennhuhang", "arrow": "none", "type": "none" } },
+      { "data": { "id": "e10", "source": "traderlollipop", "target": "nodetwe", "arrow": "none", "type": "none" } },
       { "data": { "id": "e11", "source": "nanapham", "target": "cotsonggenz", "arrow": "none", "type": "none" } },
       
       { "data": { "id": "e13", "source": "memetipac", "target": "nguyennhuhang", "arrow": "none", "type": "none" } },
@@ -177,6 +177,11 @@ var cy = cytoscape({
       { "data": { "id": "e16", "source": "kokohalinh", "target": "nguyennhuhang", "arrow": "none", "type": "none" } },			  
       { "data": { "id": "e17", "source": "kokohalinh", "target": "phanlemailan", "arrow": "none", "type": "none" } },
       { "data": { "id": "e18", "source": "nodeten", "target": "nguyennhuhang", "arrow": "none", "type": "none" } },
+      { "data": { "id": "e19", "source": "nodeele", "target": "nguyennhuhang", "arrow": "none", "type": "none" } },
+      { "data": { "id": "e20", "source": "nodetwe", "target": "nguyennhuhang", "arrow": "none", "type": "none" } },
+      { "data": { "id": "e21", "source": "nodethi", "target": "nguyennhuhang", "arrow": "none", "type": "none" } },
+      
+
       
       			  			
     ]
@@ -229,7 +234,7 @@ var edges = cy.elements('.edge');
 edges.style({
   'line-color': 'blue',
   'target-arrow-color': 'blue',
-  'target-arrow-shape': 'none'
+  // 'target-arrow-shape': 'none'
 });
 
 cy.edges().on('click', function(event) {
