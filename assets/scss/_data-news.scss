@@ -20,6 +20,11 @@
                 object-fit: contain;
                 width: 100%;
             }
+            &.grayimg{
+                & img {
+                    filter: brightness(1) grayscale(1);
+                }
+            }
         }
         & .valu {
             display: flex;
@@ -1019,6 +1024,18 @@
                                 color: var(--successful);
                             }
                         }
+                        &.grayzone{
+                            & span {
+                                color: var(--netural-dark);
+                            }
+                        }
+                    }
+                    &.lowvalue{
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 160%; /* 25.6px */
+                        color: var(--successful);
                     }
                 }
             }
