@@ -2,7 +2,7 @@
 .categoryCard {
     border-radius: 8px;
     background-color: var(--neutralBlack);
-    max-width: 180px;
+    max-width: 172px;
     cursor: pointer;
     transition: all ease-in-out 0.3s;
     &:hover {
@@ -14,6 +14,7 @@
         align-items: center;
         gap: 4px;
         & .categoryImg {
+            min-width: 40px;
             width: 40px;
             height: 40px;
             & img {
@@ -327,7 +328,7 @@
                                                 }
                                                 &.scope{
                                                     & img {
-                                                        filter: brightness(0.7);
+                                                        // filter: brightness(0.7);
                                                     }
                                                 }
                                             }
@@ -355,6 +356,21 @@
                                 }
                             }
                         }
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+.infopost {
+    &.table{
+        & thead{
+            & tr {
+                & th {
+                    &:last-child{
+                        width: 93px;
                     }
                 }
             }

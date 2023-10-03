@@ -141,19 +141,19 @@
                                             <div class="nav nav-pills" id="pills-tab" role="tablist">
                                                 <ul class="d-flex flex-wrap m-0 p-0 overviewTabs list-unstyled gap-3">
                                                     <li class="nav-item " role="presentation">
-                                                        <a href="javascript:;" class="nav-link active">Overview</a>
+                                                        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Overview</button>
                                                     </li>
                                                     <li class="nav-item " role="presentation">
-                                                        <a href="data-fb-postDetails-analysis.html" class="nav-link" >Analysis</a>
+                                                        <button class="nav-link" id="pills-sources-tab" data-bs-toggle="pill" data-bs-target="#pills-sources" type="button" role="tab" aria-controls="pills-sources" aria-selected="true">Analysis</button>
                                                     </li>
                                                     <li class="nav-item " role="presentation">
-                                                        <a href="data-fb-postDetails-media.html" class="nav-link">Media</a>
+                                                        <button class="nav-link" id="pills-media-tab" data-bs-toggle="pill" data-bs-target="#pills-media" type="button" role="tab" aria-controls="pills-media" aria-selected="true">Media</button>
                                                     </li>
                                                     <li class="nav-item " role="presentation">
-                                                        <a href="data-fb-postDetails-geoMap.html" class="nav-link">Geo-map</a>
+                                                        <button class="nav-link" id="pills-keyword-tab" data-bs-toggle="pill" data-bs-target="#pills-keyword" type="button" role="tab" aria-controls="pills-keyword" aria-selected="true">Geo-map</button>
                                                     </li>
                                                     <li class="nav-item " role="presentation">
-                                                        <a href="data-fb-postDetails-connectLink.html" class="nav-link">Connect-link</a>
+                                                        <button class="nav-link" id="pills-connect-tab" data-bs-toggle="pill" data-bs-target="#pills-connect" type="button" role="tab" aria-controls="pills-connect" aria-selected="true">Connect-link</button>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -205,14 +205,14 @@
                         <div class="manin_content_Body h-100 overflow-hidden">
                             <div class="tab-content h-100" id="pills-tabContent">
                                 <!-- ** Overview Tab Start -->
-                                <div class="tab-pane fade h-100 show active">
+                                <div class="tab-pane fade h-100 show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
                                     <div class="d-flex gx2 gap-2 justify-content-center verflow-y-auto row-gap-2 h-100">
                                         <div class="colauto h-100">
                                             <div class="card levelCard mainpostcard  h-100">
                                                 <div class="card-body h-100">
                                                     <div class="row flex-column flex-nowrap h-100">
                                                         <div class="col-12">
-                                                            <div class="card_title d-flex gap-12 justify-content-start">Main post <a href="javascript:;" type="button" class="appendBtn conectBtn lightbg"><img src="assets/image/icon/conectBold-icon.svg" alt="plus"></a></div>
+                                                            <div class="card_title d-flex gap-12 justify-content-start">Main post <button type="button" class="appendBtn conectBtn lightbg"><img src="assets/image/icon/conectBold-icon.svg" alt="plus"></button></div>
                                                         </div>
                                                         <div class="col-12 h-100 flex-fill overflow-y-auto">
                                                             <div class="row gap-8 text-white">
@@ -234,7 +234,7 @@
                                                                                                             <div class="accountPost text-white-50 mb-0 mt-1 d-flex align-items-center gap-1">23/08/2023 <span>14:40</span></div>
                                                                                                         </div>
                                                                                                         <div class="col-auto">
-                                                                                                            <a href="pg-tracking-userDetails-overview.html" type="button" class="appendBtn p-1 smallappend lightbg ms-auto"><span><img src="assets/image/icon/arrow-right.svg" alt="plus"></span><span><img src="assets/image/icon/icon-monitoring.svg" alt="plus"></span></a>
+                                                                                                            <button type="button" class="appendBtn p-1 smallappend lightbg ms-auto"><span><img src="assets/image/icon/arrow-right.svg" alt="plus"></span><span><img src="assets/image/icon/icon-monitoring.svg" alt="plus"></span></button>
                                                                                                             <div class="accountPost text-white-50 mb-0 mt-1 d-flex align-items-center gap-1">13m+ <span>views</span></div>
                                                                                                         </div>
                                                                                                     </div>
@@ -690,6 +690,909 @@
                                     </div>
                                 </div>
                                 <!-- ** Overview Tab End -->
+                                <!-- ** Aanalysis Tab Start -->
+                                <div class="tab-pane fade h-100" id="pills-sources" role="tabpanel" aria-labelledby="pills-sources-tab" tabindex="0">
+                                    <div class="row gx-2 justify-content-center overflow-y-auto row-gap-2 h-100">
+                                        <div class="col-auto h-100">
+                                            <div class="card levelCard newsFilterCard h-100 ">
+                                                <form class="card-body h-100">
+                                                    <div class="row flex-column flex-nowrap h-100">
+                                                        <div class="card_title">Data filter</div>
+                                                        <div class="col-12 h-100 flex-fill overflow-y-auto innerBody">
+                                                            <div class="timeperiod row gap-1">
+                                                                <div class="col-12 filterTitle">Time period</div>
+                                                                <div class="col-12">
+                                                                    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                                                        <div class="row gap-1 gx-0">
+                                                                            <div class="col-auto">
+                                                                                <input type="radio" class="btn-check" name="btnradio1" id="btnradio1" autocomplete="off" checked>
+                                                                                <label class="radioBtn" for="btnradio1">24 hours</label>
+                                                                            </div>
+                                                                            <div class="col-auto">
+                                                                                <input type="radio" class="btn-check" name="btnradio1" id="btnradio2" autocomplete="off">
+                                                                                <label class="radioBtn" for="btnradio2">1 week</label>
+                                                                            </div>
+                                                                            <div class="col-auto">
+                                                                                <input type="radio" class="btn-check" name="btnradio1" id="btnradio3" autocomplete="off">
+                                                                                <label class="radioBtn" for="btnradio3">1 month</label>
+                                                                            </div>
+                                                                            <div class="col-auto">
+                                                                                <input type="radio" class="btn-check" name="btnradio1" id="btnradio4" autocomplete="off">
+                                                                                <label class="radioBtn" for="btnradio4">3 months</label>
+                                                                            </div>
+                                                                            <div class="col-auto">
+                                                                                <input type="radio" class="btn-check" name="btnradio1" id="btnradio5" autocomplete="off">
+                                                                                <label class="radioBtn" for="btnradio5">6 months</label>
+                                                                            </div>
+                                                                            <div class="col-auto">
+                                                                                <input type="radio" class="btn-check" name="btnradio1" id="btnradio6" autocomplete="off">
+                                                                                <label class="radioBtn" for="btnradio6">1 year</label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="keyword_category row gap-1">
+                                                                <div class="col-12 filterTitle">By keyword categories</div>
+                                                                <div class="col-12">
+                                                                    <div class="d-flex flex-column keywordkey">
+                                                                        <div class="form-check">
+                                                                            <input class="form-check-input" type="checkbox" value="" id="keyword1" checked>
+                                                                            <label class="form-check-label" for="keyword1">Crime</label>
+                                                                        </div>
+                                                                        <div class="form-check">
+                                                                            <input class="form-check-input" type="checkbox" value="" id="keyword2" checked>
+                                                                            <label class="form-check-label" for="keyword2">Drug</label>
+                                                                        </div>
+                                                                        <div class="form-check">
+                                                                            <input class="form-check-input" type="checkbox" value="" id="keyword3" checked>
+                                                                            <label class="form-check-label" for="keyword3">Sexual</label>
+                                                                        </div>
+                                                                        <div class="form-check">
+                                                                            <input class="form-check-input" type="checkbox" value="" id="keyword4" checked>
+                                                                            <label class="form-check-label" for="keyword4">Hated</label>
+                                                                        </div>
+                                                                        <div class="form-check">
+                                                                            <input class="form-check-input" type="checkbox" value="" id="keyword5" checked>
+                                                                            <label class="form-check-label" for="keyword5">War</label>
+                                                                        </div>
+                                                                        <div class="form-check">
+                                                                            <input class="form-check-input" type="checkbox" value="" id="keyword6" checked>
+                                                                            <label class="form-check-label" for="keyword6">Violence</label>
+                                                                        </div>
+                                                                        <div class="form-check">
+                                                                            <input class="form-check-input" type="checkbox" value="" id="keyword7" checked>
+                                                                            <label class="form-check-label" for="keyword7">Weapon</label>
+                                                                        </div>
+                                                                        <div class="form-check">
+                                                                            <input class="form-check-input" type="checkbox" value="" id="keyword8" checked>
+                                                                            <label class="form-check-label" for="keyword8">Label</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="by_category row gap-1">
+                                                                <div class="col-12 filterTitle">By location</div>
+                                                                <div class="col-12 selctbox location">
+                                                                    <select class="locationSelect2" multiple="multiple">
+                                                                        <option value="1">Ha Noi</option>
+                                                                        <option value="2">Ha Nam</option>
+                                                                        <option value="3">Nha Trang</option>
+                                                                    </select>
+                                                                    <div  class="location_selectedItems2 locationitemJs2 multipal_opetions">
+                                                                        <!-- Selected items will be displayed here -->
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="by_category row gap-1">
+                                                                <div class="col-12 filterTitle">By account</div>
+                                                                <div class="col-12 selctbox location byAccount">
+                                                                    <select class="mySelect2" multiple="multiple">
+                                                                        <option value="1">Acc #1</option>
+                                                                        <option value="2">Acc #2</option>
+                                                                        <option value="3">Account Acc Acc Acc #1</option>
+                                                                        <option value="3">Account #3</option>
+                                                                        <option value="3">Account #4</option>
+                                                                    </select>
+                                                                    <div  class="selectedItems2 selectitemJs2 multipal_opetions">
+                                                                        <!-- Selected items will be displayed here -->
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="applyfilter"><button type="button" class="applybtn w-100 shadow-none border-0">Apply filter</button></div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto h-100">
+                                            <div class="card levelCard mainpostcard  h-100">
+                                                <div class="card-body h-100">
+                                                    <div class="row flex-column flex-nowrap h-100">
+                                                        <div class="col-12">
+                                                            <div class="card_title d-flex gap-12 justify-content-start">Main post <button type="button" class="appendBtn conectBtn lightbg"><img src="assets/image/icon/conectBold-icon.svg" alt="plus"></button></div>
+                                                        </div>
+                                                        <div class="col-12 h-100 flex-fill overflow-y-auto">
+                                                            <div class="row gap-12 text-white">
+                                                                <div class="col-12">
+                                                                    <div class="informationCard fb_info">
+                                                                        <div class="card-body">
+                                                                            <div class="row innerbody gap-8">
+                                                                                <div class="col-12">
+                                                                                    <div class="posted row gx-0 gap-12">
+                                                                                        <div class="col-auto accountedPosted">
+                                                                                            <div class="accountUser"><img src="assets/image/fb_user.png" class="w-100" alt="user Image"></div>
+                                                                                        </div>
+                                                                                        <div class="col accounts d-block">
+                                                                                            <div class="row gap-8">
+                                                                                                <div class="col-12">
+                                                                                                    <div class="row">
+                                                                                                        <div class="col">
+                                                                                                            <div class="userName fw-bold">Phan Lê Mai Lan</div>
+                                                                                                            <div class="accountPost text-white-50 mb-0 mt-1 d-flex align-items-center gap-1">23/08/2023 <span>14:40</span></div>
+                                                                                                        </div>
+                                                                                                        <div class="col-auto">
+                                                                                                            <button type="button" class="appendBtn p-1 smallappend lightbg ms-auto"><span><img src="assets/image/icon/arrow-right.svg" alt="plus"></span><span><img src="assets/image/icon/icon-monitoring.svg" alt="plus"></span></button>
+                                                                                                            <div class="accountPost text-white-50 mb-0 mt-1 d-flex align-items-center gap-1">13m+ <span>views</span></div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div class="col-12">
+                                                                                                    <div class="postImg rounded-3 overflow-hidden"><img src="assets/image/media/ima/postimg.png" class="w-100" alt=""></div>
+                                                                                                </div>
+                                                                                                <div class="col-12">
+                                                                                                    <div class="row gap-12">
+                                                                                                        <div class="col-12 postDetails">Lần đầu làm chuyện ấy với bóng cười & tem giấy. <span>#samyanclub</span> <span>#bongcuoi</span></div>
+                                                                                                        <div class="col-12">
+                                                                                                            <div class="row gx-0 mx-0 gap-3">
+                                                                                                                <div class="col-auto"><div class="postAllDetails"><span class="detailImg"><img src="assets/image/icon/thumb.svg" alt="like"></span>565</div></div>
+                                                                                                                <div class="col-auto"><div class="postAllDetails"><span class="detailImg"><img src="assets/image/icon/comment.svg" alt="like"></span>50</div></div>
+                                                                                                                <div class="col-auto"><div class="postAllDetails"><span class="detailImg"><img src="assets/image/icon/share.svg" alt="like"></span>63</div></div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <div class="informationCard rounded-0 bg-transparent">
+                                                                        <div class="card-body px-0 pt-0">
+                                                                            <div class="row innerbody">
+                                                                                <div class="col-12">
+                                                                                    <div class="row posted gap-8">
+                                                                                        <div class="col-12">
+                                                                                            <div class="accountedPosted">
+                                                                                                <div class="userName fw-bold violationTangHeading">VIOLATION</div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-auto">  
+                                                                                            <div class="violatinTag row mx-0 gap-8 gx-0">
+                                                                                                <div class="col-auto">
+                                                                                                    <button type="button" class="shadow-none post_Btn border-0 small_post_Btn m-0">ma tuý  <span class="closebtn"><img src="assets/image/icon/close.svg" alt="danger"></span></button>
+                                                                                                </div>
+                                                                                                <div class="col-auto">
+                                                                                                    <button type="button" class="shadow-none post_Btn border-0 small_post_Btn m-0">ma tuý  <span class="closebtn"><img src="assets/image/icon/close.svg" alt="danger"></span></button>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-12">
+                                                                                    <div class="row posted gap-8">
+                                                                                        <div class="col-12">
+                                                                                            <div class="accountedPosted">
+                                                                                                <div class="userName fw-bold violationTangHeading">OTHER Content</div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-auto">  
+                                                                                            <div class="violatinTag bluetag row mx-0 gap-8 gx-0">
+                                                                                                <div class="col-auto">
+                                                                                                    <button type="button" class="shadow-none post_Btn bluePost_btn border-0 small_post_Btn m-0">ma tuý  <span class="closebtn"><img src="assets/image/icon/close.svg" alt="danger"></span></button>
+                                                                                                </div>
+                                                                                                <div class="col-auto">
+                                                                                                    <button type="button" class="shadow-none post_Btn bluePost_btn border-0 small_post_Btn m-0">ma tuý  <span class="closebtn"><img src="assets/image/icon/close.svg" alt="danger"></span></button>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--? coment card start -->
+                                        <div class="col h-100">
+                                            <div class="card levelCard h-100 commen-tcard analysisCommentBox">
+                                                <div class="card-body h-100">
+                                                    <div class="row flex-column flex-nowrap h-100">
+                                                        <div class="col-12 card_title">Comment (50) </div>
+                                                        <div class="col-12 h-100 flex-fill overflow-hidden innerBody">
+                                                            <div class="row h-100 mx-0 flex-column flex-nowrap originalComment rounded-3">
+                                                                <div class="col-12 d-flex align-items-center text-white-50 pb-2 mb-1">
+                                                                    <div class="comment_card ">Original comment</div>
+                                                                    <div class="text-center w-100">Violation</div>
+                                                                </div>
+                                                                <div class="col-12 px-0 h-100 flex-fill overflow-y-auto">
+                                                                    <div class="row gap-8">
+                                                                        <div class="col-12">
+                                                                            <div class="d-inline-flex align-items-center">
+                                                                                <div class="row mx-0 gx-0">
+                                                                                    <div class="col-auto">
+                                                                                        <div class="comment_card">
+                                                                                            <div class="comment_item_Body">
+                                                                                                <div class="commitUser"><img src="assets/image/user1.png"  alt=""></div>
+                                                                                                <div class="content_side">
+                                                                                                    <div class="d-flex flex-column row-gap-1">
+                                                                                                        <div class="userName">Ca sĩ Nhi Hà</div>
+                                                                                                        <div class="commitcontent">Xin chào cô bé bóng cười, hẹn t7 này đắp cần sa vào chỗ bị thương nhé ;))</div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="postbutoon py-1">
+                                                                                    <button type="button" class="shadow-none post_Btn my-2"><span><img src="assets/image/icon/dangerWhite.svg" alt="danger"></span>bóng cười</button>
+                                                                                    <button type="button" class="shadow-none post_Btn my-2"><span><img src="assets/image/icon/dangerWhite.svg" alt="danger"></span>cần sa</button>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-12">
+                                                                            <div class="multipalCommit">
+                                                                                <div class="d-inline-flex align-items-center">
+                                                                                    <div class="row mx-0 gx-0">
+                                                                                        <div class="col-auto">
+                                                                                            <div class="comment_card">
+                                                                                                <div class="comment_item_Body">
+                                                                                                    <div class="commitUser"><img src="assets/image/actor42.png"  alt=""></div>
+                                                                                                    <div class="content_side">
+                                                                                                        <div class="d-flex flex-column row-gap-1">
+                                                                                                            <div class="userName">Long Mệt Rồi</div>
+                                                                                                            <div class="commitcontent">Em bé nay đã lớn hơn nhiều rồi. 
+                                                                                                                Btw, ai có nhu cầu mua tem giấy liên hệ zalo 039295893 nhé mn</div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="postbutoon py-1">
+                                                                                        <button type="button" class="shadow-none post_Btn my-2"><span><img src="assets/image/icon/dangerWhite.svg" alt="danger"></span>bóng cười</button>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="d-inline-flex align-items-center">
+                                                                                    <div class="row mx-0 gx-0">
+                                                                                        <div class="col-auto">
+                                                                                            <div class="comment_card commitAnswer">
+                                                                                                <div class="comment_item_Body">
+                                                                                                    <div class="commitUser"><img src="assets/image/fb_user.png"  alt=""></div>
+                                                                                                    <div class="content_side">
+                                                                                                        <div class="d-flex flex-column row-gap-1">
+                                                                                                            <div class="userName">Phan Lê Mai Lan</div>
+                                                                                                            <div class="commitcontent">Bữa nào ship em 1kg nấm ảo giác nhé, thị trường bên em đang cần</div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="postbutoon py-1">
+                                                                                        <button type="button" class="shadow-none post_Btn my-2"><span><img src="assets/image/icon/dangerWhite.svg" alt="danger"></span>bóng cười</button>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-12">
+                                                                            <div class="d-inline-flex align-items-center">
+                                                                                <div class="row mx-0 gx-0">
+                                                                                    <div class="col-auto">
+                                                                                        <div class="comment_card">
+                                                                                            <div class="comment_item_Body">
+                                                                                                <div class="commitUser"><img src="assets/image/pinklu.png"  alt=""></div>
+                                                                                                <div class="content_side">
+                                                                                                    <div class="d-flex flex-column row-gap-1">
+                                                                                                        <div class="userName">PinkLu</div>
+                                                                                                        <div class="commitcontent">Samyan Club luôn mở cửa chào đón các bóng thủ với các phục vụ cung cấp bóng cười đầy đủ từ A tới Z</div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="postbutoon py-1">
+                                                                                    <button type="button" class="shadow-none post_Btn my-2"><span><img src="assets/image/icon/dangerWhite.svg" alt="danger"></span>bóng cười</button>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-12">
+                                                                            <div class="d-inline-flex align-items-center">
+                                                                                <div class="row mx-0 gx-0">
+                                                                                    <div class="col-auto">
+                                                                                        <div class="comment_card">
+                                                                                            <div class="comment_item_Body">
+                                                                                                <div class="commitUser"><img src="assets/image/meboon.png"  alt=""></div>
+                                                                                                <div class="content_side">
+                                                                                                    <div class="d-flex flex-column row-gap-1">
+                                                                                                        <div class="userName">Mẹ Boon</div>
+                                                                                                        <div class="commitcontent"><b>Phan Lê Mai Lan</b> Ở đâu đấy em gái? Nhìn quen thế nhờ </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-12">
+                                                                            <div class="d-inline-flex align-items-center">
+                                                                                <div class="row mx-0 gx-0">
+                                                                                    <div class="col-auto">
+                                                                                        <div class="comment_card">
+                                                                                            <div class="comment_item_Body">
+                                                                                                <div class="commitUser"><img src="assets/image/JeaminThao.png"  alt=""></div>
+                                                                                                <div class="content_side">
+                                                                                                    <div class="d-flex flex-column row-gap-1">
+                                                                                                        <div class="userName">Jeamin Thảo</div>
+                                                                                                        <div class="commitcontent">Chị ơi, check ib giúp em với</div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-12">
+                                                                            <div class="d-inline-flex align-items-center">
+                                                                                <div class="row mx-0 gx-0">
+                                                                                    <div class="col-auto">
+                                                                                        <div class="comment_card">
+                                                                                            <div class="comment_item_Body">
+                                                                                                <div class="commitUser"><img src="assets/image/anaYang.png"  alt=""></div>
+                                                                                                <div class="content_side">
+                                                                                                    <div class="d-flex flex-column row-gap-1">
+                                                                                                        <div class="userName">Anna Trương Chi</div>
+                                                                                                        <a href="javascript:;" class="tag">#đổitiềnmới</a>
+                                                                                                        <div class="commitcontent">Đổi quanh năm, hỗ trợ ship tỉnh a</div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-12">
+                                                                            <div class="d-inline-flex align-items-center">
+                                                                                <div class="row mx-0 gx-0">
+                                                                                    <div class="col-auto">
+                                                                                        <div class="comment_card">
+                                                                                            <div class="comment_item_Body">
+                                                                                                <div class="commitUser"><img src="assets/image/anaYang.png"  alt=""></div>
+                                                                                                <div class="content_side">
+                                                                                                    <div class="d-flex flex-column row-gap-1">
+                                                                                                        <div class="userName">Anna Trương Chi</div>
+                                                                                                        <div class="commitcontent">Đổi quanh năm, hỗ trợ ship tỉnh a</div>
+                                                                                                        <div class="img rounded-3 overflow-hidden"><img src="assets/image/media/ima/postimg.png" class="w-100" alt=""></div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-12">
+                                                                            <div class="d-inline-flex align-items-center">
+                                                                                <div class="row mx-0 gx-0">
+                                                                                    <div class="col-auto">
+                                                                                        <div class="comment_card">
+                                                                                            <div class="comment_item_Body">
+                                                                                                <div class="commitUser"><img src="assets/image/anaYang.png"  alt=""></div>
+                                                                                                <div class="content_side">
+                                                                                                    <div class="d-flex flex-column row-gap-1">
+                                                                                                        <div class="userName">Anna Trương Chi</div>
+                                                                                                        <a href="javascript:;" class="tag text-white">https://wajid.hipl-staging5.com/pg-dashboard2/data-fb-postDetails-overview.html</a>
+                                                                                                        <div class="commitcontent">
+                                                                                                            <span>website link: </span>
+                                                                                                            <a href="javascript:;" class="tag text-white">https://wajid.hipl-staging5.com/pg-dashboard2/data-fb-postDetails-overview.html</a>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-12">
+                                                                            <div class="d-inline-flex align-items-center">
+                                                                                <div class="row mx-0 gx-0">
+                                                                                    <div class="col-auto">
+                                                                                        <div class="comment_card">
+                                                                                            <div class="comment_item_Body">
+                                                                                                <div class="commitUser"><img src="assets/image/anaYang.png"  alt=""></div>
+                                                                                                <div class="content_side">
+                                                                                                    <div class="d-flex flex-column row-gap-1">
+                                                                                                        <div class="userName">Anna Trương Chi</div>
+                                                                                                        <div class="img rounded-3 overflow-hidden"><img src="assets/image/media/ima/postimg.png" class="w-100" alt=""></div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="postbutoon">
+                                                                                    <div class="shadow-none m-2"><img src="assets/image/media/ima/-mediaExample-10.png" alt=""></div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-12">
+                                                                            <div class="d-inline-flex align-items-center">
+                                                                                <div class="row mx-0 gx-0">
+                                                                                    <div class="col-auto">
+                                                                                        <div class="comment_card">
+                                                                                            <div class="comment_item_Body">
+                                                                                                <div class="commitUser"><img src="assets/image/meboon.png"  alt=""></div>
+                                                                                                <div class="content_side">
+                                                                                                    <div class="d-flex flex-column row-gap-1">
+                                                                                                        <div class="userName">Mẹ Boon</div>
+                                                                                                        <div class="commitcontent"><b>Phan Lê Mai Lan</b> Ở đâu đấy em gái? Nhìn quen thế nhờ </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-12">
+                                                                            <div class="d-inline-flex align-items-center">
+                                                                                <div class="row mx-0 gx-0">
+                                                                                    <div class="col-auto">
+                                                                                        <div class="comment_card">
+                                                                                            <div class="comment_item_Body">
+                                                                                                <div class="commitUser"><img src="assets/image/anaYang.png"  alt=""></div>
+                                                                                                <div class="content_side">
+                                                                                                    <div class="d-flex flex-column row-gap-1">
+                                                                                                        <div class="userName">Anna Trương Chi</div>
+                                                                                                        <div class="img rounded-3 overflow-hidden"><img src="assets/image/media/ima/-mediaExample-15.png" class="w-100" alt=""></div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="postbutoon">
+                                                                                    <div class="shadow-none m-2"><img src="assets/image/media/ima/-mediaExample-19.png" alt=""></div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--? coment card end -->
+                                    </div>
+                                </div>
+                                <!-- ** Aanalysis Tab End -->
+                                <!-- ** Media Tab Start -->
+                                <div class="tab-pane fade h-100" id="pills-media" role="tabpanel" aria-labelledby="pills-media-tab" tabindex="0">
+                                    <div class="row gx-2 overflow-y-auto justify-content-center row-gap-2 h-100">
+                                        <div class="col-5 h-100 apendDataTable">
+                                            <div class="card top_post h-100 levelCard list_post_Table">
+                                                <div class="card-body h-100">
+                                                    <div class="row flex-column flex-nowrap h-100 list">
+                                                        <div class="col-12">
+                                                            <div class="card_title keywords m-0 d-flex">
+                                                                <div class="cuntryflage"><span class="flage"><img src="assets/image/icon/singal-user-icon.svg" class="w-100" alt=""></span>Photos</div>
+                                                                <div class="add-button"><button type="button" class="appendBtn moniter lightbg"><img src="assets/image/icon/arrow-right.svg" alt="plus"><img src="assets/image/icon/icon-monitoring.svg" alt="plus"></button></div>
+                                                            </div> 
+                                                            <!-- <div class="search_bar rounded-3 listSearch">
+                                                                <div class="input-group">
+                                                                    <button type="button" class="input-group-text" id="basic-addon1"><img src="assets/image/icon/search_icon.svg" alt="search"></button>
+                                                                    <input type="text" class="form-control shadow-none" placeholder="input keywords" aria-label="Username" aria-describedby="basic-addon1">
+                                                                </div>
+                                                            </div> -->
+                                                        </div>
+                                                        <div class="col-12 h-100 flex-fill overflow-hidden">
+                                                            <div class="h-100 overflow-y-auto">
+                                                                <div class="row mediaGallery mx-0">
+                                                                    <div class="col-3"><a href="javascript:;" class="mediaImg d-flex" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><img src="assets/image/media/ima/-mediaExample.png" class="w-100" alt="mediaExample"></a></div>
+                                                                    <div class="col-3"><div class="mediaImg"><img src="assets/image/media/ima/-mediaExample-1.png" class="w-100" alt="mediaExample"></div></div>
+                                                                    <div class="col-3"><div class="mediaImg"><img src="assets/image/media/ima/-mediaExample-2.png" class="w-100" alt="mediaExample"></div></div>
+                                                                    <div class="col-3"><div class="mediaImg"><img src="assets/image/media/ima/-mediaExample-3.png" class="w-100" alt="mediaExample"></div></div>
+                                                                    <div class="col-3"><div class="mediaImg"><img src="assets/image/media/ima/-mediaExample-4.png" class="w-100" alt="mediaExample"></div></div>
+                                                                    <div class="col-3"><div class="mediaImg"><img src="assets/image/media/ima/-mediaExample-5.png" class="w-100" alt="mediaExample"></div></div>
+                                                                    <div class="col-3"><div class="mediaImg"><img src="assets/image/media/ima/-mediaExample-6.png" class="w-100" alt="mediaExample"></div></div>
+                                                                    <div class="col-3"><div class="mediaImg"><img src="assets/image/media/ima/-mediaExample-7.png" class="w-100" alt="mediaExample"></div></div>
+                                                                    <div class="col-3"><div class="mediaImg"><img src="assets/image/media/ima/-mediaExample-8.png" class="w-100" alt="mediaExample"></div></div>
+                                                                    <div class="col-3"><div class="mediaImg"><img src="assets/image/media/ima/-mediaExample-9.png" class="w-100" alt="mediaExample"></div></div>
+                                                                    <div class="col-3"><div class="mediaImg"><img src="assets/image/media/ima/-mediaExample-10.png" class="w-100" alt="mediaExample"></div></div>
+                                                                    <div class="col-3"><div class="mediaImg"><img src="assets/image/media/ima/-mediaExample-11.png" class="w-100" alt="mediaExample"></div></div>
+                                                                    <div class="col-3"><div class="mediaImg"><img src="assets/image/media/ima/-mediaExample-12.png" class="w-100" alt="mediaExample"></div></div>
+                                                                    <div class="col-3"><div class="mediaImg"><img src="assets/image/media/ima/-mediaExample-13.png" class="w-100" alt="mediaExample"></div></div>
+                                                                    <div class="col-3"><div class="mediaImg"><img src="assets/image/media/ima/-mediaExample-14.png" class="w-100" alt="mediaExample"></div></div>
+                                                                    <div class="col-3"><div class="mediaImg"><img src="assets/image/media/ima/-mediaExample-15.png" class="w-100" alt="mediaExample"></div></div>
+                                                                    <div class="col-3"><div class="mediaImg"><img src="assets/image/media/ima/-mediaExample-16.png" class="w-100" alt="mediaExample"></div></div>
+                                                                    <div class="col-3"><div class="mediaImg"><img src="assets/image/media/ima/-mediaExample-17.png" class="w-100" alt="mediaExample"></div></div>
+                                                                    <div class="col-3"><div class="mediaImg"><img src="assets/image/media/ima/-mediaExample-18.png" class="w-100" alt="mediaExample"></div></div>
+                                                                    <div class="col-3"><div class="mediaImg"><img src="assets/image/media/ima/-mediaExample-19.png" class="w-100" alt="mediaExample"></div></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-5 h-100 apendDataTable">
+                                            <div class="card top_post h-100 levelCard list_post_Table">
+                                                <div class="card-body h-100">
+                                                    <div class="row flex-column flex-nowrap h-100 list">
+                                                        <div class="col-12">
+                                                            <div class="card_title keywords m-0 d-flex">
+                                                                <div class="cuntryflage"><span class="flage"><img src="assets/image/icon/video-icone.svg" class="w-100" alt=""></span>Videos</div>
+                                                                <div class="add-button"><button type="button" class="appendBtn moniter lightbg"><img src="assets/image/icon/arrow-right.svg" alt="plus"><img src="assets/image/icon/icon-monitoring.svg" alt="plus"></button></div>
+                                                            </div> 
+                                                            <!-- <div class="search_bar rounded-3 listSearch">
+                                                                <div class="input-group">
+                                                                    <button type="button" class="input-group-text" id="basic-addon1"><img src="assets/image/icon/search_icon.svg" alt="search"></button>
+                                                                    <input type="text" class="form-control shadow-none" placeholder="input keywords" aria-label="Username" aria-describedby="basic-addon1">
+                                                                </div>
+                                                            </div> -->
+                                                        </div>
+                                                        <div class="col-12 h-100 flex-fill overflow-hidden">
+                                                            <div class="h-100 overflow-y-auto">
+                                                                <div class="row mediaGallery mx-0">
+                                                                    <div class="col-3"><div class="mediaImg videos"><img src="assets/image/media/ima/-mediaExample-1.png" class="w-100" alt="mediaExample"></div></div>
+                                                                    <div class="col-3"><a href="javascript:;" class="mediaImg videos"><img src="assets/image/media/ima/-mediaExample.png" class="w-100" alt="mediaExample"></a></div>
+                                                                    <div class="col-3"><div class="mediaImg videos"><img src="assets/image/media/ima/-mediaExample-2.png" class="w-100" alt="mediaExample"></div></div>
+                                                                    <div class="col-3"><div class="mediaImg videos"><img src="assets/image/media/ima/-mediaExample-3.png" class="w-100" alt="mediaExample"></div></div>
+                                                                    <div class="col-3"><div class="mediaImg videos"><img src="assets/image/media/ima/-mediaExample-4.png" class="w-100" alt="mediaExample"></div></div>
+                                                                    <div class="col-3"><div class="mediaImg videos"><img src="assets/image/media/ima/-mediaExample-5.png" class="w-100" alt="mediaExample"></div></div>
+                                                                    <div class="col-3"><div class="mediaImg videos"><img src="assets/image/media/ima/-mediaExample-6.png" class="w-100" alt="mediaExample"></div></div>
+                                                                    <div class="col-3"><div class="mediaImg videos"><img src="assets/image/media/ima/-mediaExample-7.png" class="w-100" alt="mediaExample"></div></div>
+                                                                    <div class="col-3"><div class="mediaImg videos"><img src="assets/image/media/ima/-mediaExample-8.png" class="w-100" alt="mediaExample"></div></div>
+                                                                    <div class="col-3"><div class="mediaImg videos"><img src="assets/image/media/ima/-mediaExample-9.png" class="w-100" alt="mediaExample"></div></div>
+                                                                    <div class="col-3"><div class="mediaImg videos"><img src="assets/image/media/ima/-mediaExample-10.png" class="w-100" alt="mediaExample"></div></div>
+                                                                    <div class="col-3"><div class="mediaImg videos"><img src="assets/image/media/ima/-mediaExample-11.png" class="w-100" alt="mediaExample"></div></div>
+                                                                    <div class="col-3"><div class="mediaImg videos"><img src="assets/image/media/ima/-mediaExample-12.png" class="w-100" alt="mediaExample"></div></div>
+                                                                    <div class="col-3"><div class="mediaImg videos"><img src="assets/image/media/ima/-mediaExample-13.png" class="w-100" alt="mediaExample"></div></div>
+                                                                    <div class="col-3"><div class="mediaImg videos"><img src="assets/image/media/ima/-mediaExample-14.png" class="w-100" alt="mediaExample"></div></div>
+                                                                    <div class="col-3"><div class="mediaImg videos"><img src="assets/image/media/ima/-mediaExample-15.png" class="w-100" alt="mediaExample"></div></div>
+                                                                    <div class="col-3"><div class="mediaImg videos"><img src="assets/image/media/ima/-mediaExample-16.png" class="w-100" alt="mediaExample"></div></div>
+                                                                    <div class="col-3"><div class="mediaImg videos"><img src="assets/image/media/ima/-mediaExample-17.png" class="w-100" alt="mediaExample"></div></div>
+                                                                    <div class="col-3"><div class="mediaImg videos"><img src="assets/image/media/ima/-mediaExample-18.png" class="w-100" alt="mediaExample"></div></div>
+                                                                    <div class="col-3"><div class="mediaImg videos"><img src="assets/image/media/ima/-mediaExample-19.png" class="w-100" alt="mediaExample"></div></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- ** Media Tab End -->
+                                <!-- ** Geo Map Tab Start -->
+                                <div class="tab-pane fade h-100" id="pills-keyword" role="tabpanel" aria-labelledby="pills-keyword-tab" tabindex="0">
+                                    <div class="row gx-2 overflow-y-auto justify-content-center row-gap-2 h-100">
+                                        <div class="col-12 h-100">
+                                            <div class="card levelCard h-100">
+                                                <div class="card-body h-100">
+                                                    <div class="row flex-column flex-nowrap h-100">
+                                                        <div class="col-12">
+                                                            <div class="card_title">Geo-map of related accounts</div>
+                                                        </div>
+                                                        <div class="col-12 h-100 flex-fill overflow-y-auto">
+                                                            <div class="row text-white h-100">
+                                                                <div class="col-12 h-100">
+                                                                    <div class="card h-100 overflow-hidden">
+                                                                        <div class="card-body p-0 h-100 position-relative">
+                                                                            <!-- * Map -->
+                                                                            <div class="geo_map h-100 overflow-auto"><img src="assets/image/geo-map.png" class="w-100 h-100" alt=""></div>
+                                                                            <!-- * List Side start -->
+                                                                            <div class="listmap p-3 h-100 position-absolute top-0 end-0">
+                                                                                <div class="actorListCard h-100">
+                                                                                    <div class="card h-100 levelCard">
+                                                                                        <div class="card-body h-100">
+                                                                                            <div class="row flex-column flex-nowrap h-100">
+                                                                                                <div class="col-12">
+                                                                                                    <div class="card_title d-flex justify-content-between align-items-center">
+                                                                                                        <div class="cuntryflage">Actor list</div>
+                                                                                                        <div class="add-button d-flex align-items-center gap-8">
+                                                                                                            <button type="button" class="appendBtn moniter gap-1 lightbg"><img src="assets/image/icon/arrow-right.svg" alt="plus"><img src="assets/image/icon/focus.svg" alt="plus"></button>
+                                                                                                            <button type="button" class="appendBtn moniter lightbg"><img src="assets/image/icon/arrow-right.svg" alt="plus"><img src="assets/image/icon/icon-monitoring.svg" alt="plus"></button>
+                                                                                                        </div>
+                                                                                                    </div> 
+                                                                                                    
+                                                                                                </div>
+                                                                                                <div class="col-12 h-100 flex-fill overflow-x-hidden overflow-y-auto">
+                                                                                                    <div class="row userDistentCard">
+                                                                                                        <div class="col-12">
+                                                                                                            <div class="listItem active">
+                                                                                                                <div class="user_img"><img src="assets/image/fb_user.png" class="w-100" alt="logo"></div>
+                                                                                                                <div class="userDetails">
+                                                                                                                    <div class="username">Phan Lê Mai Lan</div>
+                                                                                                                    <div class="userAge">23 years old <span class="genderImg"><img src="assets/image/icon/female-gender.svg" class="w-100" alt="female"></span></div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="col-12">
+                                                                                                            <div class="listItem">
+                                                                                                                <div class="user_img"><img src="assets/image/BikerAnTOn.png" class="w-100" alt="logo"></div>
+                                                                                                                <div class="userDetails">
+                                                                                                                    <div class="username">Phan Lê Mai Lan</div>
+                                                                                                                    <div class="userAge">27 years old <span class="genderImg"><img src="assets/image/icon/male-gender.svg" class="w-100" alt="male"></span></div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="col-12">
+                                                                                                            <div class="listItem">
+                                                                                                                <div class="user_img"><img src="assets/image/thanhhaHN.png" class="w-100" alt="logo"></div>
+                                                                                                                <div class="userDetails">
+                                                                                                                    <div class="username">Phan Thanh Hà</div>
+                                                                                                                    <div class="userAge">45 years old <span class="genderImg"><img src="assets/image/icon/female-gender.svg" class="w-100" alt="female"></span></div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="col-12">
+                                                                                                            <div class="listItem">
+                                                                                                                <div class="user_img"><img src="assets/image/LangMetRoi.png" class="w-100" alt="logo"></div>
+                                                                                                                <div class="userDetails">
+                                                                                                                    <div class="username">Ngô Đình Long</div>
+                                                                                                                    <div class="userAge">27 years old <span class="genderImg"><img src="assets/image/icon/male-gender.svg" class="w-100" alt="male"></span></div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="col-12">
+                                                                                                            <div class="listItem">
+                                                                                                                <div class="user_img"><img src="assets/image/KalvinElliot.png" class="w-100" alt="logo"></div>
+                                                                                                                <div class="userDetails">
+                                                                                                                    <div class="username">Trader Nguyễn</div>
+                                                                                                                    <div class="userAge">32 years old <span class="genderImg"><img src="assets/image/icon/male-gender.svg" class="w-100" alt="male"></span></div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="col-12">
+                                                                                                            <div class="listItem">
+                                                                                                                <div class="user_img"><img src="assets/image/SharkTung.png" class="w-100" alt="logo"></div>
+                                                                                                                <div class="userDetails">
+                                                                                                                    <div class="username">Shark Tùng</div>
+                                                                                                                    <div class="userAge">33 years old <span class="genderImg"><img src="assets/image/icon/male-gender.svg" class="w-100" alt="male"></span></div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="col-12">
+                                                                                                            <div class="listItem">
+                                                                                                                <div class="user_img"><img src="assets/image/JeaminThao.png" class="w-100" alt="logo"></div>
+                                                                                                                <div class="userDetails">
+                                                                                                                    <div class="username">Nana Phạm</div>
+                                                                                                                    <div class="userAge">22 years old <span class="genderImg"><img src="assets/image/icon/female-gender.svg" class="w-100" alt="female"></span></div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="col-12">
+                                                                                                            <div class="listItem">
+                                                                                                                <div class="user_img"><img src="assets/image/Nguyen.png" class="w-100" alt="logo"></div>
+                                                                                                                <div class="userDetails">
+                                                                                                                    <div class="username">Nguyễn Như Hằng</div>
+                                                                                                                    <div class="userAge">35 years old <span class="genderImg"><img src="assets/image/icon/female-gender.svg" class="w-100" alt="female"></span></div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="col-12">
+                                                                                                            <div class="listItem">
+                                                                                                                <div class="user_img"><img src="assets/image/pinklu.png" class="w-100" alt="logo"></div>
+                                                                                                                <div class="userDetails">
+                                                                                                                    <div class="username">Pink Lu</div>
+                                                                                                                    <div class="userAge">31 years old <span class="genderImg"><img src="assets/image/icon/female-gender.svg" class="w-100" alt="female"></span></div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="col-12">
+                                                                                                            <div class="listItem">
+                                                                                                                <div class="user_img"><img src="assets/image/ThamGia.png" class="w-100" alt="logo"></div>
+                                                                                                                <div class="userDetails">
+                                                                                                                    <div class="username">QQ Thuỷ Tâm</div>
+                                                                                                                    <div class="userAge">26 years old <span class="genderImg"><img src="assets/image/icon/female-gender.svg" class="w-100" alt="female"></span></div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <!-- * List Side end -->
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- ** Geo Map Tab End -->
+                                <!-- ** Connet Map Tab Start -->
+                                <div class="tab-pane fade h-100" id="pills-connect" role="tabpanel" aria-labelledby="pills-connect-tab" tabindex="0">
+                                    <div class="row gx-2 overflow-y-auto justify-content-center row-gap-2 h-100">
+                                        <div class="col-12 h-100">
+                                            <div class="card levelCard h-100">
+                                                <div class="card-body h-100">
+                                                    <div class="row flex-column flex-nowrap h-100">
+                                                        <div class="col-12">
+                                                            <div class="card_title">Connect-link of related accounts</div>
+                                                        </div>
+                                                        <div class="col-12 h-100 flex-fill overflow-y-auto">
+                                                            <div class="row text-white h-100">
+                                                                <div class="col-12 h-100">
+                                                                    <div class="card h-100 overflow-hidden mapcard">
+                                                                        <div class="card-body p-0 h-100 positionrelative">
+                                                                            <div class="row gx-0 h-100">
+                                                                                <div class="col">
+                                                                                    <!-- * Map -->
+                                                                                    <!-- <div class="geo_map h-100 overflow-auto"><img src="assets/image/connect-map-big.png" class="w-100 h-100" alt=""></div> -->
+                                                                                    <div class="geo_map h-100 overflow-auto position-relative">
+                                                                                        <div id="cy" class="connectMap w-100 h-100"></div>
+                                                                                        <div class="zoom-buttons-map">
+                                                                                            <button id="zoom-in-button"><img src="assets/image/icon/plus.svg" class="w-100" alt="plus"></button>
+                                                                                            <button id="zoom-out-button"><img src="assets/image/icon/nagetive.svg" class="w-100" alt="nagetive"></button>	
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-auto h-100">
+                                                                                    <!-- * List Side start -->
+                                                                                    <div class="listmap p-3 h-100 ">
+                                                                                        <div class="actorListCard h-100">
+                                                                                            <div class="card h-100 levelCard">
+                                                                                                <div class="card-body h-100">
+                                                                                                    <div class="row flex-column flex-nowrap h-100">
+                                                                                                        <div class="col-12">
+                                                                                                            <div class="card_title d-flex justify-content-between align-items-center">
+                                                                                                                <div class="cuntryflage">Actor list</div>
+                                                                                                                <div class="add-button d-flex align-items-center gap-8">
+                                                                                                                    <button type="button" class="appendBtn moniter gap-1 lightbg"><img src="assets/image/icon/arrow-right.svg" alt="plus"><img src="assets/image/icon/focus.svg" alt="plus"></button>
+                                                                                                                    <button type="button" class="appendBtn moniter lightbg"><img src="assets/image/icon/arrow-right.svg" alt="plus"><img src="assets/image/icon/icon-monitoring.svg" alt="plus"></button>
+                                                                                                                </div>
+                                                                                                            </div> 
+                                                                                                            
+                                                                                                        </div>
+                                                                                                        <div class="col-12 h-100 flex-fill overflow-x-hidden overflow-y-auto">
+                                                                                                            <div class="row userDistentCard">
+                                                                                                                <div class="col-12">
+                                                                                                                    <div class="listItem">
+                                                                                                                        <div class="user_img"><img src="assets/image/fb_user.png" class="w-100" alt="logo"></div>
+                                                                                                                        <div class="userDetails">
+                                                                                                                            <div class="username">Phan Lê Mai Lan</div>
+                                                                                                                            <div class="userAge">23 years old <span class="genderImg"><img src="assets/image/icon/female-gender.svg" class="w-100" alt="female"></span></div>
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                                <div class="col-12">
+                                                                                                                    <div class="listItem">
+                                                                                                                        <div class="user_img"><img src="assets/image/BikerAnTOn.png" class="w-100" alt="logo"></div>
+                                                                                                                        <div class="userDetails">
+                                                                                                                            <div class="username">Phan Lê Mai Lan</div>
+                                                                                                                            <div class="userAge">27 years old <span class="genderImg"><img src="assets/image/icon/male-gender.svg" class="w-100" alt="male"></span></div>
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                                <div class="col-12">
+                                                                                                                    <div class="listItem">
+                                                                                                                        <div class="user_img"><img src="assets/image/thanhhaHN.png" class="w-100" alt="logo"></div>
+                                                                                                                        <div class="userDetails">
+                                                                                                                            <div class="username">Phan Thanh Hà</div>
+                                                                                                                            <div class="userAge">45 years old <span class="genderImg"><img src="assets/image/icon/female-gender.svg" class="w-100" alt="female"></span></div>
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                                <div class="col-12">
+                                                                                                                    <div class="listItem">
+                                                                                                                        <div class="user_img"><img src="assets/image/LangMetRoi.png" class="w-100" alt="logo"></div>
+                                                                                                                        <div class="userDetails">
+                                                                                                                            <div class="username">Ngô Đình Long</div>
+                                                                                                                            <div class="userAge">27 years old <span class="genderImg"><img src="assets/image/icon/male-gender.svg" class="w-100" alt="male"></span></div>
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                                <div class="col-12">
+                                                                                                                    <div class="listItem">
+                                                                                                                        <div class="user_img"><img src="assets/image/KalvinElliot.png" class="w-100" alt="logo"></div>
+                                                                                                                        <div class="userDetails">
+                                                                                                                            <div class="username">Trader Nguyễn</div>
+                                                                                                                            <div class="userAge">32 years old <span class="genderImg"><img src="assets/image/icon/male-gender.svg" class="w-100" alt="male"></span></div>
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                                <div class="col-12">
+                                                                                                                    <div class="listItem">
+                                                                                                                        <div class="user_img"><img src="assets/image/SharkTung.png" class="w-100" alt="logo"></div>
+                                                                                                                        <div class="userDetails">
+                                                                                                                            <div class="username">Shark Tùng</div>
+                                                                                                                            <div class="userAge">33 years old <span class="genderImg"><img src="assets/image/icon/male-gender.svg" class="w-100" alt="male"></span></div>
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                                <div class="col-12">
+                                                                                                                    <div class="listItem">
+                                                                                                                        <div class="user_img"><img src="assets/image/JeaminThao.png" class="w-100" alt="logo"></div>
+                                                                                                                        <div class="userDetails">
+                                                                                                                            <div class="username">Nana Phạm</div>
+                                                                                                                            <div class="userAge">22 years old <span class="genderImg"><img src="assets/image/icon/female-gender.svg" class="w-100" alt="female"></span></div>
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                                <div class="col-12">
+                                                                                                                    <div class="listItem">
+                                                                                                                        <div class="user_img"><img src="assets/image/Nguyen.png" class="w-100" alt="logo"></div>
+                                                                                                                        <div class="userDetails">
+                                                                                                                            <div class="username">Nguyễn Như Hằng</div>
+                                                                                                                            <div class="userAge">35 years old <span class="genderImg"><img src="assets/image/icon/female-gender.svg" class="w-100" alt="female"></span></div>
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                                <div class="col-12">
+                                                                                                                    <div class="listItem">
+                                                                                                                        <div class="user_img"><img src="assets/image/pinklu.png" class="w-100" alt="logo"></div>
+                                                                                                                        <div class="userDetails">
+                                                                                                                            <div class="username">Pink Lu</div>
+                                                                                                                            <div class="userAge">31 years old <span class="genderImg"><img src="assets/image/icon/female-gender.svg" class="w-100" alt="female"></span></div>
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                                <div class="col-12">
+                                                                                                                    <div class="listItem">
+                                                                                                                        <div class="user_img"><img src="assets/image/ThamGia.png" class="w-100" alt="logo"></div>
+                                                                                                                        <div class="userDetails">
+                                                                                                                            <div class="username">QQ Thuỷ Tâm</div>
+                                                                                                                            <div class="userAge">26 years old <span class="genderImg"><img src="assets/image/icon/female-gender.svg" class="w-100" alt="female"></span></div>
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <!-- * List Side end -->
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- ** Connet Map Tab End -->
                             </div>
                         </div>
                     </div>

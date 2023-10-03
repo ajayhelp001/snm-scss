@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNM Dashboad | Data-News_postLists</title>
+    <link rel="icon" type="image/x-icon" href="assets/image/logo.png">
+    <!-- ****** Jquary ***** -->
+    <script src="assets/libs/jquary/jquery.min.js"></script>
+    <!-- ****** Bootstrap Css ***** -->
+    <link rel="stylesheet" href="assets/libs/bootstrap/css/bootstrap.min.css">
+    <!-- ****** Select2 Css -->
+    <link href="assets/libs/select2/select2.min.css" rel="stylesheet" />
+    <!-- ****** Style Css ***** -->
+    <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+<body>
+    <main class="main-dashboard">
+        <div class="maininner_Dashboard h-100 gx-0">
+            <!-- * Aside Bar Start -->
+            <div class="asideBar h-100">
+                <div class="row h-100 flex-column flex-nowrap mx-0 gx-0">
+                    <div class="col-12 logo_top">
+                        <div class="logo"><img src="assets/image/logo.png" class="w-100" alt="logo"></div>
+                        <div class="logoname"><img src="assets/image/SNM.png" class="w-100" alt="SNM"></div>
+                    </div>
+                    <div class="col-12 h-100 flex-fill overflow-hidden">
+                        <div class="asideBody h-100 overflow-y-auto">
+                            <ul class="nav_link">
+                                <li><a href="index.html" class="navlinks"><img src="assets/image/icon/icon-report.svg" alt="report"></a></li>
+                                <li><a href="data-news-postList.html" class="navlinks active"><img src="assets/image/icon/icon-collect.svg" alt="collect"></a></li>
+                                <li><a href="javascript:;" class="navlinks"><img src="assets/image/icon/icon-monitoring.svg" alt="monitoring"></a></li>
+                                <li><a href="javascript:;" class="navlinks"><img src="assets/image/icon/focus.svg" alt="admin"></a></li>
+                                <li><a href="javascript:;" class="navlinks"><img src="assets/image/icon/icon-admin.svg" alt="admin"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--! * Aside Bar End -->
+            <!-- * Main DashBoard Start -->
+            <div class="dashboard_Side h-100">
+                <div class="row h-100 flex-column flex-nowrap mx-0 gx-0">
+                    <!-- * User Header Start -->
+                    <div class="col-12">
+                        <div class="topheader">
+                            <div class="row mx-0 gx-0">
+                                <div class="col-7">
+                                    <div class="row pageLinks gx-0 mx-0">
+                                        <div class="col">
+                                            <a href="data-fb-postList.html" class="socialLinkLink facebook"><span><img src="assets/image/icon/facebook.svg" class="w-100" alt="facebook"></span> Facebook</a>
+                                        </div>
+                                        <div class="col">
+                                            <a href="javascript:;" class="socialLinkLink tiktok"><span><img src="assets/image/icon/tiktok.svg" class="w-100" alt="tiktok"></span> Tiktok</a>
+                                        </div>
+                                        <div class="col">
+                                            <a href="javascript:;" class="socialLinkLink youtube"><span><img src="assets/image/icon/yoytube.svg" class="w-100" alt="youtube"></span> Youtube</a>
+                                        </div>
+                                        <div class="col">
+                                            <a href="javascript:;" class="socialLinkLink news active"><span><img src="assets/image/icon/digital-news.svg" class="w-100" alt="digital news"></span> Digital news</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col search_bar">
+                                    <div class="input-group">
+                                        <button type="button" class="input-group-text" id="basic-addon1"><img src="assets/image/icon/search_icon.svg" alt="search"></button>
+                                        <input type="text" class="form-control" placeholder="Search anything" aria-label="Username" aria-describedby="basic-addon1">
+                                    </div>
+                                </div>
+                                <div class="col-auto userSide">
+                                    <div class="dropdown notificationDropDown">
+                                        <div class="notification" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside"><div class="bell"><img src="assets/image/icon/bell.svg" class="w-100" alt="logo"></div><span>5</span></div>
+                                        <div class="dropdown-menu">
+                                            <div class="n_title">Notifications</div>
+                                            <div class="n_Body">
+                                                <div class="n_item">
+                                                    <div class="logoimg"><img src="assets/image/icon/user.svg" class="w-100" alt="logo"></div>
+                                                    <div class="n_message">
+                                                        <div class="directMessage">Detect a connect-link from <span>Phan Lê Mai Lan</span> to <span>Phan Lê Dũng</span></div>
+                                                        <div class="date">05/09/2023 <span>10:55</span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="n_item">
+                                                    <div class="logoimg"><img src="assets/image/icon/user.svg" class="w-100" alt="logo"></div>
+                                                    <div class="n_message">
+                                                        <div class="directMessage">Detect a connect-link from <span>Phan Lê Mai Lan</span> to <span>Phan Lê Thanh Hà</span></div>
+                                                        <div class="date">05/09/2023 <span>09:23</span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="n_item">
+                                                    <div class="logoimg"><img src="assets/image/icon/user.svg" class="w-100" alt="logo"></div>
+                                                    <div class="n_message">
+                                                        <div class="directMessage">Phan Lê Mai Lan has created a post on the wall</span></div>
+                                                        <div class="date">05/09/2023 <span>09:23</span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="n_item">
+                                                    <div class="logoimg"><img src="assets/image/icon/user.svg" class="w-100" alt="logo"></div>
+                                                    <div class="n_message">
+                                                        <div class="directMessage"><span>Detected a violations in a post of a Facebook account Nana Phạm</span></div>
+                                                        <div class="date">05/09/2023 <span>09:23</span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="n_item">
+                                                    <div class="logoimg"><img src="assets/image/icon/user.svg" class="w-100" alt="logo"></div>
+                                                    <div class="n_message">
+                                                        <div class="directMessage"><span>Detected a violations in a post of a Facebook account Nana Phạm</span></div>
+                                                        <div class="date">05/09/2023 <span>09:23</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="notification"><div class="bell"><img src="assets/image/icon/bell.svg" class="w-100" alt="logo"></div><span>5</span></div> -->
+                                    <div class="user"><img src="assets/image/icon/user.svg" class="w-100" alt="logo"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="breadcrumb_Bar">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item active"><a href="index.html" class="page_link">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="javascript:;" class="page_link">Data</a></li>
+                                    <li class="breadcrumb-item" aria-current="page">Digital news</li>
+                                </ol>
+                            </nav>
+                        </div>
+                        <div class="all_sources">
+                            <div class="row  gx-0 align-items-center">
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="row all_data gx-0">
+                                                <div class="col-auto data">Feeds</div>
+                                                <div class="col-auto"><a href="assets/docx/report-000023.pdf" class="sourcesBtn" download><img src="assets/image/icon/PDF.svg" alt="download pdf w-100"></a></div>
+                                                <div class="col-auto"><a href="assets/docx/report-000023.xls" class="sourcesBtn" download><img src="assets/image/icon/excle_Sheet.svg" alt="download pdf w-100"></a></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 nav nav-pills row overviewTabs mx-0" id="pills-tab" role="tablist">
+                                            <li class="nav-item col-auto">
+                                                <a href="data-news-postList.html" class="nav-link" >Overview</a>
+                                            </li>
+                                            <li class="nav-item col-auto">
+                                                <a href="data-news-sourcesList.html" class="nav-link ">Sources</a>
+                                            </li>
+                                            <li class="nav-item col-auto">
+                                                <a href="javascript:;" class="nav-link active">Keyword</a>
+                                            </li>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-auto">
+                                    <div class="row gx-2">
+                                        <div class="col-auto">
+                                            <div class="categoryCard">
+                                                <div class="card_body">
+                                                    <div class="categoryImg"><img src="assets/image/icon/accessSource.svg" alt="post"></div>
+                                                    <div class="valu">200<span>Sources</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <div class="categoryCard">
+                                                <div class="card_body">
+                                                    <div class="categoryImg"><img src="assets/image/icon/post.svg" alt="post"></div>
+                                                    <div class="valu">3.8m<span>Posts</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <div class="categoryCard">
+                                                <div class="card_body">
+                                                    <div class="categoryImg"><img src="assets/image/icon/media.svg" alt="post"></div>
+                                                    <div class="valu">1.2k<span>Media</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <div class="categoryCard">
+                                                <div class="card_body">
+                                                    <div class="categoryImg"><img src="assets/image/icon/danger.svg" alt="post"></div>
+                                                    <div class="valu">200<span>Violations</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--! * User Header End -->
+                    <!-- * Dashboard Chart Start -->
+                    <div class="col-12 h-100 flex-fill maincontent overflow-hidden">
+                        <div class="manin_content_Body h-100 overflow-hidden">
+                            <div class="tab-content h-100" id="pills-tabContent">
+                                <!-- ** keyword Tab Start -->
+                                <div class="tab-pane fade h-100 show active">
+                                    <div class="row gx-2 overflow-y-auto justify-content-center row-gap-2 h-100">
+                                        <div class="col-auto h-100 keyword_category_name">
+                                            <div class="card top_post h-100 levelCard list_post_Table">
+                                                <div class="card-body h-100">
+                                                    <div class="row flex-column flex-nowrap h-100 list">
+                                                        <div class="col-12">
+                                                            <div class="card_title keywords d-flex m-0">Categories</div> 
+                                                        </div>
+                                                        <div class="col-12 h-100 flex-fill overflow-y-auto">
+                                                            <ul class="row mx-0 gx-0 list-unstyled m-0 p-0 posttableSide post_listTable position-relative">
+                                                                <li class="col-12"><a href="javascript:;" class="categoryLink">Crime</a></li>
+                                                                <li class="col-12"><a href="javascript:;" class="categoryLink">Drug</a></li>
+                                                                <li class="col-12"><a href="javascript:;" class="categoryLink">Sexual</a></li>
+                                                                <li class="col-12"><a href="javascript:;" class="categoryLink">Hated</a></li>
+                                                                <li class="col-12"><a href="javascript:;" class="categoryLink">War</a></li>
+                                                                <li class="col-12"><a href="javascript:;" class="categoryLink">Violence</a></li>
+                                                                <li class="col-12"><a href="javascript:;" class="categoryLink active">Weapon</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto h-100 keyword_category_KEY">
+                                            <div class="card top_post h-100 levelCard list_post_Table">
+                                                <div class="card-body h-100">
+                                                    <div class="row flex-column flex-nowrap h-100 list">
+                                                        <div class="col-12">
+                                                            <div class="card_title keywords d-flex">Keyword</div> 
+                                                            <div class="search_bar rounded-3 listSearch">
+                                                                <div class="input-group">
+                                                                    <button type="button" class="input-group-text" id="basic-addon1"><img src="assets/image/icon/search_icon.svg" alt="search"></button>
+                                                                    <input type="search" class="form-control shadow-none" placeholder="input keywords" aria-label="Username" aria-describedby="basic-addon1">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 h-100 flex-fill overflow-hidden">
+                                                            <div class="row mx-0 gx-0 posttableSide post_listTable h-100 position-relative">
+                                                                <div class="col-12 post_table table-responsive h-100">
+                                                                    <div class="input_wrapper">
+                                                                        <div class="content">
+                                                                            <ul class="keygroup"><input type="text" class="input_keys" spellcheck="false"></ul>
+                                                                        </div>
+                                                                        <div class="details d-none">
+                                                                            <p><span>10</span> tags are remaining</p>
+                                                                            <button>Remove All</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 text-end"><button type="button" class="applybtn shadow-none border-0 px-5">Save</button></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- ** keyword Tab End -->
+                            </div>
+                        </div>
+                    </div>
+                    <!--! * Dashboard Chart End -->
+                </div>
+            </div>
+            <!--! * Main DashBoard Start -->
+
+        </div>
+    </main>
+    <!--? ***** Details Post Modal Start ***** -->
+    <!-- Button trigger modal -->
+    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"></button> -->
+    <!-- Modal -->
+    <div class="modal fade detailsPostModal modaldesign" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog postmodule modal-dialog-scrollable modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0 p-0 d-block w-100">
+                    <div class="d-flex align-items-center">
+                        <div class="modal-title m-0 d-flex flex-wrap" id="staticBackdropLabel">Detail post 
+                            <a href="assets/docx/report-000023.pdf" class="sourcesBtn lightbg" download=""><img src="assets/image/icon/PDF.svg" alt="download pdf w-100"></a>
+                            <a href="assets/docx/report-000023.xls" class="sourcesBtn lightbg" download=""><img src="assets/image/icon/excle_Sheet.svg" alt="download pdf w-100"></a>
+                            <a href="javascript:;" class="sourcesBtn lightbg" download=""><img src="assets/image/icon/connect-icon.svg" alt="download pdf w-100"></a>
+                        </div>
+                        <button type="button" class="btn-close btn-close-white shadow-none border-0" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="sources">
+                        <div class="row row-gap-2">
+                            <div class="col">
+                                <div class="title details_title">Sources</div>
+                                <a href="javascript:;" class="sourcegroup text-decoration-none">
+                                    <span class="logoimg"><img src="assets/image/source/sourceLogo1.svg" alt="logo"></span><div class="sourceName text-truncate">Dân Trí</div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <div class="title details_title">Location</div>
+                                <div class="sourcegroup text-nowrap">
+                                    <button type="button" class="categoryBtn w-100 d-flex align-items-center"><span class="location"><img src="assets/image/icon/location.svg" alt="logo"></span>Crime</button>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="title details_title">Timestamp</div>
+                                <div class="sourcegroup text-nowrap">
+                                    <button type="button" class="categoryBtn w-100 d-flex align-items-center">17/06/2023 14:40</button>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="title details_title">Violation</div>
+                                <div class="sourcegroup violation text-nowrap">
+                                    <button type="button" class="shadow-none post_Btn"><span><img src="assets/image/icon/dangerWhite.svg" alt="danger"></span>ma tuý</button><div class="sourceName">(5 times)</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-auto orignalPost">
+                                    <div class="title">Original post</div>
+                                </div>
+                                <div class="col violation">
+                                    <div class="title text-center">Violation (5)</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="col-auto orignalPost">
+                                <div class="row innerbodypart">
+                                    <div class="col-12 postName">Tài xế khai sử dụng ma túy đá khi lái xe để… đỡ buồn ngủ!</div>
+                                    <div class="col-12 postdate">Thứ tư, 17/06/2020 - 14:40</div>
+                                    <div class="col-12"><div class="postImg"><img src="assets/image/post-img.png" class="w-100" alt="post img"></div></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 innerbodypart py-0ty">
+                            <div class="row content mx-0">
+                                <div class="col-12 d-flex align-items-center">
+                                    <div class="orignalPost">
+                                        <p class="contentfild m-0">(Dân trí) - Bị cơ quan chức năng phát hiện việc sử dụng ma túy khi lái xe, tài xế khai đã sử dụng ma tuy để... chống buồn ngủ khi tham gia giao thông.</p>
+                                    </div>
+                                    <div class="postbutoon"><button type="button" class="shadow-none post_Btn"><span><img src="assets/image/icon/dangerWhite.svg" alt="danger"></span>ma tuý</button></div>
+                                </div>
+                                <div class="col-12 d-flex align-items-center">
+                                    <div class="orignalPost">
+                                        <p class="contentfild m-0">Sáng 17/6, thông tin từ Phòng Cảnh sát giao thông Công an tỉnh Đắk Lắk, cho biết, đơn vị đã chuyển giao hồ sơ để xử lý một tài xế lái xe thư báo dương tính với chất ma túy để xử lý theo quy định.</p>
+                                    </div>
+                                    <div class="postbutoon"><button type="button" class="shadow-none post_Btn"><span><img src="assets/image/icon/dangerWhite.svg" alt="danger"></span>ma tuý</button></div>
+                                </div>
+                                <div class="col-12 d-flex align-items-center">
+                                    <div class="orignalPost">
+                                        <p class="contentfild m-0">Trước đó, khoảng 17h ngày 16/6, một tổ tuần tra của Phòng CSGT Công an tỉnh Đắk Lắk đang làm nhiệm vụ trên đường Hồ Chí Minh đoạn qua xã Hòa Phú (TP Buôn Ma Thuột) thì phát hiện chiếc xe thư báo mang BKS 51C-346.12 lưu thông Đắk Nông - Đắk Lắk có nhiều biểu hiện nghi vấn nên đã ra tín hiệu dừng để kiểm tra.</p>
+                                    </div>
+                                </div>
+                                <div class="col-12 d-flex align-items-center">
+                                    <div class="orignalPost">
+                                        <p class="contentfild m-0">Tài xế khai tên Nguyễn Duy L. (30 tuổi, ngụ huyện Quỳnh Lưu, tỉnh Nghệ An). Qua test nhanh, tổ công tác phát hiện tài xế L. dương tính với chất ma túy.</p>
+                                    </div>
+                                    <div class="postbutoon"><button type="button" class="shadow-none post_Btn"><span><img src="assets/image/icon/dangerWhite.svg" alt="danger"></span>ma tuý</button></div>
+                                </div>
+                                <div class="col-12 d-flex align-items-center">
+                                    <div class="orignalPost">
+                                        <p class="contentfild m-0">Tài xế L. khai nhận đã sử dụng ma túy đá được hơn 1 năm nay và cho biết sử dụng ma túy để... đỡ buồn ngủ khi lái xe và bản thân không nghĩ đến hậu quả của việc sử dụng ma túy khi điều khiển phương tiện tham gia giao thông.</p>
+                                    </div>
+                                    <div class="postbutoon"><button type="button" class="shadow-none post_Btn"><span><img src="assets/image/icon/dangerWhite.svg" alt="danger"></span>ma tuý</button></div>
+                                </div>
+                                <div class="col-12 d-flex align-items-center">
+                                    <div class="orignalPost">
+                                        <p class="contentfild m-0">Tổ tuần tra đã lập biên bản đối với tài xế L. về hành vi vi phạm quy định điều khiển xe trên đường mà trong cơ thể có chất ma túy để xử lý theo quy định.</p>
+                                    </div>
+                                    <div class="postbutoon"><button type="button" class="shadow-none post_Btn"><span><img src="assets/image/icon/dangerWhite.svg" alt="danger"></span>ma tuý</button></div>
+                                </div>
+                                <div class="col-12 d-flex align-items-center">
+                                    <div class="orignalPost">
+                                        <p class="contentfild m-0">Thúy Diễm</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--? ***** Details Post Modal End ***** -->
+
+    <!-- *** Bootstrap Js ***** -->
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- *** Select2 Js *** -->
+    <script src="assets/libs/select2/select2.min.js"></script>
+    <!-- **** Custom Js ***** -->
+    <script src="assets/js/custom.js"></script>
+
+</body>
+</html>
