@@ -477,93 +477,6 @@
             gap: 12px;
         }
 
-        & .informationCard {
-            background-color: var(--black--dark);
-            border-radius: 8px;
-            & .card-body {
-                padding: 8px 16px;
-                & .innerbody {
-                    gap: 12px;
-                    & .card_title {
-                        background-color: var(--black--dark);
-                        margin: 0px;
-                        color: var(--neutral);
-                        font-size: 16px;
-                        font-style: normal;
-                        font-weight: 700;
-                        line-height: 160%; /* 25.6px */
-                        
-                    }
-                    & .posted {
-                        gap: 8px;
-                        & .accountPost {
-                            color: var(--netural-dark);
-                            font-size: 12px;
-                            font-style: normal;
-                            font-weight: 400;
-                            line-height: 140%; /* 16.8px */
-                            margin-bottom: 4px;
-                        }
-                        & .accounts {
-                            display: flex;
-                            align-items: center;
-                            gap: 12px;
-                            font-size: 14px;
-                            & .userName {
-                                max-width: 150px;
-                                overflow: hidden;
-                                text-overflow: ellipsis;
-                                white-space: nowrap;
-                            }
-                        }
-                        & .accountUser {
-                            width: 26px;
-                            height: 26px;
-                            border-radius: 26px;
-                            overflow: hidden;
-                            & img {
-                                object-fit: cover;
-                            }
-                        }
-                        & .socialImg {
-                            text-align: center;
-                            display: flex;
-                            & img {
-                                max-width: 20px;
-                                width: 100%;
-                            }
-                        }
-                    }
-                    & .socialMetricsCard {
-                        border: 1px solid var(--balck--light);
-                        & .cardbody {
-                            &>div{
-                                border-left: 1px solid var( --balck--light);
-                                padding: 4px 0px;
-                                &:first-child{
-                                    border-left: none;
-                                }
-                            }
-                            & .metrics, & .rate {
-                                color: var(--white);
-                                text-align: center;
-                                font-style: normal;
-                            }
-                            & .metrics{
-                                font-size: 10px;
-                                font-weight: 500;
-                                line-height: 140%; /* 14px */
-                            }
-                            & .rate{
-                                font-size: 16px;
-                                font-weight: 700;
-                                line-height: 160%; /* 25.6px */
-                            }
-                        }
-                    }
-                }
-            }
-        }
         & .pichart {
             & .card-body {
                 & .innerbody {
@@ -701,6 +614,95 @@
                         justify-content: space-between;
                         padding: 4px 0px;
                         border-top: 1px solid var(--neutral);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.informationCard {
+    background-color: var(--black--dark);
+    border-radius: 8px;
+    & .card-body {
+        padding: 8px 16px;
+        & .innerbody {
+            gap: 12px;
+            & .card_title {
+                background-color: var(--black--dark);
+                margin: 0px;
+                color: var(--neutral);
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 160%; /* 25.6px */
+                
+            }
+            & .posted {
+                gap: 8px;
+                & .accountPost {
+                    color: var(--netural-dark);
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 140%; /* 16.8px */
+                    margin-bottom: 4px;
+                }
+                & .accounts {
+                    display: flex;
+                    align-items: center;
+                    gap: 12px;
+                    font-size: 14px;
+                    & .userName {
+                        max-width: 150px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
+                }
+                & .accountUser {
+                    width: 26px;
+                    height: 26px;
+                    border-radius: 26px;
+                    overflow: hidden;
+                    & img {
+                        object-fit: cover;
+                    }
+                }
+                & .socialImg {
+                    text-align: center;
+                    display: flex;
+                    & img {
+                        max-width: 20px;
+                        width: 100%;
+                    }
+                }
+            }
+            & .socialMetricsCard {
+                border: 1px solid var(--balck--light);
+                & .cardbody {
+                    &>div{
+                        border-left: 1px solid var( --balck--light);
+                        padding: 4px 0px;
+                        &:first-child{
+                            border-left: none;
+                        }
+                    }
+                    & .metrics, & .rate {
+                        color: var(--white);
+                        text-align: center;
+                        font-style: normal;
+                    }
+                    & .metrics{
+                        font-size: 10px;
+                        font-weight: 500;
+                        line-height: 140%; /* 14px */
+                    }
+                    & .rate{
+                        font-size: 16px;
+                        font-weight: 700;
+                        line-height: 160%; /* 25.6px */
                     }
                 }
             }

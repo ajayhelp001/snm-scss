@@ -862,8 +862,10 @@
     & .mediaImg {
         border-radius: 4px;
         overflow: hidden;
+        height: 100%;
         & img {
             object-fit: cover;
+            height: 100%;
         }
         &:hover{
             & img {
@@ -904,42 +906,42 @@
 // *******************************************************  [ Fb Post-Details  Css Start ] *********************************************
 
 // *------------------------------------------------------******************--------------------------------------------
-.mainpostcard{
-    max-width: 460px;
-    width: 100%;
-}
-.commentcard {
-    max-width: 412px;
-    width: 100%;
-}
-.postdetailmediacard{
-    max-width: 372px;
-    width: 100%;
-}
-.post_detailsMaping_crad{
-    // max-width: calc(100% - 468px - 420px - 380px - 10px);
-    max-width: 412px;
-    width: 100%;
-}
 
-.analysisCommentBox{
-    & .originalComment {
-        padding: 12px;
-        background-color: var(--black--dark) !important;
-    }
-    & .comment_card{
-        max-width: 476px;
-        width: 100%;
-    }
-}
-.actorListCard{
-    max-width: 380px;
-    width: 100%;
-}
 // *------------------------------------------------------******************--------------------------------------------
 
 .facebook-postDetails-overview{
-
+    & .mainpostcard{
+        max-width: 460px;
+        width: 100%;
+    }
+    & .commentcard {
+        max-width: 412px;
+        width: 100%;
+    }
+    & .postdetailmediacard{
+        max-width: 372px;
+        width: 100%;
+    }
+    & .post_detailsMaping_crad{
+        // max-width: calc(100% - 468px - 420px - 380px - 10px);
+        max-width: 412px;
+        width: 100%;
+    }
+    
+    & .analysisCommentBox{
+        & .originalComment {
+            padding: 12px;
+            background-color: var(--black--dark) !important;
+        }
+        & .comment_card{
+            max-width: 476px;
+            width: 100%;
+        }
+    }
+    & .actorListCard{
+        max-width: 380px;
+        width: 100%;
+    }
 }
 .mainpostcard {
     & .informationCard{

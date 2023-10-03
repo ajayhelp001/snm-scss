@@ -96,6 +96,10 @@ img {
     &.listSearch {
         background-color: var(--balck--light);
     }
+    &.darkbar {
+        background-color: var(--black--dark);
+        min-height: 40px;
+    }
 }
 
 

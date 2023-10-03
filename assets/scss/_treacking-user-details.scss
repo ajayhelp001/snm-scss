@@ -38,4 +38,512 @@
         font-weight: 400;
         line-height: 140%; /* 19.6px */
     }
+    & .post_table {
+        & .table {
+            & thead {
+                & tr {
+                    th {
+                        height: 48px;
+                    }
+                }
+            }
+            & tbody{
+                & tr {
+                    & td, th {
+                        height: 40px;
+                    }
+
+                }
+                & .icon{
+                    height: 24px;
+                    width: 24px;
+                }
+                & .postContent{
+                    max-width: 307px;
+                }
+            }
+        }
+    }
+}
+
+
+// socialInformation
+.socialInformation{
+    & .socialImg {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        border: 4px solid var(--active);
+        position: relative;
+        & .useraccountimg{
+            border-radius: 50%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        & .socialIcon{
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            right: -4%;
+            bottom: 0%;
+        }
+        &.tiktok{
+            border-color: var(--white);
+        }
+        &.youtube{
+            border-color: var(--theme-red);
+        }
+    }
+    & .socialName {
+        color: var(--white);
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%; /* 28px */
+        letter-spacing: 0.5px;
+    }
+    & .socialGender {
+        width: 16px;
+        height: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    & .socialTab {
+        & .nav-item {
+            & .nav-link {
+                width: 32px;
+                height: 32px;
+                background-color: transparent;
+                position: relative;
+                &::before{
+                    content: '';
+                    width: 2px;
+                    height: 2px;
+                    border-radius: 2px;
+                    background-color: var(--white);
+                    position: absolute;
+                    bottom: -12px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    transition: all ease-in-out 0.45s;
+                }
+                & img {
+                    width: 100%;
+                }
+                &.active, &:hover{
+                    &::before{
+                        width: 50%;
+                        background-color: var(--active);
+                    }
+                    &.youtube{
+                        &::before{
+                            width: 50%;
+                            background-color: var(--theme-red);
+                        }
+                    }
+                    &.tiktok{
+                        &::before{
+                            width: 50%;
+                            background-color: var(--white);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    & .linkcontent {
+        overflow: hidden;
+        color: var(--white-75);
+        text-align: center;
+        text-overflow: ellipsis;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 21px */
+        letter-spacing: -0.5px;
+        text-decoration: none;
+        &:hover{
+            color: var(--white);
+        }
+    }
+    & .posts {
+        color: var(--white-50);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%; /* 19.6px */
+    }
+    & .follow {
+        color: var(--white);
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%; /* 25.2px */
+        margin-top: 4px;
+    }
+}
+
+// * famely_card
+.famely_card {
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-radius: 8px;
+    background-color: var(--black--dark);
+    & .user_img {
+        width: 40px;
+        height: 40px;
+        min-width: 40px;
+        border-radius: 50%;
+        & img {
+            object-fit: cover;
+        }
+    }
+    & .userDetails {
+        color: var(--white);
+        font-style: normal;
+        & .username {
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 140%; /* 25.2px */
+            letter-spacing: 0.5px
+        }
+        & .userAge{
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 150%; /* 21px */
+        }
+    }
+}
+
+
+// ** networkcards
+.networkcards {
+    height: calc(33% - 4px);
+}
+
+// ** networks-card
+.networks-card {
+    & .items {
+        padding: 8px;
+        gap: 8px;
+        display: flex;
+        align-items: start;
+        border-radius: 8px;
+        &:hover{
+            background-color: var(--balck--light);
+        }
+        & .imageside {
+            width: 32px;
+            min-width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &.network{
+                border-radius: 6.5px;
+                background-color: var(--active-dark);
+                & img{
+                    width: 18px;
+                }
+                &.tower{
+                    background-color: var(--successful);
+                }
+            }
+        }
+        & .contentSide {
+            width: 100%;
+            & .username , & .date_time, & .content{
+                color: var(--white);
+                font-style: normal;
+            }
+            & .username {
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 140%; /* 19.6px */
+            }
+            & .date_time {
+                font-size: 10px;
+                font-weight: 400;
+                line-height: 140%; /* 14px */
+            }
+            & .content {
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 140%; /* 16.8px */
+            }
+        }
+    }
+}
+
+// **
+// **** socialCategoery Crad *****
+.socialCategoery{
+    &.informationCard{
+        & .categoryes {
+            & .card_body {
+                padding: 8px 3px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 12px;
+                & .categoryImg {
+                    width: 32px;
+                    height: 32px;
+                    & img {
+                        object-fit: contain;
+                        width: 100%;
+                    }
+                    &.grayimg{
+                        & img {
+                            filter: brightness(1) grayscale(1);
+                        }
+                    }
+                }
+                & .valu {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    color: var(--white);
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 120%; /* 28.8px */
+                    gap: 4px;
+                    & span {
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 140%; /* 16.8px */
+                    }
+                }
+            }
+        }
+        & .socialMetricsCard{
+            & .cardbody{
+                border: 1px solid var(--balck--light);
+                border-bottom: none;
+                border-right: none;
+                &>div{
+                    border: 1px solid var(--balck--light);
+                }
+                & .growthItem {
+                    padding: 8px 3px;
+                    & .socialmetrics {
+                        font-size: 12px;
+                        line-height: 140%;
+                    }
+                    & .rate {
+                        font-size: 18px;
+                        line-height: 140%
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// ***** ------------------------------------------------- tracking-postDetails-overview -------------------------------------------
+.tracking-postDetails-overview{
+    & .userInfoCard{
+        max-width: 460px;
+        width: 100%;
+    }
+    & .mediacard {
+        max-width: 540px;
+        width: 100%;
+    }
+    & .postdetailmediacard{
+        max-width: 372px;
+        width: 100%;
+    }
+    & .post_detailsMaping_crad{
+        // max-width: calc(100% - 468px - 420px - 380px - 10px);
+        max-width: 308px;
+        width: 100%;
+    }
+    
+    & .analysisCommentBox{
+        & .originalComment {
+            padding: 12px;
+            background-color: var(--black--dark) !important;
+        }
+        & .comment_card{
+            max-width: 476px;
+            width: 100%;
+        }
+    }
+    & .actorListCard{
+        max-width: 380px;
+        width: 100%;
+    }
+}
+
+
+
+
+
+// ? --------------------------- Responsive--------------
+
+@media screen and (max-width: 1800px) {
+    // **** socialCategoery Crad *****
+    .socialCategoery{
+        &.informationCard{
+            & .categoryes {
+                & .card_body {
+                    gap: 8px;
+                    & .categoryImg {
+                        width: 28px;
+                        height: 28px;
+                    }
+                    & .valu {
+                        font-size: 18px;
+                        & span {
+                            font-size: 11px;
+                        }
+                    }
+                }
+            }
+            & .socialMetricsCard{
+                & .cardbody{
+                    & .growthItem {
+                        & .socialmetrics {
+                            font-size: 10px;
+                        }
+                        & .rate {
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .informationCard {
+        & .overviewTabs {
+            & .nav-item {
+                & .nav-link {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1700px) {
+    // **** socialCategoery Crad *****
+    .socialCategoery{
+        &.informationCard{
+            & .categoryes {
+                & .card_body {
+                    gap: 6px;
+                    & .categoryImg {
+                        width: 24px;
+                        height: 24px;
+                    }
+                    & .valu {
+                        font-size: 16px;
+                        & span {
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+            & .socialMetricsCard{
+                & .cardbody{
+                    & .growthItem {
+                        & .socialmetrics {
+                            font-size: 10px;
+                        }
+                        & .rate {
+                            font-size: 13px;
+                            & .tredMap{
+                                & .tredingImg {
+                                    width: 16px;
+                                    height: 16px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .informationCard {
+        & .overviewTabs {
+            & .nav-item {
+                & .nav-link {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 1600px) {
+    // **** socialCategoery Crad *****
+    .socialCategoery{
+        &.informationCard{
+            & .categoryes {
+                & .card_body {
+                    gap: 6px;
+                    & .categoryImg {
+                        width: 24px;
+                        height: 24px;
+                    }
+                    & .valu {
+                        font-size: 16px;
+                        & span {
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+            & .socialMetricsCard{
+                &.metrics{
+                    & .cardbody{
+                        &>div{
+                            min-width: 50%;
+                        }
+                    }
+                }
+                & .cardbody{
+                    & .growthItem {
+                        & .socialmetrics {
+                            font-size: 10px;
+                        }
+                        & .rate {
+                            font-size: 13px;
+                            & .tredMap{
+                                & .tredingImg {
+                                    width: 16px;
+                                    height: 16px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .informationCard {
+        & .overviewTabs {
+            & .nav-item {
+                & .nav-link {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+
 }
