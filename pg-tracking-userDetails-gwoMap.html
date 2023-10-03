@@ -127,7 +127,7 @@
                                             <div class="nav nav-pills" id="pills-tab" role="tablist">
                                                 <ul class="d-flex flex-wrap m-0 p-0 overviewTabs list-unstyled gap-3">
                                                     <li class="nav-item " role="presentation">
-                                                        <a href="javascript:;" class="nav-link active">Overview</a>
+                                                        <a href="pg-tracking-userDetails-overview.html" class="nav-link">Overview</a>
                                                     </li>
                                                     <li class="nav-item " role="presentation">
                                                         <a href="pg-tracking-userDetails-social.html" class="nav-link">Social</a>
@@ -139,7 +139,7 @@
                                                         <a href="pg-tracking-userDetails-insight.html" class="nav-link">Insight</a>
                                                     </li>
                                                     <li class="nav-item " role="presentation">
-                                                        <a href="pg-tracking-userDetails-gwoMap.html" class="nav-link">Geo-map</a>
+                                                        <a href="javascript:;" class="nav-link active">Geo-map</a>
                                                     </li>
                                                     <li class="nav-item " role="presentation">
                                                         <a href="pg-tracking-userDetails-connectLink.html" class="nav-link">Connect-link</a>
@@ -193,164 +193,139 @@
                     <div class="col-12 h-100 flex-fill maincontent overflow-hidden tracking-postDetails-overview">
                         <div class="manin_content_Body h-100 overflow-hidden">
                             <div class="tab-content h-100" id="pills-tabContent">
-                                <!-- ** Overview Tab Start -->
+                                <!-- ** Geo Map Tab Start -->
                                 <div class="tab-pane fade h-100 show active">
-                                    <div class="d-flex gx2 gap-2 justify-content-center verflow-y-auto row-gap-2 h-100">
-                                        <div class="colauto h-100">
-                                            <div class="card levelCard mainpostcard userInfoCard basicinfoCard h-100">
+                                    <div class="row gx-2 overflow-y-auto justify-content-center row-gap-2 h-100">
+                                        <div class="col-12 h-100">
+                                            <div class="card levelCard h-100">
                                                 <div class="card-body h-100">
                                                     <div class="row flex-column flex-nowrap h-100">
                                                         <div class="col-12">
-                                                            <div class="card_title d-flex gap-12 justify-content-start">Basic informations</div>
+                                                            <div class="card_title">Geo-map of related accounts</div>
                                                         </div>
                                                         <div class="col-12 h-100 flex-fill overflow-y-auto">
-                                                            <div class="row gap-12 text-white">
-                                                                <div class="col-12 basic_information_user d-flex align-items-center justify-content-center gap-12">
-                                                                    <div class="useR_img"><img src="assets/image/media/ima/-mediaExample-1.png" alt=""></div>
-                                                                    <div class="usrname">Phan Lê Mai Lan</div>
-                                                                    <div class="gender ms-2"><img src="assets/image/icon/female-gender-dark.svg" class="w-100" alt="female"></div>
-                                                                </div>
-                                                                <div class="col-12">
-                                                                    <div class="informationCard rounded-0 bg-transparent">
-                                                                        <div class="card-body px-0 pt-0">
-                                                                            <div class="row innerbody">
-                                                                                <!-- <div class="col-12 posted">
-                                                                                    <div class="accountPost">Account related</div>
-                                                                                    <div class="accountedPosted d-flex gap-8">
-                                                                                        <div class="accountUser"><img src="assets/image/fb_user.png" class="w-100" alt="user Image"></div>
-                                                                                        <div class="userName fw-bold">Phan Lê Mai Lan</div>
-                                                                                    </div>
-                                                                                </div> -->
-                                                                                <div class="col-12 posted">
-                                                                                    <div class="accountPost">Social metrics</div>
-                                                                                    <div class="card socialMetricsCard rounded-0">
-                                                                                        <div class="row gx-0 cardbody">
-                                                                                            <div class="col-4 items">
-                                                                                                <div class="socialmetrics">Engagement rate </div>
-                                                                                                <div class="rate">0.165 <div class="tredMap greenzone"><div class="tredingImg"><img src="assets/image/icon/tredMap.svg" class="w-100" alt="treding"></div> <span>4.2%</span></div></div>
+                                                            <div class="row text-white h-100">
+                                                                <div class="col-12 h-100">
+                                                                    <div class="card h-100 overflow-hidden">
+                                                                        <div class="card-body p-0 h-100 position-relative">
+                                                                            <!-- * Map -->
+                                                                            <div class="geo_map h-100 overflow-auto"><img src="assets/image/geo-map.png" class="w-100 h-100" alt=""></div>
+                                                                            <!-- * List Side start -->
+                                                                            <div class="listmap p-3 h-100 position-absolute top-0 end-0">
+                                                                                <div class="actorListCard h-100">
+                                                                                    <div class="card h-100 levelCard">
+                                                                                        <div class="card-body h-100">
+                                                                                            <div class="row flex-column flex-nowrap h-100">
+                                                                                                <div class="col-12">
+                                                                                                    <div class="card_title d-flex justify-content-between align-items-center">
+                                                                                                        <div class="cuntryflage">Actor list</div>
+                                                                                                        <div class="add-button d-flex align-items-center gap-8">
+                                                                                                            <button type="button" class="appendBtn moniter gap-1 lightbg"><img src="assets/image/icon/arrow-right.svg" alt="plus"><img src="assets/image/icon/focus.svg" alt="plus"></button>
+                                                                                                            <button type="button" class="appendBtn moniter lightbg"><img src="assets/image/icon/arrow-right.svg" alt="plus"><img src="assets/image/icon/icon-monitoring.svg" alt="plus"></button>
+                                                                                                        </div>
+                                                                                                    </div> 
+                                                                                                    
+                                                                                                </div>
+                                                                                                <div class="col-12 h-100 flex-fill overflow-x-hidden overflow-y-auto">
+                                                                                                    <div class="row userDistentCard">
+                                                                                                        <div class="col-12">
+                                                                                                            <div class="listItem active">
+                                                                                                                <div class="user_img"><img src="assets/image/fb_user.png" class="w-100" alt="logo"></div>
+                                                                                                                <div class="userDetails">
+                                                                                                                    <div class="username">Phan Lê Mai Lan</div>
+                                                                                                                    <div class="userAge">23 years old <span class="genderImg"><img src="assets/image/icon/female-gender.svg" class="w-100" alt="female"></span></div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="col-12">
+                                                                                                            <div class="listItem">
+                                                                                                                <div class="user_img"><img src="assets/image/BikerAnTOn.png" class="w-100" alt="logo"></div>
+                                                                                                                <div class="userDetails">
+                                                                                                                    <div class="username">Phan Lê Mai Lan</div>
+                                                                                                                    <div class="userAge">27 years old <span class="genderImg"><img src="assets/image/icon/male-gender.svg" class="w-100" alt="male"></span></div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="col-12">
+                                                                                                            <div class="listItem">
+                                                                                                                <div class="user_img"><img src="assets/image/thanhhaHN.png" class="w-100" alt="logo"></div>
+                                                                                                                <div class="userDetails">
+                                                                                                                    <div class="username">Phan Thanh Hà</div>
+                                                                                                                    <div class="userAge">45 years old <span class="genderImg"><img src="assets/image/icon/female-gender.svg" class="w-100" alt="female"></span></div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="col-12">
+                                                                                                            <div class="listItem">
+                                                                                                                <div class="user_img"><img src="assets/image/LangMetRoi.png" class="w-100" alt="logo"></div>
+                                                                                                                <div class="userDetails">
+                                                                                                                    <div class="username">Ngô Đình Long</div>
+                                                                                                                    <div class="userAge">27 years old <span class="genderImg"><img src="assets/image/icon/male-gender.svg" class="w-100" alt="male"></span></div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="col-12">
+                                                                                                            <div class="listItem">
+                                                                                                                <div class="user_img"><img src="assets/image/KalvinElliot.png" class="w-100" alt="logo"></div>
+                                                                                                                <div class="userDetails">
+                                                                                                                    <div class="username">Trader Nguyễn</div>
+                                                                                                                    <div class="userAge">32 years old <span class="genderImg"><img src="assets/image/icon/male-gender.svg" class="w-100" alt="male"></span></div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="col-12">
+                                                                                                            <div class="listItem">
+                                                                                                                <div class="user_img"><img src="assets/image/SharkTung.png" class="w-100" alt="logo"></div>
+                                                                                                                <div class="userDetails">
+                                                                                                                    <div class="username">Shark Tùng</div>
+                                                                                                                    <div class="userAge">33 years old <span class="genderImg"><img src="assets/image/icon/male-gender.svg" class="w-100" alt="male"></span></div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="col-12">
+                                                                                                            <div class="listItem">
+                                                                                                                <div class="user_img"><img src="assets/image/JeaminThao.png" class="w-100" alt="logo"></div>
+                                                                                                                <div class="userDetails">
+                                                                                                                    <div class="username">Nana Phạm</div>
+                                                                                                                    <div class="userAge">22 years old <span class="genderImg"><img src="assets/image/icon/female-gender.svg" class="w-100" alt="female"></span></div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="col-12">
+                                                                                                            <div class="listItem">
+                                                                                                                <div class="user_img"><img src="assets/image/Nguyen.png" class="w-100" alt="logo"></div>
+                                                                                                                <div class="userDetails">
+                                                                                                                    <div class="username">Nguyễn Như Hằng</div>
+                                                                                                                    <div class="userAge">35 years old <span class="genderImg"><img src="assets/image/icon/female-gender.svg" class="w-100" alt="female"></span></div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="col-12">
+                                                                                                            <div class="listItem">
+                                                                                                                <div class="user_img"><img src="assets/image/pinklu.png" class="w-100" alt="logo"></div>
+                                                                                                                <div class="userDetails">
+                                                                                                                    <div class="username">Pink Lu</div>
+                                                                                                                    <div class="userAge">31 years old <span class="genderImg"><img src="assets/image/icon/female-gender.svg" class="w-100" alt="female"></span></div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="col-12">
+                                                                                                            <div class="listItem">
+                                                                                                                <div class="user_img"><img src="assets/image/ThamGia.png" class="w-100" alt="logo"></div>
+                                                                                                                <div class="userDetails">
+                                                                                                                    <div class="username">QQ Thuỷ Tâm</div>
+                                                                                                                    <div class="userAge">26 years old <span class="genderImg"><img src="assets/image/icon/female-gender.svg" class="w-100" alt="female"></span></div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
                                                                                             </div>
-                                                                                            <div class="col-4 items">
-                                                                                                <div class="socialmetrics">Total reach </div>
-                                                                                                <div class="rate">16m <div class="tredMap greenzone"><div class="tredingImg"><img src="assets/image/icon/tredMap.svg" class="w-100" alt="treding"></div> <span>4.2%</span></div></div>
-                                                                                            </div>
-                                                                                            <div class="col-4 items">
-                                                                                                <div class="socialmetrics">Growth rate</div>
-                                                                                                <div class="rate">0.001 <div class="tredMap greenzone"><div class="tredingImg"><img src="assets/image/icon/tredMap.svg" class="w-100" alt="treding"></div> <span>0.1%</span></div></div>
-                                                                                            </div>
-                                                                                            <div class="col-4 items border-start-0 border-bottom-0">
-                                                                                                <div class="socialmetrics">Total followers</div>
-                                                                                                <div class="rate">16m <div class="tredMap grayzone"><div class="tredingImg"><img src="assets/image/icon/right-arrow.svg" class="w-100" alt="treding"></div> <span>0.0%</span></div></div>
-                                                                                            </div>
-                                                                                            <div class="col-4 items border-bottom-0">
-                                                                                                <div class="socialmetrics">Violation rate</div>
-                                                                                                <div class="rate">0.02 <div class="tredMap"><div class="tredingImg"><img src="assets/image/icon/tredMapRed.svg" class="w-100" alt="treding"></div> <span>4.2%</span></div></div>
-                                                                                            </div>
-                                                                                            <div class="col-4 items border-bottom-0">
-                                                                                                <div class="socialmetrics">Social threat</div>
-                                                                                                <div class="rate lowvalue">Low</div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="col-12 posted">
-                                                                                    <div class="accountPost">Physical identity</div>
-                                                                                    <div class="content">Cao to, có nốt ruồi thâm ở cổ 5mm. Sẹo trên mắt trái dài 5mm</div>
-                                                                                </div>
-                                                                                <div class="col-12 posted">
-                                                                                    <div class="accountPost">Personal infomations</div>
-                                                                                    <div class="row gap-1">
-                                                                                        <div class="col-12">
-                                                                                            <div class="row align-items-center">
-                                                                                                <div class="col-4 content fw-medium">Fullname</div>
-                                                                                                <div class="col-8 content">Phan Lê Mai Lan</div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                        <div class="col-12">
-                                                                                            <div class="row align-items-center">
-                                                                                                <div class="col-4 content fw-medium">Nickname</div>
-                                                                                                <div class="col-8 content">Lan Nhiệt Đếi</div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                        <div class="col-12">
-                                                                                            <div class="row align-items-center">
-                                                                                                <div class="col-4 content fw-medium">Age</div>
-                                                                                                <div class="col-8 content">22</div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                        <div class="col-12">
-                                                                                            <div class="row align-items-center">
-                                                                                                <div class="col-4 content fw-medium">Hometown</div>
-                                                                                                <div class="col-8 content">Hà Nam</div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                        <div class="col-12">
-                                                                                            <div class="row align-items-center">
-                                                                                                <div class="col-4 content fw-medium">Mobile</div>
-                                                                                                <div class="col-8"><a href="javascript:;" class="content fw-bold">0321949898</a></div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                        <div class="col-12">
-                                                                                            <div class="row align-items-center">
-                                                                                                <div class="col-4 content fw-medium">Email</div>
-                                                                                                <div class="col-8"><a href="javascript:;" class="content fw-bold">mailan041102@gmail.com</a></div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                        <div class="col-12">
-                                                                                            <div class="row align-items-center">
-                                                                                                <div class="col-4 content fw-medium">National ID</div>
-                                                                                                <div class="col-8 content">87981549465</div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                        <div class="col-12">
-                                                                                            <div class="row align-items-center">
-                                                                                                <div class="col-4 content fw-medium">Passport</div>
-                                                                                                <div class="col-8 content">2165A2546</div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                        <div class="col-12">
-                                                                                            <div class="row align-items-center">
-                                                                                                <div class="col-4 content fw-medium">VneID</div>
-                                                                                                <div class="col-8 content">9140989331</div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                        <div class="col-12">
-                                                                                            <div class="row align-items-center">
-                                                                                                <div class="col-4 content fw-medium">Workplace</div>
-                                                                                                <div class="col-8"><a href="javascript:;" class="content fw-bold">Công ty TNHH Kim Long</a></div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                        <div class="col-12">
-                                                                                            <div class="row align-items-center">
-                                                                                                <div class="col-4 content fw-medium">Place to live</div>
-                                                                                                <div class="col-8 content">Lào Cai, Việt Nam</div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                        <div class="col-12">
-                                                                                            <div class="row align-items-center">
-                                                                                                <div class="col-4 content fw-medium">Education</div>
-                                                                                                <div class="col-8 content">Cao đẳng</div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="col-12 posted">
-                                                                                    <div class="accountPost">Physical identity</div>
-                                                                                    <div class="row gap-1">
-                                                                                        <div class="col-12">
-                                                                                            <div class="content text-white-50">Member of Facebook group : <span class="content fw-bold">Việt Tân</span></div>
-                                                                                        </div>
-                                                                                        <div class="col-12">
-                                                                                            <div class="content text-white-50">Member of Facebook group : <span class="content fw-bold">Cần sa y tế VN</span></div>
-                                                                                        </div>
-                                                                                        <div class="col-12">
-                                                                                            <div class="content text-white-50">Friends of actor : <span class="content fw-bold"> Nana Phạm </span></div>
-                                                                                        </div>
-                                                                                        <div class="col-12">
-                                                                                            <div class="content text-white-50">Friends of actor : <span class="content fw-bold">Nguyễn Như Hằng</span></div>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
+                                                                            <!-- * List Side end -->
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -360,418 +335,9 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <!--? maping card start -->
-                                        <div class="colauto h-100 post_detailsMaping_crad">
-                                            <div class="row gap-2 h-100">
-                                                <div class="col-12 mapingCard">
-                                                    <div class="card levelCard h-100">
-                                                        <div class="card-body h-100">
-                                                            <div class="row flex-column flex-nowrap h-100">
-                                                                <div class="card_title dflex gap12 justifycontent-between">Social information</div>
-                                                                <div class="col-12 h-100 flex-fill overflow-y-auto innerBody">
-                                                                    <div class="row socialInformation gap-8">
-                                                                        <div class="col-12"><div class="socialImg mx-auto"><img src="assets/image/media/ima/-mediaExample-1.png" class="useraccountimg" alt="account holder"><span class="socialIcon"><img src="assets/image/icon/fb.svg" alt="facebook"></span></div></div>
-                                                                        <div class="col-12 d-flex align-items-center gap-3 justify-content-center">
-                                                                            <div class="socialName">Phan Lê Mai Lan</div>
-                                                                            <div class="socialGender"><img src="assets/image/icon/female-gender-dark.svg" class="w-100" alt="females"></div>
-                                                                        </div>
-                                                                        <div class="col-12">
-                                                                            <ul class="nav nav-pills socialTab gap-3 justify-content-center mb-3" id="pills-tab" role="tablist">
-                                                                                <li class="nav-item" role="presentation">
-                                                                                    <button class="nav-link p-0 active" id="pills-facebook-tab" data-bs-toggle="pill" data-bs-target="#pills-facebook" type="button" role="tab" aria-controls="pills-facebook" aria-selected="true"><img src="assets/image/icon/fb.svg" alt=""></button>
-                                                                                </li>
-                                                                                <li class="nav-item" role="presentation">
-                                                                                    <button class="nav-link p-0 youtube" id="pills-youtube-tab" data-bs-toggle="pill" data-bs-target="#pills-youtube" type="button" role="tab" aria-controls="pills-youtube" aria-selected="false"><img src="assets/image/icon/youtube.svg" alt=""></button>
-                                                                                </li>
-                                                                                <li class="nav-item" role="presentation">
-                                                                                    <button class="nav-link p-0 tiktok" id="pills-tiktok-tab" data-bs-toggle="pill" data-bs-target="#pills-tiktok" type="button" role="tab" aria-controls="pills-tiktok" aria-selected="false"><img src="assets/image/icon/ticktok.svg" alt=""></button>
-                                                                                </li>
-                                                                            </ul>
-                                                                        </div>
-                                                                        <div class="col-12">
-                                                                            <div class="tab-content" id="pills-tabContent">
-                                                                                <div class="tab-pane fade show active" id="pills-facebook" role="tabpanel" aria-labelledby="pills-facebook-tab" tabindex="0">
-                                                                                    <div class="row gap-8">
-                                                                                        <div class="col-12 text-center"><a href="javascript:;" class="linkcontent">Liên hệ trực tiếp qua fb hoặc tiktok  mailan041102@gmail.com    instabio.cc/mailan041102</a></div>
-                                                                                        <div class="col-12">
-                                                                                            <div class="row text-center">
-                                                                                                <div class="col-auto">
-                                                                                                    <div class="posts">POSTS</div>
-                                                                                                    <div class="follow">1.5k</div>
-                                                                                                </div>
-                                                                                                <div class="col">
-                                                                                                    <div class="posts">FOLLOWER</div>
-                                                                                                    <div class="follow">2.2m</div>
-                                                                                                </div>
-                                                                                                <div class="col-auto">
-                                                                                                    <div class="posts">LIKES</div>
-                                                                                                    <div class="follow">2.92m</div>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="tab-pane fade" id="pills-youtube" role="tabpanel" aria-labelledby="pills-youtube-tab" tabindex="0">
-                                                                                    <div class="row gap-8">
-                                                                                        <div class="col-12 text-center"><a href="javascript:;" class="linkcontent">Liên hệ trực tiếp qua fb hoặc tiktok  mailan041102@gmail.com    instabio.cc/mailan041102</a></div>
-                                                                                        <div class="col-12">
-                                                                                            <div class="row text-center">
-                                                                                                <div class="col-auto">
-                                                                                                    <div class="posts">POSTS</div>
-                                                                                                    <div class="follow">1.5k</div>
-                                                                                                </div>
-                                                                                                <div class="col">
-                                                                                                    <div class="posts">FOLLOWER</div>
-                                                                                                    <div class="follow">2.2m</div>
-                                                                                                </div>
-                                                                                                <div class="col-auto">
-                                                                                                    <div class="posts">LIKES</div>
-                                                                                                    <div class="follow">2.92m</div>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="tab-pane fade" id="pills-tiktok" role="tabpanel" aria-labelledby="pills-tiktok-tab" tabindex="0">
-                                                                                    <div class="row gap-8">
-                                                                                        <div class="col-12 text-center"><a href="javascript:;" class="linkcontent">Liên hệ trực tiếp qua fb hoặc tiktok  mailan041102@gmail.com    instabio.cc/mailan041102</a></div>
-                                                                                        <div class="col-12">
-                                                                                            <div class="row text-center">
-                                                                                                <div class="col-auto">
-                                                                                                    <div class="posts">POSTS</div>
-                                                                                                    <div class="follow">1.5k</div>
-                                                                                                </div>
-                                                                                                <div class="col">
-                                                                                                    <div class="posts">FOLLOWER</div>
-                                                                                                    <div class="follow">2.2m</div>
-                                                                                                </div>
-                                                                                                <div class="col-auto">
-                                                                                                    <div class="posts">LIKES</div>
-                                                                                                    <div class="follow">2.92m</div>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12 mapingCard">
-                                                    <div class="card levelCard h-100">
-                                                        <div class="card-body h-100">
-                                                            <div class="row flex-column flex-nowrap h-100 gap-12">
-                                                                <div class="col-12">
-                                                                    <div class="card_title dflex gap12 justifycontent-between">Related actors</div>
-                                                                    <div class="nav nav-pills row overviewTabs mx-0 gx-0" id="post-tab" role="tablist">
-                                                                        <li class="nav-item col-auto" role="presentation">
-                                                                            <button class="nav-link pe-3 active" id="post-family-tab" data-bs-toggle="pill" data-bs-target="#post-family" type="button" role="tab" aria-controls="post-family" aria-selected="true">Family</button>
-                                                                        </li>
-                                                                        <li class="nav-item col-auto" role="presentation">
-                                                                            <button class="nav-link pe-3 " id="post-most-tab" data-bs-toggle="pill" data-bs-target="#post-most" type="button" role="tab" aria-controls="post-most" aria-selected="true">Most contact</button>
-                                                                        </li>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-12 h-100 flex-fill overflow-y-auto innerBody">
-                                                                    <div class="tab-content" id="post-tabContent">
-                                                                        <div class="tab-pane text-white fade show active" id="post-family" role="tabpanel" aria-labelledby="post-family-tab" tabindex="0">
-                                                                            <div class="row gap-8">
-                                                                                <div class="col-12">
-                                                                                    <div class="famely_card">
-                                                                                        <div class="user_img"><img src="assets/image/BikerAnTOn.png" class="w-100" alt="logo"></div>
-                                                                                        <div class="userDetails">
-                                                                                            <div class="username">Phan Lê Mai Lan</div>
-                                                                                            <div class="userAge">Husband</div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="col-12">
-                                                                                    <div class="famely_card">
-                                                                                        <div class="user_img"><img src="assets/image/thanhhaHN.png" class="w-100" alt="logo"></div>
-                                                                                        <div class="userDetails">
-                                                                                            <div class="username">Phan Thị Thanh Hà</div>
-                                                                                            <div class="userAge">Sister</div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="col-12">
-                                                                                    <div class="famely_card">
-                                                                                        <div class="user_img"><img src="assets/image/DungLaw.png" class="w-100" alt="logo"></div>
-                                                                                        <div class="userDetails">
-                                                                                            <div class="username">Phan Lê Dũng </div>
-                                                                                            <div class="userAge">Brother</div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="col-12">
-                                                                                    <div class="famely_card">
-                                                                                        <div class="user_img"><img src="assets/image/NgocQuyen.png" class="w-100" alt="logo"></div>
-                                                                                        <div class="userDetails">
-                                                                                            <div class="username">Phan Lê Ngọc Quyên</div>
-                                                                                            <div class="userAge">Sister</div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="tab-pane text-white fade" id="post-most" role="tabpanel" aria-labelledby="post-most-tab" tabindex="0">
-                                                                            <div class="row">
-                                                                                <div class="row gap-8">
-                                                                                    <div class="col-12">
-                                                                                        <div class="famely_card">
-                                                                                            <div class="user_img"><img src="assets/image/BikerAnTOn.png" class="w-100" alt="logo"></div>
-                                                                                            <div class="userDetails">
-                                                                                                <div class="username">Phan Lê Mai Lan</div>
-                                                                                                <div class="userAge">Husband</div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class="col-12">
-                                                                                        <div class="famely_card">
-                                                                                            <div class="user_img"><img src="assets/image/thanhhaHN.png" class="w-100" alt="logo"></div>
-                                                                                            <div class="userDetails">
-                                                                                                <div class="username">Phan Thị Thanh Hà</div>
-                                                                                                <div class="userAge">Sister</div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class="col-12">
-                                                                                        <div class="famely_card">
-                                                                                            <div class="user_img"><img src="assets/image/DungLaw.png" class="w-100" alt="logo"></div>
-                                                                                            <div class="userDetails">
-                                                                                                <div class="username">Phan Lê Dũng </div>
-                                                                                                <div class="userAge">Brother</div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class="col-12">
-                                                                                        <div class="famely_card">
-                                                                                            <div class="user_img"><img src="assets/image/NgocQuyen.png" class="w-100" alt="logo"></div>
-                                                                                            <div class="userDetails">
-                                                                                                <div class="username">Phan Lê Ngọc Quyên</div>
-                                                                                                <div class="userAge">Sister</div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--? maping card end -->
-                                        <!--? media card start -->
-                                        <div class="colauto h-100">
-                                            <div class="card levelCard h-100 mediacard">
-                                                <div class="card-body h-100">
-                                                    <div class="row flex-column flex-nowrap h-100 gap-12">
-                                                        <div class="col-12">
-                                                            <div class="card_title d-flex gap-12 justify-content-between">Media <a href="javascript:;" class="viewDetailsBtn">View Details <span class="moreImg"><img src="assets/image/icon/viewmore.svg" class="w-100" alt="viewmore"></span> </a></div>
-                                                            <div class="nav nav-pills row overviewTabs mx-0 gx-0" id="post-tab" role="tablist">
-                                                                <li class="nav-item col-auto" role="presentation">
-                                                                    <button class="nav-link pe-3 active" id="post-home1-tab" data-bs-toggle="pill" data-bs-target="#post-home1" type="button" role="tab" aria-controls="post-home1" aria-selected="true">Photo</button>
-                                                                </li>
-                                                                <li class="nav-item col-auto" role="presentation">
-                                                                    <button class="nav-link pe-3 " id="post-profile1-tab" data-bs-toggle="pill" data-bs-target="#post-profile1" type="button" role="tab" aria-controls="post-profile1" aria-selected="true">Video</button>
-                                                                </li>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12 h-100 flex-fill overflow-y-auto innerBody">
-                                                            <div class="tab-content" id="post-tabContent">
-                                                                <div class="tab-pane text-white fade show active" id="post-home1" role="tabpanel" aria-labelledby="post-home1-tab" tabindex="0">
-                                                                    <div class="row mediaGallery mx-0">
-                                                                        <div class="col-4"><div class="mediaImg"><img src="assets/image/media/ima/-mediaExample-1.png" class="w-100" alt="mediaExample"></div></div>
-                                                                        <div class="col-4"><a href="javascript:;" class="mediaImg d-flex" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><img src="assets/image/media/ima/-mediaExample.png" class="w-100" alt="mediaExample"></a></div>
-                                                                        <div class="col-4"><div class="mediaImg"><img src="assets/image/media/ima/-mediaExample-2.png" class="w-100" alt="mediaExample"></div></div>
-                                                                        <div class="col-4"><div class="mediaImg"><img src="assets/image/media/ima/-mediaExample-3.png" class="w-100" alt="mediaExample"></div></div>
-                                                                        <div class="col-4"><div class="mediaImg"><img src="assets/image/media/ima/-mediaExample-4.png" class="w-100" alt="mediaExample"></div></div>
-                                                                        <div class="col-4"><div class="mediaImg"><img src="assets/image/media/ima/-mediaExample-5.png" class="w-100" alt="mediaExample"></div></div>
-                                                                        <div class="col-4"><div class="mediaImg"><img src="assets/image/media/ima/-mediaExample-6.png" class="w-100" alt="mediaExample"></div></div>
-                                                                        <div class="col-4"><div class="mediaImg"><img src="assets/image/media/ima/-mediaExample-7.png" class="w-100" alt="mediaExample"></div></div>
-                                                                        <div class="col-4"><div class="mediaImg"><img src="assets/image/media/ima/-mediaExample-8.png" class="w-100" alt="mediaExample"></div></div>
-                                                                        <div class="col-4"><div class="mediaImg"><img src="assets/image/media/ima/-mediaExample-9.png" class="w-100" alt="mediaExample"></div></div>
-                                                                        <div class="col-4"><div class="mediaImg"><img src="assets/image/media/ima/-mediaExample-10.png" class="w-100" alt="mediaExample"></div></div>
-                                                                        <div class="col-4"><div class="mediaImg"><img src="assets/image/media/ima/-mediaExample-11.png" class="w-100" alt="mediaExample"></div></div>
-                                                                        <div class="col-4"><div class="mediaImg"><img src="assets/image/media/ima/-mediaExample-12.png" class="w-100" alt="mediaExample"></div></div>
-                                                                        <div class="col-4"><div class="mediaImg"><img src="assets/image/media/ima/-mediaExample-13.png" class="w-100" alt="mediaExample"></div></div>
-                                                                        <div class="col-4"><div class="mediaImg"><img src="assets/image/media/ima/-mediaExample-14.png" class="w-100" alt="mediaExample"></div></div>
-                                                                        <div class="col-4"><div class="mediaImg"><img src="assets/image/media/ima/-mediaExample-15.png" class="w-100" alt="mediaExample"></div></div>
-                                                                        <div class="col-4"><div class="mediaImg"><img src="assets/image/media/ima/-mediaExample-16.png" class="w-100" alt="mediaExample"></div></div>
-                                                                        <div class="col-4"><div class="mediaImg"><img src="assets/image/media/ima/-mediaExample-17.png" class="w-100" alt="mediaExample"></div></div>
-                                                                        <div class="col-4"><div class="mediaImg"><img src="assets/image/media/ima/-mediaExample-18.png" class="w-100" alt="mediaExample"></div></div>
-                                                                        <div class="col-4"><div class="mediaImg"><img src="assets/image/media/ima/-mediaExample-19.png" class="w-100" alt="mediaExample"></div></div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="tab-pane text-white fade" id="post-profile1" role="tabpanel" aria-labelledby="post-profile1-tab" tabindex="0">
-                                                                    <div class="row mediaGallery mx-0">
-                                                                        <div class="col-4"><div class="mediaImg videos"><img src="assets/image/media/ima/-mediaExample-1.png" class="w-100" alt="mediaExample"></div></div>
-                                                                        <div class="col-4"><a href="javascript:;" class="mediaImg videos"><img src="assets/image/media/ima/-mediaExample.png" class="w-100" alt="mediaExample"></a></div>
-                                                                        <div class="col-4"><div class="mediaImg videos"><img src="assets/image/media/ima/-mediaExample-2.png" class="w-100" alt="mediaExample"></div></div>
-                                                                        <div class="col-4"><div class="mediaImg videos"><img src="assets/image/media/ima/-mediaExample-3.png" class="w-100" alt="mediaExample"></div></div>
-                                                                        <div class="col-4"><div class="mediaImg videos"><img src="assets/image/media/ima/-mediaExample-4.png" class="w-100" alt="mediaExample"></div></div>
-                                                                        <div class="col-4"><div class="mediaImg videos"><img src="assets/image/media/ima/-mediaExample-5.png" class="w-100" alt="mediaExample"></div></div>
-                                                                        <div class="col-4"><div class="mediaImg videos"><img src="assets/image/media/ima/-mediaExample-6.png" class="w-100" alt="mediaExample"></div></div>
-                                                                        <div class="col-4"><div class="mediaImg videos"><img src="assets/image/media/ima/-mediaExample-7.png" class="w-100" alt="mediaExample"></div></div>
-                                                                        <div class="col-4"><div class="mediaImg videos"><img src="assets/image/media/ima/-mediaExample-8.png" class="w-100" alt="mediaExample"></div></div>
-                                                                        <div class="col-4"><div class="mediaImg videos"><img src="assets/image/media/ima/-mediaExample-9.png" class="w-100" alt="mediaExample"></div></div>
-                                                                        <div class="col-4"><div class="mediaImg videos"><img src="assets/image/media/ima/-mediaExample-10.png" class="w-100" alt="mediaExample"></div></div>
-                                                                        <div class="col-4"><div class="mediaImg videos"><img src="assets/image/media/ima/-mediaExample-11.png" class="w-100" alt="mediaExample"></div></div>
-                                                                        <div class="col-4"><div class="mediaImg videos"><img src="assets/image/media/ima/-mediaExample-12.png" class="w-100" alt="mediaExample"></div></div>
-                                                                        <div class="col-4"><div class="mediaImg videos"><img src="assets/image/media/ima/-mediaExample-13.png" class="w-100" alt="mediaExample"></div></div>
-                                                                        <div class="col-4"><div class="mediaImg videos"><img src="assets/image/media/ima/-mediaExample-14.png" class="w-100" alt="mediaExample"></div></div>
-                                                                        <div class="col-4"><div class="mediaImg videos"><img src="assets/image/media/ima/-mediaExample-15.png" class="w-100" alt="mediaExample"></div></div>
-                                                                        <div class="col-4"><div class="mediaImg videos"><img src="assets/image/media/ima/-mediaExample-16.png" class="w-100" alt="mediaExample"></div></div>
-                                                                        <div class="col-4"><div class="mediaImg videos"><img src="assets/image/media/ima/-mediaExample-17.png" class="w-100" alt="mediaExample"></div></div>
-                                                                        <div class="col-4"><div class="mediaImg videos"><img src="assets/image/media/ima/-mediaExample-18.png" class="w-100" alt="mediaExample"></div></div>
-                                                                        <div class="col-4"><div class="mediaImg videos"><img src="assets/image/media/ima/-mediaExample-19.png" class="w-100" alt="mediaExample"></div></div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--? media card end -->
-                                        <!--? coment card start -->
-                                        <div class="colauto h-100 postdetailmediacard">
-                                            <div class="row gap-8 h-100">
-                                                <div class="col-12 networkcards">
-                                                    <div class="card levelCard h-100">
-                                                        <div class="card-body h-100">
-                                                            <div class="row flex-column flex-nowrap h-100">
-                                                                <div class="col-12">
-                                                                    <div class="card_title d-flex gap-12 justify-content-between">Checkin <a href="javascript:;" class="viewDetailsBtn">View Details <span class="moreImg"><img src="assets/image/icon/viewmore.svg" class="w-100" alt="viewmore"></span></a></div>
-                                                                </div>
-                                                                <div class="col-12 h-100 flex-fill overflow-y-auto innerBody">
-                                                                    <div class="networks-card">
-                                                                        <div class="items align-items-center">
-                                                                            <div class="imageside network"><img src="assets/image/icon/wifi.svg" alt="wifi"></div>
-                                                                            <div class="contentSide d-flex align-items-center justify-content-between">
-                                                                                <div class="username">Hanoi, Vietnam</div>
-                                                                                <div class="date_time">05/09/2023</div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="items align-items-center">
-                                                                            <div class="imageside network"><img src="assets/image/icon/wifi.svg" alt="wifi"></div>
-                                                                            <div class="contentSide d-flex align-items-center justify-content-between">
-                                                                                <div class="username">Hanoi, Vietnam</div>
-                                                                                <div class="date_time">05/09/2023</div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="items align-items-center">
-                                                                            <div class="imageside network tower"><img src="assets/image/icon/sim-network.svg" alt="tower"></div>
-                                                                            <div class="contentSide d-flex align-items-center justify-content-between">
-                                                                                <div class="username">Hanoi, Vietnam</div>
-                                                                                <div class="date_time">05/09/2023</div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="items align-items-center">
-                                                                            <div class="imageside network"><img src="assets/image/icon/wifi.svg" alt="wifi"></div>
-                                                                            <div class="contentSide d-flex align-items-center justify-content-between">
-                                                                                <div class="username">Hanoi, Vietnam</div>
-                                                                                <div class="date_time">05/09/2023</div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12 networkcards">
-                                                    <div class="card levelCard h-100">
-                                                        <div class="card-body h-100">
-                                                            <div class="row flex-column flex-nowrap h-100">
-                                                                <div class="col-12">
-                                                                    <div class="card_title d-flex gap-12 justify-content-between">Related actors <a href="javascript:;" class="viewDetailsBtn">View Details <span class="moreImg"><img src="assets/image/icon/viewmore.svg" class="w-100" alt="viewmore"></span></a></div>
-                                                                </div>
-                                                                <div class="col-12 h-100 flex-fill overflow-y-auto innerBody">
-                                                                    <div class="networks-card">
-                                                                        <div class="items">
-                                                                            <div class="imageside"><img src="assets/image/icon/user.svg" alt="Insight"></div>
-                                                                            <div class="contentSide">
-                                                                                <div class="username">Insight #1</div>
-                                                                                <div class="content">Phát hiện mối liên kết với tài khoản facebook</div>
-                                                                                <div class="content fw-bold">Phan Lê Dũng</div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="items">
-                                                                            <div class="imageside"><img src="assets/image/icon/user.svg" alt="Insight"></div>
-                                                                            <div class="contentSide">
-                                                                                <div class="username">Insight #2</div>
-                                                                                <div class="content">Phát hiện mối liên kết với tài khoản facebook</div>
-                                                                                <div class="content fw-bold">Phan Thị Thanh Hà</div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="items">
-                                                                            <div class="imageside"><img src="assets/image/icon/user.svg" alt="Insight"></div>
-                                                                            <div class="contentSide">
-                                                                                <div class="username">Insight #3</div>
-                                                                                <div class="content">Phát hiện mối liên kết với tài khoản facebook</div>
-                                                                                <div class="content fw-bold">Phan Lê Dũng</div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12 networkcards">
-                                                    <div class="card levelCard h-100">
-                                                        <div class="card-body h-100">
-                                                            <div class="row flex-column flex-nowrap h-100">
-                                                                <div class="col-12">
-                                                                    <div class="card_title d-flex gap-12 justify-content-between">Activity <a href="javascript:;" class="viewDetailsBtn">View Details <span class="moreImg"><img src="assets/image/icon/viewmore.svg" class="w-100" alt="viewmore"></span></a></div>
-                                                                </div>
-                                                                <div class="col-12 h-100 flex-fill overflow-y-auto innerBody">
-                                                                    <div class="networks-card">
-                                                                        <div class="items">
-                                                                            <div class="imageside"><img src="assets/image/icon/user.svg" alt="Activity"></div>
-                                                                            <div class="contentSide">
-                                                                                <div class="username">Activity #1</div>
-                                                                                <div class="content">Bài viết mới trên Facebook</div>
-                                                                                <div class="date_time">05/09/2023 <span class="ms-1">10:55</span></div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="items">
-                                                                            <div class="imageside"><img src="assets/image/icon/user.svg" alt="Activity"></div>
-                                                                            <div class="contentSide">
-                                                                                <div class="username">Activity #2</div>
-                                                                                <div class="content">Bài viết mới trên Facebook</div>
-                                                                                <div class="date_time">05/09/2023 <span class="ms-1">09:23</span></div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="items">
-                                                                            <div class="imageside"><img src="assets/image/icon/user.svg" alt="Activity"></div>
-                                                                            <div class="contentSide">
-                                                                                <div class="username">Activity #3</div>
-                                                                                <div class="content">Gửi tin nhắn cho Phan Lê Dũng qua Facebook</div>
-                                                                                <div class="date_time">05/09/2023 <span class="ms-1">10:55</span></div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--? coment card end -->
                                     </div>
                                 </div>
-                                <!-- ** Overview Tab End -->
+                                <!-- ** Geo Map Tab End -->
                             </div>
                         </div>
                     </div>
