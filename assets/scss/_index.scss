@@ -632,8 +632,8 @@
             & .card_title {
                 background-color: var(--black--dark);
                 margin: 0px;
-                color: var(--neutral);
-                font-size: 16px;
+                color: var(--neutral) !important;
+                font-size: 16px !important;
                 font-style: normal;
                 font-weight: 700;
                 line-height: 160%; /* 25.6px */

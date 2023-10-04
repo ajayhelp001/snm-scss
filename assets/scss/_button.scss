@@ -77,10 +77,10 @@
         background-color: var(--neutral);
     }
     &.smallappend{
-        height: auto;
-        width: auto;
+        width: 37px;
+        height: 24px;
         & span {
-            width: 18px;
+            width: 14px;
             & img {
                 width: 100%;
                 object-fit: contain;
@@ -124,6 +124,26 @@
         right: 100%;
         top: 50%;
         transform: translateY(-50%);
+    }
+    &.longBorder{
+        &::after{
+            content: '';
+            width: 300%;
+            max-width: 450px;
+            opacity: 1;
+            height: 1px;
+            top: 50%;
+            transform: translateY(-50%);
+            position: absolute;
+            right: 100%;
+            border-bottom: 2px dashed var(--theme-red);
+        }
+        &::before{
+            background: url(../image/icon/comment-arrow.svg);
+            width: 17px;
+            object-fit: contain;    
+            background-position: left;
+        }
     }
 }
 .post_Btn {

@@ -2,7 +2,8 @@
 .categoryCard {
     border-radius: 8px;
     background-color: var(--neutralBlack);
-    max-width: 172px;
+    min-width: 184px;
+    max-width: 184px;
     cursor: pointer;
     transition: all ease-in-out 0.3s;
     &:hover {
@@ -792,7 +793,7 @@
                         }
                         & .scope {
                             & img {
-                                filter: brightness(0.7);
+                                // filter: brightness(0.7);
                             }
                         }
                     }
@@ -948,6 +949,25 @@
         & .originalComment {
             padding: 12px;
             background-color: var(--black--dark) !important;
+            & .commentitem{
+                &:hover{
+                    & .leftItemList {
+                        min-width: 450px;
+                    }
+                    & .comment_card {
+                        max-width: 450px;
+                        & .comment_item_Body {
+                            background-color: var(--neutral);
+                        }
+                    }
+                }
+                & .leftItemList {
+                    min-width: 476px;
+                }
+            }
+            & .violationContent{
+                padding-left: 64px;
+            }
         }
         & .comment_card{
             max-width: 476px;
