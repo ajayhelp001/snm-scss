@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNM Dashboad | Data-News_postLists</title>
+    <link rel="icon" type="image/x-icon" href="assets/image/logo.png">
+    <!-- ****** Jquary ***** -->
+    <script src="assets/libs/jquary/jquery.min.js"></script>
+    <!-- ****** Bootstrap Css ***** -->
+    <link rel="stylesheet" href="assets/libs/bootstrap/css/bootstrap.min.css">
+    <!-- ****** Select2 Css -->
+    <link href="assets/libs/select2/select2.min.css" rel="stylesheet" />
+    <!-- ****** Style Css ***** -->
+    <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+<body>
+    <main class="main-dashboard">
+        <div class="maininner_Dashboard h-100 gx-0">
+            <!-- * Aside Bar Start -->
+            <div class="asideBar h-100">
+                <div class="row h-100 flex-column flex-nowrap mx-0 gx-0">
+                    <div class="col-12 logo_top">
+                        <div class="logo"><img src="assets/image/logo.png" class="w-100" alt="logo"></div>
+                        <div class="logoname"><img src="assets/image/SNM.png" class="w-100" alt="SNM"></div>
+                    </div>
+                    <div class="col-12 h-100 flex-fill overflow-hidden">
+                        <div class="asideBody h-100 overflow-y-auto">
+                            <ul class="nav_link">
+                                <li><a href="index.html" class="navlinks"><img src="assets/image/icon/icon-report.svg" alt="report"></a></li>
+                                <li><a href="data-news-postList.html" class="navlinks active"><img src="assets/image/icon/icon-collect.svg" alt="collect"></a></li>
+                                <li><a href="pg-tracking-userDetails-overview.html" class="navlinks"><img src="assets/image/icon/icon-monitoring.svg" alt="monitoring"></a></li>
+                                <li><a href="javascript:;" class="navlinks"><img src="assets/image/icon/focus.svg" alt="admin"></a></li>
+                                <li><a href="javascript:;" class="navlinks"><img src="assets/image/icon/icon-admin.svg" alt="admin"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--! * Aside Bar End -->
+            <!-- * Main DashBoard Start -->
+            <div class="dashboard_Side h-100">
+                <div class="row h-100 flex-column flex-nowrap mx-0 gx-0">
+                    <!-- * User Header Start -->
+                    <div class="col-12">
+                        <div class="topheader">
+                            <div class="row mx-0 gx-0">
+                                <div class="col">
+                                    <div class="socialNetwork">Social Network Monitoring</div>
+                                </div>
+                                <div class="col search_bar">
+                                    <div class="input-group">
+                                        <button type="button" class="input-group-text" id="basic-addon1"><img src="assets/image/icon/search_icon.svg" alt="search"></button>
+                                        <input type="text" class="form-control" placeholder="Search anything" aria-label="Username" aria-describedby="basic-addon1">
+                                    </div>
+                                </div>
+                                <div class="col-auto userSide">
+                                    <div class="dropdown notificationDropDown">
+                                        <div class="notification" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside"><div class="bell"><img src="assets/image/icon/bell.svg" class="w-100" alt="logo"></div><span>5</span></div>
+                                        <div class="dropdown-menu">
+                                            <div class="n_title">Notifications</div>
+                                            <div class="n_Body">
+                                                <div class="n_item">
+                                                    <div class="logoimg"><img src="assets/image/icon/user.svg" class="w-100" alt="logo"></div>
+                                                    <div class="n_message">
+                                                        <div class="directMessage">Detect a connect-link from <span>Phan Lê Mai Lan</span> to <span>Phan Lê Dũng</span></div>
+                                                        <div class="date">05/09/2023 <span>10:55</span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="n_item">
+                                                    <div class="logoimg"><img src="assets/image/icon/user.svg" class="w-100" alt="logo"></div>
+                                                    <div class="n_message">
+                                                        <div class="directMessage">Detect a connect-link from <span>Phan Lê Mai Lan</span> to <span>Phan Lê Thanh Hà</span></div>
+                                                        <div class="date">05/09/2023 <span>09:23</span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="n_item">
+                                                    <div class="logoimg"><img src="assets/image/icon/user.svg" class="w-100" alt="logo"></div>
+                                                    <div class="n_message">
+                                                        <div class="directMessage">Phan Lê Mai Lan has created a post on the wall</div>
+                                                        <div class="date">05/09/2023 <span>09:23</span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="n_item">
+                                                    <div class="logoimg"><img src="assets/image/icon/user.svg" class="w-100" alt="logo"></div>
+                                                    <div class="n_message">
+                                                        <div class="directMessage"><span>Detected a violations in a post of a Facebook account Nana Phạm</span></div>
+                                                        <div class="date">05/09/2023 <span>09:23</span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="n_item">
+                                                    <div class="logoimg"><img src="assets/image/icon/user.svg" class="w-100" alt="logo"></div>
+                                                    <div class="n_message">
+                                                        <div class="directMessage"><span>Detected a violations in a post of a Facebook account Nana Phạm</span></div>
+                                                        <div class="date">05/09/2023 <span>09:23</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="notification"><div class="bell"><img src="assets/image/icon/bell.svg" class="w-100" alt="logo"></div><span>5</span></div> -->
+                                    <div class="user"><img src="assets/image/icon/user.svg" class="w-100" alt="logo"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="breadcrumb_Bar">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item active"><a href="index.html" class="page_link">Home</a></li>
+                                    <li class="breadcrumb-item" aria-current="page">Tracking</li>
+                                </ol>
+                            </nav>
+                        </div>
+                        <div class="all_sources">
+                            <div class="row  gx-0 align-items-center">
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="row all_data gx-0">
+                                                <div class="col-auto data">Accounts list</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 nav nav-pills row overviewTabs mx-0" id="pills-tab" role="tablist">
+                                            <li class="nav-item col-auto">
+                                                <a href="javascript:;" class="nav-link active" >Social</a>
+                                            </li>
+                                            <li class="nav-item col-auto">
+                                                <a href="pg-tracking-accList-news.html" class="nav-link">News</a>
+                                            </li>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--! * User Header End -->
+                    <!-- * Dashboard Chart Start -->
+                    <div class="col-12 h-100 flex-fill maincontent overflow-hidden">
+                        <div class="manin_content_Body h-100 overflow-hidden">
+                            <div class="tab-content h-100" id="pills-tabContent">
+                                <!-- ** Source Tab Start -->
+                                <div class="tab-pane fade h-100 show active">
+                                    <div class="row gx-2 overflow-y-auto justifycontent-center row-gap-2 h-100">
+                                        <div class="col-4 h-100 sourcetab_-table ">
+                                            <div class="card top_post h-100 levelCard list_post_Table">
+                                                <div class="card-body h-100">
+                                                    <div class="row flex-column flex-nowrap h-100 list gap-0">
+                                                        <div class="col-12">
+                                                            <div class="card_title keywords d-flex">
+                                                                <div class="cuntryflage"><span class="flage small"><img src="assets/image/icon/fb.svg" class="w-100" alt=""></span>Facebook</div>
+                                                                <div class="add-button"><button type="button" class="appendBtn" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><img src="assets/image/icon/plus.svg" class="w-100" alt="plus"></button></div>
+                                                            </div> 
+                                                            <!-- <div class="search_bar rounded-3 listSearch">
+                                                                <div class="input-group">
+                                                                    <button type="button" class="input-group-text" id="basic-addon1"><img src="assets/image/icon/search_icon.svg" alt="search"></button>
+                                                                    <input type="text" class="form-control shadow-none" placeholder="input keywords" aria-label="Username" aria-describedby="basic-addon1">
+                                                                </div>
+                                                            </div> -->
+                                                            <div class="col-12 nav nav-pills row overviewTabs mx-0" id="pills-tab" role="tablist">
+                                                                <li class="nav-item col-auto" role="presentation">
+                                                                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Account</button>
+                                                                </li>
+                                                                <li class="nav-item col-auto" role="presentation">
+                                                                    <button class="nav-link" id="pills-sources-tab" data-bs-toggle="pill" data-bs-target="#pills-sources" type="button" role="tab" aria-controls="pills-sources" aria-selected="false" tabindex="-1">Pages</button>
+                                                                </li>
+                                                                <li class="nav-item col-auto" role="presentation">
+                                                                    <button class="nav-link " id="pills-keyword-tab" data-bs-toggle="pill" data-bs-target="#pills-keyword" type="button" role="tab" aria-controls="pills-keyword" aria-selected="false" tabindex="-1">Group</button>
+                                                                </li>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 h-100 flex-fill overflow-hidden">
+                                                            <div class="tab-content h-100" id="pills-tabContent">
+                                                                <div class="tab-pane fade h-100 show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                                                                    <div class="row mx-0 gx-0 posttableSide post_listTable h-100 position-relative">
+                                                                        <div class="col-12 post_table table-responsive h-100 account_datatable ">
+                                                                            <table class="table align-middle table-borderless table-hover">
+                                                                                <thead class="align-middle">
+                                                                                    <tr>
+                                                                                        <th scope="col">Account</th>
+                                                                                        <th scope="col">Post</th>
+                                                                                        <th scope="col">Interaction</th>
+                                                                                        <th scope="col">Remove</th>
+                                                                                    </tr>
+                                                                                </thead>
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source view"><span class="logoimg"><img src="assets/image/fb_user.png" alt="logo"></span><div class="sourceName">Phan Lê Mai Lan </div><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/starts.svg" class="w100" alt="view"></span></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 1.5 k</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>2.92 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source view"><span class="logoimg"><img src="assets/image/BikerAnTOn.png" alt="logo"></span><div class="sourceName">Biker An Tôn </div><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/starts.svg" class="w100" alt="view"></span></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 1.2 k</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>2.79 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/thanhhaHN.png" alt="logo"></span><div class="sourceName">thanh hà HN</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 1 k</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>2.71 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/DungLaw.png" alt="logo"></span><div class="sourceName">Dũng Law</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 998</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>2.64 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/LangMetRoi.png" alt="logo"></span><div class="sourceName">Long Mệt Rồi</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 987</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>2.58 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/Nguyennhu.png" alt="logo"></span><div class="sourceName">Nguyễn Như Hằng</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 987</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>2.37 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/koko.png" alt="logo"></span><div class="sourceName">Koko Koko</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 973</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>2.27 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/TraderLollipop.png" alt="logo"></span><div class="sourceName">Trader Lollipop</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 921</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>2.17 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/MaiLinh.png" alt="logo"></span><div class="sourceName">Mai Linh</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span>921</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>2.03 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/anaYang.png" alt="logo"></span><div class="sourceName">Ana</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 908</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>1.97 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/thanhhaHN.png" alt="logo"></span><div class="sourceName">Thanh Hà </div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 896</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>1.86 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/nanaPham.png" alt="logo"></span><div class="sourceName">Nana Phạm</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 896</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>1.6 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/quyenLam.png" alt="logo"></span><div class="sourceName">Quyền Lâm</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 877</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>1.29 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/DoanTranMinhTung.png" alt="logo"></span><div class="sourceName">Đoàn Trần Minh Tùng</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 863</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>1.15 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/KalvinElliot.png" alt="logo"></span><div class="sourceName">Kalvin Elliot</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 796</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>1.06 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/EvaMa.png" alt="logo"></span><div class="sourceName">Eva Ma</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 780</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>988 k</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/meboon.png" alt="logo"></span><div class="sourceName">Mẹ Boon</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 777</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>780 k</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/nhiPham.png" alt="logo"></span><div class="sourceName">Nhi Hà Phạm</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 749</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>711 k</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/NgocQuyen.png" alt="logo"></span><div class="sourceName">Ngọc Quyên</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 694k</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>707 k</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/ZaneRachel.png" alt="logo"></span><div class="sourceName">Zane Rachel</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 639</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>654 k</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="tab-pane fade h-100" id="pills-sources" role="tabpanel" aria-labelledby="pills-sources-tab" tabindex="0">
+                                                                    <div class="row mx-0 gx-0 posttableSide post_listTable h-100 position-relative">
+                                                                        <div class="col-12 post_table table-responsive h-100 account_datatable ">
+                                                                            <table class="table align-middle table-borderless table-hover">
+                                                                                <thead class="align-middle">
+                                                                                    <tr>
+                                                                                        <th scope="col">Account</th>
+                                                                                        <th scope="col">Post</th>
+                                                                                        <th scope="col">Interaction</th>
+                                                                                        <th scope="col">Remove</th>
+                                                                                    </tr>
+                                                                                </thead>
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source view"><span class="logoimg"><img src="assets/image/fb_user.png" alt="logo"></span><div class="sourceName">Phan Lê Mai Lan </div><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/starts.svg" class="w100" alt="view"></span></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 1.5 k</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>2.92 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source view"><span class="logoimg"><img src="assets/image/BikerAnTOn.png" alt="logo"></span><div class="sourceName">Biker An Tôn </div><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/starts.svg" class="w100" alt="view"></span></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 1.2 k</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>2.79 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/thanhhaHN.png" alt="logo"></span><div class="sourceName">thanh hà HN</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 1 k</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>2.71 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/DungLaw.png" alt="logo"></span><div class="sourceName">Dũng Law</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 998</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>2.64 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/LangMetRoi.png" alt="logo"></span><div class="sourceName">Long Mệt Rồi</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 987</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>2.58 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/Nguyennhu.png" alt="logo"></span><div class="sourceName">Nguyễn Như Hằng</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 987</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>2.37 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/koko.png" alt="logo"></span><div class="sourceName">Koko Koko</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 973</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>2.27 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/TraderLollipop.png" alt="logo"></span><div class="sourceName">Trader Lollipop</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 921</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>2.17 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/MaiLinh.png" alt="logo"></span><div class="sourceName">Mai Linh</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span>921</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>2.03 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/anaYang.png" alt="logo"></span><div class="sourceName">Ana</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 908</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>1.97 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/thanhhaHN.png" alt="logo"></span><div class="sourceName">Thanh Hà </div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 896</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>1.86 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/nanaPham.png" alt="logo"></span><div class="sourceName">Nana Phạm</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 896</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>1.6 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/quyenLam.png" alt="logo"></span><div class="sourceName">Quyền Lâm</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 877</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>1.29 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/DoanTranMinhTung.png" alt="logo"></span><div class="sourceName">Đoàn Trần Minh Tùng</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 863</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>1.15 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/KalvinElliot.png" alt="logo"></span><div class="sourceName">Kalvin Elliot</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 796</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>1.06 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/EvaMa.png" alt="logo"></span><div class="sourceName">Eva Ma</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 780</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>988 k</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/meboon.png" alt="logo"></span><div class="sourceName">Mẹ Boon</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 777</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>780 k</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/nhiPham.png" alt="logo"></span><div class="sourceName">Nhi Hà Phạm</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 749</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>711 k</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/NgocQuyen.png" alt="logo"></span><div class="sourceName">Ngọc Quyên</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 694k</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>707 k</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/ZaneRachel.png" alt="logo"></span><div class="sourceName">Zane Rachel</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 639</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>654 k</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="tab-pane fade h-100" id="pills-keyword" role="tabpanel" aria-labelledby="pills-keyword-tab" tabindex="0">
+                                                                    <div class="row mx-0 gx-0 posttableSide post_listTable h-100 position-relative">
+                                                                        <div class="col-12 post_table table-responsive h-100 account_datatable ">
+                                                                            <table class="table align-middle table-borderless table-hover">
+                                                                                <thead class="align-middle">
+                                                                                    <tr>
+                                                                                        <th scope="col">Account</th>
+                                                                                        <th scope="col">Post</th>
+                                                                                        <th scope="col">Interaction</th>
+                                                                                        <th scope="col">Remove</th>
+                                                                                    </tr>
+                                                                                </thead>
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source view"><span class="logoimg"><img src="assets/image/fb_user.png" alt="logo"></span><div class="sourceName">Phan Lê Mai Lan </div><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/starts.svg" class="w100" alt="view"></span></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 1.5 k</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>2.92 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source view"><span class="logoimg"><img src="assets/image/BikerAnTOn.png" alt="logo"></span><div class="sourceName">Biker An Tôn </div><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/starts.svg" class="w100" alt="view"></span></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 1.2 k</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>2.79 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/thanhhaHN.png" alt="logo"></span><div class="sourceName">thanh hà HN</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 1 k</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>2.71 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/DungLaw.png" alt="logo"></span><div class="sourceName">Dũng Law</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 998</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>2.64 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/LangMetRoi.png" alt="logo"></span><div class="sourceName">Long Mệt Rồi</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 987</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>2.58 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/Nguyennhu.png" alt="logo"></span><div class="sourceName">Nguyễn Như Hằng</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 987</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>2.37 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/koko.png" alt="logo"></span><div class="sourceName">Koko Koko</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 973</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>2.27 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/TraderLollipop.png" alt="logo"></span><div class="sourceName">Trader Lollipop</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 921</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>2.17 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/MaiLinh.png" alt="logo"></span><div class="sourceName">Mai Linh</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span>921</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>2.03 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/anaYang.png" alt="logo"></span><div class="sourceName">Ana</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 908</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>1.97 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/thanhhaHN.png" alt="logo"></span><div class="sourceName">Thanh Hà </div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 896</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>1.86 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/nanaPham.png" alt="logo"></span><div class="sourceName">Nana Phạm</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 896</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>1.6 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/quyenLam.png" alt="logo"></span><div class="sourceName">Quyền Lâm</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 877</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>1.29 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/DoanTranMinhTung.png" alt="logo"></span><div class="sourceName">Đoàn Trần Minh Tùng</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 863</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>1.15 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/KalvinElliot.png" alt="logo"></span><div class="sourceName">Kalvin Elliot</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 796</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>1.06 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/EvaMa.png" alt="logo"></span><div class="sourceName">Eva Ma</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 780</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>988 k</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/meboon.png" alt="logo"></span><div class="sourceName">Mẹ Boon</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 777</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>780 k</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/nhiPham.png" alt="logo"></span><div class="sourceName">Nhi Hà Phạm</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 749</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>711 k</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/NgocQuyen.png" alt="logo"></span><div class="sourceName">Ngọc Quyên</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 694k</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>707 k</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/ZaneRachel.png" alt="logo"></span><div class="sourceName">Zane Rachel</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 639</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>654 k</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4 h-100 sourcetab_-table ">
+                                            <div class="card top_post h-100 levelCard list_post_Table">
+                                                <div class="card-body h-100">
+                                                    <div class="row flex-column flex-nowrap h-100 list gap-0">
+                                                        <div class="col-12">
+                                                            <div class="card_title keywords d-flex">
+                                                                <div class="cuntryflage"><span class="flage small"><img src="assets/image/icon/ticktok.svg" class="w-100" alt=""></span>Tiktok</div>
+                                                                <div class="add-button"><button type="button" class="appendBtn" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><img src="assets/image/icon/plus.svg" class="w-100" alt="plus"></button></div>
+                                                            </div> 
+                                                            <!-- <div class="search_bar rounded-3 listSearch">
+                                                                <div class="input-group">
+                                                                    <button type="button" class="input-group-text" id="basic-addon1"><img src="assets/image/icon/search_icon.svg" alt="search"></button>
+                                                                    <input type="text" class="form-control shadow-none" placeholder="input keywords" aria-label="Username" aria-describedby="basic-addon1">
+                                                                </div>
+                                                            </div> -->
+                                                            <div class="col-12 nav nav-pills row overviewTabs mx-0" id="pills-tab" role="tablist">
+                                                                <li class="nav-item col-auto" role="presentation">
+                                                                    <button class="nav-link active" id="pills-home2-tab" data-bs-toggle="pill" data-bs-target="#pills-home2" type="button" role="tab" aria-controls="pills-home2" aria-selected="true">Account</button>
+                                                                </li>
+                                                                <!-- <li class="nav-item col-auto" role="presentation">
+                                                                    <button class="nav-link" id="pills-sources-tab" data-bs-toggle="pill" data-bs-target="#pills-sources" type="button" role="tab" aria-controls="pills-sources" aria-selected="false" tabindex="-1">Pages</button>
+                                                                </li>
+                                                                <li class="nav-item col-auto" role="presentation">
+                                                                    <button class="nav-link " id="pills-keyword-tab" data-bs-toggle="pill" data-bs-target="#pills-keyword" type="button" role="tab" aria-controls="pills-keyword" aria-selected="false" tabindex="-1">Group</button>
+                                                                </li> -->
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 h-100 flex-fill overflow-hidden">
+                                                            <div class="tab-content h-100" id="pills-tabContent">
+                                                                <div class="tab-pane fade h-100 show active" id="pills-home2" role="tabpanel" aria-labelledby="pills-home2-tab" tabindex="0">
+                                                                    <div class="row mx-0 gx-0 posttableSide post_listTable h-100 position-relative">
+                                                                        <div class="col-12 post_table table-responsive h-100 account_datatable ">
+                                                                            <table class="table align-middle table-borderless table-hover">
+                                                                                <thead class="align-middle">
+                                                                                    <tr>
+                                                                                        <th scope="col">Account</th>
+                                                                                        <th scope="col">Post</th>
+                                                                                        <th scope="col">Interaction</th>
+                                                                                        <th scope="col">Remove</th>
+                                                                                    </tr>
+                                                                                </thead>
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/coconut.png" alt="logo"></span><div class="sourceName">Coconut</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 1.5 k</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>2.92 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/khongSoCho.png" alt="logo"></span><div class="sourceName">Không Sợ Chó</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 1.5 k</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>2.92 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/VietTan.png" alt="logo"></span><div class="sourceName">Việt Tân</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 1.5 k</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>2.92 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/vietIndie.png" alt="logo"></span><div class="sourceName">Việt Indie</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 1.5 k</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>2.92 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/ChePhim.png" alt="logo"></span><div class="sourceName">Chê Phim</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 1.5 k</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>2.92 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/premierLeague.png" alt="logo"></span><div class="sourceName">Premier League</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 1.5 k</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>2.92 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/kienkhongNgu.png" alt="logo"></span><div class="sourceName">Kiến không ngủ </div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 1.5 k</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>2.92 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/TrongHieuVegetarian.png" alt="logo"></span><div class="sourceName">Trọng Hiếu Vegetarian</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 1.5 k</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>2.92 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/DicungSasha.png" alt="logo"></span><div class="sourceName">Đi cùng Sasha</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 1.5 k</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>2.92 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/vnexpress.png" alt="logo"></span><div class="sourceName">VnExpress</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 1.5 k</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>2.92 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/tvt.png" alt="logo"></span><div class="sourceName">TVT </div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 1.5 k</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>2.92 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/DailyMeme.png" alt="logo"></span><div class="sourceName">Daily Meme</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 1.5 k</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>2.92 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/QQluu.png" alt="logo"></span><div class="sourceName">QQ Lưu</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 1.5 k</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>2.92 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/nhiPham.png" alt="logo"></span><div class="sourceName">Ca sĩ Nhi Hà</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 1.5 k</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>2.92 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/SharkTung.png" alt="logo"></span><div class="sourceName">Shark Tùng</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 1.5 k</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>2.92 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/KalvinElliot.png" alt="logo"></span><div class="sourceName">Kalvin - Crypto man</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 1.5 k</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>2.92 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/meboon.png" alt="logo"></span><div class="sourceName">Kho bỉm mẹ Boon</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 1.5 k</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>2.92 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/AnyCar.png" alt="logo"></span><div class="sourceName">Anycar.vn</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 1.5 k</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>2.92 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/MinhNgo.png" alt="logo"></span><div class="sourceName">Minh Ngô</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 1.5 k</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>2.92 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/KhoaiSan.png" alt="logo"></span><div class="sourceName">Khoai Sắn</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 1.5 k</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>2.92 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- <div class="tab-pane fade h-100" id="pills-sources" role="tabpanel" aria-labelledby="pills-sources-tab" tabindex="0">
+                                                                    
+                                                                </div>
+                                                                <div class="tab-pane fade h-100" id="pills-keyword" role="tabpanel" aria-labelledby="pills-keyword-tab" tabindex="0">
+                                                                    
+                                                                </div> -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4 h-100 sourcetab_-table ">
+                                            <div class="card top_post h-100 levelCard list_post_Table">
+                                                <div class="card-body h-100">
+                                                    <div class="row flex-column flex-nowrap h-100 list gap-0">
+                                                        <div class="col-12">
+                                                            <div class="card_title keywords d-flex">
+                                                                <div class="cuntryflage"><span class="flage small"><img src="assets/image/icon/youtube.svg" class="w-100" alt=""></span>Youtube</div>
+                                                                <div class="add-button"><button type="button" class="appendBtn" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><img src="assets/image/icon/plus.svg" class="w-100" alt="plus"></button></div>
+                                                            </div> 
+                                                            <!-- <div class="search_bar rounded-3 listSearch">
+                                                                <div class="input-group">
+                                                                    <button type="button" class="input-group-text" id="basic-addon1"><img src="assets/image/icon/search_icon.svg" alt="search"></button>
+                                                                    <input type="text" class="form-control shadow-none" placeholder="input keywords" aria-label="Username" aria-describedby="basic-addon1">
+                                                                </div>
+                                                            </div> -->
+                                                            <div class="col-12 nav nav-pills row overviewTabs mx-0" id="pills-tab" role="tablist">
+                                                                <li class="nav-item col-auto" role="presentation">
+                                                                    <button class="nav-link active" id="pills-home3-tab" data-bs-toggle="pill" data-bs-target="#pills-home3" type="button" role="tab" aria-controls="pills-home3" aria-selected="true">Account</button>
+                                                                </li>
+                                                                <!-- <li class="nav-item col-auto" role="presentation">
+                                                                    <button class="nav-link" id="pills-sources-tab" data-bs-toggle="pill" data-bs-target="#pills-sources" type="button" role="tab" aria-controls="pills-sources" aria-selected="false" tabindex="-1">Pages</button>
+                                                                </li>
+                                                                <li class="nav-item col-auto" role="presentation">
+                                                                    <button class="nav-link " id="pills-keyword-tab" data-bs-toggle="pill" data-bs-target="#pills-keyword" type="button" role="tab" aria-controls="pills-keyword" aria-selected="false" tabindex="-1">Group</button>
+                                                                </li> -->
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 h-100 flex-fill overflow-hidden">
+                                                            <div class="tab-content h-100" id="pills-tabContent">
+                                                                <div class="tab-pane fade h-100 show active" id="pills-home3" role="tabpanel" aria-labelledby="pills-home3-tab" tabindex="0">
+                                                                    <div class="row mx-0 gx-0 posttableSide post_listTable h-100 position-relative">
+                                                                        <div class="col-12 post_table table-responsive h-100 account_datatable ">
+                                                                            <table class="table align-middle table-borderless table-hover">
+                                                                                <thead class="align-middle">
+                                                                                    <tr>
+                                                                                        <th scope="col">Account</th>
+                                                                                        <th scope="col">Post</th>
+                                                                                        <th scope="col">Interaction</th>
+                                                                                        <th scope="col">Remove</th>
+                                                                                    </tr>
+                                                                                </thead>
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/source/sourceLogo1.svg" alt="logo"></span><div class="sourceName">Dân Trí</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 1.5 k</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>2.92 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/source/japan.svg" alt="logo"></span><div class="sourceName">Japan News</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 1.5 k</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>2.92 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/source/sourceLogo2.svg" alt="logo"></span><div class="sourceName">Người Lao Động</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 1.5 k</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>2.92 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/source/sourceLogo3.svg" alt="logo"></span><div class="sourceName">Báo Mới</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 1.5 k</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>2.92 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/language/language4.svg" alt="logo"></span><div class="sourceName">Express UK</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 1.5 k</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>2.92 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/source/sourceLogo4.svg" alt="logo"></span><div class="sourceName">CafeF</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 1.5 k</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>2.92 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/source/sourceLogo5.svg" alt="logo"></span><div class="sourceName">Huanqiu</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 1.5 k</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>2.92 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/source/sourceLogo6.svg" alt="logo"></span><div class="sourceName">Thanh Niên Online</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 1.5 k</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>2.92 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/source/sourceLogo6.svg" alt="logo"></span><div class="sourceName">FT</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 1.5 k</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>2.92 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/source/sourceLogo7.svg" alt="logo"></span><div class="sourceName">VnExpress</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 1.5 k</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>2.92 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/source/sourceLogo1.svg" alt="logo"></span><div class="sourceName">Dân Trí</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 1.5 k</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>2.92 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/source/sourceLogo9.svg" alt="logo"></span><div class="sourceName">SCMP</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 1.5 k</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>2.92 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/source/sourceLogo10.svg" alt="logo"></span><div class="sourceName">kenh14</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 1.5 k</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>2.92 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/source/sourceLogo11.svg" alt="logo"></span><div class="sourceName">Shine</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 1.5 k</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>2.92 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/source/sourceLogo12.svg" alt="logo"></span><div class="sourceName">The New York Magazine</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 1.5 k</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>2.92 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/source/sourceLogo13.svg" alt="logo"></span><div class="sourceName">Tuổi Trẻ Online</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 1.5 k</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>2.92 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/source/sourceLogo14.svg" alt="logo"></span><div class="sourceName">Dân Trí</div></a></td>
+                                                                                        <td><div class="view gap-1"><span class="type_icon"><img src="assets/image/icon/pages.svg" class="w100" alt="view"></span> 1.5 k</div></td>
+                                                                                        <td><div class="view"><span class="icon bg-transparent shadow-none"><img src="assets/image/icon/interaction.svg" class="w100" alt="view"></span>2.92 m</div></td>
+                                                                                        <td><div class="view justify-content-center"><a href="javascript:;" class="icon closeIcon"><img src="assets/image/icon/close.svg" class="w100" alt="view"></a</div></td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- <div class="tab-pane fade h-100" id="pills-sources" role="tabpanel" aria-labelledby="pills-sources-tab" tabindex="0">
+                                                                    
+                                                                </div>
+                                                                <div class="tab-pane fade h-100" id="pills-keyword" role="tabpanel" aria-labelledby="pills-keyword-tab" tabindex="0">
+                                                                    
+                                                                </div> -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- ** Source Tab End -->
+                            </div>
+                        </div>
+                    </div>
+                    <!--! * Dashboard Chart End -->
+                </div>
+            </div>
+            <!--! * Main DashBoard Start -->
+
+        </div>
+    </main>
+    <!--? ***** Details Post Modal Start ***** -->
+    <!-- Button trigger modal -->
+    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"></button> -->
+    <!-- Modal -->
+    <div class="modal fade modaldesign appendModal" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog dialogs m-auto modal-dialog-scrollable modal-dialog-centered">
+            <div class="modal-content p-4">
+                <div class="modal-header border-0 px-0 py-2 d-block w-100">
+                    <div class="d-flex align-items-center">
+                        <div class="modal-title m-0 d-flex justify-content-center w-100 flex-wrap" id="staticBackdropLabel">Add account</div>
+                        <button type="button" class=" shadow-none p-0 border-0 ms-auto bg-transparent" data-bs-dismiss="modal" aria-label="Close"><img src="assets/image/icon/close-button.svg" class="w-100" alt="close button"></button>
+                    </div>
+                </div>
+                <div class="modal-body px-0 pb-0 bg-transparent">
+                    <form class="row gap-12 form">
+                        <div class="col-12">
+                            <div class="inputGroup">
+                                <label class="label" for="floatingInput">Source name</label>
+                                <input type="text" class="form-control shadow-none p-0 mt-1" id="floatingInput" placeholder="Input name...">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="inputGroup">
+                                <label class="label" for="floatingInput">Link URL</label>
+                                <input type="text" class="form-control shadow-none p-0 mt-1" id="floatingInput" placeholder="Input URL...">
+                            </div>
+                        </div>
+                        <div class="col-12 text-center"><button type="submit" class="applybtn shadow-none border-0 h-auto py-3 px-4">Save</button></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--? ***** Details Post Modal End ***** -->
+
+    <!-- *** Bootstrap Js ***** -->
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- *** Select2 Js *** -->
+    <script src="assets/libs/select2/select2.min.js"></script>
+    <!-- **** Custom Js ***** -->
+    <script src="assets/js/custom.js"></script>
+
+</body>
+</html>

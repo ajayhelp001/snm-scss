@@ -269,22 +269,30 @@
     }
 }
 
+
 // *** Source -Tabs ***
+.card_title {
+    & .cuntryflage {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        & .flage {
+            display: flex;
+            width: 32px;
+            height: 32px;
+            & img {
+                object-fit: contain;
+            }
+            &.small{
+                width: 28px;
+                height: 28px;
+            }
+        }
+    }
+}
 .apendDataTable{
     & .list_post_Table {
         & .list {
-            & .card_title {
-                & .cuntryflage {
-                    display: flex;
-                    align-items: center;
-                    gap: 10px;
-                    & .flage {
-                        display: flex;
-                        width: 32px;
-                        height: 32px;
-                    }
-                }
-            }
             & .posttableSide {
                 &.post_listTable {
                     & .post_table {
@@ -308,6 +316,8 @@
                                             width: 80px;
                                         }
                                         & .postContent {
+                                            text-decoration: none;
+                                            color: var(--white);
                                             &.source {
                                                 width: 100%;
                                                 max-width: unset;
@@ -763,6 +773,8 @@
                         display: flex;
                         align-items: center;
                         gap: 8px;
+                        text-decoration: none;
+                        color: var(--white);
                         & .logoimg {
                             display: flex;
                             min-width: 32px;

@@ -238,10 +238,10 @@
         gap: 8px;
         display: flex;
         align-items: start;
-        border-radius: 8px;
-        &:hover{
-            background-color: var(--balck--light);
-        }
+        border-radius: 4px;
+        // &:hover{
+        //     background-color: var(--balck--light);
+        // }
         & .imageside {
             width: 32px;
             min-width: 32px;
@@ -282,6 +282,13 @@
                 font-size: 12px;
                 font-weight: 400;
                 line-height: 140%; /* 16.8px */
+            }
+        }
+    }
+    &.hoverd{
+        & .items{
+            &:hover{
+                background-color: var(--balck--light);
             }
         }
     }
