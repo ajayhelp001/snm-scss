@@ -1127,14 +1127,20 @@
             background-color: var(--neutral);
         }
         & .commitUser {
-            height: 27px;
-            min-width: 27px;
-            border-radius: 27px;
+            height: 32px;
+            min-width: 32px;
+            width: 32px;
+            border-radius: 50%;
             display: flex;
             overflow: hidden;
             & img {
                 width: 100%;
                 object-fit: cover;
+            }
+            &.commitUsersm{
+                width: 27px;
+                height: 27px;
+                min-width: 27px;
             }
         }
         & .content_side {
@@ -1147,8 +1153,12 @@
                 font-weight: 400;
                 line-height: 140%; /* 19.6px */
             }
+            & .userName{
+                font-weight: 600;
+            }
             & .tag {
                 color: var(--active);
+                word-break: break-all;
             }
         }
         
