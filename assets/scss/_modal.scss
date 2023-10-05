@@ -5,6 +5,13 @@
         &.postmodule{
             max-width: 935px;
             width: 100%;
+            & .modal-body{
+                & .orignalPostHeader {
+                    position: sticky;
+                    top: 0;
+                    background-color: var(--black--dark);
+                }
+            }
         }
     }
 }

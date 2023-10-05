@@ -74,6 +74,9 @@
                 filter: brightness(0.2);
             }
         }
+        &.tiktok{
+            transition: all ease-in-out 0s;
+        }
         &:hover,
         &.active {
             color: var(--white);
@@ -340,7 +343,7 @@
                                                 }
                                                 &.scope{
                                                     & img {
-                                                        // filter: brightness(0.7);
+                                                        filter: brightness(0.5);
                                                     }
                                                 }
                                             }
@@ -357,7 +360,7 @@
                                                     & .icon{
                                                         &.scope {
                                                             & img {
-                                                                filter: brightness(1);
+                                                                // filter: brightness(1);
                                                             }
                                                         }
                                                     }
@@ -775,6 +778,8 @@
                         gap: 8px;
                         text-decoration: none;
                         color: var(--white);
+                        position: relative;
+                        z-index: 2;
                         & .logoimg {
                             display: flex;
                             min-width: 32px;
@@ -806,7 +811,7 @@
                         }
                         & .scope {
                             & img {
-                                // filter: brightness(0.7);
+                                filter: brightness(0.5);
                             }
                         }
                     }
@@ -834,7 +839,7 @@
                             & .view{
                                 & .scope {
                                     & img {
-                                        filter: brightness(1);
+                                        // filter: brightness(1);
                                     }
                                 }
                             }
@@ -860,6 +865,9 @@
                     & .postContent {
                         max-width: 170px;
                     }
+                }
+                & .th_interaction {
+                    width: 92px;
                 }
             }
         }

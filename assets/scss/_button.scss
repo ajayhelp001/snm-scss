@@ -271,4 +271,23 @@
         line-height: 140%; /* 16.8px */
         color: var(--white);
     }
+    &.scopcheck{
+        justify-content: center;
+        gap: 0px;
+        & .form-check-input{
+            &:checked+label{
+                & .icon{
+                    &.scope {
+                        & img {
+                            filter: brightness(1) !important;
+                        }
+                    }
+                }
+            }
+        }
+        & label{
+            cursor: pointer;
+            padding: 0px 6px;
+        }
+    }
 }

@@ -308,3 +308,6 @@ removeBtn.addEventListener("click", () =>{
     ul.querySelectorAll("li").forEach(li => li.remove());
     countTags();
 });
+
+
+
