@@ -43,23 +43,22 @@
             & thead {
                 & tr {
                     th {
-                        height: 48px;
+                        height: 34px;
                     }
                 }
             }
             & tbody{
                 & tr {
                     & td, th {
-                        height: 40px;
+                        height: 34px;
                     }
-
                 }
                 & .icon{
                     height: 24px;
                     width: 24px;
                 }
                 & .postContent{
-                    max-width: 307px;
+                    max-width: 300px;
                 }
             }
         }
@@ -447,6 +446,33 @@
             }
         }
     }
+
+    
+.basicinfoCard {
+    & .content {
+    }
+    & .post_table {
+        & .table {
+            & thead {
+                & tr {
+                    th {
+                    }
+                }
+            }
+            & tbody{
+                & tr {
+                    & td, th {
+                    }
+                }
+                & .icon{
+                }
+                & .postContent{
+                    max-width: 270px;
+                }
+            }
+        }
+    }
+}
 }
 
 @media screen and (max-width: 1700px) {
@@ -557,4 +583,29 @@
         }
     }
 
+    .basicinfoCard {
+        & .content {
+        }
+        & .post_table {
+            & .table {
+                & thead {
+                    & tr {
+                        th {
+                        }
+                    }
+                }
+                & tbody{
+                    & tr {
+                        & td, th {
+                        }
+                    }
+                    & .icon{
+                    }
+                    & .postContent{
+                        max-width: 250px;
+                    }
+                }
+            }
+        }
+    }
 }

@@ -1,6 +1,20 @@
 
 // photos from flickr with creative commons license
-
+cytoscape('arrow-shape', 'my-custom-arrow', function (context, size, angle) {
+  const halfSize = size / 2;
+  const radians = angle * Math.PI / 180;
+  
+  const x1 = halfSize * Math.cos(radians);
+  const y1 = halfSize * Math.sin(radians);
+  
+  const x2 = -halfSize * Math.cos(radians);
+  const y2 = -halfSize * Math.sin(radians);
+  
+  context.beginPath();
+  context.moveTo(x1, y1);
+  context.lineTo(x2, y2);
+  context.stroke();
+});
 var cy = cytoscape({
   container: document.getElementById('cy'),
 
@@ -10,15 +24,16 @@ var cy = cytoscape({
   style: cytoscape.stylesheet()  
     .selector('node')
       .css({
-        'height': 52.63,
-        'width': 52.63,
+        'height': 62.63,
+        'width': 62.63,
         'background-fit': 'cover',
         'border-color': '#00D1FF',
-        'border-width': 2,
+        'border-width': 3,
         'position': 'relative',
         'border-style': 'solid'
         
       })
+
     .selector('.eating')
       .css({
         'border-color': 'red',
@@ -36,16 +51,19 @@ var cy = cytoscape({
         'target-arrow-shape': '',
         'line-color': '#BBBABD',
         'target-arrow-color': '#BBBABD',
-        'line-style': 'dashed'
+        'line-style': 'dashed',
+        'source-arrow-shape': 'my-custom-arrow',
+        'source-arrow-color': 'white',
+        'target-arrow-rotation': '100deg'
         
       })
     .selector('#phanlemailan')
       .css({
-        'background-image': 'assets/image/map/NguyenNhuHang.png'
+        'background-image': 'assets/image/map/LongMetRoi.png'
       })
     .selector('#twtnews')
       .css({
-        'background-image': 'assets/image/map/Nana.png'
+        'background-image': 'assets/image/map/NguyenNhuHang.png'
       })
     .selector('#memetipac')
       .css({
@@ -57,7 +75,13 @@ var cy = cytoscape({
       })
   .selector('#nguyennhuhang')
       .css({
-        'background-image': 'assets/image/map/MaiLan.png'
+        'background-image': 'assets/image/map/MaiLan.png',
+        "shadow": {
+          "offsetX": 5,
+          "offsetY": 5,
+          "blurRadius": 10,
+          "color": "rgba(255, 255, 0, 0.5)"
+        }
       })
   .selector('#traderlollipop')
       .css({
@@ -77,11 +101,11 @@ var cy = cytoscape({
       })
     .selector('#nodeten')
       .css({
-        'background-image': 'assets/image/map/Trader.png'
+        'background-image': 'assets/image/map/ThanhHaHN.png'
       })
     .selector('#nodeele')
       .css({
-        'background-image': 'assets/image/map/Ana.png'
+        'background-image': 'assets/image/map/PropertyKoko.png'
       })
     .selector('#nodetwe')
       .css({
@@ -91,7 +115,10 @@ var cy = cytoscape({
       .css({
         'background-image': 'assets/image/map/Nana.png'
       })
-      
+      .selector('#nodeforth')
+      .css({
+        'background-image': 'assets/image/map/MeMaiLan.png'
+      })
       .selector('node[label]')
       .css({
         'label': 'data(label)',
@@ -115,7 +142,7 @@ var cy = cytoscape({
         'font-weight': 500,
         'text-border-opacity': 1,
         'font-size': '12px',
-        'border-style': 'dotted'
+        'border-style': 'solid'
       })
       .selector('.bottom-center')
       .css({
@@ -156,30 +183,30 @@ var cy = cytoscape({
       { "data": { "id": "nodeele" }, "classes": "background bottom-center" },			  
       { "data": { "id": "nodetwe" }, "classes": "background bottom-center" },			  
       { "data": { "id": "nodethi" }, "classes": "background bottom-center" },
+      { "data": { "id": "nodeforth" }, "classes": "background bottom-center" },
     ],
     "edges": [
       { "data": { "id": "e12", "source": "twtnews", "target": "nguyennhuhang" } },
-      { "data": { "id": "e1", "source": "twtnews", "target": "phanlemailan", "arrow": "none", "type": "none" } },			  
-      { "data": { "id": "e2", "source": "memetipac", "target": "phanlemailan", "arrow": "none" } },
-      { "data": { "id": "e3", "source": "trader", "target": "phanlemailan", "arrow": "none" } },
+      { "data": { "id": "e1", "source": "nodethi", "target": "nguyennhuhang", "arrow": "none", "type": "none" } },			  
+      { "data": { "id": "e2", "source": "nodeten", "target": "nguyennhuhang", "arrow": "none" } },
+      { "data": { "id": "e3", "source": "nodeten", "target": "cotsonggenz", "arrow": "none" } },
       { "data": { "id": "e4", "source": "phanlemailan", "target": "nguyennhuhang", "arrow": "none" } },
-      { "data": { "id": "e5", "source": "nanapham", "target": "phanlemailan", "arrow": "none" } },
-      { "data": { "id": "e6", "source": "traderlollipop", "target": "phanlemailan", "arrow": "none" } },
-      { "data": { "id": "e7", "source": "cotsonggenz", "target": "phanlemailan", "arrow": "none" } },
-      { "data": { "id": "e8", "source": "nanapham", "target": "traderlollipop", "arrow": "none", "type": "none" } },
-      { "data": { "id": "e9", "source": "nanapham", "target": "nguyennhuhang", "arrow": "none", "type": "none" } },
-      { "data": { "id": "e10", "source": "traderlollipop", "target": "nodetwe", "arrow": "none", "type": "none" } },
-      { "data": { "id": "e11", "source": "nanapham", "target": "cotsonggenz", "arrow": "none", "type": "none" } },
-      
-      { "data": { "id": "e13", "source": "memetipac", "target": "nguyennhuhang", "arrow": "none", "type": "none" } },
-      { "data": { "id": "e14", "source": "trader", "target": "nguyennhuhang", "arrow": "none", "type": "none" } },			  
-      { "data": { "id": "e15", "source": "cotsonggenz", "target": "nguyennhuhang", "arrow": "none", "type": "none" } },			  
+      { "data": { "id": "e10", "source": "traderlollipop", "target": "nguyennhuhang", "arrow": "none", "type": "none" } },
+      { "data": { "id": "e8", "source": "twtnews", "target": "traderlollipop", "arrow": "none", "type": "none" } },
       { "data": { "id": "e16", "source": "kokohalinh", "target": "nguyennhuhang", "arrow": "none", "type": "none" } },			  
-      { "data": { "id": "e17", "source": "kokohalinh", "target": "phanlemailan", "arrow": "none", "type": "none" } },
-      { "data": { "id": "e18", "source": "nodeten", "target": "nguyennhuhang", "arrow": "none", "type": "none" } },
-      { "data": { "id": "e19", "source": "nodeele", "target": "nguyennhuhang", "arrow": "none", "type": "none" } },
+      { "data": { "id": "e17", "source": "kokohalinh", "target": "nanapham", "arrow": "none", "type": "none" } },
+      { "data": { "id": "e9", "source": "nanapham", "target": "nguyennhuhang", "arrow": "none", "type": "none" } },
       { "data": { "id": "e20", "source": "nodetwe", "target": "nguyennhuhang", "arrow": "none", "type": "none" } },
-      { "data": { "id": "e21", "source": "nodethi", "target": "nguyennhuhang", "arrow": "none", "type": "none" } },
+      { "data": { "id": "e6", "source": "nodeele", "target": "nguyennhuhang", "arrow": "none" } },
+      { "data": { "id": "e13", "source": "trader", "target": "nguyennhuhang", "arrow": "none", "type": "none" } },
+      { "data": { "id": "e14", "source": "memetipac", "target": "nodeten", "arrow": "none", "type": "none" } },			  
+      { "data": { "id": "e15", "source": "memetipac", "target": "nguyennhuhang", "arrow": "none", "type": "none" } },			  
+      { "data": { "id": "e18", "source": "memetipac", "target": "nodethi", "arrow": "none", "type": "none" } },			        
+      { "data": { "id": "e19", "source": "nodeforth", "target": "nguyennhuhang", "arrow": "none", "type": "none" } },
+      
+      { "data": { "id": "e21", "source": "cotsonggenz", "target": "nguyennhuhang", "arrow": "none", "type": "none" } },
+      // { "data": { "id": "e20", "source": "nodetwe", "target": "nguyennhuhang", "arrow": "none", "type": "none" } },
+      // { "data": { "id": "e21", "source": "nodethi", "target": "nguyennhuhang", "arrow": "none", "type": "none" } },
       
 
       
@@ -190,17 +217,19 @@ var cy = cytoscape({
   layout: {
     name: 'preset',
     positions: {
-        'twtnews': { x: 475, y: -200 },
-        'phanlemailan': { x: 300, y: -200 },
-        'memetipac': { x: 800, y: -200 },
-        'trader': { x: 800, y: -70 },
-        'nguyennhuhang': { x: 570, y: 0 },// main
-        'traderlollipop': { x: 300, y: 70 }, 
+        
+        'nodeforth': { x: 300, y: -200 },
+        'twtnews': { x: 450, y: -200 },
+        'phanlemailan': { x: 800, y: -200 },
+        'memetipac': { x: 800, y: -100 },
+        'trader': { x: 800, y: 50 },
+        'nguyennhuhang': { x: 550, y: 0 },// main
+        'traderlollipop': { x: 300, y: -70 }, // Black with lipstick 300 -70
         'nanapham': { x: 300, y: 200 },
         'kokohalinh': { x: 475, y: 200 },
-        'cotsonggenz': { x: 800, y: 70 },
-        'nodeten': { x: 800, y: 200 },
-        'nodeele': { x: 300, y: -70 },
+        'cotsonggenz': { x: 800, y: 200 },
+        'nodeten': { x: 550, y: 200 },
+        'nodeele': { x: 300, y: 70 }, 
         'nodetwe': { x: 650, y: 200 },
         'nodethi': { x: 650, y: -200 },
 
@@ -357,7 +386,7 @@ cy.nodes().on('click', function(event) {
                 return div;
             },
             // your own preferences:
-            arrow: true,
+            
             placement: 'bottom',
             hideOnClick: false,
             sticky: "reference",

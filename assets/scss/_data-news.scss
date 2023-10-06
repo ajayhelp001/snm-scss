@@ -103,6 +103,9 @@
 
 .newsFilterCard {
     width: 280px;
+    &.acc_filter_Sm{
+        max-width: 256px;
+    }
     & .card-body {
         & .innerBody {
             display: flex;
@@ -951,10 +954,16 @@
     & .mainpostcard{
         max-width: 460px;
         width: 100%;
+        &.ytubemainPost{
+            max-width: 676px;
+        }
     }
     & .commentcard {
         max-width: 412px;
         width: 100%;
+        &.ytubeOverComment {
+            max-width: 600px;
+        }
     }
     & .postdetailmediacard{
         max-width: 372px;
@@ -1261,5 +1270,20 @@
 
 
 // *******************************************************  [ Fb Post-Details  Css End ] ***********************************************
+
+
+
+
+
+// *******************************************************  [ YouTube Post-Details  Css End ] ***********************************************
+
+
+
+
+// *******************************************************  [ YouTube Post-Details  Css End ] ***********************************************
+
+
+
+
 
 

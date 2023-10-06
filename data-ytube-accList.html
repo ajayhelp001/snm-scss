@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNM Dashboad | Data-Fb-PostList</title>
+    <link rel="icon" type="image/x-icon" href="assets/image/logo.png">
+    <!-- ****** Jquary ***** -->
+    <script src="assets/libs/jquary/jquery.min.js"></script>
+    <!-- ****** Bootstrap Css ***** -->
+    <link rel="stylesheet" href="assets/libs/bootstrap/css/bootstrap.min.css">
+    <!-- ****** Select2 Css -->
+    <link href="assets/libs/select2/select2.min.css" rel="stylesheet" />
+    <!-- ****** Style Css ***** -->
+    <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+<body>
+    <main class="main-dashboard">
+        <div class="maininner_Dashboard h-100 gx-0">
+            <!-- * Aside Bar Start -->
+            <div class="asideBar h-100">
+                <div class="row h-100 flex-column flex-nowrap mx-0 gx-0">
+                    <div class="col-12 logo_top">
+                        <div class="logo"><img src="assets/image/logo.png" class="w-100" alt="logo"></div>
+                        <div class="logoname"><img src="assets/image/SNM.png" class="w-100" alt="SNM"></div>
+                    </div>
+                    <div class="col-12 h-100 flex-fill overflow-hidden">
+                        <div class="asideBody h-100 overflow-y-auto">
+                            <ul class="nav_link">
+                                <li><a href="index.html" class="navlinks"><img src="assets/image/icon/icon-report.svg" alt="report"></a></li>
+                                <li><a href="data-fb-postList.html" class="navlinks active"><img src="assets/image/icon/icon-collect.svg" alt="collect"></a></li>
+                                <li><a href="pg-tracking-accList-social.html" class="navlinks"><img src="assets/image/icon/icon-monitoring.svg" alt="monitoring"></a></li>
+                                <li><a href="javascript:;" class="navlinks"><img src="assets/image/icon/focus.svg" alt="admin"></a></li>
+                                <li><a href="javascript:;" class="navlinks"><img src="assets/image/icon/icon-admin.svg" alt="admin"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--! * Aside Bar End -->
+            <!-- * Main DashBoard Start -->
+            <div class="dashboard_Side h-100">
+                <div class="row h-100 flex-column flex-nowrap mx-0 gx-0">
+                    <!-- * User Header Start -->
+                    <div class="col-12">
+                        <div class="topheader">
+                            <div class="row mx-0 gx-0">
+                                <div class="col-7">
+                                    <div class="row pageLinks gx-0 mx-0">
+                                        <div class="col">
+                                            <a href="data-fb-postList.html" class="socialLinkLink facebook"><span><img src="assets/image/icon/facebook.svg" class="w-100" alt="facebook"></span> Facebook</a>
+                                        </div>
+                                        <div class="col">
+                                            <a href="javascript:;" class="socialLinkLink tiktok"><span><img src="assets/image/icon/tiktok.svg" class="w-100" alt="tiktok"></span> Tiktok</a>
+                                        </div>
+                                        <div class="col">
+                                            <a href="javascript:;" class="socialLinkLink youtube active"><span><img src="assets/image/icon/yoytube.svg" class="w-100" alt="youtube"></span> Youtube</a>
+                                        </div>
+                                        <div class="col">
+                                            <a href="data-news-postList.html" class="socialLinkLink news "><span><img src="assets/image/icon/digital-news.svg" class="w-100" alt="digital news"></span> Digital news</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col search_bar">
+                                    <div class="input-group">
+                                        <button type="button" class="input-group-text" id="basic-addon1"><img src="assets/image/icon/search_icon.svg" alt="search"></button>
+                                        <input type="text" class="form-control" placeholder="Search anything" aria-label="Username" aria-describedby="basic-addon1">
+                                    </div>
+                                </div>
+                                <div class="col-auto userSide">
+                                    <div class="dropdown notificationDropDown">
+                                        <div class="notification" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside"><div class="bell"><img src="assets/image/icon/bell.svg" class="w-100" alt="logo"></div><span>5</span></div>
+                                        <div class="dropdown-menu">
+                                            <div class="n_title">Notifications</div>
+                                            <div class="n_Body">
+                                                <div class="n_item">
+                                                    <div class="logoimg"><img src="assets/image/icon/user.svg" class="w-100" alt="logo"></div>
+                                                    <div class="n_message">
+                                                        <div class="directMessage">Detect a connect-link from <span>Phan Lê Mai Lan</span> to <span>Phan Lê Dũng</span></div>
+                                                        <div class="date">05/09/2023 <span>10:55</span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="n_item">
+                                                    <div class="logoimg"><img src="assets/image/icon/user.svg" class="w-100" alt="logo"></div>
+                                                    <div class="n_message">
+                                                        <div class="directMessage">Detect a connect-link from <span>Phan Lê Mai Lan</span> to <span>Phan Lê Thanh Hà</span></div>
+                                                        <div class="date">05/09/2023 <span>09:23</span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="n_item">
+                                                    <div class="logoimg"><img src="assets/image/icon/user.svg" class="w-100" alt="logo"></div>
+                                                    <div class="n_message">
+                                                        <div class="directMessage">Phan Lê Mai Lan has created a post on the wall</span></div>
+                                                        <div class="date">05/09/2023 <span>09:23</span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="n_item">
+                                                    <div class="logoimg"><img src="assets/image/icon/user.svg" class="w-100" alt="logo"></div>
+                                                    <div class="n_message">
+                                                        <div class="directMessage"><span>Detected a violations in a post of a Facebook account Nana Phạm</span></div>
+                                                        <div class="date">05/09/2023 <span>09:23</span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="n_item">
+                                                    <div class="logoimg"><img src="assets/image/icon/user.svg" class="w-100" alt="logo"></div>
+                                                    <div class="n_message">
+                                                        <div class="directMessage"><span>Detected a violations in a post of a Facebook account Nana Phạm</span></div>
+                                                        <div class="date">05/09/2023 <span>09:23</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="notification"><div class="bell"><img src="assets/image/icon/bell.svg" class="w-100" alt="logo"></div><span>5</span></div> -->
+                                    <div class="user"><img src="assets/image/icon/user.svg" class="w-100" alt="logo"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="breadcrumb_Bar">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item active"><a href="index.html" class="page_link">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="javascript:;" class="page_link">Data</a></li>
+                                    <li class="breadcrumb-item" aria-current="page">Youtube</li>
+                                </ol>
+                            </nav>
+                        </div>
+                        <div class="all_sources">
+                            <div class="row  gx-0 align-items-center">
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="row all_data gx-0">
+                                                <div class="col-auto data">Feeds</div>
+                                                <div class="col-auto"><a href="assets/docx/report-000023.pdf" class="sourcesBtn" download><img src="assets/image/icon/PDF.svg" alt="download pdf w-100"></a></div>
+                                                <div class="col-auto"><a href="assets/docx/report-000023.xls" class="sourcesBtn" download><img src="assets/image/icon/excle_Sheet.svg" alt="download pdf w-100"></a></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="nav nav-pills" id="pills-tab" role="tablist">
+                                                <ul class="d-flex flex-wrap m-0 p-0 overviewTabs list-unstyled gap-3">
+                                                    <li class="nav-item " role="presentation">
+                                                        <a href="data-ytube-postList.html" class="nav-link">Overview</a>
+                                                    </li>
+                                                    <li class="nav-item" role="presentation">
+                                                        <a href="javascript:;" class="nav-link active">Accounts</a>
+                                                    </li>
+                                                    <li class="nav-item " role="presentation">
+                                                        <a href="data-ytube-mediaList.html" class="nav-link">Videos</a>
+                                                    </li>
+                                                    <li class="nav-item " role="presentation">
+                                                        <a href="data-ytube-keyword.html" class="nav-link">Keyword</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-auto">
+                                    <div class="row gx-2">
+                                        <div class="col-auto">
+                                            <div class="categoryCard">
+                                                <div class="card_body">
+                                                    <div class="categoryImg"><img src="assets/image/icon/theme-user-account.svg" alt="post"></div>
+                                                    <div class="valu">200<span>Accounts</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <div class="categoryCard">
+                                                <div class="card_body">
+                                                    <div class="categoryImg"><img src="assets/image/icon/post.svg" alt="post"></div>
+                                                    <div class="valu">380<span>Posts</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <div class="categoryCard">
+                                                <div class="card_body">
+                                                    <div class="categoryImg"><img src="assets/image/icon/danger.svg" alt="post"></div>
+                                                    <div class="valu">140<span>Violations</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <div class="categoryCard">
+                                                <div class="card_body">
+                                                    <div class="categoryImg"><img src="assets/image/icon/interaction.svg" alt="post"></div>
+                                                    <div class="valu">1,6k+<span>Interaction</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--! * User Header End -->
+                    <!-- * fb-postlist main data Start -->
+                    <div class="col-12 h-100 flex-fill maincontent overflow-hidden facebook-postlist-data">
+                        <div class="manin_content_Body h-100 overflow-hidden">
+                            <div class="tab-content h-100" id="pills-tabContent">
+                                <!-- ** Account Tab Start -->
+                                <div class="tab-pane fade h-100 show active">
+                                    <div class="row gx-2 overflow-y-auto justify-content-center row-gap-2 h-100">
+                                        <div class="col-auto h-100">
+                                            <div class="card levelCard newsFilterCard h-100 acc_filter_Sm">
+                                                <form class="card-body h-100">
+                                                    <div class="row flex-column flex-nowrap h-100">
+                                                        <div class="card_title">Account filter</div>
+                                                        <div class="col-12 h-100 flex-fill overflow-y-auto innerBody">
+                                                            <div class="keyword_category row gap-1">
+                                                                <div class="col-12 filterTitle">By keyword categories</div>
+                                                                <div class="col-12">
+                                                                    <div class="d-flex flex-column keywordkey">
+                                                                        <div class="form-check">
+                                                                            <input class="form-check-input" type="checkbox" value="" id="keyword1" checked>
+                                                                            <label class="form-check-label" for="keyword1">Crime</label>
+                                                                        </div>
+                                                                        <div class="form-check">
+                                                                            <input class="form-check-input" type="checkbox" value="" id="keyword2" checked>
+                                                                            <label class="form-check-label" for="keyword2">Drug</label>
+                                                                        </div>
+                                                                        <div class="form-check">
+                                                                            <input class="form-check-input" type="checkbox" value="" id="keyword3" checked>
+                                                                            <label class="form-check-label" for="keyword3">Sexual</label>
+                                                                        </div>
+                                                                        <div class="form-check">
+                                                                            <input class="form-check-input" type="checkbox" value="" id="keyword4" checked>
+                                                                            <label class="form-check-label" for="keyword4">Hated</label>
+                                                                        </div>
+                                                                        <div class="form-check">
+                                                                            <input class="form-check-input" type="checkbox" value="" id="keyword5" checked>
+                                                                            <label class="form-check-label" for="keyword5">War</label>
+                                                                        </div>
+                                                                        <div class="form-check">
+                                                                            <input class="form-check-input" type="checkbox" value="" id="keyword6" checked>
+                                                                            <label class="form-check-label" for="keyword6">Violence</label>
+                                                                        </div>
+                                                                        <div class="form-check">
+                                                                            <input class="form-check-input" type="checkbox" value="" id="keyword7" checked>
+                                                                            <label class="form-check-label" for="keyword7">Weapon</label>
+                                                                        </div>
+                                                                        <div class="form-check">
+                                                                            <input class="form-check-input" type="checkbox" value="" id="keyword8" checked>
+                                                                            <label class="form-check-label" for="keyword8">Label</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="by_category row gap-1">
+                                                                <div class="col-12 filterTitle">By location</div>
+                                                                <div class="col-12 selctbox location">
+                                                                    <select class="locationSelect" multiple="multiple">
+                                                                        <option value="1">Ha Noi</option>
+                                                                        <option value="2">Ha Nam</option>
+                                                                        <option value="3">Nha Trang </option>
+                                                                    </select>
+                                                                    <div  class="location_selectedItems locationitemJs multipal_opetions">
+                                                                        <!-- Selected items will be displayed here -->
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="by_category row gap-1">
+                                                                <div class="col-12 filterTitle">By gender</div>
+                                                                <div class="col-12">
+                                                                    <div class="row radiobutton_group g-0 gap-1">
+                                                                        <div class="col-auto">
+                                                                            <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked>
+                                                                            <label class="radiobutton_label" for="option1">Male</label>
+                                                                        </div>
+                                                                        <div class="col-auto">
+                                                                            <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+                                                                            <label class="radiobutton_label" for="option2">Female</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="applyfilter pt2"><button type="button" class="applybtn w-100 shadow-none border-0">Apply filter</button></div>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto h-100 keyword_category_KEY apendDataTable">
+                                            <div class="card top_post h-100 levelCard list_post_Table">
+                                                <div class="card-body h-100">
+                                                    <div class="row flex-column flex-nowrap h-100 list">
+                                                        <div class="col-12">
+                                                            <div class="card_title keywords d-flex">
+                                                                <div class="cuntryflage"><span class="flage"><img src="assets/image/icon/singal-user-icon.svg" class="w-100" alt=""></span>Account</div>
+                                                                <div class="add-button"><a href="pg-tracking-accList-social.html" type="button" class="appendBtn moniter px-2"><img src="assets/image/icon/arrow-right.svg" alt="plus"><img src="assets/image/icon/icon-monitoring.svg" alt="plus"></a></div>
+                                                            </div> 
+                                                            <div class="search_bar rounded-3 listSearch">
+                                                                <div class="input-group">
+                                                                    <button type="button" class="input-group-text" id="basic-addon1"><img src="assets/image/icon/search_icon.svg" alt="search"></button>
+                                                                    <input type="text" class="form-control shadow-none" placeholder="input keywords" aria-label="Username" aria-describedby="basic-addon1">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 h-100 flex-fill overflow-hidden">
+                                                            <div class="row mx-0 gx-0 posttableSide  post_listTable h-100 position-relative">
+                                                                <div class="col-12 post_table bg-transparent table-responsive h-100">
+                                                                    <table class="table align-middle table-borderless table-hover">
+                                                                        <thead class="align-middle">
+                                                                            <tr>
+                                                                                <th scope="col"><div class="form-check p-0"><input class="form-check-input m-0" type="checkbox" value="" checked></div></th>
+                                                                                <th scope="col">Account</th>
+                                                                                <th scope="col">Status</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td><div class="form-check p-0"><input class="form-check-input m-0" type="checkbox" value="" checked></div></td>
+                                                                                <td><a href="pg-tracking-userDetails-overview.html" class="postContent source"><span class="logoimg"><img src="assets/image/fb_user.png" alt="logo"></span><div class="sourceName"> Phan Lê Mai Lan</div></a></td>
+                                                                                <td><div class="form-check p-0 scopcheck"><input class="form-check-input m-0" type="checkbox" id="scop1" value="" hidden checked><label for="scop1" class="view justify-content-center"><span class="icon scope bg-transparent"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></label></div></td>
+                                                                                <!-- <td><a href="javascript:;" class="view justify-content-center "><span class="icon scope bg-transparent"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></a></td> -->
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td><div class="form-check p-0"><input class="form-check-input m-0" type="checkbox" value="" checked></div></td>
+                                                                                <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/BikerAnTOn.png" alt="logo"></span><div class="sourceName">Biker An Tôn</div></a></td>
+                                                                                <td><div class="form-check p-0 scopcheck"><input class="form-check-input m-0" type="checkbox" id="scop2" value="" hidden><label for="scop2" class="view justify-content-center"><span class="icon scope bg-transparent"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></label></div></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td><div class="form-check p-0"><input class="form-check-input m-0" type="checkbox" value="" checked></div></td>
+                                                                                <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/thanhhaHN.png" alt="logo"></span><div class="sourceName">thanh hà HN</div></a></td>
+                                                                                <td><div class="form-check p-0 scopcheck"><input class="form-check-input m-0" type="checkbox" id="scop3" value="" hidden><label for="scop3" class="view justify-content-center"><span class="icon scope bg-transparent"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></label></div></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td><div class="form-check p-0"><input class="form-check-input m-0" type="checkbox" value="" checked></div></td>
+                                                                                <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/DungLaw.png" alt="logo"></span><div class="sourceName">Dũng Law</div></a></td>
+                                                                                <td><div class="form-check p-0 scopcheck"><input class="form-check-input m-0" type="checkbox" id="scop4" value="" hidden><label for="scop4" class="view justify-content-center"><span class="icon scope bg-transparent"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></label></div></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td><div class="form-check p-0"><input class="form-check-input m-0" type="checkbox" value="" checked></div></td>
+                                                                                <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/LangMetRoi.png" alt="logo"></span><div class="sourceName">Long Mệt Rồi</div></a></td>
+                                                                                <td><div class="form-check p-0 scopcheck"><input class="form-check-input m-0" type="checkbox" id="scop5" value="" hidden><label for="scop5" class="view justify-content-center"><span class="icon scope bg-transparent"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></label></div></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td><div class="form-check p-0"><input class="form-check-input m-0" type="checkbox" value="" checked></div></td>
+                                                                                <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/Nguyennhu.png" alt="logo"></span><div class="sourceName">Nguyễn Như Hằng</div></a></td>
+                                                                                <td><div class="form-check p-0 scopcheck"><input class="form-check-input m-0" type="checkbox" id="scop6" value="" hidden checked><label for="scop6" class="view justify-content-center"><span class="icon scope bg-transparent"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></label></div></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td><div class="form-check p-0"><input class="form-check-input m-0" type="checkbox" value="" checked></div></td>
+                                                                                <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/koko.png" alt="logo"></span><div class="sourceName">Koko Koko</div></a></td>
+                                                                                <td><div class="form-check p-0 scopcheck"><input class="form-check-input m-0" type="checkbox" id="scop7" value="" hidden><label for="scop7" class="view justify-content-center"><span class="icon scope bg-transparent"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></label></div></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td><div class="form-check p-0"><input class="form-check-input m-0" type="checkbox" value="" checked></div></td>
+                                                                                <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/TraderLollipop.png" alt="logo"></span><div class="sourceName">Trader Lollipop</div></a></td>
+                                                                                <td><div class="form-check p-0 scopcheck"><input class="form-check-input m-0" type="checkbox" id="scop8" value="" hidden><label for="scop8" class="view justify-content-center"><span class="icon scope bg-transparent"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></label></div></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td><div class="form-check p-0"><input class="form-check-input m-0" type="checkbox" value="" checked></div></td>
+                                                                                <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/MaiLinh.png" alt="logo"></span><div class="sourceName">Mai Linh</div></a></td>
+                                                                                <td><div class="form-check p-0 scopcheck"><input class="form-check-input m-0" type="checkbox" id="scop9" value="" hidden><label for="scop9" class="view justify-content-center"><span class="icon scope bg-transparent"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></label></div></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td><div class="form-check p-0"><input class="form-check-input m-0" type="checkbox" value="" checked></div></td>
+                                                                                <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/anaYang.png" alt="logo"></span><div class="sourceName">Ana</div></a></td>
+                                                                                <td><div class="form-check p-0 scopcheck"><input class="form-check-input m-0" type="checkbox" id="scop10" value="" hidden><label for="scop10" class="view justify-content-center"><span class="icon scope bg-transparent"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></label></div></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td><div class="form-check p-0"><input class="form-check-input m-0" type="checkbox" value="" checked></div></td>
+                                                                                <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/thanhhaHN.png" alt="logo"></span><div class="sourceName">Thanh Hà </div></a></td>
+                                                                                <td><div class="form-check p-0 scopcheck"><input class="form-check-input m-0" type="checkbox" id="scop11" value="" hidden><label for="scop11" class="view justify-content-center"><span class="icon scope bg-transparent"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></label></div></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td><div class="form-check p-0"><input class="form-check-input m-0" type="checkbox" value="" checked></div></td>
+                                                                                <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/nanaPham.png" alt="logo"></span><div class="sourceName">Nana Phạm</div></a></td>
+                                                                                <td><div class="form-check p-0 scopcheck"><input class="form-check-input m-0" type="checkbox" id="scop12" value="" hidden checked><label for="scop12" class="view justify-content-center"><span class="icon scope bg-transparent"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></label></div></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td><div class="form-check p-0"><input class="form-check-input m-0" type="checkbox" value="" checked></div></td>
+                                                                                <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/quyenLam.png" alt="logo"></span><div class="sourceName">Quyền Lâm</div></a></td>
+                                                                                <td><div class="form-check p-0 scopcheck"><input class="form-check-input m-0" type="checkbox" id="scop13" value="" hidden><label for="scop13" class="view justify-content-center"><span class="icon scope bg-transparent"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></label></div></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td><div class="form-check p-0"><input class="form-check-input m-0" type="checkbox" value="" checked></div></td>
+                                                                                <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/DoanTranMinhTung.png" alt="logo"></span><div class="sourceName">Đoàn Trần Minh Tùng</div></a></td>
+                                                                                <td><div class="form-check p-0 scopcheck"><input class="form-check-input m-0" type="checkbox" id="scop14" value="" hidden><label for="scop14" class="view justify-content-center"><span class="icon scope bg-transparent"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></label></div></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td><div class="form-check p-0"><input class="form-check-input m-0" type="checkbox" value="" checked></div></td>
+                                                                                <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/KalvinElliot.png" alt="logo"></span><div class="sourceName">Kalvin Elliot</div></a></td>
+                                                                                <td><div class="form-check p-0 scopcheck"><input class="form-check-input m-0" type="checkbox" id="scop15" value="" hidden><label for="scop15" class="view justify-content-center"><span class="icon scope bg-transparent"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></label></div></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td><div class="form-check p-0"><input class="form-check-input m-0" type="checkbox" value="" checked></div></td>
+                                                                                <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/EvaMa.png" alt="logo"></span><div class="sourceName">Eva Ma</div></a></td>
+                                                                                <td><div class="form-check p-0 scopcheck"><input class="form-check-input m-0" type="checkbox" id="scop16" value="" hidden><label for="scop16" class="view justify-content-center"><span class="icon scope bg-transparent"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></label></div></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td><div class="form-check p-0"><input class="form-check-input m-0" type="checkbox" value="" checked></div></td>
+                                                                                <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/meboon.png" alt="logo"></span><div class="sourceName">Mẹ Boon</div></a></td>
+                                                                                <td><div class="form-check p-0 scopcheck"><input class="form-check-input m-0" type="checkbox" id="scop17" value="" hidden><label for="scop17" class="view justify-content-center"><span class="icon scope bg-transparent"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></label></div></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td><div class="form-check p-0"><input class="form-check-input m-0" type="checkbox" value="" checked></div></td>
+                                                                                <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/nhiPham.png" alt="logo"></span><div class="sourceName">Nhi Hà Phạm</div></a></td>
+                                                                                <td><div class="form-check p-0 scopcheck"><input class="form-check-input m-0" type="checkbox" id="scop18" value="" hidden><label for="scop18" class="view justify-content-center"><span class="icon scope bg-transparent"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></label></div></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td><div class="form-check p-0"><input class="form-check-input m-0" type="checkbox" value="" checked></div></td>
+                                                                                <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/NgocQuyen.png" alt="logo"></span><div class="sourceName">Ngọc Quyên</div></a></td>
+                                                                                <td><div class="form-check p-0 scopcheck"><input class="form-check-input m-0" type="checkbox" id="scop19" value="" hidden><label for="scop19" class="view justify-content-center"><span class="icon scope bg-transparent"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></label></div></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td><div class="form-check p-0"><input class="form-check-input m-0" type="checkbox" value="" checked></div></td>
+                                                                                <td><a href="javascript:;" class="postContent source"><span class="logoimg"><img src="assets/image/ZaneRachel.png" alt="logo"></span><div class="sourceName">Zane Rachel</div></a></td>
+                                                                                <td><div class="form-check p-0 scopcheck"><input class="form-check-input m-0" type="checkbox" id="scop20" value="" hidden><label for="scop20" class="view justify-content-center"><span class="icon scope bg-transparent"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></label></div></td>
+                                                                            </tr>
+
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- ** Account Tab End -->
+                            </div>
+                        </div>
+                    </div>
+                    <!--! * fb-postlist main data End -->
+                </div>
+            </div>
+            <!--! * Main DashBoard Start -->
+
+        </div>
+    </main>
+
+
+    <!-- *** Bootstrap Js ***** -->
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- *** Select2 Js *** -->
+    <script src="assets/libs/select2/select2.min.js"></script>
+    <!-- **** Custom Js ***** -->
+    <script src="assets/js/custom.js"></script>
+
+</body>
+</html>

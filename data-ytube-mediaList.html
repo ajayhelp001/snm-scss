@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SNM Dashboad | Data-Fb-PostDetails-Overview</title>
+    <title>SNM Dashboad | Data-Fb-PostList</title>
     <link rel="icon" type="image/x-icon" href="assets/image/logo.png">
     <!-- ****** Jquary ***** -->
     <script src="assets/libs/jquary/jquery.min.js"></script>
@@ -48,13 +48,13 @@
                                 <div class="col-7">
                                     <div class="row pageLinks gx-0 mx-0">
                                         <div class="col">
-                                            <a href="javascript:;" class="socialLinkLink facebook active"><span><img src="assets/image/icon/facebook.svg" class="w-100" alt="facebook"></span> Facebook</a>
+                                            <a href="data-fb-postList.html" class="socialLinkLink facebook"><span><img src="assets/image/icon/facebook.svg" class="w-100" alt="facebook"></span> Facebook</a>
                                         </div>
                                         <div class="col">
                                             <a href="javascript:;" class="socialLinkLink tiktok"><span><img src="assets/image/icon/tiktok.svg" class="w-100" alt="tiktok"></span> Tiktok</a>
                                         </div>
                                         <div class="col">
-                                            <a href="javascript:;" class="socialLinkLink youtube"><span><img src="assets/image/icon/yoytube.svg" class="w-100" alt="youtube"></span> Youtube</a>
+                                            <a href="javascript:;" class="socialLinkLink youtube active"><span><img src="assets/image/icon/yoytube.svg" class="w-100" alt="youtube"></span> Youtube</a>
                                         </div>
                                         <div class="col">
                                             <a href="data-news-postList.html" class="socialLinkLink news "><span><img src="assets/image/icon/digital-news.svg" class="w-100" alt="digital news"></span> Digital news</a>
@@ -121,8 +121,7 @@
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item active"><a href="index.html" class="page_link">Home</a></li>
                                     <li class="breadcrumb-item"><a href="javascript:;" class="page_link">Data</a></li>
-                                    <li class="breadcrumb-item"><a href="data-fb-postList.html" class="page_link">Facebook</a></li>
-                                    <li class="breadcrumb-item" aria-current="page">Post</li>
+                                    <li class="breadcrumb-item" aria-current="page">Youtube</li>
                                 </ol>
                             </nav>
                         </div>
@@ -132,7 +131,7 @@
                                     <div class="row">
                                         <div class="col-12">
                                             <div class="row all_data gx-0">
-                                                <div class="col-auto data">Post details</div>
+                                                <div class="col-auto data">Feeds</div>
                                                 <div class="col-auto"><a href="assets/docx/report-000023.pdf" class="sourcesBtn" download><img src="assets/image/icon/PDF.svg" alt="download pdf w-100"></a></div>
                                                 <div class="col-auto"><a href="assets/docx/report-000023.xls" class="sourcesBtn" download><img src="assets/image/icon/excle_Sheet.svg" alt="download pdf w-100"></a></div>
                                             </div>
@@ -141,19 +140,16 @@
                                             <div class="nav nav-pills" id="pills-tab" role="tablist">
                                                 <ul class="d-flex flex-wrap m-0 p-0 overviewTabs list-unstyled gap-3">
                                                     <li class="nav-item " role="presentation">
-                                                        <a href="javascript:;" class="nav-link active">Overview</a>
+                                                        <a href="data-ytube-postList.html" class="nav-link">Overview</a>
+                                                    </li>
+                                                    <li class="nav-item" role="presentation">
+                                                        <a href="data-ytube-accList.html" class="nav-link">Accounts</a>
                                                     </li>
                                                     <li class="nav-item " role="presentation">
-                                                        <a href="data-fb-postDetails-analysis.html" class="nav-link" >Analysis</a>
+                                                        <a href="javascript:;" class="nav-link active">Videos</a>
                                                     </li>
                                                     <li class="nav-item " role="presentation">
-                                                        <a href="data-fb-postDetails-media.html" class="nav-link">Media</a>
-                                                    </li>
-                                                    <li class="nav-item " role="presentation">
-                                                        <a href="data-fb-postDetails-geoMap.html" class="nav-link">Geo-map</a>
-                                                    </li>
-                                                    <li class="nav-item " role="presentation">
-                                                        <a href="data-fb-postDetails-connectLink.html" class="nav-link">Connect-link</a>
+                                                        <a href="data-ytube-keyword.html" class="nav-link">Keyword</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -166,7 +162,15 @@
                                             <div class="categoryCard">
                                                 <div class="card_body">
                                                     <div class="categoryImg"><img src="assets/image/icon/theme-user-account.svg" alt="post"></div>
-                                                    <div class="valu">10<span>Accounts</span></div>
+                                                    <div class="valu">200<span>Accounts</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <div class="categoryCard">
+                                                <div class="card_body">
+                                                    <div class="categoryImg"><img src="assets/image/icon/post.svg" alt="post"></div>
+                                                    <div class="valu">380<span>Posts</span></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -174,15 +178,7 @@
                                             <div class="categoryCard">
                                                 <div class="card_body">
                                                     <div class="categoryImg"><img src="assets/image/icon/danger.svg" alt="post"></div>
-                                                    <div class="valu">2<span>Violations</span></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <div class="categoryCard">
-                                                <div class="card_body">
-                                                    <div class="categoryImg"><img src="assets/image/icon/media.svg" alt="post"></div>
-                                                    <div class="valu">40<span>Media</span></div>
+                                                    <div class="valu">140<span>Violations</span></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -190,7 +186,7 @@
                                             <div class="categoryCard">
                                                 <div class="card_body">
                                                     <div class="categoryImg"><img src="assets/image/icon/interaction.svg" alt="post"></div>
-                                                    <div class="valu">2k<span>Interaction</span></div>
+                                                    <div class="valu">1,6k+<span>Interaction</span></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -201,447 +197,124 @@
                     </div>
                     <!--! * User Header End -->
                     <!-- * fb-postlist main data Start -->
-                    <div class="col-12 h-100 flex-fill maincontent overflow-hidden facebook-postDetails-overview">
+                    <div class="col-12 h-100 flex-fill maincontent overflow-hidden facebook-postlist-data">
                         <div class="manin_content_Body h-100 overflow-hidden">
                             <div class="tab-content h-100" id="pills-tabContent">
-                                <!-- ** Overview Tab Start -->
+                                <!-- ** Media Tab Start -->
                                 <div class="tab-pane fade h-100 show active">
-                                    <div class="d-flex gx2 gap-2 justify-content-center verflow-y-auto row-gap-2 h-100">
-                                        <div class="colauto h-100">
-                                            <div class="card levelCard mainpostcard  h-100">
-                                                <div class="card-body h-100">
+                                    <div class="row gx-2 overflow-y-auto justify-content-center row-gap-2 h-100">
+                                        <div class="col-auto h-100">
+                                            <div class="card levelCard newsFilterCard h-100 ">
+                                                <form class="card-body h-100">
                                                     <div class="row flex-column flex-nowrap h-100">
-                                                        <div class="col-12">
-                                                            <div class="card_title d-flex gap-12 justify-content-start">Main post <a href="javascript:;" type="button" class="appendBtn conectBtn lightbg"><img src="assets/image/icon/conectBold-icon.svg" alt="plus"></a></div>
-                                                        </div>
-                                                        <div class="col-12 h-100 flex-fill overflow-y-auto">
-                                                            <div class="row gap-8 text-white">
-                                                                <div class="col-12">
-                                                                    <div class="informationCard fb_info">
-                                                                        <div class="card-body">
-                                                                            <div class="row innerbody gap-8">
-                                                                                <div class="col-12">
-                                                                                    <div class="posted row gx-0 gap-12">
-                                                                                        <div class="col-auto accountedPosted">
-                                                                                            <div class="accountUser"><img src="assets/image/fb_user.png" class="w-100" alt="user Image"></div>
-                                                                                        </div>
-                                                                                        <div class="col accounts d-block">
-                                                                                            <div class="row gap-8">
-                                                                                                <div class="col-12">
-                                                                                                    <div class="row">
-                                                                                                        <div class="col">
-                                                                                                            <div class="userName fw-bold">Phan Lê Mai Lan</div>
-                                                                                                            <div class="accountPost text-white-50 mb-0 mt-1 d-flex align-items-center gap-1">23/08/2023 <span>14:40</span></div>
-                                                                                                        </div>
-                                                                                                        <div class="col-auto text-end">
-                                                                                                            <a href="pg-tracking-accList-social.html" type="button" class="appendBtn smallappend  lightbg ms-auto d-inline-flex"><span><img src="assets/image/icon/arrow-right.svg" alt="plus"></span><span><img src="assets/image/icon/icon-monitoring.svg" alt="plus"></span></a>
-                                                                                                            <div class="accountPost text-white-50 mb-0 mt-1 d-flex align-items-center gap-1">13m+ <span>views</span></div>
-                                                                                                        </div>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                                <div class="col-12">
-                                                                                                    <div class="postImg rounded-3 overflow-hidden"><img src="assets/image/media/ima/postimg.png" class="w-100" alt=""></div>
-                                                                                                </div>
-                                                                                                <div class="col-12">
-                                                                                                    <div class="row gap-12">
-                                                                                                        <div class="col-12 postDetails">Lần đầu làm chuyện ấy với bóng cười & tem giấy. <span>#samyanclub</span> <span>#bongcuoi</span></div>
-                                                                                                        <div class="col-12">
-                                                                                                            <div class="row gx-0 mx-0 gap-3">
-                                                                                                                <div class="col-auto"><div class="postAllDetails"><span class="detailImg"><img src="assets/image/icon/thumb.svg" alt="like"></span>565</div></div>
-                                                                                                                <div class="col-auto"><div class="postAllDetails"><span class="detailImg"><img src="assets/image/icon/comment.svg" alt="like"></span>50</div></div>
-                                                                                                                <div class="col-auto"><div class="postAllDetails"><span class="detailImg"><img src="assets/image/icon/share.svg" alt="like"></span>63</div></div>
-                                                                                                            </div>
-                                                                                                        </div>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-12">
-                                                                    <div class="informationCard rounded-0 bg-transparent">
-                                                                        <div class="card-body px-0 pt-0">
-                                                                            <div class="row innerbody">
-                                                                                <div class="col-12 posted">
-                                                                                    <div class="accountPost">Account posted</div>
-                                                                                    <div class="accountedPosted d-flex gap-8">
-                                                                                        <div class="accountUser"><img src="assets/image/fb_user.png" class="w-100" alt="user Image"></div>
-                                                                                        <div class="userName fw-bold">Phan Lê Mai Lan</div>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="col-12 posted">
-                                                                                    <div class="accountPost">Account related</div>
-                                                                                    <div class="row gap-1 gx-0">
-                                                                                        <div class="col-auto">
-                                                                                            <div class="accountUser"><img src="assets/image/user1.png" class="w-100" alt="user Image"></div>
-                                                                                        </div>
-                                                                                        <div class="col-auto">
-                                                                                            <div class="accountUser"><img src="assets/image/actor33.png" class="w-100" alt="user Image"></div>
-                                                                                        </div>
-                                                                                        <div class="col-auto">
-                                                                                            <div class="accountUser"><img src="assets/image/actor34.png" class="w-100" alt="user Image"></div>
-                                                                                        </div>
-                                                                                        <div class="col-auto">
-                                                                                            <div class="accountUser"><img src="assets/image/actor35.png" class="w-100" alt="user Image"></div>
-                                                                                        </div>
-                                                                                        <div class="col-auto">
-                                                                                            <div class="accountUser"><img src="assets/image/actor36.png" class="w-100" alt="user Image"></div>
-                                                                                        </div>
-                                                                                        <div class="col-auto">
-                                                                                            <div class="accountUser"><img src="assets/image/actor37.png" class="w-100" alt="user Image"></div>
-                                                                                        </div>
-                                                                                        <div class="col-auto">
-                                                                                            <div class="accountUser"><img src="assets/image/actor38.png" class="w-100" alt="user Image"></div>
-                                                                                        </div>
-                                                                                        <div class="col-auto">
-                                                                                            <div class="accountUser"><img src="assets/image/actor39.png" class="w-100" alt="user Image"></div>
-                                                                                        </div>
-                                                                                        <div class="col-auto">
-                                                                                            <div class="accountUser"><img src="assets/image/actor40.png" class="w-100" alt="user Image"></div>
-                                                                                        </div>
-                                                                                        <div class="col-auto">
-                                                                                            <div class="accountUser"><img src="assets/image/actor41.png" class="w-100" alt="user Image"></div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="col-12 posted">
-                                                                                    <div class="accountPost">Social metrics</div>
-                                                                                    <div class="card socialMetricsCard rounded-0">
-                                                                                        <div class="row gx-0 cardbody">
-                                                                                            <div class="col-4 items">
-                                                                                                <div class="socialmetrics">Engagement rate </div>
-                                                                                                <div class="rate">0.165 <div class="tredMap greenzone"><div class="tredingImg"><img src="assets/image/icon/tredMap.svg" class="w-100" alt="treding"></div> <span>1.6%</span></div></div>
-                                                                                            </div>
-                                                                                            <div class="col-4 items">
-                                                                                                <div class="socialmetrics">Amplification rate </div>
-                                                                                                <div class="rate">0.025 <div class="tredMap greenzone"><div class="tredingImg"><img src="assets/image/icon/tredMap.svg" class="w-100" alt="treding"></div> <span>1.6%</span></div></div>
-                                                                                            </div>
-                                                                                            <div class="col-4 items">
-                                                                                                <div class="socialmetrics">Total view</div>
-                                                                                                <div class="rate">0.015</div>
-                                                                                            </div>
-                                                                                            <div class="col-4 items border-start-0 border-bottom-0">
-                                                                                                <div class="socialmetrics">Virality rate</div>
-                                                                                                <div class="rate">8.66 <div class="tredMap greenzone"><div class="tredingImg"><img src="assets/image/icon/tredMap.svg" class="w-100" alt="treding"></div> <span>1.6%</span></div></div>
-                                                                                            </div>
-                                                                                            <div class="col-4 items border-bottom-0">
-                                                                                                <div class="socialmetrics">Bounce rate</div>
-                                                                                                <div class="rate">0.015 <div class="tredMap"><div class="tredingImg"><img src="assets/image/icon/tredMapRed.svg" class="w-100" alt="treding"></div> <span>1.6%</span></div></div>
-                                                                                            </div>
-                                                                                            <div class="col-4 items border-bottom-0">
-                                                                                                <div class="socialmetrics">Total reach</div>
-                                                                                                <div class="rate">8.66</div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--? coment card start -->
-                                        <div class="colauto h-100">
-                                            <div class="card levelCard h-100 commentcard">
-                                                <div class="card-body h-100">
-                                                    <div class="row flex-column flex-nowrap h-100">
-                                                        <div class="card_title d-flex gap-12 justify-content-between">Comment (50) <a href="data-fb-postDetails-analysis.html" class="viewDetailsBtn">View Details <span class="moreImg"><img src="assets/image/icon/viewmore.svg" class="w-100" alt="viewmore"></span> </a></div>
+                                                        <div class="card_title">Media filter</div>
                                                         <div class="col-12 h-100 flex-fill overflow-y-auto innerBody">
-                                                            <div class="row gap-8">
-                                                                <div class="col-auto">
-                                                                    <div class="comment_card">
-                                                                        <div class="comment_item_Body">
-                                                                            <div class="commitUser commitUsersm"><img src="assets/image/user1.png"  alt=""></div>
-                                                                            <div class="content_side">
-                                                                                <div class="d-inline-flex flex-column row-gap-1">
-                                                                                    <div class=" userName">Ca sĩ Nhi Hà</div>
-                                                                                    <div class="commitcontent">Xin chào cô bé bóng cười, hẹn t7 này đắp cần sa vào chỗ bị thương nhé ;))</div>
-                                                                                </div>
+                                                            <div class="timeperiod row gap-1">
+                                                                <div class="col-12 filterTitle">Time period</div>
+                                                                <div class="col-12">
+                                                                    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                                                        <div class="row gap-1 gx-0">
+                                                                            <div class="col-auto">
+                                                                                <input type="radio" class="btn-check" name="btnradio1" id="btnradio01" autocomplete="off" checked>
+                                                                                <label class="radioBtn" for="btnradio01">24 hours</label>
                                                                             </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-auto">
-                                                                    <div class="multipalCommit">
-                                                                        <div class="comment_card">
-                                                                            <div class="comment_item_Body">
-                                                                                <div class="commitUser"><img src="assets/image/actor42.png"  alt=""></div>
-                                                                                <div class="content_side">
-                                                                                    <div class="d-inline-flex flex-column row-gap-1">
-                                                                                        <div class=" userName">Long Mệt Rồi</div>
-                                                                                        <div class="commitcontent">Em bé nay đã lớn hơn nhiều rồi. 
-                                                                                            Btw, ai có nhu cầu mua tem giấy liên hệ zalo 039295893 nhé mn</div>
-                                                                                    </div>
-                                                                                </div>
+                                                                            <div class="col-auto">
+                                                                                <input type="radio" class="btn-check" name="btnradio1" id="btnradio02" autocomplete="off">
+                                                                                <label class="radioBtn" for="btnradio02">1 week</label>
                                                                             </div>
-                                                                        </div>
-                                                                        <div class="comment_card commitAnswer">
-                                                                            <div class="comment_item_Body">
-                                                                                <div class="commitUser"><img src="assets/image/fb_user.png"  alt=""></div>
-                                                                                <div class="content_side">
-                                                                                    <div class="d-inline-flex flex-column row-gap-1">
-                                                                                        <div class=" userName">Phan Lê Mai Lan</div>
-                                                                                        <div class="commitcontent">Bữa nào ship em 1kg nấm ảo giác nhé, thị trường bên em đang cần</div>
-                                                                                    </div>
-                                                                                </div>
+                                                                            <div class="col-auto">
+                                                                                <input type="radio" class="btn-check" name="btnradio1" id="btnradio03" autocomplete="off">
+                                                                                <label class="radioBtn" for="btnradio03">1 month</label>
                                                                             </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-auto">
-                                                                    <div class="comment_card">
-                                                                        <div class="comment_item_Body">
-                                                                            <div class="commitUser"><img src="assets/image/pinklu.png"  alt=""></div>
-                                                                            <div class="content_side">
-                                                                                <div class="d-inline-flex flex-column row-gap-1">
-                                                                                    <div class=" userName">PinkLu</div>
-                                                                                    <div class="commitcontent">Samyan Club luôn mở cửa chào đón các bóng thủ với các phục vụ cung cấp bóng cười đầy đủ từ A tới Z</div>
-                                                                                </div>
+                                                                            <div class="col-auto">
+                                                                                <input type="radio" class="btn-check" name="btnradio1" id="btnradio04" autocomplete="off">
+                                                                                <label class="radioBtn" for="btnradio04">3 months</label>
                                                                             </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-auto">
-                                                                    <div class="comment_card">
-                                                                        <div class="comment_item_Body">
-                                                                            <div class="commitUser"><img src="assets/image/meboon.png"  alt=""></div>
-                                                                            <div class="content_side">
-                                                                                <div class="d-inline-flex flex-column row-gap-1">
-                                                                                    <div class=" userName">Mẹ Boon</div>
-                                                                                    <div class=" commitcontent"><b>Phan Lê Mai Lan</b> Ở đâu đấy em gái? Nhìn quen thế nhờ</div>
-                                                                                </div>
+                                                                            <div class="col-auto">
+                                                                                <input type="radio" class="btn-check" name="btnradio1" id="btnradio05" autocomplete="off">
+                                                                                <label class="radioBtn" for="btnradio05">6 months</label>
                                                                             </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-auto">
-                                                                    <div class="comment_card">
-                                                                        <div class="comment_item_Body">
-                                                                            <div class="commitUser"><img src="assets/image/JeaminThao.png"  alt=""></div>
-                                                                            <div class="content_side">
-                                                                                <div class="d-inline-flex flex-column row-gap-1">
-                                                                                    <div class=" userName">Jeamin Thảo</div>
-                                                                                    <div class=" commitcontent">Chị ơi, check ib giúp em với</div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-auto">
-                                                                    <div class="comment_card">
-                                                                        <div class="comment_item_Body">
-                                                                            <div class="commitUser"><img src="assets/image/anaYang.png"  alt=""></div>
-                                                                            <div class="content_side">
-                                                                                <div class="d-inline-flex flex-column row-gap-1">
-                                                                                    <div class=" userName">Anna</div>
-                                                                                    <div class=""><a href="javascript:;" class="tag">#đổitiềnmới</a></div>
-                                                                                    <div class=" commitcontent">Đổi quanh năm, hỗ trợ ship tỉnh a</div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-auto">
-                                                                    <div class="comment_card">
-                                                                        <div class="comment_item_Body">
-                                                                            <div class="commitUser"><img src="assets/image/thanhhaHN.png"  alt=""></div>
-                                                                            <div class="content_side">
-                                                                                <div class="d-inline-flex flex-column row-gap-1">
-                                                                                    <div class=" userName">thanhha.hanoi</div>
-                                                                                    <div class=" commitcontent">Bữa nào ship em 1kg nấm ảo giác nhé, thị trường bên em đang cần</div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-auto">
-                                                                    <div class="comment_card">
-                                                                        <div class="comment_item_Body">
-                                                                            <div class="commitUser"><img src="assets/image/user1.png"  alt=""></div>
-                                                                            <div class="content_side">
-                                                                                <div class="d-inline-flex flex-column row-gap-1">
-                                                                                    <div class=" userName">Ca sĩ Nhi Hà</div>
-                                                                                    <div class="images rounded-3 overflow-hidden"><img src="assets/image/media/ima/-mediaExample-8.png" class="w-100" alt=""></div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-auto">
-                                                                    <div class="multipalCommit">
-                                                                        <div class="comment_card">
-                                                                            <div class="comment_item_Body">
-                                                                                <div class="commitUser"><img src="assets/image/actor42.png"  alt=""></div>
-                                                                                <div class="content_side">
-                                                                                    <div class="d-inline-flex flex-column row-gap-1">
-                                                                                        <div class=" userName">Long Mệt Rồi</div>
-                                                                                        <a href="javascript:;" class="commitcontent">https://wajid.hipl-staging5.com/pg-dashboard2/data-fb-postDetails-overview.html</a>
-                                                                                        <a href="javascript:;" class="commitcontent">https://wajid.hipl-staging5.com/pg-dashboard2/data-fb-postDetails-overview.html</a>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="comment_card">
-                                                                            <div class="comment_item_Body">
-                                                                                <div class="commitUser"><img src="assets/image/fb_user.png"  alt=""></div>
-                                                                                <div class="content_side">
-                                                                                    <div class="d-inline-flex flex-column row-gap-1">
-                                                                                        <div class=" userName">Phan Lê Mai Lan</div>
-                                                                                        <div class="commitcontent">Bữa nào ship em 1kg nấm ảo giác nhé, thị trường bên em đang cần</div>
-                                                                                    <div class="images rounded-3 overflow-hidden"><img src="assets/image/media/ima/-mediaExample-12.png" class="w-100" alt=""></div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-auto">
-                                                                    <div class="comment_card">
-                                                                        <div class="comment_item_Body">
-                                                                            <div class="commitUser"><img src="assets/image/pinklu.png"  alt=""></div>
-                                                                            <div class="content_side">
-                                                                                <div class="d-inline-flex flex-column row-gap-1">
-                                                                                    <div class=" userName">PinkLu</div>
-                                                                                    <div class="commitcontent">Samyan Club luôn mở cửa chào đón các bóng thủ với các phục vụ cung cấp bóng cười đầy đủ từ A tới Z</div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-auto">
-                                                                    <div class="comment_card">
-                                                                        <div class="comment_item_Body">
-                                                                            <div class="commitUser"><img src="assets/image/meboon.png"  alt=""></div>
-                                                                            <div class="content_side">
-                                                                                <div class="d-inline-flex flex-column row-gap-1">
-                                                                                    <div class=" userName">Mẹ Boon</div>
-                                                                                    <div class=" commitcontent"><b>Phan Lê Mai Lan</b> Ở đâu đấy em gái? Nhìn quen thế nhờ</div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-auto">
-                                                                    <div class="comment_card">
-                                                                        <div class="comment_item_Body">
-                                                                            <div class="commitUser"><img src="assets/image/JeaminThao.png"  alt=""></div>
-                                                                            <div class="content_side">
-                                                                                <div class="d-inline-flex flex-column row-gap-1">
-                                                                                    <div class=" userName">Jeamin Thảo</div>
-                                                                                    <div class=" commitcontent">Chị ơi, check ib giúp em với</div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-auto">
-                                                                    <div class="comment_card">
-                                                                        <div class="comment_item_Body">
-                                                                            <div class="commitUser"><img src="assets/image/anaYang.png"  alt=""></div>
-                                                                            <div class="content_side">
-                                                                                <div class="d-inline-flex flex-column row-gap-1">
-                                                                                    <div class=" userName">Anna</div>
-                                                                                    <div class=""><a href="javascript:;" class="tag">#đổitiềnmới</a></div>
-                                                                                    <div class=" commitcontent">Đổi quanh năm, hỗ trợ ship tỉnh a</div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-auto">
-                                                                    <div class="comment_card">
-                                                                        <div class="comment_item_Body">
-                                                                            <div class="commitUser"><img src="assets/image/thanhhaHN.png"  alt=""></div>
-                                                                            <div class="content_side">
-                                                                                <div class="d-inline-flex flex-column row-gap-1">
-                                                                                    <div class=" userName">thanhha.hanoi</div>
-                                                                                    <div class=" commitcontent">Bữa nào ship em 1kg nấm ảo giác nhé, thị trường bên em đang cần</div>
-                                                                                </div>
+                                                                            <div class="col-auto">
+                                                                                <input type="radio" class="btn-check" name="btnradio1" id="btnradio06" autocomplete="off">
+                                                                                <label class="radioBtn" for="btnradio06">1 year</label>
                                                                             </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
+                                                            <div class="by_category row gap-1">
+                                                                <div class="col-12 filterTitle">By location</div>
+                                                                <div class="col-12 selctbox location">
+                                                                    <select class="locationSelect2" multiple="multiple">
+                                                                        <option value="1">Ha Noi</option>
+                                                                        <option value="2">Ha Nam</option>
+                                                                        <option value="3">Nha Trang</option>
+                                                                    </select>
+                                                                    <div  class="location_selectedItems2 locationitemJs2 multipal_opetions">
+                                                                        <!-- Selected items will be displayed here -->
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="by_category row gap-1">
+                                                                <div class="col-12 filterTitle">By account</div>
+                                                                <div class="col-12 selctbox location byAccount">
+                                                                    <select class="mySelect2" multiple="multiple">
+                                                                        <option value="1">Acc #1</option>
+                                                                        <option value="2">Acc #2</option>
+                                                                        <option value="3">Account Acc Acc Acc #1</option>
+                                                                        <option value="3">Account #3</option>
+                                                                        <option value="3">Account #4</option>
+                                                                    </select>
+                                                                    <div  class="selectedItems2 selectitemJs2 multipal_opetions">
+                                                                        <!-- Selected items will be displayed here -->
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                         </div>
+                                                        <div class="applyfilter"><button type="button" class="applybtn w-100 shadow-none border-0">Apply filter</button></div>
                                                     </div>
-                                                </div>
+                                                </form>
                                             </div>
                                         </div>
-                                        <!--? coment card end -->
-                                        <!--? coment card start -->
-                                        <div class="colauto h-100">
-                                            <div class="card levelCard h-100 postdetailmediacard">
+                                        <div class="col h-100 apendDataTable">
+                                            <div class="card top_post h-100 levelCard list_post_Table">
                                                 <div class="card-body h-100">
-                                                    <div class="row flex-column flex-nowrap h-100 gap-12">
+                                                    <div class="row flex-column flex-nowrap h-100 list">
                                                         <div class="col-12">
-                                                            <div class="card_title d-flex gap-12 justify-content-between">Media (40) <a href="data-fb-postDetails-media.html" class="viewDetailsBtn">View Details <span class="moreImg"><img src="assets/image/icon/viewmore.svg" class="w-100" alt="viewmore"></span> </a></div>
-                                                            <div class="nav nav-pills row overviewTabs mx-0 gx-0" id="post-tab" role="tablist">
-                                                                <li class="nav-item col-auto" role="presentation">
-                                                                    <button class="nav-link pe-3 active" id="post-home1-tab" data-bs-toggle="pill" data-bs-target="#post-home1" type="button" role="tab" aria-controls="post-home1" aria-selected="true">Photo</button>
-                                                                </li>
-                                                                <li class="nav-item col-auto" role="presentation">
-                                                                    <button class="nav-link pe-3 " id="post-profile1-tab" data-bs-toggle="pill" data-bs-target="#post-profile1" type="button" role="tab" aria-controls="post-profile1" aria-selected="true">Video</button>
-                                                                </li>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12 h-100 flex-fill overflow-y-auto innerBody">
-                                                            <div class="tab-content" id="post-tabContent">
-                                                                <div class="tab-pane text-white fade show active" id="post-home1" role="tabpanel" aria-labelledby="post-home1-tab" tabindex="0">
-                                                                    <div class="row mediaGallery mx-0">
-                                                                        <div class="col-6"><a href="javascript:;" class="mediaImg d-flex" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><img src="assets/image/media/ima/-mediaExample.png" class="w-100" alt="mediaExample"></a></div>
-                                                                        <div class="col-6"><div class="mediaImg"><img src="assets/image/media/ima/-mediaExample-1.png" class="w-100" alt="mediaExample"></div></div>
-                                                                        <div class="col-6"><div class="mediaImg"><img src="assets/image/media/ima/-mediaExample-2.png" class="w-100" alt="mediaExample"></div></div>
-                                                                        <div class="col-6"><div class="mediaImg"><img src="assets/image/media/ima/-mediaExample-3.png" class="w-100" alt="mediaExample"></div></div>
-                                                                        <div class="col-6"><div class="mediaImg"><img src="assets/image/media/ima/-mediaExample-4.png" class="w-100" alt="mediaExample"></div></div>
-                                                                        <div class="col-6"><div class="mediaImg"><img src="assets/image/media/ima/-mediaExample-5.png" class="w-100" alt="mediaExample"></div></div>
-                                                                        <div class="col-6"><div class="mediaImg"><img src="assets/image/media/ima/-mediaExample-6.png" class="w-100" alt="mediaExample"></div></div>
-                                                                        <div class="col-6"><div class="mediaImg"><img src="assets/image/media/ima/-mediaExample-7.png" class="w-100" alt="mediaExample"></div></div>
-                                                                        <div class="col-6"><div class="mediaImg"><img src="assets/image/media/ima/-mediaExample-8.png" class="w-100" alt="mediaExample"></div></div>
-                                                                        <div class="col-6"><div class="mediaImg"><img src="assets/image/media/ima/-mediaExample-9.png" class="w-100" alt="mediaExample"></div></div>
-                                                                        <div class="col-6"><div class="mediaImg"><img src="assets/image/media/ima/-mediaExample-10.png" class="w-100" alt="mediaExample"></div></div>
-                                                                        <div class="col-6"><div class="mediaImg"><img src="assets/image/media/ima/-mediaExample-11.png" class="w-100" alt="mediaExample"></div></div>
-                                                                        <div class="col-6"><div class="mediaImg"><img src="assets/image/media/ima/-mediaExample-12.png" class="w-100" alt="mediaExample"></div></div>
-                                                                        <div class="col-6"><div class="mediaImg"><img src="assets/image/media/ima/-mediaExample-13.png" class="w-100" alt="mediaExample"></div></div>
-                                                                        <div class="col-6"><div class="mediaImg"><img src="assets/image/media/ima/-mediaExample-14.png" class="w-100" alt="mediaExample"></div></div>
-                                                                        <div class="col-6"><div class="mediaImg"><img src="assets/image/media/ima/-mediaExample-15.png" class="w-100" alt="mediaExample"></div></div>
-                                                                        <div class="col-6"><div class="mediaImg"><img src="assets/image/media/ima/-mediaExample-16.png" class="w-100" alt="mediaExample"></div></div>
-                                                                        <div class="col-6"><div class="mediaImg"><img src="assets/image/media/ima/-mediaExample-17.png" class="w-100" alt="mediaExample"></div></div>
-                                                                        <div class="col-6"><div class="mediaImg"><img src="assets/image/media/ima/-mediaExample-18.png" class="w-100" alt="mediaExample"></div></div>
-                                                                        <div class="col-6"><div class="mediaImg"><img src="assets/image/media/ima/-mediaExample-19.png" class="w-100" alt="mediaExample"></div></div>
-                                                                    </div>
+                                                            <div class="card_title keywords m-0 d-flex">
+                                                                <div class="cuntryflage"><span class="flage"><img src="assets/image/icon/singal-user-icon.svg" class="w-100" alt=""></span>Photos</div>
+                                                                <div class="add-button"><a href="javascript:;" type="button" class="appendBtn moniter lightbg px-2"><img src="assets/image/icon/arrow-right.svg" alt="plus"><img src="assets/image/icon/icon-monitoring.svg" alt="plus"></a></div>
+                                                            </div> 
+                                                            <!-- <div class="search_bar rounded-3 listSearch">
+                                                                <div class="input-group">
+                                                                    <button type="button" class="input-group-text" id="basic-addon1"><img src="assets/image/icon/search_icon.svg" alt="search"></button>
+                                                                    <input type="text" class="form-control shadow-none" placeholder="input keywords" aria-label="Username" aria-describedby="basic-addon1">
                                                                 </div>
-                                                                <div class="tab-pane text-white fade" id="post-profile1" role="tabpanel" aria-labelledby="post-profile1-tab" tabindex="0">
-                                                                    <div class="row mediaGallery mx-0">
-                                                                        <div class="col-6"><div class="mediaImg videos"><img src="assets/image/media/ima/-mediaExample-1.png" class="w-100" alt="mediaExample"></div></div>
-                                                                        <div class="col-6"><a href="javascript:;" class="mediaImg videos"><img src="assets/image/media/ima/-mediaExample.png" class="w-100" alt="mediaExample"></a></div>
-                                                                        <div class="col-6"><div class="mediaImg videos"><img src="assets/image/media/ima/-mediaExample-2.png" class="w-100" alt="mediaExample"></div></div>
-                                                                        <div class="col-6"><div class="mediaImg videos"><img src="assets/image/media/ima/-mediaExample-3.png" class="w-100" alt="mediaExample"></div></div>
-                                                                        <div class="col-6"><div class="mediaImg videos"><img src="assets/image/media/ima/-mediaExample-4.png" class="w-100" alt="mediaExample"></div></div>
-                                                                        <div class="col-6"><div class="mediaImg videos"><img src="assets/image/media/ima/-mediaExample-5.png" class="w-100" alt="mediaExample"></div></div>
-                                                                        <div class="col-6"><div class="mediaImg videos"><img src="assets/image/media/ima/-mediaExample-6.png" class="w-100" alt="mediaExample"></div></div>
-                                                                        <div class="col-6"><div class="mediaImg videos"><img src="assets/image/media/ima/-mediaExample-7.png" class="w-100" alt="mediaExample"></div></div>
-                                                                        <div class="col-6"><div class="mediaImg videos"><img src="assets/image/media/ima/-mediaExample-8.png" class="w-100" alt="mediaExample"></div></div>
-                                                                        <div class="col-6"><div class="mediaImg videos"><img src="assets/image/media/ima/-mediaExample-9.png" class="w-100" alt="mediaExample"></div></div>
-                                                                        <div class="col-6"><div class="mediaImg videos"><img src="assets/image/media/ima/-mediaExample-10.png" class="w-100" alt="mediaExample"></div></div>
-                                                                        <div class="col-6"><div class="mediaImg videos"><img src="assets/image/media/ima/-mediaExample-11.png" class="w-100" alt="mediaExample"></div></div>
-                                                                        <div class="col-6"><div class="mediaImg videos"><img src="assets/image/media/ima/-mediaExample-12.png" class="w-100" alt="mediaExample"></div></div>
-                                                                        <div class="col-6"><div class="mediaImg videos"><img src="assets/image/media/ima/-mediaExample-13.png" class="w-100" alt="mediaExample"></div></div>
-                                                                        <div class="col-6"><div class="mediaImg videos"><img src="assets/image/media/ima/-mediaExample-14.png" class="w-100" alt="mediaExample"></div></div>
-                                                                        <div class="col-6"><div class="mediaImg videos"><img src="assets/image/media/ima/-mediaExample-15.png" class="w-100" alt="mediaExample"></div></div>
-                                                                        <div class="col-6"><div class="mediaImg videos"><img src="assets/image/media/ima/-mediaExample-16.png" class="w-100" alt="mediaExample"></div></div>
-                                                                        <div class="col-6"><div class="mediaImg videos"><img src="assets/image/media/ima/-mediaExample-17.png" class="w-100" alt="mediaExample"></div></div>
-                                                                        <div class="col-6"><div class="mediaImg videos"><img src="assets/image/media/ima/-mediaExample-18.png" class="w-100" alt="mediaExample"></div></div>
-                                                                        <div class="col-6"><div class="mediaImg videos"><img src="assets/image/media/ima/-mediaExample-19.png" class="w-100" alt="mediaExample"></div></div>
-                                                                    </div>
+                                                            </div> -->
+                                                        </div>
+                                                        <div class="col-12 h-100 flex-fill overflow-hidden">
+                                                            <div class="h-100 overflow-y-auto">
+                                                                <div class="row mediaGallery mx-0">
+                                                                    <div class="col-3"><div class="mediaImg"><img src="assets/image/media/ima/-mediaExample-1.png" class="w-100" alt="mediaExample"></div></div>
+                                                                    <div class="col-3"><a href="javascript:;" class="mediaImg d-flex" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><img src="assets/image/media/ima/-mediaExample.png" class="w-100" alt="mediaExample"></a></div>
+                                                                    <div class="col-3"><div class="mediaImg"><img src="assets/image/media/ima/-mediaExample-3.png" class="w-100" alt="mediaExample"></div></div>
+                                                                    <div class="col-3"><div class="mediaImg"><img src="assets/image/comments/bloon.png" class="w-100" alt="mediaExample"></div></div>
+                                                                    <div class="col-3"><div class="mediaImg"><img src="assets/image/comments/bloon_girl.png" class="w-100" alt="mediaExample"></div></div>
+                                                                    <div class="col-3"><div class="mediaImg"><img src="assets/image/media/ima/-mediaExample-5.png" class="w-100" alt="mediaExample"></div></div>
+                                                                    <div class="col-3"><div class="mediaImg"><img src="assets/image/media/ima/-mediaExample-6.png" class="w-100" alt="mediaExample"></div></div>
+                                                                    <div class="col-3"><div class="mediaImg"><img src="assets/image/media/ima/-mediaExample-7.png" class="w-100" alt="mediaExample"></div></div>
+                                                                    <div class="col-3"><div class="mediaImg"><img src="assets/image/media/ima/-mediaExample-8.png" class="w-100" alt="mediaExample"></div></div>
+                                                                    <div class="col-3"><div class="mediaImg"><img src="assets/image/media/ima/-mediaExample-9.png" class="w-100" alt="mediaExample"></div></div>
+                                                                    <div class="col-3"><div class="mediaImg"><img src="assets/image/media/ima/-mediaExample-10.png" class="w-100" alt="mediaExample"></div></div>
+                                                                    <div class="col-3"><div class="mediaImg"><img src="assets/image/media/ima/-mediaExample-11.png" class="w-100" alt="mediaExample"></div></div>
+                                                                    <div class="col-3"><div class="mediaImg"><img src="assets/image/media/ima/-mediaExample-12.png" class="w-100" alt="mediaExample"></div></div>
+                                                                    <div class="col-3"><div class="mediaImg"><img src="assets/image/media/ima/-mediaExample-13.png" class="w-100" alt="mediaExample"></div></div>
+                                                                    <div class="col-3"><div class="mediaImg"><img src="assets/image/media/ima/-mediaExample-14.png" class="w-100" alt="mediaExample"></div></div>
+                                                                    <div class="col-3"><div class="mediaImg"><img src="assets/image/media/ima/-mediaExample-15.png" class="w-100" alt="mediaExample"></div></div>
+                                                                    <div class="col-3"><div class="mediaImg"><img src="assets/image/media/ima/-mediaExample-16.png" class="w-100" alt="mediaExample"></div></div>
+                                                                    <div class="col-3"><div class="mediaImg"><img src="assets/image/media/ima/-mediaExample-17.png" class="w-100" alt="mediaExample"></div></div>
+                                                                    <div class="col-3"><div class="mediaImg"><img src="assets/image/media/ima/-mediaExample-18.png" class="w-100" alt="mediaExample"></div></div>
+                                                                    <div class="col-3"><div class="mediaImg"><img src="assets/image/media/ima/-mediaExample-19.png" class="w-100" alt="mediaExample"></div></div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -649,36 +322,45 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <!--? coment card end -->
-                                        <!--? maping card start -->
-                                        <div class="colauto h-100 post_detailsMaping_crad">
-                                            <div class="row gap-2 h-100">
-                                                <div class="col-12 mapingCard">
-                                                    <div class="card levelCard h-100">
-                                                        <div class="card-body h-100">
-                                                            <div class="row flex-column flex-nowrap h-100">
-                                                                <div class="card_title d-flex gap-12 justify-content-between">Geo-map <a href="data-fb-postDetails-geoMap.html" class="viewDetailsBtn">View Details <span class="moreImg"><img src="assets/image/icon/viewmore.svg" class="w-100" alt="viewmore"></span> </a></div>
-                                                                <div class="col-12 h-100 flex-fill overflow-y-auto innerBody">
-                                                                    <div class="mapImg"><img src="assets/image/geo_map.png" class="w-100" alt=""></div>
+                                        <div class="col h-100 apendDataTable">
+                                            <div class="card top_post h-100 levelCard list_post_Table">
+                                                <div class="card-body h-100">
+                                                    <div class="row flex-column flex-nowrap h-100 list">
+                                                        <div class="col-12">
+                                                            <div class="card_title keywords m-0 d-flex">
+                                                                <div class="cuntryflage"><span class="flage"><img src="assets/image/icon/video-icone.svg" class="w-100" alt=""></span>Videos</div>
+                                                                <div class="add-button"><a href="javascript:;" type="button" class="appendBtn moniter lightbg px-2"><img src="assets/image/icon/arrow-right.svg" alt="plus"><img src="assets/image/icon/icon-monitoring.svg" alt="plus"></a></div>
+                                                            </div> 
+                                                            <!-- <div class="search_bar rounded-3 listSearch">
+                                                                <div class="input-group">
+                                                                    <button type="button" class="input-group-text" id="basic-addon1"><img src="assets/image/icon/search_icon.svg" alt="search"></button>
+                                                                    <input type="text" class="form-control shadow-none" placeholder="input keywords" aria-label="Username" aria-describedby="basic-addon1">
                                                                 </div>
-                                                            </div>
+                                                            </div> -->
                                                         </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12 mapingCard">
-                                                    <div class="card levelCard h-100">
-                                                        <div class="card-body h-100">
-                                                            <div class="row flex-column flex-nowrap h-100">
-                                                                <div class="card_title d-flex gap-12 justify-content-between">Connect-link <a href="data-fb-postDetails-connectLink.html" class="viewDetailsBtn">View Details <span class="moreImg"><img src="assets/image/icon/viewmore.svg" class="w-100" alt="viewmore"></span> </a></div>
-                                                                <div class="col-12 h-100 flex-fill overflow-y-auto innerBody">
-                                                                    <!-- <div class="mapImg"><img src="assets/image/connect_map.png" class="w-100 h-100" alt=""></div> -->
-                                                                    <div class="mapImg position-relative">
-                                                                        <div id="cy" class="connectMap w-100 h-100"></div>
-                                                                        <div class="zoom-buttons-map">
-                                                                            <button id="zoom-in-button"><img src="assets/image/icon/plus.svg" class="w-100" alt="plus"></button>
-                                                                            <button id="zoom-out-button"><img src="assets/image/icon/nagetive.svg" class="w-100" alt="nagetive"></button>	
-                                                                        </div>
-                                                                    </div>
+                                                        <div class="col-12 h-100 flex-fill overflow-hidden">
+                                                            <div class="h-100 overflow-y-auto">
+                                                                <div class="row mediaGallery mx-0">
+                                                                    <div class="col-3"><div class="mediaImg videos"><img src="assets/image/media/ima/-mediaExample-1.png" class="w-100" alt="mediaExample"></div></div>
+                                                                    <div class="col-3"><a href="javascript:;" class="mediaImg videos"><img src="assets/image/media/ima/-mediaExample.png" class="w-100" alt="mediaExample"></a></div>
+                                                                    <div class="col-3"><div class="mediaImg videos"><img src="assets/image/media/ima/-mediaExample-2.png" class="w-100" alt="mediaExample"></div></div>
+                                                                    <div class="col-3"><div class="mediaImg videos"><img src="assets/image/media/ima/-mediaExample-3.png" class="w-100" alt="mediaExample"></div></div>
+                                                                    <div class="col-3"><div class="mediaImg videos"><img src="assets/image/media/ima/-mediaExample-4.png" class="w-100" alt="mediaExample"></div></div>
+                                                                    <div class="col-3"><div class="mediaImg videos"><img src="assets/image/media/ima/-mediaExample-5.png" class="w-100" alt="mediaExample"></div></div>
+                                                                    <div class="col-3"><div class="mediaImg videos"><img src="assets/image/media/ima/-mediaExample-6.png" class="w-100" alt="mediaExample"></div></div>
+                                                                    <div class="col-3"><div class="mediaImg videos"><img src="assets/image/media/ima/-mediaExample-7.png" class="w-100" alt="mediaExample"></div></div>
+                                                                    <div class="col-3"><div class="mediaImg videos"><img src="assets/image/media/ima/-mediaExample-8.png" class="w-100" alt="mediaExample"></div></div>
+                                                                    <div class="col-3"><div class="mediaImg videos"><img src="assets/image/media/ima/-mediaExample-9.png" class="w-100" alt="mediaExample"></div></div>
+                                                                    <div class="col-3"><div class="mediaImg videos"><img src="assets/image/media/ima/-mediaExample-10.png" class="w-100" alt="mediaExample"></div></div>
+                                                                    <div class="col-3"><div class="mediaImg videos"><img src="assets/image/media/ima/-mediaExample-11.png" class="w-100" alt="mediaExample"></div></div>
+                                                                    <div class="col-3"><div class="mediaImg videos"><img src="assets/image/media/ima/-mediaExample-12.png" class="w-100" alt="mediaExample"></div></div>
+                                                                    <div class="col-3"><div class="mediaImg videos"><img src="assets/image/media/ima/-mediaExample-13.png" class="w-100" alt="mediaExample"></div></div>
+                                                                    <div class="col-3"><div class="mediaImg videos"><img src="assets/image/media/ima/-mediaExample-14.png" class="w-100" alt="mediaExample"></div></div>
+                                                                    <div class="col-3"><div class="mediaImg videos"><img src="assets/image/media/ima/-mediaExample-15.png" class="w-100" alt="mediaExample"></div></div>
+                                                                    <div class="col-3"><div class="mediaImg videos"><img src="assets/image/media/ima/-mediaExample-16.png" class="w-100" alt="mediaExample"></div></div>
+                                                                    <div class="col-3"><div class="mediaImg videos"><img src="assets/image/media/ima/-mediaExample-17.png" class="w-100" alt="mediaExample"></div></div>
+                                                                    <div class="col-3"><div class="mediaImg videos"><img src="assets/image/media/ima/-mediaExample-18.png" class="w-100" alt="mediaExample"></div></div>
+                                                                    <div class="col-3"><div class="mediaImg videos"><img src="assets/image/media/ima/-mediaExample-19.png" class="w-100" alt="mediaExample"></div></div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -686,10 +368,9 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <!--? maping card end -->
                                     </div>
                                 </div>
-                                <!-- ** Overview Tab End -->
+                                <!-- ** Media Tab End -->
                             </div>
                         </div>
                     </div>
@@ -698,6 +379,8 @@
             </div>
             <!--! * Main DashBoard Start -->
 
+        </div>
+    </main>
             <!--? ***** Details Post Modal Start ***** -->
             <!-- Button trigger modal -->
             <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"></button> -->
@@ -1313,21 +996,12 @@
                 </div>
             </div>
             <!--? ***** Details Post Modal End ***** -->
-        </div>
-    </main>
 
     <!-- *** Bootstrap Js ***** -->
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- *** Select2 Js *** -->
     <script src="assets/libs/select2/select2.min.js"></script>
-    <!-- *** Cytoscape Map Js *** -->
-    <script src="https://js.cytoscape.org/js/cytoscape.min.js"></script>
-	<script src="assets/libs/cytoscape/cytoscape-popper.js"></script>
-    <!-- <script src="assets/libs/cytoscape/cytoscape.min.js"></script> -->
-    <!-- <script src="assets/libs/cytoscape/cytoscape-popper.min.js"></script> -->
-    <!-- <script src="assets/libs/cytoscape/cytoscape-popper.js"></script> -->
     <!-- **** Custom Js ***** -->
-    <script src="assets/js/cytoscape-custome.js"></script>
     <script src="assets/js/custom.js"></script>
 
 </body>
