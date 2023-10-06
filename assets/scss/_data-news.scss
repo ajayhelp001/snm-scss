@@ -957,6 +957,12 @@
         &.ytubemainPost{
             max-width: 676px;
         }
+        &.ytubeAnalysisPost{
+            max-width: 420px;
+        }
+        &.ytubemainVideoPost {
+            max-width: 859PX;
+        }
     }
     & .commentcard {
         max-width: 412px;
@@ -1018,6 +1024,9 @@
                 object-fit: cover;
                 height: 100%;
             }
+            &.vidoPost {
+                max-height: unset;
+            }
         }
         & .postDetails{
             color: var(--white);
@@ -1027,6 +1036,15 @@
             line-height: 160%; /* 25.6px */
             & span{
                 color: var(--light-gray);
+            }
+            &.postDetails_sm {
+                font-size: 13.134px;
+                line-height: 130%;
+            }
+            &.ytubeCVideoPostDetails {
+                font-size: 20px;
+                line-height: 120%; /* 24px */
+                letter-spacing: -0.2px;
             }
         }
         & .postAllDetails{
@@ -1047,6 +1065,11 @@
                 justify-content: center;
                 & img {
                     width: 100%;
+                }
+                &.ytubeVideoDetailsImg {
+                    height: 20px;
+                    width: 20px;
+                    
                 }
             }
         }
@@ -1110,6 +1133,10 @@
         }
         & .violationTangHeading {
             color: var(--netural-dark);
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 140%; /* 19.6px */
         }
         & .violatinTag {
             border: 3px solid var(--theme-red);
@@ -1117,6 +1144,23 @@
             padding: 12px;
             &.bluetag{
                 border-color: var(--active);
+            }
+        }
+        & .card-body {
+            & .innerbody  {
+                & .posted  {
+                    & .accountUser {
+                        width: 32px;
+                        height: 32px;
+                        min-width: 32px;
+                        border-radius: 50%;
+                        &.videoAccountUser{
+                            width: 40px;
+                            min-width: 40px;
+                            height: 40px;
+                        }
+                    }
+                }
             }
         }
     }
@@ -1265,6 +1309,48 @@
                 }
             }
         }
+        & .userside {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        & .times {
+            color: var(--netural-dark);
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 140%; /* 19.6px */
+        }
+    }
+    & .tmgroup{
+        display: flex;
+        flex-wrap: nowrap;
+        white-space: nowrap;
+        overflow-x: auto;
+        padding: 8px;
+        border-radius: 8px;
+        background-color: var(--black--dark);
+        & .timing_value {
+            display: flex;
+            align-items: center;
+            border-radius: 8px;
+            min-height: 24px;
+            padding: 0px 8px;
+            border: 1px solid var(--black--dark);
+            background-color: var(--balck--light);
+            color: var(--white);
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 140%; /* 19.6px */
+        }
+    }
+    &.nonhover{
+        & .listItem{
+            &:hover{
+                background-color: transparent;
+            }
+        }
     }
 }
 
@@ -1276,7 +1362,62 @@
 
 
 // *******************************************************  [ YouTube Post-Details  Css End ] ***********************************************
-
+.ytubevideoDetaisl_comment {
+    max-width: 996px;
+    width: 100%;
+}
+.ytube-videoDetails-overview{
+    & .analysisCard {
+        max-width: 432px;
+    }
+}
+@media screen and (min-width: 1800px) {
+    .informationCard{
+        &.youtubeVideoOverview{
+            & .ytubeVideoOverview_socialM{
+                &.socialMetricsCard{
+                    & .cardbody {
+                        & .items {
+                            & .rate {
+                                font-size: 20px;
+                                & .tredMap  {
+                                    & .tredingImg {
+                                        width: 24px;
+                                        height: 24px;
+                                    }
+                                    & span {
+                                        font-size: 16px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1799.98px){
+    .informationCard{
+        &.youtubeVideoOverview{
+            & .ytubeVideoOverview_socialM{
+                &.socialMetricsCard{
+                    & .cardbody {
+                        & .items {
+                            min-width: 33%;
+                            &:first-child, &:nth-child(2), &:nth-child(3){
+                                border-bottom: 1px solid var(--balck--light) !important;
+                            }
+                            &.liftBorder-0{
+                                border-left: 0px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 
 
