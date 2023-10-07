@@ -49,7 +49,7 @@
         }
         g.node2.animation_color ellipse {
             transition: all 0.5s ease-in-out;
-            fill: #00D1FF !important;
+            fill: var(--reg-item) !important;
         }
         g.node2 rect {
             cursor: pointer;
@@ -72,5 +72,37 @@
 
 .geomapleftinfo{
     display: none;
-    
+    max-width: 320px;
+    width: 100%;
+    & .geoInfoCard{
+        & .card {
+            border: 2px solid var(--reg-item);
+        }
+    }
+}
+
+.mapinformation_card {
+    background-color: var(--black--dark) !important;
+    & .card-body {
+        & .postHeading, & .leftHeading, & .sourceValue{
+            font-style: normal;
+            font-weight: 400;
+        }
+        & .postHeading {
+            color: var(--netural-dark);
+            font-size: 12px;
+            line-height: 140%; /* 16.8px */
+            margin-bottom: 4PX;
+        }
+        & .leftHeading {
+            color: var(--white-50);
+        }
+        & .leftHeading, & .sourceValue{
+            font-size: 16px;
+            line-height: 160%; /* 25.6px */
+        }
+        & .sourceValue {
+            color: var(--white);
+        }
+    }
 }
