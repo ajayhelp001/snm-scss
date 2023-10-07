@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNM Dashboad | Data-Fb-PostDetails-Overview</title>
+    <link rel="icon" type="image/x-icon" href="assets/image/logo.png">
+    <!-- ****** Jquary ***** -->
+    <script src="assets/libs/jquary/jquery.min.js"></script>
+    <!-- ****** Bootstrap Css ***** -->
+    <link rel="stylesheet" href="assets/libs/bootstrap/css/bootstrap.min.css">
+    <!-- ****** Select2 Css -->
+    <link href="assets/libs/select2/select2.min.css" rel="stylesheet" />
+    <!-- ****** Style Css ***** -->
+    <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+<body>
+    <main class="main-dashboard">
+        <div class="maininner_Dashboard h-100 gx-0">
+            <!-- * Aside Bar Start -->
+            <div class="asideBar h-100">
+                <div class="row h-100 flex-column flex-nowrap mx-0 gx-0">
+                    <div class="col-12 logo_top">
+                        <div class="logo"><img src="assets/image/logo.png" class="w-100" alt="logo"></div>
+                        <div class="logoname"><img src="assets/image/SNM.png" class="w-100" alt="SNM"></div>
+                    </div>
+                    <div class="col-12 h-100 flex-fill overflow-hidden">
+                        <div class="asideBody h-100 overflow-y-auto">
+                            <ul class="nav_link">
+                                <li><a href="index.html" class="navlinks"><img src="assets/image/icon/icon-report.svg" alt="report"></a></li>
+                                <li><a href="data-fb-postList.html" class="navlinks active"><img src="assets/image/icon/icon-collect.svg" alt="collect"></a></li>
+                                <li><a href="pg-tracking-accList-social.html" class="navlinks"><img src="assets/image/icon/icon-monitoring.svg" alt="monitoring"></a></li>
+                                <li><a href="javascript:;" class="navlinks"><img src="assets/image/icon/focus.svg" alt="admin"></a></li>
+                                <li><a href="javascript:;" class="navlinks"><img src="assets/image/icon/icon-admin.svg" alt="admin"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--! * Aside Bar End -->
+            <!-- * Main DashBoard Start -->
+            <div class="dashboard_Side h-100">
+                <div class="row h-100 flex-column flex-nowrap mx-0 gx-0">
+                    <!-- * User Header Start -->
+                    <div class="col-12">
+                        <div class="topheader">
+                            <div class="row mx-0 gx-0">
+                                <div class="col-7">
+                                    <div class="row pageLinks gx-0 mx-0">
+                                        <div class="col">
+                                            <a href="data-ytube-postList.html" class="socialLinkLink facebook"><span><img src="assets/image/icon/facebook.svg" class="w-100" alt="facebook"></span> Facebook</a>
+                                        </div>
+                                        <div class="col">
+                                            <a href="javascript:;" class="socialLinkLink tiktok active"><span><img src="assets/image/icon/tiktok.svg" class="w-100" alt="tiktok"></span> Tiktok</a>
+                                        </div>
+                                        <div class="col">
+                                            <a href="data-ytube-postList.html" class="socialLinkLink youtube"><span><img src="assets/image/icon/yoytube.svg" class="w-100" alt="youtube"></span> Youtube</a>
+                                        </div>
+                                        <div class="col">
+                                            <a href="data-news-postList.html" class="socialLinkLink news "><span><img src="assets/image/icon/digital-news.svg" class="w-100" alt="digital news"></span> Digital news</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col search_bar">
+                                    <div class="input-group">
+                                        <button type="button" class="input-group-text" id="basic-addon1"><img src="assets/image/icon/search_icon.svg" alt="search"></button>
+                                        <input type="text" class="form-control" placeholder="Search anything" aria-label="Username" aria-describedby="basic-addon1">
+                                    </div>
+                                </div>
+                                <div class="col-auto userSide">
+                                    <div class="dropdown notificationDropDown">
+                                        <div class="notification" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside"><div class="bell"><img src="assets/image/icon/bell.svg" class="w-100" alt="logo"></div><span>5</span></div>
+                                        <div class="dropdown-menu">
+                                            <div class="n_title">Notifications</div>
+                                            <div class="n_Body">
+                                                <div class="n_item">
+                                                    <div class="logoimg"><img src="assets/image/icon/user.svg" class="w-100" alt="logo"></div>
+                                                    <div class="n_message">
+                                                        <div class="directMessage">Detect a connect-link from <span>Phan Lê Mai Lan</span> to <span>Phan Lê Dũng</span></div>
+                                                        <div class="date">05/09/2023 <span>10:55</span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="n_item">
+                                                    <div class="logoimg"><img src="assets/image/icon/user.svg" class="w-100" alt="logo"></div>
+                                                    <div class="n_message">
+                                                        <div class="directMessage">Detect a connect-link from <span>Phan Lê Mai Lan</span> to <span>Phan Lê Thanh Hà</span></div>
+                                                        <div class="date">05/09/2023 <span>09:23</span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="n_item">
+                                                    <div class="logoimg"><img src="assets/image/icon/user.svg" class="w-100" alt="logo"></div>
+                                                    <div class="n_message">
+                                                        <div class="directMessage">Phan Lê Mai Lan has created a post on the wall</span></div>
+                                                        <div class="date">05/09/2023 <span>09:23</span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="n_item">
+                                                    <div class="logoimg"><img src="assets/image/icon/user.svg" class="w-100" alt="logo"></div>
+                                                    <div class="n_message">
+                                                        <div class="directMessage"><span>Detected a violations in a post of a Facebook account Nana Phạm</span></div>
+                                                        <div class="date">05/09/2023 <span>09:23</span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="n_item">
+                                                    <div class="logoimg"><img src="assets/image/icon/user.svg" class="w-100" alt="logo"></div>
+                                                    <div class="n_message">
+                                                        <div class="directMessage"><span>Detected a violations in a post of a Facebook account Nana Phạm</span></div>
+                                                        <div class="date">05/09/2023 <span>09:23</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="notification"><div class="bell"><img src="assets/image/icon/bell.svg" class="w-100" alt="logo"></div><span>5</span></div> -->
+                                    <div class="user"><img src="assets/image/icon/user.svg" class="w-100" alt="logo"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="breadcrumb_Bar">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item active"><a href="index.html" class="page_link">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="javascript:;" class="page_link">Data</a></li>
+                                    <li class="breadcrumb-item"><a href="data-tiktok-postList.html" class="page_link">Tiktok</a></li>
+                                    <li class="breadcrumb-item" aria-current="page">Video</li>
+                                </ol>
+                            </nav>
+                        </div>
+                        <div class="all_sources">
+                            <div class="row  gx-0 align-items-center">
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="row all_data gx-0">
+                                                <div class="col-auto data">Video details</div>
+                                                <div class="col-auto"><a href="assets/docx/report-000023.pdf" class="sourcesBtn" download><img src="assets/image/icon/PDF.svg" alt="download pdf w-100"></a></div>
+                                                <div class="col-auto"><a href="assets/docx/report-000023.xls" class="sourcesBtn" download><img src="assets/image/icon/excle_Sheet.svg" alt="download pdf w-100"></a></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="nav nav-pills" id="pills-tab" role="tablist">
+                                                <ul class="d-flex flex-wrap m-0 p-0 overviewTabs list-unstyled gap-3">
+                                                    <li class="nav-item " role="presentation">
+                                                        <a href="data-tiktok-videoDetails-overview.html" class="nav-link">Overview</a>
+                                                    </li>
+                                                    <li class="nav-item " role="presentation">
+                                                        <a href="data-tiktok-videoDetails-analysis.html" class="nav-link" >Analysis</a>
+                                                    </li>
+                                                    <li class="nav-item " role="presentation">
+                                                        <a href="data-tiktok-videoDetails-cmt.html" class="nav-link">Comment</a>
+                                                    </li>
+                                                    <li class="nav-item " role="presentation">
+                                                        <a href="data-tiktok-videoDetails-media.html" class="nav-link">Media</a>
+                                                    </li>
+                                                    <li class="nav-item " role="presentation">
+                                                        <a href="javascript:;" class="nav-link active">Geo-map</a>
+                                                    </li>
+                                                    <li class="nav-item " role="presentation">
+                                                        <a href="data-tiktok-videoDetails-connectLink.html" class="nav-link">Connect-link</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-auto">
+                                    <div class="row gx-2">
+                                        <div class="col-auto">
+                                            <div class="categoryCard">
+                                                <div class="card_body">
+                                                    <div class="categoryImg"><img src="assets/image/icon/theme-user-account.svg" alt="post"></div>
+                                                    <div class="valu">10<span>Accounts</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <div class="categoryCard">
+                                                <div class="card_body">
+                                                    <div class="categoryImg"><img src="assets/image/icon/danger.svg" alt="post"></div>
+                                                    <div class="valu">3<span>Violations</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <div class="categoryCard">
+                                                <div class="card_body">
+                                                    <div class="categoryImg"><img src="assets/image/icon/media.svg" alt="post"></div>
+                                                    <div class="valu">9<span>Media</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <div class="categoryCard">
+                                                <div class="card_body">
+                                                    <div class="categoryImg"><img src="assets/image/icon/comment-alert.svg" alt="post"></div>
+                                                    <div class="valu">24<span>Comments</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--! * User Header End -->
+                    <!-- * fb-postlist main data Start -->
+                    <div class="col-12 h-100 flex-fill maincontent overflow-hidden facebook-postDetails-overview">
+                        <div class="manin_content_Body h-100 overflow-hidden">
+                            <div class="tab-content h-100" id="pills-tabContent">
+                                <!-- ** Geo Map Tab Start -->
+                                <div class="tab-pane fade h-100 show active">
+                                    <div class="row gx-2 overflow-y-auto justify-content-center row-gap-2 h-100">
+                                        <div class="col-12 h-100">
+                                            <div class="card levelCard h-100">
+                                                <div class="card-body h-100">
+                                                    <div class="row flex-column flex-nowrap h-100">
+                                                        <div class="col-12">
+                                                            <div class="card_title">Geo-map of related accounts</div>
+                                                        </div>
+                                                        <div class="col-12 h-100 flex-fill overflow-y-auto">
+                                                            <div class="row text-white h-100">
+                                                                <div class="col-12 h-100">
+                                                                    <div class="card h-100 overflow-hidden">
+                                                                        <div class="card-body p-0 h-100 position-relative">
+                                                                            <!-- * Map -->
+                                                                            <div class="geo_map h-100 overflow-auto"><img src="assets/image/geo-map.png" class="w-100 h-100" alt=""></div>
+                                                                            <!-- * List Side start -->
+                                                                            <div class="listmap p-3 h-100 position-absolute top-0 end-0">
+                                                                                <div class="actorListCard h-100">
+                                                                                    <div class="card h-100 levelCard">
+                                                                                        <div class="card-body h-100">
+                                                                                            <div class="row flex-column flex-nowrap h-100">
+                                                                                                <div class="col-12">
+                                                                                                    <div class="card_title d-flex justify-content-between align-items-center">
+                                                                                                        <div class="cuntryflage">Actor list</div>
+                                                                                                        <div class="add-button d-flex align-items-center gap-8">
+                                                                                                            <button type="button" class="appendBtn moniter gap-1 lightbg"><img src="assets/image/icon/arrow-right.svg" alt="plus"><img src="assets/image/icon/focus.svg" alt="plus"></button>
+                                                                                                            <button type="button" class="appendBtn moniter lightbg"><img src="assets/image/icon/arrow-right.svg" alt="plus"><img src="assets/image/icon/icon-monitoring.svg" alt="plus"></button>
+                                                                                                        </div>
+                                                                                                    </div> 
+                                                                                                    
+                                                                                                </div>
+                                                                                                <div class="col-12 h-100 flex-fill overflow-x-hidden overflow-y-auto">
+                                                                                                    <div class="row userDistentCard">
+                                                                                                        <div class="col-12">
+                                                                                                            <div class="listItem active">
+                                                                                                                <div class="user_img"><img src="assets/image/fb_user.png" class="w-100" alt="logo"></div>
+                                                                                                                <div class="userDetails">
+                                                                                                                    <div class="username">Phan Lê Mai Lan</div>
+                                                                                                                    <div class="userAge">23 years old <span class="genderImg"><img src="assets/image/icon/female-gender.svg" class="w-100" alt="female"></span></div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="col-12">
+                                                                                                            <div class="listItem">
+                                                                                                                <div class="user_img"><img src="assets/image/BikerAnTOn.png" class="w-100" alt="logo"></div>
+                                                                                                                <div class="userDetails">
+                                                                                                                    <div class="username">Phan Lê Mai Lan</div>
+                                                                                                                    <div class="userAge">27 years old <span class="genderImg"><img src="assets/image/icon/male-gender.svg" class="w-100" alt="male"></span></div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="col-12">
+                                                                                                            <div class="listItem">
+                                                                                                                <div class="user_img"><img src="assets/image/thanhhaHN.png" class="w-100" alt="logo"></div>
+                                                                                                                <div class="userDetails">
+                                                                                                                    <div class="username">Phan Thanh Hà</div>
+                                                                                                                    <div class="userAge">45 years old <span class="genderImg"><img src="assets/image/icon/female-gender.svg" class="w-100" alt="female"></span></div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="col-12">
+                                                                                                            <div class="listItem">
+                                                                                                                <div class="user_img"><img src="assets/image/LangMetRoi.png" class="w-100" alt="logo"></div>
+                                                                                                                <div class="userDetails">
+                                                                                                                    <div class="username">Ngô Đình Long</div>
+                                                                                                                    <div class="userAge">27 years old <span class="genderImg"><img src="assets/image/icon/male-gender.svg" class="w-100" alt="male"></span></div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="col-12">
+                                                                                                            <div class="listItem">
+                                                                                                                <div class="user_img"><img src="assets/image/KalvinElliot.png" class="w-100" alt="logo"></div>
+                                                                                                                <div class="userDetails">
+                                                                                                                    <div class="username">Trader Nguyễn</div>
+                                                                                                                    <div class="userAge">32 years old <span class="genderImg"><img src="assets/image/icon/male-gender.svg" class="w-100" alt="male"></span></div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="col-12">
+                                                                                                            <div class="listItem">
+                                                                                                                <div class="user_img"><img src="assets/image/SharkTung.png" class="w-100" alt="logo"></div>
+                                                                                                                <div class="userDetails">
+                                                                                                                    <div class="username">Shark Tùng</div>
+                                                                                                                    <div class="userAge">33 years old <span class="genderImg"><img src="assets/image/icon/male-gender.svg" class="w-100" alt="male"></span></div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="col-12">
+                                                                                                            <div class="listItem">
+                                                                                                                <div class="user_img"><img src="assets/image/JeaminThao.png" class="w-100" alt="logo"></div>
+                                                                                                                <div class="userDetails">
+                                                                                                                    <div class="username">Nana Phạm</div>
+                                                                                                                    <div class="userAge">22 years old <span class="genderImg"><img src="assets/image/icon/female-gender.svg" class="w-100" alt="female"></span></div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="col-12">
+                                                                                                            <div class="listItem">
+                                                                                                                <div class="user_img"><img src="assets/image/Nguyen.png" class="w-100" alt="logo"></div>
+                                                                                                                <div class="userDetails">
+                                                                                                                    <div class="username">Nguyễn Như Hằng</div>
+                                                                                                                    <div class="userAge">35 years old <span class="genderImg"><img src="assets/image/icon/female-gender.svg" class="w-100" alt="female"></span></div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="col-12">
+                                                                                                            <div class="listItem">
+                                                                                                                <div class="user_img"><img src="assets/image/pinklu.png" class="w-100" alt="logo"></div>
+                                                                                                                <div class="userDetails">
+                                                                                                                    <div class="username">Pink Lu</div>
+                                                                                                                    <div class="userAge">31 years old <span class="genderImg"><img src="assets/image/icon/female-gender.svg" class="w-100" alt="female"></span></div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="col-12">
+                                                                                                            <div class="listItem">
+                                                                                                                <div class="user_img"><img src="assets/image/ThamGia.png" class="w-100" alt="logo"></div>
+                                                                                                                <div class="userDetails">
+                                                                                                                    <div class="username">QQ Thuỷ Tâm</div>
+                                                                                                                    <div class="userAge">26 years old <span class="genderImg"><img src="assets/image/icon/female-gender.svg" class="w-100" alt="female"></span></div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <!-- * List Side end -->
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- ** Geo Map Tab End -->
+                            </div>
+                        </div>
+                    </div>
+                    <!--! * fb-postlist main data End -->
+                </div>
+            </div>
+            <!--! * Main DashBoard Start -->
+
+            <!--? ***** Details Post Modal Start ***** -->
+            <!-- Button trigger modal -->
+            <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"></button> -->
+            <!-- Modal -->
+            <div class="modal fade maincontent detailsPostModal modaldesign mediapostmodul" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog mediaModul modal-dialog-scrollable modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header border-0 p-0 d-block w-100">
+                            <div class="d-flex align-items-center">
+                                <div class="modal-title m-0 d-flex flex-wrap gap-12" id="staticBackdropLabel">Images analysis / mot-cuoc-hop-bat-thuong.jpg
+                                    <div class="add-button"><button type="button" class="appendBtn moniter gap-1"><img src="assets/image/icon/arrow-right.svg" alt="plus"><img src="assets/image/icon/post-white.png" alt="plus"></button></div>
+                                </div>
+                                <button type="button" class=" shadow-none p-0 border-0 ms-auto bg-transparent" data-bs-dismiss="modal" aria-label="Close"><img src="assets/image/icon/close-button.svg" class="w-100" alt="close button"></button>
+                            </div>
+                        </div>
+                        <div class="modal-body px-0 manin_content_Body  pb-0 overflow-hidden vh-100">
+                            <div class="row h-100 g-2">
+                                <div class="col h-100">
+                                    <div class="youtubeIMg h-100"><img src="assets/image/Youtube_player.png" class="w-100" alt="youtube image"></div>
+                                </div>
+                                <!-- * List Side start -->
+                                <div class="col-auto listmap h-100">
+                                    <div class="actorListCard postdetailslist h-100">
+                                        <div class="card h-100 levelCard border-0 rounded-0">
+                                            <div class="card-body h-100">
+                                                <div class="row flex-column flex-nowrap h-100">
+                                                    <div class="col-12">
+                                                        <div class="card_title d-flex justify-content-between align-items-center m-0">
+                                                            <div class="cuntryflage">Analysis</div>
+                                                            <div class="add-button d-flex align-items-center gap-8">
+                                                                <button type="button" class="appendBtn moniter"><img src="assets/image/icon/arrow-right.svg" alt="plus"><img src="assets/image/icon/icon-monitoring.svg" alt="plus"></button>
+                                                            </div>
+                                                        </div> 
+                                                        <div class="nav nav-pills" id="pills-tab" role="tablist">
+                                                            <ul class="d-flex flex-wrap m-0 p-0 overviewTabs themetabs list-unstyled gap-4">
+                                                                <li class="nav-item " role="presentation">
+                                                                    <button class="nav-link actor active" id="pills-actor-tab" data-bs-toggle="pill" data-bs-target="#pills-actor" type="button" role="tab" aria-controls="pills-actor" aria-selected="false" tabindex="-1">Actor list </button>
+                                                                </li>
+                                                                <li class="nav-item " role="presentation">
+                                                                    <button class="nav-link itemlist" id="pills-item-tab" data-bs-toggle="pill" data-bs-target="#pills-item" type="button" role="tab" aria-controls="pills-item" aria-selected="false" tabindex="-1">Item list</button>
+                                                                </li>
+                                                                <li class="nav-item " role="presentation">
+                                                                    <button class="nav-link violation" id="pills-violation-tab" data-bs-toggle="pill" data-bs-target="#pills-violation" type="button" role="tab" aria-controls="pills-violation" aria-selected="false" tabindex="-1">Violations</button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 h-100 flex-fill overflow-x-hidden overflow-y-auto">
+                                                        <div class="tab-content userDistentCard" id="pills-tabContent">
+                                                            <div class="tab-pane fade show active" id="pills-actor" role="tabpanel" aria-labelledby="pills-actor-tab" tabindex="0">
+                                                                <div class="row ">
+                                                                    <div class="col-12">
+                                                                        <div class="listItem">
+                                                                            <div class="user_img"><img src="assets/image/BikerAnTOn.png" class="w-100" alt="logo"></div>
+                                                                            <div class="userDetails">
+                                                                                <div class="username">Phan Lê Mai Lan</div>
+                                                                                <div class="userAge">27 years old <span class="genderImg"><img src="assets/image/icon/male-gender.svg" class="w-100" alt="male"></span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <div class="listItem">
+                                                                            <div class="user_img"><img src="assets/image/thanhhaHN.png" class="w-100" alt="logo"></div>
+                                                                            <div class="userDetails">
+                                                                                <div class="username">Phan Thanh Hà</div>
+                                                                                <div class="userAge">45 years old <span class="genderImg"><img src="assets/image/icon/female-gender.svg" class="w-100" alt="female"></span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <div class="listItem">
+                                                                            <div class="user_img"><img src="assets/image/fb_user.png" class="w-100" alt="logo"></div>
+                                                                            <div class="userDetails">
+                                                                                <div class="username">Phan Lê Mai Lan</div>
+                                                                                <div class="userAge">23 years old <span class="genderImg"><img src="assets/image/icon/female-gender.svg" class="w-100" alt="female"></span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <div class="listItem">
+                                                                            <div class="user_img"><img src="assets/image/KalvinElliot.png" class="w-100" alt="logo"></div>
+                                                                            <div class="userDetails">
+                                                                                <div class="username">Trader Nguyễn</div>
+                                                                                <div class="userAge">32 years old <span class="genderImg"><img src="assets/image/icon/male-gender.svg" class="w-100" alt="male"></span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <div class="listItem">
+                                                                            <div class="user_img"><img src="assets/image/SharkTung.png" class="w-100" alt="logo"></div>
+                                                                            <div class="userDetails">
+                                                                                <div class="username">Shark Tùng</div>
+                                                                                <div class="userAge">33 years old <span class="genderImg"><img src="assets/image/icon/male-gender.svg" class="w-100" alt="male"></span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <div class="listItem">
+                                                                            <div class="user_img"><img src="assets/image/LangMetRoi.png" class="w-100" alt="logo"></div>
+                                                                            <div class="userDetails">
+                                                                                <div class="username">Ngô Đình Long</div>
+                                                                                <div class="userAge">27 years old <span class="genderImg"><img src="assets/image/icon/male-gender.svg" class="w-100" alt="male"></span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <div class="listItem">
+                                                                            <div class="user_img"><img src="assets/image/JeaminThao.png" class="w-100" alt="logo"></div>
+                                                                            <div class="userDetails">
+                                                                                <div class="username">Nana Phạm</div>
+                                                                                <div class="userAge">22 years old <span class="genderImg"><img src="assets/image/icon/female-gender.svg" class="w-100" alt="female"></span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <div class="listItem">
+                                                                            <div class="user_img"><img src="assets/image/Nguyen.png" class="w-100" alt="logo"></div>
+                                                                            <div class="userDetails">
+                                                                                <div class="username">Nguyễn Như Hằng</div>
+                                                                                <div class="userAge">35 years old <span class="genderImg"><img src="assets/image/icon/female-gender.svg" class="w-100" alt="female"></span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <div class="listItem">
+                                                                            <div class="user_img"><img src="assets/image/pinklu.png" class="w-100" alt="logo"></div>
+                                                                            <div class="userDetails">
+                                                                                <div class="username">Pink Lu</div>
+                                                                                <div class="userAge">31 years old <span class="genderImg"><img src="assets/image/icon/female-gender.svg" class="w-100" alt="female"></span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <div class="listItem">
+                                                                            <div class="user_img"><img src="assets/image/ThamGia.png" class="w-100" alt="logo"></div>
+                                                                            <div class="userDetails">
+                                                                                <div class="username">QQ Thuỷ Tâm</div>
+                                                                                <div class="userAge">26 years old <span class="genderImg"><img src="assets/image/icon/female-gender.svg" class="w-100" alt="female"></span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <div class="listItem">
+                                                                            <div class="user_img"><img src="assets/image/BikerAnTOn.png" class="w-100" alt="logo"></div>
+                                                                            <div class="userDetails">
+                                                                                <div class="username">Phan Lê Mai Lan</div>
+                                                                                <div class="userAge">27 years old <span class="genderImg"><img src="assets/image/icon/male-gender.svg" class="w-100" alt="male"></span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <div class="listItem">
+                                                                            <div class="user_img"><img src="assets/image/thanhhaHN.png" class="w-100" alt="logo"></div>
+                                                                            <div class="userDetails">
+                                                                                <div class="username">Phan Thanh Hà</div>
+                                                                                <div class="userAge">45 years old <span class="genderImg"><img src="assets/image/icon/female-gender.svg" class="w-100" alt="female"></span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <div class="listItem">
+                                                                            <div class="user_img"><img src="assets/image/fb_user.png" class="w-100" alt="logo"></div>
+                                                                            <div class="userDetails">
+                                                                                <div class="username">Phan Lê Mai Lan</div>
+                                                                                <div class="userAge">23 years old <span class="genderImg"><img src="assets/image/icon/female-gender.svg" class="w-100" alt="female"></span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <div class="listItem">
+                                                                            <div class="user_img"><img src="assets/image/KalvinElliot.png" class="w-100" alt="logo"></div>
+                                                                            <div class="userDetails">
+                                                                                <div class="username">Trader Nguyễn</div>
+                                                                                <div class="userAge">32 years old <span class="genderImg"><img src="assets/image/icon/male-gender.svg" class="w-100" alt="male"></span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <div class="listItem">
+                                                                            <div class="user_img"><img src="assets/image/SharkTung.png" class="w-100" alt="logo"></div>
+                                                                            <div class="userDetails">
+                                                                                <div class="username">Shark Tùng</div>
+                                                                                <div class="userAge">33 years old <span class="genderImg"><img src="assets/image/icon/male-gender.svg" class="w-100" alt="male"></span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <div class="listItem">
+                                                                            <div class="user_img"><img src="assets/image/LangMetRoi.png" class="w-100" alt="logo"></div>
+                                                                            <div class="userDetails">
+                                                                                <div class="username">Ngô Đình Long</div>
+                                                                                <div class="userAge">27 years old <span class="genderImg"><img src="assets/image/icon/male-gender.svg" class="w-100" alt="male"></span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <div class="listItem">
+                                                                            <div class="user_img"><img src="assets/image/JeaminThao.png" class="w-100" alt="logo"></div>
+                                                                            <div class="userDetails">
+                                                                                <div class="username">Nana Phạm</div>
+                                                                                <div class="userAge">22 years old <span class="genderImg"><img src="assets/image/icon/female-gender.svg" class="w-100" alt="female"></span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <div class="listItem">
+                                                                            <div class="user_img"><img src="assets/image/Nguyen.png" class="w-100" alt="logo"></div>
+                                                                            <div class="userDetails">
+                                                                                <div class="username">Nguyễn Như Hằng</div>
+                                                                                <div class="userAge">35 years old <span class="genderImg"><img src="assets/image/icon/female-gender.svg" class="w-100" alt="female"></span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <div class="listItem">
+                                                                            <div class="user_img"><img src="assets/image/pinklu.png" class="w-100" alt="logo"></div>
+                                                                            <div class="userDetails">
+                                                                                <div class="username">Pink Lu</div>
+                                                                                <div class="userAge">31 years old <span class="genderImg"><img src="assets/image/icon/female-gender.svg" class="w-100" alt="female"></span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <div class="listItem">
+                                                                            <div class="user_img"><img src="assets/image/ThamGia.png" class="w-100" alt="logo"></div>
+                                                                            <div class="userDetails">
+                                                                                <div class="username">QQ Thuỷ Tâm</div>
+                                                                                <div class="userAge">26 years old <span class="genderImg"><img src="assets/image/icon/female-gender.svg" class="w-100" alt="female"></span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="tab-pane fade" id="pills-item" role="tabpanel" aria-labelledby="pills-item-tab" tabindex="0">
+                                                                <div class="row ">
+                                                                    <div class="col-12">
+                                                                        <div class="listItem">
+                                                                            <div class="user_img"><img src="assets/image/BikerAnTOn.png" class="w-100" alt="logo"></div>
+                                                                            <div class="userDetails">
+                                                                                <div class="username">Phan Lê Mai Lan</div>
+                                                                                <div class="userAge">27 years old <span class="genderImg"><img src="assets/image/icon/male-gender.svg" class="w-100" alt="male"></span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <div class="listItem">
+                                                                            <div class="user_img"><img src="assets/image/thanhhaHN.png" class="w-100" alt="logo"></div>
+                                                                            <div class="userDetails">
+                                                                                <div class="username">Phan Thanh Hà</div>
+                                                                                <div class="userAge">45 years old <span class="genderImg"><img src="assets/image/icon/female-gender.svg" class="w-100" alt="female"></span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <div class="listItem">
+                                                                            <div class="user_img"><img src="assets/image/fb_user.png" class="w-100" alt="logo"></div>
+                                                                            <div class="userDetails">
+                                                                                <div class="username">Phan Lê Mai Lan</div>
+                                                                                <div class="userAge">23 years old <span class="genderImg"><img src="assets/image/icon/female-gender.svg" class="w-100" alt="female"></span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <div class="listItem">
+                                                                            <div class="user_img"><img src="assets/image/KalvinElliot.png" class="w-100" alt="logo"></div>
+                                                                            <div class="userDetails">
+                                                                                <div class="username">Trader Nguyễn</div>
+                                                                                <div class="userAge">32 years old <span class="genderImg"><img src="assets/image/icon/male-gender.svg" class="w-100" alt="male"></span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <div class="listItem">
+                                                                            <div class="user_img"><img src="assets/image/SharkTung.png" class="w-100" alt="logo"></div>
+                                                                            <div class="userDetails">
+                                                                                <div class="username">Shark Tùng</div>
+                                                                                <div class="userAge">33 years old <span class="genderImg"><img src="assets/image/icon/male-gender.svg" class="w-100" alt="male"></span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <div class="listItem">
+                                                                            <div class="user_img"><img src="assets/image/LangMetRoi.png" class="w-100" alt="logo"></div>
+                                                                            <div class="userDetails">
+                                                                                <div class="username">Ngô Đình Long</div>
+                                                                                <div class="userAge">27 years old <span class="genderImg"><img src="assets/image/icon/male-gender.svg" class="w-100" alt="male"></span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <div class="listItem">
+                                                                            <div class="user_img"><img src="assets/image/JeaminThao.png" class="w-100" alt="logo"></div>
+                                                                            <div class="userDetails">
+                                                                                <div class="username">Nana Phạm</div>
+                                                                                <div class="userAge">22 years old <span class="genderImg"><img src="assets/image/icon/female-gender.svg" class="w-100" alt="female"></span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <div class="listItem">
+                                                                            <div class="user_img"><img src="assets/image/Nguyen.png" class="w-100" alt="logo"></div>
+                                                                            <div class="userDetails">
+                                                                                <div class="username">Nguyễn Như Hằng</div>
+                                                                                <div class="userAge">35 years old <span class="genderImg"><img src="assets/image/icon/female-gender.svg" class="w-100" alt="female"></span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <div class="listItem">
+                                                                            <div class="user_img"><img src="assets/image/pinklu.png" class="w-100" alt="logo"></div>
+                                                                            <div class="userDetails">
+                                                                                <div class="username">Pink Lu</div>
+                                                                                <div class="userAge">31 years old <span class="genderImg"><img src="assets/image/icon/female-gender.svg" class="w-100" alt="female"></span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <div class="listItem">
+                                                                            <div class="user_img"><img src="assets/image/ThamGia.png" class="w-100" alt="logo"></div>
+                                                                            <div class="userDetails">
+                                                                                <div class="username">QQ Thuỷ Tâm</div>
+                                                                                <div class="userAge">26 years old <span class="genderImg"><img src="assets/image/icon/female-gender.svg" class="w-100" alt="female"></span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <div class="listItem">
+                                                                            <div class="user_img"><img src="assets/image/BikerAnTOn.png" class="w-100" alt="logo"></div>
+                                                                            <div class="userDetails">
+                                                                                <div class="username">Phan Lê Mai Lan</div>
+                                                                                <div class="userAge">27 years old <span class="genderImg"><img src="assets/image/icon/male-gender.svg" class="w-100" alt="male"></span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <div class="listItem">
+                                                                            <div class="user_img"><img src="assets/image/thanhhaHN.png" class="w-100" alt="logo"></div>
+                                                                            <div class="userDetails">
+                                                                                <div class="username">Phan Thanh Hà</div>
+                                                                                <div class="userAge">45 years old <span class="genderImg"><img src="assets/image/icon/female-gender.svg" class="w-100" alt="female"></span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <div class="listItem">
+                                                                            <div class="user_img"><img src="assets/image/fb_user.png" class="w-100" alt="logo"></div>
+                                                                            <div class="userDetails">
+                                                                                <div class="username">Phan Lê Mai Lan</div>
+                                                                                <div class="userAge">23 years old <span class="genderImg"><img src="assets/image/icon/female-gender.svg" class="w-100" alt="female"></span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <div class="listItem">
+                                                                            <div class="user_img"><img src="assets/image/KalvinElliot.png" class="w-100" alt="logo"></div>
+                                                                            <div class="userDetails">
+                                                                                <div class="username">Trader Nguyễn</div>
+                                                                                <div class="userAge">32 years old <span class="genderImg"><img src="assets/image/icon/male-gender.svg" class="w-100" alt="male"></span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <div class="listItem">
+                                                                            <div class="user_img"><img src="assets/image/SharkTung.png" class="w-100" alt="logo"></div>
+                                                                            <div class="userDetails">
+                                                                                <div class="username">Shark Tùng</div>
+                                                                                <div class="userAge">33 years old <span class="genderImg"><img src="assets/image/icon/male-gender.svg" class="w-100" alt="male"></span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <div class="listItem">
+                                                                            <div class="user_img"><img src="assets/image/LangMetRoi.png" class="w-100" alt="logo"></div>
+                                                                            <div class="userDetails">
+                                                                                <div class="username">Ngô Đình Long</div>
+                                                                                <div class="userAge">27 years old <span class="genderImg"><img src="assets/image/icon/male-gender.svg" class="w-100" alt="male"></span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <div class="listItem">
+                                                                            <div class="user_img"><img src="assets/image/JeaminThao.png" class="w-100" alt="logo"></div>
+                                                                            <div class="userDetails">
+                                                                                <div class="username">Nana Phạm</div>
+                                                                                <div class="userAge">22 years old <span class="genderImg"><img src="assets/image/icon/female-gender.svg" class="w-100" alt="female"></span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <div class="listItem">
+                                                                            <div class="user_img"><img src="assets/image/Nguyen.png" class="w-100" alt="logo"></div>
+                                                                            <div class="userDetails">
+                                                                                <div class="username">Nguyễn Như Hằng</div>
+                                                                                <div class="userAge">35 years old <span class="genderImg"><img src="assets/image/icon/female-gender.svg" class="w-100" alt="female"></span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <div class="listItem">
+                                                                            <div class="user_img"><img src="assets/image/pinklu.png" class="w-100" alt="logo"></div>
+                                                                            <div class="userDetails">
+                                                                                <div class="username">Pink Lu</div>
+                                                                                <div class="userAge">31 years old <span class="genderImg"><img src="assets/image/icon/female-gender.svg" class="w-100" alt="female"></span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <div class="listItem">
+                                                                            <div class="user_img"><img src="assets/image/ThamGia.png" class="w-100" alt="logo"></div>
+                                                                            <div class="userDetails">
+                                                                                <div class="username">QQ Thuỷ Tâm</div>
+                                                                                <div class="userAge">26 years old <span class="genderImg"><img src="assets/image/icon/female-gender.svg" class="w-100" alt="female"></span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="tab-pane fade" id="pills-violation" role="tabpanel" aria-labelledby="pills-violation-tab" tabindex="0">
+                                                                <div class="row ">
+                                                                    <div class="col-12">
+                                                                        <div class="listItem">
+                                                                            <div class="user_img"><img src="assets/image/BikerAnTOn.png" class="w-100" alt="logo"></div>
+                                                                            <div class="userDetails">
+                                                                                <div class="username">Phan Lê Mai Lan</div>
+                                                                                <div class="userAge">27 years old <span class="genderImg"><img src="assets/image/icon/male-gender.svg" class="w-100" alt="male"></span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <div class="listItem">
+                                                                            <div class="user_img"><img src="assets/image/thanhhaHN.png" class="w-100" alt="logo"></div>
+                                                                            <div class="userDetails">
+                                                                                <div class="username">Phan Thanh Hà</div>
+                                                                                <div class="userAge">45 years old <span class="genderImg"><img src="assets/image/icon/female-gender.svg" class="w-100" alt="female"></span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <div class="listItem">
+                                                                            <div class="user_img"><img src="assets/image/fb_user.png" class="w-100" alt="logo"></div>
+                                                                            <div class="userDetails">
+                                                                                <div class="username">Phan Lê Mai Lan</div>
+                                                                                <div class="userAge">23 years old <span class="genderImg"><img src="assets/image/icon/female-gender.svg" class="w-100" alt="female"></span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <div class="listItem">
+                                                                            <div class="user_img"><img src="assets/image/KalvinElliot.png" class="w-100" alt="logo"></div>
+                                                                            <div class="userDetails">
+                                                                                <div class="username">Trader Nguyễn</div>
+                                                                                <div class="userAge">32 years old <span class="genderImg"><img src="assets/image/icon/male-gender.svg" class="w-100" alt="male"></span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <div class="listItem">
+                                                                            <div class="user_img"><img src="assets/image/SharkTung.png" class="w-100" alt="logo"></div>
+                                                                            <div class="userDetails">
+                                                                                <div class="username">Shark Tùng</div>
+                                                                                <div class="userAge">33 years old <span class="genderImg"><img src="assets/image/icon/male-gender.svg" class="w-100" alt="male"></span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <div class="listItem">
+                                                                            <div class="user_img"><img src="assets/image/LangMetRoi.png" class="w-100" alt="logo"></div>
+                                                                            <div class="userDetails">
+                                                                                <div class="username">Ngô Đình Long</div>
+                                                                                <div class="userAge">27 years old <span class="genderImg"><img src="assets/image/icon/male-gender.svg" class="w-100" alt="male"></span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <div class="listItem">
+                                                                            <div class="user_img"><img src="assets/image/JeaminThao.png" class="w-100" alt="logo"></div>
+                                                                            <div class="userDetails">
+                                                                                <div class="username">Nana Phạm</div>
+                                                                                <div class="userAge">22 years old <span class="genderImg"><img src="assets/image/icon/female-gender.svg" class="w-100" alt="female"></span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <div class="listItem">
+                                                                            <div class="user_img"><img src="assets/image/Nguyen.png" class="w-100" alt="logo"></div>
+                                                                            <div class="userDetails">
+                                                                                <div class="username">Nguyễn Như Hằng</div>
+                                                                                <div class="userAge">35 years old <span class="genderImg"><img src="assets/image/icon/female-gender.svg" class="w-100" alt="female"></span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <div class="listItem">
+                                                                            <div class="user_img"><img src="assets/image/pinklu.png" class="w-100" alt="logo"></div>
+                                                                            <div class="userDetails">
+                                                                                <div class="username">Pink Lu</div>
+                                                                                <div class="userAge">31 years old <span class="genderImg"><img src="assets/image/icon/female-gender.svg" class="w-100" alt="female"></span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <div class="listItem">
+                                                                            <div class="user_img"><img src="assets/image/ThamGia.png" class="w-100" alt="logo"></div>
+                                                                            <div class="userDetails">
+                                                                                <div class="username">QQ Thuỷ Tâm</div>
+                                                                                <div class="userAge">26 years old <span class="genderImg"><img src="assets/image/icon/female-gender.svg" class="w-100" alt="female"></span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <div class="listItem">
+                                                                            <div class="user_img"><img src="assets/image/BikerAnTOn.png" class="w-100" alt="logo"></div>
+                                                                            <div class="userDetails">
+                                                                                <div class="username">Phan Lê Mai Lan</div>
+                                                                                <div class="userAge">27 years old <span class="genderImg"><img src="assets/image/icon/male-gender.svg" class="w-100" alt="male"></span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <div class="listItem">
+                                                                            <div class="user_img"><img src="assets/image/thanhhaHN.png" class="w-100" alt="logo"></div>
+                                                                            <div class="userDetails">
+                                                                                <div class="username">Phan Thanh Hà</div>
+                                                                                <div class="userAge">45 years old <span class="genderImg"><img src="assets/image/icon/female-gender.svg" class="w-100" alt="female"></span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <div class="listItem">
+                                                                            <div class="user_img"><img src="assets/image/fb_user.png" class="w-100" alt="logo"></div>
+                                                                            <div class="userDetails">
+                                                                                <div class="username">Phan Lê Mai Lan</div>
+                                                                                <div class="userAge">23 years old <span class="genderImg"><img src="assets/image/icon/female-gender.svg" class="w-100" alt="female"></span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <div class="listItem">
+                                                                            <div class="user_img"><img src="assets/image/KalvinElliot.png" class="w-100" alt="logo"></div>
+                                                                            <div class="userDetails">
+                                                                                <div class="username">Trader Nguyễn</div>
+                                                                                <div class="userAge">32 years old <span class="genderImg"><img src="assets/image/icon/male-gender.svg" class="w-100" alt="male"></span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <div class="listItem">
+                                                                            <div class="user_img"><img src="assets/image/SharkTung.png" class="w-100" alt="logo"></div>
+                                                                            <div class="userDetails">
+                                                                                <div class="username">Shark Tùng</div>
+                                                                                <div class="userAge">33 years old <span class="genderImg"><img src="assets/image/icon/male-gender.svg" class="w-100" alt="male"></span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <div class="listItem">
+                                                                            <div class="user_img"><img src="assets/image/LangMetRoi.png" class="w-100" alt="logo"></div>
+                                                                            <div class="userDetails">
+                                                                                <div class="username">Ngô Đình Long</div>
+                                                                                <div class="userAge">27 years old <span class="genderImg"><img src="assets/image/icon/male-gender.svg" class="w-100" alt="male"></span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <div class="listItem">
+                                                                            <div class="user_img"><img src="assets/image/JeaminThao.png" class="w-100" alt="logo"></div>
+                                                                            <div class="userDetails">
+                                                                                <div class="username">Nana Phạm</div>
+                                                                                <div class="userAge">22 years old <span class="genderImg"><img src="assets/image/icon/female-gender.svg" class="w-100" alt="female"></span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <div class="listItem">
+                                                                            <div class="user_img"><img src="assets/image/Nguyen.png" class="w-100" alt="logo"></div>
+                                                                            <div class="userDetails">
+                                                                                <div class="username">Nguyễn Như Hằng</div>
+                                                                                <div class="userAge">35 years old <span class="genderImg"><img src="assets/image/icon/female-gender.svg" class="w-100" alt="female"></span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <div class="listItem">
+                                                                            <div class="user_img"><img src="assets/image/pinklu.png" class="w-100" alt="logo"></div>
+                                                                            <div class="userDetails">
+                                                                                <div class="username">Pink Lu</div>
+                                                                                <div class="userAge">31 years old <span class="genderImg"><img src="assets/image/icon/female-gender.svg" class="w-100" alt="female"></span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <div class="listItem">
+                                                                            <div class="user_img"><img src="assets/image/ThamGia.png" class="w-100" alt="logo"></div>
+                                                                            <div class="userDetails">
+                                                                                <div class="username">QQ Thuỷ Tâm</div>
+                                                                                <div class="userAge">26 years old <span class="genderImg"><img src="assets/image/icon/female-gender.svg" class="w-100" alt="female"></span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- * List Side end -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--? ***** Details Post Modal End ***** -->
+        </div>
+    </main>
+
+    <!-- *** Bootstrap Js ***** -->
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- *** Select2 Js *** -->
+    <script src="assets/libs/select2/select2.min.js"></script>
+    <!-- *** Cytoscape Map Js *** -->
+    <script src="https://js.cytoscape.org/js/cytoscape.min.js"></script>
+	<script src="assets/libs/cytoscape/cytoscape-popper.js"></script>
+    <!-- <script src="assets/libs/cytoscape/cytoscape.min.js"></script> -->
+    <!-- <script src="assets/libs/cytoscape/cytoscape-popper.min.js"></script> -->
+    <!-- <script src="assets/libs/cytoscape/cytoscape-popper.js"></script> -->
+    <!-- **** Custom Js ***** -->
+    <script src="assets/js/cytoscape-custome.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+</body>
+</html>

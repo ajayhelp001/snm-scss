@@ -76,6 +76,11 @@
         }
         &.tiktok{
             transition: all ease-in-out 0s;
+            & span {
+                & img {
+                    transition: all ease-in-out 0s;
+                }
+            }
         }
         &:hover,
         &.active {
@@ -1330,6 +1335,7 @@
         padding: 8px;
         border-radius: 8px;
         background-color: var(--black--dark);
+        gap: 4px;
         & .timing_value {
             display: flex;
             align-items: center;
@@ -1352,6 +1358,10 @@
             }
         }
     }
+    & .sourcegroup  {
+        border: 1px solid var(--theme-red);
+        border-radius: 8px;
+    }
 }
 
 
@@ -1370,7 +1380,61 @@
     & .analysisCard {
         max-width: 432px;
     }
+    & .scriptCrad {
+        max-width: 388px;
+        width: 100%;
+    }
+    & .script_Video_Top_Section {
+        max-height: 567px;
+        height: 100%;
+    }
 }
+.scriptVideo_section{
+    & .durationHeadingGroup {
+        min-height: 24px;
+    }
+    & .durationHeading{
+        overflow: hidden;
+        color: var(--netural-dark);
+        text-overflow: ellipsis;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 140%; /* 14px */
+        &.duration {
+            min-width: 48px;
+        }
+        &.startTime, &.endTime{
+            min-width: 64px;
+        }
+    }
+    & .script_item {
+        padding: 8px 12px;
+        border-bottom: 2px solid var(--neutralBlack);
+        & .script {
+            overflow: hidden;
+            color: var(--white);
+            text-overflow: ellipsis;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%; /* 21px */
+            letter-spacing: -0.5px;
+            margin-top: 4px;
+        }
+        &.active{
+            background-color: var(--active);
+            & .durationHeading{
+                color: var(--white);
+            }
+        }
+    }
+}
+
+
+
+
+
 @media screen and (min-width: 1800px) {
     .informationCard{
         &.youtubeVideoOverview{
@@ -1422,6 +1486,66 @@
 
 
 // *******************************************************  [ YouTube Post-Details  Css End ] ***********************************************
+
+
+
+
+// *******************************************************  [ TikTok Post-Details  Css Start ] ***********************************************
+.mediaGallery{
+    &.tiktokBigMedia{
+        &>div{
+            min-width: 12.5%;
+        }
+    }
+}
+.tiktok_videoD_analysis {
+    max-width: 395px;
+    width: 100%;
+}
+.tiktok_video{
+    & .mainpostcard {
+        &.ytubemainVideoPost{
+            & .videoSide {
+                width: 48%;
+            }
+            & .contentSide {
+                width: 52%;
+            }
+        }
+        & .countingGroup {
+            gap: 16px;
+            & .countItem {
+                & .likeImg {
+                    width: 32px;
+                    height: 32px;
+                    display: flex;
+                }
+                & .counting {
+                    color: var(--white);
+                    text-align: center;
+                    text-shadow: 0.8755754828453064px 0.8755754828453064px 0px var(--black-30);
+                    font-size: 11.382px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    margin: 2px 0px 0px 0px;
+                }
+            }
+        }
+    }
+    & .socialCategoery {
+        & .socialMetricsCard {
+            & .cardbody {
+                & .categoryes {
+                    background-color: var(--black--dark);
+                    border-radius: 8px;
+                }
+            }
+        }
+    }
+}
+// *******************************************************  [ TikTok Post-Details  Css End ] ***********************************************
+
 
 
 

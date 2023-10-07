@@ -5,7 +5,7 @@
         // min-width: 1900px;
     }
     & .icons-wrap-container {
-        background-color: #00B492;
+        background-color: var(--successful);
         padding: 5px;
         border-radius: 5px;
     }
@@ -37,6 +37,24 @@
         width: 100%;
         display: block;			
     }
+    & .geomapmain {
+        & .svgmap{
+            width: 100%;
+            height: auto;
+        }
+        g.node2 ellipse {
+            transition: all 0.5s ease-in-out;
+            fill: var(--netural-dark) !important;
+            cursor: pointer !important;
+        }
+        g.node2.animation_color ellipse {
+            transition: all 0.5s ease-in-out;
+            fill: #00D1FF !important;
+        }
+        g.node2 rect {
+            cursor: pointer;
+        }
+    }
 }
 .mapcard{
     background-color: var(--black--dark) !important;
@@ -50,4 +68,9 @@
     }
     background-color: var(--black--dark);
     border-radius: 8px;
+}
+
+.geomapleftinfo{
+    display: none;
+    
 }

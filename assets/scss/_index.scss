@@ -685,6 +685,25 @@
                         width: 100%;
                     }
                 }
+                & .content{
+                    color: var(--white);
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 140%; /* 19.6px */
+
+                }
+                & .containtHeading{
+                    color: var(--netural-dark);
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 150%; /* 21px */
+                    letter-spacing: -0.5px;
+                    &.descriptions{
+                        color: var(--white);
+                    }
+                }
             }
             & .socialMetricsCard {
                 border: 1px solid var(--balck--light);

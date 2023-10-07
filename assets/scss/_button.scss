@@ -76,6 +76,10 @@
     &:hover{
         background-color: var(--neutral);
     }
+    &.categorieAppend{
+        width: 34px;
+        height: 34px;
+    }
     &.smallappend{
         width: 37px;
         height: 24px;
@@ -212,6 +216,55 @@
     }
 }
 
+
+
+// * dropdowns
+.dropdowns{
+    & .dropdownBtn {
+        padding: 8px 12px;
+        overflow: hidden;
+        color: var(--white);
+        text-overflow: ellipsis;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 21px */
+        letter-spacing: -0.5px;
+        border-radius: 8px;
+        background-color: var(--black--dark);
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        min-height: 38px;
+        & .arrowImg {
+            width: 5.032px;
+            height: 8.01px;
+            display: flex;
+        }
+    }
+    & .dropdown-menu {
+        min-width: 130px;
+        border: none;
+        border-radius: 10px;
+        background-color: var(--black--dark);
+        padding: 0px;
+        overflow: hidden;
+        & .dropdown-item {
+            color: var(--white);
+            text-align: center;
+            transition: all ease-in-out 0.3s;
+            outline: none;
+            padding: 4px 4px;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 20px; /* 125% */
+            letter-spacing: -0.08px;
+            &:hover, &:active, &:focus{
+                background-color: var(--active);
+            }
+        }
+    }
+}
 
 
 

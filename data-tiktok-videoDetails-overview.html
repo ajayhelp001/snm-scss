@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNM Dashboad | Data-Fb-PostDetails-Overview</title>
+    <link rel="icon" type="image/x-icon" href="assets/image/logo.png">
+    <!-- ****** Jquary ***** -->
+    <script src="assets/libs/jquary/jquery.min.js"></script>
+    <!-- ****** Bootstrap Css ***** -->
+    <link rel="stylesheet" href="assets/libs/bootstrap/css/bootstrap.min.css">
+    <!-- ****** Select2 Css -->
+    <link href="assets/libs/select2/select2.min.css" rel="stylesheet" />
+    <!-- ****** Style Css ***** -->
+    <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+<body>
+    <main class="main-dashboard">
+        <div class="maininner_Dashboard h-100 gx-0">
+            <!-- * Aside Bar Start -->
+            <div class="asideBar h-100">
+                <div class="row h-100 flex-column flex-nowrap mx-0 gx-0">
+                    <div class="col-12 logo_top">
+                        <div class="logo"><img src="assets/image/logo.png" class="w-100" alt="logo"></div>
+                        <div class="logoname"><img src="assets/image/SNM.png" class="w-100" alt="SNM"></div>
+                    </div>
+                    <div class="col-12 h-100 flex-fill overflow-hidden">
+                        <div class="asideBody h-100 overflow-y-auto">
+                            <ul class="nav_link">
+                                <li><a href="index.html" class="navlinks"><img src="assets/image/icon/icon-report.svg" alt="report"></a></li>
+                                <li><a href="data-fb-postList.html" class="navlinks active"><img src="assets/image/icon/icon-collect.svg" alt="collect"></a></li>
+                                <li><a href="pg-tracking-accList-social.html" class="navlinks"><img src="assets/image/icon/icon-monitoring.svg" alt="monitoring"></a></li>
+                                <li><a href="javascript:;" class="navlinks"><img src="assets/image/icon/focus.svg" alt="admin"></a></li>
+                                <li><a href="javascript:;" class="navlinks"><img src="assets/image/icon/icon-admin.svg" alt="admin"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--! * Aside Bar End -->
+            <!-- * Main DashBoard Start -->
+            <div class="dashboard_Side h-100">
+                <div class="row h-100 flex-column flex-nowrap mx-0 gx-0">
+                    <!-- * User Header Start -->
+                    <div class="col-12">
+                        <div class="topheader">
+                            <div class="row mx-0 gx-0">
+                                <div class="col-7">
+                                    <div class="row pageLinks gx-0 mx-0">
+                                        <div class="col">
+                                            <a href="data-ytube-postList.html" class="socialLinkLink facebook"><span><img src="assets/image/icon/facebook.svg" class="w-100" alt="facebook"></span> Facebook</a>
+                                        </div>
+                                        <div class="col">
+                                            <a href="javascript:;" class="socialLinkLink tiktok active"><span><img src="assets/image/icon/tiktok.svg" class="w-100" alt="tiktok"></span> Tiktok</a>
+                                        </div>
+                                        <div class="col">
+                                            <a href="data-ytube-postList.html" class="socialLinkLink youtube"><span><img src="assets/image/icon/yoytube.svg" class="w-100" alt="youtube"></span> Youtube</a>
+                                        </div>
+                                        <div class="col">
+                                            <a href="data-news-postList.html" class="socialLinkLink news "><span><img src="assets/image/icon/digital-news.svg" class="w-100" alt="digital news"></span> Digital news</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col search_bar">
+                                    <div class="input-group">
+                                        <button type="button" class="input-group-text" id="basic-addon1"><img src="assets/image/icon/search_icon.svg" alt="search"></button>
+                                        <input type="text" class="form-control" placeholder="Search anything" aria-label="Username" aria-describedby="basic-addon1">
+                                    </div>
+                                </div>
+                                <div class="col-auto userSide">
+                                    <div class="dropdown notificationDropDown">
+                                        <div class="notification" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside"><div class="bell"><img src="assets/image/icon/bell.svg" class="w-100" alt="logo"></div><span>5</span></div>
+                                        <div class="dropdown-menu">
+                                            <div class="n_title">Notifications</div>
+                                            <div class="n_Body">
+                                                <div class="n_item">
+                                                    <div class="logoimg"><img src="assets/image/icon/user.svg" class="w-100" alt="logo"></div>
+                                                    <div class="n_message">
+                                                        <div class="directMessage">Detect a connect-link from <span>Phan Lê Mai Lan</span> to <span>Phan Lê Dũng</span></div>
+                                                        <div class="date">05/09/2023 <span>10:55</span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="n_item">
+                                                    <div class="logoimg"><img src="assets/image/icon/user.svg" class="w-100" alt="logo"></div>
+                                                    <div class="n_message">
+                                                        <div class="directMessage">Detect a connect-link from <span>Phan Lê Mai Lan</span> to <span>Phan Lê Thanh Hà</span></div>
+                                                        <div class="date">05/09/2023 <span>09:23</span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="n_item">
+                                                    <div class="logoimg"><img src="assets/image/icon/user.svg" class="w-100" alt="logo"></div>
+                                                    <div class="n_message">
+                                                        <div class="directMessage">Phan Lê Mai Lan has created a post on the wall</span></div>
+                                                        <div class="date">05/09/2023 <span>09:23</span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="n_item">
+                                                    <div class="logoimg"><img src="assets/image/icon/user.svg" class="w-100" alt="logo"></div>
+                                                    <div class="n_message">
+                                                        <div class="directMessage"><span>Detected a violations in a post of a Facebook account Nana Phạm</span></div>
+                                                        <div class="date">05/09/2023 <span>09:23</span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="n_item">
+                                                    <div class="logoimg"><img src="assets/image/icon/user.svg" class="w-100" alt="logo"></div>
+                                                    <div class="n_message">
+                                                        <div class="directMessage"><span>Detected a violations in a post of a Facebook account Nana Phạm</span></div>
+                                                        <div class="date">05/09/2023 <span>09:23</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="notification"><div class="bell"><img src="assets/image/icon/bell.svg" class="w-100" alt="logo"></div><span>5</span></div> -->
+                                    <div class="user"><img src="assets/image/icon/user.svg" class="w-100" alt="logo"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="breadcrumb_Bar">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item active"><a href="index.html" class="page_link">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="javascript:;" class="page_link">Data</a></li>
+                                    <li class="breadcrumb-item"><a href="data-tiktok-postList.html" class="page_link">Tiktok</a></li>
+                                    <li class="breadcrumb-item" aria-current="page">Video</li>
+                                </ol>
+                            </nav>
+                        </div>
+                        <div class="all_sources">
+                            <div class="row  gx-0 align-items-center">
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="row all_data gx-0">
+                                                <div class="col-auto data">Video details</div>
+                                                <div class="col-auto"><a href="assets/docx/report-000023.pdf" class="sourcesBtn" download><img src="assets/image/icon/PDF.svg" alt="download pdf w-100"></a></div>
+                                                <div class="col-auto"><a href="assets/docx/report-000023.xls" class="sourcesBtn" download><img src="assets/image/icon/excle_Sheet.svg" alt="download pdf w-100"></a></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="nav nav-pills" id="pills-tab" role="tablist">
+                                                <ul class="d-flex flex-wrap m-0 p-0 overviewTabs list-unstyled gap-3">
+                                                    <li class="nav-item " role="presentation">
+                                                        <a href="javascript:;" class="nav-link active">Overview</a>
+                                                    </li>
+                                                    <li class="nav-item " role="presentation">
+                                                        <a href="data-tiktok-videoDetails-analysis.html" class="nav-link" >Analysis</a>
+                                                    </li>
+                                                    <li class="nav-item " role="presentation">
+                                                        <a href="data-tiktok-videoDetails-cmt.html" class="nav-link">Comment</a>
+                                                    </li>
+                                                    <li class="nav-item " role="presentation">
+                                                        <a href="data-tiktok-videoDetails-media.html" class="nav-link">Media</a>
+                                                    </li>
+                                                    <li class="nav-item " role="presentation">
+                                                        <a href="data-tiktok-videoDetails-geoMap.html" class="nav-link">Geo-map</a>
+                                                    </li>
+                                                    <li class="nav-item " role="presentation">
+                                                        <a href="data-tiktok-videoDetails-connectLink.html" class="nav-link">Connect-link</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-auto">
+                                    <div class="row gx-2">
+                                        <div class="col-auto">
+                                            <div class="categoryCard">
+                                                <div class="card_body">
+                                                    <div class="categoryImg"><img src="assets/image/icon/theme-user-account.svg" alt="post"></div>
+                                                    <div class="valu">10<span>Accounts</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <div class="categoryCard">
+                                                <div class="card_body">
+                                                    <div class="categoryImg"><img src="assets/image/icon/danger.svg" alt="post"></div>
+                                                    <div class="valu">3<span>Violations</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <div class="categoryCard">
+                                                <div class="card_body">
+                                                    <div class="categoryImg"><img src="assets/image/icon/media.svg" alt="post"></div>
+                                                    <div class="valu">9<span>Media</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <div class="categoryCard">
+                                                <div class="card_body">
+                                                    <div class="categoryImg"><img src="assets/image/icon/comment-alert.svg" alt="post"></div>
+                                                    <div class="valu">24<span>Comments</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--! * User Header End -->
+                    <!-- * fb-postlist main data Start -->
+                    <div class="col-12 h-100 flex-fill maincontent overflow-hidden facebook-postDetails-overview tiktok_video">
+                        <div class="manin_content_Body h-100 overflow-hidden">
+                            <div class="tab-content h-100" id="pills-tabContent">
+                                <!-- ** Overview Tab Start -->
+                                <div class="tab-pane fade h-100 show active">
+                                    <div class="d-flex gx2 gap-2 justify-content-center verflow-y-auto row-gap-2 h-100">
+                                        <div class="colauto h-100">
+                                            <div class="card levelCard mainpostcard ytubemainVideoPost h-100">
+                                                <div class="card-body h-100">
+                                                    <div class="row flex-column flex-nowrap h-100">
+                                                        <div class="col-12">
+                                                            <div class="card_title d-flex gap-12 justify-content-between align-items-center gap-10">
+                                                                <div class="d-flex align-items-center gap-12">
+                                                                    Video
+                                                                    <a href="javascript:;" type="button" class="appendBtn conectBtn lightbg"><img src="assets/image/icon/conectBold-icon.svg" alt="plus"></a>
+                                                                </div>
+                                                                <div class="d-flex align-items-center gap-10">
+                                                                    <a href="data-ytube-postDetails-analysis.html" class="viewDetailsBtn">View Details <span class="moreImg"><img src="assets/image/icon/viewmore.svg" class="w-100" alt="viewmore"></span> </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 h-100 flex-fill overflow-y-auto">
+                                                            <div class="d-flex row-gap-2 gap-3 text-white">
+                                                                <div class="videoSide">
+                                                                    <div class="postImg vidoPost d-flex rounded-3 overflow-hidden">
+                                                                        <img src="assets/image/TikTokHome.png" class="w-100" alt="tiktok">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="contentSide">
+                                                                    <div class="informationCard rounded-0 bg-transparent youtubeVideoOverview">
+                                                                        <div class="card-body px-0 pt-0">
+                                                                            <div class="row innerbody">
+                                                                                <!-- <div class="col-12 posted">
+                                                                                    <div class="accountPost">Account related</div>
+                                                                                    <div class="accountedPosted d-flex gap-8">
+                                                                                        <div class="accountUser"><img src="assets/image/fb_user.png" class="w-100" alt="user Image"></div>
+                                                                                        <div class="userName fw-bold">Phan Lê Mai Lan</div>
+                                                                                    </div>
+                                                                                </div> -->
+                                                                                <!-- <div class="col-12 posted">
+                                                                                    <div class="accountPost">Physical identity</div>
+                                                                                    <div class="content">Cao to, có nốt ruồi thâm ở cổ 5mm.Sẹo trên mắt trái dài 5mm</div>
+                                                                                </div> -->
+                                                                                <div class="col-12 posted">
+                                                                                    <div class="accountPost">Post information</div>
+                                                                                    <div class="row gap-1">
+                                                                                        <div class="col-12">
+                                                                                            <div class="row align-itemscenter gx-2">
+                                                                                                <div class="col-4 containtHeading">Stats</div>
+                                                                                                <div class="col-8 content">
+                                                                                                    <ul class="list-unstyled m-0 p-0 countingGroup d-flex align-items-center">
+                                                                                                        <li class="countItem">
+                                                                                                            <div class="d-inline-flex flex-column align-items-center">
+                                                                                                                <span class="likeImg"><img src="assets/image/icon/view-fill.svg" class="w-100" alt="like"></span>
+                                                                                                                <div class="counting">2.3M</div>
+                                                                                                            </div>
+                                                                                                        </li>
+                                                                                                        <li class="countItem">
+                                                                                                            <div class="d-inline-flex flex-column align-items-center">
+                                                                                                                <span class="likeImg"><img src="assets/image/icon/like.svg" class="w-100" alt="like"></span>
+                                                                                                                <div class="counting">32.87K</div>
+                                                                                                            </div>
+                                                                                                        </li>
+                                                                                                        <li class="countItem">
+                                                                                                            <div class="d-inline-flex flex-column align-items-center">
+                                                                                                                <span class="likeImg"><img src="assets/image/icon/comment-white.svg" class="w-100" alt="like"></span>
+                                                                                                                <div class="counting">20</div>
+                                                                                                            </div>
+                                                                                                        </li>
+                                                                                                        <li class="countItem">
+                                                                                                            <div class="d-inline-flex flex-column align-items-center">
+                                                                                                                <span class="likeImg"><img src="assets/image/icon/share-fill.svg" class="w-100" alt="like"></span>
+                                                                                                                <div class="counting">1.87K</div>
+                                                                                                            </div>
+                                                                                                        </li>
+                                                                                                    </ul>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-12">
+                                                                                            <div class="row align-itemscenter gx-2">
+                                                                                                <div class="col-4 containtHeading">Description</div>
+                                                                                                <div class="col-8 containtHeading descriptions">Đi xem concert của Craig Love cùng lũ bạn thân từ thời cởi truồng tắm mưa.#fyp #satisfying #roadmarking
+                                                                                                    #sans #meeeting #F88</div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-12">
+                                                                                            <div class="row align-items-center gx-2">
+                                                                                                <div class="col-4 containtHeading">Timestamp</div>
+                                                                                                <div class="col-8 content">14 Jan, 2019</div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-12">
+                                                                                            <div class="row align-items-center gx-2">
+                                                                                                <div class="col-4 containtHeading">Location</div>
+                                                                                                <div class="col-8 content">Hanoi, Vietnam</div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-12">
+                                                                                            <div class="row align-items-center gx-2">
+                                                                                                <div class="col-4 containtHeading">Resolution</div>
+                                                                                                <div class="col-8 content">1080 x 1920</div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-12">
+                                                                                            <div class="row align-items-center gx-2">
+                                                                                                <div class="col-4 containtHeading">Video bitrate</div>
+                                                                                                <div class="col-8 content">1,5 Mbps</div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-12">
+                                                                                            <div class="row align-items-center gx-2">
+                                                                                                <div class="col-4 containtHeading">Audio bitrate</div>
+                                                                                                <div class="col-8 content">192kb/s</div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-12">
+                                                                                            <div class="row align-items-center gx-2">
+                                                                                                <div class="col-4 containtHeading">File type</div>
+                                                                                                <div class="col-8 content">MP4</div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-12">
+                                                                                            <div class="row align-items-center gx-2">
+                                                                                                <div class="col-4 containtHeading">Music</div>
+                                                                                                <div class="col-8 content">Roddy Roundich - The Round Circle</div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-12">
+                                                                                            <div class="row align-items-center gx-2">
+                                                                                                <div class="col-4 containtHeading">Search</div>
+                                                                                                <div class="col-8 content">stressful meeting meme</div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-12 posted">
+                                                                                    <div class="row gap-8">
+                                                                                        <div class="col-12">
+                                                                                            <div class="row gap-1">
+                                                                                                <div class="col-12">
+                                                                                                    <div class="accountPost">Account posted</div>
+                                                                                                    <div class="accountedPosted accounts row d-flex gap-8 align-items-center">
+                                                                                                        <div class="col d-flex align-items-center gap-12">
+                                                                                                            <div class="accountUser videoAccountUser"><img src="assets/image/fb_user.png" class="w-100" alt="user Image"></div>
+                                                                                                            <div class="userdetail">
+                                                                                                                <div class="userName fw-bold">@mailan_0411</div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div class="col-12">
+                                                                                                    <div class="row align-items-center gx-2">
+                                                                                                        <div class="col-4 containtHeading">Email</div>
+                                                                                                        <div class="col-8"><a href="javascript:;" class="content fw-bold">mailan041102@gmail.com</a></div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div class="col-12">
+                                                                                                    <div class="row align-items-center gx-2">
+                                                                                                        <div class="col-4 containtHeading">10/03/2022</div>
+                                                                                                        <div class="col-8 content">stressful meeting meme</div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div class="col-12">
+                                                                                                    <div class="row align-items-center gx-2">
+                                                                                                        <div class="col-4 containtHeading">Last activity</div>
+                                                                                                        <div class="col-8 content">1 day ago</div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-12 informationCard socialCategoery bg-transparent">
+                                                                                            <div class="card socialMetricsCard  rounded-0 border-0">
+                                                                                                <div class="row gx-0 cardbody gap-1 border-0">
+                                                                                                    <div class="col p-0 border-0">
+                                                                                                        <div class="categoryes items border-0">
+                                                                                                            <div class="card_body">
+                                                                                                                <div class="categoryImg"><img src="assets/image/icon/theme-user-account.svg" alt="post"></div>
+                                                                                                                <div class="valu">2m+<span>Followers</span></div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="col p-0 border-0">
+                                                                                                        <div class="categoryes items border-0">
+                                                                                                            <div class="card_body">
+                                                                                                                <div class="categoryImg"><img src="assets/image/icon/media.svg" alt="post"></div>
+                                                                                                                <div class="valu">3.65k<span>Media</span></div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="col p-0 border-0">
+                                                                                                        <div class="categoryes items border-0">
+                                                                                                            <div class="card_body">
+                                                                                                                <div class="categoryImg"><img src="assets/image/icon/interaction.svg" alt="post"></div>
+                                                                                                                <div class="valu">2.92m<span>Likes</span></div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-12">
+                                                                                            <div class="accountPost">Social metrics</div>
+                                                                                            <div class="card socialMetricsCard rounded-0">
+                                                                                                <div class="row gx-0 row-cols3 text-nowrap cardbody">
+                                                                                                    <div class="col items">
+                                                                                                        <div class="socialmetrics">Engagement rate </div>
+                                                                                                        <div class="rate">0.165 <div class="tredMap greenzone"><div class="tredingImg"><img src="assets/image/icon/tredMap.svg" class="w-100" alt="treding"></div> <span>2.2%</span></div></div>
+                                                                                                    </div>
+                                                                                                    <div class="col items">
+                                                                                                        <div class="socialmetrics">Amplification rate </div>
+                                                                                                        <div class="rate">0.025 <div class="tredMap greenzone"><div class="tredingImg"><img src="assets/image/icon/tredMap.svg" class="w-100" alt="treding"></div> <span>1.8%</span></div></div>
+                                                                                                    </div>
+                                                                                                    <div class="col items">
+                                                                                                        <div class="socialmetrics">Total view</div>
+                                                                                                        <div class="rate">0.001</div>
+                                                                                                    </div>
+                                                                                                    <div class="col items border-start-0 border-bottom-0">
+                                                                                                        <div class="socialmetrics">Virality rate</div>
+                                                                                                        <div class="rate">0.015 <div class="tredMap greenzone"><div class="tredingImg"><img src="assets/image/icon/tredMap.svg" class="w-100" alt="treding"></div> <span>1.6%</span></div></div>
+                                                                                                    </div>
+                                                                                                    <div class="col items border-bottom-0">
+                                                                                                        <div class="socialmetrics">Bounce rate</div>
+                                                                                                        <div class="rate">8.66 <div class="tredMap"><div class="tredingImg"><img src="assets/image/icon/tredMapRed.svg" class="w-100" alt="treding"></div> <span>4.2%</span></div></div>
+                                                                                                    </div>
+                                                                                                    <div class="col items border-bottom-0">
+                                                                                                        <div class="socialmetrics">Total reach</div>
+                                                                                                        <div class="rate lowvalue">1.3m</div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--? coment card start -->
+                                        <div class="colauto h-100">
+                                            <div class="card levelCard h-100 commentcard">
+                                                <div class="card-body h-100">
+                                                    <div class="row flex-column flex-nowrap h-100">
+                                                        <div class="card_title d-flex gap-12 justify-content-between">Comment (48) <a href="data-ytube-postDetails-analysis.html" class="viewDetailsBtn">View Details <span class="moreImg"><img src="assets/image/icon/viewmore.svg" class="w-100" alt="viewmore"></span> </a></div>
+                                                        <div class="col-12 h-100 flex-fill overflow-y-auto innerBody">
+                                                            <div class="row gap-8">
+                                                                <div class="col-auto">
+                                                                    <div class="comment_card">
+                                                                        <div class="comment_item_Body">
+                                                                            <div class="commitUser commitUsersm"><img src="assets/image/user1.png"  alt=""></div>
+                                                                            <div class="content_side">
+                                                                                <div class="d-inline-flex flex-column row-gap-1">
+                                                                                    <div class=" userName">Ca sĩ Nhi Hà</div>
+                                                                                    <div class="commitcontent">Xin chào cô bé bóng cười, hẹn t7 này đắp cần sa vào chỗ bị thương nhé ;))</div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-auto">
+                                                                    <div class="multipalCommit">
+                                                                        <div class="comment_card">
+                                                                            <div class="comment_item_Body">
+                                                                                <div class="commitUser"><img src="assets/image/actor42.png"  alt=""></div>
+                                                                                <div class="content_side">
+                                                                                    <div class="d-inline-flex flex-column row-gap-1">
+                                                                                        <div class=" userName">Long Mệt Rồi</div>
+                                                                                        <div class="commitcontent">Em bé nay đã lớn hơn nhiều rồi. 
+                                                                                            Btw, ai có nhu cầu mua tem giấy liên hệ zalo 039295893 nhé mn</div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="comment_card commitAnswer">
+                                                                            <div class="comment_item_Body">
+                                                                                <div class="commitUser"><img src="assets/image/fb_user.png"  alt=""></div>
+                                                                                <div class="content_side">
+                                                                                    <div class="d-inline-flex flex-column row-gap-1">
+                                                                                        <div class=" userName">Phan Lê Mai Lan</div>
+                                                                                        <div class="commitcontent">Bữa nào ship em 1kg nấm ảo giác nhé, thị trường bên em đang cần</div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-auto">
+                                                                    <div class="comment_card">
+                                                                        <div class="comment_item_Body">
+                                                                            <div class="commitUser"><img src="assets/image/pinklu.png"  alt=""></div>
+                                                                            <div class="content_side">
+                                                                                <div class="d-inline-flex flex-column row-gap-1">
+                                                                                    <div class=" userName">PinkLu</div>
+                                                                                    <div class="commitcontent">Samyan Club luôn mở cửa chào đón các bóng thủ với các phục vụ cung cấp bóng cười đầy đủ từ A tới Z</div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-auto">
+                                                                    <div class="comment_card">
+                                                                        <div class="comment_item_Body">
+                                                                            <div class="commitUser"><img src="assets/image/meboon.png"  alt=""></div>
+                                                                            <div class="content_side">
+                                                                                <div class="d-inline-flex flex-column row-gap-1">
+                                                                                    <div class=" userName">Mẹ Boon</div>
+                                                                                    <div class=" commitcontent"><b>Phan Lê Mai Lan</b> Ở đâu đấy em gái? Nhìn quen thế nhờ</div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-auto">
+                                                                    <div class="comment_card">
+                                                                        <div class="comment_item_Body">
+                                                                            <div class="commitUser"><img src="assets/image/JeaminThao.png"  alt=""></div>
+                                                                            <div class="content_side">
+                                                                                <div class="d-inline-flex flex-column row-gap-1">
+                                                                                    <div class=" userName">Jeamin Thảo</div>
+                                                                                    <div class=" commitcontent">Chị ơi, check ib giúp em với</div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-auto">
+                                                                    <div class="comment_card">
+                                                                        <div class="comment_item_Body">
+                                                                            <div class="commitUser"><img src="assets/image/anaYang.png"  alt=""></div>
+                                                                            <div class="content_side">
+                                                                                <div class="d-inline-flex flex-column row-gap-1">
+                                                                                    <div class=" userName">Anna</div>
+                                                                                    <div class=""><a href="javascript:;" class="tag">#đổitiềnmới</a></div>
+                                                                                    <div class=" commitcontent">Đổi quanh năm, hỗ trợ ship tỉnh a</div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-auto">
+                                                                    <div class="comment_card">
+                                                                        <div class="comment_item_Body">
+                                                                            <div class="commitUser"><img src="assets/image/thanhhaHN.png"  alt=""></div>
+                                                                            <div class="content_side">
+                                                                                <div class="d-inline-flex flex-column row-gap-1">
+                                                                                    <div class=" userName">thanhha.hanoi</div>
+                                                                                    <div class=" commitcontent">Bữa nào ship em 1kg nấm ảo giác nhé, thị trường bên em đang cần</div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-auto">
+                                                                    <div class="comment_card">
+                                                                        <div class="comment_item_Body">
+                                                                            <div class="commitUser"><img src="assets/image/user1.png"  alt=""></div>
+                                                                            <div class="content_side">
+                                                                                <div class="d-inline-flex flex-column row-gap-1">
+                                                                                    <div class=" userName">Ca sĩ Nhi Hà</div>
+                                                                                    <div class="images rounded-3 overflow-hidden"><img src="assets/image/media/ima/-mediaExample-8.png" class="w-100" alt=""></div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-auto">
+                                                                    <div class="multipalCommit">
+                                                                        <div class="comment_card">
+                                                                            <div class="comment_item_Body">
+                                                                                <div class="commitUser"><img src="assets/image/actor42.png"  alt=""></div>
+                                                                                <div class="content_side">
+                                                                                    <div class="d-inline-flex flex-column row-gap-1">
+                                                                                        <div class=" userName">Long Mệt Rồi</div>
+                                                                                        <a href="javascript:;" class="commitcontent">https://wajid.hipl-staging5.com/pg-dashboard2/data-fb-postDetails-overview.html</a>
+                                                                                        <a href="javascript:;" class="commitcontent">https://wajid.hipl-staging5.com/pg-dashboard2/data-fb-postDetails-overview.html</a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="comment_card">
+                                                                            <div class="comment_item_Body">
+                                                                                <div class="commitUser"><img src="assets/image/fb_user.png"  alt=""></div>
+                                                                                <div class="content_side">
+                                                                                    <div class="d-inline-flex flex-column row-gap-1">
+                                                                                        <div class=" userName">Phan Lê Mai Lan</div>
+                                                                                        <div class="commitcontent">Bữa nào ship em 1kg nấm ảo giác nhé, thị trường bên em đang cần</div>
+                                                                                    <div class="images rounded-3 overflow-hidden"><img src="assets/image/media/ima/-mediaExample-12.png" class="w-100" alt=""></div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-auto">
+                                                                    <div class="comment_card">
+                                                                        <div class="comment_item_Body">
+                                                                            <div class="commitUser"><img src="assets/image/pinklu.png"  alt=""></div>
+                                                                            <div class="content_side">
+                                                                                <div class="d-inline-flex flex-column row-gap-1">
+                                                                                    <div class=" userName">PinkLu</div>
+                                                                                    <div class="commitcontent">Samyan Club luôn mở cửa chào đón các bóng thủ với các phục vụ cung cấp bóng cười đầy đủ từ A tới Z</div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-auto">
+                                                                    <div class="comment_card">
+                                                                        <div class="comment_item_Body">
+                                                                            <div class="commitUser"><img src="assets/image/meboon.png"  alt=""></div>
+                                                                            <div class="content_side">
+                                                                                <div class="d-inline-flex flex-column row-gap-1">
+                                                                                    <div class=" userName">Mẹ Boon</div>
+                                                                                    <div class=" commitcontent"><b>Phan Lê Mai Lan</b> Ở đâu đấy em gái? Nhìn quen thế nhờ</div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-auto">
+                                                                    <div class="comment_card">
+                                                                        <div class="comment_item_Body">
+                                                                            <div class="commitUser"><img src="assets/image/JeaminThao.png"  alt=""></div>
+                                                                            <div class="content_side">
+                                                                                <div class="d-inline-flex flex-column row-gap-1">
+                                                                                    <div class=" userName">Jeamin Thảo</div>
+                                                                                    <div class=" commitcontent">Chị ơi, check ib giúp em với</div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-auto">
+                                                                    <div class="comment_card">
+                                                                        <div class="comment_item_Body">
+                                                                            <div class="commitUser"><img src="assets/image/anaYang.png"  alt=""></div>
+                                                                            <div class="content_side">
+                                                                                <div class="d-inline-flex flex-column row-gap-1">
+                                                                                    <div class=" userName">Anna</div>
+                                                                                    <div class=""><a href="javascript:;" class="tag">#đổitiềnmới</a></div>
+                                                                                    <div class=" commitcontent">Đổi quanh năm, hỗ trợ ship tỉnh a</div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-auto">
+                                                                    <div class="comment_card">
+                                                                        <div class="comment_item_Body">
+                                                                            <div class="commitUser"><img src="assets/image/thanhhaHN.png"  alt=""></div>
+                                                                            <div class="content_side">
+                                                                                <div class="d-inline-flex flex-column row-gap-1">
+                                                                                    <div class=" userName">thanhha.hanoi</div>
+                                                                                    <div class=" commitcontent">Bữa nào ship em 1kg nấm ảo giác nhé, thị trường bên em đang cần</div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--? coment card end -->
+                                        <!--? maping card start -->
+                                        <div class="colauto h-100 post_detailsMaping_crad">
+                                            <div class="row gap-2 h-100">
+                                                <div class="col-12 mapingCard">
+                                                    <div class="card levelCard h-100">
+                                                        <div class="card-body h-100">
+                                                            <div class="row flex-column flex-nowrap h-100">
+                                                                <div class="card_title d-flex gap-12 justify-content-between">Geo-map <a href="data-ytube-postDetails-geoMap.html" class="viewDetailsBtn">View Details <span class="moreImg"><img src="assets/image/icon/viewmore.svg" class="w-100" alt="viewmore"></span> </a></div>
+                                                                <div class="col-12 h-100 flex-fill overflow-y-auto innerBody">
+                                                                    <div class="mapImg"><img src="assets/image/geo_map.png" class="w-100" alt=""></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 mapingCard">
+                                                    <div class="card levelCard h-100">
+                                                        <div class="card-body h-100">
+                                                            <div class="row flex-column flex-nowrap h-100">
+                                                                <div class="card_title d-flex gap-12 justify-content-between">Connect-link <a href="data-ytube-postDetails-connectLink.html" class="viewDetailsBtn">View Details <span class="moreImg"><img src="assets/image/icon/viewmore.svg" class="w-100" alt="viewmore"></span> </a></div>
+                                                                <div class="col-12 h-100 flex-fill overflow-y-auto innerBody">
+                                                                    <!-- <div class="mapImg"><img src="assets/image/connect_map.png" class="w-100 h-100" alt=""></div> -->
+                                                                    <div class="geo_map h-100 overflow-auto position-relative">
+                                                                        <div id="cy" class="connectMap w-100 h-100"></div>
+                                                                        <div class="zoom-buttons-map">
+                                                                            <button id="zoom-in-button"><img src="assets/image/icon/plus.svg" class="w-100" alt="plus"></button>
+                                                                            <button id="zoom-out-button"><img src="assets/image/icon/nagetive.svg" class="w-100" alt="nagetive"></button>	
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--? maping card end -->
+                                    </div>
+                                </div>
+                                <!-- ** Overview Tab End -->
+                            </div>
+                        </div>
+                    </div>
+                    <!--! * fb-postlist main data End -->
+                </div>
+            </div>
+            <!--! * Main DashBoard Start -->
+        </div>
+    </main>
+
+    <!-- *** Bootstrap Js ***** -->
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- *** Select2 Js *** -->
+    <script src="assets/libs/select2/select2.min.js"></script>
+    <!-- *** Cytoscape Map Js *** -->
+    <script src="https://js.cytoscape.org/js/cytoscape.min.js"></script>
+	<script src="assets/libs/cytoscape/cytoscape-popper.js"></script>
+    <!-- <script src="assets/libs/cytoscape/cytoscape.min.js"></script> -->
+    <!-- <script src="assets/libs/cytoscape/cytoscape-popper.min.js"></script> -->
+    <!-- <script src="assets/libs/cytoscape/cytoscape-popper.js"></script> -->
+    <!-- **** Custom Js ***** -->
+    <script src="assets/js/cytoscape-custome.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+</body>
+</html>
