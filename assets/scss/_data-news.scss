@@ -1459,6 +1459,15 @@
                 }
             }
         }
+        &.tiktokvideo_overview{
+            & .cardbody {
+                & .items {
+                    & .rate {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
     }
 }
 @media screen and (max-width: 1799.98px){
@@ -1539,6 +1548,124 @@
                 & .categoryes {
                     background-color: var(--black--dark);
                     border-radius: 8px;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 1850px) {
+    .informationCard{
+        & .socialMetricsCard{
+            &.tiktokvideo_overview{
+                & .cardbody {
+                    & .items {
+                        & .rate {
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1849.98px) {
+    .informationCard{
+        & .socialMetricsCard  {
+            &.tiktokvideo_overview{
+                & .cardbody {
+                    & .items {
+                        & .socialmetrics {
+                            font-size: 13px;
+                        }
+                        & .rate {
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1800px) {
+    .informationCard{
+        & .socialMetricsCard  {
+            &.tiktokvideo_overview{
+                & .cardbody {
+                    & .items {
+                        & .socialmetrics {
+                            font-size: 12px;
+                        }
+                        & .rate {
+                            font-size: 14px;
+                            & span{
+                                font-size: 11px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1700px) {
+    .informationCard{
+        & .socialMetricsCard  {
+            &.tiktokvideo_overview{
+                & .cardbody {
+                    & .items {
+                        & .socialmetrics {
+                            font-size: 11px;
+                        }
+                        & .rate {
+                            font-size: 13px;
+                            & .tredMap  {
+                                & .tredingImg {
+                                    width: 17px;
+                                    height: 17px;
+                                }
+                            }
+                            & span{
+                                font-size: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1700px) {
+    .informationCard{
+        & .socialMetricsCard  {
+            &.tiktokvideo_overview{
+                & .cardbody {
+                    & .items {
+                        min-width: 50%;
+                        &:nth-child(3), &:nth-child(5){
+                            border-left: none !important;
+                        }
+                        &:nth-child(4){
+                            border-bottom: 1px solid var(--balck--light) !important;
+                            border-left: 1px solid var(--balck--light) !important;
+                        }
+                        & .socialmetrics {
+                            font-size: 11px;
+                        }
+                        & .rate {
+                            font-size: 13px;
+                            & .tredMap  {
+                                & .tredingImg {
+                                    width: 17px;
+                                    height: 17px;
+                                }
+                            }
+                            & span{
+                                font-size: 10px;
+                            }
+                        }
+                    }
                 }
             }
         }
