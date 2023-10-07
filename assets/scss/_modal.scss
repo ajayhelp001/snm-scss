@@ -171,6 +171,9 @@
             max-height: 1000px;
             height: 100%;
             min-height: 1px;
+            &.mediaModulVideo{
+                max-width: 1792px;
+            }
         }
         & .modal-content {
             background-color: var(--black--dark);
@@ -238,7 +241,7 @@
     & .modal-dialog {
         & .modal-content {
             border: none;
-            background-color: var(--neutralBlack);
+            background-color: var(--black--dark);
         }
         & .closeBtn{
             width: 40px;
@@ -252,5 +255,20 @@
                 }
             }
         }
+    }
+}
+
+
+.ytube-videoDetails-overview_modal{
+    & .analysisCard {
+        max-width: 432px;
+    }
+    & .scriptCrad {
+        max-width: 388px;
+        width: 100%;
+    }
+    & .script_Video_Top_Section {
+        max-height: 567px;
+        height: 100%;
     }
 }
