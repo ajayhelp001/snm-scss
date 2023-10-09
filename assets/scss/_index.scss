@@ -92,7 +92,7 @@
                         & .logoimg {
                             height: 40px;
                             min-width: 40px;
-                            border-radius: 40px;
+                            border-radius: 50%;
                             display: flex;
                             overflow: hidden;
                             & img {
@@ -157,7 +157,7 @@
         & .bell, .user {
             width: 32px;
             height: 32px;
-            border-radius: 100%;
+            border-radius: 50%;
             cursor: pointer;
         }
         & .user{
@@ -537,7 +537,7 @@
                             & .point {
                                 width: 12px;
                                 height: 12px;
-                                border-radius: 12px;
+                                border-radius: 50%;
                                 display: flex;
                                 background-color: var(--active);
                             }
@@ -595,7 +595,7 @@
                                 & .point {
                                     width: 10.746px;
                                     height: 10.746px;
-                                    border-radius: 10.746px;
+                                    border-radius: 50%;
                                 }
                                 & .ratingUser {
                                     font-size: 10.746px;
@@ -671,7 +671,7 @@
                 & .accountUser {
                     width: 26px;
                     height: 26px;
-                    border-radius: 26px;
+                    border-radius: 50%;
                     overflow: hidden;
                     & img {
                         object-fit: cover;
@@ -947,7 +947,7 @@
                             align-items: center;
                             min-width: 26px;
                             height: 26px;
-                            border-radius: 26px;
+                            border-radius: 50%;
                             overflow: hidden;
                             & img {
                                 object-fit: cover;

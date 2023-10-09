@@ -54,10 +54,20 @@
         g.node2 rect {
             cursor: pointer;
         }
+        
     }
     &.nonzomm_btn{
         & .zoom-buttons-map {
             display: none;
+        }
+    }
+
+    & .geomapmain{
+        & .svgmap {
+            width: 100%;
+            height: auto;
+            transform: scale(2.5) translate(10px, 19%);
+            position: relative;
         }
     }
 }
@@ -79,6 +89,7 @@
     display: none;
     max-width: 360px;
     width: 100%;
+    z-index: 5;
     & .geoInfoCard{
         & .card {
             border: 2px solid var(--reg-item);
@@ -111,3 +122,5 @@
         }
     }
 }
+
+

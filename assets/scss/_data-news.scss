@@ -147,7 +147,7 @@
                             display: flex;
                             width: 32px;
                             height: 32px;
-                            border-radius: 32px;
+                            border-radius: 50%;
                             overflow: hidden;
                             & img {
                                 width: 100%;
@@ -155,7 +155,7 @@
                                 object-fit: cover;
                             }
                         }
-                        & .sourceName {
+                        & .sourceName, & .languageName  {
                             max-width: 70%;
                             overflow: hidden;
                             text-overflow: ellipsis;
@@ -227,11 +227,13 @@
                                         display: flex;
                                         align-items: center;
                                         gap: 8px;
+                                        text-decoration: none;
+                                        color: var(--white);
                                         & .logoimg {
                                             display: flex;
                                             min-width: 32px;
                                             height: 32px;
-                                            border-radius: 32px;
+                                            border-radius: 50%;
                                             overflow: hidden;
                                             & img {
                                                 width: 100%;
@@ -248,7 +250,7 @@
                                     }
                                     & .postContent {
                                         &.bio {
-                                            max-width: 450px;
+                                            max-width: 400px;
                                         }
                                     }
                                 }
@@ -792,7 +794,7 @@
                             display: flex;
                             min-width: 32px;
                             height: 32px;
-                            border-radius: 32px;
+                            border-radius: 50%;
                             overflow: hidden;
                             & img {
                                 width: 100%;

@@ -259,7 +259,7 @@ let maxTags = 10,
 tags = ["AK-{d}", "AR-{d}", "AN-{d}", "AUG-{d}", "M16", "handgun", "pistol", "grenade", "airfield", "knife", "machete", "artillery", "Minefield",
 "barricade", "explosion", "battlefield", "breach", "booby trap", "bullet", "bulletproof", "capture", "captive", "hostage", "firearm", "biology weaponry", "chemical weaponry", "antiaircraft gun",
 "Big bertha", "B52", "german 88", "panzerfaust", "gun", "anthrax", "hydrogen cyanide", "yellow rain", "smallpox", "adamsite", "disphogene", "lewisite", "nervegas", "phosgene",
-"tear gas", "cloropirin", "flamesite", "flamethrower", "greek fire", "nuke", "rocket", "cloropirin",];
+"tear gas", "cloropirin", "flamesite", "flamethrower", "greek fire", "nuke", "rocket", "horsa", "Lancaster", "cloropirin",];
 
 countTags();
 createTag();
