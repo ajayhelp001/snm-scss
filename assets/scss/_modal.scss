@@ -146,6 +146,11 @@
                 }
             }
         }
+        // &.mediaModulVideo {
+        //     & .modal-content {
+        //         background-color: var(--black--dark);
+        //     }
+        // }
     }
 }
 
@@ -241,7 +246,7 @@
     & .modal-dialog {
         & .modal-content {
             border: none;
-            background-color: var(--black--dark);
+            // background-color: var(--black--dark);
         }
         & .closeBtn{
             width: 40px;

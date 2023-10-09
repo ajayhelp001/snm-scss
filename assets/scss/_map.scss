@@ -55,6 +55,11 @@
             cursor: pointer;
         }
     }
+    &.nonzomm_btn{
+        & .zoom-buttons-map {
+            display: none;
+        }
+    }
 }
 .mapcard{
     background-color: var(--black--dark) !important;
@@ -72,7 +77,7 @@
 
 .geomapleftinfo{
     display: none;
-    max-width: 320px;
+    max-width: 360px;
     width: 100%;
     & .geoInfoCard{
         & .card {
