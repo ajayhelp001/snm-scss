@@ -16,13 +16,16 @@
         color: var(--white);
     }
     & .zoom-buttons-map {
+        overflow: hidden;
         position: absolute;
         bottom: 16px;
         right: 16px;
-        padding: 8px;
+        padding: 8px 0px;
         border-radius: 8px;
         z-index: 10;
         background-color: var(--neutralBlack);
+        display: flex;
+        justify-content: center;
         & button {
             height: 24px;
             width: 24px;
@@ -32,6 +35,22 @@
             margin: 0px 12px;
             background-color: transparent;
             padding: 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &:first-child{
+                position: relative;
+                &::before{
+                    content: '';
+                    width: 1px;
+                    height: 100%;
+                    background-color: var(--netural-dark);
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: -12.5px;
+                }
+            }
         }
         &.geoMapBtns{
             right: 416px;

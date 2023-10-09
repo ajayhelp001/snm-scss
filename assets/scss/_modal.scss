@@ -297,3 +297,47 @@
         min-height: 250px;
     }
 }
+
+
+.videoeditoreGroup {
+    & .timesGroup {
+        & .timing{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            flex: 1 1 0%;
+            align-items: center;
+            gap: 64px;
+            height: 13px;
+            & .videoTimer {
+                font-weight: 300;
+                font-size: 8px;
+                color: var(--white);
+            }
+        }
+        & .deviders {
+            & .bigDevider {
+                height: 9px;
+                gap: 25px;
+                z-index: 0;
+                & .deviderItems {
+                    border-right: 1px solid var(--white-50);
+                    position: relative;
+                    width: 1px;
+                    height: 21.5px;
+                    box-sizing: border-box;
+                }
+            }
+            & .smDevider{
+                height: 4px;
+                padding: 0px 5px;
+                gap: 10px;
+                & .smdeviderImg {
+                    width: 16px;
+                    height: 10.26px;
+                    position: relative;
+                }
+            }
+        }
+    }
+}
