@@ -48,7 +48,58 @@
                 }
             });
         });
-    });
+
+        // GeoMap Zoom in Zoom out functionality 10 oct 2023
+        var svgContainer = $("#svg_fb_geomap");
+        var currentScale = 2.5; // Defaulst scale value for the GeoMap
+        
+        function updateTransform(scale) {
+            svgContainer.css("transform", "scale(" + scale + ") translate(10px, 19%)");
+        }
+        
+        updateTransform(currentScale);
+
+        // Zoom in
+        $("#zoom-in-GeoMap").click(function() {
+            currentScale += 0.1; 
+            updateTransform(currentScale);
+        });
+
+        // Zoom out
+        $("#zoom-out-GeoMap").click(function() {
+            currentScale -= 0.1; 
+            updateTransform(currentScale);
+        });
+        var isDragging = false;
+        var startX, startY, offsetX, offsetY;
+
+        
+        svgContainer.on("mousedown", function(event) {
+            isDragging = true;
+            startX = event.clientX;
+            startY = event.clientY;
+            offsetX = parseFloat(svgContainer.css("left")) || 0;
+            offsetY = parseFloat(svgContainer.css("top")) || 0;
+            svgContainer.css("cursor", "grabbing");
+            event.preventDefault(); 
+        });
+
+        // Mouse move event to handle dragging
+        $(document).on("mousemove", function(event) {
+            if (isDragging) {
+                var newX = offsetX + event.clientX - startX;
+                var newY = offsetY + event.clientY - startY;
+                svgContainer.css({ left: newX + "px", top: newY + "px" });
+            }
+        });        
+        $(document).on("mouseup", function() {
+            isDragging = false;
+            svgContainer.css("cursor", "grab");
+        });
+});
+
+
+
     //  ** Location Select *****
     $(document).ready(function () {
         // Initialize Select2
@@ -259,7 +310,7 @@ let maxTags = 10,
 tags = ["AK-{d}", "AR-{d}", "AN-{d}", "AUG-{d}", "M16", "handgun", "pistol", "grenade", "airfield", "knife", "machete", "artillery", "Minefield",
 "barricade", "explosion", "battlefield", "breach", "booby trap", "bullet", "bulletproof", "capture", "captive", "hostage", "firearm", "biology weaponry", "chemical weaponry", "antiaircraft gun",
 "Big bertha", "B52", "german 88", "panzerfaust", "gun", "anthrax", "hydrogen cyanide", "yellow rain", "smallpox", "adamsite", "disphogene", "lewisite", "nervegas", "phosgene",
-"tear gas", "cloropirin", "flamesite", "flamethrower", "greek fire", "nuke", "rocket", "horsa", "Lancaster", "cloropirin",];
+"tear gas", "cloropirin", "flamesite", "flamethrower", "greek fire", "nuke", "rocket", "cloropirin",];
 
 countTags();
 createTag();

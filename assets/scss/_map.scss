@@ -21,6 +21,7 @@
         right: 16px;
         padding: 8px;
         border-radius: 8px;
+        z-index: 10;
         background-color: var(--neutralBlack);
         & button {
             height: 24px;
@@ -31,6 +32,9 @@
             margin: 0px 12px;
             background-color: transparent;
             padding: 0px;
+        }
+        &.geoMapBtns{
+            right: 416px;
         }
     }
     & .icon-description-bar {
