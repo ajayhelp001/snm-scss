@@ -13,12 +13,20 @@ $(document).ready(function() {
 
     //     $ellipses.attr('fill', '#f00');
     // });
-
+    $('div.overview_image_container svg g.circle_click_cont').on('click', function() {
+        console.log("sdfjsdfl");
+        if($('.overview_map_line').hasClass('popupopn') && $('.overview_map_arrow').hasClass('popupopn')){
+            $('.overview_map_line').removeClass('popupopn');
+            $('.overview_map_arrow').removeClass('popupopn')
+        } else {
+            $('.overview_map_line').addClass('popupopn');
+            $('.overview_map_arrow').addClass('popupopn');
+            $('.overview_map_popupdata').addClass('popupopn');
+        }
+    });
 $('.node2').on('click', function() {
     console.log("hellosdflkjasoidfj");
-    const $parent = $(this); // Get the parent 'g' element
-    const $ellipses = $parent.find('ellipse'); // Find 'ellipse' elements within the same parent
-    
+    const $parent = $(this); // Get the parent 'g' element    
 
     var location = $parent.data('location');
     var district = $parent.data('district');

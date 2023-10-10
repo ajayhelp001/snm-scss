@@ -202,7 +202,7 @@
             & .modal-body{
                 & .youtubeIMg {
                     & img {
-                        object-fit: cover;
+                        // object-fit: cover;
                         height: 100%;
                     }
                 }
@@ -300,44 +300,297 @@
 
 
 .videoeditoreGroup {
-    & .timesGroup {
-        & .timing{
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
-            flex: 1 1 0%;
-            align-items: center;
-            gap: 64px;
-            height: 13px;
-            & .videoTimer {
-                font-weight: 300;
-                font-size: 8px;
-                color: var(--white);
+    & .card-body {
+        padding: 8px 12px;
+        & .timesGroup {
+            padding-left: 54px;
+            & .timing{
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                flex: 1 1 0%;
+                align-items: center;
+                gap: 64px;
+                height: 13px;
+                & .videoTimer {
+                    font-weight: 300;
+                    font-size: 8px;
+                    color: var(--white);
+                }
+            }
+            & .deviders {
+                & .bigDevider {
+                    height: 9px;
+                    gap: 25px;
+                    z-index: 0;
+                    & .deviderItems {
+                        border-right: 1px solid var(--white-50);
+                        position: relative;
+                        width: 1px;
+                        height: 21.5px;
+                        box-sizing: border-box;
+                    }
+                }
+                & .smDevider{
+                    height: 4px;
+                    padding: 0px 5px;
+                    gap: 10.2px;
+                    & .smdeviderImg {
+                        width: 16px;
+                        height: 10.26px;
+                        position: relative;
+                    }
+                }
             }
         }
-        & .deviders {
-            & .bigDevider {
-                height: 9px;
-                gap: 25px;
-                z-index: 0;
-                & .deviderItems {
-                    border-right: 1px solid var(--white-50);
-                    position: relative;
-                    width: 1px;
-                    height: 21.5px;
-                    box-sizing: border-box;
+        & .treckersGroup {
+            gap: 12px;
+            & .iconside {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                gap: 4px;
+                width: 48px;
+                min-height: 40px;
+                & .icons {
+                    width: 24px;
+                    height: 24px;
+                    min-width: 24px;
+                    & img {
+                        width: 100%;
+                    }
+                }
+                & .icontext {
+                    color: var(--white);
+                    font-size: 10px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 140%; /* 14px */
                 }
             }
-            & .smDevider{
-                height: 4px;
-                padding: 0px 5px;
-                gap: 10px;
-                & .smdeviderImg {
-                    width: 16px;
-                    height: 10.26px;
-                    position: relative;
-                }
-            }
+        }
+    }
+}
+
+
+
+.videorectengals {
+    position: relative;
+    height: 900px;
+    width: 1044px;
+    & .rectengals {
+        border: 3.287px solid var(--active);
+        position: absolute;
+        &.news {
+            border-color: var(--theme1);
+        }
+        &.ytube{
+            border-color: var(--theme-red);
+        }
+        &.rect1{
+            // width: 150px;
+            // height: 198px;
+            width: 14.5%;
+            height: 21.6%;
+            bottom: 7%;
+            left: 11.5%;        
+            // left: 115px;
+            // bottom: 59px;
+        }
+        &.rect2{
+            // width: 94px;
+            // height: 43px;
+            // left: 215px;
+            // bottom: 254px;
+            width: 9%;
+            height: 5%;
+            left: 21%;
+            bottom: 28.1%;
+        }
+        &.rect3{
+            // width: 96px;
+            // height: 56px;
+            // left: 307px;
+            // bottom: 198px;
+            width: 9.5%;
+            height: 6.3%;
+            left: 29.8%;
+            bottom: 22%;
+        }
+        &.rect4{
+            // width: 105px;
+            // height: 122px;
+            // left: 350px;
+            // bottom: 267px;  
+            width: 10%;
+            height: 14%;
+            left: 33.7%;
+            bottom: 30%;     
+        }
+        &.rect5{
+            // width: 169px;
+            // height: 194px;
+            // left: 454px;
+            // bottom: 125px; 
+            width: 16%;
+            height: 21%;
+            left: 43.6%;
+            bottom: 13.8%;      
+        }
+        &.rect6{
+            // width: 80px;
+            // height: 41px;
+            // left: 454px;
+            // bottom: 73px;
+            width: 8%;
+            height: 5%;
+            left: 43.6%;
+            bottom: 8%;        
+        }
+        &.rect7{
+            // width: 45px;
+            // height: 82px;
+            // left: 483px;
+            // bottom: 123px;    
+            width: 5%;
+            height: 10%;
+            left: 46%;
+            bottom: 13.5%;    
+        }
+        &.rect8{
+            // width: 44px;
+            // height: 77px;
+            // left: 592px;
+            // bottom: 105px;
+            width: 4.5%;
+            height: 8%;
+            left: 56.6%;
+            bottom: 12%;
+        }
+        &.rect9{
+            // width: 70px;
+            // height: 48px;
+            // left: 652px;
+            // bottom: 179px;
+            width: 7%;
+            height: 5%;
+            left: 62.5%;
+            bottom: 20%;
+        }
+        &.rect10{
+            width: 13%;
+            height: 9%;
+            left: 58.6%;
+            bottom: 25%;
+        }
+        &.rect11{
+            width: 10%;
+            height: 5%;
+            left: 62.6%;
+            bottom: 35%;
+        }
+        &.rect12{
+            width: 6%;
+            height: 11%;
+            left: 75%;
+            bottom: 31%;
+        }
+        &.rect13{
+            width: 3%;
+            height: 6%;
+            left: 71%;
+            bottom: 41%;
+        }
+        &.rect14{
+            width: 8%;
+            height: 4%;
+            left: 62%;
+            bottom: 45%;
+        }
+        &.rect15{
+            width: 2.3%;
+            height: 4%;
+            left: 60%;
+            bottom: 47%;
+        }
+        &.rect16{
+            width: 5.5%;
+            height: 10%;
+            left: 54.6%;
+            bottom: 37%;
+        }
+        &.rect17{
+            width: 6.5%;
+            height: 6%;
+            left: 46%;
+            bottom: 40.3%;
+        }
+        &.rect18{
+            width: 1.8%;
+            height: 6%;
+            left: 52.2%;
+            bottom: 40.3%;
+        }
+        &.rect19{
+            width: 13%;
+            height: 26.5%;
+            left: 66%;
+            bottom: 43.3%;
+        }
+        &.rect20{
+            width: 7%;
+            height: 27.5%;
+            left: 47%;
+            bottom: 49%;
+        }
+        &.rect21{
+            width: 7%;
+            height: 10%;
+            left: 54%;
+            bottom: 65%;
+        }
+        &.rect22{
+            width: 7%;
+            height: 7%;
+            left: 54%;
+            bottom: 66.5%;
+        }
+        &.rect23{
+            width: 7%;
+            height: 10%;
+            left: 37%;
+            bottom: 49%;
+        }
+        &.rect24{
+            width: 7%;
+            height: 7%;
+            left: 37%;
+            bottom: 50.2%;
+        }
+        &.rect25{
+            width: 7%;
+            height: 10%;
+            left: 20.5%;
+            bottom: 47%;
+        }
+        &.rect26{
+            width: 7%;
+            height: 7%;
+            left: 20.5%;
+            bottom: 48.5%;
+        }
+        &.rect27{
+            width: 8%;
+            height: 40%;
+            left: 29%;
+            bottom: 47%;
+        }
+        &.rect28{
+            width: 20%;
+            height: 8%;
+            left: 77%;
+            top: 12%;
         }
     }
 }
