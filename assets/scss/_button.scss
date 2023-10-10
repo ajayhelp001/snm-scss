@@ -264,6 +264,11 @@
             }
         }
     }
+    &.timingBtn{
+        & .dropdown-menu{
+            min-width: 100px;
+        }
+    }
 }
 
 
