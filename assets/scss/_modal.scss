@@ -403,6 +403,9 @@
                         max-width: 145.5px;
                         &.active{
                             background-color: var(--active);
+                            &:hover{
+                            background-color: var(--active);
+                            }
                         }
                         &:hover{
                             background-color: var(--neutral);
@@ -435,6 +438,9 @@
                     }
                     & .videotitlename {
                         width: calc(100% - 405px);
+                        & .dropdownBtn  {
+                            text-align: start;
+                        }
                         & .videoname {
                             width: 99%;
                         }
@@ -444,7 +450,6 @@
         }
     }
 }
-
 
 .videoModalrectengal {
     & .videorectengals {
@@ -673,5 +678,11 @@
             left: 77%;
             top: 12%;
         }
+    }
+}
+.tiktokvideoanalysis{
+    & .videorectengals {
+        width: 395px;
+        height: 689px;
     }
 }
