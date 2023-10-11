@@ -186,12 +186,13 @@
                 max-width: 1792px;
                 & .modal-body {
                     & .script_Video_Top_Section {
-                        max-height: 567px;
-                        height: 100%;
+                        // max-height: 567px;
+                        // height: 100%;
+                        height: calc(100% - 285px - 8px);
                     }
-                    & .videoeditore{
-                        height: calc(100% - 576px);
-                        min-height: 250px;
+                    & .videoeditore {
+                        max-height: 285px;
+                        height: 100%;
                     }
                 }
             }
@@ -289,12 +290,13 @@
         width: 100%;
     }
     & .script_Video_Top_Section {
-        max-height: 567px;
-        height: 100%;
+        // max-height: 567px;
+        // height: 100%;
+        height: calc(100% - 285px - 8px);
     }
-    & .videoeditore{
-        height: calc(100% - 576px);
-        min-height: 250px;
+    & .videoeditore {
+        max-height: 285px;
+        height: 100%;
     }
 }
 

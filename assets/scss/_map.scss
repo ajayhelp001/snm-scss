@@ -146,4 +146,59 @@
     }
 }
 
+.map_detailspopup{
+    & .overview_map_popupdata {
+        user-select: none;
+        transform: translate(45.7%, 9.1%);
+        position: relative;
+        &::before{
+            height: calc(100% + 20px);
+            width: calc(100% + 20px);
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translate(-0px , -0px );
+            background-color: var(--black--dark);
+        }
+        & .leftside {
+            fill: var(--white-50);
+        }
+        & .rightside, & .leftside {
+            font-size: 10px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 140%; /* 14px */
+        }
+        & .rightside {
+            fill: var(--white);
+        }
+        & .rectengals {
+            background: var(--black--dark);
+            border-radius: 10px;
+            border: 2px solid red;
+        }
+    }
+}
+.overview_image_container {
+    & svg{
+        transform: translate(-33%, -5%);
+    }
+    .overview_map_line, .overview_map_arrow, .overview_map_popupdata {
+        display: none;
+    }
+    .overview_map_line.popupopn, .overview_map_popupdata.popupopn, .overview_map_arrow.popupopn {
+        display: block;
+    }
+}
 
+
+.listmap{
+    &.mapingList {
+        & .userDistentCard  {
+            & .listItem {
+                cursor: pointer;
+            }
+        }
+    }
+}
