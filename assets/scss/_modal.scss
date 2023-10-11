@@ -680,6 +680,94 @@
         }
     }
 }
+
+.videorectengalsmini {
+    position: relative;
+    & .rectengals {
+        border: 3.287px solid var(--active);
+        position: absolute;
+        &.news {
+            border-color: var(--theme1);
+        }
+        &.ytube{
+            border-color: var(--theme-red);
+        }
+        &.rect1 {
+            width: 20%;
+            height: 5%;
+            left: 9%;
+            bottom: 23%;        
+        }
+        &.rect2 {
+            width: 22%;
+            height: 7%;
+            left: 31%;
+            bottom: 16%;      
+        }
+        &.rect3 {
+            width: 24%;
+            height: 14%;
+            left: 43%;
+            bottom: 26%;     
+        }
+        &.rect4 {
+            width: 34%;
+            height: 26%;
+            left: 67%;
+            bottom: 8%;        
+        }
+        &.rect5 {
+            width: 21%;
+            height: 5%;
+            left: 67%;
+            bottom: 2%;
+        }
+        &.rect6 {
+            width: 14%;
+            height: 10%;
+            left: 74%;
+            bottom: 7%;
+        }
+        &.rect7 {
+            width: 17%;
+            height: 5.5%;
+            left: 74%;
+            bottom: 37%;
+        }
+        &.rect8 {
+            width: 6%;
+            height: 5.5%;
+            left: 90%;
+            bottom: 37%;
+        }
+        &.rect12 {
+            width: 17%;
+            height: 20%;
+            left: 81%;
+            bottom: 57%;
+        }
+        &.rect9 {
+            width: 17%;
+            height: 46%;
+            left: 30%;
+            bottom: 43%;
+        }
+        &.rect10 {
+            width: 17%;
+            height: 11%;
+            left: 50%;
+            bottom: 47%;
+        }
+        &.rect11 {
+            width: 17%;
+            height: 11%;
+            left: 5%;
+            bottom: 45%;
+        }
+    }
+}
+
+
 .tiktokvideoanalysis{
     & .videorectengals {
         width: 395px;
