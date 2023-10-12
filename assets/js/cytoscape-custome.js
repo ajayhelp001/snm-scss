@@ -344,7 +344,9 @@ cy.nodes().on('click', function(event) {
     var e16 = cy.getElementById('e16');
     var e17 = cy.getElementById('e17');
     var e18 = cy.getElementById('e18');
-
+    var e19 = cy.getElementById('e19');
+    var e20 = cy.getElementById('e20');
+    var e21 = cy.getElementById('e21');
 
     var twtnews = cy.getElementById('twtnews');
     var phanlemailan = cy.getElementById('phanlemailan');
@@ -358,7 +360,7 @@ cy.nodes().on('click', function(event) {
     var nodeten = cy.getElementById('nodeten');
 
 
-    var specificEdges = [e4, e5, e9];
+    var specificEdges = [e1, e2, e15, e4, e6, e9, e10, e11, e12, e13, e16, e19, e20, e21];
 
     specificEdges.forEach(function(edge) {
     edge.style({

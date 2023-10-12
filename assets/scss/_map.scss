@@ -147,6 +147,7 @@
 }
 
 .map_detailspopup{
+    transform: translate(2%, -3%);
     & .overview_map_popupdata {
         user-select: none;
         transform: translate(45.7%, 9.1%);
@@ -181,8 +182,14 @@
     }
 }
 .overview_image_container {
+    & .mapline {
+        transform: translate(2%, -3.75%);
+    }
+    & .overview_map_arrow {
+        transform: translate(2%, -3.8%);
+    }
     & svg{
-        transform: translate(-33%, -5%);
+        transform: translate(-35%, -5%);
     }
     .overview_map_line, .overview_map_arrow, .overview_map_popupdata {
         display: none;
