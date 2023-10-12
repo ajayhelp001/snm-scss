@@ -455,7 +455,7 @@
         position: relative;
         & .treckerMove {
             position: absolute;
-            left: 81%;
+            left: var(--move);
             top: 0;
             &.timing{
                 display: inline-flex;
