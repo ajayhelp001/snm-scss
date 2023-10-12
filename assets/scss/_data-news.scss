@@ -1367,6 +1367,15 @@
         border: 1px solid var(--theme-red);
         border-radius: 8px;
     }
+    & .actorelistitem {
+        &>div{
+            &:first-child{
+                & .tmgroup {
+                    justify-content: end;
+                }
+            }
+        }
+    }
 }
 
 
