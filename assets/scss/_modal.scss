@@ -451,6 +451,48 @@
             }
         }
     }
+    & .innervideoeditor {
+        position: relative;
+        & .treckerMove {
+            position: absolute;
+            left: 81%;
+            top: 0;
+            &.timing{
+                display: inline-flex;
+                & .videoTimer{
+                    padding: 4px 8px;
+                    border-radius: 26px;
+                    background-color: var(--alert);
+                    color: var(--black--dark);
+                    font-size: 12px;
+                    font-weight: 500;
+                    line-height: 15px; /* 125% */
+                    position: relative;
+                    cursor: pointer;
+                    &::before{
+                        width: 16px;
+                        height: 8px;
+                        content: '';
+                        position: absolute;
+                        top: 100%;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        background: url(../image/icon/v-shap.svg) no-repeat center;
+                    }
+                    &::after{
+                        content: '';
+                        width: 2px;
+                        background-color: var(--alert);
+                        height: 174px;
+                        position: absolute;
+                        top: 100%;
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
+                }
+            }
+        }
+    }
 }
 
 .videoModalrectengal {
