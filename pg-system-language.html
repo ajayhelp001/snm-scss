@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SNM Dashboad | Data-News_postLists</title>
+    <title>SNM Dashboad | System Report</title>
     <link rel="icon" type="image/x-icon" href="assets/image/logo.png">
     <!-- ****** Jquary ***** -->
     <script src="assets/libs/jquary/jquery.min.js"></script>
@@ -28,9 +28,9 @@
                         <div class="asideBody h-100 overflow-y-auto">
                             <ul class="nav_link">
                                 <li><a href="index.html" class="navlinks"><img src="assets/image/icon/icon-report.svg" alt="report"></a></li>
-                                <li><a href="data-fb-postList.html" class="navlinks active"><img src="assets/image/icon/icon-collect.svg" alt="collect"></a></li>
+                                <li><a href="data-fb-postList.html" class="navlinks"><img src="assets/image/icon/icon-collect.svg" alt="collect"></a></li>
                                 <li><a href="pg-tracking-accList-social.html" class="navlinks"><img src="assets/image/icon/icon-monitoring.svg" alt="monitoring"></a></li>
-                                <li><a href="pg-system-adList.html" class="navlinks"><img src="assets/image/icon/focus.svg" alt="admin"></a></li>
+                                <li><a href="pg-system-adList.html" class="navlinks active"><img src="assets/image/icon/focus.svg" alt="admin"></a></li>
                                 <li><a href="javascript:;" class="navlinks"><img src="assets/image/icon/icon-admin.svg" alt="admin"></a></li>
                             </ul>
                         </div>
@@ -45,21 +45,8 @@
                     <div class="col-12">
                         <div class="topheader">
                             <div class="row mx-0 gx-0">
-                                <div class="col-7">
-                                    <div class="row pageLinks gx-0 mx-0">
-                                        <div class="col">
-                                            <a href="data-fb-postList.html" class="socialLinkLink facebook"><span><img src="assets/image/icon/facebook.svg" class="w-100" alt="facebook"></span> Facebook</a>
-                                        </div>
-                                        <div class="col">
-                                            <a href="data-tiktok-postList.html" class="socialLinkLink tiktok"><span><img src="assets/image/icon/tiktok.svg" class="w-100" alt="tiktok"></span> Tiktok</a>
-                                        </div>
-                                        <div class="col">
-                                            <a href="data-ytube-postList.html" class="socialLinkLink youtube"><span><img src="assets/image/icon/yoytube.svg" class="w-100" alt="youtube"></span> Youtube</a>
-                                        </div>
-                                        <div class="col">
-                                            <a href="javascript:;" class="socialLinkLink news active"><span><img src="assets/image/icon/digital-news.svg" class="w-100" alt="digital news"></span> Digital news</a>
-                                        </div>
-                                    </div>
+                                <div class="col">
+                                    <div class="socialNetwork">Social Network Monitoring</div>
                                 </div>
                                 <div class="col search_bar">
                                     <div class="input-group">
@@ -90,7 +77,7 @@
                                                 <div class="n_item">
                                                     <div class="logoimg"><img src="assets/image/icon/user.svg" class="w-100" alt="logo"></div>
                                                     <div class="n_message">
-                                                        <div class="directMessage">Phan Lê Mai Lan has created a post on the wall</span></div>
+                                                        <div class="directMessage">Phan Lê Mai Lan has created a post on the wall</div>
                                                         <div class="date">05/09/2023 <span>09:23</span></div>
                                                     </div>
                                                 </div>
@@ -120,8 +107,7 @@
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item active"><a href="index.html" class="page_link">Home</a></li>
-                                    <li class="breadcrumb-item"><a href="javascript:;" class="page_link">Data</a></li>
-                                    <li class="breadcrumb-item" aria-current="page">Digital news</li>
+                                    <li class="breadcrumb-item" aria-current="page">System</li>
                                 </ol>
                             </nav>
                         </div>
@@ -131,57 +117,19 @@
                                     <div class="row">
                                         <div class="col-12">
                                             <div class="row all_data gx-0">
-                                                <div class="col-auto data">Feeds</div>
-                                                <div class="col-auto"><a href="assets/docx/report-000023.pdf" class="sourcesBtn" download><img src="assets/image/icon/PDF.svg" alt="download pdf w-100"></a></div>
-                                                <div class="col-auto"><a href="assets/docx/report-000023.xls" class="sourcesBtn" download><img src="assets/image/icon/excle_Sheet.svg" alt="download pdf w-100"></a></div>
+                                                <div class="col-auto data">System data</div>
                                             </div>
                                         </div>
                                         <div class="col-12 nav nav-pills row overviewTabs mx-0" id="pills-tab" role="tablist">
                                             <li class="nav-item col-auto">
-                                                <a href="data-news-postList.html" class="nav-link" >Overview</a>
+                                                <a href="pg-system-adList.html" class="nav-link" >Admin & mod</a>
                                             </li>
                                             <li class="nav-item col-auto">
-                                                <a href="data-news-sourcesList.html" class="nav-link ">Sources</a>
+                                                <a href="pg-system-report.html" class="nav-link">Report</a>
                                             </li>
                                             <li class="nav-item col-auto">
-                                                <a href="javascript:;" class="nav-link active">Keyword</a>
+                                                <a href="javascript:;" class="nav-link active">Language</a>
                                             </li>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-auto">
-                                    <div class="row gx-2">
-                                        <div class="col-auto">
-                                            <div class="categoryCard">
-                                                <div class="card_body">
-                                                    <div class="categoryImg"><img src="assets/image/icon/accessSource.svg" alt="post"></div>
-                                                    <div class="valu">200<span>Sources</span></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <div class="categoryCard">
-                                                <div class="card_body">
-                                                    <div class="categoryImg"><img src="assets/image/icon/post.svg" alt="post"></div>
-                                                    <div class="valu">3.8m<span>Posts</span></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <div class="categoryCard">
-                                                <div class="card_body">
-                                                    <div class="categoryImg"><img src="assets/image/icon/media.svg" alt="post"></div>
-                                                    <div class="valu">1.2k<span>Media</span></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <div class="categoryCard">
-                                                <div class="card_body">
-                                                    <div class="categoryImg"><img src="assets/image/icon/danger.svg" alt="post"></div>
-                                                    <div class="valu">200<span>Violations</span></div>
-                                                </div>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -193,70 +141,47 @@
                     <div class="col-12 h-100 flex-fill maincontent overflow-hidden">
                         <div class="manin_content_Body h-100 overflow-hidden">
                             <div class="tab-content h-100" id="pills-tabContent">
-                                <!-- ** keyword Tab Start -->
-                                <div class="tab-pane fade h-100 show active">
+                                <!-- ** Source Tab Start -->
+                                <div class="tab-pane fade h100 show active">
                                     <div class="row gx-2 overflow-y-auto justify-content-center row-gap-2 h-100">
-                                        <div class="col-auto h-100 keyword_category_name">
+                                        <div class="col-9 h-100 sourcetab_-table ">
                                             <div class="card top_post h-100 levelCard list_post_Table">
                                                 <div class="card-body h-100">
-                                                    <div class="row flex-column flex-nowrap h-100 list">
+                                                    <div class="row flex-column flex-nowrap h-100 list gap-12">
                                                         <div class="col-12">
-                                                            <div class="card_title keywords d-flex m-0 justify-content-between align-items-center">
-                                                                Categories
-                                                                <div class="add-button"><button type="button" class="appendBtn categorieAppend"><img src="assets/image/icon/plus.svg" class="w-100" alt="plus"></button></div>
+                                                            <div class="card_title keywords d-flex">
+                                                                <div class="cuntryflage">Select language</div>
                                                             </div> 
                                                         </div>
-                                                        <div class="col-12 h-100 flex-fill overflow-y-auto">
-                                                            <ul class="row mx-0 gx-0 list-unstyled m-0 p-0 posttableSide post_listTable position-relative">
-                                                                <li class="col-12"><a href="javascript:;" class="categoryLink">Crime</a></li>
-                                                                <li class="col-12"><a href="javascript:;" class="categoryLink">Drug</a></li>
-                                                                <li class="col-12"><a href="javascript:;" class="categoryLink">Sexual</a></li>
-                                                                <li class="col-12"><a href="javascript:;" class="categoryLink">Hated</a></li>
-                                                                <li class="col-12"><a href="javascript:;" class="categoryLink">War</a></li>
-                                                                <li class="col-12"><a href="javascript:;" class="categoryLink">Violence</a></li>
-                                                                <li class="col-12"><a href="javascript:;" class="categoryLink active">Weapon</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-auto h-100 keyword_category_KEY">
-                                            <div class="card top_post h-100 levelCard list_post_Table">
-                                                <div class="card-body h-100">
-                                                    <div class="row flex-column flex-nowrap h-100 list">
-                                                        <div class="col-12">
-                                                            <div class="card_title keywords d-flex">Keyword</div> 
-                                                            <div class="search_bar rounded-3 listSearch">
-                                                                <div class="input-group">
-                                                                    <button type="button" class="input-group-text" id="basic-addon1"><img src="assets/image/icon/search_icon.svg" alt="search"></button>
-                                                                    <input type="search" class="form-control shadow-none" placeholder="input keywords" aria-label="Username" aria-describedby="basic-addon1">
-                                                                </div>
-                                                            </div>
-                                                        </div>
                                                         <div class="col-12 h-100 flex-fill overflow-hidden">
-                                                            <div class="row mx-0 gx-0 posttableSide post_listTable h-100 position-relative">
-                                                                <div class="col-12 post_table table-responsive h-100">
-                                                                    <div class="input_wrapper">
-                                                                        <div class="content">
-                                                                            <ul class="keygroup"><input type="text" class="input_keys" spellcheck="false"></ul>
-                                                                        </div>
-                                                                        <div class="details d-none">
-                                                                            <p><span>10</span> tags are remaining</p>
-                                                                            <button>Remove All</button>
-                                                                        </div>
+                                                            <div class="row">
+                                                                <div class="col-6 text-end">
+                                                                    <div class="radiobutton_group">
+                                                                        <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off">
+                                                                        <label class="languageradio d-inline-flex flex-column align-items-center justify-content-center" for="option1">
+                                                                            <span class="images"><img src="assets/image/vietnamese.png" class="w-100" alt=""></span>
+                                                                            Vietnamese
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <div class="radiobutton_group">
+                                                                        <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off" checked>
+                                                                        <label class="languageradio d-inline-flex flex-column align-items-center justify-content-center" for="option2">
+                                                                            <span class="images"><img src="assets/image/english.png" class="w-100" alt=""></span>
+                                                                            English
+                                                                        </label>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="col-12 text-end"><button type="button" class="applybtn shadow-none border-0 px-5">Save</button></div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <!-- ** keyword Tab End -->
+                                <!-- ** Source Tab End -->
                             </div>
                         </div>
                     </div>
@@ -264,10 +189,8 @@
                 </div>
             </div>
             <!--! * Main DashBoard Start -->
-
         </div>
     </main>
-
     <!-- *** Bootstrap Js ***** -->
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- *** Select2 Js *** -->

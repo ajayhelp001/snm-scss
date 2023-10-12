@@ -1690,5 +1690,64 @@
 
 
 
+// *******************************************************  [ System Setting  Css Start ] ***********************************************
+.settingTable{
+    &.table {
+        & tbody {
+            & tr {
+                & td {
+                    &:first-child{
+                        width: 30%;
+                    }
+                }
+            }
+        }
+    }
+    & .datadownloadcard {
+        border-radius: 32px;
+        max-width: 300px;
+        min-height: 148px;
+        background-color: var(--balck--light);
+        & .card-body{
+            & .downloadicon {
+                width: 48px;
+                height: 48px;
+                & img {
+                    filter: brightness(100);
+                }
+            }
+            & .downloadtext {
+                color: var(--white);
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 140%; /* 19.6px */
+            }
+        }
+    }
+    &.nonhover{
+        &.table{
+            &.table-hover{  
+                & > tbody{
+                    & > tr{
+                        &:last-child{
+                            &:hover > td{
+                                background-color: #292929 !important;
+                                border-bottom-width: 0px !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// *******************************************************  [ System Setting  Css End ] ***********************************************
+
+
+
+
+
+
 
 
