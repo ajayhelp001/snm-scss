@@ -57,15 +57,15 @@ var cy = cytoscape({
         'target-arrow-rotation': '100deg'
         
       })
-    .selector('#phanlemailan')
+    .selector('#longmetroi')
       .css({
         'background-image': 'assets/image/map/LongMetRoi.png'
       })
-    .selector('#twtnews')
+    .selector('#nguyennhuhang')
       .css({
         'background-image': 'assets/image/map/NguyenNhuHang.png'
       })
-    .selector('#memetipac')
+    .selector('#phanledung')
       .css({
         'background-image': 'assets/image/map/PhanLeDung.png'
       })
@@ -73,49 +73,43 @@ var cy = cytoscape({
       .css({
         'background-image': 'assets/image/map/QQ.png'
       })
-  .selector('#nguyennhuhang')
+  .selector('#phanlemailan')
       .css({
-        'background-image': 'assets/image/map/MaiLan.png',
-        "shadow": {
-          "offsetX": 5,
-          "offsetY": 5,
-          "blurRadius": 10,
-          "color": "rgba(255, 255, 0, 0.5)"
-        }
-      })
-  .selector('#traderlollipop')
-      .css({
-        'background-image': 'assets/image/map/jeaMin.png'
+        'background-image': 'assets/image/map/MaiLan.png',        
       })
   .selector('#nanapham')
       .css({
+        'background-image': 'assets/image/map/jeaMin.png'
+      })
+  .selector('#casithanhha')
+      .css({
         'background-image': 'assets/image/map/CaSiThanhHa.png'
       })
-  .selector('#kokohalinh')
+  .selector('#qqthuytam')
       .css({
         'background-image': 'assets/image/map/QQ.png'
       })
-    .selector('#cotsonggenz')
+    .selector('#quyenlam')
       .css({
         'background-image': 'assets/image/map/QuyenLam.png'
       })
-    .selector('#nodeten')
+    .selector('#thanhhahn')
       .css({
         'background-image': 'assets/image/map/ThanhHaHN.png'
       })
-    .selector('#nodeele')
+    .selector('#propertykoko')
       .css({
         'background-image': 'assets/image/map/PropertyKoko.png'
       })
-    .selector('#nodetwe')
+    .selector('#nguyenngoclinh')
       .css({
         'background-image': 'assets/image/map/TraderLollipop.png'
       })
-    .selector('#nodethi')
+    .selector('#phamngocthanh')
       .css({
         'background-image': 'assets/image/map/Nana.png'
       })
-      .selector('#nodeforth')
+      .selector('#auyenlinh')
       .css({
         'background-image': 'assets/image/map/MeMaiLan.png'
       })
@@ -170,43 +164,43 @@ var cy = cytoscape({
 
   elements: {
     "nodes": [
-      { "data": { "id": "twtnews", "popper": '<i class="fas fa-heart"></i>'  }, "classes": "background bottom-center" },			  
-      { "data": { "id": "phanlemailan" }, "classes": "background bottom-center" },
-      { "data": { "id": "memetipac" }, "classes": "background bottom-center" },
+      { "data": { "id": "nguyennhuhang", "popper": '<i class="fas fa-heart"></i>'  }, "classes": "background bottom-center" },			  
+      { "data": { "id": "longmetroi" }, "classes": "background bottom-center" },
+      { "data": { "id": "phanledung" }, "classes": "background bottom-center" },
       { "data": { "id": "trader" }, "classes": "background bottom-center" },
-      { "data": { "id": "nguyennhuhang" }, "classes": "background bottom-center" },
-      { "data": { "id": "traderlollipop"}, "classes": "background bottom-center" },
+      { "data": { "id": "phanlemailan" }, "classes": "background bottom-center" },
       { "data": { "id": "nanapham"}, "classes": "background bottom-center" },
-      { "data": { "id": "kokohalinh" }, "classes": "background bottom-center" },
-      { "data": { "id": "cotsonggenz" }, "classes": "background bottom-center" },			  
-      { "data": { "id": "nodeten" }, "classes": "background bottom-center" },			  
-      { "data": { "id": "nodeele" }, "classes": "background bottom-center" },			  
-      { "data": { "id": "nodetwe" }, "classes": "background bottom-center" },			  
-      { "data": { "id": "nodethi" }, "classes": "background bottom-center" },
-      { "data": { "id": "nodeforth" }, "classes": "background bottom-center" },
+      { "data": { "id": "casithanhha"}, "classes": "background bottom-center" },
+      { "data": { "id": "qqthuytam" }, "classes": "background bottom-center" },
+      { "data": { "id": "quyenlam" }, "classes": "background bottom-center" },			  
+      { "data": { "id": "thanhhahn" }, "classes": "background bottom-center" },			  
+      { "data": { "id": "propertykoko" }, "classes": "background bottom-center" },			  
+      { "data": { "id": "nguyenngoclinh" }, "classes": "background bottom-center" },			  
+      { "data": { "id": "phamngocthanh" }, "classes": "background bottom-center" },
+      { "data": { "id": "auyenlinh" }, "classes": "background bottom-center" },
     ],
     "edges": [
-      { "data": { "id": "e12", "source": "twtnews", "target": "nguyennhuhang" } },
-      { "data": { "id": "e1", "source": "nodethi", "target": "nguyennhuhang", "arrow": "none", "type": "none" } },			  
-      { "data": { "id": "e2", "source": "nodeten", "target": "nguyennhuhang", "arrow": "none" } },
-      { "data": { "id": "e3", "source": "nodeten", "target": "cotsonggenz", "arrow": "none" } },
-      { "data": { "id": "e4", "source": "phanlemailan", "target": "nguyennhuhang", "arrow": "none" } },
-      { "data": { "id": "e10", "source": "traderlollipop", "target": "nguyennhuhang", "arrow": "none", "type": "none" } },
-      { "data": { "id": "e8", "source": "twtnews", "target": "traderlollipop", "arrow": "none", "type": "none" } },
-      { "data": { "id": "e16", "source": "kokohalinh", "target": "nguyennhuhang", "arrow": "none", "type": "none" } },			  
-      { "data": { "id": "e17", "source": "kokohalinh", "target": "nanapham", "arrow": "none", "type": "none" } },
-      { "data": { "id": "e9", "source": "nanapham", "target": "nguyennhuhang", "arrow": "none", "type": "none" } },
-      { "data": { "id": "e20", "source": "nodetwe", "target": "nguyennhuhang", "arrow": "none", "type": "none" } },
-      { "data": { "id": "e6", "source": "nodeele", "target": "nguyennhuhang", "arrow": "none" } },
-      { "data": { "id": "e13", "source": "trader", "target": "nguyennhuhang", "arrow": "none", "type": "none" } },
-      { "data": { "id": "e14", "source": "memetipac", "target": "nodeten", "arrow": "none", "type": "none" } },			  
-      { "data": { "id": "e15", "source": "memetipac", "target": "nguyennhuhang", "arrow": "none", "type": "none" } },			  
-      { "data": { "id": "e18", "source": "memetipac", "target": "nodethi", "arrow": "none", "type": "none" } },			        
-      { "data": { "id": "e19", "source": "nodeforth", "target": "nguyennhuhang", "arrow": "none", "type": "none" } },
+      { "data": { "id": "e12", "source": "nguyennhuhang", "target": "phanlemailan" } },
+      { "data": { "id": "e1", "source": "phamngocthanh", "target": "phanlemailan", "arrow": "none", "type": "none" } },			  
+      { "data": { "id": "e2", "source": "thanhhahn", "target": "phanlemailan", "arrow": "none" } },
+      { "data": { "id": "e3", "source": "thanhhahn", "target": "quyenlam", "arrow": "none" } },
+      { "data": { "id": "e4", "source": "longmetroi", "target": "phanlemailan", "arrow": "none" } },
+      { "data": { "id": "e10", "source": "nanapham", "target": "phanlemailan", "arrow": "none", "type": "none" } },
+      { "data": { "id": "e8", "source": "nguyennhuhang", "target": "nanapham", "arrow": "none", "type": "none" } },
+      { "data": { "id": "e16", "source": "qqthuytam", "target": "phanlemailan", "arrow": "none", "type": "none" } },			  
+      { "data": { "id": "e17", "source": "qqthuytam", "target": "casithanhha", "arrow": "none", "type": "none" } },
+      { "data": { "id": "e9", "source": "casithanhha", "target": "phanlemailan", "arrow": "none", "type": "none" } },
+      { "data": { "id": "e20", "source": "nguyenngoclinh", "target": "phanlemailan", "arrow": "none", "type": "none" } },
+      { "data": { "id": "e6", "source": "propertykoko", "target": "phanlemailan", "arrow": "none" } },
+      { "data": { "id": "e13", "source": "trader", "target": "phanlemailan", "arrow": "none", "type": "none" } },
+      { "data": { "id": "e14", "source": "phanledung", "target": "thanhhahn", "arrow": "none", "type": "none" } },			  
+      { "data": { "id": "e15", "source": "phanledung", "target": "phanlemailan", "arrow": "none", "type": "none" } },			  
+      { "data": { "id": "e18", "source": "phanledung", "target": "phamngocthanh", "arrow": "none", "type": "none" } },			        
+      { "data": { "id": "e19", "source": "auyenlinh", "target": "phanlemailan", "arrow": "none", "type": "none" } },
       
-      { "data": { "id": "e21", "source": "cotsonggenz", "target": "nguyennhuhang", "arrow": "none", "type": "none" } },
-      // { "data": { "id": "e20", "source": "nodetwe", "target": "nguyennhuhang", "arrow": "none", "type": "none" } },
-      // { "data": { "id": "e21", "source": "nodethi", "target": "nguyennhuhang", "arrow": "none", "type": "none" } },
+      { "data": { "id": "e21", "source": "quyenlam", "target": "phanlemailan", "arrow": "none", "type": "none" } },
+      // { "data": { "id": "e20", "source": "nguyenngoclinh", "target": "phanlemailan", "arrow": "none", "type": "none" } },
+      // { "data": { "id": "e21", "source": "phamngocthanh", "target": "phanlemailan", "arrow": "none", "type": "none" } },
       
 
       
@@ -218,20 +212,20 @@ var cy = cytoscape({
     name: 'preset',
     positions: {
         
-        'nodeforth': { x: 300, y: -200 },
-        'twtnews': { x: 450, y: -200 },
-        'phanlemailan': { x: 800, y: -200 },
-        'memetipac': { x: 800, y: -100 },
+        'auyenlinh': { x: 300, y: -200 },
+        'nguyennhuhang': { x: 450, y: -200 },
+        'longmetroi': { x: 800, y: -200 },
+        'phanledung': { x: 800, y: -100 },
         'trader': { x: 800, y: 50 },
-        'nguyennhuhang': { x: 550, y: 0 },// main
-        'traderlollipop': { x: 300, y: -70 }, // Black with lipstick 300 -70
-        'nanapham': { x: 300, y: 200 },
-        'kokohalinh': { x: 475, y: 200 },
-        'cotsonggenz': { x: 800, y: 200 },
-        'nodeten': { x: 550, y: 200 },
-        'nodeele': { x: 300, y: 70 }, 
-        'nodetwe': { x: 650, y: 200 },
-        'nodethi': { x: 650, y: -200 },
+        'phanlemailan': { x: 550, y: 0 },// main
+        'nanapham': { x: 300, y: -70 }, // Black with lipstick 300 -70
+        'casithanhha': { x: 300, y: 200 },
+        'qqthuytam': { x: 475, y: 200 },
+        'quyenlam': { x: 800, y: 200 },
+        'thanhhahn': { x: 550, y: 200 },
+        'propertykoko': { x: 300, y: 70 }, 
+        'nguyenngoclinh': { x: 650, y: 200 },
+        'phamngocthanh': { x: 650, y: -200 },
 
         // Define positions for other nodes as needed
     },
@@ -242,7 +236,51 @@ var cy = cytoscape({
         enabled: true, // Enable the popper extension
         // ... Other popper configuration options ...
     }
+
+    // Event handler for node click
+
 }); // cy init
+cy.on('tap', 'node', function (event) {
+  var clickedNode = event.target;
+  var node_id = clickedNode._private.data.id;
+  var data_araay = clickedNode._private.edges;  
+  
+  // Hide all edges
+  cy.elements('edge').style('display', 'none');
+
+  // Show only the edges connected to the clicked node
+  clickedNode.connectedEdges().style('display', 'element');
+
+  // Show mutually connected edges
+  if (clickedNode.connectedEdges().length > 1) {
+    clickedNode.neighborhood().edges().style('display', 'element');
+  }
+  $('.row.userDistentCard .listItem').removeClass('active');
+  var uniqueNodes = [];
+  $.each(data_araay, function(index, edge) {
+    var source = edge._private.data.source;
+    var target = edge._private.data.target;
+    
+    // Add source and target to the uniqueNodes array if they are not already in it
+    if (uniqueNodes.indexOf(source) === -1) {
+      uniqueNodes.push(source);
+    }
+    if (uniqueNodes.indexOf(target) === -1) {
+      uniqueNodes.push(target);
+    }
+  });
+  var counterActive = 0;
+  $.each(uniqueNodes, function(index, value) {
+    $('.row.userDistentCard .listItem[data-id="'+value+'"]').addClass('active');
+    counterActive++;
+  });
+  if(counterActive > 0) {    
+    $('.counter-map-text span').html(counterActive);
+    $('.counter-map-text').show();
+  }
+});
+
+
 
 // Get references to the buttons
 var zoomInButton = document.getElementById('zoom-in-button');
@@ -348,16 +386,16 @@ cy.nodes().on('click', function(event) {
     var e20 = cy.getElementById('e20');
     var e21 = cy.getElementById('e21');
 
-    var twtnews = cy.getElementById('twtnews');
-    var phanlemailan = cy.getElementById('phanlemailan');
-    var memetipac = cy.getElementById('memetipac');
-    var trader = cy.getElementById('trader');
     var nguyennhuhang = cy.getElementById('nguyennhuhang');
-    var traderlollipop = cy.getElementById('traderlollipop');
+    var longmetroi = cy.getElementById('longmetroi');
+    var phanledung = cy.getElementById('phanledung');
+    var trader = cy.getElementById('trader');
+    var phanlemailan = cy.getElementById('phanlemailan');
     var nanapham = cy.getElementById('nanapham');
-    var kokohalinh = cy.getElementById('kokohalinh');
-    var cotsonggenz = cy.getElementById('cotsonggenz');
-    var nodeten = cy.getElementById('nodeten');
+    var casithanhha = cy.getElementById('casithanhha');
+    var qqthuytam = cy.getElementById('qqthuytam');
+    var quyenlam = cy.getElementById('quyenlam');
+    var thanhhahn = cy.getElementById('thanhhahn');
 
 
     var specificEdges = [e1, e2, e15, e4, e6, e9, e10, e11, e12, e13, e16, e19, e20, e21];
@@ -403,15 +441,15 @@ cy.nodes().on('click', function(event) {
 
 
 
-    var tippyA = makeTippy(twtnews, 'TWT News');
+    var tippyA = makeTippy(nguyennhuhang, 'TWT News');
 
     tippyA.show();
 
-    var tippyB = makeTippy(phanlemailan, 'Phan Lê Mai Lan');
+    var tippyB = makeTippy(longmetroi, 'Phan Lê Mai Lan');
 
     tippyB.show();
 
-    var tippyC = makeTippy(memetipac, 'Meme tươi đến từ rừng Pác Bó');
+    var tippyC = makeTippy(phanledung, 'Meme tươi đến từ rừng Pác Bó');
 
     tippyC.show();
 
@@ -419,23 +457,23 @@ cy.nodes().on('click', function(event) {
 
     tippyD.show();
 
-    var tippyE = makeTippy(nguyennhuhang, 'Nguyễn Như Hằng');
+    var tippyE = makeTippy(phanlemailan, 'Nguyễn Như Hằng');
 
     tippyE.show();
 
-    var tippyF = makeTippy(traderlollipop, 'Trader Lollipop');
+    var tippyF = makeTippy(nanapham, 'Trader Lollipop');
 
     tippyF.show();
 
-    var tippyG = makeTippy(nanapham, 'Nana Phạm');
+    var tippyG = makeTippy(casithanhha, 'Nana Phạm');
 
     tippyG.show();
 
-    var tippyH = makeTippy(kokohalinh, 'Koko Hạ Linh');
+    var tippyH = makeTippy(qqthuytam, 'Koko Hạ Linh');
 
     tippyH.show();
 
-    var tippyI = makeTippy(cotsonggenz, 'Cột Sống GenZ');
+    var tippyI = makeTippy(quyenlam, 'Cột Sống GenZ');
 
     tippyI.show();
 
@@ -454,33 +492,33 @@ cy.nodes().on('click', function(event) {
 
     // Nodes icon js start
 
-    var tippytwtnews = makeTippy(twtnews, '<i class="fa-regular fa-file-lines" style="background-color: #BBBABD; color: #fff; padding: 5px; border-radius: 5px;"></i>');
-    tippytwtnews.show();
+    var tippynguyennhuhang = makeTippy(nguyennhuhang, '<i class="fa-regular fa-file-lines" style="background-color: #BBBABD; color: #fff; padding: 5px; border-radius: 5px;"></i>');
+    tippynguyennhuhang.show();
 
 
-    var tippyphanlemailan = makeTippy(phanlemailan, '<i class="fa-solid fa-user" style="background-color: #8B80FD; color: #fff; padding: 5px; border-radius: 5px;"></i>');
-    tippyphanlemailan.show();
+    var tippylongmetroi = makeTippy(longmetroi, '<i class="fa-solid fa-user" style="background-color: #8B80FD; color: #fff; padding: 5px; border-radius: 5px;"></i>');
+    tippylongmetroi.show();
 
-    var tippymemetipac = makeTippy(memetipac, '<i class="fa-regular fa-file-lines" style="background-color: #BBBABD; color: #fff; padding: 5px; border-radius: 5px;"></i>');
-    tippymemetipac.show();
+    var tippyphanledung = makeTippy(phanledung, '<i class="fa-regular fa-file-lines" style="background-color: #BBBABD; color: #fff; padding: 5px; border-radius: 5px;"></i>');
+    tippyphanledung.show();
 
     var tippytrader = makeTippy(trader, '<i class="fa-solid fa-users" style="background-color: #BBBABD; color: #fff; padding: 5px; border-radius: 5px;"></i>');
     tippytrader.show();
 
-    var tippynanapham = makeTippy(nanapham, '<i class="fa-solid fa-user" style="background-color: #8B80FD; color: #fff; padding: 5px; border-radius: 5px;"></i>');
+    var tippycasithanhha = makeTippy(casithanhha, '<i class="fa-solid fa-user" style="background-color: #8B80FD; color: #fff; padding: 5px; border-radius: 5px;"></i>');
+    tippycasithanhha.show();
+
+    var tippynanapham = makeTippy(nanapham, '<i class="fa-solid fa-user" style="background-color: #BBBABD; color: #fff; padding: 5px; border-radius: 5px;"></i>');
     tippynanapham.show();
 
-    var tippytraderlollipop = makeTippy(traderlollipop, '<i class="fa-solid fa-user" style="background-color: #BBBABD; color: #fff; padding: 5px; border-radius: 5px;"></i>');
-    tippytraderlollipop.show();
+    var tippyphanlemailan = makeTippy(phanlemailan, '<i class="fa-solid fa-user" style="background-color: #8B80FD; color: #fff; padding: 5px; border-radius: 5px;"></i>');
+    tippyphanlemailan.show();
 
-    var tippynguyennhuhang = makeTippy(nguyennhuhang, '<i class="fa-solid fa-user" style="background-color: #8B80FD; color: #fff; padding: 5px; border-radius: 5px;"></i>');
-    tippynguyennhuhang.show();
-
-    var tippykokohalinh = makeTippy(kokohalinh, '<i class="fa-solid fa-user" style="background-color: #BBBABD; color: #fff; padding: 5px; border-radius: 5px;"></i>');
-    tippykokohalinh.show();
+    var tippyqqthuytam = makeTippy(qqthuytam, '<i class="fa-solid fa-user" style="background-color: #BBBABD; color: #fff; padding: 5px; border-radius: 5px;"></i>');
+    tippyqqthuytam.show();
     
-    var tippycotsonggenz = makeTippy(cotsonggenz, '<i class="fa-solid fa-users" style="background-color: #BBBABD; color: #fff; padding: 5px; border-radius: 5px;"></i>');
-    tippycotsonggenz.show();
+    var qippyQuyenlam = makeTippy(quyenlam, '<i class="fa-solid fa-users" style="background-color: #BBBABD; color: #fff; padding: 5px; border-radius: 5px;"></i>');
+    qippyQuyenlam.show();
 
     // Nodes icon js end
     

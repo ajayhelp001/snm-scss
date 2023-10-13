@@ -26,8 +26,7 @@ $(document).ready(function() {
     });
 
     
-$('.userDistentCard .listItem').on('click', function() {
-    console.log("helkli working");
+$('.userDistentCard .listItem').on('click', function() {    
     const $listitem = $(this);
     var list_data_id = $listitem.data('id');    
     $('#svg_fb_geomap g.node2[id="'+list_data_id+'"]').click();
@@ -75,9 +74,15 @@ $('.node2').on('click', function() {
             $('.geoInfoCard .card-body > div').html(html_geo_info);                    
         }
     });
-    console.log("counter", glo_counter);
+    
+
     if(glo_counter == 0) {
+        $('.counter-map-text span').html(glo_counter);
+        $('div.counter-map-text').hide();
         $('.popupdata').hide();
+    } else {
+        $('.counter-map-text span').html(glo_counter);
+        $('div.counter-map-text').show();
     }
 });
 
