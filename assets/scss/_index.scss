@@ -841,8 +841,14 @@
                     }
                 }
             }
+            & .postcontetntd {
+                width: 25%;
+                & .postContent {
+                    max-width: 280px;
+                }
+            }
             & .postContent {
-                max-width: 200px;
+                max-width: 230px;
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;

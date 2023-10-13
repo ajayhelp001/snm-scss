@@ -1575,6 +1575,12 @@
 
 .tiktokvideoanalysisscript {
     max-width: calc(100% - 440px);
+    & .script_Video_Top_Section {
+        height: calc(100% - 158px - 8px);
+    }
+    & .videoeditore {
+        height: 158px;
+    }
 }
 
 @media screen and (min-width: 1850px) {
