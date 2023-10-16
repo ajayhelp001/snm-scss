@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNM Dashboad | DeepInquiry</title>
+    <link rel="icon" type="image/x-icon" href="assets/image/logo.png">
+    <!-- ****** Jquary ***** -->
+    <script src="assets/libs/jquary/jquery.min.js"></script>
+    <!-- ****** Bootstrap Css ***** -->
+    <link rel="stylesheet" href="assets/libs/bootstrap/css/bootstrap.min.css">
+    <!-- ****** Select2 Css -->
+    <link href="assets/libs/select2/select2.min.css" rel="stylesheet" />
+    <!-- ****** Style Css ***** -->
+    <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+<body>
+    <main class="main-dashboard">
+        <div class="maininner_Dashboard h-100 gx-0">
+            <!-- * Aside Bar Start -->
+            <div class="asideBar h-100">
+                <div class="row h-100 flex-column flex-nowrap mx-0 gx-0">
+                    <div class="col-12 logo_top">
+                        <div class="logo"><img src="assets/image/logo.png" class="w-100" alt="logo"></div>
+                        <div class="logoname"><img src="assets/image/SNM.png" class="w-100" alt="SNM"></div>
+                    </div>
+                    <div class="col-12 h-100 flex-fill overflow-hidden">
+                        <div class="asideBody h-100 overflow-y-auto">
+                            <ul class="nav_link">
+                                <li><a href="index.html" class="navlinks"><img src="assets/image/icon/icon-report.svg" alt="report"></a></li>
+                                <li><a href="data-fb-postList.html" class="navlinks"><img src="assets/image/icon/icon-collect.svg" alt="collect"></a></li>
+                                <li><a href="pg-tracking-accList-social.html" class="navlinks"><img src="assets/image/icon/icon-monitoring.svg" alt="monitoring"></a></li>
+                                <li><a href="pg-deepInquiry.html" class="navlinks active"><img src="assets/image/icon/focus.svg" alt="admin"></a></li>
+                                <li><a href="pg-system-adList.html" class="navlinks"><img src="assets/image/icon/icon-admin.svg" alt="admin"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--! * Aside Bar End -->
+            <!-- * Main DashBoard Start -->
+            <div class="dashboard_Side h-100">
+                <div class="row h-100 flex-column flex-nowrap mx-0 gx-0">
+                    <!-- * User Header Start -->
+                    <div class="col-12">
+                        <div class="topheader">
+                            <div class="row mx-0 gx-0">
+                                <div class="col">
+                                    <div class="socialNetwork">Social Network Monitoring</div>
+                                </div>
+                                <div class="col search_bar">
+                                    <div class="input-group">
+                                        <button type="button" class="input-group-text" id="basic-addon1"><img src="assets/image/icon/search_icon.svg" alt="search"></button>
+                                        <input type="text" class="form-control" placeholder="Search anything" aria-label="Username" aria-describedby="basic-addon1">
+                                    </div>
+                                </div>
+                                <div class="col-auto userSide">
+                                    <div class="dropdown notificationDropDown">
+                                        <div class="notification" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside"><div class="bell"><img src="assets/image/icon/bell.svg" class="w-100" alt="logo"></div><span>5</span></div>
+                                        <div class="dropdown-menu">
+                                            <div class="n_title">Notifications</div>
+                                            <div class="n_Body">
+                                                <div class="n_item">
+                                                    <div class="logoimg"><img src="assets/image/icon/user.svg" class="w-100" alt="logo"></div>
+                                                    <div class="n_message">
+                                                        <div class="directMessage">Detect a connect-link from <span>Phan Lê Mai Lan</span> to <span>Phan Lê Dũng</span></div>
+                                                        <div class="date">05/09/2023 <span>10:55</span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="n_item">
+                                                    <div class="logoimg"><img src="assets/image/icon/user.svg" class="w-100" alt="logo"></div>
+                                                    <div class="n_message">
+                                                        <div class="directMessage">Detect a connect-link from <span>Phan Lê Mai Lan</span> to <span>Phan Lê Thanh Hà</span></div>
+                                                        <div class="date">05/09/2023 <span>09:23</span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="n_item">
+                                                    <div class="logoimg"><img src="assets/image/icon/user.svg" class="w-100" alt="logo"></div>
+                                                    <div class="n_message">
+                                                        <div class="directMessage">Phan Lê Mai Lan has created a post on the wall</div>
+                                                        <div class="date">05/09/2023 <span>09:23</span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="n_item">
+                                                    <div class="logoimg"><img src="assets/image/icon/user.svg" class="w-100" alt="logo"></div>
+                                                    <div class="n_message">
+                                                        <div class="directMessage"><span>Detected a violations in a post of a Facebook account Nana Phạm</span></div>
+                                                        <div class="date">05/09/2023 <span>09:23</span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="n_item">
+                                                    <div class="logoimg"><img src="assets/image/icon/user.svg" class="w-100" alt="logo"></div>
+                                                    <div class="n_message">
+                                                        <div class="directMessage"><span>Detected a violations in a post of a Facebook account Nana Phạm</span></div>
+                                                        <div class="date">05/09/2023 <span>09:23</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="notification"><div class="bell"><img src="assets/image/icon/bell.svg" class="w-100" alt="logo"></div><span>5</span></div> -->
+                                    <div class="user"><img src="assets/image/icon/user.svg" class="w-100" alt="logo"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="breadcrumb_Bar">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item active"><a href="index.html" class="page_link">Home</a></li>
+                                    <li class="breadcrumb-item" aria-current="page">System</li>
+                                </ol>
+                            </nav>
+                        </div>
+                        <div class="all_sources">
+                            <div class="row  gx-0 align-items-center">
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="row all_data gx-0">
+                                                <div class="col-auto data">Deep inquiry all connect-link between actors</div>
+                                            </div>
+                                        </div>
+                                        <!-- <div class="col-12 nav nav-pills row overviewTabs mx-0" id="pills-tab" role="tablist">
+                                            <li class="nav-item col-auto">
+                                                <a href="javascript:;" class="nav-link active" >Admin & mod</a>
+                                            </li>
+                                            <li class="nav-item col-auto">
+                                                <a href="pg-system-report.html" class="nav-link">Report</a>
+                                            </li>
+                                            <li class="nav-item col-auto">
+                                                <a href="pg-system-language.html" class="nav-link">Language</a>
+                                            </li>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--! * User Header End -->
+                    <!-- * Dashboard Chart Start -->
+                    <div class="col-12 h-100 flex-fill maincontent overflow-hidden">
+                        <div class="manin_content_Body h-100 overflow-hidden">
+                            <div class="tab-content h-100" id="pills-tabContent">
+                                <!-- ** Source Tab Start -->
+                                <div class="tab-pane fade h-100 show active">
+                                    <div class="row gx-2 overflow-y-auto justify-content-center row-gap-2 h-100 deepinquiryPage">
+                                        <div class="col-3 h-100">
+                                            <div class="card top_post h-100 levelCard">
+                                                <div class="card-body h-100">
+                                                    <div class="row flex-column flex-nowrap h-100 list gap-0">
+                                                        <div class="col-12">
+                                                            <div class="card_title">
+                                                                <div class="cuntryflage">Data pool</div>
+                                                            </div> 
+                                                        </div>
+                                                        <div class="col-12 flex-fill h-100 overflow-y-auto">
+                                                            <div class="accordionbodypart d-flex flex-column gap-1">
+                                                                <div class="sourceheading d-flex align-items-center gap-1"><span class="source_Img d-flex align-items-center justify-content-center"><img src="assets/image/icon/multi-source.svg" class="w-100" alt="multi source"></span>Multi-sources</div>
+                                                                <div class="sourceheading facebook d-flex align-items-center gap-1"><span class="source_Img d-flex align-items-center justify-content-center"><img src="assets/image/icon/L_line.svg" class="w-100" alt="multi source"></span><span class="source_Img d-flex align-items-center justify-content-center"><img src="assets/image/icon/fb_active.svg" class="w-100" alt="multi source"></span>Facebook</div>
+                                                                <div class="trackedAccount ps-4 d-flex flex-column gap-1">
+                                                                    <div class="sourceheading subheding d-flex align-items-center gap-1"><span class="source_Img d-flex align-items-center justify-content-center"><img src="assets/image/icon/categores.svg" class="w-100" alt="multi source"></span>All tracked accounts</div>
+                                                                    <div class="accordion ms-4 accordiongroup" id="accordionExample">
+                                                                        <div class="accordion-item bg-transparent text-white border-0">
+                                                                            <div class="accordion-header">
+                                                                                <button class="accordion-button shadow-none border-0 text-white rounded-0 p-0 border-0 bg-transparent sourceheading subheding d-flex align-items-center gap-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                                                    <span class="source_Img d-flex align-items-center justify-content-center"><img src="assets/image/icon/L_line.svg" class="w-100" alt="multi source"></span><span class="source_Img  d-flex align-items-center justify-content-center"><img src="assets/image/icon/singal-user-icon.svg" class="w-100" alt="multi source"></span>User
+                                                                                </button>
+                                                                            </div>
+                                                                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                                                                <div class="accordion-body ps-5 py-0 pe-0 d-flex flex-column gap-2">
+                                                                                    <div class="userItem sourceheading subheding d-flex align-items-center gap-1">
+                                                                                        <div class="source_Img d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/singal-user-icon.svg" class="w-100" alt="multi source"></div>
+                                                                                        <div class="text-truncate">Phan Lê Mai Lan</div>
+                                                                                        <div class="form-check p-0 scopcheck m-0"><input class="form-check-input m-0" type="checkbox" id="scop1" value="" hidden checked><label for="scop1" class="view justify-content-center align-items-center"><span class="source_Img icon scope d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></label></div>
+                                                                                    </div>
+                                                                                    <div class="userItem sourceheading subheding d-flex align-items-center gap-1">
+                                                                                        <div class="source_Img d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/singal-user-icon.svg" class="w-100" alt="multi source"></div>
+                                                                                        <div class="text-truncate">Phan Lê Mai Lan</div>
+                                                                                        <div class="form-check p-0 scopcheck m-0"><input class="form-check-input m-0" type="checkbox" id="scop2" value="" hidden><label for="scop2" class="view justify-content-center align-items-center"><span class="source_Img icon scope d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></label></div>
+                                                                                    </div>
+                                                                                    <div class="userItem sourceheading subheding d-flex align-items-center gap-1">
+                                                                                        <div class="source_Img d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/singal-user-icon.svg" class="w-100" alt="multi source"></div>
+                                                                                        <div class="text-truncate">Phan Lê Mai Lan</div>
+                                                                                        <div class="form-check p-0 scopcheck m-0"><input class="form-check-input m-0" type="checkbox" id="scop3" value="" hidden><label for="scop3" class="view justify-content-center align-items-center"><span class="source_Img icon scope d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></label></div>
+                                                                                    </div>
+                                                                                    <div class="userItem sourceheading subheding d-flex align-items-center gap-1">
+                                                                                        <div class="source_Img d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/singal-user-icon.svg" class="w-100" alt="multi source"></div>
+                                                                                        <div class="text-truncate">Phan Lê Mai Lan</div>
+                                                                                        <div class="form-check p-0 scopcheck m-0"><input class="form-check-input m-0" type="checkbox" id="scop4" value="" hidden><label for="scop4" class="view justify-content-center align-items-center"><span class="source_Img icon scope d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></label></div>
+                                                                                    </div>
+                                                                                    <div class="userItem sourceheading subheding d-flex align-items-center gap-1">
+                                                                                        <div class="source_Img d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/singal-user-icon.svg" class="w-100" alt="multi source"></div>
+                                                                                        <div class="text-truncate">Phan Lê Mai Lan</div>
+                                                                                        <div class="form-check p-0 scopcheck m-0"><input class="form-check-input m-0" type="checkbox" id="scop5" value="" hidden><label for="scop5" class="view justify-content-center align-items-center"><span class="source_Img icon scope d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></label></div>
+                                                                                    </div>
+                                                                                    <div class="userItem sourceheading subheding d-flex align-items-center gap-1">
+                                                                                        <div class="source_Img d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/singal-user-icon.svg" class="w-100" alt="multi source"></div>
+                                                                                        <div class="text-truncate">Phan Lê Mai Lan</div>
+                                                                                        <div class="form-check p-0 scopcheck m-0"><input class="form-check-input m-0" type="checkbox" id="scop6" value="" hidden checked><label for="scop6" class="view justify-content-center align-items-center"><span class="source_Img icon scope d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></label></div>
+                                                                                    </div>
+                                                                                    <div class="userItem sourceheading subheding d-flex align-items-center gap-1">
+                                                                                        <div class="source_Img d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/singal-user-icon.svg" class="w-100" alt="multi source"></div>
+                                                                                        <div class="text-truncate">Phan Lê Mai Lan</div>
+                                                                                        <div class="form-check p-0 scopcheck m-0"><input class="form-check-input m-0" type="checkbox" id="scop7" value="" hidden><label for="scop7" class="view justify-content-center align-items-center"><span class="source_Img icon scope d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></label></div>
+                                                                                    </div>
+                                                                                    <div class="userItem sourceheading subheding d-flex align-items-center gap-1">
+                                                                                        <div class="source_Img d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/singal-user-icon.svg" class="w-100" alt="multi source"></div>
+                                                                                        <div class="text-truncate">Phan Lê Mai Lan</div>
+                                                                                        <div class="form-check p-0 scopcheck m-0"><input class="form-check-input m-0" type="checkbox" id="scop8" value="" hidden><label for="scop8" class="view justify-content-center align-items-center"><span class="source_Img icon scope d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></label></div>
+                                                                                    </div>
+                                                                                    <div class="userItem sourceheading subheding d-flex align-items-center gap-1">
+                                                                                        <div class="source_Img d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/singal-user-icon.svg" class="w-100" alt="multi source"></div>
+                                                                                        <div class="text-truncate">Phan Lê Mai Lan</div>
+                                                                                        <div class="form-check p-0 scopcheck m-0"><input class="form-check-input m-0" type="checkbox" id="scop9" value="" hidden><label for="scop9" class="view justify-content-center align-items-center"><span class="source_Img icon scope d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></label></div>
+                                                                                    </div>
+                                                                                    <div class="userItem sourceheading subheding d-flex align-items-center gap-1">
+                                                                                        <div class="source_Img d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/singal-user-icon.svg" class="w-100" alt="multi source"></div>
+                                                                                        <div class="text-truncate">Phan Lê Mai Lan</div>
+                                                                                        <div class="form-check p-0 scopcheck m-0"><input class="form-check-input m-0" type="checkbox" id="scop10" value="" hidden><label for="scop10" class="view justify-content-center align-items-center"><span class="source_Img icon scope d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></label></div>
+                                                                                    </div>
+                                                                                    <div class="userItem sourceheading subheding d-flex align-items-center gap-1">
+                                                                                        <div class="source_Img d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/singal-user-icon.svg" class="w-100" alt="multi source"></div>
+                                                                                        <div class="text-truncate">Phan Lê Mai Lan</div>
+                                                                                        <div class="form-check p-0 scopcheck m-0"><input class="form-check-input m-0" type="checkbox" id="scop11" value="" hidden><label for="scop11" class="view justify-content-center align-items-center"><span class="source_Img icon scope d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></label></div>
+                                                                                    </div>
+                                                                                    <div class="userItem sourceheading subheding d-flex align-items-center gap-1">
+                                                                                        <div class="source_Img d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/singal-user-icon.svg" class="w-100" alt="multi source"></div>
+                                                                                        <div class="text-truncate">Phan Lê Mai Lan</div>
+                                                                                        <div class="form-check p-0 scopcheck m-0"><input class="form-check-input m-0" type="checkbox" id="scop12" value="" hidden checked><label for="scop12" class="view justify-content-center align-items-center"><span class="source_Img icon scope d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></label></div>
+                                                                                    </div>
+                                                                                    <div class="userItem sourceheading subheding d-flex align-items-center gap-1">
+                                                                                        <div class="source_Img d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/singal-user-icon.svg" class="w-100" alt="multi source"></div>
+                                                                                        <div class="text-truncate">Phan Lê Mai Lan</div>
+                                                                                        <div class="form-check p-0 scopcheck m-0"><input class="form-check-input m-0" type="checkbox" id="scop13" value="" hidden><label for="scop13" class="view justify-content-center align-items-center"><span class="source_Img icon scope d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></label></div>
+                                                                                    </div>
+                                                                                    <div class="userItem sourceheading subheding d-flex align-items-center gap-1">
+                                                                                        <div class="source_Img d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/singal-user-icon.svg" class="w-100" alt="multi source"></div>
+                                                                                        <div class="text-truncate">Phan Lê Mai Lan</div>
+                                                                                        <div class="form-check p-0 scopcheck m-0"><input class="form-check-input m-0" type="checkbox" id="scop14" value="" hidden><label for="scop14" class="view justify-content-center align-items-center"><span class="source_Img icon scope d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></label></div>
+                                                                                    </div>
+                                                                                    <div class="userItem sourceheading subheding d-flex align-items-center gap-1">
+                                                                                        <div class="source_Img d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/singal-user-icon.svg" class="w-100" alt="multi source"></div>
+                                                                                        <div class="text-truncate">Phan Lê Mai Lan</div>
+                                                                                        <div class="form-check p-0 scopcheck m-0"><input class="form-check-input m-0" type="checkbox" id="scop15" value="" hidden><label for="scop15" class="view justify-content-center align-items-center"><span class="source_Img icon scope d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></label></div>
+                                                                                    </div>
+                                                                                    <div class="userItem sourceheading subheding d-flex align-items-center gap-1">
+                                                                                        <div class="source_Img d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/singal-user-icon.svg" class="w-100" alt="multi source"></div>
+                                                                                        <div class="text-truncate">Phan Lê Mai Lan</div>
+                                                                                        <div class="form-check p-0 scopcheck m-0"><input class="form-check-input m-0" type="checkbox" id="scop16" value="" hidden><label for="scop16" class="view justify-content-center align-items-center"><span class="source_Img icon scope d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></label></div>
+                                                                                    </div>
+                                                                                    <div class="userItem sourceheading subheding d-flex align-items-center gap-1">
+                                                                                        <div class="source_Img d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/singal-user-icon.svg" class="w-100" alt="multi source"></div>
+                                                                                        <div class="text-truncate">Phan Lê Mai Lan</div>
+                                                                                        <div class="form-check p-0 scopcheck m-0"><input class="form-check-input m-0" type="checkbox" id="scop17" value="" hidden><label for="scop17" class="view justify-content-center align-items-center"><span class="source_Img icon scope d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></label></div>
+                                                                                    </div>
+                                                                                    <div class="userItem sourceheading subheding d-flex align-items-center gap-1">
+                                                                                        <div class="source_Img d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/singal-user-icon.svg" class="w-100" alt="multi source"></div>
+                                                                                        <div class="text-truncate">Phan Lê Mai Lan</div>
+                                                                                        <div class="form-check p-0 scopcheck m-0"><input class="form-check-input m-0" type="checkbox" id="scop18" value="" hidden><label for="scop18" class="view justify-content-center align-items-center"><span class="source_Img icon scope d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></label></div>
+                                                                                    </div>
+                                                                                    <div class="userItem sourceheading subheding d-flex align-items-center gap-1">
+                                                                                        <div class="source_Img d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/singal-user-icon.svg" class="w-100" alt="multi source"></div>
+                                                                                        <div class="text-truncate">Phan Lê Mai Lan</div>
+                                                                                        <div class="form-check p-0 scopcheck m-0"><input class="form-check-input m-0" type="checkbox" id="scop19" value="" hidden><label for="scop19" class="view justify-content-center align-items-center"><span class="source_Img icon scope d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></label></div>
+                                                                                    </div>
+                                                                                    <div class="userItem sourceheading subheding d-flex align-items-center gap-1">
+                                                                                        <div class="source_Img d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/singal-user-icon.svg" class="w-100" alt="multi source"></div>
+                                                                                        <div class="text-truncate">Phan Lê Mai Lan</div>
+                                                                                        <div class="form-check p-0 scopcheck m-0"><input class="form-check-input m-0" type="checkbox" id="scop20" value="" hidden><label for="scop20" class="view justify-content-center align-items-center"><span class="source_Img icon scope d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></label></div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="accordion-item bg-transparent text-white border-0">
+                                                                            <div class="accordion-header">
+                                                                                <button class="accordion-button shadow-none border-0 text-white rounded-0 p-0 border-0 bg-transparent sourceheading subheding d-flex align-items-center gap-1 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                                                    <span class="source_Img d-flex align-items-center justify-content-center"><img src="assets/image/icon/L_line.svg" class="w-100" alt="multi source"></span><span class="source_Img  d-flex align-items-center justify-content-center"><img src="assets/image/icon/pages.svg" class="w-100" alt="multi source"></span>Page
+                                                                                </button>
+                                                                            </div>
+                                                                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                                                                <div class="accordion-body ps-5 py-0 pe-0 d-flex flex-column gap-2">
+                                                                                    <div class="userItem sourceheading subheding d-flex align-items-center gap-1">
+                                                                                        <div class="source_Img d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/singal-user-icon.svg" class="w-100" alt="multi source"></div>
+                                                                                        <div class="text-truncate">Phan Lê Mai Lan</div>
+                                                                                        <div class="form-check p-0 scopcheck m-0"><input class="form-check-input m-0" type="checkbox" id="scop01" value="" hidden checked><label for="scop01" class="view justify-content-center align-items-center"><span class="source_Img icon scope d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></label></div>
+                                                                                    </div>
+                                                                                    <div class="userItem sourceheading subheding d-flex align-items-center gap-1">
+                                                                                        <div class="source_Img d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/singal-user-icon.svg" class="w-100" alt="multi source"></div>
+                                                                                        <div class="text-truncate">Phan Lê Mai Lan</div>
+                                                                                        <div class="form-check p-0 scopcheck m-0"><input class="form-check-input m-0" type="checkbox" id="scop02" value="" hidden><label for="scop02" class="view justify-content-center align-items-center"><span class="source_Img icon scope d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></label></div>
+                                                                                    </div>
+                                                                                    <div class="userItem sourceheading subheding d-flex align-items-center gap-1">
+                                                                                        <div class="source_Img d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/singal-user-icon.svg" class="w-100" alt="multi source"></div>
+                                                                                        <div class="text-truncate">Phan Lê Mai Lan</div>
+                                                                                        <div class="form-check p-0 scopcheck m-0"><input class="form-check-input m-0" type="checkbox" id="scop03" value="" hidden><label for="scop03" class="view justify-content-center align-items-center"><span class="source_Img icon scope d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></label></div>
+                                                                                    </div>
+                                                                                    <div class="userItem sourceheading subheding d-flex align-items-center gap-1">
+                                                                                        <div class="source_Img d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/singal-user-icon.svg" class="w-100" alt="multi source"></div>
+                                                                                        <div class="text-truncate">Phan Lê Mai Lan</div>
+                                                                                        <div class="form-check p-0 scopcheck m-0"><input class="form-check-input m-0" type="checkbox" id="scop04" value="" hidden><label for="scop04" class="view justify-content-center align-items-center"><span class="source_Img icon scope d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></label></div>
+                                                                                    </div>
+                                                                                    <div class="userItem sourceheading subheding d-flex align-items-center gap-1">
+                                                                                        <div class="source_Img d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/singal-user-icon.svg" class="w-100" alt="multi source"></div>
+                                                                                        <div class="text-truncate">Phan Lê Mai Lan</div>
+                                                                                        <div class="form-check p-0 scopcheck m-0"><input class="form-check-input m-0" type="checkbox" id="scop05" value="" hidden><label for="scop05" class="view justify-content-center align-items-center"><span class="source_Img icon scope d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></label></div>
+                                                                                    </div>
+                                                                                    <div class="userItem sourceheading subheding d-flex align-items-center gap-1">
+                                                                                        <div class="source_Img d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/singal-user-icon.svg" class="w-100" alt="multi source"></div>
+                                                                                        <div class="text-truncate">Phan Lê Mai Lan</div>
+                                                                                        <div class="form-check p-0 scopcheck m-0"><input class="form-check-input m-0" type="checkbox" id="scop06" value="" hidden checked><label for="scop06" class="view justify-content-center align-items-center"><span class="source_Img icon scope d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></label></div>
+                                                                                    </div>
+                                                                                    <div class="userItem sourceheading subheding d-flex align-items-center gap-1">
+                                                                                        <div class="source_Img d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/singal-user-icon.svg" class="w-100" alt="multi source"></div>
+                                                                                        <div class="text-truncate">Phan Lê Mai Lan</div>
+                                                                                        <div class="form-check p-0 scopcheck m-0"><input class="form-check-input m-0" type="checkbox" id="scop07" value="" hidden><label for="scop07" class="view justify-content-center align-items-center"><span class="source_Img icon scope d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></label></div>
+                                                                                    </div>
+                                                                                    <div class="userItem sourceheading subheding d-flex align-items-center gap-1">
+                                                                                        <div class="source_Img d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/singal-user-icon.svg" class="w-100" alt="multi source"></div>
+                                                                                        <div class="text-truncate">Phan Lê Mai Lan</div>
+                                                                                        <div class="form-check p-0 scopcheck m-0"><input class="form-check-input m-0" type="checkbox" id="scop08" value="" hidden><label for="scop08" class="view justify-content-center align-items-center"><span class="source_Img icon scope d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></label></div>
+                                                                                    </div>
+                                                                                    <div class="userItem sourceheading subheding d-flex align-items-center gap-1">
+                                                                                        <div class="source_Img d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/singal-user-icon.svg" class="w-100" alt="multi source"></div>
+                                                                                        <div class="text-truncate">Phan Lê Mai Lan</div>
+                                                                                        <div class="form-check p-0 scopcheck m-0"><input class="form-check-input m-0" type="checkbox" id="scop09" value="" hidden><label for="scop09" class="view justify-content-center align-items-center"><span class="source_Img icon scope d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></label></div>
+                                                                                    </div>
+                                                                                    <div class="userItem sourceheading subheding d-flex align-items-center gap-1">
+                                                                                        <div class="source_Img d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/singal-user-icon.svg" class="w-100" alt="multi source"></div>
+                                                                                        <div class="text-truncate">Phan Lê Mai Lan</div>
+                                                                                        <div class="form-check p-0 scopcheck m-0"><input class="form-check-input m-0" type="checkbox" id="scop010" value="" hidden><label for="scop010" class="view justify-content-center align-items-center"><span class="source_Img icon scope d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></label></div>
+                                                                                    </div>
+                                                                                    <div class="userItem sourceheading subheding d-flex align-items-center gap-1">
+                                                                                        <div class="source_Img d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/singal-user-icon.svg" class="w-100" alt="multi source"></div>
+                                                                                        <div class="text-truncate">Phan Lê Mai Lan</div>
+                                                                                        <div class="form-check p-0 scopcheck m-0"><input class="form-check-input m-0" type="checkbox" id="scop011" value="" hidden><label for="scop011" class="view justify-content-center align-items-center"><span class="source_Img icon scope d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></label></div>
+                                                                                    </div>
+                                                                                    <div class="userItem sourceheading subheding d-flex align-items-center gap-1">
+                                                                                        <div class="source_Img d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/singal-user-icon.svg" class="w-100" alt="multi source"></div>
+                                                                                        <div class="text-truncate">Phan Lê Mai Lan</div>
+                                                                                        <div class="form-check p-0 scopcheck m-0"><input class="form-check-input m-0" type="checkbox" id="scop012" value="" hidden checked><label for="scop012" class="view justify-content-center align-items-center"><span class="source_Img icon scope d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></label></div>
+                                                                                    </div>
+                                                                                    <div class="userItem sourceheading subheding d-flex align-items-center gap-1">
+                                                                                        <div class="source_Img d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/singal-user-icon.svg" class="w-100" alt="multi source"></div>
+                                                                                        <div class="text-truncate">Phan Lê Mai Lan</div>
+                                                                                        <div class="form-check p-0 scopcheck m-0"><input class="form-check-input m-0" type="checkbox" id="scop013" value="" hidden><label for="scop013" class="view justify-content-center align-items-center"><span class="source_Img icon scope d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></label></div>
+                                                                                    </div>
+                                                                                    <div class="userItem sourceheading subheding d-flex align-items-center gap-1">
+                                                                                        <div class="source_Img d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/singal-user-icon.svg" class="w-100" alt="multi source"></div>
+                                                                                        <div class="text-truncate">Phan Lê Mai Lan</div>
+                                                                                        <div class="form-check p-0 scopcheck m-0"><input class="form-check-input m-0" type="checkbox" id="scop014" value="" hidden><label for="scop014" class="view justify-content-center align-items-center"><span class="source_Img icon scope d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></label></div>
+                                                                                    </div>
+                                                                                    <div class="userItem sourceheading subheding d-flex align-items-center gap-1">
+                                                                                        <div class="source_Img d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/singal-user-icon.svg" class="w-100" alt="multi source"></div>
+                                                                                        <div class="text-truncate">Phan Lê Mai Lan</div>
+                                                                                        <div class="form-check p-0 scopcheck m-0"><input class="form-check-input m-0" type="checkbox" id="scop015" value="" hidden><label for="scop015" class="view justify-content-center align-items-center"><span class="source_Img icon scope d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></label></div>
+                                                                                    </div>
+                                                                                    <div class="userItem sourceheading subheding d-flex align-items-center gap-1">
+                                                                                        <div class="source_Img d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/singal-user-icon.svg" class="w-100" alt="multi source"></div>
+                                                                                        <div class="text-truncate">Phan Lê Mai Lan</div>
+                                                                                        <div class="form-check p-0 scopcheck m-0"><input class="form-check-input m-0" type="checkbox" id="scop016" value="" hidden><label for="scop016" class="view justify-content-center align-items-center"><span class="source_Img icon scope d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></label></div>
+                                                                                    </div>
+                                                                                    <div class="userItem sourceheading subheding d-flex align-items-center gap-1">
+                                                                                        <div class="source_Img d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/singal-user-icon.svg" class="w-100" alt="multi source"></div>
+                                                                                        <div class="text-truncate">Phan Lê Mai Lan</div>
+                                                                                        <div class="form-check p-0 scopcheck m-0"><input class="form-check-input m-0" type="checkbox" id="scop017" value="" hidden><label for="scop017" class="view justify-content-center align-items-center"><span class="source_Img icon scope d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></label></div>
+                                                                                    </div>
+                                                                                    <div class="userItem sourceheading subheding d-flex align-items-center gap-1">
+                                                                                        <div class="source_Img d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/singal-user-icon.svg" class="w-100" alt="multi source"></div>
+                                                                                        <div class="text-truncate">Phan Lê Mai Lan</div>
+                                                                                        <div class="form-check p-0 scopcheck m-0"><input class="form-check-input m-0" type="checkbox" id="scop018" value="" hidden><label for="scop018" class="view justify-content-center align-items-center"><span class="source_Img icon scope d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></label></div>
+                                                                                    </div>
+                                                                                    <div class="userItem sourceheading subheding d-flex align-items-center gap-1">
+                                                                                        <div class="source_Img d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/singal-user-icon.svg" class="w-100" alt="multi source"></div>
+                                                                                        <div class="text-truncate">Phan Lê Mai Lan</div>
+                                                                                        <div class="form-check p-0 scopcheck m-0"><input class="form-check-input m-0" type="checkbox" id="scop019" value="" hidden><label for="scop019" class="view justify-content-center align-items-center"><span class="source_Img icon scope d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></label></div>
+                                                                                    </div>
+                                                                                    <div class="userItem sourceheading subheding d-flex align-items-center gap-1">
+                                                                                        <div class="source_Img d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/singal-user-icon.svg" class="w-100" alt="multi source"></div>
+                                                                                        <div class="text-truncate">Phan Lê Mai Lan</div>
+                                                                                        <div class="form-check p-0 scopcheck m-0"><input class="form-check-input m-0" type="checkbox" id="scop020" value="" hidden><label for="scop020" class="view justify-content-center align-items-center"><span class="source_Img icon scope d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></label></div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="accordion-item bg-transparent text-white border-0">
+                                                                            <div class="accordion-header">
+                                                                                <button class="accordion-button shadow-none border-0 text-white rounded-0 p-0 border-0 bg-transparent sourceheading subheding d-flex align-items-center gap-1 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                                                    <span class="source_Img d-flex align-items-center justify-content-center"><img src="assets/image/icon/L_line.svg" class="w-100" alt="multi source"></span><span class="source_Img  d-flex align-items-center justify-content-center"><img src="assets/image/icon/group.svg" class="w-100" alt="multi source"></span>Group
+                                                                                </button>
+                                                                            </div>
+                                                                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                                                                <div class="accordion-body ps-5 py-0 pe-0 d-flex flex-column gap-2">
+                                                                                    <div class="userItem sourceheading subheding d-flex align-items-center gap-1">
+                                                                                        <div class="source_Img d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/singal-user-icon.svg" class="w-100" alt="multi source"></div>
+                                                                                        <div class="text-truncate">Phan Lê Mai Lan</div>
+                                                                                        <div class="form-check p-0 scopcheck m-0"><input class="form-check-input m-0" type="checkbox" id="scop011" value="" hidden checked><label for="scop011" class="view justify-content-center align-items-center"><span class="source_Img icon scope d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></label></div>
+                                                                                    </div>
+                                                                                    <div class="userItem sourceheading subheding d-flex align-items-center gap-1">
+                                                                                        <div class="source_Img d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/singal-user-icon.svg" class="w-100" alt="multi source"></div>
+                                                                                        <div class="text-truncate">Phan Lê Mai Lan</div>
+                                                                                        <div class="form-check p-0 scopcheck m-0"><input class="form-check-input m-0" type="checkbox" id="scop012" value="" hidden><label for="scop012" class="view justify-content-center align-items-center"><span class="source_Img icon scope d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></label></div>
+                                                                                    </div>
+                                                                                    <div class="userItem sourceheading subheding d-flex align-items-center gap-1">
+                                                                                        <div class="source_Img d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/singal-user-icon.svg" class="w-100" alt="multi source"></div>
+                                                                                        <div class="text-truncate">Phan Lê Mai Lan</div>
+                                                                                        <div class="form-check p-0 scopcheck m-0"><input class="form-check-input m-0" type="checkbox" id="scop013" value="" hidden><label for="scop013" class="view justify-content-center align-items-center"><span class="source_Img icon scope d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></label></div>
+                                                                                    </div>
+                                                                                    <div class="userItem sourceheading subheding d-flex align-items-center gap-1">
+                                                                                        <div class="source_Img d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/singal-user-icon.svg" class="w-100" alt="multi source"></div>
+                                                                                        <div class="text-truncate">Phan Lê Mai Lan</div>
+                                                                                        <div class="form-check p-0 scopcheck m-0"><input class="form-check-input m-0" type="checkbox" id="scop014" value="" hidden><label for="scop014" class="view justify-content-center align-items-center"><span class="source_Img icon scope d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></label></div>
+                                                                                    </div>
+                                                                                    <div class="userItem sourceheading subheding d-flex align-items-center gap-1">
+                                                                                        <div class="source_Img d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/singal-user-icon.svg" class="w-100" alt="multi source"></div>
+                                                                                        <div class="text-truncate">Phan Lê Mai Lan</div>
+                                                                                        <div class="form-check p-0 scopcheck m-0"><input class="form-check-input m-0" type="checkbox" id="scop015" value="" hidden><label for="scop015" class="view justify-content-center align-items-center"><span class="source_Img icon scope d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></label></div>
+                                                                                    </div>
+                                                                                    <div class="userItem sourceheading subheding d-flex align-items-center gap-1">
+                                                                                        <div class="source_Img d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/singal-user-icon.svg" class="w-100" alt="multi source"></div>
+                                                                                        <div class="text-truncate">Phan Lê Mai Lan</div>
+                                                                                        <div class="form-check p-0 scopcheck m-0"><input class="form-check-input m-0" type="checkbox" id="scop016" value="" hidden checked><label for="scop016" class="view justify-content-center align-items-center"><span class="source_Img icon scope d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></label></div>
+                                                                                    </div>
+                                                                                    <div class="userItem sourceheading subheding d-flex align-items-center gap-1">
+                                                                                        <div class="source_Img d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/singal-user-icon.svg" class="w-100" alt="multi source"></div>
+                                                                                        <div class="text-truncate">Phan Lê Mai Lan</div>
+                                                                                        <div class="form-check p-0 scopcheck m-0"><input class="form-check-input m-0" type="checkbox" id="scop017" value="" hidden><label for="scop017" class="view justify-content-center align-items-center"><span class="source_Img icon scope d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></label></div>
+                                                                                    </div>
+                                                                                    <div class="userItem sourceheading subheding d-flex align-items-center gap-1">
+                                                                                        <div class="source_Img d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/singal-user-icon.svg" class="w-100" alt="multi source"></div>
+                                                                                        <div class="text-truncate">Phan Lê Mai Lan</div>
+                                                                                        <div class="form-check p-0 scopcheck m-0"><input class="form-check-input m-0" type="checkbox" id="scop018" value="" hidden><label for="scop018" class="view justify-content-center align-items-center"><span class="source_Img icon scope d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></label></div>
+                                                                                    </div>
+                                                                                    <div class="userItem sourceheading subheding d-flex align-items-center gap-1">
+                                                                                        <div class="source_Img d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/singal-user-icon.svg" class="w-100" alt="multi source"></div>
+                                                                                        <div class="text-truncate">Phan Lê Mai Lan</div>
+                                                                                        <div class="form-check p-0 scopcheck m-0"><input class="form-check-input m-0" type="checkbox" id="scop019" value="" hidden><label for="scop019" class="view justify-content-center align-items-center"><span class="source_Img icon scope d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></label></div>
+                                                                                    </div>
+                                                                                    <div class="userItem sourceheading subheding d-flex align-items-center gap-1">
+                                                                                        <div class="source_Img d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/singal-user-icon.svg" class="w-100" alt="multi source"></div>
+                                                                                        <div class="text-truncate">Phan Lê Mai Lan</div>
+                                                                                        <div class="form-check p-0 scopcheck m-0"><input class="form-check-input m-0" type="checkbox" id="scop0110" value="" hidden><label for="scop0110" class="view justify-content-center align-items-center"><span class="source_Img icon scope d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></label></div>
+                                                                                    </div>
+                                                                                    <div class="userItem sourceheading subheding d-flex align-items-center gap-1">
+                                                                                        <div class="source_Img d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/singal-user-icon.svg" class="w-100" alt="multi source"></div>
+                                                                                        <div class="text-truncate">Phan Lê Mai Lan</div>
+                                                                                        <div class="form-check p-0 scopcheck m-0"><input class="form-check-input m-0" type="checkbox" id="scop0111" value="" hidden><label for="scop0111" class="view justify-content-center align-items-center"><span class="source_Img icon scope d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></label></div>
+                                                                                    </div>
+                                                                                    <div class="userItem sourceheading subheding d-flex align-items-center gap-1">
+                                                                                        <div class="source_Img d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/singal-user-icon.svg" class="w-100" alt="multi source"></div>
+                                                                                        <div class="text-truncate">Phan Lê Mai Lan</div>
+                                                                                        <div class="form-check p-0 scopcheck m-0"><input class="form-check-input m-0" type="checkbox" id="scop0112" value="" hidden checked><label for="scop0112" class="view justify-content-center align-items-center"><span class="source_Img icon scope d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></label></div>
+                                                                                    </div>
+                                                                                    <div class="userItem sourceheading subheding d-flex align-items-center gap-1">
+                                                                                        <div class="source_Img d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/singal-user-icon.svg" class="w-100" alt="multi source"></div>
+                                                                                        <div class="text-truncate">Phan Lê Mai Lan</div>
+                                                                                        <div class="form-check p-0 scopcheck m-0"><input class="form-check-input m-0" type="checkbox" id="scop0113" value="" hidden><label for="scop0113" class="view justify-content-center align-items-center"><span class="source_Img icon scope d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></label></div>
+                                                                                    </div>
+                                                                                    <div class="userItem sourceheading subheding d-flex align-items-center gap-1">
+                                                                                        <div class="source_Img d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/singal-user-icon.svg" class="w-100" alt="multi source"></div>
+                                                                                        <div class="text-truncate">Phan Lê Mai Lan</div>
+                                                                                        <div class="form-check p-0 scopcheck m-0"><input class="form-check-input m-0" type="checkbox" id="scop0114" value="" hidden><label for="scop0114" class="view justify-content-center align-items-center"><span class="source_Img icon scope d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></label></div>
+                                                                                    </div>
+                                                                                    <div class="userItem sourceheading subheding d-flex align-items-center gap-1">
+                                                                                        <div class="source_Img d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/singal-user-icon.svg" class="w-100" alt="multi source"></div>
+                                                                                        <div class="text-truncate">Phan Lê Mai Lan</div>
+                                                                                        <div class="form-check p-0 scopcheck m-0"><input class="form-check-input m-0" type="checkbox" id="scop0115" value="" hidden><label for="scop0115" class="view justify-content-center align-items-center"><span class="source_Img icon scope d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></label></div>
+                                                                                    </div>
+                                                                                    <div class="userItem sourceheading subheding d-flex align-items-center gap-1">
+                                                                                        <div class="source_Img d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/singal-user-icon.svg" class="w-100" alt="multi source"></div>
+                                                                                        <div class="text-truncate">Phan Lê Mai Lan</div>
+                                                                                        <div class="form-check p-0 scopcheck m-0"><input class="form-check-input m-0" type="checkbox" id="scop0116" value="" hidden><label for="scop0116" class="view justify-content-center align-items-center"><span class="source_Img icon scope d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></label></div>
+                                                                                    </div>
+                                                                                    <div class="userItem sourceheading subheding d-flex align-items-center gap-1">
+                                                                                        <div class="source_Img d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/singal-user-icon.svg" class="w-100" alt="multi source"></div>
+                                                                                        <div class="text-truncate">Phan Lê Mai Lan</div>
+                                                                                        <div class="form-check p-0 scopcheck m-0"><input class="form-check-input m-0" type="checkbox" id="scop0117" value="" hidden><label for="scop0117" class="view justify-content-center align-items-center"><span class="source_Img icon scope d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></label></div>
+                                                                                    </div>
+                                                                                    <div class="userItem sourceheading subheding d-flex align-items-center gap-1">
+                                                                                        <div class="source_Img d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/singal-user-icon.svg" class="w-100" alt="multi source"></div>
+                                                                                        <div class="text-truncate">Phan Lê Mai Lan</div>
+                                                                                        <div class="form-check p-0 scopcheck m-0"><input class="form-check-input m-0" type="checkbox" id="scop0118" value="" hidden><label for="scop0118" class="view justify-content-center align-items-center"><span class="source_Img icon scope d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></label></div>
+                                                                                    </div>
+                                                                                    <div class="userItem sourceheading subheding d-flex align-items-center gap-1">
+                                                                                        <div class="source_Img d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/singal-user-icon.svg" class="w-100" alt="multi source"></div>
+                                                                                        <div class="text-truncate">Phan Lê Mai Lan</div>
+                                                                                        <div class="form-check p-0 scopcheck m-0"><input class="form-check-input m-0" type="checkbox" id="scop0119" value="" hidden><label for="scop0119" class="view justify-content-center align-items-center"><span class="source_Img icon scope d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></label></div>
+                                                                                    </div>
+                                                                                    <div class="userItem sourceheading subheding d-flex align-items-center gap-1">
+                                                                                        <div class="source_Img d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/singal-user-icon.svg" class="w-100" alt="multi source"></div>
+                                                                                        <div class="text-truncate">Phan Lê Mai Lan</div>
+                                                                                        <div class="form-check p-0 scopcheck m-0"><input class="form-check-input m-0" type="checkbox" id="scop0120" value="" hidden><label for="scop0120" class="view justify-content-center align-items-center"><span class="source_Img icon scope d-inline-flex align-items-center justify-content-center"><img src="assets/image/icon/focus.svg" class="w100" alt="view"></span></label></div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-9 h-100 sourcetab_-table ">
+                                            <div class="card top_post h-100 levelCard">
+                                                <div class="card-body h-100">
+                                                    <div class="row flex-column flex-nowrap h-100 list gap-0">
+                                                        <div class="col-12">
+                                                            <div class="card_title">
+                                                                <div class="cuntryflage">Connect-link graph</div>
+                                                            </div> 
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- ** Source Tab End -->
+                            </div>
+                        </div>
+                    </div>
+                    <!--! * Dashboard Chart End -->
+                </div>
+            </div>
+            <!--! * Main DashBoard Start -->
+        </div>
+    </main>
+    <!-- *** Bootstrap Js ***** -->
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- *** Select2 Js *** -->
+    <script src="assets/libs/select2/select2.min.js"></script>
+    <!-- **** Custom Js ***** -->
+    <script src="assets/js/custom.js"></script>
+
+</body>
+</html>

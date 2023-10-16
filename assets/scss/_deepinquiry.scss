@@ -1,0 +1,44 @@
+.deepinquiryPage {
+    & .accordionbodypart {
+        & .sourceheading {
+            & .source_Img {
+                width: 20px;
+                height: 20px;
+                min-width: 20px;
+            }
+            color: var(--white);
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 140%; /* 19.6px */
+            &.facebook{
+                color: var(--button);
+            }
+            &.subheding{
+                line-height: 150%; /* 21px */
+                letter-spacing: -0.1px;
+                font-weight: 400;
+            }
+        }
+        & .trackedAccount {
+            & .accordiongroup {
+                & .accordion-item {
+                    & .accordion-header {
+                        & .accordion-button {
+                            &::after{
+                                display: none;
+                            }
+                        }
+                    }
+                    & .accordion-body {
+                        & .userItem {
+                            & .view {
+                                margin-bottom: -3px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

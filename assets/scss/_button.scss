@@ -349,6 +349,13 @@
         & label{
             cursor: pointer;
             padding: 0px 6px;
+            & .icon{
+                &.scope {
+                    & img {
+                        filter: brightness(0.5);
+                    }
+                }
+            }
         }
     }
 }
