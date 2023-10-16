@@ -65,7 +65,7 @@
             width: 100%;
             height: auto;
         }
-        g.node2 ellipse {
+        g.node2 ellipse, g.node3 ellipse {
             transition: all 0.5s ease-in-out;
             fill: var(--netural-dark) !important;
             cursor: pointer !important;
@@ -74,10 +74,16 @@
             transition: all 0.5s ease-in-out;
             fill: var(--reg-item) !important;
         }
-        g.node2 rect {
+        g.node2 rect, g.node3 rect {
             cursor: pointer;
         }
-        
+        g.node3.animation_color ellipse{
+            transition: all 0.5s ease-in-out;
+            fill: var(--reg-item) !important;
+            // &.grayellipse{
+            //     fill: var(--netural-dark) !important;
+            // }
+        }
     }
     &.nonzomm_btn{
         & .zoom-buttons-map {
@@ -217,4 +223,10 @@
     color: var(--white-50);
     padding-bottom: 12px;
     display: none;
+}
+
+.newsFilterCard{
+    &.geomapfilter {
+        max-width: 286px;
+    }
 }

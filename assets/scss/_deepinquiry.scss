@@ -14,6 +14,9 @@
             &.facebook{
                 color: var(--button);
             }
+            &.youtube{
+                color: var(--theme-red);
+            }
             &.subheding{
                 line-height: 150%; /* 21px */
                 letter-spacing: -0.1px;
@@ -38,6 +41,140 @@
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+
+.mapsides {
+    & .topnavtabs {
+        height: 42px;
+    }
+    & .deepMapcard {
+        height: calc(100% - 42px);
+    }
+    width: calc(100% - 328px);
+}
+
+.topnavtabs {
+    & .nav{
+        & .nav-link {
+            display: flex;
+            padding: 5px 12px;
+            justify-content: center;
+            align-items: center;
+            gap: 4px;
+            border-radius: 8px 8px 0px 0px;
+            background: var(--balck--light);  
+            color: var(--netural-dark);
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%; /* 21px */
+            letter-spacing: -0.5px;
+            margin-right: 1.5px;
+            transition: all ease-in-out 0.3s;
+            &.active,&:hover {
+                background: var(--neutralBlack);
+                color: var(--white);
+                & .closeicon {
+                    & img {
+                        filter: brightness(10);
+                    }
+                }
+            }
+            & .closeicon {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 32px;
+                height: 32px;
+                min-width: 32px;
+                & img {
+                    width: 100%;
+                    transition: all ease-in-out 0.3s;
+                }
+            }
+        }
+    }
+}
+
+.datapoolCard {
+    max-width: 320px;
+    width: 100%;
+}
+
+.deepMapcard {
+    & .innerbodymap {
+        border-radius: 8px;
+        background-color: var(--superDark);
+        padding: 12px;
+    }
+}
+
+.bottomtabs {
+    border-radius: 8px;
+    padding: 10px 12px;
+    background-color: var(--black--dark);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 14px;
+    & .items {
+        gap: 10px;
+        & .eventImg {
+            width: 40px;
+            height: 40px;
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            & img {
+                width: 100%;
+            }
+            &.dotedImg{
+                gap: 2px;
+                & span{
+                    display: flex;
+                    height: 3.5px;
+                    width: 3.5px;
+                    min-width: 3.5px;
+                    background-color: var(--reg-item);
+                }
+            }
+        }
+        & span {
+            color: var(--white,);
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%; /* 21px */
+            letter-spacing: -0.5px;
+        }
+    }
+}
+
+.geomapfilter {
+    &.card{
+        border: 2px solid var(--theme1);
+        & .card-body {
+            & .userItem {
+                & .source_Img {
+                    width: 20px;
+                    height: 20px;
+                    min-width: 20px;
+                }
+                & .username {
+                    overflow: hidden;
+                    color: var(--white);
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 150%; /* 21px */
+                    letter-spacing: -0.5px;
+                }
+                cursor: pointer;
             }
         }
     }

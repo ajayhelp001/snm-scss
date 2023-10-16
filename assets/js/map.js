@@ -86,4 +86,38 @@ $('.node2').on('click', function() {
     }
 });
 
+    $('.node3').on('click', function() {
+                
+        const $parent = $(this); // Get the parent 'g' element    
+
+        var location = $parent.data('location');
+        var district = $parent.data('district');
+        var county = $parent.data('county');
+        var city = $parent.data('city');
+        var country = $parent.data('country');
+        var day = $parent.data('day');
+        var time = $parent.data('time');
+        var devices = $parent.data('devices');
+        var wifiid = $parent.data('wifiid');
+        var mac = $parent.data('mac');
+        var ipaddress = $parent.data('ipaddress');
+        var port = $parent.data('port');
+        
+        var html_geo_info_node_three = '<div class="row gap-3"><div class="col-12"><div class="postHeading">Post location</div><div class="row gap-1"><div class="col-12"><div class="row align-items-center gx-2"><div class="col-5 leftHeading">Location</div><div class="col-7 sourceValue">'+location+'</div></div></div><div class="col-12"><div class="row align-items-center gx-2"><div class="col-5 leftHeading">District</div><div class="col-7 sourceValue">'+district+'</div></div></div><div class="col-12"><div class="row align-items-center gx-2"><div class="col-5 leftHeading">County</div><div class="col-7 sourceValue">'+county+'</div></div></div><div class="col-12"><div class="row align-items-center gx-2"><div class="col-5 leftHeading">City</div><div class="col-7 sourceValue">'+city+'</div></div></div><div class="col-12"><div class="row align-items-center gx-2"><div class="col-5 leftHeading">Country</div><div class="col-7 sourceValue">'+country+'</div></div></div></div></div><div class="col-12"><div class="postHeading">Post timestamp</div><div class="row gap-1"><div class="col-12"><div class="row align-items-center gx-2"><div class="col-5 leftHeading">Day</div><div class="col-7 sourceValue">'+day+'</div></div></div><div class="col-12"><div class="row align-items-center gx-2"><div class="col-5 leftHeading">Time</div><div class="col-7 sourceValue">'+time+'</div></div></div></div></div><div class="col-12"><div class="postHeading">More details</div><div class="row gap-1"><div class="col-12"><div class="row align-items-center gx-2"><div class="col-5 leftHeading">Devices</div><div class="col-7 sourceValue">'+devices+'</div></div></div><div class="col-12"><div class="row align-items-center gx-2"><div class="col-5 leftHeading">Wifi ID</div><div class="col-7 sourceValue">'+wifiid+'</div></div></div><div class="col-12"><div class="row align-items-center gx-2"><div class="col-5 leftHeading">MAC</div><div class="col-7 sourceValue">'+mac+'</div></div></div><div class="col-12"><div class="row align-items-center gx-2"><div class="col-5 leftHeading">IP address</div><div class="col-7 sourceValue">'+ipaddress+'</div></div></div><div class="col-12"><div class="row align-items-center gx-2"><div class="col-5 leftHeading">Port</div><div class="col-7 sourceValue">'+port+'</div></div></div></div></div></div>';    
+        $parent.each(function() {
+            const $ellipse = $(this);
+            var map_profile_id  = $parent.attr('id');
+            if ($parent.hasClass('animation_color')) {                  
+                $parent.removeClass('animation_color');                              
+                $('.userDistentCard .listItem[data-id="'+map_profile_id+'"]').removeClass('active');
+                glo_counter--;
+            } else {            
+                $parent.addClass('animation_color');            
+                $('.userDistentCard .listItem[data-id="'+map_profile_id+'"]').addClass('active');
+                glo_counter++;
+                $('.popupdata').show();            
+                $('.geoInfoCard .card-body > div').html(html_geo_info_node_three);                    
+            }
+        });
+    });
 });
