@@ -10,11 +10,11 @@ var cy = cytoscape({
     .stylesheet()
     .selector("node")
     .css({
-      height: 52.63,
-      width: 52.63,
+      height: 70,
+      width: 70,
       "background-fit": "cover",
-      "border-color": "#8B80FD",
-      "border-width": 2,
+      "border-color": "#3A3A3A",
+      "border-width": 4,
       position: "relative",
     })
     .selector("node::before") /* Pseudo-element for the icon */
@@ -48,47 +48,48 @@ var cy = cytoscape({
     .selector("#phanlemailan")
     .css({
       "background-image":
-        "https://live.staticflickr.com/7272/7633179468_3e19e45a0c_b.jpg",
+        "assets/image/map/MaiLan.png",
     })
     .selector("#twtnews")
     .css({
       "background-image":
-        "https://live.staticflickr.com/1261/1413379559_412a540d29_b.jpg",
+        "assets/image/map/KienKhongNgu.png",
     })
     .selector("#memetipac")
     .css({
       "background-image":
-        "https://live.staticflickr.com/3063/2751740612_af11fb090b_b.jpg",
+        "assets/image/map/genz.png",
     })
     .selector("#trader")
     .css({
       "background-image":
-        "https://live.staticflickr.com/8316/8003798443_32d01257c8_b.jpg",
+        "assets/image/map/Eva.png",
     })
     .selector("#nguyennhuhang")
     .css({
       "background-image":
-        "https://live.staticflickr.com/5109/5817854163_eaccd688f5_b.jpg",
+        "assets/image/map/NguyenNhuHang.png",
     })
     .selector("#traderlollipop")
     .css({
       "background-image":
-        "https://live.staticflickr.com/6098/6224655456_f4c3c98589_b.jpg",
+        "assets/image/map/bikerAnTon.png",
     })
     .selector("#nanapham")
     .css({
       "background-image":
-        "https://live.staticflickr.com/3866/14420309584_78bf471658_b.jpg",
+        "assets/image/map/Nana.png",
     })
     .selector("#kokohalinh")
     .css({
       "background-image":
         "https://live.staticflickr.com/2660/3715569167_7e978e8319_b.jpg",
+        "display": "none",
     })
     .selector("#cotsonggenz")
     .css({
       "background-image":
-        "https://live.staticflickr.com/2660/3715569167_7e978e8319_b.jpg",
+        "assets/image/map/Zane.png",
     })
 
     .selector("node[label]")
@@ -98,7 +99,7 @@ var cy = cytoscape({
     .selector("edge[label]")
     .css({
       label: "data(label)",
-      width: 3,
+      width: 5,
     })
     .selector(".background")
     .css({
@@ -112,7 +113,7 @@ var cy = cytoscape({
       "text-border-width": 0,
       "font-weight": 500,
       "text-border-opacity": 1,
-      "font-size": "12px",
+      "font-size": "25px",
     })
     .selector(".bottom-center")
     .css({
@@ -142,33 +143,33 @@ var cy = cytoscape({
       {
         data: {
           id: "twtnews",
-          label: "TWT News",
+          label: "Kiến Không Ngủ",
           popper: '<i class="fas fa-heart"></i>',
         },
         classes: "background bottom-center",
       },
       {
-        data: { id: "phanlemailan", label: "Phan Lê Mai Lan" },
+        data: { id: "phanlemailan", label: "Phan LêMai Lan" },
         classes: "background bottom-center",
       },
       {
-        data: { id: "memetipac", label: "Meme tươi đến từ rừng Pác Bó" },
+        data: { id: "memetipac", label: "Cột SốngGenZ" },
         classes: "background bottom-center",
       },
       {
-        data: { id: "trader", label: "Trader" },
+        data: { id: "trader", label: "Eva Ma" },
         classes: "background bottom-center",
       },
       {
-        data: { id: "nguyennhuhang", label: "Nguyễn Như Hằng" },
+        data: { id: "nguyennhuhang", label: "NguyễnNhư Hằng" },
         classes: "background bottom-center",
       },
       {
-        data: { id: "traderlollipop", label: "Trader Lollipop" },
+        data: { id: "traderlollipop", label: "Phan LêAn Tôn" },
         classes: "background bottom-center",
       },
       {
-        data: { id: "nanapham", label: "Nana Phạm" },
+        data: { id: "nanapham", label: "Phạm Ngọc Thanh" },
         classes: "background bottom-center",
       },
       {
@@ -176,7 +177,7 @@ var cy = cytoscape({
         classes: "background bottom-center",
       },
       {
-        data: { id: "cotsonggenz", label: "Cột Sống GenZ" },
+        data: { id: "cotsonggenz", label: "ZaneRachel" },
         classes: "background bottom-center",
       },
     ],
@@ -327,15 +328,15 @@ var cy = cytoscape({
   layout: {
     name: "preset",
     positions: {
-      twtnews: { x: 500, y: -200 },
+      twtnews: { x: 400, y: -200 },
       phanlemailan: { x: 0, y: 100 },
-      memetipac: { x: 500, y: -100 },
-      trader: { x: 500, y: 0 },
-      nguyennhuhang: { x: 1000, y: 100 },
-      traderlollipop: { x: 300, y: 220 },
-      nanapham: { x: 500, y: 220 },
-      kokohalinh: { x: 700, y: 220 },
-      cotsonggenz: { x: 500, y: 400 },
+      memetipac: { x: 0, y: 400 },
+      trader: { x: 800, y: 400 },
+      nguyennhuhang: { x: 800, y: 100 },
+      traderlollipop: { x: 300, y: 500 },
+      nanapham: { x: 400, y: 220 },
+      kokohalinh: { x: 600, y: 220 },
+      cotsonggenz: { x: 600, y: 500 },
       // Define positions for other nodes as needed
     },
     directed: true,

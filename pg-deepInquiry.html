@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="assets/libs/bootstrap/css/bootstrap.min.css">
     <!-- ****** Select2 Css -->
     <link href="assets/libs/select2/select2.min.css" rel="stylesheet" />
+    <!-- ****** fonawesome Font -->
+    <link rel="stylesheet" href="assets/libs/fontawesome/css/all.css">
+	<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800;900&family=Bruno+Ace&display=swap" rel="stylesheet">
     <!-- ****** Style Css ***** -->
     <link rel="stylesheet" href="assets/css/style.min.css">
 </head>
@@ -143,8 +146,8 @@
                             <div class="tab-content h-100" id="pills-tabContent">
                                 <!-- ** Source Tab Start -->
                                 <div class="tab-pane fade h-100 show active">
-                                    <div class="row gx-2 overflow-y-auto justify-content-center row-gap-2 h-100 deepinquiryPage">
-                                        <div class="col-auto h-100">
+                                    <div class="gx-2 d-flex overflow-y-auto justify-content-between row-gap-2 h-100 deepinquiryPage">
+                                        <div class="colauto h-100">
                                             <div class="card top_post h-100 levelCard datapoolCard">
                                                 <div class="card-body h-100">
                                                     <div class="row flex-column flex-nowrap h-100 list gap-0">
@@ -846,7 +849,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col h-100 mapsides">
+                                        <div class=" h-100 mapsides">
                                             <nav class="topnavtabs">
                                                 <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
                                                     <button class="nav-link border-0 active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Inquiries #0001 <span class="closeicon"><img src="assets/image/icon/close32.svg" alt="close"></span></button>
@@ -896,6 +899,7 @@
                                                                         </div>
                                                                     </div>
                                                                     <!-- * List Side end -->
+                                                                    
                                                                 </div>
                                                                 <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">map2</div>
                                                                 <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">...</div>
@@ -936,10 +940,16 @@
     </main>
     <!-- *** Bootstrap Js ***** -->
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=Promise,fetch"></script>
     <!-- *** Select2 Js *** -->
     <script src="assets/libs/select2/select2.min.js"></script>
+    <!-- *** Cytoscape Map Js *** -->
+    <script src="https://js.cytoscape.org/js/cytoscape.min.js"></script>
+	<script src="assets/libs/cytoscape/cytoscape-popper.js"></script>
+    
     <!-- **** Custom Js ***** -->
     <script src="assets/js/custom.js"></script>
+    <script src="assets/js/deepinquirymap.js"></script>
 
 </body>
 </html>
