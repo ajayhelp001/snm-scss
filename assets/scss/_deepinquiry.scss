@@ -124,6 +124,8 @@
     & .items {
         gap: 10px;
         & .eventImg {
+            box-shadow: 0px 0px 4.99995px 0px rgba(0, 0, 0, 0.25);
+            border-radius: 10px;
             width: 40px;
             height: 40px;
             padding: 5px;
@@ -134,6 +136,7 @@
                 width: 100%;
             }
             &.dotedImg{
+                box-shadow: none;
                 gap: 2px;
                 & span{
                     display: flex;
@@ -176,6 +179,66 @@
                 }
                 cursor: pointer;
             }
+        }
+    }
+}
+
+
+.deepinquirymapPage {
+    position: relative;
+    z-index: 1;
+    & .dashboard_Side {
+        background: var(--black--dark);
+    }
+}
+
+div[data-tippy-root] {
+    z-index: 1 !important;
+}
+
+.tippy-box {
+    position: relative;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 0px;
+    font-size: 14px;
+    line-height: 1.4;
+    white-space: normal;
+    outline: 0;
+    transition-property: transform,visibility,opacity;
+    & .tippy-arrow {
+        &::before{
+            display: none;
+        }
+    }
+    & .tippy-content {
+        & .labels {
+            padding: 4px 8px;
+            border-radius: 4px;
+            background-color: var(--balck--light);
+            overflow: hidden;
+            text-align: center;
+            text-overflow: ellipsis;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 140%; /* 16.8px */
+        }
+    }
+    & .iconImg {
+        width: 20px;
+    }
+    & .tippysingalIcon {
+        padding: 5px;
+        border-radius: 10px;
+        background-color: var(--balck--light);
+        width: 40px;
+        height: 40px;
+        & img{
+            width: 100%;
+        }
+        &.regItem {
+            background-color: var(--reg-item);
         }
     }
 }

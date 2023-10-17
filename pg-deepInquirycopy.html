@@ -901,7 +901,7 @@
                                                                     <!-- * List Side end -->
                                                                     <!-- Chart Start -->
                                                                     <div class="cytoscape_chart_container scroll-vh">
-                                                                        <div class="relation-nodebutton">
+                                                                        <!-- <div class="relation-nodebutton">
                                                                             <button class="btn btn-fill btn-primary d-flex align-items-center">
                                                                                 <span class="mr-8">
                                                                                     <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -910,12 +910,21 @@
                                                                                 </span>
                                                                                 Download PDF
                                                                             </button>
-                                                                        </div>
+                                                                        </div> -->
                                                                         <div id="cy" style="height: 500px; width: 100%;"></div>
                                                                     </div>
+                                                                    <div class="zoom-buttons-map d-none">
+                                                                        <button id="zoom-in-button">+</button>
+                                                                        <button id="zoom-out-button">-</button>	
+                                                                    </div>
+                                                    
                                                                     <!-- Chart End -->
                                                                 </div>
-                                                                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">map2</div>
+                                                                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                                                                    <div class="cytoscape_chart_container_four scroll-vh">
+                                                                        <div id="cytoscape_chart_four" style="height: 500px; width: 100%"></div>
+                                                                    </div>
+                                                                </div>
                                                                 <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">...</div>
                                                                 <div class="tab-pane fade" id="nav-contact2" role="tabpanel" aria-labelledby="nav-contact2-tab" tabindex="0">...</div>
                                                                 <div class="tab-pane fade" id="nav-contact3" role="tabpanel" aria-labelledby="nav-contact3-tab" tabindex="0">...</div>
@@ -954,16 +963,19 @@
     </main>
     <!-- *** Bootstrap Js ***** -->
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+
 	<script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=Promise,fetch"></script>
     <!-- *** Select2 Js *** -->
     <script src="assets/libs/select2/select2.min.js"></script>
     <!-- *** Cytoscape Map Js *** -->
+    <script type="text/javascript" src="assets/js/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
     <script src="https://js.cytoscape.org/js/cytoscape.min.js"></script>
 	<script src="assets/libs/cytoscape/cytoscape-popper.js"></script>
     
     <!-- **** Custom Js ***** -->
     <script src="assets/js/custom.js"></script>
     <script src="assets/js/deepinquirymap.js"></script>
-
+    <script src="assets/js/deepinquirymap-four.js"></script>
 </body>
 </html>
