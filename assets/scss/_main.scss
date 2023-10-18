@@ -42,6 +42,9 @@ img {
 .gap-8{
     gap: 8px !important;
 }
+.object_cover{
+    object-fit: cover;
+}
 // ****************** Dashboard Body ***************
 
 
@@ -115,4 +118,42 @@ img {
 
 .cursor {
     cursor: pointer;
+}
+
+@media screen and (max-width: 1600px){
+    .main-dashboard {
+        & .maininner_Dashboard {
+            & .asideBar{
+                width: 100px;
+            }
+            & .dashboard_Side {
+                width: calc(100% - 100px);
+            }
+        }
+    }
+    // *** Search Bar ****
+    .search_bar {
+        & .input-group {
+            // padding: 0px 12px;
+            & .input-group-text, & .form-control {
+            }
+            & .input-group-text{
+                & img{
+                    width: 18px;
+                    height: 18px;
+                }
+            }
+            & .form-control {
+                padding: 5px 8px;
+                font-size: 12px;
+                &::placeholder{
+                }
+            }
+        }
+        &.listSearch {
+        }
+        &.darkbar {
+            min-height: 40px;
+        }
+    }
 }

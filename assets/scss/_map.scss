@@ -230,3 +230,42 @@
         max-width: 286px;
     }
 }
+
+
+
+@media screen and (max-width: 1600px){
+    .mapinformation_card {
+        & .card-body {
+            & .postHeading, & .leftHeading, & .sourceValue{
+            }
+            & .postHeading {
+                font-size: 10px;
+            }
+            & .leftHeading {
+            }
+            & .leftHeading, & .sourceValue{
+                font-size: 14px;
+            }
+            & .sourceValue {
+            }
+        }
+    }
+    .geomapleftinfo{
+        max-width: 300px;
+        & .geoInfoCard{
+            & .card {
+            }
+        }
+    }
+    .overview_image_container {
+        // & .mapline {
+        //     transform: translate(2%, -3.75%);
+        // }
+        // & .overview_map_arrow {
+        //     transform: translate(2%, -3.8%);
+        // }
+        & svg{
+            transform: translate(-40%, -5%);
+        }
+    }
+}

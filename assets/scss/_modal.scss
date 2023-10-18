@@ -826,6 +826,9 @@
     }
     & .tiktokvideo {
         position: relative;
+        & img {
+        object-fit: cover;
+        }
         & .contentBody {
             color: var(--white);
             position: absolute;
@@ -920,6 +923,156 @@
                     cursor: pointer;
                     & .like_img {
                         width: 32px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+// *********** Responsive**************
+
+@media screen and (max-width: 1600px) {
+    .tiktokvideoanalysis{
+        & .videorectengals {
+        }
+        & .tiktokvideo {
+            & img {
+            }
+            & .contentBody {
+                padding: 10px;
+                & .contentside {
+                    padding-right: 5px;
+                    & .tagname {
+                        font-size: 13px;
+                    }
+                    & .title {
+                        font-size: 12px;
+                        line-height: 130%;
+                        & .tags {
+                        }
+                    }
+                    & .music {
+                        & .musicImg {
+                            &::before{
+                            }
+                        }
+                    }
+                }
+                & .iconside {
+                    & .usertitle {
+                        & .user_img {
+                            width: 35.152px;
+                            height: 35.152px;
+                        }
+                        & .addImg {
+                            width: 18px;
+                            height: 18px;
+                        }
+                    }
+                    & .fevrate {
+                        font-size: 10px;
+                        & .like_img {
+                            width: 26px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .videoeditoreGroup {
+        & .card-body {
+            & .timesGroup {
+                // padding-left: 54px;
+                & .timing{
+                    & .videoTimer {
+                    }
+                }
+                & .deviders {
+                    & .bigDevider {
+                        & .deviderItems {
+                        }
+                    }
+                    & .smDevider{
+                        & .smdeviderImg {
+                        }
+                    }
+                }
+            }
+            & .treckersGroup {
+                padding-top: 0.3rem !important;
+                padding-bottom: 0.3rem !important;
+                & .iconside {
+                    width: 45px;
+                    min-width: 45px;
+                    & .icons {
+                        width: 22px;
+                        height: 22px;
+                        min-width: 22px;
+                        & img {
+                        }
+                    }
+                    & .icontext {
+                    }
+                }
+                & .trackerSide {
+                    & .videoTrackLine {
+                    }
+                    & .titleGroup {
+                        & .titleBtn {
+                            min-height: 37px;
+                            padding: 8px 12px;
+                            cursor: pointer;
+                            & .titleImg {
+                            }
+                            & .contents {
+                                font-size: 12px;
+                            }
+                            max-width: 145.5px;
+                            &:hover{
+                            }
+                        }
+        
+                    }
+                    &.treckerFooter {
+                        height: 50px;
+                        & .timingside {
+                            font-size: 12px;
+                            & .lessden {
+                                height: 21px;
+                            }
+                        }
+                        & .videotitlename {
+                            width: calc(100% - 361px);
+                            & .dropdownBtn  {
+                            }
+                            & .videoname {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .innervideoeditor {
+            & .treckerMove {
+                &.timing{
+                    & .videoTimer{
+                        font-size: 11px;
+                        &::before{
+                        }
+                        &::after{
+                            height: 150px;
+                        }
+                    }
+                }
+                &.smtrecker{
+                    & .videoTimer {
+                        &::after{
+                            height: 102px;
+                        }
                     }
                 }
             }

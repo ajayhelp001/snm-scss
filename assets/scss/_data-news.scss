@@ -185,7 +185,7 @@
                                     position: sticky;
                                     top: 0;
                                     &:first-child {
-                                        height: 48px;
+                                        // height: 48px;
                                         width: 48px;
                                         & .form-check {
                                             justify-content: center;
@@ -570,6 +570,22 @@
                 &.post_listTable {
                     & .post_table {
                         & .table {
+                            & thead {
+                                & tr {
+                                    & th {
+                                        &:first-child {
+                                            // height: 35px;
+                                            // width: 40px;
+                                            & .form-check {
+                                            }
+                                        }
+                                        &:nth-child(4) {
+                                            // max-width: 500px;
+                                        }
+                                        // padding: 3px 8px;
+                                    }
+                                }
+                            }
                             & tbody {
                                 & tr {
                                     & td {
@@ -606,6 +622,22 @@
                 &.post_listTable {
                     & .post_table {
                         & .table {
+                            & thead {
+                                & tr {
+                                    & th {
+                                        &:first-child {
+                                            height: 35px;
+                                            width: 40px;
+                                            & .form-check {
+                                            }
+                                        }
+                                        &:nth-child(4) {
+                                            // max-width: 500px;
+                                        }
+                                        padding: 3px 8px;
+                                    }
+                                }
+                            }
                             & tbody {
                                 & tr {
                                     & td {
@@ -621,6 +653,27 @@
                                         & .postContent {
                                             &.bio {
                                                 max-width: 165px;
+                                            }
+                                        }
+                                        & .source {
+                                            font-size: 12px;
+                                            & .logoimg {
+                                                min-width: 27px;
+                                                height: 27px;
+                                                & img {
+                                                }
+                                            }
+                                            & .sourceName {
+                                            }
+                                        }
+                                        & .postContent {
+                                            &.bio {
+                                            }
+                                        }
+                                        & .view{    
+                                            & .icon{
+                                                width: 22px !important;
+                                                height: 22px !important;
                                             }
                                         }
                                     }
@@ -642,6 +695,7 @@
         width: 265px;
     }
 }
+
 }
 
 @media screen and (max-width: 1500px) {
@@ -747,8 +801,8 @@
                     top: 0;
                     z-index: 100;
                     &:first-child {
-                        height: 48px;
-                        width: 48px;
+                        // height: 48px;
+                        // width: 48px;
                         & .form-check {
                             justify-content: center;
                         }
@@ -1664,7 +1718,7 @@
         }
     }
 }
-@media screen and (max-width: 1700px) {
+@media screen and (max-width: 1600px) {
     .informationCard{
         & .socialMetricsCard  {
             &.tiktokvideo_overview{
@@ -1693,6 +1747,36 @@
                                 font-size: 10px;
                             }
                         }
+                    }
+                }
+            }
+        }
+    }
+    .tiktok_video{
+        & .mainpostcard {
+            &.ytubemainVideoPost{
+                & .videoSide {
+                }
+                & .contentSide {
+                }
+            }
+            & .countingGroup {
+                gap: 12px;
+                & .countItem {
+                    & .likeImg {
+                        width: 27px;
+                        height: 27px;
+                    }
+                    & .counting {
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+        & .socialCategoery {
+            & .socialMetricsCard {
+                & .cardbody {
+                    & .categoryes {
                     }
                 }
             }

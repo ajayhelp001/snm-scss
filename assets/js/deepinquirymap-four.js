@@ -3,7 +3,8 @@ var cy = cytoscape({
 
   boxSelectionEnabled: false,
   autounselectify: true,
-
+  zoom: 0.4,
+  pan: { x: 300, y: 150 },
   style: cytoscape.stylesheet()  
   .selector('node')
     .css({
@@ -79,7 +80,7 @@ var cy = cytoscape({
     'font-weight': 500,
     'text-border-opacity': 1,
     'font-size': '12px',
-    'border-style': 'dotted'
+    'border-style': 'solid'
     })
     .selector('.bottom-center')
     .css({
@@ -111,7 +112,7 @@ var cy = cytoscape({
     { "data": { "id": "dinhhoangtung" }, "classes": "background bottom-center" },
     { "data": { "id": "anycar_two" }, "classes": "background bottom-center" },
     { "data": { "id": "dinhngoccham" }, "classes": "background bottom-center" },
-  ],
+  ],    
   "edges": [
     { "data": { "id": "e_four_1", "source": "offb", "target": "dinhhoangtung" } },
     { "data": { "id": "e_four_2", "source": "offb", "target": "dinhngoccham", "arrow": "none", "type": "none" } },			  
@@ -140,7 +141,6 @@ var cy = cytoscape({
 }); // cy init
 
 var edges = cy.elements('.edge');
-
 // Apply a style to the selected edges
 edges.style({
   'line-color': 'blue',
@@ -311,20 +311,20 @@ cy.nodes().on('click', function(event) {
   // E1
   
   
-  var tippye_four_1 = makeTippy(e_four_1, '<div class="tippysingalIcon"><img src="assets/image/icon/groupmember.svg" class="w-100" /></div>');
+  var tippye_four_1 = makeTippy(e_four_1, '<div class="tippysingalIcon network_map_icon"><img src="assets/image/icon/groupmember.svg" class="w-100" /></div>');
   tippye_four_1.show();
 
-  var tippye_four_3 = makeTippy(e_four_3, '<div class="tippysingalIcon regItem"><img src="assets/image/icon/twouser.svg" class="w-100" /></div>');
+  var tippye_four_3 = makeTippy(e_four_3, '<div class="tippysingalIcon network_map_icon regItem"><img src="assets/image/icon/twouser.svg" class="w-100" /></div>');
   tippye_four_3.show();
 
-  var tippye_four_4 = makeTippy(e_four_4, '<div class="tippysingalIcon"><img src="assets/image/icon/groupmember.svg" class="w-100" /></div>');
+  var tippye_four_4 = makeTippy(e_four_4, '<div class="tippysingalIcon network_map_icon"><img src="assets/image/icon/groupmember.svg" class="w-100" /></div>');
   tippye_four_4.show();
 
-  var tippye_four_5 = makeTippy(e_four_5, '<div class="tippysingalIcon"><img src="assets/image/icon/groupmember.svg" class="w-100" /></div>');
+  var tippye_four_5 = makeTippy(e_four_5, '<div class="tippysingalIcon network_map_icon"><img src="assets/image/icon/groupmember.svg" class="w-100" /></div>');
   tippye_four_5.show();
 
   
-  var tippye_four_2 = makeTippy(e_four_2, '<div class="tippysingalIcon"><img src="assets/image/icon/groupmember.svg" class="w-100" /></div>');
+  var tippye_four_2 = makeTippy(e_four_2, '<div class="tippysingalIcon network_map_icon"><img src="assets/image/icon/groupmember.svg" class="w-100" /></div>');
   tippye_four_2.show();
   
 

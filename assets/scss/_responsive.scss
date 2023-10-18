@@ -105,6 +105,9 @@
                                 & tbody {
                                     & .postContent {
                                         max-width: 115px;
+                                        &.singalintrection{
+                                            max-width: 150px;
+                                        }
                                     }
                                 }
                             }
@@ -117,6 +120,47 @@
     .bootomtreackchart {
         display: block
     }
+    .facebook-postDetails-overview{
+        & .mainpostcard{
+            max-width: 400px;
+            &.ytubeAnalysisPost{
+                max-width: 400px;
+            }
+            &.ytubemainPost{
+                // max-width: 676px;
+            }
+            &.ytubeAnalysisPost{
+                // max-width: 420px;
+            }
+            &.ytubemainVideoPost {
+                // max-width: 859PX;
+            }
+        }
+        & .analysisCommentBox{
+            & .originalComment {
+                & .commentitem{
+                    &:hover{
+                        & .leftItemList {
+                            min-width: 200px;
+                        }
+                        & .comment_card {
+                            max-width: 400px;
+                            & .comment_item_Body {
+                            }
+                        }
+                    }
+                    & .leftItemList {
+                        min-width: 300px;
+                    }
+                }
+                & .violationContent{
+                }
+            }
+            & .comment_card{
+                max-width: 400px;
+            }
+        }
+    }
 }
 
 
@@ -126,6 +170,9 @@
             // ***
             & .levelCard  {
                 & .card-body{
+                    & .card_title  {
+                        font-size: 22px;
+                    }
                 }
             }
             // ****
@@ -181,7 +228,7 @@
                                 // font-size: 12px;
                             }
                             & .accounts {
-                                font-size: 13px;
+                                font-size: 12px;
                                 & .userName {
                                     max-width: 130px;
                                 }
@@ -220,6 +267,752 @@
     }
     .bootomtreackchart {
         display: block
+    }
+    .informationCard {
+        & .card-body {
+            & .innerbody {
+                & .card_title {
+                    font-size: 14px !important;
+                    
+                }
+                & .posted {
+                    & .accountPost {
+                        font-size: 10px;
+                        &.light{
+                        }
+                    }
+                    & .accounts {
+                        gap: 10px;
+                        font-size: 12px;
+                        & .userName {
+                            font-size: 12px;
+                        }
+                    }
+                    & .accountUser {
+                        // width: 26px;
+                        // height: 26px;
+                        & img {
+                        }
+                    }
+                    & .socialImg {
+                        & img {
+                            // max-width: 20px;
+                            // width: 100%;
+                        }
+                    }
+                    & .content{
+                        font-size: 12px;
+    
+                    }
+                    & .containtHeading{
+                        font-size: 12px;
+                        &.descriptions{
+                        }
+                    }
+                }
+                & .socialMetricsCard {
+                    & .cardbody {
+                        &>div{
+                            &:first-child{
+                            }
+                        }
+                        & .metrics, & .rate {
+                        }
+                        & .metrics{
+                        }
+                        & .rate{
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .all_sources {
+        & .all_data {
+            gap: 14px;
+            & .data {
+                font-size: 22px;
+            }
+        }
+    }
+    .overviewTabs {
+        gap: 10px !important;
+        & .nav-item {
+            & .nav-link {
+                font-size: 14px;
+                padding-right: 25px;
+                &::before{
+                    content: '';
+                }
+            }
+        }
+    }
+    // **** Catyegory Card *****
+    .categoryCard {
+        min-width: 150px;
+        max-width: 150px;
+        &:hover {
+        }
+        & .card_body {
+            padding: 8px 16px;
+            gap: 4px;
+            & .categoryImg {
+                min-width: 35px;
+                width: 35px;
+                height: 35px;
+                & img {
+                }
+                &.grayimg{
+                    & img {
+                    }
+                }
+            }
+            & .valu {
+                font-size: 22px;
+                padding: 0px 12px;
+                gap: 4px;
+                & span {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    // **** Catyegory End *****
+
+    .userDistentCard{
+        & .listItem {
+            &:hover{
+            }
+            &.active{
+                &:hover{
+                }
+            }
+            & .user_img {
+                width: 32px;
+                height: 32px;
+                min-width: 32px;
+                & img {
+                }
+            }
+            & .userDetails {
+                & .username {
+                    font-size: 16px;
+                }
+                & .userAge{
+                    font-size: 12px;
+                    & .genderImg {
+                        width: 15px;
+                        height: 15px;
+                    }
+                }
+            }
+            & .userside {
+            }
+        }
+        & .times {
+            font-size: 12px;
+        }
+        & .tmgroup{
+            & .timing_value {
+                min-height: 22px;
+                font-size: 12px;
+                &.active{
+                }
+            }
+        }
+        &.nonhover{
+            & .listItem{
+                &:hover{
+                }
+            }
+        }
+        & .sourcegroup  {
+        }
+        & .actorelistitem {
+            &>div{
+                &:first-child{
+                    & .tmgroup {
+                    }
+                }
+            }
+        }
+    }
+    .scriptVideo_section{
+        & .durationHeadingGroup {
+            // min-height: 24px;
+        }
+        & .durationHeading{
+            &.duration {
+                // min-width: 48px;
+            }
+            &.startTime, &.endTime{
+                // min-width: 64px;
+            }
+        }
+        & .script_item {
+            & .script {
+                font-size: 12px;
+            }
+            &.active{
+                & .durationHeading{
+                }
+            }
+        }
+    }
+    .post_table {
+        &.minidatatable{
+            &.fb_post_minidatatable{
+            }
+        }
+        & .table {
+            & tr {
+                & td, & th {
+                    padding: 1.5px 8px;
+                    font-size: 12px;
+                }
+            }
+            & thead{
+                & tr{
+                    & th {
+                        height: 35px;
+                        padding: 8px;
+                        // text-align: center;
+                        &:first-child{
+                        }
+                        &:last-child{
+                        }
+                    }
+                }
+            }
+            & tbody{
+                & tr {
+                    & td, & th {
+                        height: 30px;
+                    }
+                    &.selected{
+                        & td, & th {
+                        }
+                    }
+                }
+                & .postcontetntd {
+                    & .postContent {
+                    }
+                }
+                & .postContent {
+                }
+                & .icon {
+                    height: 18px;
+                    width: 18px;
+                    min-width: 18px;
+                    &.closeIcon {
+                        width: 22px;
+                        height: 22px;
+                        &:hover {
+                        }
+                        &.scope{
+                            & img {
+                            }
+                        }
+                    }
+                    &.eyes{
+                        width: 22px;
+                        height: 22px;
+                        min-width: 22px;
+                    }
+                }
+                & .view, & .icon {
+                }
+                & .view {
+                }
+            }
+            &.post{
+                & tbody {
+                    & tr {
+                        & td {
+                            &:nth-child(2) {
+                            }
+                            &:nth-child(3) {
+                                & .icon {
+                                    & img {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.actore_table{
+            & .table {
+                & tbody {
+                    & tr {
+                        & th {
+                            &:first-child{
+                            }
+                        }
+                        & td {
+                            &:nth-child(2) {
+                                & .icon {
+                                    & img {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    & .postContent {
+                        &.account{
+                            & .accountHolder {
+                                // min-width: 26px;
+                                // height: 26px;
+                                & img {
+                                }
+                            }
+                            & span {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // **** Aside Bar Css Start *******
+    .asideBar{
+        & .logo_top {
+            & .logo {
+                width: 60px;
+                height: 60px;
+            }
+            & .logoname {
+                width: 75px;
+                // margin: 12px auto 8px;
+            }
+        }
+        & .asideBody {
+            & .nav_link {
+                & li{
+                    & .navlinks{
+                        height: 80px;
+                        & img {
+                            width: 28px;
+                        }
+                        &:hover, &.active{
+                        }
+                    }
+                }
+            }
+        }
+    }
+    //! **** Aside Bar Css End *******
+    .account_datatable {
+        & .table {
+            & thead {
+                & tr {
+                    & th {
+                        &:first-child {
+                            // height: 48px;
+                            // width: 48px;
+                            & .form-check {
+                            }
+                        }
+                    }
+                }
+            }
+            & tbody {
+                & tr {
+                    & td {
+                        &:first-child {
+                            & .form-check {
+                            }
+                        }
+                        &:nth-child(2) {
+                            // max-width: 180px;
+                            & a {
+                            }
+                        }
+                        &:last-child {
+                            // max-width: 96px;
+                        }
+                        & .source {
+                            font-size: 12px;
+                            & .logoimg {
+                                display: flex;
+                                min-width: 27px;
+                                height: 27px;
+                                & img {
+                                }
+                            }
+                            & .sourceName {
+                            }
+                        }
+                        & .view{
+                            & .type_icon {
+                                width: 22px;
+                                height: 22px;
+                            }
+                            & .eye {
+                                & img {
+                                }
+                            }
+                            & .scope {
+                                & img {
+                                }
+                            }
+                        }
+                        & .postContent {
+                            &.bio {
+                                // max-width: 450px;
+                            }
+                        }
+                    }
+                    // &:nth-child(2) {
+                    //     cursor: pointer;
+                    // }
+                }
+            }
+        }
+    }
+    .facebook-postDetails-overview{
+        & .mainpostcard{
+            max-width: 350px;
+            &.ytubeAnalysisPost{
+                max-width: 360px;
+            }
+            &.fboverview{
+                max-width: 420px;
+            }
+            &.ytubemainPost{
+                // max-width: 676px;
+            }
+            &.ytubeAnalysisPost{
+                // max-width: 420px;
+            }
+            &.ytubemainVideoPost {
+                // max-width: 859PX;
+            }
+        }
+        & .commentcard {
+            &.ytubeOverComment {
+            }
+        }
+        & .postdetailmediacard{
+        }
+        & .post_detailsMaping_crad{
+            max-width: 340px;
+        }
+        & .actorListCard{
+            max-width: 300px;
+        }
+    }
+    .mainpostcard {
+        & .informationCard{
+            & .postImg {
+                & img {
+                }
+                &.vidoPost {
+                }
+            }
+            & .postDetails{
+                font-size: 14px;
+                & span{
+                }
+                &.postDetails_sm {
+                    font-size: 12px;
+                }
+                &.ytubeCVideoPostDetails {
+                    font-size: 18px;
+                }
+            }
+            & .postAllDetails{
+                font-size: 12px;
+                & .detailImg {
+                    // height: 16px;
+                    // width: 16px;
+                    & img {
+                    }
+                    &.ytubeVideoDetailsImg {
+                        height: 18px;
+                        width: 18px;
+                        
+                    }
+                }
+            }
+            & .socialMetricsCard {
+                & .cardbody {
+                    & .items {
+                    }
+                    & .socialmetrics{
+                        font-size: 12px;
+                    }
+                    & .rate {
+                        gap: 4px;
+                        & .tredMap {
+                            gap: 4px;
+                            & .tredingImg {
+                                height: 16px;
+                                width: 16px;
+                                & img {
+                                }
+                            }
+                            & span {
+                                font-size: 10px;
+                            }
+                            &.greenzone{
+                                & span {
+                                }
+                            }
+                            &.grayzone{
+                                & span {
+                                }
+                            }
+                        }
+                        &.lowvalue{
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+            & .violationTangHeading {
+                font-size: 12px;
+            }
+            & .violatinTag {
+                padding: 10px;
+                &.bluetag{
+                }
+            }
+            & .card-body {
+                & .innerbody  {
+                    & .posted  {
+                        & .accountUser {
+                            width: 27px;
+                            height: 27px;
+                            min-width: 27px;
+                            &.videoAccountUser{
+                                width: 35px;
+                                min-width: 35px;
+                                height: 35px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    .facebook-postlist-data {
+        // 280+332
+        .midtableGroup{
+            max-width: calc(100% - 583px);
+        }
+        .insteractionCard {
+            width: 300px;
+            & .post_table  {
+                & .table  {
+                    & tbody  {
+                        & .postContent {
+                            max-width: 170px;
+                        }
+                    }
+                    & .th_interaction {
+                        width: 92px;
+                    }
+                }
+            }
+        }
+    }
+
+    .ytube-videoDetails-overview{
+        & .analysisCard {
+            max-width: 350px;
+        }
+        // & .scriptCrad {
+        //     max-width: 388px;
+        //     width: 100%;
+        // }
+        & .script_Video_Top_Section {
+            // max-height: 567px;
+            // height: 100%;
+            height: calc(100% - 250px - 8px);
+        }
+        & .videoeditore {
+            max-height: 250px;
+            height: 100%;
+        }
+    }
+    .tiktokvideoanalysisscript {
+        max-width: calc(100% - 358px);
+        & .script_Video_Top_Section {
+            height: calc(100% - 141px - 8px);
+        }
+        & .videoeditore {
+            height: 141px;
+        }
+    }
+    .midtableGroup {
+        max-width: calc(100% - 546px);
+    }
+    // ** Keyword Tab**
+    .keyword_category_name {
+        & .top_post {
+            & .posttableSide {
+                & .categoryLink {
+                    font-size: 14px;
+                    height: 38px;
+                }
+            }
+        }
+    }
+    .keyword_category_KEY {
+        & .posttableSide {
+            & .post_table {
+                & .input_wrapper {
+                    padding: 15px;
+                    & .content {
+                        & ul {
+                            & li {
+                                padding: 4px 10px;
+                                font-size: 14px;
+                                & i {
+                                    height: 16px;
+                                    width: 16px;
+                                }
+                                &:hover{
+                                }
+                            }
+                            & input {
+                            }
+                        }
+                    }
+                }
+                .input_wrapper :where(.title, li, li i, .details) {
+                }
+            }
+        }
+        & .applybtn {
+            max-width: 180px;
+        }
+    }
+    .newsFilterCard {
+        max-width: 265px;
+        &.acc_filter_Sm{
+        }
+        & .card-body {
+            & .innerBody {
+                & .filterTitle {
+                }
+                & .keyword_category {
+                    & .keywordkey {
+                    }
+                }
+            }
+            & .vietnamese_Group {
+                & .groupItem_check {
+                    & .form-check {
+                        // padding: 4px 8px;
+                        & .form-check-label {
+                            font-size: 12px;
+                            & .logoimg {
+                                width: 27px;
+                                height: 27px;
+                                & img {
+                                }
+                            }
+                            & .sourceName, & .languageName  {
+                            }
+                        }
+                        &:hover {
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .comment_card {
+        & .comment_item_Body {
+            &:hover{
+            }
+            & .commitUser {
+                height: 30px;
+                min-width: 30px;
+                width: 30px;
+                & img {
+                }
+                &.commitUsersm{
+                    width: 26px;
+                    height: 26px;
+                    min-width: 26px;
+                }
+            }
+            & .content_side {
+                & .userName, & .commitcontent{
+                }
+                & .userName, & .commitcontent, & .tag{
+                    font-size: 12px;
+                }
+                & .userName{
+                }
+                & .tag {
+                }
+            }
+            
+        }
+        &.commitAnswer{
+            &::before{
+            }
+            & .comment_item_Body {
+            }
+        }
+    }
+    .topheader{
+        // height: 48px;
+        & .socialNetwork {
+            font-size: 18px;
+        }
+        & .userSide {
+            & .notificationDropDown {
+                & .dropdown-menu {
+                    & .n_title {
+                        font-size: 22px;
+                    }
+                    & .n_Body {
+                        & .n_item{
+                            &:hover{
+                            }
+                            & .logoimg {
+                                height: 38px;
+                                min-width: 38px;
+                                & img {
+                                }
+                            }
+                            & .n_message {
+                                & .directMessage {
+                                    font-size: 12px;
+                                    & span {
+                                    }
+                                }
+                                & .date{
+                                    font-size: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            & .notification {
+                height: 38px;
+                width: 38px;
+                & span{
+                    font-size: 12px;
+                }
+            }
+            & .bell, .user {
+                width: 30px;
+                height: 30px;
+            }
+            & .user{
+            }
+        }
     }
 }
 

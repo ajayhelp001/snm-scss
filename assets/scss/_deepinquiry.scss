@@ -223,6 +223,8 @@ div[data-tippy-root] {
             font-style: normal;
             font-weight: 400;
             line-height: 140%; /* 16.8px */
+            position: relative;
+            top: -12px;
         }
     }
     & .iconImg {
@@ -232,13 +234,118 @@ div[data-tippy-root] {
         padding: 5px;
         border-radius: 10px;
         background-color: var(--balck--light);
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
         & img{
             width: 100%;
         }
         &.regItem {
             background-color: var(--reg-item);
+        }
+    }
+    & .network_map_icon {
+        position: relative;
+        top: -37px;
+        &.conect{
+            top: -12px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1850px){
+    .bottomtabs {
+        border-radius: 8px;
+        padding: 8px 10px;
+        gap: 10px;
+        & .items {
+            gap: 6px;
+            & .eventImg {
+                & img {
+                }
+                &.dotedImg{
+                    & span{
+                    }
+                }
+            }
+            & span {
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1700px){
+    .bottomtabs {
+        border-radius: 8px;
+        padding: 8px 10px;
+        gap: 8px;
+        & .items {
+            gap: 4px;
+            & .eventImg {
+                width: 35px;
+                height: 35px;
+                & img {
+                }
+                &.dotedImg{
+                    & span{
+                        // height: 3.5px;
+                        // width: 3.5px;
+                        // min-width: 3.5px;
+                    }
+                }
+            }
+            & span {
+                font-size: 13px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1600px){
+    .bottomtabs {
+        border-radius: 8px;
+        padding: 8px 10px;
+        gap: 8px;
+        & .items {
+            gap: 4px;
+            & .eventImg {
+                width: 33px;
+                height: 33px;
+                padding: 4px;
+                & img {
+                }
+                &.dotedImg{
+                    & span{
+                        height: 2px;
+                        width: 2px;
+                        min-width: 2px;
+                    }
+                }
+            }
+            & span {
+                font-size: 12px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1500px){
+    .bottomtabs {
+        padding: 8px;
+        gap: 6px;
+        & .items {
+            gap: 2px;
+            & .eventImg {
+                width: 30px;
+                height: 30px;
+                & img {
+                }
+                &.dotedImg{
+                    & span{
+                    }
+                }
+            }
+            & span {
+            }
         }
     }
 }

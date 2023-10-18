@@ -3,7 +3,8 @@ var cy = cytoscape({
 
   boxSelectionEnabled: false,
   autounselectify: true,
-
+  zoom: 0.2,
+  pan: { x: 300, y: 150 },
   style: cytoscape.stylesheet()  
   .selector('node')
     .css({
@@ -73,11 +74,9 @@ var cy = cytoscape({
     })
     .selector("#kokohalinh")
     .css({
-      "background-image": "assets/image/icon/post.svg",
-      "height": "80px", // Increase node size
-      "width": "80px", 
-      "background-width": "50px", // Decrease image size
-      "background-height": "50px",
+      "background-image": "assets/image/map/map_post.svg",
+      "height": "64px", // Increase node size
+      "width": "64px", 
       "border-radius": 10,
       "border-color": "red",
       "border-width": "0px",
@@ -113,7 +112,7 @@ var cy = cytoscape({
     'font-weight': 500,
     'text-border-opacity': 1,
     'font-size': '12px',
-    'border-style': 'dotted'
+    'border-style': 'solid'
     })
     .selector('.bottom-center')
     .css({
@@ -305,6 +304,7 @@ cy.nodes().on('click', function(event) {
   var e15 = cy.getElementById('e15');
   var e16 = cy.getElementById('e16');
   var e17 = cy.getElementById('e17');
+  var e18 = cy.getElementById('e18');
 
   var KienKhongNgu = cy.getElementById('KienKhongNgu');
   var phanlemailan = cy.getElementById('phanlemailan');
@@ -432,8 +432,6 @@ cy.nodes().on('click', function(event) {
   // var tippynguyennhuhang = makeTippy(nguyennhuhang, '<i class="fa-solid fa-user" style="background-color: #8B80FD; color: #fff; padding: 5px; border-radius: 5px;"></i>');
   // tippynguyennhuhang.show();
 
-  var tippykokohalinh = makeTippy(kokohalinh, '<div class="tippysingalIcon regItem"><img src="assets/image/icon/twouser.svg" class="w-100" /></div>');
-  tippykokohalinh.show();
   
   // var tippyZane = makeTippy(Zane, '<i class="fa-solid fa-users" style="background-color: #BBBABD; color: #fff; padding: 5px; border-radius: 5px;"></i>');
   // tippyZane.show();
@@ -445,43 +443,46 @@ cy.nodes().on('click', function(event) {
   // E1
   
   
-  var tippyE1 = makeTippy(e1, '<div class="tippysingalIcon"><img src="assets/image/icon/groupmember.svg" class="w-100" /></div>');
+  var tippyE1 = makeTippy(e1, '<div class="tippysingalIcon network_map_icon"><img src="assets/image/icon/groupmember.svg" class="w-100" /></div>');
   tippyE1.show();
 
-  var tippyE2 = makeTippy(e2, '<div class="tippysingalIcon p-0"><img src="assets/image/icon/follows.svg" class="w-100" /></div>');
+  var tippyE2 = makeTippy(e2, '<div class="tippysingalIcon network_map_icon p-0"><img src="assets/image/icon/follows.svg" class="w-100" /></div>');
   tippyE2.show();
 
   // var tippyE3 = makeTippy(e3, '<i class="fa-solid fa-users" style="background-color: #EA685E; color: #fff; padding: 5px; border-radius: 5px;"></i>');
   // tippyE3.show();
 
-  // var tippyE4 = makeTippy(e4, '<div class="tippysingalIcon regItem"><img src="assets/image/icon/twouser.svg" class="w-100" /></div>');
+  // var tippyE4 = makeTippy(e4, '<div class="tippysingalIcon network_map_icon regItem 2"><img src="assets/image/icon/twouser.svg" class="w-100" /></div>');
   // tippyE4.show();
 
-  var tippyE5 = makeTippy(e5, '<div class="tippysingalIcon regItem"><img src="assets/image/icon/twouser.svg" class="w-100" /></div>');
+  var tippyE5 = makeTippy(e5, '<div class="tippysingalIcon network_map_icon regItem 3"><img src="assets/image/icon/twouser.svg" class="w-100" /></div>');
   tippyE5.show();
 
-  var tippyE7 = makeTippy(e7, '<div class="tippysingalIcon p-0"><img src="assets/image/icon/follows.svg" class="w-100" /></div>');
+  var tippyE7 = makeTippy(e7, '<div class="tippysingalIcon network_map_icon p-0"><img src="assets/image/icon/follows.svg" class="w-100" /></div>');
   tippyE7.show();
 
-  var tippyE8 = makeTippy(e8, '<div class="tippysingalIcon"><img src="assets/image/icon/twouseryellow.svg" class="w-100" /></div>');
+  var tippyE8 = makeTippy(e8, '<div class="tippysingalIcon network_map_icon"><img src="assets/image/icon/twouseryellow.svg" class="w-100" /></div>');
   tippyE8.show();
 
-  var tippyE9 = makeTippy(e9, '<div class="tippysingalIcon regItem"><img src="assets/image/icon/twouser.svg" class="w-100" /></div>');
+  var tippyE9 = makeTippy(e9, '<div class="tippysingalIcon network_map_icon regItem 4"><img src="assets/image/icon/twouser.svg" class="w-100" /></div>');
   tippyE9.show();
 
-  var tippyE10 = makeTippy(e10, '<div class="tippysingalIcon"><img src="assets/image/icon/twouseryellow.svg" class="w-100" /></div>');
+  var tippyE10 = makeTippy(e10, '<div class="tippysingalIcon network_map_icon"><img src="assets/image/icon/twouseryellow.svg" class="w-100" /></div>');
   tippyE10.show();
 
-  var tippyE11 = makeTippy(e11, '<div class="tippysingalIcon"><img src="assets/image/icon/twouseryellow.svg" class="w-100" /></div>');
+  var tippyE11 = makeTippy(e11, '<div class="tippysingalIcon network_map_icon"><img src="assets/image/icon/twouseryellow.svg" class="w-100" /></div>');
   tippyE11.show();
   
-  var tippyE12 = makeTippy(e12, '<div class="tippysingalIcon"><img src="assets/image/icon/twouseryellow.svg" class="w-100" /></div>');
+  var tippyE12 = makeTippy(e12, '<div class="tippysingalIcon network_map_icon"><img src="assets/image/icon/twouseryellow.svg" class="w-100" /></div>');
   tippyE12.show();
   
+    var tippykokohalinh = makeTippy(e4, '<div class="tippysingalIcon network_map_icon regItem 1"><img src="assets/image/icon/twouser.svg" class="w-100" /></div>');
+  tippykokohalinh.show();
+
   // var tippyE13 = makeTippy(e13, '<i class="fa-solid fa-users" style="background-color: #EA685E; color: #fff; padding: 5px; border-radius: 5px;"></i>');
   // tippyE13.show();
   
-  var tippyE14 = makeTippy(e14, '<div class="tippysingalIcon"><img src="assets/image/icon/twouseryellow.svg" class="w-100" /></div>');
+  var tippyE14 = makeTippy(e14, '<div class="tippysingalIcon network_map_icon"><img src="assets/image/icon/twouseryellow.svg" class="w-100" /></div>');
   tippyE14.show();
 
   // var tippyE15 = makeTippy(e15, '<div class="icons-wrap-container"><span class="numerice-icon-number">2</span><i class="fa-regular fa-pen-to-square"></i><i class="fa-regular fa-thumbs-up"></i><i class="fa-solid fa-share"></i></div><i class="fa-solid fa-users" style="background-color: #F5B060; color: #fff; padding: 5px; border-radius: 5px;"></i>');
@@ -489,6 +490,8 @@ cy.nodes().on('click', function(event) {
 
   // var tippyE17 = makeTippy(e17, '<i class="fa-solid fa-user-check" style="background-color: #00D1FF; color: #fff; padding: 5px; border-radius: 5px;"></i>');
   // tippyE17.show();
+    var tippyE18 = makeTippy(e18, '<div class="tippysingalIcon network_map_icon conect"><img src="assets/image/icon/greenlink.svg" class="w-100" /></div>');
+  tippyE18.show();
 
 
     // Create a new div element to act as the container
@@ -517,6 +520,7 @@ tippyContainer.appendChild(tippyE10.popper);
 tippyContainer.appendChild(tippyE11.popper);
 tippyContainer.appendChild(tippyE12.popper);
 tippyContainer.appendChild(tippyE14.popper);
+tippyContainer.appendChild(tippyE18.popper);
 
 // Append the container to the document body
 document.body.appendChild(tippyContainer);
