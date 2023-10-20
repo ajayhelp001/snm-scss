@@ -327,6 +327,87 @@ div[data-tippy-root] {
             }
         }
     }
+    .geomapfilter {
+        &.card{
+            & .card-body {
+                & .userItem {
+                    & .source_Img {
+                        width: 18px;
+                        height: 18px;
+                        min-width: 18px;
+                    }
+                    & .username {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+    .deepinquiryPage {
+        & .accordionbodypart {
+            & .sourceheading {
+                & .source_Img {
+                    width: 18px;
+                    height: 18px;
+                    min-width: 18px;
+                }
+                font-size: 12px;
+                &.facebook{
+                }
+                &.youtube{
+                }
+                &.subheding{
+                }
+            }
+            & .trackedAccount {
+                & .accordiongroup {
+                    & .accordion-item {
+                        & .accordion-header {
+                            & .accordion-button {
+                                &::after{
+                                }
+                            }
+                        }
+                        & .accordion-body {
+                            & .userItem {
+                                & .view {
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .mapsides {
+        & .topnavtabs {
+            height: 38px;
+        }
+        & .deepMapcard {
+            height: calc(100% - 38px);
+        }
+    }
+    
+    .topnavtabs {
+        & .nav{
+            & .nav-link {
+                font-size: 12px;
+                &.active,&:hover {
+                    & .closeicon {
+                        & img {
+                        }
+                    }
+                }
+                & .closeicon {
+                    width: 27px;
+                    height: 27px;
+                    min-width: 27px;
+                    & img {
+                    }
+                }
+            }
+        }
+    }
 }
 @media screen and (max-width: 1500px){
     .bottomtabs {
@@ -337,6 +418,27 @@ div[data-tippy-root] {
             & .eventImg {
                 width: 30px;
                 height: 30px;
+                & img {
+                }
+                &.dotedImg{
+                    & span{
+                    }
+                }
+            }
+            & span {
+            }
+        }
+    }
+}
+@media screen and (max-width: 1430px){
+    .bottomtabs {
+        padding: 8px 6px;
+        gap: 4px;
+        & .items {
+            gap: 2px;
+            & .eventImg {
+                width: 27px;
+                height: 27px;
                 & img {
                 }
                 &.dotedImg{

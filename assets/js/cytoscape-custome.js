@@ -17,10 +17,9 @@ cytoscape('arrow-shape', 'my-custom-arrow', function (context, size, angle) {
 });
 var cy = cytoscape({
   container: document.getElementById('cy'),
-
   boxSelectionEnabled: false,
   autounselectify: true,
-
+  pan: { x: 500, y: 0 },
   style: cytoscape.stylesheet()  
     .selector('node')
       .css({
@@ -31,7 +30,6 @@ var cy = cytoscape({
         'border-width': 3,
         'position': 'relative',
         'border-style': 'solid'
-        
       })
 
     .selector('.eating')
@@ -54,8 +52,7 @@ var cy = cytoscape({
         'line-style': 'dashed',
         'source-arrow-shape': 'my-custom-arrow',
         'source-arrow-color': 'white',
-        'target-arrow-rotation': '100deg'
-        
+        'target-arrow-rotation': '100deg'        
       })
     .selector('#longmetroi')
       .css({
@@ -220,7 +217,7 @@ var cy = cytoscape({
         'phanlemailan': { x: 550, y: 0 },// main
         'nanapham': { x: 300, y: -70 }, // Black with lipstick 300 -70
         'casithanhha': { x: 300, y: 200 },
-        'qqthuytam': { x: 475, y: 200 },
+        'qqthuytam': { x: 435, y: 200 },
         'quyenlam': { x: 800, y: 200 },
         'thanhhahn': { x: 550, y: 200 },
         'propertykoko': { x: 300, y: 70 }, 
@@ -240,6 +237,9 @@ var cy = cytoscape({
     // Event handler for node click
 
 }); // cy init
+
+cy.panningEnabled()
+cy.zoom(cy.zoom() * 0.8);
 cy.on('tap', 'node', function (event) {
   var clickedNode = event.target;
   var node_id = clickedNode._private.data.id;

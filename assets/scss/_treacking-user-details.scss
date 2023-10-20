@@ -446,33 +446,127 @@
             }
         }
     }
-
-    
-.basicinfoCard {
-    & .content {
-    }
-    & .post_table {
-        & .table {
-            & thead {
-                & tr {
-                    th {
+    .basicinfoCard {
+        & .content {
+        }
+        & .post_table {
+            & .table {
+                & thead {
+                    & tr {
+                        th {
+                        }
                     }
                 }
-            }
-            & tbody{
-                & tr {
-                    & td, th {
+                & tbody{
+                    & tr {
+                        & td, th {
+                        }
                     }
-                }
-                & .icon{
-                }
-                & .postContent{
-                    max-width: 270px;
+                    & .icon{
+                    }
+                    & .postContent{
+                        max-width: 270px;
+                    }
                 }
             }
         }
     }
-}
+    .basic_information_user{
+        & .useR_img{
+            width: 46px;
+            min-width: 46px;
+            height: 46px;
+            & img {
+            }
+        }
+        & .usrname {
+            font-size: 18px;
+        }
+        & .gender {
+            width: 15px;
+        }
+    }
+    // socialInformation
+    .socialInformation{
+        & .socialImg {
+            width: 75px;
+            height: 75px;
+            & .useraccountimg{
+            }
+            & .socialIcon{
+                // width: 24px;
+                // height: 24px;
+            }
+            &.tiktok{
+            }
+            &.youtube{
+            }
+        }
+        & .socialName {
+            font-size: 18px;
+        }
+        & .socialGender {
+            width: 15px;
+            height: 15px;
+        }
+        & .socialTab {
+            & .nav-item {
+                & .nav-link {
+                    // width: 32px;
+                    // height: 32px;
+                    &::before{
+                    }
+                    & img {
+                    }
+                    &.bottom_label{
+                        
+                    }
+                    &.active, &:hover{
+                        &::before{
+                        }
+                        &.youtube{
+                            &::before{
+                            }
+                        }
+                        &.tiktok{
+                            &::before{
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .linkcontent {
+            overflow: hidden;
+            color: var(--white-75);
+            text-align: center;
+            text-overflow: ellipsis;
+            font-style: normal;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 150%; /* 21px */
+            letter-spacing: -0.5px;
+            text-decoration: none;
+            &:hover{
+                color: var(--white);
+            }
+        }
+        & .posts {
+            color: var(--white-50);
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 140%; /* 19.6px */
+        }
+        & .follow {
+            color: var(--white);
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 140%; /* 25.2px */
+            margin-top: 4px;
+        }
+    }
 }
 
 @media screen and (max-width: 1700px) {
@@ -521,6 +615,81 @@
                     font-size: 14px;
                 }
             }
+        }
+    }
+    .basic_information_user{
+        & .useR_img{
+            width: 45px;
+            min-width: 45px;
+            height: 45px;
+            & img {
+            }
+        }
+        & .usrname {
+            font-size: 16px;
+        }
+        & .gender {
+            width: 15px;
+        }
+    }
+    // socialInformation
+    .socialInformation{
+        & .socialImg {
+            width: 70px;
+            height: 70px;
+            & .useraccountimg{
+            }
+            & .socialIcon{
+                width: 22px;
+                height: 22px;
+            }
+            &.tiktok{
+            }
+            &.youtube{
+            }
+        }
+        & .socialName {
+            font-size: 16px;
+        }
+        & .socialGender {
+        }
+        & .socialTab {
+            & .nav-item {
+                & .nav-link {
+                    width: 30px;
+                    height: 30px;
+                    &::before{
+                    }
+                    & img {
+                    }
+                    &.bottom_label{
+                        
+                    }
+                    &.active, &:hover{
+                        &::before{
+                        }
+                        &.youtube{
+                            &::before{
+                            }
+                        }
+                        &.tiktok{
+                            &::before{
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .linkcontent {
+            font-size: 13px;
+            &:hover{
+            }
+        }
+        & .posts {
+            font-size: 13px;
+        }
+        & .follow {
+            font-size: 16px;
         }
     }
 }
@@ -603,6 +772,218 @@
                     }
                     & .postContent{
                         max-width: 250px;
+                    }
+                }
+            }
+        }
+    }
+
+    .basic_information_user{
+        & .useR_img{
+            width: 40px;
+            min-width: 40px;
+            height: 40px;
+            & img {
+            }
+        }
+        & .usrname {
+            font-size: 14px;
+        }
+        & .gender {
+            width: 14px;
+        }
+    }
+      // socialInformation
+        .socialInformation{
+        & .socialImg {
+            width: 65px;
+            height: 65px;
+            & .useraccountimg{
+            }
+            & .socialIcon{
+                width: 20px;
+                height: 20px;
+            }
+            &.tiktok{
+            }
+            &.youtube{
+            }
+        }
+        & .socialName {
+            font-size: 14px;
+        }
+        & .socialGender {
+        }
+        & .socialTab {
+            & .nav-item {
+                & .nav-link {
+                    width: 27px;
+                    height: 27px;
+                    &::before{
+                    }
+                    & img {
+                    }
+                    &.bottom_label{
+                        
+                    }
+                    &.active, &:hover{
+                        &::before{
+                        }
+                        &.youtube{
+                            &::before{
+                            }
+                        }
+                        &.tiktok{
+                            &::before{
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .linkcontent {
+            font-size: 12px;
+            width: 90% !important;
+            &:hover{
+            }
+        }
+        & .posts {
+            font-size: 12px;
+        }
+        & .follow {
+            font-size: 14px;
+        }
+    }
+        
+    // * famely_card
+    .famely_card {
+        gap: 8px;
+        padding: 6px;
+        & .user_img {
+            width: 38px;
+            height: 38px;
+            min-width: 38px;
+            & img {
+            }
+        }
+        & .userDetails {
+            & .username {
+                font-size: 12px;
+            }
+            & .userAge{
+                font-size: 10px;
+            }
+        }
+    }
+    .tracking-postDetails-overview{
+        & .userInfoCard{
+            max-width: 460px;
+            width: 100%;
+        }
+        & .mediacard {
+            max-width: 450px;
+        }
+        & .postdetailmediacard{
+            max-width: 315px;
+        }
+        & .post_detailsMaping_crad{
+            // max-width: calc(100% - 468px - 420px - 380px - 10px);
+            max-width: 280px;
+        }
+        
+        & .analysisCommentBox{
+            & .originalComment {
+                // padding: 12px;
+                // background-color: var(--black--dark) !important;
+            }
+            & .comment_card{
+                // max-width: 476px;
+                // width: 100%;
+            }
+        }
+        & .actorListCard{
+            // max-width: 380px;
+            // width: 100%;
+        }
+    }
+
+    // ** networks-card
+    .networks-card {
+        & .items {
+            & .imageside {
+                width: 30px;
+                min-width: 30px;
+                height: 30px;
+                &.network{
+                    & img{
+                        width: 16px;
+                    }
+                    &.tower{
+                    }
+                }
+            }
+            & .contentSide {
+                & .username , & .date_time, & .content{
+                }
+                & .username {
+                    font-size: 13px;
+                }
+                & .date_time {
+                    font-size: 10px;
+                }
+                & .content {
+                    font-size: 10px;
+                }
+            }
+        }
+        &.hoverd{
+            & .items{
+                &:hover{
+                }
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width: 1500px) {
+    // **** socialCategoery Crad *****
+    .socialCategoery{
+        &.informationCard{
+            & .categoryes {
+                & .card_body {
+                    gap: 4px;
+                    & .categoryImg {
+                        width: 20px;
+                        height: 20px;
+                    }
+                    & .valu {
+                        font-size: 13px;
+                        & span {
+                        }
+                    }
+                }
+            }
+            & .socialMetricsCard{
+                &.metrics{
+                    & .cardbody{
+                        &>div{
+                        }
+                    }
+                }
+                & .cardbody{
+                    & .growthItem {
+                        & .socialmetrics {
+                        }
+                        & .rate {
+                            font-size: 12px;
+                            & .tredMap{
+                                & .tredingImg {
+                                    width: 15px;
+                                    height: 15px;
+                                }
+                            }
+                        }
                     }
                 }
             }

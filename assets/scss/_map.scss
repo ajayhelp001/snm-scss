@@ -231,6 +231,16 @@
     }
 }
 
+// #cy{
+//     &>div{
+//         & canvas{
+//             transform: translateX(12%);
+//             &:first-child{
+//                 transform: translateX(0%);
+//             }
+//         }
+//     }
+// }
 
 
 @media screen and (max-width: 1600px){

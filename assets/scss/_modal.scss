@@ -1078,4 +1078,116 @@
             }
         }
     }
+
+    .modaldesign{
+        & .modal-dialog {
+            & .modal-content {
+                & .modal-header {
+                    & .modal-title {
+                        font-size: 22px;
+                    }
+                    & .sources {
+                        & .sourcegroup {
+                            font-size: 12px;
+                            & button{
+                            }
+                            & .logoimg {
+                                height: 30px;
+                                min-width: 30px;
+                                border-radius: 30px;
+                                & img {
+                                }
+                            }
+                            & .categoryBtn{
+                                height: 30px;
+                                font-size: 12px;
+                                line-height: 100%;
+                                & .location{
+                                    width: 20px;
+                                    height: 20px;
+                                }
+                            }
+                            &.violation{
+                                & .post_Btn {
+                                    height: 30px;
+                                }
+                            }
+                        }
+                    }
+                }
+                & .modal-body {
+                    & .orignalPost {
+                    }
+                    & .innerbodypart {
+                        & .postName {
+                            font-size: 24px;
+                        }
+                        & .postdate {
+                            font-size: 11px;
+                        }
+                        & .postImg {
+                            border-radius: 11px;
+                        }
+                    }
+                    & .content {
+                        & .contentfild {
+                            font-size: 14px;
+                        }
+                        & .postbutoon {
+                            & button{
+                                cursor: auto;
+                            }
+                        }
+                    }
+                }
+                
+                & .title{
+                    font-size: 12px;
+                    &.details_title{
+                    }
+                }
+            }
+            // &.mediaModulVideo {
+            //     & .modal-content {
+            //         background-color: var(--black--dark);
+            //     }
+            // }
+        }
+    }
+    // **  Media Post Modal**
+.mediapostmodul{
+    &.maincontent{
+        &.show{
+        }
+        & .modal-dialog{
+        }
+    }
+    & .modal-dialog {
+        &.mediaModul {
+            &.mediaModulVideo{
+                & .modal-body {
+                    & .script_Video_Top_Section {
+                        height: calc(100% - 250px - 8px);
+                    }
+                    & .videoeditore {
+                        max-height: 250px;
+                    }
+                }
+            }
+        }
+        & .modal-content {
+            padding: 15px 35px 32px 35px;
+            & .modal-body{
+                & .youtubeIMg {
+                    & img {
+                    }
+                }
+                & .postdetailslist {
+                    & .nav-pills {
+                    }
+                }
+            }
+        }
+    }
+}
 }

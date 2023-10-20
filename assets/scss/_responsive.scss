@@ -24,6 +24,7 @@
     display: none;
 }
 
+
 @media screen and (min-width: 1700px){
     .maincontent{
         & .manin_content_Body {
@@ -40,7 +41,85 @@
         }
     }
 }
-
+@media screen and (max-width: 1800px) {
+    .mainpostcard {
+        & .informationCard{
+            & .postImg {
+                & img {
+                }
+                &.vidoPost {
+                }
+            }
+            & .postDetails{
+                & span{
+                }
+                &.postDetails_sm {
+                }
+                &.ytubeCVideoPostDetails {
+                }
+            }
+            & .postAllDetails{
+                & .detailImg {
+                    & img {
+                    }
+                    &.ytubeVideoDetailsImg {
+                    }
+                }
+            }
+            & .socialMetricsCard {
+                &.trackinguserdetails{
+                    & .cardbody {
+                        & .items {
+                        }
+                        & .socialmetrics{
+                            font-size: 12px;
+                        }
+                        & .rate {
+                            font-size: 14px;
+                            & .tredMap {
+                                gap: 4px;
+                                & .tredingImg {
+                                    width: 16px;
+                                    height: 16px;
+                                    & img {
+                                    }
+                                }
+                                & span {
+                                }
+                                &.greenzone{
+                                    & span {
+                                    }
+                                }
+                                &.grayzone{
+                                    & span {
+                                    }
+                                }
+                            }
+                            &.lowvalue{
+                            }
+                        }
+                    }
+                }
+            }
+            & .violationTangHeading {
+            }
+            & .violatinTag {
+                &.bluetag{
+                }
+            }
+            & .card-body {
+                & .innerbody  {
+                    & .posted  {
+                        & .accountUser {
+                            &.videoAccountUser{
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 @media screen and (max-width: 1750px) {
     .maincontent{
         & .manin_content_Body {
@@ -105,6 +184,9 @@
                                 & tbody {
                                     & .postContent {
                                         max-width: 115px;
+                                        &.source {
+                                            max-width: 170px;
+                                        }
                                         &.singalintrection{
                                             max-width: 150px;
                                         }
@@ -161,6 +243,91 @@
             }
         }
     }
+    .mainpostcard {
+        & .informationCard{
+            & .postImg {
+                & img {
+                }
+                &.vidoPost {
+                }
+            }
+            & .postDetails{
+                & span{
+                }
+                &.postDetails_sm {
+                }
+                &.ytubeCVideoPostDetails {
+                }
+            }
+            & .postAllDetails{
+                & .detailImg {
+                    & img {
+                    }
+                    &.ytubeVideoDetailsImg {
+                    }
+                }
+            }
+            & .socialMetricsCard {
+                &.trackinguserdetails{
+                    & .cardbody {
+                        & .items {
+                            min-width: 50%;
+                            &:nth-child(3), &:nth-child(5){
+                                border-left: none !important;
+                            }
+                            &:nth-child(4){
+                                border-bottom: 1px solid var(--balck--light) !important;
+                                border-left: 1px solid var(--balck--light) !important;
+                            }
+                        }
+                        & .socialmetrics{
+                            font-size: 12px;
+                        }
+                        & .rate {
+                            font-size: 14px;
+                            & .tredMap {
+                                gap: 4px;
+                                & .tredingImg {
+                                    width: 16px;
+                                    height: 16px;
+                                    & img {
+                                    }
+                                }
+                                & span {
+                                }
+                                &.greenzone{
+                                    & span {
+                                    }
+                                }
+                                &.grayzone{
+                                    & span {
+                                    }
+                                }
+                            }
+                            &.lowvalue{
+                            }
+                        }
+                    }
+                }
+            }
+            & .violationTangHeading {
+            }
+            & .violatinTag {
+                &.bluetag{
+                }
+            }
+            & .card-body {
+                & .innerbody  {
+                    & .posted  {
+                        & .accountUser {
+                            &.videoAccountUser{
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 
@@ -199,6 +366,9 @@
                                 & tbody {
                                     & .postContent {
                                         max-width: 100px;
+                                        &.source {
+                                            max-width: 150px;
+                                        }
                                     }
                                 }
                             }
@@ -338,6 +508,9 @@
     }
     .overviewTabs {
         gap: 10px !important;
+        &.trackingsocial{
+            gap: 4px !important;
+        }
         & .nav-item {
             & .nav-link {
                 font-size: 14px;
@@ -655,6 +828,8 @@
                                 }
                             }
                             & .scope {
+                                width: 22px;
+                                height: 22px;
                                 & img {
                                 }
                             }
@@ -798,8 +973,6 @@
             }
         }
     }
-
-
     .facebook-postlist-data {
         // 280+332
         .midtableGroup{
@@ -1014,6 +1187,150 @@
             }
         }
     }
+
+    // *** Source -Tabs ***
+    .card_title {
+        & .cuntryflage {
+            & .flage {
+                width: 27px;
+                height: 27px;
+                & img {
+                }
+                &.small{
+                    width: 25px;
+                    height: 25px;
+                }
+            }
+        }
+    }
+    .mediaGallery{
+        &>div{
+            padding: 4px;
+        }
+        & .mediaImg {
+            & img {
+            }
+            &:hover{
+                & img {
+                }
+            }
+            &.videos{
+                &::before, &::after{
+                }
+                &::before{
+                }
+                &::after{
+                    width: 45px;
+                    height: 45px;
+                }
+            }
+        }
+    }
+
+    .settingTable{
+        &.table {
+            & tbody {
+                & tr {
+                    & td {
+                        &:first-child{
+                            width: 20%;
+                        }
+                    }
+                }
+            }
+        }
+        & .datadownloadcard {
+            border-radius: 28px;
+            max-width:260px;
+            min-height: 135px;
+            & .card-body{
+                & .downloadicon {
+                    width: 45px;
+                    height: 45px;
+                    & img {
+                    }
+                }
+                & .downloadtext {
+                    font-size: 12px;
+                }
+            }
+        }
+        &.nonhover{
+            &.table{
+                &.table-hover{  
+                    & > tbody{
+                        & > tr{
+                            &:last-child{
+                                &:hover > td{
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .breadcrumb_Bar{
+        height: 36px;
+        padding: 8px 0px 8px 30px;
+        & .breadcrumb {
+            margin: 0px;
+            & .breadcrumb-item {
+                font-size: 12px;
+                & .page_link {
+                    &:hover{
+                    }
+                }
+                &::before{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .all_sources {
+        & .all_data {
+            padding: 10px 0px;
+            gap: 15px;
+            & .data {
+                font-size: 22px;
+            }
+        }
+    }
+    // *---------pageLinks Start---------*
+    .pageLinks {
+        & .socialLinkLink {
+            gap: 15px;
+            font-size: 13px;
+            & span {
+                width: 50px;
+                height: 40px;
+                & img {
+                }
+            }
+            &.tiktok{
+                & span {
+                    & img {
+                    }
+                }
+            }
+            &:hover,
+            &.active {
+                & span {
+                    & img {
+                    }
+                }
+                &.facebook {
+                }
+                &.tiktok {
+                }
+                &.youtube {
+                }
+                &.news {
+                }
+            }
+        }
+    }
+
 }
 
 
@@ -1111,9 +1428,7 @@
 
 
 @media screen and (max-width: 1500px) {
-    .maincontent .manin_content_Body .navigationBar .card-body .tred_card {
-        padding: 0px 12px;
-    }
+
     .maincontent{
         & .manin_content_Body {
             // ***
@@ -1189,6 +1504,105 @@
                     }
                 }
             }
+            & .navigationBar {
+                & .card-body{
+                    & .innerbody {
+                    }
+                    & .timeing {
+                        padding: 0px 0px 0px 22px;
+                        & .volatility, & .timingBtn{
+                        }
+                        & .volatility {
+                            font-size: 22px;
+                        }
+                        & .timingBtn {
+                            & button{
+                                font-size: 14px;
+                                & span{
+                                    width: 22px;
+                                    height: 22px;
+                                }
+                            }
+                            & .dropdown-menu {
+                                & .dropdown-item {
+                                    font-size: 14px;
+                                    line-height: 16px;
+                                    padding: 6px 4px;
+                                    &:hover, &:active, &:focus{
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    & .tred_card {
+                        padding: 0px 10px;
+                        & .tredImg{
+                            width: 30px;
+                            height: 30px;
+                            & img {
+                            }
+                        }
+                        & .trdPoint{
+                            font-size: 18px;
+                            & span {
+                                font-size: 12px;
+                            }
+                        }
+                        & .tredMap {
+                            & .tredingImg {
+                                height: 22px;
+                                width: 22px;
+                                & img {
+                                }
+                            }
+                            & span {
+                                font-size: 14px;
+                            }
+                        }
+                        &.redzone {
+                            & .tredMap {
+                                & span {
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+@media screen and (max-width: 1400px) {
+    .facebook-postDetails-overview{
+        & .mainpostcard{
+            max-width: 320px;
+            &.ytubeAnalysisPost{
+            max-width: 320px;
+            }
+            &.fboverview{
+            }
+            &.ytubemainPost{
+                // max-width: 676px;
+            }
+            &.ytubeAnalysisPost{
+                // max-width: 420px;
+            }
+            &.ytubemainVideoPost {
+                // max-width: 859PX;
+            }
+        }
+        & .commentcard {
+            &.ytubeOverComment {
+            }
+        }
+        & .postdetailmediacard{
+        }
+        & .post_detailsMaping_crad{
+        }
+        & .actorListCard{
         }
     }
 }
