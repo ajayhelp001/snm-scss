@@ -194,7 +194,6 @@ var cy = cytoscape({
       { "data": { "id": "e15", "source": "phanledung", "target": "phanlemailan", "arrow": "none", "type": "none" } },			  
       { "data": { "id": "e18", "source": "phanledung", "target": "phamngocthanh", "arrow": "none", "type": "none" } },			        
       { "data": { "id": "e19", "source": "auyenlinh", "target": "phanlemailan", "arrow": "none", "type": "none" } },
-      
       { "data": { "id": "e21", "source": "quyenlam", "target": "phanlemailan", "arrow": "none", "type": "none" } },
       // { "data": { "id": "e20", "source": "nguyenngoclinh", "target": "phanlemailan", "arrow": "none", "type": "none" } },
       // { "data": { "id": "e21", "source": "phamngocthanh", "target": "phanlemailan", "arrow": "none", "type": "none" } },
@@ -239,7 +238,7 @@ var cy = cytoscape({
 }); // cy init
 
 cy.panningEnabled()
-cy.zoom(cy.zoom() * 0.8);
+cy.zoom(cy.zoom() * 1);
 cy.on('tap', 'node', function (event) {
   var clickedNode = event.target;
   var node_id = clickedNode._private.data.id;
@@ -288,11 +287,11 @@ var zoomOutButton = document.getElementById('zoom-out-button');
 
 // Add event listeners for zooming in and out
 zoomInButton.addEventListener('click', function () {
-cy.zoom(cy.zoom() * 1.2); // Increase zoom level by 20%
+cy.zoom(cy.zoom() * 1.1); // Increase zoom level by 20%
 });
 
 zoomOutButton.addEventListener('click', function () {
-cy.zoom(cy.zoom() * 0.8); // Decrease zoom level by 20%
+cy.zoom(cy.zoom() * 0.9); // Decrease zoom level by 20%
 });
 
 var edges = cy.elements('.edge');

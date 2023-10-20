@@ -375,7 +375,7 @@ var options = {
     ],
     chart: {
         type: 'bar',
-        height: 350,
+        height: 330,
         stacked: true,
         toolbar: {
             show: true
@@ -411,7 +411,7 @@ var options = {
     plotOptions: {
         bar: {
             horizontal: true,
-            barHeight: '70%',
+            barHeight: '75%',
             dataLabels: {
                 total: {
                     enabled: true,

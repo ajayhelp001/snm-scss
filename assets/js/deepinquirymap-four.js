@@ -139,7 +139,8 @@ var cy = cytoscape({
     // ... Other popper configuration options ...
   }
 }); // cy init
-
+cy.panningEnabled()
+cy.zoom(cy.zoom() * 1);
 var edges = cy.elements('.edge');
 // Apply a style to the selected edges
 edges.style({
@@ -221,6 +222,7 @@ cy.nodes().on('click', function(event) {
   var dinhngoccham = cy.getElementById('dinhngoccham');
 
   var specificEdges = [e_four_3];
+  // var specificEdges = [e_four_1, e_four_2, e_four_3, e_four_4, e_four_5];
 
   specificEdges.forEach(function(edge) {
   edge.style({

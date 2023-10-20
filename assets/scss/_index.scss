@@ -166,7 +166,7 @@
     }
 }
 .breadcrumb_Bar{
-    height: 37px;
+    height: 32px;
     padding: 8px 0px 8px 40px;
     border-bottom: 2px solid var(--neutral);
     border-top: 2px solid var(--neutral);
@@ -192,7 +192,7 @@
             }
             &::before{
                 color: var(--white);
-                font-size: 20px;
+                font-size: 15px;
             }
         }
     }
@@ -417,6 +417,12 @@
                 }
             }
         }
+        & .linechartsmain{
+            height: 43.07%;
+        }
+        & .bootompicharts{
+            height: 55.69%;
+        }
         & .levelCard {
             & .card-body {
                 padding: 16px 24px;
@@ -432,14 +438,19 @@
                 }
             }
             &.barchart {
-                max-height: 277px;
+                // height: 277px;
                 & .chart {
-                    height: 199px;
+                    // height: 199px;
+                    height: 85%;
                 }
             }
             &.stackedChartCard {
                 & .stackedChart {
-                    height: 366px;
+                    // height: 366px;
+                    height: 100%;
+                    & .linechart_group{
+                        margin-top: -30px;
+                    }
                     & .chartGroup {
                         height: 100%;
                     }
@@ -448,10 +459,10 @@
                     & .chartlable {
                         list-style: none;
                         padding: 0px;
-                        margin: 33px 0px 0px 0px;
+                        margin: 1px 0px 0px 0px;
                         display: flex;
                         flex-direction: column;
-                        gap: 4px;
+                        gap: 2px;
                         & li {
                             & .keyBtn {
                                 color: var(--white);
@@ -536,7 +547,7 @@
                         }
                     }
                     & .chartvalue {
-                        margin-bottom: 4px;
+                        margin-bottom: 3px;
                         & .chartbody {
                             gap: 16px;
                             align-items: center;
@@ -552,7 +563,7 @@
                                 font-size: 16px;
                                 font-style: normal;
                                 font-weight: 400;
-                                line-height: 160%; /* 25.6px */
+                                line-height: 140%; /* 25.6px */
                             }
                             & .amount{
                                 color: var(--white);

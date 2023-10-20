@@ -34,7 +34,7 @@
                 }
                 &.stackedChartCard{
                     & .stackedChart{
-                        height: 380px;
+                        // height: 380px;
                     }
                 }
             }
@@ -158,6 +158,30 @@
                         }
                     }
                 }
+                &.stackedChartCard {
+                    & .stackedChart {
+                        // height: 366px;
+                        height: 100%;
+                        & .linechart_group{
+                            min-height: 200px !important;
+                            max-height: 200px !important;
+                        }
+                        & .chartGroup {
+                        }
+                    }
+                    & .card-body{
+                        & .chartlable {
+                            & li {
+                                & .keyBtn {
+                                    font-size: 13px;
+                                    & img{
+                                        width: 15px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
             }
             & .pichart {
                 & .card-body {
@@ -167,7 +191,92 @@
                         }
                     }
                     & .innerbody {
-                        gap: 12px;
+                        & .picharts{
+                            & canvas{
+                                height: 110px;
+                                width: 110px;
+                            }
+                        }
+                        & .cardSubTitle {
+                            font-size: 17px;
+                            &.tablet{
+                            }
+                        }
+                        & .tredMap {
+                            & .tredingImg {
+                                height: 22px;
+                                width: 22px;
+                                & img {
+                                }
+                            }
+                            & span {
+                                font-size: 15px;
+                            }
+                            &.pichartmap {
+                                & .tredingImg {
+                                    height: 17px;
+                                    width: 17px;
+                                }
+                                & span {
+                                    // font-size: 12px;
+                                }
+                            }
+                            &.greenzone{
+                                & span {
+                                }
+                            }
+                        }
+                        & .chartvalue {
+                            & .chartbody {
+                                & .point {
+                                    // width: 12px;
+                                    // height: 12px;
+                                }
+                                & .ratingUser {
+                                    font-size: 15px;
+                                }
+                                & .amount{
+                                    font-size: 13px;
+                                }
+                            }
+                            &.tiktok {
+                                & .chartbody{
+                                    & .point{
+                                    }
+                                    & .ratingUser{
+                                    }
+                                }
+                            }
+                            &.youtube {
+                                & .chartbody{
+                                    & .point{
+                                    }
+                                    & .ratingUser{
+                                    }
+                                }
+                            }
+                            &.news {
+                                & .chartbody{
+                                    & .point{
+                                    }
+                                    & .ratingUser{
+                                    }
+                                }
+                            }
+                        }
+                        &.bootomtreackchart{
+                            & .chartvalue {
+                                & .chartbody {
+                                    & .point {
+                                    }
+                                    & .ratingUser {
+                                    }
+                                }
+                            }
+                        }
+                        & .totalresult {
+                            font-size: 13px;
+                        }
                     }
                 }
             }
@@ -223,7 +332,7 @@
                 & .commentitem{
                     &:hover{
                         & .leftItemList {
-                            min-width: 200px;
+                            min-width: 400px;
                         }
                         & .comment_card {
                             max-width: 400px;
@@ -232,7 +341,7 @@
                         }
                     }
                     & .leftItemList {
-                        min-width: 300px;
+                        min-width: 400px;
                     }
                 }
                 & .violationContent{
@@ -1570,6 +1679,32 @@
             }
         }
     }
+    .facebook-postDetails-overview{
+        & .analysisCommentBox{
+            & .originalComment {
+                & .commentitem{
+                    &:hover{
+                        & .leftItemList {
+                            min-width: 330px;
+                        }
+                        & .comment_card {
+                            max-width: 330px;
+                            & .comment_item_Body {
+                            }
+                        }
+                    }
+                    & .leftItemList {
+                        min-width: 330px;
+                    }
+                }
+                & .violationContent{
+                }
+            }
+            & .comment_card{
+                max-width: 330px;
+            }
+        }
+    }
 }
 
 
@@ -1603,6 +1738,30 @@
         & .post_detailsMaping_crad{
         }
         & .actorListCard{
+        }
+        & .analysisCommentBox{
+            & .originalComment {
+                & .commentitem{
+                    &:hover{
+                        & .leftItemList {
+                            min-width: 300px;
+                        }
+                        & .comment_card {
+                            max-width: 300px;
+                            & .comment_item_Body {
+                            }
+                        }
+                    }
+                    & .leftItemList {
+                        min-width: 300px;
+                    }
+                }
+                & .violationContent{
+                }
+            }
+            & .comment_card{
+                max-width: 300px;
+            }
         }
     }
 }
