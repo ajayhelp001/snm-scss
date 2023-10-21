@@ -165,6 +165,9 @@
                         & .linechart_group{
                             min-height: 200px !important;
                             max-height: 200px !important;
+                            &>div{
+                                height: 200px !important;
+                            }
                         }
                         & .chartGroup {
                         }

@@ -2,9 +2,8 @@ var cy = cytoscape({
   container: document.getElementById('cy'),
 
   boxSelectionEnabled: false,
-  autounselectify: true,
-  zoom: 0.2,
-  pan: { x: 300, y: 150 },
+  autounselectify: true,  
+  pan: { x: 400, y: 250 },
   style: cytoscape.stylesheet()  
   .selector('node')
     .css({
@@ -196,6 +195,7 @@ var cy = cytoscape({
     // ... Other popper configuration options ...
   }
 }); // cy init
+cy.zoom(cy.zoom() * 0.58);
 cy.style()
     .selector('#kokohalinh')
     .style({
