@@ -451,6 +451,7 @@
                 & .card-body{
                     & .card_title  {
                         font-size: 22px;
+                        margin-bottom: 10px;
                     }
                 }
             }
@@ -1180,6 +1181,9 @@
     }
     .newsFilterCard {
         max-width: 265px;
+        &.geomapfilter{
+            max-width: 230px;
+        }
         &.acc_filter_Sm{
         }
         & .card-body {

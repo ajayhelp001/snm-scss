@@ -181,10 +181,10 @@ var cy = cytoscape({
     genz: { x: 0, y: 400 },
     Eva: { x: 800, y: 400 },
     nguyennhuhang: { x: 800, y: 100 },
-    bikerAnTon: { x: 300, y: 500 },
+    bikerAnTon: { x: 300, y: 550 },
     nanapham: { x: 400, y: 180 },
-    kokohalinh: { x: 400, y: 0 },
-    Zane: { x: 600, y: 500 },
+    kokohalinh: { x: 400, y: 20 },
+    Zane: { x: 580, y: 550 },
     // Define positions for other nodes as needed
   },
   directed: true,
@@ -195,6 +195,45 @@ var cy = cytoscape({
     // ... Other popper configuration options ...
   }
 }); // cy init
+// Listen for zoom events on the Cytoscape.js canvas
+cy.on('zoom', function(event){
+  // Loop through each tippy instance
+  cy.elements().forEach(function(ele){
+    var tippyInstance = ele.data('tippy-instance');
+    if(tippyInstance) {
+      // Update the tippy instance
+      tippyInstance.setProps({
+        // You can update any property you want
+        // For example, to scale the tooltip, you might do something like this:
+        content: (content) => {
+          content.style.transform = `scale(${1/cy.zoom()})`;
+        }
+      });
+      // Force-update the tippy instance
+      tippyInstance.update();
+    }
+  });
+});
+
+function runCodeBasedOnScreenSize() {
+  var windowWidth = window.innerWidth;
+
+  if (windowWidth > 1600) {
+    cy.zoom(cy.zoom() * 1.5);
+  } else if (windowWidth > 1400) {
+    cy.zoom(cy.zoom() * 1.2);
+  } else {
+    cy.zoom(cy.zoom() * 0.7);
+  }
+}
+// Run the code initially and whenever the window is resized
+runCodeBasedOnScreenSize();
+
+$(window).resize(runCodeBasedOnScreenSize);
+
+
+
+
 cy.zoom(cy.zoom() * 0.58);
 cy.style()
     .selector('#kokohalinh')

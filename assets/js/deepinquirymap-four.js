@@ -3,8 +3,8 @@ var cy = cytoscape({
 
   boxSelectionEnabled: false,
   autounselectify: true,
-  zoom: 0.4,
-  pan: { x: 300, y: 150 },
+  // zoom: 0.4,
+  pan: { x: 300, y: 180 },
   style: cytoscape.stylesheet()  
   .selector('node')
     .css({
@@ -139,8 +139,26 @@ var cy = cytoscape({
     // ... Other popper configuration options ...
   }
 }); // cy init
+
+
 cy.panningEnabled()
-cy.zoom(cy.zoom() * 1);
+function runCodeBasedOnScreenSize() {
+  var windowWidth = window.innerWidth;
+
+  if (windowWidth > 1600) {
+    cy.zoom(cy.zoom() * 0.6);
+  } else if (windowWidth > 1400) {
+    cy.zoom(cy.zoom() * 0.5);
+  } else {
+    cy.zoom(cy.zoom() * 0.4);
+  }
+}
+
+// Run the code initially and whenever the window is resized
+runCodeBasedOnScreenSize();
+
+$(window).resize(runCodeBasedOnScreenSize);
+// cy.zoom(cy.zoom() * 1);
 var edges = cy.elements('.edge');
 // Apply a style to the selected edges
 edges.style({
