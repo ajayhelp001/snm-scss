@@ -54,7 +54,7 @@
     & .deepMapcard {
         height: calc(100% - 42px);
     }
-    width: calc(100% - 328px);
+    width: calc(100% - 320px);
 }
 
 .topnavtabs {
@@ -394,6 +394,9 @@ div[data-tippy-root] {
             }
         }
     }
+    .datapoolCard{
+        max-width: 280px;
+    }
     .mapsides {
         & .topnavtabs {
             height: 38px;
@@ -401,6 +404,7 @@ div[data-tippy-root] {
         & .deepMapcard {
             height: calc(100% - 38px);
         }
+        width: calc(100% - 280px);
     }
     
     .topnavtabs {

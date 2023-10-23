@@ -547,8 +547,6 @@
     }
 }
 
-
-
 // * dropdowns
 .dropdowns{
     & .dropdownBtn {
@@ -597,4 +595,57 @@
         }
     }
 }
+
+
+// *** -----------------Radio & Checkbox btn-group ------------
+.btn-group {
+    & .btn-check {
+        &:checked+.radioBtn{
+            font-size: 11px;
+        }
+    }
+    & .radioBtn {
+        padding: 4px 0px;
+        width: 64px;
+        font-size: 11px;
+        &:hover{
+        }
+    }
+}
+
+.form-check{
+    & .form-check-label, & .form-check-input {
+    }
+    & .form-check-input {
+        margin-top: -1.5px;
+        height: 15px;
+        width: 15px;
+    }
+    & .form-check-label {
+        font-size: 11px;
+    }
+    &.scopcheck{
+        & .form-check-input{
+            &:checked+label{
+                & .icon{
+                    &.scope {
+                        & img {
+                        }
+                    }
+                }
+            }
+        }
+        & label{
+            cursor: pointer;
+            // padding: 0px 6px;
+            & .icon{
+                &.scope {
+                    & img {
+                    }
+                }
+            }
+        }
+    }
+}
+
 }

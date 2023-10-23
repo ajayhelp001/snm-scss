@@ -119,6 +119,104 @@
             }
         }
     }
+    .post_table{
+        &.smcontent{
+            & .table {
+                & tbody {
+                    & .postContent {
+                        max-width: 200px;
+                    }
+                }
+            }
+        }
+    }
+    .pichart {
+        & .card-body {
+            & .chartvalue{
+                & .ratingUser {
+                }
+            }
+            & .innerbody {
+                & .picharts{
+                    & canvas{
+                        height: 140px;
+                        width: 140px;
+                    }
+                }
+                & .cardSubTitle {
+                    &.tablet{
+                    }
+                }
+                & .tredMap {
+                    & .tredingImg {
+                        & img {
+                        }
+                    }
+                    & span {
+                    }
+                    &.pichartmap {
+                        & .tredingImg {
+                        }
+                        & span {
+                            // font-size: 12px;
+                        }
+                    }
+                    &.greenzone{
+                        & span {
+                        }
+                    }
+                }
+                & .chartvalue {
+                    & .chartbody {
+                        & .point {
+                            // width: 12px;
+                            // height: 12px;
+                        }
+                        & .ratingUser {
+                        }
+                        & .amount{
+                        }
+                    }
+                    &.tiktok {
+                        & .chartbody{
+                            & .point{
+                            }
+                            & .ratingUser{
+                            }
+                        }
+                    }
+                    &.youtube {
+                        & .chartbody{
+                            & .point{
+                            }
+                            & .ratingUser{
+                            }
+                        }
+                    }
+                    &.news {
+                        & .chartbody{
+                            & .point{
+                            }
+                            & .ratingUser{
+                            }
+                        }
+                    }
+                }
+                &.bootomtreackchart{
+                    & .chartvalue {
+                        & .chartbody {
+                            & .point {
+                            }
+                            & .ratingUser {
+                            }
+                        }
+                    }
+                }
+                & .totalresult {
+                }
+            }
+        }
+    }
 }
 @media screen and (max-width: 1750px) {
     .maincontent{
@@ -163,8 +261,8 @@
                         // height: 366px;
                         height: 100%;
                         & .linechart_group{
+                            margin-top: -30px;
                             min-height: 200px !important;
-                            max-height: 200px !important;
                             &>div{
                                 height: 200px !important;
                             }
@@ -173,7 +271,11 @@
                         }
                     }
                     & .card-body{
+                        & .card_title{
+                            margin-bottom: 0px;
+                        }
                         & .chartlable {
+                            margin: 1px 0px 0px 0px;
                             & li {
                                 & .keyBtn {
                                     font-size: 13px;
@@ -188,6 +290,9 @@
             }
             & .pichart {
                 & .card-body {
+                    & .sourcetitle{
+                        display: none;
+                    }
                     & .chartvalue{
                         & .ratingUser {
                             display: none
@@ -230,6 +335,7 @@
                             }
                         }
                         & .chartvalue {
+                            margin-bottom: 3px;
                             & .chartbody {
                                 & .point {
                                     // width: 12px;
@@ -435,6 +541,17 @@
                             &.videoAccountUser{
                             }
                         }
+                    }
+                }
+            }
+        }
+    }
+    .post_table{
+        &.smcontent{
+            & .table {
+                & tbody {
+                    & .postContent {
+                        max-width: 150px;
                     }
                 }
             }
@@ -861,6 +978,15 @@
                 }
             }
         }
+        &.smcontent{
+            & .table {
+                & tbody {
+                    & .postContent {
+                        max-width: 130px;
+                    }
+                }
+            }
+        }
     }
     // **** Aside Bar Css Start *******
     .asideBar{
@@ -943,6 +1069,7 @@
                             & .scope {
                                 width: 22px;
                                 height: 22px;
+                                min-width: 22px;
                                 & img {
                                 }
                             }
@@ -1714,7 +1841,51 @@
     }
 }
 
-
+@media screen and (max-width: 1439.98px) {
+    .maincontent{
+        padding: 28px;
+        & .manin_content_Body{
+            & .top_post  {
+                & .card-body {
+                    & .card_title  {
+                        &.keywords{
+                        }
+                    }
+                    & .tab-content {
+                        & .post_table {
+                            & .table {
+                                & tbody {
+                                    & .postContent {
+                                        &.source {
+                                            &.sourceAcclist{
+                                                max-width: 130px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .all_sources{
+        padding: 0px 28px;
+    }
+    // ***
+    .post_table{
+        &.smcontent{
+            & .table {
+                & tbody {
+                    & .postContent {
+                        max-width: 120px;
+                    }
+                }
+            }
+        }
+    }
+}
 
 
 @media screen and (max-width: 1400px) {
@@ -1771,4 +1942,46 @@
             }
         }
     }
+    .maincontent{
+        & .manin_content_Body{
+            & .top_post  {
+                & .card-body {
+                    & .card_title  {
+                        &.keywords{
+                        }
+                    }
+                    & .tab-content {
+                        & .post_table {
+                            & .table {
+                                & tbody {
+                                    & .postContent {
+                                        &.source {
+                                            &.sourceAcclist{
+                                                max-width: 100px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .overviewTabs {
+        &.sm_overview{
+            gap: 8px !important;
+            & .nav-item {
+                & .nav-link {
+                    font-size: 14px;
+                    padding-right: 20px;
+                    &::before{
+                        content: '';
+                    }
+                }
+            }
+        }
+    }
+    // ***
 }

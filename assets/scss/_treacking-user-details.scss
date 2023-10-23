@@ -945,7 +945,35 @@
     }
     
 }
-
+@media screen and (max-width: 1550px){
+    .basicinfoCard {
+        & .content {
+        }
+        & .post_table {
+            & .table {
+                & thead {
+                    & tr {
+                        th {
+                        }
+                    }
+                }
+                & tbody{
+                    & tr {
+                        & td, th {
+                        }
+                    }
+                    & .icon{
+                    }
+                    & .postContent{
+                        &.tcSocialList{
+                            max-width: 230px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 @media screen and (max-width: 1500px) {
     // **** socialCategoery Crad *****
     .socialCategoery{
@@ -983,6 +1011,62 @@
                                     height: 15px;
                                 }
                             }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .basicinfoCard {
+        & .content {
+        }
+        & .post_table {
+            & .table {
+                & thead {
+                    & tr {
+                        th {
+                        }
+                    }
+                }
+                & tbody{
+                    & tr {
+                        & td, th {
+                        }
+                    }
+                    & .icon{
+                    }
+                    & .postContent{
+                        &.tcSocialList{
+                            max-width: 210px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1400px){
+    .basicinfoCard {
+        & .content {
+        }
+        & .post_table {
+            & .table {
+                & thead {
+                    & tr {
+                        th {
+                        }
+                    }
+                }
+                & tbody{
+                    & tr {
+                        & td, th {
+                        }
+                    }
+                    & .icon{
+                    }
+                    & .postContent{
+                        &.tcSocialList{
+                            max-width: 190px;
                         }
                     }
                 }

@@ -19,7 +19,7 @@
         overflow: hidden;
         position: absolute;
         bottom: 16px;
-        right: 16px;
+        right: 0px;
         padding: 8px 0px;
         border-radius: 8px;
         z-index: 10;
@@ -276,6 +276,52 @@
         // }
         & svg{
             transform: translate(-40%, -5%);
+        }
+    }
+    .geo_map {
+        & img {
+        }
+        & .icons-wrap-container {
+        }
+        & .icons-wrap-container i{
+        }
+        & .icons-wrap-container, & .numerice-icon-number {
+        }
+        & .zoom-buttons-map {
+            & button {
+                height: 22px;
+                width: 22px;
+                &:first-child{
+                    &::before{
+                        right: -11.5px;
+                    }
+                }
+            }
+            &.geoMapBtns{
+                right: 332px;
+            }
+        }
+        & .icon-description-bar {		
+        }
+        & .geomapmain {
+            & .svgmap{
+            }
+            g.node2 ellipse, g.node3 ellipse {
+            }
+            g.node2.animation_color ellipse {
+            }
+            g.node2 rect, g.node3 rect {
+            }
+            g.node3.animation_color ellipse{
+            }
+        }
+        &.nonzomm_btn{
+            & .zoom-buttons-map {
+            }
+        }
+        & .geomapmain{
+            & .svgmap {
+            }
         }
     }
 }
