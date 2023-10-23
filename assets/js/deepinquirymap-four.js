@@ -1,4 +1,4 @@
-var cy = cytoscape({
+var cy_four = cytoscape({
   container: document.getElementById('cytoscape_chart_four'),
 
   boxSelectionEnabled: false,
@@ -138,19 +138,19 @@ var cy = cytoscape({
     enabled: true, // Enable the popper extension
     // ... Other popper configuration options ...
   }
-}); // cy init
+}); // cy_four init
 
 
-cy.panningEnabled()
+cy_four.panningEnabled()
 function runCodeBasedOnScreenSize() {
   var windowWidth = window.innerWidth;
 
   if (windowWidth > 1600) {
-    cy.zoom(cy.zoom() * 0.6);
+    cy_four.zoom(cy_four.zoom() * 0.6);
   } else if (windowWidth > 1400) {
-    cy.zoom(cy.zoom() * 0.5);
+    cy_four.zoom(cy_four.zoom() * 0.5);
   } else {
-    cy.zoom(cy.zoom() * 0.4);
+    cy_four.zoom(cy_four.zoom() * 0.4);
   }
 }
 
@@ -159,7 +159,7 @@ runCodeBasedOnScreenSize();
 
 $(window).resize(runCodeBasedOnScreenSize);
 // cy.zoom(cy.zoom() * 1);
-var edges = cy.elements('.edge');
+var edges = cy_four.elements('.edge');
 // Apply a style to the selected edges
 edges.style({
   'line-color': 'blue',
@@ -167,7 +167,7 @@ edges.style({
   'target-arrow-shape': 'none'
 });
 
-cy.edges().on('click', function(event) {
+cy_four.edges().on('click', function(event) {
   var edge = event.target;
 
   if (edge.data('originalColor')) {
@@ -194,7 +194,7 @@ cy.edges().on('click', function(event) {
   event.stopPropagation();
 });
 
-cy.nodes().on('click', function(event) {
+cy_four.nodes().on('click', function(event) {
   var node = event.target;
 
   // Get the connected edges of the clicked node
@@ -227,17 +227,17 @@ cy.nodes().on('click', function(event) {
   event.stopPropagation();
 });
 
-  var e_four_1 = cy.getElementById('e_four_1');
-  var e_four_2 = cy.getElementById('e_four_2');  
-  var e_four_3 = cy.getElementById('e_four_3');
-  var e_four_4 = cy.getElementById('e_four_4');
-  var e_four_5 = cy.getElementById('e_four_5');
+  var e_four_1 = cy_four.getElementById('e_four_1');
+  var e_four_2 = cy_four.getElementById('e_four_2');  
+  var e_four_3 = cy_four.getElementById('e_four_3');
+  var e_four_4 = cy_four.getElementById('e_four_4');
+  var e_four_5 = cy_four.getElementById('e_four_5');
 
   
-  var offb = cy.getElementById('offb');
-  var dinhhoangtung = cy.getElementById('dinhhoangtung');
-  var anycar_two = cy.getElementById('anycar_two');
-  var dinhngoccham = cy.getElementById('dinhngoccham');
+  var offb = cy_four.getElementById('offb');
+  var dinhhoangtung = cy_four.getElementById('dinhhoangtung');
+  var anycar_two = cy_four.getElementById('anycar_two');
+  var dinhngoccham = cy_four.getElementById('dinhngoccham');
 
   var specificEdges = [e_four_3];
   // var specificEdges = [e_four_1, e_four_2, e_four_3, e_four_4, e_four_5];

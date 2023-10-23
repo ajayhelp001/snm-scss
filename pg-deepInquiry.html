@@ -855,7 +855,7 @@
                                         </div>
                                         <div class=" h-100 mapsides">
                                             <nav class="topnavtabs">
-                                                <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
+                                                <div class="nav nav-tabs border-0 navactive_tabs" id="nav-tab" role="tablist">
                                                     <button class="nav-link border-0 active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Inquiries #0001 <span class="closeicon"><img src="assets/image/icon/close32.svg" alt="close"></span></button>
                                                     <button class="nav-link border-0" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Inquiries #0002 <span class="closeicon"><img src="assets/image/icon/close32.svg" alt="close"></span></button>
                                                     <button class="nav-link border-0" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false" disabled>Inquiries #0003 <span class="closeicon"><img src="assets/image/icon/close32.svg" alt="close"></span></button>
@@ -1004,9 +1004,43 @@
 	<script src="assets/libs/cytoscape/cytoscape-popper.js"></script>
     
     <!-- **** Custom Js ***** -->
-    <script src="assets/js/custom.js"></script>
+    <!-- <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            
+        if ($('.navactive_tabs button').id == 'nav-profile-tab') {            
+            $.getScript("assets/js/deepinquirymap-four.js", function() {
+                console.log("deepinquirymap-four.js loaded and executed.");
+            });
+        } else {
+            $.getScript("assets/js/deepinquirymap.js", function() {
+                console.log("deepinquirymap.js loaded and executed.");
+            });
+        } 
+        if ($('.navactive_tabs button').id == 'nav-home-tab') {            
+            $.getScript("assets/js/deepinquirymap.js", function() {
+                console.log("deepinquirymap.js loaded and executed.");
+            });
+        } else {
+                $.getScript("assets/js/deepinquirymap-four.js", function() {
+                    console.log("deepinquirymap-four.js loaded and executed.");
+                });
+            }
+        if ($('.navactive_tabs button').attr('id') == 'nav-home-tab') {  
+            var script = document.createElement('script');
+            script.src = "assets/js/deepinquirymap.js";
+            script.id = "script-home";
+            document.head.appendChild(script);
+            console.log("deepinquirymap.js loaded and executed.");
+        }
+
+        // Later, when you want to remove the script
+        $("#script-home").remove(); // this will remove the deepinquirymap.js scrip
+        
+    }); -->
+    </script>
     <script src="assets/js/deepinquirymap.js"></script>
     <script src="assets/js/deepinquirymap-four.js"></script>
+    <script src="assets/js/custom.js"></script>
 
 </body>
 </html>

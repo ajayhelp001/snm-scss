@@ -96,6 +96,21 @@
                     transition: all ease-in-out 0.3s;
                 }
             }
+            &:disabled{
+                pointer-events: none;
+                cursor: default;
+                background: var(--balck--light);  
+                color: var(--netural-dark);
+                &:hover {
+                    background: var(--balck--light);  
+                    color: var(--netural-dark);
+                    & .closeicon {
+                        & img {
+                            filter: unset;
+                        }
+                    }
+                }
+            }
         }
     }
 }
