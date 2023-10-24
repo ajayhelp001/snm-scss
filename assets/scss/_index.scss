@@ -635,6 +635,18 @@
                 }
             }
         }
+        & .top_post  {
+            & .card-body {
+                & .card_title  {
+                    &.smkeywordsgroup{
+                        display: none;
+                    }
+                    &.lgkeywordsgroup{
+                        display: flex;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -769,7 +781,7 @@
     }
 }
 
-.active_data_show, .active_show {
+.rightsidetable {
     & .table {
         & tbody {
             & tr {
@@ -793,6 +805,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+            z-index: 50;
         }
         & .overviewTabs {
             margin-bottom: 12px;
@@ -990,4 +1003,128 @@
 }
 
 
+@media screen and (max-width:  1600px) {
+    .homepage{
+        & .manin_content_Body {
+            & .navigationBar {
+                min-height: 70px;
+                & .navigationBar{
+                    padding: 6px 0px;
+                }
+            }
+            & .posttableSide  {
+                & .post_table  {
+                    &.minidatatable{
+                        max-height: 275px;
+                    }
+                }
+            }
+            & .rightsidetable {
+                & .d_bottomBody{
+                    height: calc(100% - 291px);
+                }
+            }
+        }
+    }
+}
 
+@media screen and (max-width:  1400px) {
+    .homepage{
+        & .manin_content_Body {
+            & .navigationBar {
+                & .navigationBar{
+                }
+            }
+            & .posttableSide  {
+                & .post_table  {
+                    &.minidatatable{
+                        max-height: 185px;
+                    }
+                    & .overviewTabs {
+                        margin-bottom: 8px;
+                    }
+                }
+            }
+            & .rightsidetable {
+                & .d_bottomBody{
+                    height: calc(100% - 197px);
+                }
+                & .informationCard  {
+                    & .card-body{
+                        & .innerbody  {
+                            gap: 8px;
+                            & .posted  {
+                                gap: 4px;
+                            }
+                            & .bodypart{
+                                & > div{
+                                    gap: 6px !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            & .linechartsmain{
+                height: 35.07%;
+            }
+            & .bootompicharts{
+                height: 63.69%;
+            }
+            & .levelCard{
+                &.barchart {
+                    // height: 277px;
+                    & .chart {
+                        // height: 199px;
+                        height: 80%;
+                    }
+                }
+                &.stackedChartCard {
+                    & .stackedChart {
+                        & .chartGroup {
+
+                        }
+                        & .linechart_group{
+                            height: 100%;
+                            & .apexcharts-datalabels{
+                                & .apexcharts-text {
+                                    font-size: 10px;
+                                    line-height: 10px;
+                                }
+                            }
+                            & .apexcharts-xaxis-texts-g {
+                                & .apexcharts-text {
+                                    font-size: 10px;
+                                    line-height: 10px;
+                                }
+                            }
+                        }
+                    }
+                    & .card-body{
+                        & .chartlable {
+                            & li {
+                                & .keyBtn {
+                                    font-size: 10px !important;
+                                    height: 22px;
+                                    padding: 0px 6px;
+                                    & img{
+                                        width: 14px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            & .d_chartgroups {
+                & .bootompicharts {
+                    & .levelCard  {
+                        & .card-body {
+                            padding: 6px 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

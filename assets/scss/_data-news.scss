@@ -867,7 +867,7 @@
             & tr {
                 & th {
                     position: sticky;
-                    top: 0;
+                    top: -1px;
                     z-index: 100;
                     &:first-child {
                         // height: 48px;

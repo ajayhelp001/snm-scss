@@ -261,8 +261,8 @@
                         // height: 366px;
                         height: 100%;
                         & .linechart_group{
-                            margin-top: -30px;
                             min-height: 200px !important;
+                            margin-top: -20px;
                             &>div{
                                 height: 200px !important;
                             }
@@ -275,7 +275,7 @@
                             margin-bottom: 0px;
                         }
                         & .chartlable {
-                            margin: 1px 0px 0px 0px;
+                            margin: 11px 0px 0px 0px;
                             & li {
                                 & .keyBtn {
                                     font-size: 13px;
@@ -392,7 +392,10 @@
             & .top_post  {
                 & .card-body {
                     & .card_title  {
-                        &.keywords{
+                        // &.smkeywordsgroup{
+                        //     display: flex;
+                        // }
+                        &.lgkeywordsgroup{
                             display: block;
                         }
                     }
@@ -437,27 +440,29 @@
             }
         }
         & .analysisCommentBox{
-            & .originalComment {
-                & .commentitem{
-                    &:hover{
+            &.sm_an_commentBoxs{
+                & .originalComment {
+                    & .commentitem{
+                        &:hover{
+                            & .leftItemList {
+                                min-width: 400px;
+                            }
+                            & .comment_card {
+                                max-width: 400px;
+                                & .comment_item_Body {
+                                }
+                            }
+                        }
                         & .leftItemList {
                             min-width: 400px;
                         }
-                        & .comment_card {
-                            max-width: 400px;
-                            & .comment_item_Body {
-                            }
-                        }
                     }
-                    & .leftItemList {
-                        min-width: 400px;
+                    & .violationContent{
                     }
                 }
-                & .violationContent{
+                & .comment_card{
+                    max-width: 400px;
                 }
-            }
-            & .comment_card{
-                max-width: 400px;
             }
         }
     }
@@ -571,6 +576,28 @@
                         margin-bottom: 10px;
                     }
                 }
+                &.stackedChartCard {
+                    & .stackedChart {
+                        & .linechart_group{
+                            margin-top: -25px;
+                        }
+                        & .chartGroup {
+                        }
+                    }
+                    & .card-body{
+                        & .card_title{
+                        }
+                        & .chartlable {
+                            margin: 6px 0px 0px 0px;
+                            & li {
+                                & .keyBtn {
+                                    & img{
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
             }
             // ****
             & .pichart {
@@ -587,7 +614,11 @@
             & .top_post  {
                 & .card-body {
                     & .card_title  {
-                        &.keywords{
+                        &.smkeywordsgroup{
+                            display: flex;
+                        }
+                        &.lgkeywordsgroup{
+                            display: none;
                         }
                     }
                     & .tab-content {
@@ -1574,6 +1605,8 @@
         }
     }
 
+    
+
 }
 
 
@@ -1586,6 +1619,10 @@
             // ***
             & .levelCard  {
                 & .card-body{
+                    & .card_title  {
+                        font-size: 20px;
+                        margin-bottom: 8px;
+                    }
                 }
             }
             // ****
@@ -1815,27 +1852,29 @@
     }
     .facebook-postDetails-overview{
         & .analysisCommentBox{
-            & .originalComment {
-                & .commentitem{
-                    &:hover{
+            &.sm_an_commentBoxs{
+                & .originalComment {
+                    & .commentitem{
+                        &:hover{
+                            & .leftItemList {
+                                min-width: 330px;
+                            }
+                            & .comment_card {
+                                max-width: 330px;
+                                & .comment_item_Body {
+                                }
+                            }
+                        }
                         & .leftItemList {
                             min-width: 330px;
                         }
-                        & .comment_card {
-                            max-width: 330px;
-                            & .comment_item_Body {
-                            }
-                        }
                     }
-                    & .leftItemList {
-                        min-width: 330px;
+                    & .violationContent{
                     }
                 }
-                & .violationContent{
+                & .comment_card{
+                    max-width: 330px;
                 }
-            }
-            & .comment_card{
-                max-width: 330px;
             }
         }
     }
@@ -1865,6 +1904,14 @@
                                 }
                             }
                         }
+                    }
+                }
+            }
+            & .levelCard  {
+                & .card-body{
+                    & .card_title  {
+                        font-size: 18px;
+                        margin-bottom: 6px;
                     }
                 }
             }
@@ -1918,27 +1965,51 @@
         & .actorListCard{
         }
         & .analysisCommentBox{
+            &.sm_an_commentBoxs{
+                & .originalComment {
+                    & .commentitem{
+                        &:hover{
+                            & .leftItemList {
+                                min-width: 300px;
+                            }
+                            & .comment_card {
+                                max-width: 300px;
+                                & .comment_item_Body {
+                                }
+                            }
+                        }
+                        & .leftItemList {
+                            min-width: 300px;
+                        }
+                    }
+                    & .violationContent{
+                    }
+                }
+                & .comment_card{
+                    max-width: 300px;
+                }
+            }
             & .originalComment {
                 & .commentitem{
                     &:hover{
                         & .leftItemList {
-                            min-width: 300px;
+                            min-width: 450px;
                         }
                         & .comment_card {
-                            max-width: 300px;
+                            max-width: 450px;
                             & .comment_item_Body {
                             }
                         }
                     }
                     & .leftItemList {
-                        min-width: 300px;
+                        min-width: 450px;
                     }
                 }
                 & .violationContent{
                 }
             }
             & .comment_card{
-                max-width: 300px;
+                max-width: 450px;
             }
         }
     }
@@ -1963,6 +2034,128 @@
                                     }
                                 }
                             }
+                        }
+                    }
+                }
+            }
+            & .levelCard{
+                &.stackedChartCard {
+                    & .stackedChart {
+                        & .linechart_group{
+                            margin-top: -30px;
+                        }
+                        & .chartGroup {
+                        }
+                    }
+                    & .card-body{
+                        & .card_title{
+                        }
+                        & .chartlable {
+                            margin: 1px 0px 0px 0px;
+                            & li {
+                                & .keyBtn {
+                                    & img{
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            & .pichart {
+                & .card-body {
+                    & .sourcetitle{
+                    }
+                    & .chartvalue{
+                        & .ratingUser {
+                        }
+                    }
+                    & .innerbody {
+                        gap: 6px;
+                        & .picharts{
+                            & canvas{
+                            }
+                        }
+                        & .cardSubTitle {
+                            font-size: 15px;
+                            &.tablet{
+                            }
+                        }
+                        & .tredMap {
+                            & .tredingImg {
+                                height: 20px;
+                                width: 20px;
+                                & img {
+                                }
+                            }
+                            & span {
+                                font-size: 14px;
+                            }
+                            &.pichartmap {
+                                & .tredingImg {
+                                    height: 16px;
+                                    width: 16px;
+                                }
+                                & span {
+                                    font-size: 11px;
+                                }
+                            }
+                            &.greenzone{
+                                & span {
+                                }
+                            }
+                        }
+                        & .chartvalue {
+                            margin-bottom: 2px;
+                            & .chartbody {
+                                & .point {
+                                    width: 11px;
+                                    height: 11px;
+                                }
+                                & .ratingUser {
+                                    font-size: 14px;
+                                }
+                                & .amount{
+                                    font-size: 12px;
+                                }
+                            }
+                            &.tiktok {
+                                & .chartbody{
+                                    & .point{
+                                    }
+                                    & .ratingUser{
+                                    }
+                                }
+                            }
+                            &.youtube {
+                                & .chartbody{
+                                    & .point{
+                                    }
+                                    & .ratingUser{
+                                    }
+                                }
+                            }
+                            &.news {
+                                & .chartbody{
+                                    & .point{
+                                    }
+                                    & .ratingUser{
+                                    }
+                                }
+                            }
+                        }
+                        &.bootomtreackchart{
+                            & .chartvalue {
+                                & .chartbody {
+                                    & .point {
+                                    }
+                                    & .ratingUser {
+                                    }
+                                }
+                            }
+                        }
+                        & .totalresult {
+                            font-size: 12px;
                         }
                     }
                 }

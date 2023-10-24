@@ -31,7 +31,7 @@ new Chart(
     {
         type: 'line',
         data: {
-            labels: ['','2h', '6h', '8h', '10h', '12h', '16h', '18h', '20h', '22h'],
+            labels: ['', '2h', '6h', '8h', '10h', '12h', '16h', '18h', '20h', '22h'],
             datasets: [
                 {
                     // label: 'Spending',
@@ -107,7 +107,7 @@ new Chart(
     {
         type: 'line',
         data: {
-            labels: ['','2h', '6h', '8h', '10h', '12h', '16h', '18h', '20h', '22h'],
+            labels: ['', '2h', '6h', '8h', '10h', '12h', '16h', '18h', '20h', '22h'],
             datasets: [
                 {
                     label: 'Spending',
@@ -307,7 +307,7 @@ var options = {
     ],
     chart: {
         type: 'bar',
-        height: 330,
+        height: 350,
         stacked: true,
         toolbar: {
             show: true
@@ -323,16 +323,17 @@ var options = {
             colors: ['#000']
         }
     },
-    responsive: [{
-        breakpoint: 480,
-        options: {
-            legend: {
-                position: 'bottom',
-                offsetX: -10,
-                offsetY: 0
+    responsive: [
+        {
+            breakpoint: 1400.98, // this will apply to screens smaller than 480px
+            options: {
+                chart: {
+                    height: 330
+                },
+                // any other options you want to change...
             }
-        }
-    }],
+        },
+    ],
     // plotOptions: {
     //     bar: {
     //         horizontal: true,
@@ -393,3 +394,10 @@ chart.render();
 
 
 
+
+window.addEventListener('beforeprint', () => {
+    chart.resize(600, 600);
+});
+window.addEventListener('afterprint', () => {
+    chart.resize();
+});
