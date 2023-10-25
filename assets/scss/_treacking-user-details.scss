@@ -188,6 +188,105 @@
         line-height: 140%; /* 25.2px */
         margin-top: 4px;
     }
+    & .socialslider {
+        padding-top: 90px;
+        & .socialImg{
+            &.sm_socialImg {
+                width: 48px;
+                height: 48px;
+                border: 2.5px solid var(--netural-dark);
+                & .socialIcon{
+                    width: 14.5px;
+                    height: 14.5px;
+                }
+            }
+            &.active{
+                border: 4px solid var(--active);
+                width: 80px;
+                height: 80px;
+                & .socialIcon{
+                    width: 24px;
+                    height: 24px;
+                }
+                &.tiktok{
+                    border-color: var(--white);
+                }
+                &.youtube{
+                    border-color: var(--theme-red);
+                }
+            }
+        }
+        & .owl-dots {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 80px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            & button{
+                width: 48px;
+                height: 48px;
+                border: 2.5px solid var(--netural-dark);
+                border-radius: 50%;
+                position: relative;
+                &::before{
+                    content: '';
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    inset: 0;
+                    border-radius: 50%;
+                    margin: auto;
+                    background: url(../image/media/ima/-mediaExample-1.png) center no-repeat;
+                    background-size: cover;
+                }
+                &::after{
+                    content: '';
+                    width: 14.5px;
+                    height: 14.5px;
+                    position: absolute;
+                    right: -4%;
+                    bottom: 0%;
+                    background-size: contain;
+                    border-radius: 4px;
+                    transition: all ease-in-out 0.3s;
+                }
+                &:first-child{
+                    &::after{
+                        background: url(../image/icon/ticktok.svg) center no-repeat;
+                    }
+                    &.active{
+                        border-color: var(--white);
+                    }
+                }
+                &:nth-child(2){
+                    &::after{
+                        background: url(../image/icon/fb.svg) center no-repeat;
+                    }
+                }
+                &:last-child{
+                    &::after{
+                        background: url(../image/icon/youtube.svg) center no-repeat;
+                    }
+                    &.active{
+                        border-color: var(--theme-red);
+                    }
+                }
+                &.active {
+                    width: 80px;
+                    height: 80px;
+                    border: 4px solid var(--active);
+                    &::after{
+                        width: 24px;
+                        height: 24px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 // * famely_card
