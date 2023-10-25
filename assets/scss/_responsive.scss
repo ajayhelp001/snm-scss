@@ -228,7 +228,7 @@
             & .pichart {
                 & .card-body {
                     & .innerbody {
-                        gap: 12px;
+                        gap: 2px;
                     }
                 }
             }
@@ -279,6 +279,7 @@
                             & li {
                                 & .keyBtn {
                                     font-size: 13px;
+                                    height: 20.4px;
                                     & img{
                                         width: 15px;
                                     }
@@ -392,11 +393,11 @@
             & .top_post  {
                 & .card-body {
                     & .card_title  {
-                        // &.smkeywordsgroup{
-                        //     display: flex;
-                        // }
+                        &.smkeywordsgroup{
+                            display: flex;
+                        }
                         &.lgkeywordsgroup{
-                            display: block;
+                            display: none;
                         }
                     }
                     & .tab-content {
@@ -563,7 +564,6 @@
         }
     }
 }
-
 
 @media screen and (max-width: 1600px) {
     .maincontent{

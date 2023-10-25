@@ -325,13 +325,13 @@ var options = {
     },
     responsive: [
         {
-            breakpoint: 1400.98, // this will apply to screens smaller than 480px
+            breakpoint: 1700.98, // this will apply to screens smaller than 480px
             options: {
                 chart: {
-                    height: 330
+                    height: 315
                 },
                 // any other options you want to change...
-            }
+            },
         },
     ],
     // plotOptions: {

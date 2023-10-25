@@ -183,7 +183,7 @@
                             & tr {
                                 & th {
                                     position: sticky;
-                                    top: 0;
+                                    top: -1px;
                                     &:first-child {
                                         // height: 48px;
                                         width: 48px;
@@ -547,7 +547,7 @@
                                         }
                                         & .postContent {
                                             &.bio {
-                                                max-width: 300px;
+                                                max-width: 280px;
                                             }
                                         }
                                     }
@@ -561,6 +561,7 @@
             }
         }
     }
+    
 }
 
 @media screen and (max-width: 1700px) {
@@ -685,70 +686,71 @@
             }
         }
     }
-.data-news-postList{
-    .midtableGroup{
-        max-width: calc(100% - 546px);
+    .data-news-postList{
+        .midtableGroup{
+            max-width: calc(100% - 546px);
+        }
+        .newsFilterCard{
+            width: 265px;
+        }
     }
-    .newsFilterCard{
-        width: 265px;
-    }
-}
 
-.apendDataTable{
-    & .list_post_Table {
-        & .list {
-            & .posttableSide {
-                &.post_listTable {
-                    & .post_table {
-                        & .table {
-                            & thead {
-                                & tr {
-                                    & th {
-                                        &:last-child {
+    .apendDataTable{
+        & .list_post_Table {
+            & .list {
+                & .posttableSide {
+                    &.post_listTable {
+                        & .post_table {
+                            & .table {
+                                & thead {
+                                    & tr {
+                                        & th {
+                                            &:last-child {
+                                            }
                                         }
                                     }
                                 }
-                            }
-                            & tbody {
-                                & tr {
-                                    &:nth-child(2) {
-                                    }
-                                    & td {
-                                        &:last-child {
-                                            // width: 80px;
+                                & tbody {
+                                    & tr {
+                                        &:nth-child(2) {
                                         }
-                                        & .postContent {
-                                            &.source {
-                                                & .sourceName {
+                                        & td {
+                                            &:last-child {
+                                                // width: 80px;
+                                            }
+                                            & .postContent {
+                                                &.source {
+                                                    & .sourceName {
+                                                    }
                                                 }
                                             }
-                                        }
-                                        & .view {
-                                            & .icon {
-                                                width: 22px;
-                                                height: 22px;
-                                                min-width: 22px;
-                                                &:hover {
-                                                }
-                                                &.scope{
-                                                    & img {
+                                            & .view {
+                                                & .icon {
+                                                    width: 22px;
+                                                    height: 22px;
+                                                    min-width: 22px;
+                                                    &:hover {
+                                                    }
+                                                    &.scope{
+                                                        & img {
+                                                        }
                                                     }
                                                 }
                                             }
                                         }
                                     }
                                 }
-                            }
-                            &.table-hover {
-                                & > tbody {
-                                    & > tr {
-                                        &:hover {
-                                            & td {
-                                                & .view{
-                                                    & .icon{
-                                                        &.scope {
-                                                            & img {
-                                                                // filter: brightness(1);
+                                &.table-hover {
+                                    & > tbody {
+                                        & > tr {
+                                            &:hover {
+                                                & td {
+                                                    & .view{
+                                                        & .icon{
+                                                            &.scope {
+                                                                & img {
+                                                                    // filter: brightness(1);
+                                                                }
                                                             }
                                                         }
                                                     }
@@ -764,7 +766,6 @@
             }
         }
     }
-}
 }
 
 @media screen and (max-width: 1500px) {
@@ -1720,6 +1721,59 @@
             }
         }
     }
+    .lg_data_table{
+        & .top_post {
+            & .post_table{
+                &.smcontent{
+                    & .table{
+                        & tbody{
+                            & .postContent {
+                                max-width: 200px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .lg_news_data_table{
+        & .list_post_Table {
+            & .list {
+                & .posttableSide {
+                    &.post_listTable {
+                        & .post_table {
+                            & .table {
+                                & tbody {
+                                    & tr {
+                                        & td {
+                                            &:first-child {
+                                                & .form-check {
+                                                }
+                                            }
+                                            &:nth-child(2) {
+                                                max-width: 180px;
+                                            }
+                                            &:last-child {
+                                                max-width: 96px;
+                                            }
+                                            & .postContent {
+                                                &.bio {
+                                                    max-width: 400px;
+                                                }
+                                            }
+                                        }
+                                        &:nth-child(2) {
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 @media screen and (max-width: 1849.98px) {
     .informationCard{
@@ -1731,6 +1785,21 @@
                             font-size: 13px;
                         }
                         & .rate {
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .lg_data_table{
+        & .top_post {
+            & .post_table{
+                &.smcontent{
+                    & .table{
+                        & tbody{
+                            & .postContent {
+                                max-width: 170px;
+                            }
                         }
                     }
                 }
@@ -1751,6 +1820,31 @@
                             font-size: 14px;
                             & span{
                                 font-size: 11px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .lg_data_table{
+        & .top_post {
+            & .post_table{
+                &.smcontent{
+                    & .table{
+                        & tr {
+                            & th {
+                                padding: 11px 6px;
+                            }
+                        }
+                        & tbody{
+                            & .postContent {
+                                max-width: 140px;
+                            }
+                            & tr {
+                                & td {
+                                    padding: 4px;
+                                }
                             }
                         }
                     }
@@ -1784,6 +1878,91 @@
                     }
                 }
             }
+        }
+    }
+    .maincontent{
+        &.lg_data_table{
+            & .manin_content_Body{
+                & .post_table{
+                    & .table{
+                        & tr {
+                            & th {
+                                // padding: 11px 6px;
+                            }
+                        }
+                        & tbody{
+                            & .postContent {
+                                max-width: 140px;
+                                &.singalintrection{
+                                max-width: 140px;
+                                }
+                            }
+                            & tr {
+                                & td {
+                                    // padding: 4px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &.facebook-postlist-data{
+                & .newsFilterCard {
+                    width: 200px;
+                }
+                & .insteractionCard{
+                    width: 280px;
+                }
+                & .midtableGroup {
+                    max-width: calc(100% - 496px);
+                }
+            }
+        }
+    }
+    .lg_news_data_table{
+        & .list_post_Table {
+            & .list {
+                & .posttableSide {
+                    &.post_listTable {
+                        & .post_table {
+                            & .table {
+                                & tbody {
+                                    & tr {
+                                        & td {
+                                            &:first-child {
+                                                & .form-check {
+                                                }
+                                            }
+                                            &:nth-child(2) {
+                                                // max-width: 180px;
+                                            }
+                                            &:last-child {
+                                                // max-width: 96px;
+                                            }
+                                            & .postContent {
+                                                &.bio {
+                                                    max-width: 275px;
+                                                }
+                                            }
+                                        }
+                                        &:nth-child(2) {
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .newsFilterCard {
+            width: 200px;
+            &.sourcecards{
+                width: 280px;
+            }
+        }
+        & .midtableGroup {
+            max-width: calc(100% - 496px);
         }
     }
 }
@@ -1849,6 +2028,271 @@
                     }
                 }
             }
+        }
+    }
+    .maincontent{
+        &.lg_data_table{
+            & .manin_content_Body{
+                & .post_table{
+                    & .table{
+                        & tr {
+                            & th {
+                                // padding: 11px 6px;
+                            }
+                        }
+                        & tbody{
+                            & .postContent {
+                                // max-width: 140px;
+                                &.singalintrection{
+                                // max-width: 140px;
+                                }
+                            }
+                            & tr {
+                                & td {
+                                    // padding: 4px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            // &.facebook-postlist-data{
+            //     & .newsFilterCard {
+            //         width: 200px;
+            //     }
+            //     & .insteractionCard{
+            //         width: 280px;
+            //     }
+            //     & .midtableGroup {
+            //         max-width: calc(100% - 496px);
+            //     }
+            // }
+        }
+    }
+    .lg_news_data_table{
+        & .list_post_Table {
+            & .list {
+                & .posttableSide {
+                    &.post_listTable {
+                        & .post_table {
+                            & .table {
+                                & tbody {
+                                    & tr {
+                                        & td {
+                                            &:first-child {
+                                                & .form-check {
+                                                }
+                                            }
+                                            &:nth-child(2) {
+                                                max-width: 150px;
+                                            }
+                                            &:last-child {
+                                                // max-width: 96px;
+                                            }
+                                            & .postContent {
+                                                &.bio {
+                                                    max-width: 280px;
+                                                }
+                                            }
+                                        }
+                                        &:nth-child(2) {
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .newsFilterCard {
+            width: 200px;
+            &.sourcecards{
+                width: 280px;
+            }
+        }
+        & .midtableGroup {
+            max-width: calc(100% - 482px);
+        }
+    }
+}
+@media screen and (max-width: 1500px) {
+    .maincontent{
+        &.lg_data_table{
+            & .manin_content_Body{
+                & .post_table{
+                    & .table{
+                        & tr {
+                            & th {
+                                // padding: 11px 6px;
+                            }
+                        }
+                        & tbody{
+                            & .postContent {
+                                // max-width: 120px;
+                                &.singalintrection{
+                                max-width: 120px !important;
+                                }
+                            }
+                            & tr {
+                                & td {
+                                    // padding: 4px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &.facebook-postlist-data{
+                & .newsFilterCard {
+                    width: 200px;
+                }
+                & .insteractionCard{
+                    width: 240px;
+                }
+                & .midtableGroup {
+                    max-width: calc(100% - 461px);
+                }
+            }
+        }
+    }
+    .lg_news_data_table{
+        & .list_post_Table {
+            & .list {
+                & .posttableSide {
+                    &.post_listTable {
+                        & .post_table {
+                            & .table {
+                                & tbody {
+                                    & tr {
+                                        & td {
+                                            &:first-child {
+                                                & .form-check {
+                                                }
+                                            }
+                                            &:nth-child(2) {
+                                                max-width: 100px;
+                                            }
+                                            &:last-child {
+                                                // max-width: 96px;
+                                            }
+                                            & .postContent {
+                                                &.bio {
+                                                    max-width: 225px;
+                                                }
+                                            }
+                                        }
+                                        &:nth-child(2) {
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .newsFilterCard {
+            width: 200px;
+            &.sourcecards{
+                width: 240px;
+            }
+        }
+        & .midtableGroup {
+            max-width: calc(100% - 456px);
+        }
+    }
+}
+@media screen and (max-width: 1400px) {
+    .maincontent{
+        &.lg_data_table{
+            & .manin_content_Body{
+                & .post_table{
+                    & .table{
+                        & tr {
+                            & th {
+                                // padding: 11px 6px;
+                            }
+                        }
+                        & tbody{
+                            & .postContent {
+                                max-width: 110px;
+                                &.singalintrection{
+                                max-width: 120px !important;
+                                }
+                            }
+                            & tr {
+                                & td {
+                                    // padding: 4px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &.facebook-postlist-data{
+                & .newsFilterCard {
+                    width: 150px;
+                    // & .radioBtn {
+                    //     width: 100%;
+                    // }
+                }
+                & .insteractionCard{
+                    width: 240px;
+                }
+                & .midtableGroup {
+                    max-width: calc(100% - 411px);
+                }
+            }
+        }
+    }
+    .lg_news_data_table{
+        & .list_post_Table {
+            & .list {
+                & .posttableSide {
+                    &.post_listTable {
+                        & .post_table {
+                            & .table {
+                                & tbody {
+                                    & tr {
+                                        & td {
+                                            &:first-child {
+                                                & .form-check {
+                                                }
+                                            }
+                                            &:nth-child(2) {
+                                                // max-width: 100px;
+                                            }
+                                            &:last-child {
+                                                // max-width: 96px;
+                                            }
+                                            & .postContent {
+                                                &.bio {
+                                                    max-width: 200px;
+                                                }
+                                            }
+                                        }
+                                        &:nth-child(2) {
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .newsFilterCard {
+            width: 150px;
+            // & .radioBtn {
+            //     width: 100%;
+            // }
+            &.sourcecards{
+                width: 240px;
+            }
+        }
+        & .midtableGroup {
+            max-width: calc(100% - 406px);
         }
     }
 }

@@ -451,6 +451,7 @@
             &.stackedChartCard {
                 & .stackedChart {
                     height: 366px;
+                    margin-top: -13px;
                     & .chartGroup {
                         height: 100%;
                     }
@@ -459,7 +460,7 @@
                     & .chartlable {
                         list-style: none;
                         padding: 0px;
-                        margin: 33px 0px 0px 0px;
+                        margin: 23px 0px 0px 0px;
                         display: flex;
                         flex-direction: column;
                         gap: 4px;
@@ -497,7 +498,7 @@
         & .pichart {
             & .card-body {
                 & .innerbody {
-                    gap: 16px;
+                    gap: 10px;
                     & .cardSubTitle {
                         color: var(--white);
                         font-style: normal;
@@ -791,6 +792,9 @@
     }
     & .d_bottomBody {
         min-height: calc(100% - 376px);
+        & .db_morecard {
+            min-height: 100%;
+        }
     }
 }
 .active_data_show{
@@ -840,7 +844,7 @@
             & tr{
                 & th {
                     position: sticky;
-                    top: 0;
+                    top: -1px;
                     z-index: 100;
                     height: 40px;
                     // text-align: center;
@@ -1003,6 +1007,50 @@
 }
 
 
+@media screen and (max-width:  1700px) {
+    .homepage{
+        & .manin_content_Body {
+            & .navigationBar {
+                min-height: 70px;
+                & .navigationBar{
+                    padding: 6px 0px;
+                }
+            }
+            & .posttableSide  {
+                & .post_table  {
+                    &.minidatatable{
+                        max-height: 300px;
+                    }
+                    & .overviewTabs {
+                        margin-bottom: 8px;
+                    }
+                }
+            }
+            & .rightsidetable {
+                & .d_bottomBody{
+                    height: calc(100% - 316px);
+                }
+                & .informationCard  {
+                    & .card-body{
+                        & .innerbody  {
+                            gap: 8px;
+                            & .posted  {
+                                gap: 4px;
+                            }
+                            & .bodypart{
+                                & > div{
+                                    gap: 6px !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
 @media screen and (max-width:  1600px) {
     .homepage{
         & .manin_content_Body {
@@ -1015,13 +1063,31 @@
             & .posttableSide  {
                 & .post_table  {
                     &.minidatatable{
-                        max-height: 275px;
+                        max-height: 215px;
+                    }
+                    & .overviewTabs {
+                        margin-bottom: 8px;
                     }
                 }
             }
             & .rightsidetable {
                 & .d_bottomBody{
-                    height: calc(100% - 291px);
+                    height: calc(100% - 231px);
+                }
+                & .informationCard  {
+                    & .card-body{
+                        & .innerbody  {
+                            gap: 8px;
+                            & .posted  {
+                                gap: 4px;
+                            }
+                            & .bodypart{
+                                & > div{
+                                    gap: 6px !important;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
