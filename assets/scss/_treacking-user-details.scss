@@ -286,6 +286,32 @@
                 }
             }
         }
+        .owl-dots {
+            text-align: center;
+          }
+          
+          .owl-dot {
+            display: inline-block;
+            margin: 0 5px;
+          }
+          
+          .owl-dot.active {
+            position: relative;
+          }
+          
+          .owl-dot:not(.active) {
+            position: absolute;
+          }
+          
+          .owl-dot:first-child:not(.active) {
+            left: 0;
+          }
+          .owl-dot:nth-child(2):not(.active) {
+            left: 0;
+          }
+          .owl-dot:last-child:not(.active) {
+            right: 0;
+          }
     }
 }
 
