@@ -1014,43 +1014,196 @@
 
 .homepage{
     & .manin_content_Body {
-        & .posttableSide {
-            & .table {
-                & thead{
-                    & tr {
-                        & th {
-                            &:first-child{
+        & .top_fixed_header1{
+            & .posttableSide {
+                & .table {
+                    & thead{
+                        & tr {
+                            & th {
+                                &:first-child{
+                                    width: 43.5%;
+                                }
+                                &:nth-child(2){
+                                    width: 15%;
+                                }
+                                &:nth-child(3){
+                                    width: 17%;
+                                }
+                                &:nth-child(4){
+                                    width: 20%;
+                                }
+                            }
+                        }
+                    }
+                    & tbody{
+                        & .postContent {
+                            max-width: 218px;
+                        }
+                        & tr {
+                            & th {
                                 width: 43.5%;
                             }
-                            &:nth-child(2){
-                                width: 15%;
-                            }
-                            &:nth-child(3){
-                                width: 17%;
-                            }
-                            &:nth-child(4){
-                                width: 20%;
+                            & td {
+                                border-width: 0px !important;
+                                &:first-child{
+                                }
+                                &:nth-child(2){
+                                    // width: 15%;
+                                }
+                                &:nth-child(3){
+                                    width: 17%;
+                                }
+                                &:nth-child(4){
+                                    width: 20%;
+                                }
                             }
                         }
                     }
                 }
-                & tbody{
-                    & tr {
-                        & th {
-                            width: 43.5%;
+            }
+        }
+        & .top_fixed_header2 {
+            & .posttableSide {
+                & .table {
+                    & thead{
+                        & tr {
+                            & th {
+                                &:first-child{
+                                    width: 33.7%;
+                                }
+                                &:nth-child(2){
+                                    width: 15%;
+                                }
+                                &:nth-child(3){
+                                    width: 16%;
+                                }
+                                &:nth-child(4){
+                                    width: 20%;
+                                }
+                            }
                         }
-                        & td {
-                            border: none;
-                            &:first-child{
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1850px) {
+    .homepage{
+        & .manin_content_Body {
+            & .top_fixed_header1 {
+                & .posttableSide {
+                    & .table {
+                        & tbody{
+                            & .postContent {
+                                max-width: 212px;
                             }
-                            &:nth-child(2){
-                                // width: 15%;
+                        }
+                    }
+                }
+            }
+            & .top_fixed_header2 {
+                & .posttableSide {
+                    & .table {
+                        & thead{
+                            & tr {
+                                & th {
+                                    &:first-child{
+                                        width: 32.8%;
+                                    }
+                                    &:nth-child(2){
+                                        width: 16%;
+                                    }
+                                    &:nth-child(3){
+                                        // width: 16%;
+                                    }
+                                    &:nth-child(4){
+                                        width: 18%;
+                                    }
+                                }
                             }
-                            &:nth-child(3){
-                                width: 17%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1800px) {
+    .homepage{
+        & .manin_content_Body {
+            & .top_fixed_header1 {
+                & .posttableSide {
+                    & .table {
+                        & tbody{
+                            & .postContent {
+                                max-width: 198px;
                             }
-                            &:nth-child(4){
-                                width: 20%;
+                        }
+                    }
+                }
+            }
+            & .top_fixed_header2 {
+                & .posttableSide {
+                    & .table {
+                        & thead{
+                            & tr {
+                                & th {
+                                    &:first-child{
+                                        width: 33%;
+                                    }
+                                    &:nth-child(2){
+                                        // width: 16%;
+                                    }
+                                    &:nth-child(3){
+                                        // width: 16%;
+                                    }
+                                    &:nth-child(4){
+                                        width: 15%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1750px) {
+    .homepage{
+        & .manin_content_Body {
+            & .top_fixed_header1 {
+                & .posttableSide {
+                    & .table {
+                        & tbody{
+                            & .postContent {
+                                max-width: 191px;
+                            }
+                        }
+                    }
+                }
+            }
+            & .top_fixed_header2 {
+                & .posttableSide {
+                    & .table {
+                        & thead{
+                            & tr {
+                                & th {
+                                    &:first-child{
+                                        // width: 33%;
+                                    }
+                                    &:nth-child(2){
+                                        // width: 16%;
+                                    }
+                                    &:nth-child(3){
+                                        // width: 16%;
+                                    }
+                                    &:nth-child(4){
+                                        width: 8%;
+                                    }
+                                }
                             }
                         }
                     }
@@ -1076,6 +1229,41 @@
                     }
                     & .overviewTabs {
                         margin-bottom: 8px;
+                    }
+                }
+            }
+            & .top_fixed_header1 {
+                & .posttableSide{
+                    & .table {
+                        & tbody{
+                            & .postContent {
+                                max-width: 185px !important;
+                            }
+                        }
+                    }
+                }
+            }
+            & .top_fixed_header2 {
+                & .posttableSide {
+                    & .table {
+                        & thead{
+                            & tr {
+                                & th {
+                                    &:first-child{
+                                        width: 25%;
+                                    }
+                                    &:nth-child(2){
+                                        width: 15%;
+                                    }
+                                    &:nth-child(3){
+                                        width: 15%;
+                                    }
+                                    &:nth-child(4){
+                                        width: 11%;
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -1183,6 +1371,41 @@
                     }
                 }
             }
+            & .top_fixed_header1 {
+                & .posttableSide{
+                    & .table {
+                        & tbody{
+                            & .postContent {
+                                max-width: 170px !important;
+                            }
+                        }
+                    }
+                }
+            }
+            & .top_fixed_header2 {
+                & .posttableSide {
+                    & .table {
+                        & thead{
+                            & tr {
+                                & th {
+                                    &:first-child{
+                                        width: 23.5%;
+                                    }
+                                    &:nth-child(2){
+                                        width: 14.5%;
+                                    }
+                                    &:nth-child(3){
+                                        width: 14.5%;
+                                    }
+                                    &:nth-child(4){
+                                        width: 13%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
             & .rightsidetable {
                 & .d_bottomBody{
                     min-height: calc(100% - 227px);
@@ -1197,6 +1420,36 @@
                             & .bodypart{
                                 & > div{
                                     gap: 6px !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1500px) {
+    .homepage{
+        & .manin_content_Body {
+            & .top_fixed_header2 {
+                & .posttableSide {
+                    & .table {
+                        & thead{
+                            & tr {
+                                & th {
+                                    &:first-child{
+                                        width: 23%;
+                                    }
+                                    &:nth-child(2){
+                                        width: 14%;
+                                    }
+                                    &:nth-child(3){
+                                        width: 14%;
+                                    }
+                                    &:nth-child(4){
+                                        width: 10%;
+                                    }
                                 }
                             }
                         }
@@ -1221,6 +1474,41 @@
                     }
                     & .overviewTabs {
                         margin-bottom: 8px;
+                    }
+                }
+            }
+            & .top_fixed_header1 {
+                & .posttableSide{
+                    & .table {
+                        & tbody{
+                            & .postContent {
+                                max-width: 150px !important;
+                            }
+                        }
+                    }
+                }
+            }
+            & .top_fixed_header2 {
+                & .posttableSide {
+                    & .table {
+                        & thead{
+                            & tr {
+                                & th {
+                                    &:first-child{
+                                        // width: 23%;
+                                    }
+                                    &:nth-child(2){
+                                        width: 15%;
+                                    }
+                                    &:nth-child(3){
+                                        width: 13%;
+                                    }
+                                    &:nth-child(4){
+                                        width: 5%;
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }
