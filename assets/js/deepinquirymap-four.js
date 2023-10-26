@@ -1,3 +1,4 @@
+function renderCytoscape() {
 var cy_four = cytoscape({
   container: document.getElementById('cytoscape_chart_four'),
 
@@ -146,8 +147,8 @@ function runCodeBasedOnScreenSize() {
   var windowWidth = window.innerWidth;
 
   if (windowWidth > 1600) {
-    cy_four.zoom(cy_four.zoom() * 0.6);
-  } else if (windowWidth > 1400) {
+    cy_four.zoom(cy_four.zoom() * 0.4);
+  } else if (windowWidth > 1500) {
     cy_four.zoom(cy_four.zoom() * 0.5);
   } else {
     cy_four.zoom(cy_four.zoom() * 0.4);
@@ -158,7 +159,29 @@ function runCodeBasedOnScreenSize() {
 runCodeBasedOnScreenSize();
 
 $(window).resize(runCodeBasedOnScreenSize);
-// cy.zoom(cy.zoom() * 1);
+
+var currentCenter = cy_four.pan();
+
+
+
+// var zoomFactor = 1; // Zoom out factor
+
+// // Get the dimensions of the viewport or canvas
+// var viewportWidth = cy_four.width();
+// var viewportHeight = cy_four.height();
+
+// // Calculate the new center position after zooming out
+// var newCenter = {
+//   x: (currentCenter.x + (viewportWidth / 2)) * zoomFactor - (viewportWidth / 2),
+//   y: (currentCenter.y + (viewportHeight / 1.5)) * zoomFactor - (viewportHeight / 2)
+// };
+
+// Set the new center position
+cy_four.zoom(cy_four.zoom() * 2.2); // Zoom out
+// cy_four.pan(newCenter); // Center the map
+
+
+// cy_four.zoom(cy_four.zoom() * 1);
 var edges = cy_four.elements('.edge');
 // Apply a style to the selected edges
 edges.style({
@@ -375,5 +398,11 @@ document.getElementById('cytoscape_chart_four').appendChild(tippyContainer);
 // Iterate through nodes and edges, and update icons based on scroll position
 
 
+});
+}
+
+renderCytoscape();
+document.getElementById('nav-profile-tab').addEventListener('click', function() {  
+  renderCytoscape();
 });
 // Create a new div element to act as the container

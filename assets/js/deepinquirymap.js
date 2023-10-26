@@ -219,11 +219,11 @@ function runCodeBasedOnScreenSize() {
   var windowWidth = window.innerWidth;
 
   if (windowWidth > 1600) {
-    cy.zoom(cy.zoom() * 1.5);
-  } else if (windowWidth > 1400) {
-    cy.zoom(cy.zoom() * 1.2);
+    cy.zoom(cy.zoom() * 1);
+  } else if (windowWidth > 1500) {
+    cy.zoom(cy.zoom() * 1);
   } else {
-    cy.zoom(cy.zoom() * 0.7);
+    cy.zoom(cy.zoom() * 0.9);
   }
 }
 // Run the code initially and whenever the window is resized
@@ -232,9 +232,27 @@ runCodeBasedOnScreenSize();
 $(window).resize(runCodeBasedOnScreenSize);
 
 
+var currentCenter = cy.pan();
+
+var zoomFactor = 0.8; // Zoom out factor
+
+// Get the dimensions of the viewport or canvas
+var viewportWidth = cy.width();
+var viewportHeight = cy.height();
+
+// Calculate the new center position after zooming out
+var newCenter = {
+  x: (currentCenter.x + (viewportWidth / 1.25)) * zoomFactor - (viewportWidth / 2),
+  y: (currentCenter.y + (viewportHeight / 1.25)) * zoomFactor - (viewportHeight / 2)
+};
+
+// Set the new center position
+cy.zoom(cy.zoom() * zoomFactor); // Zoom out
+cy.pan(newCenter); // Center the map
+
+// cy.zoom(cy.zoom() * 0.58);
 
 
-cy.zoom(cy.zoom() * 0.58);
 cy.style()
     .selector('#kokohalinh')
     .style({
