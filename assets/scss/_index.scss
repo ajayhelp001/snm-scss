@@ -880,6 +880,11 @@
                         // background-color: var(--theme1);
                         background-color: var(--active);
                     }
+                    &.uppendbody{
+                        & td, & th {
+                            background-color: var(--neutralBlack);
+                        }
+                    }
                 }
             }
             & .postcontetntd {
@@ -938,6 +943,11 @@
                     &.selected{
                         &:hover>*{
                             background-color: var(--active);
+                        }
+                        &.uppendbody{
+                            &:hover>*{
+                                background-color: var(--neutralBlack);
+                            }
                         }
                     }
                 }
@@ -1015,115 +1025,17 @@
 
 .homepage{
     & .manin_content_Body {
-        & .top_fixed_header1{
-            & .posttableSide {
-                & .table {
-                    & thead{
-                        & tr {
-                            & th {
-                                &:first-child{
-                                    width: 43.5%;
-                                }
-                                &:nth-child(2){
-                                    width: 15%;
-                                }
-                                &:nth-child(3){
-                                    width: 17%;
-                                }
-                                &:nth-child(4){
-                                    width: 20%;
-                                }
-                            }
-                        }
-                    }
-                    & tbody{
-                        & .postContent {
-                            max-width: 218px;
-                        }
-                        & tr {
-                            & th {
-                                width: 43.5%;
-                            }
-                            & td {
-                                border-width: 0px !important;
-                                &:first-child{
-                                }
-                                &:nth-child(2){
-                                    // width: 15%;
-                                }
-                                &:nth-child(3){
-                                    width: 17%;
-                                }
-                                &:nth-child(4){
-                                    width: 20%;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        & .top_fixed_header2 {
-            & .posttableSide {
-                & .table {
-                    & thead{
-                        & tr {
-                            & th {
-                                &:first-child{
-                                    width: 33.7%;
-                                }
-                                &:nth-child(2){
-                                    width: 15%;
-                                }
-                                &:nth-child(3){
-                                    width: 16%;
-                                }
-                                &:nth-child(4){
-                                    width: 20%;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
     }
 }
 
 @media screen and (max-width: 1850px) {
     .homepage{
         & .manin_content_Body {
-            & .top_fixed_header1 {
-                & .posttableSide {
-                    & .table {
-                        & tbody{
-                            & .postContent {
-                                max-width: 212px;
-                            }
-                        }
-                    }
-                }
-            }
-            & .top_fixed_header2 {
-                & .posttableSide {
-                    & .table {
-                        & thead{
-                            & tr {
-                                & th {
-                                    &:first-child{
-                                        width: 32.8%;
-                                    }
-                                    &:nth-child(2){
-                                        width: 16%;
-                                    }
-                                    &:nth-child(3){
-                                        // width: 16%;
-                                    }
-                                    &:nth-child(4){
-                                        width: 18%;
-                                    }
-                                }
-                            }
+            & .post_table  {
+                & .table  {
+                    & tbody {
+                        & .postContent {
+                            max-width: 200px;
                         }
                     }
                 }
@@ -1134,78 +1046,17 @@
 @media screen and (max-width: 1800px) {
     .homepage{
         & .manin_content_Body {
-            & .top_fixed_header1 {
-                & .posttableSide {
-                    & .table {
-                        & tbody{
-                            & .postContent {
-                                max-width: 198px;
-                            }
-                        }
-                    }
-                }
-            }
-            & .top_fixed_header2 {
-                & .posttableSide {
-                    & .table {
-                        & thead{
-                            & tr {
-                                & th {
-                                    &:first-child{
-                                        width: 33%;
-                                    }
-                                    &:nth-child(2){
-                                        // width: 16%;
-                                    }
-                                    &:nth-child(3){
-                                        // width: 16%;
-                                    }
-                                    &:nth-child(4){
-                                        width: 15%;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
         }
     }
 }
 @media screen and (max-width: 1750px) {
     .homepage{
         & .manin_content_Body {
-            & .top_fixed_header1 {
-                & .posttableSide {
-                    & .table {
-                        & tbody{
-                            & .postContent {
-                                max-width: 191px;
-                            }
-                        }
-                    }
-                }
-            }
-            & .top_fixed_header2 {
-                & .posttableSide {
-                    & .table {
-                        & thead{
-                            & tr {
-                                & th {
-                                    &:first-child{
-                                        // width: 33%;
-                                    }
-                                    &:nth-child(2){
-                                        // width: 16%;
-                                    }
-                                    &:nth-child(3){
-                                        // width: 16%;
-                                    }
-                                    &:nth-child(4){
-                                        width: 8%;
-                                    }
-                                }
-                            }
+            & .post_table  {
+                & .table  {
+                    & tbody {
+                        & .postContent {
+                            max-width: 180px;
                         }
                     }
                 }
@@ -1217,6 +1068,7 @@
 @media screen and (max-width:  1700px) {
     .homepage{
         & .manin_content_Body {
+            
             & .navigationBar {
                 min-height: 70px;
                 & .navigationBar{
@@ -1230,41 +1082,6 @@
                     }
                     & .overviewTabs {
                         margin-bottom: 8px;
-                    }
-                }
-            }
-            & .top_fixed_header1 {
-                & .posttableSide{
-                    & .table {
-                        & tbody{
-                            & .postContent {
-                                max-width: 185px !important;
-                            }
-                        }
-                    }
-                }
-            }
-            & .top_fixed_header2 {
-                & .posttableSide {
-                    & .table {
-                        & thead{
-                            & tr {
-                                & th {
-                                    &:first-child{
-                                        width: 25%;
-                                    }
-                                    &:nth-child(2){
-                                        width: 15%;
-                                    }
-                                    &:nth-child(3){
-                                        width: 15%;
-                                    }
-                                    &:nth-child(4){
-                                        width: 11%;
-                                    }
-                                }
-                            }
-                        }
                     }
                 }
             }
@@ -1305,7 +1122,6 @@
                 &.stackedChartCard {
                     & .stackedChart {
                         & .chartGroup {
-
                         }
                         & .linechart_group{
                             height: 100%;
@@ -1369,41 +1185,6 @@
                     }
                     & .overviewTabs {
                         margin-bottom: 8px;
-                    }
-                }
-            }
-            & .top_fixed_header1 {
-                & .posttableSide{
-                    & .table {
-                        & tbody{
-                            & .postContent {
-                                max-width: 170px !important;
-                            }
-                        }
-                    }
-                }
-            }
-            & .top_fixed_header2 {
-                & .posttableSide {
-                    & .table {
-                        & thead{
-                            & tr {
-                                & th {
-                                    &:first-child{
-                                        width: 23.5%;
-                                    }
-                                    &:nth-child(2){
-                                        width: 14.5%;
-                                    }
-                                    &:nth-child(3){
-                                        width: 14.5%;
-                                    }
-                                    &:nth-child(4){
-                                        width: 13%;
-                                    }
-                                }
-                            }
-                        }
                     }
                 }
             }
@@ -1475,41 +1256,6 @@
                     }
                     & .overviewTabs {
                         margin-bottom: 8px;
-                    }
-                }
-            }
-            & .top_fixed_header1 {
-                & .posttableSide{
-                    & .table {
-                        & tbody{
-                            & .postContent {
-                                max-width: 150px !important;
-                            }
-                        }
-                    }
-                }
-            }
-            & .top_fixed_header2 {
-                & .posttableSide {
-                    & .table {
-                        & thead{
-                            & tr {
-                                & th {
-                                    &:first-child{
-                                        // width: 23%;
-                                    }
-                                    &:nth-child(2){
-                                        width: 15%;
-                                    }
-                                    &:nth-child(3){
-                                        width: 13%;
-                                    }
-                                    &:nth-child(4){
-                                        width: 5%;
-                                    }
-                                }
-                            }
-                        }
                     }
                 }
             }
