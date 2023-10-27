@@ -152,47 +152,7 @@
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-    #testimonial-area .section-heading h2 {
-        font-size: 30px;
-    }
-    .client-comment h3 {
-        font-size: 18px;
-        line-height: 28px;
-    }
-    .client-single.active {
-        width: 60%;
-    }
-    .client-single:not(.active) {
-        //   -webkit-transform: scale(0.55);
-        //   transform: scale(0.35);
-    }
-    .client-single.position-3,
-    .client-single.position-7 {
-        //   -webkit-transform: scale(0.3) !important;
-        //   transform: scale(0.3) !important;
-    }
-    .client-single.active .client-img img {
-        max-width: 100px;
-    }
-    .client-single.active .client-img::before {
-        padding: 5px;
-        width: 108px;
-        height: 108px;
-        top: -4px;
-        left: 6px;
-    }
-    .client-single.active .client-img {
-        width: 120px;
-        height: 100px;
-    }
-    .testi-wrap {
-        height: 580px;
-    }
-    #testimonial-area {
-        padding: 100px 0 0;
-    }
-}
+
 
 // @media screen and (min-width: 1800px){}
 
@@ -325,11 +285,42 @@
             }
         }
     }
+    .deepinquiryPage{
+        & .listmap  {
+            & .geoInfoCard {
+                & .newsFilterCard  {
+                    &.geomapfilter {
+                        width: 180px;
+                        & .card-body {
+                            & .card_title {
+                                font-size: 16px;
+                            }
+                            & .innerBody {
+                                & > div{
+                                    gap: 4px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 @media screen and (max-width: 1400px) {
     .analysisfilter {
         & .newsFilterCard {
             width: 150px;
+            & .btn-group{
+                & > div {
+                    & > div {
+                        width: 100%;
+                    }
+                }
+            }
+            & .radioBtn {
+                width: 100%;
+            }
         }
         &.facebook-postDetails-overview {
             & .mainpostcard {

@@ -1932,6 +1932,58 @@
             }
         }
     }
+    .userDistentCard{
+        & .listItem {
+            &:hover{
+            }
+            &.active{
+                &:hover{
+                }
+            }
+            & .user_img {
+                & img {
+                }
+            }
+            & .userDetails {
+                & .username {
+                    font-size: 14px;
+                }
+                & .userAge{
+                    font-size: 11px;
+                    & .genderImg {
+                    }
+                }
+            }
+            & .userside {
+            }
+        }
+        & .times {
+            font-size: 11px;
+        }
+        & .tmgroup{
+            & .timing_value {
+                font-size: 11px;
+                &.active{
+                }
+            }
+        }
+        &.nonhover{
+            & .listItem{
+                &:hover{
+                }
+            }
+        }
+        & .sourcegroup  {
+        }
+        & .actorelistitem {
+            &>div{
+                &:first-child{
+                    & .tmgroup {
+                    }
+                }
+            }
+        }
+    }
 }
 
 

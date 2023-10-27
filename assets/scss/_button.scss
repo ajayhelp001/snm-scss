@@ -588,8 +588,8 @@
         font-size: 22px;
         
         & .images {
-            width: 240px;
-            height: 240px;
+            width: 200px;
+            height: 200px;
         }
         &::before{
         }
@@ -648,4 +648,21 @@
     }
 }
 
+}
+
+@media screen and (max-width: 1440px) {
+    .radiobutton_group{
+        & .languageradio {
+            padding: 30px;
+            font-size: 18px;
+            
+            & .images {
+                width: 150px;
+                height: 150px;
+            }
+            &::before{
+                border-width: 2px;
+            }
+        }
+    }
 }
