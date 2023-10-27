@@ -119,17 +119,6 @@
             }
         }
     }
-    .post_table{
-        &.smcontent{
-            & .table {
-                & tbody {
-                    & .postContent {
-                        max-width: 200px;
-                    }
-                }
-            }
-        }
-    }
     .pichart {
         & .card-body {
             & .chartvalue{
@@ -400,23 +389,6 @@
                             display: none;
                         }
                     }
-                    & .tab-content {
-                        & .post_table {
-                            & .table {
-                                & tbody {
-                                    & .postContent {
-                                        max-width: 115px;
-                                        &.source {
-                                            max-width: 170px;
-                                        }
-                                        &.singalintrection{
-                                            max-width: 150px;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
                 }
             }
         }
@@ -552,17 +524,6 @@
             }
         }
     }
-    .post_table{
-        &.smcontent{
-            & .table {
-                & tbody {
-                    & .postContent {
-                        max-width: 150px;
-                    }
-                }
-            }
-        }
-    }
 }
 
 @media screen and (max-width: 1600px) {
@@ -619,20 +580,6 @@
                         }
                         &.lgkeywordsgroup{
                             display: none;
-                        }
-                    }
-                    & .tab-content {
-                        & .post_table {
-                            & .table {
-                                & tbody {
-                                    & .postContent {
-                                        max-width: 100px;
-                                        &.source {
-                                            max-width: 150px;
-                                        }
-                                    }
-                                }
-                            }
                         }
                     }
                 }
@@ -929,12 +876,6 @@
                         }
                     }
                 }
-                & .postcontetntd {
-                    & .postContent {
-                    }
-                }
-                & .postContent {
-                }
                 & .icon {
                     height: 18px;
                     width: 18px;
@@ -993,27 +934,6 @@
                                 }
                             }
                         }
-                    }
-                    & .postContent {
-                        &.account{
-                            & .accountHolder {
-                                // min-width: 26px;
-                                // height: 26px;
-                                & img {
-                                }
-                            }
-                            & span {
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        &.smcontent{
-            & .table {
-                & tbody {
-                    & .postContent {
-                        max-width: 130px;
                     }
                 }
             }
@@ -1105,15 +1025,7 @@
                                 }
                             }
                         }
-                        & .postContent {
-                            &.bio {
-                                // max-width: 450px;
-                            }
-                        }
                     }
-                    // &:nth-child(2) {
-                    //     cursor: pointer;
-                    // }
                 }
             }
         }
@@ -1239,27 +1151,6 @@
                                 height: 35px;
                             }
                         }
-                    }
-                }
-            }
-        }
-    }
-    .facebook-postlist-data {
-        // 280+332
-        .midtableGroup{
-            max-width: calc(100% - 583px);
-        }
-        .insteractionCard {
-            width: 300px;
-            & .post_table  {
-                & .table  {
-                    & tbody  {
-                        & .postContent {
-                            max-width: 170px;
-                        }
-                    }
-                    & .th_interaction {
-                        width: 92px;
                     }
                 }
             }
@@ -1637,24 +1528,6 @@
                 }
             }
             // ***
-            & .top_post  {
-                & .card-body {
-                    & .card_title  {
-                        &.keywords{
-                        }
-                    }
-                    & .tab-content {
-                        & .post_table {
-                            & .table {
-                                & tbody {
-                                    & .postContent {
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
             // ****
             & .informationCard {
                 & .card-body {
@@ -1728,24 +1601,6 @@
                 }
             }
             // ***
-            & .top_post  {
-                & .card-body {
-                    & .card_title  {
-                        &.keywords{
-                        }
-                    }
-                    & .tab-content {
-                        & .post_table {
-                            & .table {
-                                & tbody {
-                                    & .postContent {
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
             // ****
             & .informationCard {
                 & .card-body {
@@ -1884,29 +1739,6 @@
     .maincontent{
         padding: 28px;
         & .manin_content_Body{
-            & .top_post  {
-                & .card-body {
-                    & .card_title  {
-                        &.keywords{
-                        }
-                    }
-                    & .tab-content {
-                        & .post_table {
-                            & .table {
-                                & tbody {
-                                    & .postContent {
-                                        &.source {
-                                            &.sourceAcclist{
-                                                max-width: 130px;
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
             & .levelCard  {
                 & .card-body{
                     & .card_title  {
@@ -1921,17 +1753,6 @@
         padding: 0px 28px;
     }
     // ***
-    .post_table{
-        &.smcontent{
-            & .table {
-                & tbody {
-                    & .postContent {
-                        max-width: 120px;
-                    }
-                }
-            }
-        }
-    }
     .userDistentCard{
         & .listItem {
             &:hover{
@@ -2067,29 +1888,6 @@
     }
     .maincontent{
         & .manin_content_Body{
-            & .top_post  {
-                & .card-body {
-                    & .card_title  {
-                        &.keywords{
-                        }
-                    }
-                    & .tab-content {
-                        & .post_table {
-                            & .table {
-                                & tbody {
-                                    & .postContent {
-                                        &.source {
-                                            &.sourceAcclist{
-                                                // max-width: 100px;
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
             & .levelCard{
                 &.stackedChartCard {
                     & .stackedChart {

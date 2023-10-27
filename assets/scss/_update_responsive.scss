@@ -152,6 +152,44 @@
     }
 }
 
+.facebook-postlist-data {
+    // 280+332
+    .midtableGroup{
+        max-width: calc(100% - 583px);
+    }
+    .insteractionCard {
+        width: 300px;
+    }
+    & .fixedtableheader{
+        & table {
+            & thead{
+                & tr {
+                    & th{
+                        &:first-child{
+                            width: calc(100% - 92px);
+                        }
+                        &:last-child{
+                            width: 90px;
+                        }
+                    }
+                }
+            }
+            & tbody{
+                & tr {
+                    & td{
+                        &:first-child{
+                            width: calc(100% - 92px);
+                        }
+                        &:last-child{
+                            width: 90px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 
 
 // @media screen and (min-width: 1800px){}
@@ -247,6 +285,48 @@
             }
         }
     }
+
+    
+.facebook-postlist-data {
+    // 280+332
+    .midtableGroup{
+        max-width: calc(100% - 583px);
+    }
+    .insteractionCard {
+        width: 300px;
+    }
+    & .fixedtableheader {
+        & table {
+            & thead{
+                & tr {
+                    & th{
+                        &:first-child{
+                            width: calc(100% - 80px);
+                        }
+                        &:last-child{
+                            width: 78px;
+                        }
+                    }
+                }
+            }
+            & tbody{
+                & tr {
+                    & td{
+                        &:first-child{
+                            width: calc(100% - 79px);
+                        }
+                        &:last-child{
+                            width: 77px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+  
+
 }
 @media screen and (max-width: 1440px) {
     .tiktokanalysis {

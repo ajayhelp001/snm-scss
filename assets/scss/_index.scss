@@ -856,7 +856,7 @@
                     height: 40px;
                     // text-align: center;
                     background-color: var(--black--dark);
-                    border-left: 2px solid var(--neutralBlack);
+                    border-left: 1px solid var(--neutralBlack);
                     &:first-child{
                         border-top-left-radius: 10px;
                         // text-align: start;
@@ -874,6 +874,13 @@
                 & td, & th {
                     background-color: var(--neutralBlack);
                     height: 32px;
+                    border-left: 1px solid var(--neutralBlack);
+                    &:first-child{
+                        border-left: 0px;
+                    }
+                    &:last-child{
+                        border-right: 0px;
+                    }
                 }
                 &.selected{
                     & td, & th {
@@ -889,13 +896,11 @@
             }
             & .postcontetntd {
                 width: 25%;
-                & .postContent {
-                    max-width: 280px;
-                }
             }
             & .postContent {
-                max-width: 230px;
-                white-space: nowrap;
+                display: -webkit-box;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
                 overflow: hidden;
                 text-overflow: ellipsis;
             }
@@ -927,6 +932,7 @@
                 }
             }
             & .view, & .icon {
+                white-space: nowrap;
                 display: flex;
                 align-items: center;
             }
@@ -978,7 +984,7 @@
                 & tr {
                     & th {
                         &:first-child{
-                            display: table-cell;
+                            display: flex;
                         }
                     }
                     & td {
@@ -1029,41 +1035,48 @@
                     & thead{
                         & tr {
                             & th {
+                                // &:first-child{
+                                //     width: 54.5%;
+                                // }
+                                // &:nth-child(2){
+                                //     width: 14.84%;
+                                // }
+                                // &:nth-child(3){
+                                //     width: 19.9%;
+                                // }
+                                // &:nth-child(4){
+                                //     width: 17.03%;
+                                // }
                                 &:first-child{
-                                    width: 43.5%;
+                                    width: 53%;
                                 }
                                 &:nth-child(2){
-                                    width: 15%;
+                                    width: 14.21%;
                                 }
                                 &:nth-child(3){
-                                    width: 17%;
+                                    width: 18.89%;
                                 }
                                 &:nth-child(4){
-                                    width: 20%;
+                                    width: 15.09%;
                                 }
                             }
                         }
                     }
                     & tbody{
-                        & .postContent {
-                            max-width: 218px;
-                        }
                         & tr {
-                            & th {
-                                width: 43.5%;
-                            }
                             & td {
-                                border-width: 0px !important;
                                 &:first-child{
                                 }
                                 &:nth-child(2){
-                                    // width: 15%;
-                                }
-                                &:nth-child(3){
-                                    width: 17%;
+                                    width: 14%;
+                                    min-width: 50px;
+                                    display: table-cell;
+                                    & .icon {
+                                        margin: auto;
+                                    }
                                 }
                                 &:nth-child(4){
-                                    width: 20%;
+                                    width: 15.09%;
                                 }
                             }
                         }
@@ -1078,27 +1091,17 @@
                         & tr {
                             & th {
                                 &:first-child{
-                                    width: 33.7%;
+                                    width: 38.78%;
                                 }
                                 &:nth-child(2){
-                                    width: 15%;
-                                }
-                                &:nth-child(3){
-                                    width: 16%;
-                                }
-                                &:nth-child(4){
                                     width: 20%;
                                 }
-                            }
-                        }
-                    }
-                    & tbody{
-                        & .postContent {
-                            max-width: 218px;
-                        }
-                        & tr {
-                            & th {
-                                width: 100%;
+                                &:nth-child(3){
+                                    width: 19.39%;
+                                }
+                                &:nth-child(4){
+                                    width: 21.49%;
+                                }
                             }
                         }
                     }
@@ -1108,129 +1111,6 @@
     }
 }
 
-@media screen and (max-width: 1850px) {
-    .homepage{
-        & .manin_content_Body {
-            & .top_fixed_header1 {
-                & .posttableSide {
-                    & .table {
-                        & tbody{
-                            & .postContent {
-                                max-width: 212px;
-                            }
-                        }
-                    }
-                }
-            }
-            & .top_fixed_header2 {
-                & .posttableSide {
-                    & .table {
-                        & thead{
-                            & tr {
-                                & th {
-                                    &:first-child{
-                                        width: 32.8%;
-                                    }
-                                    &:nth-child(2){
-                                        width: 16%;
-                                    }
-                                    &:nth-child(3){
-                                        // width: 16%;
-                                    }
-                                    &:nth-child(4){
-                                        width: 18%;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-@media screen and (max-width: 1800px) {
-    .homepage{
-        & .manin_content_Body {
-            & .top_fixed_header1 {
-                & .posttableSide {
-                    & .table {
-                        & tbody{
-                            & .postContent {
-                                max-width: 198px;
-                            }
-                        }
-                    }
-                }
-            }
-            & .top_fixed_header2 {
-                & .posttableSide {
-                    & .table {
-                        & thead{
-                            & tr {
-                                & th {
-                                    &:first-child{
-                                        width: 33%;
-                                    }
-                                    &:nth-child(2){
-                                        // width: 16%;
-                                    }
-                                    &:nth-child(3){
-                                        // width: 16%;
-                                    }
-                                    &:nth-child(4){
-                                        width: 15%;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-@media screen and (max-width: 1750px) {
-    .homepage{
-        & .manin_content_Body {
-            & .top_fixed_header1 {
-                & .posttableSide {
-                    & .table {
-                        & tbody{
-                            & .postContent {
-                                max-width: 191px;
-                            }
-                        }
-                    }
-                }
-            }
-            & .top_fixed_header2 {
-                & .posttableSide {
-                    & .table {
-                        & thead{
-                            & tr {
-                                & th {
-                                    &:first-child{
-                                        // width: 33%;
-                                    }
-                                    &:nth-child(2){
-                                        // width: 16%;
-                                    }
-                                    &:nth-child(3){
-                                        // width: 16%;
-                                    }
-                                    &:nth-child(4){
-                                        width: 8%;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
 
 @media screen and (max-width:  1700px) {
     .homepage{
@@ -1248,41 +1128,6 @@
                     }
                     & .overviewTabs {
                         margin-bottom: 8px;
-                    }
-                }
-            }
-            & .top_fixed_header1 {
-                & .posttableSide{
-                    & .table {
-                        & tbody{
-                            & .postContent {
-                                max-width: 185px !important;
-                            }
-                        }
-                    }
-                }
-            }
-            & .top_fixed_header2 {
-                & .posttableSide {
-                    & .table {
-                        & thead{
-                            & tr {
-                                & th {
-                                    &:first-child{
-                                        width: 25%;
-                                    }
-                                    &:nth-child(2){
-                                        width: 15%;
-                                    }
-                                    &:nth-child(3){
-                                        width: 15%;
-                                    }
-                                    &:nth-child(4){
-                                        width: 11%;
-                                    }
-                                }
-                            }
-                        }
                     }
                 }
             }
@@ -1390,41 +1235,6 @@
                     }
                 }
             }
-            & .top_fixed_header1 {
-                & .posttableSide{
-                    & .table {
-                        & tbody{
-                            & .postContent {
-                                max-width: 170px !important;
-                            }
-                        }
-                    }
-                }
-            }
-            & .top_fixed_header2 {
-                & .posttableSide {
-                    & .table {
-                        & thead{
-                            & tr {
-                                & th {
-                                    &:first-child{
-                                        width: 23.5%;
-                                    }
-                                    &:nth-child(2){
-                                        width: 14.5%;
-                                    }
-                                    &:nth-child(3){
-                                        width: 14.5%;
-                                    }
-                                    &:nth-child(4){
-                                        width: 13%;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
             & .rightsidetable {
                 & .d_bottomBody{
                     min-height: calc(100% - 227px);
@@ -1448,37 +1258,6 @@
         }
     }
 }
-@media screen and (max-width: 1500px) {
-    .homepage{
-        & .manin_content_Body {
-            & .top_fixed_header2 {
-                & .posttableSide {
-                    & .table {
-                        & thead{
-                            & tr {
-                                & th {
-                                    &:first-child{
-                                        width: 23%;
-                                    }
-                                    &:nth-child(2){
-                                        width: 14%;
-                                    }
-                                    &:nth-child(3){
-                                        width: 14%;
-                                    }
-                                    &:nth-child(4){
-                                        width: 10%;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
 @media screen and (max-width:  1400px) {
     .homepage{
         & .manin_content_Body {
@@ -1493,41 +1272,6 @@
                     }
                     & .overviewTabs {
                         margin-bottom: 8px;
-                    }
-                }
-            }
-            & .top_fixed_header1 {
-                & .posttableSide{
-                    & .table {
-                        & tbody{
-                            & .postContent {
-                                max-width: 150px !important;
-                            }
-                        }
-                    }
-                }
-            }
-            & .top_fixed_header2 {
-                & .posttableSide {
-                    & .table {
-                        & thead{
-                            & tr {
-                                & th {
-                                    &:first-child{
-                                        // width: 23%;
-                                    }
-                                    &:nth-child(2){
-                                        width: 15%;
-                                    }
-                                    &:nth-child(3){
-                                        width: 13%;
-                                    }
-                                    &:nth-child(4){
-                                        width: 5%;
-                                    }
-                                }
-                            }
-                        }
                     }
                 }
             }
@@ -1607,6 +1351,35 @@
                     & .levelCard  {
                         & .card-body {
                             padding: 6px 12px;
+                        }
+                    }
+                }
+            }
+            & .top_fixed_header2 {
+                & .posttableSide {
+                    & .table {
+                        & thead{
+                            & tr {
+                                & th {
+                                    &:first-child{
+                                        width: 30.78%;
+                                    }
+                                    // &:nth-child(2){
+                                    //     width: 20%;
+                                    // }
+                                    // &:nth-child(3){
+                                    //     width: 19.39%;
+                                    // }
+                                    // &:nth-child(4){
+                                    //     width: 21.49%;
+                                    // }
+                                }
+                            }
+                        }
+                        & tbody{
+                            & .account {
+                                max-width: 100px;
+                            }
                         }
                     }
                 }
