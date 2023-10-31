@@ -149,7 +149,7 @@ function runCodeBasedOnScreenSize() {
   if (windowWidth > 1600) {
     cy_four.zoom(cy_four.zoom() * 0.4);
   } else if (windowWidth > 1500) {
-    cy_four.zoom(cy_four.zoom() * 0.5);
+    cy_four.zoom(cy_four.zoom() * 0.4);
   } else {
     cy_four.zoom(cy_four.zoom() * 0.4);
   }

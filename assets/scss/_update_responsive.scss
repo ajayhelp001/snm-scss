@@ -191,8 +191,52 @@
 }
 
 
+.treacking_acclistPage {
+    & .post_table {
+        & .table {
+            & thead{
+                & tr {
+                    & th {
+                        &:first-child{
+                            width: unset !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.top_fixed_header2{
+    & table {
+        & tbody{
+            & tr {
+                & td {
+                    &:first-child{
+                        display: flex;
+                    }
+                }
+            }
+        }
+    }
+}
 
-// @media screen and (min-width: 1800px){}
+
+@media screen and (min-width: 1800px){
+    .ytube-videoDetails-overview{
+        &.videodetails{
+            & .analysisCard {
+            }
+            & .scriptCrad {
+                max-width: 435px;
+            }
+            & .script_Video_Top_Section {
+            }
+            & .videoeditore {
+            }
+        }
+    }
+}
+
 
 @media screen and (max-width: 1800px) {
     .analysisfilter {
@@ -252,6 +296,24 @@
                         height: 240px;
                     }
                 }
+            }
+        }
+    }
+    .top_fixed_header2{
+        & .post_table {
+            &.actore_table {
+            & table {
+                & tbody{
+                    & .postContent {
+                        &.account  {
+                            & .accountHolder {
+                                height: 24px;
+                                min-width: 24px;
+                            }
+                        }
+                    }
+                }
+            }
             }
         }
     }
@@ -341,30 +403,33 @@
             }
         }
     }
-    .treacking_acclistPage {
-        & .list_post_Table {
-            & .table {
-                & thead {
-                    & tr {
-                        & th {
-                            &:last-child {
-                                display: none;
-                            }
-                        }
-                    }
-                }
-                & tbody {
-                    & tr {
-                        & td {
-                            &:last-child {
-                                display: none;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
+    // .treacking_acclistPage {
+    //     & .list_post_Table {
+    //         & .table {
+    //             & thead {
+    //                 & tr {
+    //                     & th {
+    //                         &:last-child {
+    //                             display: none;
+    //                         }
+    //                         &:nth-child(3){
+    //                             border-top-right-radius: 10px;
+    //                         }
+    //                     }
+    //                 }
+    //             }
+    //             & tbody {
+    //                 & tr {
+    //                     & td {
+    //                         &:last-child {
+    //                             display: none;
+    //                         }
+    //                     }
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
     .deepinquiryPage{
         & .listmap  {
             & .geoInfoCard {

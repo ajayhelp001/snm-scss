@@ -217,7 +217,7 @@
             & .pichart {
                 & .card-body {
                     & .innerbody {
-                        gap: 2px;
+                        gap: 2px !important;
                     }
                 }
             }
@@ -245,44 +245,10 @@
                         }
                     }
                 }
-                &.stackedChartCard {
-                    & .stackedChart {
-                        // height: 366px;
-                        height: 100%;
-                        & .linechart_group{
-                            min-height: 200px !important;
-                            margin-top: -20px;
-                            &>div{
-                                height: 200px !important;
-                            }
-                        }
-                        & .chartGroup {
-                        }
-                    }
-                    & .card-body{
-                        & .card_title{
-                            margin-bottom: 0px;
-                        }
-                        & .chartlable {
-                            margin: 11px 0px 0px 0px;
-                            & li {
-                                & .keyBtn {
-                                    font-size: 13px;
-                                    height: 20.4px;
-                                    & img{
-                                        width: 15px;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
             }
             & .pichart {
                 & .card-body {
-                    & .sourcetitle{
-                        display: none;
-                    }
+                    
                     & .chartvalue{
                         & .ratingUser {
                             display: none
@@ -539,20 +505,30 @@
                 }
                 &.stackedChartCard {
                     & .stackedChart {
+                        // height: 366px;
+                        height: 100%;
                         & .linechart_group{
-                            margin-top: -25px;
+                            min-height: 200px !important;
+                            margin-top: -20px;
+                            &>div{
+                                height: 200px !important;
+                            }
                         }
                         & .chartGroup {
                         }
                     }
                     & .card-body{
                         & .card_title{
+                            margin-bottom: 0px;
                         }
                         & .chartlable {
-                            margin: 6px 0px 0px 0px;
+                            margin: 11px 0px 0px 0px;
                             & li {
                                 & .keyBtn {
+                                    font-size: 13px;
+                                    height: 20.4px;
                                     & img{
+                                        width: 15px;
                                     }
                                 }
                             }
@@ -563,6 +539,9 @@
             // ****
             & .pichart {
                 & .card-body {
+                    & .sourcetitle{
+                        display: none;
+                    }
                     & .chartvalue{
                         & .ratingUser {
                         }
@@ -1513,6 +1492,28 @@
                     & .card_title  {
                         font-size: 20px;
                         margin-bottom: 8px;
+                    }
+                }
+                &.stackedChartCard {
+                    & .stackedChart {
+                        & .linechart_group{
+                            margin-top: -25px;
+                        }
+                        & .chartGroup {
+                        }
+                    }
+                    & .card-body{
+                        & .card_title{
+                        }
+                        & .chartlable {
+                            margin: 6px 0px 0px 0px;
+                            & li {
+                                & .keyBtn {
+                                    & img{
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }
