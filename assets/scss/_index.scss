@@ -815,7 +815,7 @@
     height: calc(100% -  40px);
     & .post_table {
         &.minidatatable{
-            max-height: 320px;
+            // max-height: 320px;
             // max-height: 100%;
         }
     }
@@ -827,7 +827,7 @@
         }
     }
     & .d_bottomBody {
-        min-height: calc(100% - 332px);
+        min-height: calc(100% - 333px);
         & .db_morecard {
             min-height: 100%;
             & .card-body {
@@ -1306,7 +1306,7 @@
             & .posttableSide  {
                 & .post_table  {
                     &.minidatatable{
-                        max-height: 255px;
+                        // max-height: 255px;
                     }
                     & .overviewTabs {
                         margin-bottom: 8px;
@@ -1321,7 +1321,7 @@
             // }
             & .rightsidetable {
                 & .d_bottomBody{
-                    min-height: calc(100% - 266px);
+                    // min-height: calc(100% - 266px);
                 }
                 & .informationCard  {
                     & .card-body{
@@ -1441,7 +1441,7 @@
             & .posttableSide  {
                 & .post_table  {
                     &.minidatatable{
-                        max-height: 210px;
+                        // max-height: 210px;
                     }
                     & .overviewTabs {
                         margin-bottom: 8px;
@@ -1456,7 +1456,7 @@
             }
             & .rightsidetable {
                 & .d_bottomBody{
-                    min-height: calc(100% - 222px);
+                    // min-height: calc(100% - 222px);
                 }
                 & .informationCard  {
                     & .card-body{
