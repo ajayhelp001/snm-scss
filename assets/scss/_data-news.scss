@@ -709,7 +709,7 @@
                                 & tr {
                                     & td {
                                         &:nth-child(2) {
-                                            max-width: 120px;
+                                            max-width: 80px;
                                         }
                                     }
                                 }
@@ -732,7 +732,7 @@
                                 & tr {
                                     & td {
                                         &:nth-child(2) {
-                                            max-width: 100px;
+                                            max-width: 70px;
                                         }
                                     }
                                 }
@@ -758,6 +758,42 @@
     }
     .keyword_category_KEY {
         max-width: 600px;
+    }
+    .list_post_Table {
+        & .list {
+            & .posttableSide {
+                &.post_listTable {
+                    & .post_table {
+                        & .table {
+                            & thead{
+                                & tr {
+                                    & th {
+                                        &:last-child{
+                                            color: transparent;
+                                            max-width: 40px;
+                                            white-space: nowrap;
+                                            overflow: hidden;
+                                        }
+                                    }
+                                }
+                            }
+                            & tbody {
+                                & tr {
+                                    & td {
+                                        &:nth-child(2) {
+                                            max-width: 70px;
+                                        }
+                                        &:last-child{
+                                            max-width: 40px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -1591,6 +1627,53 @@
         height: 158px;
     }
 }
+.lg_data_table{
+    & .top_post {
+        & .post_table{
+            &.smcontent{
+                & .table{
+                    // & tr {
+                    //     & th {
+                    //         padding: 11px 6px;
+                    //     }
+                    // }
+                    & tbody{
+                        & tr {
+                            & td {
+                                &:first-child{
+                                    width: 17%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.lg_news_data_table{
+    & .list_post_Table {
+        & .list {
+            & .posttableSide {
+                &.post_listTable {
+                    & .post_table {
+                        & .table {
+                            & tbody {
+                                & tr {
+                                    & td {
+                                        &:first-child {
+                                            width: 20%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 @media screen and (min-width: 1850px) {
     .informationCard{
@@ -1944,6 +2027,25 @@
         }
         & .midtableGroup {
             max-width: calc(100% - 456px);
+        }
+    }
+    .lg_data_table{
+        & .top_post {
+            & .post_table{
+                &.smcontent{
+                    & .table{
+                        & tbody{
+                            & tr {
+                                & td {
+                                    &:first-child{
+                                        width: 20%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }

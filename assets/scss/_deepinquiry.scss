@@ -135,6 +135,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     gap: 14px;
     & .items {
         gap: 10px;
@@ -294,7 +295,7 @@ div[data-tippy-root] {
     .bottomtabs {
         border-radius: 8px;
         padding: 8px 10px;
-        gap: 8px;
+        gap: 10px;
         & .items {
             gap: 4px;
             & .eventImg {
@@ -320,7 +321,7 @@ div[data-tippy-root] {
     .bottomtabs {
         border-radius: 8px;
         padding: 8px 10px;
-        gap: 8px;
+        gap: 12px;
         & .items {
             gap: 4px;
             & .eventImg {
@@ -430,8 +431,8 @@ div[data-tippy-root] {
 }
 @media screen and (max-width: 1500px){
     .bottomtabs {
-        padding: 8px;
-        gap: 6px;
+        // padding: 8px;
+        gap: 11px;
         & .items {
             gap: 2px;
             & .eventImg {
@@ -451,8 +452,8 @@ div[data-tippy-root] {
 }
 @media screen and (max-width: 1430px){
     .bottomtabs {
-        padding: 8px 6px;
-        gap: 4px;
+        // padding: 8px 6px;
+        // gap: 8px;
         & .items {
             gap: 2px;
             & .eventImg {
@@ -466,6 +467,59 @@ div[data-tippy-root] {
                 }
             }
             & span {
+            }
+        }
+    }
+}
+@media screen and (max-width: 1400px) {
+    .bottomtabs {
+        gap: 7px;
+        & .items {
+            & .eventImg {
+                & img {
+                }
+                &.dotedImg{
+                    & span{
+                    }
+                }
+            }
+            & span {
+            }
+        }
+    }
+    .deepinquiryPage {
+        & .accordionbodypart {
+            // gap: 0px !important;
+            &>div{
+                // padding: 2px 0px;
+            }
+            & .sourceheading {
+                & .source_Img {
+                }
+                &.facebook{
+                }
+                &.youtube{
+                }
+                &.subheding{
+                }
+            }
+            & .trackedAccount {
+                & .accordiongroup {
+                    & .accordion-item {
+                        & .accordion-header {
+                            & .accordion-button {
+                                &::after{
+                                }
+                            }
+                        }
+                        & .accordion-body {
+                            & .userItem {
+                                & .view {
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }

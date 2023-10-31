@@ -347,7 +347,23 @@
             }
         }
     }
-
+.trackinguser {
+    & .socialCategoery{
+        &.informationCard{
+            & .categoryes {
+                & .card_body {
+                    gap: 6px;
+                    & .categoryImg {
+                    }
+                    & .valu {   
+                        & span {
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
     
 .facebook-postlist-data {
     // 280+332

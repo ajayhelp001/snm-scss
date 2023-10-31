@@ -493,7 +493,11 @@
 }
 
 @media screen and (max-width: 1600px) {
+    .all_sources{
+        padding: 0px 30px;
+    }
     .maincontent{
+        padding: 30px;
         & .manin_content_Body {
             // ***
             & .levelCard  {
@@ -1284,6 +1288,7 @@
     .topheader{
         // height: 48px;
         & .socialNetwork {
+            padding: 12px 0px 12px 26px;
             font-size: 18px;
         }
         & .userSide {
@@ -1416,7 +1421,7 @@
     }
     .breadcrumb_Bar{
         height: 36px;
-        padding: 8px 0px 8px 30px;
+        padding: 8px 0px 8px 26px;
         & .breadcrumb {
             margin: 0px;
             & .breadcrumb-item {
@@ -1738,7 +1743,7 @@
 
 @media screen and (max-width: 1439.98px) {
     .maincontent{
-        padding: 28px;
+        padding: 24px;
         & .manin_content_Body{
             & .levelCard  {
                 & .card-body{
@@ -1751,9 +1756,17 @@
         }
     }
     .all_sources{
-        padding: 0px 28px;
+        padding: 0px 24px;
     }
     // ***
+    .breadcrumb_Bar{
+        padding: 8px 0px 8px 24px;
+    }
+    .topheader {
+        & .socialNetwork{
+            padding: 12px 0px 12px 24px;
+        }
+    }
     .userDistentCard{
         & .listItem {
             &:hover{
@@ -2026,6 +2039,13 @@
                 }
             }
         }
+        &.trackingsocial{
+            gap: 0px !important;
+            & .nav-item {
+                & .nav-link {
+                    font-size: 12px;
+                }
+            }
+        }
     }
-    // ***
 }
