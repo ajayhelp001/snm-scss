@@ -729,6 +729,9 @@
                     border-radius: 50%;
                     display: flex;
                     overflow: hidden;
+                    &.mainaccount{
+                        min-width: 26px;
+                    }
                     & img {
                         object-fit: cover;
                     }
@@ -1422,8 +1425,6 @@
                             }
                         }
                         & .accountUser {
-                            width: 24px;
-                            height: 24px;
                             &.clips{
                                 font-size: 10px;
                             }
@@ -1544,7 +1545,7 @@
             & .posttableSide  {
                 & .post_table  {
                     &.minidatatable{
-                        max-height: 150px;
+                        max-height: 210px;
                     }
                     & .overviewTabs {
                         margin-bottom: 8px;
@@ -1553,7 +1554,7 @@
             }
             & .rightsidetable {
                 & .d_bottomBody{
-                    height: calc(100% - 166px);
+                    height: calc(100% - 222px);
                 }
                 & .informationCard  {
                     & .card-body{
@@ -1626,7 +1627,7 @@
                 & .bootompicharts {
                     & .levelCard  {
                         & .card-body {
-                            padding: 6px 12px;
+                            padding: 12px;
                         }
                     }
                 }
