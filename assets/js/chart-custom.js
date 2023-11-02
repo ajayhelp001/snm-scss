@@ -307,7 +307,7 @@ var options = {
     ],
     chart: {
         type: 'bar',
-        height: 350,
+        height: "100%",
         stacked: true,
         toolbar: {
             show: true
@@ -323,25 +323,24 @@ var options = {
             colors: ['#000']
         }
     },
-    responsive: [
-        {
-            breakpoint: 1699.98,
-            options: {
-                chart: {
-                    height: 314
-                },
-            }
-        },
-        {
-            breakpoint: 1400.98, // this will apply to screens smaller than 480px
-            options: {
-                chart: {
-                    height: 320
-                },
-                // any other options you want to change...
-            },
-        }
-    ],
+    // responsive: [
+    //     {
+    //         breakpoint: 1699.98,
+    //         options: {
+    //             chart: {
+    //                 height: 314
+    //             },
+    //         }
+    //     },
+    //     {
+    //         breakpoint: 1400.98, 
+    //         options: {
+    //             chart: {
+    //                 height: 320
+    //             },
+    //         },
+    //     }
+    // ],
     // plotOptions: {
     //     bar: {
     //         horizontal: true,

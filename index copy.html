@@ -124,7 +124,7 @@
                     </div>
                     <!--! * User Header End -->
                     <!-- * Dashboard Chart Start -->
-                    <div class="col-12 h-100 flex-fill maincontent pt-0">
+                    <div class="col-12 h-100 flex-fill maincontent pt-0 homepage">
                         <div class="manin_content_Body h-100 overflow-hidden">
                             <div class="tab-content h-100" id="pills-tabContent">
                                 <div class="tab-pane fade show active h-100" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
@@ -204,10 +204,10 @@
                                                         <div class="col-6 bootompicharts">
                                                             <div class="card levelCard pichart h-100">
                                                                 <div class="card-body">
-                                                                    <!-- <div class="card_title mb-0">Sources rates</div> -->
-                                                                    <div class="row innerbody gap-1">
+                                                                    <div class="card_title sourcetitle mb-0">Sources rates</div>
+                                                                    <div class="row innerbody">
                                                                         <div class="col-12 pe-0">
-                                                                            <div class="row g-2">
+                                                                            <div class="row g-xxl-2 g-1">
                                                                                 <div class="col-12 cardSubTitle tablet">Interactions count rate <div class="tredMap"><div class="tredingImg"><img src="assets/image/icon/tredMapRed.svg" class="w-100" alt="treding"></div> <span>1.6%</span></div></div>
                                                                                 <div class="col">
                                                                                 <div class="cardSubTitle desktop">Interactions count rate <div class="tredMap"><div class="tredingImg"><img src="assets/image/icon/tredMapRed.svg" class="w-100" alt="treding"></div> <span>1.6%</span></div></div>
@@ -245,12 +245,12 @@
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="col-auto picharts">
-                                                                                    <canvas id="oilChart" class="w-full" height="144" width="144"></canvas>
+                                                                                    <canvas id="oilChart" class="w-full" height="150" width="150"></canvas>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-12 pe-0">
-                                                                            <div class="row g-2">
+                                                                            <div class="row g-xxl-2 g-1">
                                                                                 <div class="col-12 cardSubTitle tablet">Violations per post rate <div class="tredMap greenzone"><div class="tredingImg"><img src="assets/image/icon/tredMap.svg" class="w-100" alt="treding"></div> <span>1.6%</span></div></div>
                                                                                 <div class="col">
                                                                                     <div class="cardSubTitle desktop">Violations per post rate <div class="tredMap greenzone"><div class="tredingImg"><img src="assets/image/icon/tredMap.svg" class="w-100" alt="treding"></div> <span>1.6%</span></div></div>
@@ -288,7 +288,7 @@
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="col-auto picharts">
-                                                                                    <canvas id="ratechart" class="w-full" height="144" width="144"></canvas>
+                                                                                    <canvas id="ratechart" class="w-full" height="150" width="150"></canvas>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
@@ -322,12 +322,18 @@
                                                             </div>
                                                         </div>
                                                         <div class="col-6 bootompicharts">
-                                                            <div class="card top_post h-100 levelCard stackedChartCard">
+                                                            <div class="card top_post h-100 levelCard stackedChartCard m-0">
                                                                 <div class="card-body">
-                                                                    <div class="card_title keywords mb-0">Most discuss keywords
+                                                                    <div class="card_title position-relative lgkeywordsgroup">Most discuss keywords
                                                                         <div class="form-check">
                                                                             <input class="form-check-input" type="checkbox" value="" id="topten">
                                                                             <label class="form-check-label" for="topten">Only violation keyword</label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="card_title position-relative smkeywordsgroup">Most keywords
+                                                                        <div class="form-check d-inline-flex">
+                                                                            <input class="form-check-input m-0" type="checkbox" value="" id="topten1">
+                                                                            <label class="form-check-label" for="topten1">Only violation keyword</label>
                                                                         </div>
                                                                     </div>
                                                                     <div class="row mx-0 flex-nowrap">
@@ -368,7 +374,7 @@
                                                                             <label class="form-check-label" for="flexCheckDefault">Only violation</label>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="nav nav-pills row overviewTabs" id="post-tab" role="tablist">
+                                                                    <div class="nav nav-pills row overviewTabs mb-3" id="post-tab" role="tablist">
                                                                         <li class="nav-item col-auto" role="presentation">
                                                                             <button class="nav-link active" id="post-home-tab" data-bs-toggle="pill" data-bs-target="#post-home" type="button" role="tab" aria-controls="post-home" aria-selected="true">Top posts</button>
                                                                         </li>
@@ -377,11 +383,11 @@
                                                                         </li>
                                                                     </div>
                                                                 </div>
-                                                                <div class="col-12 h-100 flex-fill overflow-y-auto">
+                                                                <div class="col-12 h-100 flex-fill overflow-hidden">
                                                                     <div class="tab-content h-100" id="post-tabContent">
-                                                                        <div class="tab-pane text-white fade show active h-100 " id="post-home" role="tabpanel" aria-labelledby="post-home-tab" tabindex="0">
-                                                                            <div class="row mx-0 gx-0 posttableSide active_data_show h-100">
-                                                                                <div class="col-12 post_table table-responsive minidatatable">
+                                                                        <div class="tab-pane text-white top_fixed_header1 fade show active h-100 " id="post-home" role="tabpanel" aria-labelledby="post-home-tab" tabindex="0">
+                                                                            <div class="posttableSide">
+                                                                                <div class="post_table">
                                                                                     <table class="table align-middle table-borderless table-hover post">
                                                                                         <thead class="align-middle">
                                                                                             <tr>
@@ -391,63 +397,77 @@
                                                                                                 <th scope="col">Interaction</th>
                                                                                             </tr>
                                                                                         </thead>
-                                                                                        <tbody>
+                                                                                    </table>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="row mx-0 gx-0 posttableSide rightsidetable active_data_show h100 overflow-hidden">
+                                                                                <div class="col-12 post_table table-responsive minidatatable rounded-0 account_datatable">
+                                                                                    <table class="table align-middle table-borderless table-hover post">
+                                                                                        <!-- <thead class="align-middle">
                                                                                             <tr>
-                                                                                                <th scope="row"><div class="postContent">Lần đầu làm chuyện ấy với bóng cười & tem giấy. #samyanclub #bongcuoi</div></th>
+                                                                                                <th scope="col">Post content</th>
+                                                                                                <th scope="col">Source</th>
+                                                                                                <th scope="col">View</th>
+                                                                                                <th scope="col">Interaction</th>
+                                                                                            </tr>
+                                                                                        </thead> -->
+                                                                                        <tbody>
+                                                                                            <tr class="selected">
+                                                                                                <td><div class="postContent">Lần đầu làm chuyện ấy với bóng cười & tem giấy. #samyanclub #bongcuoi</div></td>
                                                                                                 <td><div class="icon"><img src="assets/image/icon/fb.svg" class="w100" alt="facebook"></div></td>
                                                                                                 <td><div class="view"><span class="icon eyes"><img src="assets/image/icon/view.svg" class="w100" alt="view"></span>2.7m</div></td>
                                                                                                 <td><div class="view"><span class="icon"><img src="assets/image/icon/interaction.svg" class="w100" alt="interaction"></span>753k</div></td>
                                                                                             </tr>
                                                                                             <tr>
-                                                                                                <th scope="row"><div class="postContent">Giữa nỗi lo Blackpink tan rã, Jisoo chuyển hướng đóng phim</div></th>
+                                                                                                <td><div class="postContent">Giữa nỗi lo Blackpink tan rã, Jisoo chuyển hướng đóng phim</div></td>
                                                                                                 <td><div class="icon"><img src="assets/image/icon/ticktok.svg" class="w100" alt="ticktok"></div></td>
                                                                                                 <td><div class="view"><span class="icon eyes"><img src="assets/image/icon/view.svg" class="w100" alt="view"></span>2.65m</div></td>
                                                                                                 <td><div class="view"><span class="icon"><img src="assets/image/icon/interaction.svg" class="w100" alt="interaction"></span>276k</div></td>
                                                                                             </tr>
                                                                                             <tr>
-                                                                                                <th scope="row"><div class="postContent">Du khách phải len giữa hai nghệ sĩ khỏa thân để vào xem triển lãm</div></th>
+                                                                                                <td><div class="postContent">Du khách phải len giữa hai nghệ sĩ khỏa thân để vào xem triển lãm</div></td>
                                                                                                 <td><div class="icon"><img src="assets/image/icon/youtube.svg" class="w100" alt="youtube"></div></td>
                                                                                                 <td><div class="view"><span class="icon eyes"><img src="assets/image/icon/view.svg" class="w100" alt="view"></span>2.55m</div></td>
                                                                                                 <td><div class="view"><span class="icon"><img src="assets/image/icon/interaction.svg" class="w100" alt="interaction"></span>735k</div></td>
                                                                                             </tr>
                                                                                             <tr>
-                                                                                                <th scope="row"><div class="postContent">Chủ đầu tư dự án 3.600 tỷ đồng tại trung tâm TP Huế lỗ 100 triệu đồng/ngày</div></th>
+                                                                                                <td><div class="postContent">Chủ đầu tư dự án 3.600 tỷ đồng tại trung tâm TP Huế lỗ 100 triệu đồng/ngày</div></td>
                                                                                                 <td><div class="icon"><img src="assets/image/icon/aleart_post.svg" class="w100" alt="Post"></div></td>
                                                                                                 <td><div class="view"><span class="icon eyes"><img src="assets/image/icon/view.svg" class="w100" alt="view"></span>2.44m</div></td>
                                                                                                 <td><div class="view"><span class="icon"><img src="assets/image/icon/interaction.svg" class="w100" alt="interaction"></span>724k</div></td>
                                                                                             </tr>
                                                                                             <tr>
-                                                                                                <th scope="row"><div class="postContent">Xabi Alonso’s ideas and numbers are 𝐬𝐞𝐧𝐬𝐚𝐭𝐢𝐨𝐧𝐚𝐥 as Bayer Leverkusen keep flying </div></th>
+                                                                                                <td><div class="postContent">Xabi Alonso’s ideas and numbers are 𝐬𝐞𝐧𝐬𝐚𝐭𝐢𝐨𝐧𝐚𝐥 as Bayer Leverkusen keep flying </div></td>
                                                                                                 <td><div class="icon"><img src="assets/image/icon/aleart_post.svg" class="w100" alt="post"></div></td>
                                                                                                 <td><div class="view"><span class="icon eyes"><img src="assets/image/icon/view.svg" class="w100" alt="view"></span>2.39m</div></td>
                                                                                                 <td><div class="view"><span class="icon"><img src="assets/image/icon/interaction.svg" class="w100" alt="interaction"></span>707k</div></td>
                                                                                             </tr>
                                                                                             <tr>
-                                                                                                <th scope="row"><div class="postContent">Tôi sẽ rất vui nếu Đồng Chí đừng chỉa súng vào đầu vị hôn thê của tôi</div></th>
+                                                                                                <td><div class="postContent">Tôi sẽ rất vui nếu Đồng Chí đừng chỉa súng vào đầu vị hôn thê của tôi</div></td>
                                                                                                 <td><div class="icon"><img src="assets/image/icon/youtube.svg" class="w100" alt="youtube"></div></td>
                                                                                                 <td><div class="view"><span class="icon eyes"><img src="assets/image/icon/view.svg" class="w100" alt="view"></span>1.95m</div></td>
                                                                                                 <td><div class="view"><span class="icon"><img src="assets/image/icon/interaction.svg" class="w100" alt="interaction"></span>703k</div></td>
                                                                                             </tr>
                                                                                             <tr>
-                                                                                                <th scope="row"><div class="postContent">Trùm cuối PIONEER #XDJ_OPUS_QUAD Chính Hãng SX 2023 New Bảo Hành 1 Năm</div></th>
+                                                                                                <td><div class="postContent">Trùm cuối PIONEER #XDJ_OPUS_QUAD Chính Hãng SX 2023 New Bảo Hành 1 Năm</div></td>
                                                                                                 <td><div class="icon"><img src="assets/image/icon/fb.svg" class="w100" alt="facebook"></div></td>
                                                                                                 <td><div class="view"><span class="icon eyes"><img src="assets/image/icon/view.svg" class="w100" alt="view"></span>1.68m</div></td>
                                                                                                 <td><div class="view"><span class="icon"><img src="assets/image/icon/interaction.svg" class="w100" alt="interaction"></span>697k</div></td>
                                                                                             </tr>
                                                                                             <tr>
-                                                                                                <th scope="row"><div class="postContent">LỠ SPOIL PHIM HẢ - ĐỪNG LO, ĐÂY LÀ NHẬT BẢN</div></th>
+                                                                                                <td><div class="postContent">LỠ SPOIL PHIM HẢ - ĐỪNG LO, ĐÂY LÀ NHẬT BẢN</div></td>
                                                                                                 <td><div class="icon"><img src="assets/image/icon/fb.svg" class="w100" alt="facebook"></div></td>
                                                                                                 <td><div class="view"><span class="icon eyes"><img src="assets/image/icon/view.svg" class="w100" alt="view"></span>1.49m</div></td>
                                                                                                 <td><div class="view"><span class="icon"><img src="assets/image/icon/interaction.svg" class="w100" alt="interaction"></span>690k</div></td>
                                                                                             </tr>
                                                                                             <tr>
-                                                                                                <th scope="row"><div class="postContent">Khá bất ngờ với giá vé cực mềm của concert Westlife tại Việt Nam</div></th>
+                                                                                                <td><div class="postContent">Khá bất ngờ với giá vé cực mềm của concert Westlife tại Việt Nam</div></td>
                                                                                                 <td><div class="icon"><img src="assets/image/icon/ticktok.svg" class="w100" alt="ticktok"></div></td>
                                                                                                 <td><div class="view"><span class="icon eyes"><img src="assets/image/icon/view.svg" class="w100" alt="view"></span>1.31m</div></td>
                                                                                                 <td><div class="view"><span class="icon"><img src="assets/image/icon/interaction.svg" class="w100" alt="interaction"></span>463k</div></td>
                                                                                             </tr>
                                                                                             <tr>
-                                                                                                <th scope="row"><div class="postContent">Nhờ AI vẽ 1 người đẹp trai,lãng tử,tri thức,sành điệu</div></th>
+                                                                                                <td><div class="postContent">Nhờ AI vẽ 1 người đẹp trai,lãng tử,tri thức,sành điệu</div></td>
                                                                                                 <td><div class="icon"><img src="assets/image/icon/fb.svg" class="w100" alt="facebook"></div></td>
                                                                                                 <td><div class="view"><span class="icon eyes"><img src="assets/image/icon/view.svg" class="w100" alt="view"></span>1.1m</div></td>
                                                                                                 <td><div class="view"><span class="icon"><img src="assets/image/icon/interaction.svg" class="w100" alt="interaction"></span>439k</div></td>
@@ -457,100 +477,126 @@
                                                                                 </div>
                                                                                 <div class="col-12 d_bottomBody">
                                                                                     <div class="informationCard db_morecard h-100">
-                                                                                        <div class="card-body">
-                                                                                            <div class="row innerbody show_title_bootomcard">
+                                                                                        <div class="card-body h-100">
+                                                                                            <div class="row innerbody gap-1 show_title_bootomcard show h-100 flex-column flex-nowrap">
                                                                                                 <div class="col-12">
                                                                                                     <div class="card_title m-0">
                                                                                                         More informations
-                                                                                                        <a href="pg-tracking-userDetails-overview.html" class="viewDetailsBtn">View Details <span class="moreImg"><img src="assets/image/icon/viewmore.svg" class="w-100" alt="viewmore"></span> </a>
+                                                                                                        <a href="data-fb-postDetails-overview.html" class="viewDetailsBtn">View Details <span class="moreImg"><img src="assets/image/icon/viewmore.svg" class="w-100" alt="viewmore"></span> </a>
                                                                                                     </div> 
                                                                                                 </div>
-                                                                                                <div class="col-12 bodypart">
-                                                                                                    <div class="row gap-12">
-                                                                                                        <div class="col-12">
-                                                                                                            <div class="posted row gx-0">
-                                                                                                                <div class="col accountedPosted">
-                                                                                                                    <div class="accountPost">Account posted</div>
-                                                                                                                    <div class="accounts">
-                                                                                                                        <div class="accountUser"><img src="assets/image/fb_user.png" class="w-100" alt="user Image"></div>
-                                                                                                                        <div class="userName">Phan Lê Mai Lan</div>
+                                                                                                <div class="col-12 bodypart postedbody overflow-y-auto overflow-x-hidden">
+                                                                                                    <div class="cardsbodys">
+                                                                                                        <div class="row gap-1">
+                                                                                                            <div class="col-12">
+                                                                                                                <div class="posted row gx-2 gap-0">
+                                                                                                                    <div class="col-xxl-5 col-6 accountedPosted mw-100">
+                                                                                                                        <div class="accountPost">Account posted</div>
+                                                                                                                        <div class="accounts">
+                                                                                                                            <div class="accountUser mainaccount"><img src="assets/image/fb_user.png" class="w-100" alt="user Image"></div>
+                                                                                                                            <div class="userName mw-100">Phan Lê Mai Lan</div>
+                                                                                                                        </div>
                                                                                                                     </div>
-                                                                                                                </div>
-                                                                                                                <div class="col-auto ms-auto">
-                                                                                                                    <div class="accountPost">Sources</div>
-                                                                                                                    <div class="d-inline-flex align-items-center gap-1">
-                                                                                                                        <div class="socialImg"><img src="assets/image/icon/fb.svg" alt="facebook"></div>
+                                                                                                                    <div class="col-4">
+                                                                                                                        <div class="row">
+                                                                                                                            <div class="col-auto">
+                                                                                                                                <div class="accountPost">Sources</div>
+                                                                                                                                <div class="d-flex align-items-center gap-1 justify-content-center">
+                                                                                                                                    <div class="socialImg"><img src="assets/image/icon/fb.svg" alt="facebook"></div>
+                                                                                                                                </div>
+                                                                                                                            </div>
+                                                                                                                            <div class="col">
+                                                                                                                                <div class="accountPost">View</div>
+                                                                                                                                <div class="accounts">
+                                                                                                                                    <div class="userfollwer">2.7m</div>
+                                                                                                                                </div>
+                                                                                                                            </div>
+                                                                                                                        </div>
                                                                                                                     </div>
-                                                                                                                </div>
-                                                                                                                <div class="col-auto ms-auto">
-                                                                                                                    <div class="accountPost">View</div>
-                                                                                                                    <div class="accounts">
-                                                                                                                        <div class="userfollwer">2.7m</div>
-                                                                                                                    </div>
-                                                                                                                </div>
-                                                                                                                <div class="col-auto ms-auto">
-                                                                                                                    <div class="row g-2">
-                                                                                                                        <div class="col">
-                                                                                                                            <div class="accountPost">Reach</div>
-                                                                                                                            <div class="accounts">
+                                                                                                                    <div class="col-xxl-3 col-2">
+                                                                                                                        <div class="row g-2">
+                                                                                                                            <div class="col-12 accountPost">Reach</div>
+                                                                                                                            <div class="col-12 accounts mt-0">
                                                                                                                                 <div class="userfollwer">20.1k</div>
                                                                                                                             </div>
                                                                                                                         </div>
                                                                                                                     </div>
                                                                                                                 </div>
                                                                                                             </div>
-                                                                                                        </div>
-                                                                                                        <div class="col-12">
-                                                                                                            <div class="posted row gap-1 gx-0">
-                                                                                                                <div class="col-12 accountPost">Account related</div>
-                                                                                                                <div class="col-auto">
-                                                                                                                    <div class="accountUser"><img src="assets/image/user1.png" class="w-100" alt="user Image"></div>
-                                                                                                                </div>
-                                                                                                                <div class="col-auto">
-                                                                                                                    <div class="accountUser"><img src="assets/image/actor33.png" class="w-100" alt="user Image"></div>
-                                                                                                                </div>
-                                                                                                                <div class="col-auto">
-                                                                                                                    <div class="accountUser"><img src="assets/image/actor34.png" class="w-100" alt="user Image"></div>
-                                                                                                                </div>
-                                                                                                                <div class="col-auto">
-                                                                                                                    <div class="accountUser"><img src="assets/image/actor35.png" class="w-100" alt="user Image"></div>
-                                                                                                                </div>
-                                                                                                                <div class="col-auto">
-                                                                                                                    <div class="accountUser"><img src="assets/image/actor36.png" class="w-100" alt="user Image"></div>
-                                                                                                                </div>
-                                                                                                                <div class="col-auto">
-                                                                                                                    <div class="accountUser"><img src="assets/image/actor37.png" class="w-100" alt="user Image"></div>
-                                                                                                                </div>
-                                                                                                                <div class="col-auto">
-                                                                                                                    <div class="accountUser"><img src="assets/image/actor38.png" class="w-100" alt="user Image"></div>
-                                                                                                                </div>
-                                                                                                                <div class="col-auto">
-                                                                                                                    <div class="accountUser"><img src="assets/image/actor39.png" class="w-100" alt="user Image"></div>
-                                                                                                                </div>
-                                                                                                                <div class="col-auto">
-                                                                                                                    <div class="accountUser"><img src="assets/image/actor40.png" class="w-100" alt="user Image"></div>
+                                                                                                            <div class="col-12 posted gap-0">
+                                                                                                                <div class="d-flex align-itemscenter bottomcategory">
+                                                                                                                    <div class="info_Imtems">
+                                                                                                                        <div class="row">
+                                                                                                                            <div class="col-12 accountPost">Type</div>
+                                                                                                                            <div class="col-12"><div class="usericon mx-auto"><img src="assets/image/icon/singal-user-icon.svg" alt="Account" class="w-100"></div></div>
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                    <div class="info_Imtems">
+                                                                                                                        <div class="row">
+                                                                                                                            <div class="col-12 accountPost">Category</div>
+                                                                                                                            <div class="col-12"><button type="button" class="categoryBtn w-100">Drugs</button></div>
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                    <div class="info_Imtems">
+                                                                                                                        <div class="row">
+                                                                                                                            <div class="col-12 accountPost">Timestamp</div>
+                                                                                                                            <div class="col-12 timedate">26/09/2023 <span>19:25:29</span></div>
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                    <div class="info_Imtems">
+                                                                                                                        <div class="row gap-0 gx-1 accounter">
+                                                                                                                            <div class="col-12 accountPost">Account related</div>
+                                                                                                                            <div class="col-auto">
+                                                                                                                                <div class="accountUser"><img src="assets/image/user1.png" class="w-100" alt="user Image"></div>
+                                                                                                                            </div>
+                                                                                                                            <div class="col-auto">
+                                                                                                                                <div class="accountUser"><img src="assets/image/actor33.png" class="w-100" alt="user Image"></div>
+                                                                                                                            </div>
+                                                                                                                            <div class="col-auto">
+                                                                                                                                <div class="accountUser"><img src="assets/image/actor34.png" class="w-100" alt="user Image"></div>
+                                                                                                                            </div>
+                                                                                                                            <div class="col-auto">
+                                                                                                                                <div class="accountUser"><img src="assets/image/actor35.png" class="w-100" alt="user Image"></div>
+                                                                                                                            </div>
+                                                                                                                            <div class="col-auto">
+                                                                                                                                <div class="accountUser clips"><span>+6</span></div>
+                                                                                                                            </div>
+                                                                                                                            <!-- <div class="col-auto">
+                                                                                                                                <div class="accountUser"><img src="assets/image/actor37.png" class="w-100" alt="user Image"></div>
+                                                                                                                            </div>
+                                                                                                                            <div class="col-auto">
+                                                                                                                                <div class="accountUser"><img src="assets/image/actor38.png" class="w-100" alt="user Image"></div>
+                                                                                                                            </div>
+                                                                                                                            <div class="col-auto">
+                                                                                                                                <div class="accountUser"><img src="assets/image/actor39.png" class="w-100" alt="user Image"></div>
+                                                                                                                            </div>
+                                                                                                                            <div class="col-auto">
+                                                                                                                                <div class="accountUser"><img src="assets/image/actor40.png" class="w-100" alt="user Image"></div>
+                                                                                                                            </div> -->
+                                                                                                                        </div>
+                                                                                                                    </div>
                                                                                                                 </div>
                                                                                                             </div>
-                                                                                                        </div>
-                                                                                                        <div class="col-12 posted">
-                                                                                                            <div class="accountPost">Social metrics rate</div>
-                                                                                                            <div class="card socialMetricsCard">
-                                                                                                                <div class="row gx-0 cardbody">
-                                                                                                                    <div class="col">
-                                                                                                                        <div class="metrics">Engagement rate </div>
-                                                                                                                        <div class="rate">0.166</div>
-                                                                                                                    </div>
-                                                                                                                    <div class="col">
-                                                                                                                        <div class="metrics">Amplification rate </div>
-                                                                                                                        <div class="rate">0.025</div>
-                                                                                                                    </div>
-                                                                                                                    <div class="col">
-                                                                                                                        <div class="metrics">Virality rate </div>
-                                                                                                                        <div class="rate">0.015</div>
-                                                                                                                    </div>
-                                                                                                                    <div class="col">
-                                                                                                                        <div class="metrics"> Bounce rate </div>
-                                                                                                                        <div class="rate">8.66</div>
+                                                                                                            <div class="col-12 posted">
+                                                                                                                <div class="accountPost">Social metrics rate</div>
+                                                                                                                <div class="card socialMetricsCard">
+                                                                                                                    <div class="row gx-0 cardbody">
+                                                                                                                        <div class="col">
+                                                                                                                            <div class="metrics">Engagement rate </div>
+                                                                                                                            <div class="rate">0.166</div>
+                                                                                                                        </div>
+                                                                                                                        <div class="col">
+                                                                                                                            <div class="metrics">Amplification rate </div>
+                                                                                                                            <div class="rate">0.025</div>
+                                                                                                                        </div>
+                                                                                                                        <div class="col">
+                                                                                                                            <div class="metrics">Virality rate </div>
+                                                                                                                            <div class="rate">0.015</div>
+                                                                                                                        </div>
+                                                                                                                        <div class="col">
+                                                                                                                            <div class="metrics"> Bounce rate </div>
+                                                                                                                            <div class="rate">8.66</div>
+                                                                                                                        </div>
                                                                                                                     </div>
                                                                                                                 </div>
                                                                                                             </div>
@@ -563,10 +609,10 @@
                                                                                 </div>
                                                                             </div>
                                                                         </div>
-                                                                        <div class="tab-pane text-white fade h-100" id="post-profile" role="tabpanel" aria-labelledby="post-profile-tab" tabindex="0">
-                                                                            <div class="row mx-0 gx-0 posttableSide active_show h-100">
-                                                                                <div class="col-12 post_table actore_table table-responsive">
-                                                                                    <table class="table align-middle table-borderless table-hover">
+                                                                        <div class="tab-pane text-white fade h-100 top_fixed_header2" id="post-profile" role="tabpanel" aria-labelledby="post-profile-tab" tabindex="0">
+                                                                            <div class="posttableSide">
+                                                                                <div class="post_table">
+                                                                                    <table class="table align-middle table-borderless table-hover post">
                                                                                         <thead class="align-middle">
                                                                                             <tr>
                                                                                                 <th scope="col">Accounts</th>
@@ -575,63 +621,77 @@
                                                                                                 <th scope="col">Interaction</th>
                                                                                             </tr>
                                                                                         </thead>
-                                                                                        <tbody>
+                                                                                    </table>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="row mx-0 gx-0 posttableSide rightsidetable active_show h100 overflow-hidden">
+                                                                                <div class="col-12 post_table minidatatable rounded-0 actore_table table-responsive">
+                                                                                    <table class="table align-middle table-borderless table-hover">
+                                                                                        <!-- <thead class="align-middle">
                                                                                             <tr>
-                                                                                                <th scope="row"><div class="postContent account"><div class="accountHolder"><img src="assets/image/fb_user.png" class="w-100" alt="account holder"></div><span>Phan Le Mai Lan </span></div></th>
+                                                                                                <th scope="col">Accounts</th>
+                                                                                                <th scope="col">View</th>
+                                                                                                <th scope="col">Reach</th>
+                                                                                                <th scope="col">Interaction</th>
+                                                                                            </tr>
+                                                                                        </thead> -->
+                                                                                        <tbody>
+                                                                                            <tr class="selected">
+                                                                                                <td><div class="postContent account"><div class="accountHolder"><img src="assets/image/fb_user.png" class="w-100" alt="account holder"></div><span>Phan Le Mai Lan </span></div></td>
                                                                                                 <td><div class="view"><span class="icon eyes"><img src="assets/image/icon/view.svg" class="w100" alt="view"></span>987k</div></td>
                                                                                                 <td><div class="view"><span class="icon"><img src="assets/image/icon/reach-icon.svg" class="w100" alt="interaction"></span>20.1k</div></td>
                                                                                                 <td><div class="view"><span class="icon"><img src="assets/image/icon/interaction.svg" class="w100" alt="interaction"></span>753.2k</div></td>
                                                                                             </tr>
                                                                                             <tr>
-                                                                                                <th scope="row"><div class="postContent account"><div class="accountHolder"><img src="assets/image/actor40.png" class="w-100" alt="account holder"></div><span>Shark Tung </span></div></th>
+                                                                                                <td><div class="postContent account"><div class="accountHolder"><img src="assets/image/actor40.png" class="w-100" alt="account holder"></div><span>Shark Tung </span></div></td>
                                                                                                 <td><div class="view"><span class="icon eyes"><img src="assets/image/icon/view.svg" class="w100" alt="view"></span>973k</div></td>
                                                                                                 <td><div class="view"><span class="icon"><img src="assets/image/icon/reach-icon.svg" class="w100" alt="interaction"></span>28.8k</div></td>
                                                                                                 <td><div class="view"><span class="icon"><img src="assets/image/icon/interaction.svg" class="w100" alt="interaction"></span>735.1k</div></td>
                                                                                             </tr>
                                                                                             <tr>
-                                                                                                <th scope="row"><div class="postContent account"><div class="accountHolder"><img src="assets/image/BikerAnTOn.png" class="w-100" alt="account holder"></div><span>Phan Le An Ton </span></div></th>
+                                                                                                <td><div class="postContent account"><div class="accountHolder"><img src="assets/image/BikerAnTOn.png" class="w-100" alt="account holder"></div><span>Phan Le An Ton </span></div></td>
                                                                                                 <td><div class="view"><span class="icon eyes"><img src="assets/image/icon/view.svg" class="w100" alt="view"></span>972k</div></td>
                                                                                                 <td><div class="view"><span class="icon"><img src="assets/image/icon/reach-icon.svg" class="w100" alt="interaction"></span>17k</div></td>
                                                                                                 <td><div class="view"><span class="icon"><img src="assets/image/icon/interaction.svg" class="w100" alt="interaction"></span>728.7k</div></td>
                                                                                             </tr>
                                                                                             <tr>
-                                                                                                <th scope="row"><div class="postContent account"><div class="accountHolder"><img src="assets/image/nhiPham.png" class="w-100" alt="account holder"></div><span>Chieu Nhi Ha </span></div></th>
+                                                                                                <td><div class="postContent account"><div class="accountHolder"><img src="assets/image/nhiPham.png" class="w-100" alt="account holder"></div><span>Chieu Nhi Ha </span></div></td>
                                                                                                 <td><div class="view"><span class="icon eyes"><img src="assets/image/icon/view.svg" class="w100" alt="view"></span>970k</div></td>
                                                                                                 <td><div class="view"><span class="icon"><img src="assets/image/icon/reach-icon.svg" class="w100" alt="interaction"></span>15.4k</div></td>
                                                                                                 <td><div class="view"><span class="icon"><img src="assets/image/icon/interaction.svg" class="w100" alt="interaction"></span>720k</div></td>
                                                                                             </tr>
                                                                                             <tr>
-                                                                                                <th scope="row"><div class="postContent account"><div class="accountHolder"><img src="assets/image/LangMetRoi.png" class="w-100" alt="account holder"></div><span>Long Met Roi </span></div></th>
+                                                                                                <td><div class="postContent account"><div class="accountHolder"><img src="assets/image/LangMetRoi.png" class="w-100" alt="account holder"></div><span>Long Met Roi </span></div></td>
                                                                                                 <td><div class="view"><span class="icon eyes"><img src="assets/image/icon/view.svg" class="w100" alt="view"></span>963k</div></td>
                                                                                                 <td><div class="view"><span class="icon"><img src="assets/image/icon/reach-icon.svg" class="w100" alt="interaction"></span>15.2k</div></td>
                                                                                                 <td><div class="view"><span class="icon"><img src="assets/image/icon/interaction.svg" class="w100" alt="interaction"></span>719.6</div></td>
                                                                                             </tr>
                                                                                             <tr>
-                                                                                                <th scope="row"><div class="postContent account"><div class="accountHolder"><img src="assets/image/tiewMoc.png" class="w-100" alt="account holder"></div><span>Tieu Moc</span></div></th>
+                                                                                                <td><div class="postContent account"><div class="accountHolder"><img src="assets/image/tiewMoc.png" class="w-100" alt="account holder"></div><span>Tieu Moc</span></div></td>
                                                                                                 <td><div class="view"><span class="icon eyes"><img src="assets/image/icon/view.svg" class="w100" alt="view"></span>955k</div></td>
                                                                                                 <td><div class="view"><span class="icon"><img src="assets/image/icon/reach-icon.svg" class="w100" alt="interaction"></span>12.9k</div></td>
                                                                                                 <td><div class="view"><span class="icon"><img src="assets/image/icon/interaction.svg" class="w100" alt="interaction"></span>685.4k</div></td>
                                                                                             </tr>
                                                                                             <tr>
-                                                                                                <th scope="row"><div class="postContent account"><div class="accountHolder"><img src="assets/image/actor39.png" class="w-100" alt="account holder"></div><span>Nana Pham </span></div></th>
+                                                                                                <td><div class="postContent account"><div class="accountHolder"><img src="assets/image/actor39.png" class="w-100" alt="account holder"></div><span>Nana Pham </span></div></td>
                                                                                                 <td><div class="view"><span class="icon eyes"><img src="assets/image/icon/view.svg" class="w100" alt="view"></span>953k</div></td>
                                                                                                 <td><div class="view"><span class="icon"><img src="assets/image/icon/reach-icon.svg" class="w100" alt="interaction"></span>11.9k</div></td>
                                                                                                 <td><div class="view"><span class="icon"><img src="assets/image/icon/interaction.svg" class="w100" alt="interaction"></span>682.2k</div></td>
                                                                                             </tr>
                                                                                             <tr>
-                                                                                                <th scope="row"><div class="postContent account"><div class="accountHolder"><img src="assets/image/Nguyen.png" class="w-100" alt="account holder"></div><span>Nguyen Nhu Hang </span></div></th>
+                                                                                                <td><div class="postContent account"><div class="accountHolder"><img src="assets/image/Nguyen.png" class="w-100" alt="account holder"></div><span>Nguyen Nhu Hang </span></div></td>
                                                                                                 <td><div class="view"><span class="icon eyes"><img src="assets/image/icon/view.svg" class="w100" alt="view"></span>946k</div></td>
                                                                                                 <td><div class="view"><span class="icon"><img src="assets/image/icon/reach-icon.svg" class="w100" alt="interaction"></span>11.7k</div></td>
                                                                                                 <td><div class="view"><span class="icon"><img src="assets/image/icon/interaction.svg" class="w100" alt="interaction"></span>680.1k</div></td>
                                                                                             </tr>
                                                                                             <tr>
-                                                                                                <th scope="row"><div class="postContent account"><div class="accountHolder"><img src="assets/image/fb_user.png" class="w-100" alt="account holder"></div><span>Coconut</span></div></th>
+                                                                                                <td><div class="postContent account"><div class="accountHolder"><img src="assets/image/fb_user.png" class="w-100" alt="account holder"></div><span>Coconut</span></div></td>
                                                                                                 <td><div class="view"><span class="icon eyes"><img src="assets/image/icon/view.svg" class="w100" alt="view"></span>944k</div></td>
                                                                                                 <td><div class="view"><span class="icon"><img src="assets/image/icon/reach-icon.svg" class="w100" alt="interaction"></span>11.5k</div></td>
                                                                                                 <td><div class="view"><span class="icon"><img src="assets/image/icon/interaction.svg" class="w100" alt="interaction"></span>661.8k</div></td>
                                                                                             </tr>
                                                                                             <tr>
-                                                                                                <th scope="row"><div class="postContent account"><div class="accountHolder"><img src="assets/image/koko.png" class="w-100" alt="account holder"></div><span>Koko </span></div></th>
+                                                                                                <td><div class="postContent account"><div class="accountHolder"><img src="assets/image/koko.png" class="w-100" alt="account holder"></div><span>Koko </span></div></td>
                                                                                                 <td><div class="view"><span class="icon eyes"><img src="assets/image/icon/view.svg" class="w100" alt="view"></span>943k</div></td>
                                                                                                 <td><div class="view"><span class="icon"><img src="assets/image/icon/reach-icon.svg" class="w100" alt="interaction"></span>11.3k</div></td>
                                                                                                 <td><div class="view"><span class="icon"><img src="assets/image/icon/interaction.svg" class="w100" alt="interaction"></span>656.2k</div></td>
@@ -641,102 +701,107 @@
                                                                                 </div>
                                                                                 <div class="col-12 d_bottomBody">
                                                                                     <div class="informationCard db_morecard h-100">
-                                                                                        <div class="card-body">
-                                                                                            <div class="row innerbody show_title_bootomcard2">
+                                                                                        <div class="card-body h-100">
+                                                                                            <div class="row innerbody gap-1 show_title_bootomcard2 show h-100 flex-column flex-nowrap">
                                                                                                 <div class="col-12">
                                                                                                     <div class="card_title m-0">
                                                                                                         More informations
                                                                                                         <a href="pg-tracking-userDetails-overview.html" class="viewDetailsBtn">View Details <span class="moreImg"><img src="assets/image/icon/viewmore.svg" class="w-100" alt="viewmore"></span> </a>
                                                                                                     </div>
                                                                                                 </div>
-                                                                                                <div class="col-12 bodypart">
-                                                                                                    <div class="row gap-12">
-                                                                                                        <div class="col-12">
-                                                                                                            <div class="posted row g-0">
-                                                                                                                <div class="col accountedPosted">
-                                                                                                                    <div class="accountPost">Account posted</div>
-                                                                                                                    <div class="accounts">
-                                                                                                                        <div class="accountUser"><img src="assets/image/fb_user.png" class="w-100" alt="user Image"></div>
-                                                                                                                        <div class="userName">Phan Lê Mai Lan</div>
+                                                                                                <div class="col-12 bodypart flex-fill overflow-y-auto overflow-x-hidden">
+                                                                                                    <div class="cardsbodys">
+                                                                                                        <div class="row gap-1">
+                                                                                                            <div class="col-12">
+                                                                                                                <div class="posted row g-0">
+                                                                                                                    <div class="col accountedPosted">
+                                                                                                                        <div class="accountPost">Account posted</div>
+                                                                                                                        <div class="accounts">
+                                                                                                                            <div class="accountUser mainaccount"><img src="assets/image/fb_user.png" class="w-100" alt="user Image"></div>
+                                                                                                                            <div class="userName">Phan Lê Mai Lan</div>
+                                                                                                                        </div>
                                                                                                                     </div>
-                                                                                                                </div>
-                                                                                                                <div class="col-auto ms-auto">
-                                                                                                                    <div class="accountPost">Social</div>
-                                                                                                                    <div class="d-inline-flex align-items-center gap-1">
-                                                                                                                        <div class="socialImg"><img src="assets/image/icon/fb.svg" alt="facebook"></div>
-                                                                                                                        <div class="socialImg"><img src="assets/image/icon/ticktok.svg" alt="facebook"></div>
-                                                                                                                        <div class="socialImg"><img src="assets/image/icon/youtube.svg" alt="facebook"></div>
+                                                                                                                    <div class="col-auto ms-auto">
+                                                                                                                        <div class="accountPost">Social</div>
+                                                                                                                        <div class="d-inline-flex align-items-center gap-1">
+                                                                                                                            <div class="socialImg"><img src="assets/image/icon/fb.svg" alt="facebook"></div>
+                                                                                                                            <div class="socialImg"><img src="assets/image/icon/ticktok.svg" alt="facebook"></div>
+                                                                                                                            <div class="socialImg"><img src="assets/image/icon/youtube.svg" alt="facebook"></div>
+                                                                                                                        </div>
                                                                                                                     </div>
-                                                                                                                </div>
-                                                                                                                <div class="col-auto ms-auto">
-                                                                                                                    <div class="accountPost">Total followers</div>
-                                                                                                                    <div class="accounts justify-content-center">
-                                                                                                                        <div class="userfollwer">28,6m</div>
+                                                                                                                    <div class="col-auto ms-auto">
+                                                                                                                        <div class="accountPost">Total followers</div>
+                                                                                                                        <div class="accounts justify-content-center">
+                                                                                                                            <div class="userfollwer">28,6m</div>
+                                                                                                                        </div>
                                                                                                                     </div>
-                                                                                                                </div>
-                                                                                                                <div class="col-auto ms-auto">
-                                                                                                                    <div class="row g-2">
-                                                                                                                        <div class="col">
-                                                                                                                            <div class="accountPost">Interactions</div>
-                                                                                                                            <div class="accounts justify-content-center">
-                                                                                                                                <div class="userfollwer">753.2k</div>
+                                                                                                                    <div class="col-auto ms-auto">
+                                                                                                                        <div class="row g-2">
+                                                                                                                            <div class="col">
+                                                                                                                                <div class="accountPost">Interactions</div>
+                                                                                                                                <div class="accounts justify-content-center">
+                                                                                                                                    <div class="userfollwer">753.2k</div>
+                                                                                                                                </div>
                                                                                                                             </div>
                                                                                                                         </div>
                                                                                                                     </div>
                                                                                                                 </div>
                                                                                                             </div>
-                                                                                                        </div>
-                                                                                                        <div class="col-12">
-                                                                                                            <div class="posted row gx-0 gap-1">
-                                                                                                                <div class="col-12 accountPost">Account related</div>
-                                                                                                                <div class="col-auto">
-                                                                                                                    <div class="accountUser"><img src="assets/image/user1.png" class="w-100" alt="user Image"></div>
-                                                                                                                </div>
-                                                                                                                <div class="col-auto">
-                                                                                                                    <div class="accountUser"><img src="assets/image/actor33.png" class="w-100" alt="user Image"></div>
-                                                                                                                </div>
-                                                                                                                <div class="col-auto">
-                                                                                                                    <div class="accountUser"><img src="assets/image/actor34.png" class="w-100" alt="user Image"></div>
-                                                                                                                </div>
-                                                                                                                <div class="col-auto">
-                                                                                                                    <div class="accountUser"><img src="assets/image/actor35.png" class="w-100" alt="user Image"></div>
-                                                                                                                </div>
-                                                                                                                <div class="col-auto">
-                                                                                                                    <div class="accountUser"><img src="assets/image/actor36.png" class="w-100" alt="user Image"></div>
-                                                                                                                </div>
-                                                                                                                <div class="col-auto">
-                                                                                                                    <div class="accountUser"><img src="assets/image/actor37.png" class="w-100" alt="user Image"></div>
-                                                                                                                </div>
-                                                                                                                <div class="col-auto">
-                                                                                                                    <div class="accountUser"><img src="assets/image/actor38.png" class="w-100" alt="user Image"></div>
-                                                                                                                </div>
-                                                                                                                <div class="col-auto">
-                                                                                                                    <div class="accountUser"><img src="assets/image/actor39.png" class="w-100" alt="user Image"></div>
-                                                                                                                </div>
-                                                                                                                <div class="col-auto">
-                                                                                                                    <div class="accountUser"><img src="assets/image/actor40.png" class="w-100" alt="user Image"></div>
+                                                                                                            <div class="col-12 posted ">
+                                                                                                                <div class="bottomcategory row gx-0 gap-1">
+                                                                                                                    <div class="col-12 accountPost">Account related</div>
+                                                                                                                    <div class="col-auto">
+                                                                                                                        <div class="accountUser"><img src="assets/image/user1.png" class="w-100" alt="user Image"></div>
+                                                                                                                    </div>
+                                                                                                                    <div class="col-auto">
+                                                                                                                        <div class="accountUser"><img src="assets/image/actor33.png" class="w-100" alt="user Image"></div>
+                                                                                                                    </div>
+                                                                                                                    <div class="col-auto">
+                                                                                                                        <div class="accountUser"><img src="assets/image/actor34.png" class="w-100" alt="user Image"></div>
+                                                                                                                    </div>
+                                                                                                                    <div class="col-auto">
+                                                                                                                        <div class="accountUser"><img src="assets/image/actor35.png" class="w-100" alt="user Image"></div>
+                                                                                                                    </div>
+                                                                                                                    <div class="col-auto">
+                                                                                                                        <div class="accountUser"><img src="assets/image/actor36.png" class="w-100" alt="user Image"></div>
+                                                                                                                    </div>
+                                                                                                                    <div class="col-auto">
+                                                                                                                        <div class="accountUser"><img src="assets/image/actor37.png" class="w-100" alt="user Image"></div>
+                                                                                                                    </div>
+                                                                                                                    <div class="col-auto">
+                                                                                                                        <div class="accountUser"><img src="assets/image/actor38.png" class="w-100" alt="user Image"></div>
+                                                                                                                    </div>
+                                                                                                                    <div class="col-auto">
+                                                                                                                        <div class="accountUser"><img src="assets/image/actor39.png" class="w-100" alt="user Image"></div>
+                                                                                                                    </div>
+                                                                                                                    <div class="col-auto">
+                                                                                                                        <div class="accountUser clips"><span>+6</span></div>
+                                                                                                                    </div>
+                                                                                                                    <!-- <div class="col-auto">
+                                                                                                                        <div class="accountUser"><img src="assets/image/actor40.png" class="w-100" alt="user Image"></div>
+                                                                                                                    </div> -->
                                                                                                                 </div>
                                                                                                             </div>
-                                                                                                        </div>
-                                                                                                        <div class="col-12 posted">
-                                                                                                            <div class="accountPost">Social metrics rate</div>
-                                                                                                            <div class="card socialMetricsCard">
-                                                                                                                <div class="row gx-0 cardbody">
-                                                                                                                    <div class="col">
-                                                                                                                        <div class="metrics">Engagement rate </div>
-                                                                                                                        <div class="rate">0.128</div>
-                                                                                                                    </div>
-                                                                                                                    <div class="col">
-                                                                                                                        <div class="metrics">Growth rate </div>
-                                                                                                                        <div class="rate">0.027</div>
-                                                                                                                    </div>
-                                                                                                                    <div class="col">
-                                                                                                                        <div class="metrics">Mention rate </div>
-                                                                                                                        <div class="rate">0.0027</div>
-                                                                                                                    </div>
-                                                                                                                    <div class="col">
-                                                                                                                        <div class="metrics">Social threat </div>
-                                                                                                                        <div class="rate">Low</div>
+                                                                                                            <div class="col-12 posted">
+                                                                                                                <div class="accountPost">Social metrics rate</div>
+                                                                                                                <div class="card socialMetricsCard">
+                                                                                                                    <div class="row gx-0 cardbody">
+                                                                                                                        <div class="col">
+                                                                                                                            <div class="metrics">Engagement rate </div>
+                                                                                                                            <div class="rate">0.128</div>
+                                                                                                                        </div>
+                                                                                                                        <div class="col">
+                                                                                                                            <div class="metrics">Growth rate </div>
+                                                                                                                            <div class="rate">0.027</div>
+                                                                                                                        </div>
+                                                                                                                        <div class="col">
+                                                                                                                            <div class="metrics">Mention rate </div>
+                                                                                                                            <div class="rate">0.0027</div>
+                                                                                                                        </div>
+                                                                                                                        <div class="col">
+                                                                                                                            <div class="metrics">Social threat </div>
+                                                                                                                            <div class="rate">Low</div>
+                                                                                                                        </div>
                                                                                                                     </div>
                                                                                                                 </div>
                                                                                                             </div>

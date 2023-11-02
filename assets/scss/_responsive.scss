@@ -257,8 +257,8 @@
                     & .innerbody {
                         & .picharts{
                             & canvas{
-                                height: 110px;
-                                width: 110px;
+                                height: 120px;
+                                width: 120px;
                             }
                         }
                         & .cardSubTitle {
@@ -291,7 +291,7 @@
                             }
                         }
                         & .chartvalue {
-                            margin-bottom: 1.5px;
+                            // margin-bottom: 1.5px;
                             & .chartbody {
                                 & .point {
                                     // width: 12px;
@@ -511,26 +511,22 @@
                     & .stackedChart {
                         // height: 366px;
                         height: 100%;
-                        & .linechart_group{
-                            min-height: 200px !important;
-                            margin-top: -20px;
-                            &>div{
-                                height: 200px !important;
-                            }
-                        }
-                        & .chartGroup {
-                        }
+                        // & .linechart_group{
+                        //     min-height: 200px !important;
+                        //     margin-top: -20px;
+                        //     &>div{
+                        //         height: 200px !important;
+                        //     }
+                        // }
                     }
                     & .card-body{
-                        & .card_title{
-                            margin-bottom: 0px;
-                        }
+                        // & .card_title{
+                        //     margin-bottom: 0px;
+                        // }
                         & .chartlable {
-                            margin: 11px 0px 0px 0px;
+                            // margin: 11px 0px 0px 0px;
                             & li {
                                 & .keyBtn {
-                                    font-size: 13px;
-                                    height: 20.4px;
                                     & img{
                                         width: 15px;
                                     }
@@ -545,12 +541,6 @@
                 & .card-body {
                     & .sourcetitle{
                         display: none;
-                    }
-                    & .chartvalue{
-                        & .ratingUser {
-                        }
-                    }
-                    & .innerbody {
                     }
                 }
             }
@@ -570,36 +560,12 @@
             // ****
             & .informationCard {
                 & .card-body {
-                    padding: 8px 14px 16px 14px;
                     & .innerbody {
-                        & .card_title {
-                            & .viewDetailsBtn {
-                                & .moreImg {
-                                }
-                                &:hover{
-                                    & .moreImg {
-                                        & img {
-                                        }
-                                    }
-                                }
-                            }
-                        }
                         & .posted {
-                            & .accountPost {
-                                // font-size: 12px;
-                            }
                             & .accounts {
                                 font-size: 12px;
                                 & .userName {
                                     max-width: 130px;
-                                }
-                            }
-                            & .accountUser {
-                                & img {
-                                }
-                            }
-                            & .socialImg {
-                                & img {
                                 }
                             }
                         }
@@ -1502,22 +1468,7 @@
                 &.stackedChartCard {
                     & .stackedChart {
                         & .linechart_group{
-                            margin-top: -25px;
-                        }
-                        & .chartGroup {
-                        }
-                    }
-                    & .card-body{
-                        & .card_title{
-                        }
-                        & .chartlable {
-                            margin: 6px 0px 0px 0px;
-                            & li {
-                                & .keyBtn {
-                                    & img{
-                                    }
-                                }
-                            }
+                            margin-top: -1.2%;
                         }
                     }
                 }
@@ -1537,36 +1488,7 @@
             // ****
             & .informationCard {
                 & .card-body {
-                    padding: 8px 14px 16px 14px;
                     & .innerbody {
-                        & .card_title {
-                            & .viewDetailsBtn {
-                                & .moreImg {
-                                }
-                                &:hover{
-                                    & .moreImg {
-                                        & img {
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                        & .posted {
-                            & .accountPost {
-                            }
-                            & .accounts {
-                                & .userName {
-                                }
-                            }
-                            & .accountUser {
-                                & img {
-                                }
-                            }
-                            & .socialImg {
-                                & img {
-                                }
-                            }
-                        }
                         & .socialMetricsCard {
                             & .cardbody {
                                 & .metrics{
@@ -1752,6 +1674,73 @@
                         margin-bottom: 6px;
                     }
                 }
+                &.stackedChartCard {
+                    & .stackedChart {
+                        & .linechart_group{
+                            margin-top: -3%;
+                        }
+                    }
+                    & .card-body{
+                        & .chartlable {
+                            margin: 27% 0px 0px 0px;
+                            & li {
+                                height: 8.8%;
+                                & .keyBtn {
+                                    border-radius: 6px;
+                                    font-size: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            & .pichart {
+                & .card-body {
+                    & .innerbody {
+                        gap: 6px;
+                        & .picharts{
+                            & canvas{
+                                width: 110px;
+                                height: 110px;
+                            }
+                        }
+                        & .tredMap {
+                            & .tredingImg {
+                                height: 20px;
+                                width: 20px;
+                            }
+                            & span {
+                                font-size: 14px;
+                            }
+                            &.pichartmap {
+                                & .tredingImg {
+                                    height: 16px;
+                                    width: 16px;
+                                }
+                                & span {
+                                    font-size: 11px;
+                                }
+                            }
+                        }
+                        & .chartvalue {
+                            & .chartbody {
+                                & .point {
+                                    width: 11px;
+                                    height: 11px;
+                                }
+                                & .ratingUser {
+                                    font-size: 14px;
+                                }
+                                & .amount{
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                        & .totalresult {
+                            font-size: 12px;
+                        }
+                    }
+                }
             }
         }
     }
@@ -1900,132 +1889,7 @@
             }
         }
     }
-    .maincontent{
-        & .manin_content_Body{
-            & .levelCard{
-                &.stackedChartCard {
-                    & .stackedChart {
-                        & .linechart_group{
-                            margin-top: -26px;
-                        }
-                        & .chartGroup {
-                        }
-                    }
-                    & .card-body{
-                        & .card_title{
-                        }
-                        & .chartlable {
-                            margin: 5px 0px 0px 0px;
-                            & li {
-                                & .keyBtn {
-                                    & img{
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            & .pichart {
-                & .card-body {
-                    & .sourcetitle{
-                    }
-                    & .chartvalue{
-                        & .ratingUser {
-                        }
-                    }
-                    & .innerbody {
-                        gap: 6px;
-                        & .picharts{
-                            & canvas{
-                            }
-                        }
-                        & .cardSubTitle {
-                            // font-size: 15px;
-                            &.tablet{
-                            }
-                        }
-                        & .tredMap {
-                            & .tredingImg {
-                                height: 20px;
-                                width: 20px;
-                                & img {
-                                }
-                            }
-                            & span {
-                                font-size: 14px;
-                            }
-                            &.pichartmap {
-                                & .tredingImg {
-                                    height: 16px;
-                                    width: 16px;
-                                }
-                                & span {
-                                    font-size: 11px;
-                                }
-                            }
-                            &.greenzone{
-                                & span {
-                                }
-                            }
-                        }
-                        & .chartvalue {
-                            margin-bottom: 2px;
-                            & .chartbody {
-                                & .point {
-                                    width: 11px;
-                                    height: 11px;
-                                }
-                                & .ratingUser {
-                                    font-size: 14px;
-                                }
-                                & .amount{
-                                    font-size: 12px;
-                                }
-                            }
-                            &.tiktok {
-                                & .chartbody{
-                                    & .point{
-                                    }
-                                    & .ratingUser{
-                                    }
-                                }
-                            }
-                            &.youtube {
-                                & .chartbody{
-                                    & .point{
-                                    }
-                                    & .ratingUser{
-                                    }
-                                }
-                            }
-                            &.news {
-                                & .chartbody{
-                                    & .point{
-                                    }
-                                    & .ratingUser{
-                                    }
-                                }
-                            }
-                        }
-                        &.bootomtreackchart{
-                            & .chartvalue {
-                                & .chartbody {
-                                    & .point {
-                                    }
-                                    & .ratingUser {
-                                    }
-                                }
-                            }
-                        }
-                        & .totalresult {
-                            font-size: 12px;
-                        }
-                    }
-                }
-            }
-        }
-    }
+
     .overviewTabs {
         &.sm_overview{
             gap: 8px !important;

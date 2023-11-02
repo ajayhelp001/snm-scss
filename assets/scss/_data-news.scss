@@ -1298,9 +1298,12 @@
 }
 
 .mapingCard {
-    height: calc(50% - 4px);
+    height: calc(40% - 4px);
     & .mapImg {
         cursor: pointer;
+    }
+    &.table_mapingcard{
+    height: calc(50% - 4px);
     }
 }
 
