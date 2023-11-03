@@ -54,7 +54,7 @@
     & .deepMapcard {
         height: calc(100% - 42px);
     }
-    width: calc(100% - 320px);
+    width: calc(100% - 328px);
 }
 
 .topnavtabs {
@@ -116,8 +116,7 @@
 }
 
 .datapoolCard {
-    max-width: 320px;
-    width: 100%;
+    width: 320px;
 }
 
 .deepMapcard {
@@ -268,6 +267,7 @@ div[data-tippy-root] {
     }
 }
 
+// ? ******** [ Responsive Deepinquiry ] *****
 
 @media screen and (max-width: 1850px){
     .bottomtabs {
@@ -276,14 +276,6 @@ div[data-tippy-root] {
         gap: 10px;
         & .items {
             gap: 6px;
-            & .eventImg {
-                & img {
-                }
-                &.dotedImg{
-                    & span{
-                    }
-                }
-            }
             & span {
                 font-size: 13px;
             }
@@ -301,15 +293,6 @@ div[data-tippy-root] {
             & .eventImg {
                 width: 35px;
                 height: 35px;
-                & img {
-                }
-                &.dotedImg{
-                    & span{
-                        // height: 3.5px;
-                        // width: 3.5px;
-                        // min-width: 3.5px;
-                    }
-                }
             }
             & span {
                 font-size: 13px;
@@ -328,8 +311,6 @@ div[data-tippy-root] {
                 width: 33px;
                 height: 33px;
                 padding: 4px;
-                & img {
-                }
                 &.dotedImg{
                     & span{
                         height: 2px;
@@ -359,44 +340,8 @@ div[data-tippy-root] {
             }
         }
     }
-    .deepinquiryPage {
-        & .accordionbodypart {
-            & .sourceheading {
-                & .source_Img {
-                    width: 18px;
-                    height: 18px;
-                    min-width: 18px;
-                }
-                font-size: 12px;
-                &.facebook{
-                }
-                &.youtube{
-                }
-                &.subheding{
-                }
-            }
-            & .trackedAccount {
-                & .accordiongroup {
-                    & .accordion-item {
-                        & .accordion-header {
-                            & .accordion-button {
-                                &::after{
-                                }
-                            }
-                        }
-                        & .accordion-body {
-                            & .userItem {
-                                & .view {
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
     .datapoolCard{
-        max-width: 280px;
+        width: 280px;
     }
     .mapsides {
         & .topnavtabs {
@@ -405,25 +350,17 @@ div[data-tippy-root] {
         & .deepMapcard {
             height: calc(100% - 38px);
         }
-        width: calc(100% - 280px);
+        width: calc(100% - 288px);
     }
     
     .topnavtabs {
         & .nav{
             & .nav-link {
                 font-size: 12px;
-                &.active,&:hover {
-                    & .closeicon {
-                        & img {
-                        }
-                    }
-                }
                 & .closeicon {
                     width: 27px;
                     height: 27px;
                     min-width: 27px;
-                    & img {
-                    }
                 }
             }
         }
@@ -438,14 +375,6 @@ div[data-tippy-root] {
             & .eventImg {
                 width: 30px;
                 height: 30px;
-                & img {
-                }
-                &.dotedImg{
-                    & span{
-                    }
-                }
-            }
-            & span {
             }
         }
     }
@@ -459,14 +388,6 @@ div[data-tippy-root] {
             & .eventImg {
                 width: 27px;
                 height: 27px;
-                & img {
-                }
-                &.dotedImg{
-                    & span{
-                    }
-                }
-            }
-            & span {
             }
         }
     }
@@ -474,52 +395,21 @@ div[data-tippy-root] {
 @media screen and (max-width: 1400px) {
     .bottomtabs {
         gap: 7px;
-        & .items {
-            & .eventImg {
-                & img {
-                }
-                &.dotedImg{
-                    & span{
-                    }
-                }
-            }
-            & span {
-            }
-        }
     }
     .deepinquiryPage {
         & .accordionbodypart {
-            // gap: 0px !important;
-            &>div{
-                // padding: 2px 0px;
-            }
             & .sourceheading {
                 & .source_Img {
-                }
-                &.facebook{
-                }
-                &.youtube{
-                }
-                &.subheding{
-                }
-            }
-            & .trackedAccount {
-                & .accordiongroup {
-                    & .accordion-item {
-                        & .accordion-header {
-                            & .accordion-button {
-                                &::after{
-                                }
-                            }
-                        }
-                        & .accordion-body {
-                            & .userItem {
-                                & .view {
-                                }
-                            }
-                        }
+                    width: 19px;
+                    height: 19px;
+                    min-width: 19px;
+                    &.scope {
+                        width: 18px;
+                        height: 18px;
+                        min-width: 18px;
                     }
                 }
+                font-size: 13px;
             }
         }
     }

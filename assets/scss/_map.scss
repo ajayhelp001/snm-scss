@@ -237,62 +237,28 @@
     }
 }
 
-// #cytoscape_chart_four{
-//     &>div{
-//         & canvas{
-//             transform: translate(-15%, 20%);
-//             &:first-child{
-//                 transform: translateX(0%);
-//             }
-//         }
-//     }
-// }
-
+// ? ******** [ Responsive ] *****
 
 @media screen and (max-width: 1600px){
     .mapinformation_card {
         & .card-body {
-            & .postHeading, & .leftHeading, & .sourceValue{
-            }
             & .postHeading {
                 font-size: 10px;
             }
-            & .leftHeading {
-            }
             & .leftHeading, & .sourceValue{
                 font-size: 14px;
-            }
-            & .sourceValue {
             }
         }
     }
     .geomapleftinfo{
         max-width: 300px;
-        & .geoInfoCard{
-            & .card {
-            }
-        }
     }
     .overview_image_container {
-        // & .mapline {
-        //     transform: translate(2%, -3.75%);
-        // }
-        // & .overview_map_arrow {
-        //     transform: translate(2%, -3.8%);
-        // }
         & svg{
             transform: translate(-40%, -5%);
         }
     }
     .geo_map {
-        & img {
-        }
-        & .icons-wrap-container {
-        }
-        & .icons-wrap-container i{
-        }
-        & .icons-wrap-container, & .numerice-icon-number {
-        }
         & .zoom-buttons-map {
             & button {
                 height: 22px;
@@ -305,28 +271,6 @@
             }
             &.geoMapBtns{
                 right: 332px;
-            }
-        }
-        & .icon-description-bar {		
-        }
-        & .geomapmain {
-            & .svgmap{
-            }
-            g.node2 ellipse, g.node3 ellipse {
-            }
-            g.node2.animation_color ellipse {
-            }
-            g.node2 rect, g.node3 rect {
-            }
-            g.node3.animation_color ellipse{
-            }
-        }
-        &.nonzomm_btn{
-            & .zoom-buttons-map {
-            }
-        }
-        & .geomapmain{
-            & .svgmap {
             }
         }
     }

@@ -938,15 +938,11 @@
 
 
 
-// *********** Responsive**************
+//? *********** Responsive**************
 
 @media screen and (max-width: 1600px) {
     .tiktokvideoanalysis{
-        & .videorectengals {
-        }
         & .tiktokvideo {
-            & img {
-            }
             & .contentBody {
                 padding: 10px;
                 & .contentside {
@@ -957,14 +953,6 @@
                     & .title {
                         font-size: 12px;
                         line-height: 130%;
-                        & .tags {
-                        }
-                    }
-                    & .music {
-                        & .musicImg {
-                            &::before{
-                            }
-                        }
                     }
                 }
                 & .iconside {
@@ -991,23 +979,6 @@
 
     .videoeditoreGroup {
         & .card-body {
-            & .timesGroup {
-                // padding-left: 54px;
-                & .timing{
-                    & .videoTimer {
-                    }
-                }
-                & .deviders {
-                    & .bigDevider {
-                        & .deviderItems {
-                        }
-                    }
-                    & .smDevider{
-                        & .smdeviderImg {
-                        }
-                    }
-                }
-            }
             & .treckersGroup {
                 padding-top: 0.3rem !important;
                 padding-bottom: 0.3rem !important;
@@ -1018,30 +989,19 @@
                         width: 22px;
                         height: 22px;
                         min-width: 22px;
-                        & img {
-                        }
-                    }
-                    & .icontext {
                     }
                 }
                 & .trackerSide {
-                    & .videoTrackLine {
-                    }
                     & .titleGroup {
                         & .titleBtn {
                             min-height: 37px;
                             padding: 8px 12px;
                             cursor: pointer;
-                            & .titleImg {
-                            }
                             & .contents {
                                 font-size: 12px;
                             }
                             max-width: 145.5px;
-                            &:hover{
-                            }
                         }
-        
                     }
                     &.treckerFooter {
                         height: 50px;
@@ -1053,10 +1013,6 @@
                         }
                         & .videotitlename {
                             width: calc(100% - 361px);
-                            & .dropdownBtn  {
-                            }
-                            & .videoname {
-                            }
                         }
                     }
                 }
@@ -1067,8 +1023,6 @@
                 &.timing{
                     & .videoTimer{
                         font-size: 11px;
-                        &::before{
-                        }
                         &::after{
                             height: 150px;
                         }
@@ -1095,14 +1049,10 @@
                     & .sources {
                         & .sourcegroup {
                             font-size: 12px;
-                            & button{
-                            }
                             & .logoimg {
                                 height: 30px;
                                 min-width: 30px;
                                 border-radius: 30px;
-                                & img {
-                                }
                             }
                             & .categoryBtn{
                                 height: 30px;
@@ -1122,8 +1072,6 @@
                     }
                 }
                 & .modal-body {
-                    & .orignalPost {
-                    }
                     & .innerbodypart {
                         & .postName {
                             font-size: 24px;
@@ -1149,8 +1097,6 @@
                 
                 & .title{
                     font-size: 12px;
-                    &.details_title{
-                    }
                 }
             }
             // &.mediaModulVideo {
@@ -1162,12 +1108,6 @@
     }
     // **  Media Post Modal**
     .mediapostmodul{
-        &.maincontent{
-            &.show{
-            }
-            & .modal-dialog{
-            }
-        }
         & .modal-dialog {
             &.mediaModul {
                 &.mediaModulVideo{
@@ -1184,14 +1124,8 @@
             & .modal-content {
                 padding: 15px 35px 32px 35px;
                 & .modal-body{
-                    & .youtubeIMg {
-                        & img {
-                        }
-                    }
                     & .postdetailslist {
                         max-width: 350px;
-                        & .nav-pills {
-                        }
                     }
                     & .ytube-videoDetails-overview_modal {
                         & .scriptCrad {
@@ -1206,57 +1140,13 @@
 
 @media screen and (max-width: 1440px) {
     .mediapostmodul{
-        &.maincontent{
-            &.show{
-            }
-            & .modal-dialog{
-            }
-        }
         & .modal-dialog {
-            &.mediaModul {
-                &.mediaModulVideo{
-                    & .modal-body {
-                        & .script_Video_Top_Section {
-                        }
-                        & .videoeditore {
-                        }
-                    }
-                }
-            }
             & .modal-content {
                 padding: 15px 25px 17px 25px;
-                & .modal-body{
-                    & .youtubeIMg {
-                        & img {
-                        }
-                    }
-                    & .postdetailslist {
-                        & .nav-pills {
-                        }
-                    }
-                    & .ytube-videoDetails-overview_modal {
-                        & .scriptCrad {
-                        }
-                    }
-                }
             }
             &.mediaModulVideo {
                 & .modal-content {
                     padding: 15px 25px 25px 25px;
-                    & .modal-body{
-                        & .youtubeIMg {
-                            & img {
-                            }
-                        }
-                        & .postdetailslist {
-                            & .nav-pills {
-                            }
-                        }
-                        & .ytube-videoDetails-overview_modal {
-                            & .scriptCrad {
-                            }
-                        }
-                    }
                 }
             }
         }

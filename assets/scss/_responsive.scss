@@ -20,98 +20,31 @@
 // @include media-breakpoint-down(md) {}
 
 // @include media-breakpoint-down(sm) {}
+
 .bootomtreackchart{
     display: none;
 }
 
+// ? ******** [ Responsive ] *****
 
-@media screen and (min-width: 1700px){
-    .maincontent{
-        & .manin_content_Body {
-            // ***
-            & .levelCard  {
-                & .card-body{
-                }
-                &.stackedChartCard{
-                    & .stackedChart{
-                        // height: 380px;
-                    }
-                }
-            }
-        }
-    }
-}
+
 @media screen and (max-width: 1800px) {
     .mainpostcard {
         & .informationCard{
-            & .postImg {
-                & img {
-                }
-                &.vidoPost {
-                }
-            }
-            & .postDetails{
-                & span{
-                }
-                &.postDetails_sm {
-                }
-                &.ytubeCVideoPostDetails {
-                }
-            }
-            & .postAllDetails{
-                & .detailImg {
-                    & img {
-                    }
-                    &.ytubeVideoDetailsImg {
-                    }
-                }
-            }
             & .socialMetricsCard {
                 &.trackinguserdetails{
                     & .cardbody {
-                        & .items {
-                        }
                         & .socialmetrics{
                             font-size: 12px;
                         }
                         & .rate {
-                            font-size: 14px;
+                            // font-size: 14px;
                             & .tredMap {
                                 gap: 4px;
                                 & .tredingImg {
                                     width: 16px;
                                     height: 16px;
-                                    & img {
-                                    }
                                 }
-                                & span {
-                                }
-                                &.greenzone{
-                                    & span {
-                                    }
-                                }
-                                &.grayzone{
-                                    & span {
-                                    }
-                                }
-                            }
-                            &.lowvalue{
-                            }
-                        }
-                    }
-                }
-            }
-            & .violationTangHeading {
-            }
-            & .violatinTag {
-                &.bluetag{
-                }
-            }
-            & .card-body {
-                & .innerbody  {
-                    & .posted  {
-                        & .accountUser {
-                            &.videoAccountUser{
                             }
                         }
                     }
@@ -121,87 +54,12 @@
     }
     .pichart {
         & .card-body {
-            & .chartvalue{
-                & .ratingUser {
-                }
-            }
             & .innerbody {
                 & .picharts{
                     & canvas{
                         height: 140px;
                         width: 140px;
                     }
-                }
-                & .cardSubTitle {
-                    &.tablet{
-                    }
-                }
-                & .tredMap {
-                    & .tredingImg {
-                        & img {
-                        }
-                    }
-                    & span {
-                    }
-                    &.pichartmap {
-                        & .tredingImg {
-                        }
-                        & span {
-                            // font-size: 12px;
-                        }
-                    }
-                    &.greenzone{
-                        & span {
-                        }
-                    }
-                }
-                & .chartvalue {
-                    & .chartbody {
-                        & .point {
-                            // width: 12px;
-                            // height: 12px;
-                        }
-                        & .ratingUser {
-                        }
-                        & .amount{
-                        }
-                    }
-                    &.tiktok {
-                        & .chartbody{
-                            & .point{
-                            }
-                            & .ratingUser{
-                            }
-                        }
-                    }
-                    &.youtube {
-                        & .chartbody{
-                            & .point{
-                            }
-                            & .ratingUser{
-                            }
-                        }
-                    }
-                    &.news {
-                        & .chartbody{
-                            & .point{
-                            }
-                            & .ratingUser{
-                            }
-                        }
-                    }
-                }
-                &.bootomtreackchart{
-                    & .chartvalue {
-                        & .chartbody {
-                            & .point {
-                            }
-                            & .ratingUser {
-                            }
-                        }
-                    }
-                }
-                & .totalresult {
                 }
             }
         }
@@ -210,10 +68,6 @@
 @media screen and (max-width: 1750px) {
     .maincontent{
         & .manin_content_Body {
-            & .levelCard  {
-                & .card-body{
-                }
-            }
             & .pichart {
                 & .card-body {
                     & .innerbody {
@@ -261,17 +115,15 @@
                                 width: 120px;
                             }
                         }
-                        & .cardSubTitle {
-                            // font-size: 17px;
-                            &.tablet{
-                            }
-                        }
+                        // & .cardSubTitle {
+                        //     font-size: 17px;
+                        //     &.tablet{
+                        //     }
+                        // }
                         & .tredMap {
                             & .tredingImg {
                                 height: 22px;
                                 width: 22px;
-                                & img {
-                                }
                             }
                             & span {
                                 font-size: 15px;
@@ -281,61 +133,23 @@
                                     height: 17px;
                                     width: 17px;
                                 }
-                                & span {
-                                    // font-size: 12px;
-                                }
-                            }
-                            &.greenzone{
-                                & span {
-                                }
+                                // & span {
+                                //     font-size: 12px;
+                                // }
                             }
                         }
                         & .chartvalue {
                             // margin-bottom: 1.5px;
                             & .chartbody {
-                                & .point {
-                                    // width: 12px;
-                                    // height: 12px;
-                                }
+                                // & .point {
+                                //     width: 12px;
+                                //     height: 12px;
+                                // }
                                 & .ratingUser {
                                     font-size: 15px;
                                 }
                                 & .amount{
                                     font-size: 13px;
-                                }
-                            }
-                            &.tiktok {
-                                & .chartbody{
-                                    & .point{
-                                    }
-                                    & .ratingUser{
-                                    }
-                                }
-                            }
-                            &.youtube {
-                                & .chartbody{
-                                    & .point{
-                                    }
-                                    & .ratingUser{
-                                    }
-                                }
-                            }
-                            &.news {
-                                & .chartbody{
-                                    & .point{
-                                    }
-                                    & .ratingUser{
-                                    }
-                                }
-                            }
-                        }
-                        &.bootomtreackchart{
-                            & .chartvalue {
-                                & .chartbody {
-                                    & .point {
-                                    }
-                                    & .ratingUser {
-                                    }
                                 }
                             }
                         }
@@ -368,15 +182,15 @@
             &.ytubeAnalysisPost{
                 max-width: 400px;
             }
-            &.ytubemainPost{
-                // max-width: 676px;
-            }
-            &.ytubeAnalysisPost{
-                // max-width: 420px;
-            }
-            &.ytubemainVideoPost {
-                // max-width: 859PX;
-            }
+            // &.ytubemainPost{
+            //     max-width: 676px;
+            // }
+            // &.ytubeAnalysisPost{
+            //     max-width: 420px;
+            // }
+            // &.ytubemainVideoPost {
+            //     max-width: 859PX;
+            // }
         }
         & .analysisCommentBox{
             &.sm_an_commentBoxs{
@@ -388,15 +202,11 @@
                             }
                             & .comment_card {
                                 max-width: 400px;
-                                & .comment_item_Body {
-                                }
                             }
                         }
                         & .leftItemList {
                             min-width: 400px;
                         }
-                    }
-                    & .violationContent{
                     }
                 }
                 & .comment_card{
@@ -407,82 +217,30 @@
     }
     .mainpostcard {
         & .informationCard{
-            & .postImg {
-                & img {
-                }
-                &.vidoPost {
-                }
-            }
-            & .postDetails{
-                & span{
-                }
-                &.postDetails_sm {
-                }
-                &.ytubeCVideoPostDetails {
-                }
-            }
-            & .postAllDetails{
-                & .detailImg {
-                    & img {
-                    }
-                    &.ytubeVideoDetailsImg {
-                    }
-                }
-            }
             & .socialMetricsCard {
                 &.trackinguserdetails{
                     & .cardbody {
                         & .items {
-                            min-width: 50%;
-                            &:nth-child(3), &:nth-child(5){
-                                border-left: none !important;
-                            }
-                            &:nth-child(4){
-                                border-bottom: 1px solid var(--balck--light) !important;
-                                border-left: 1px solid var(--balck--light) !important;
-                            }
+                            // min-width: 50%;
+                            // &:nth-child(3), &:nth-child(5){
+                            //     border-left: none !important;
+                            // }
+                            // &:nth-child(4){
+                            //     border-bottom: 1px solid var(--balck--light) !important;
+                            //     border-left: 1px solid var(--balck--light) !important;
+                            // }
                         }
                         & .socialmetrics{
                             font-size: 12px;
                         }
                         & .rate {
-                            font-size: 14px;
+                            // font-size: 14px;
                             & .tredMap {
                                 gap: 4px;
                                 & .tredingImg {
                                     width: 16px;
                                     height: 16px;
-                                    & img {
-                                    }
                                 }
-                                & span {
-                                }
-                                &.greenzone{
-                                    & span {
-                                    }
-                                }
-                                &.grayzone{
-                                    & span {
-                                    }
-                                }
-                            }
-                            &.lowvalue{
-                            }
-                        }
-                    }
-                }
-            }
-            & .violationTangHeading {
-            }
-            & .violatinTag {
-                &.bluetag{
-                }
-            }
-            & .card-body {
-                & .innerbody  {
-                    & .posted  {
-                        & .accountUser {
-                            &.videoAccountUser{
                             }
                         }
                     }
@@ -491,7 +249,6 @@
         }
     }
 }
-
 @media screen and (max-width: 1600px) {
     .all_sources{
         padding: 0px 30px;
@@ -573,7 +330,7 @@
                             & .cardbody {
                                 &>div{
                                     border-left: 1px solid var( --balck--light);
-                                    padding: 4px 0px;
+                                    // padding: 4px 0px;
                                     &:first-child{
                                         border-left: none;
                                     }
@@ -582,9 +339,9 @@
                                     font-size: 9px;
                                     letter-spacing: 0.3px;
                                 }
-                                & .rate{
-                                    font-size: 15px;
-                                }
+                                // & .rate{
+                                //     font-size: 15px;
+                                // }
                             }
                         }
                     }
@@ -605,8 +362,6 @@
                 & .posted {
                     & .accountPost {
                         font-size: 10px;
-                        &.light{
-                        }
                     }
                     & .accounts {
                         gap: 10px;
@@ -616,15 +371,11 @@
                         }
                     }
                     & .accountUser {
-                        // width: 26px;
-                        // height: 26px;
-                        & img {
-                        }
-                    }
-                    & .socialImg {
-                        & img {
-                            // max-width: 20px;
-                            // width: 100%;
+                        width: 25px;
+                        height: 25px;
+                        &.mainaccount{
+                            min-width: 25px;
+                            min-height: 25px;
                         }
                     }
                     & .content{
@@ -633,20 +384,10 @@
                     }
                     & .containtHeading{
                         font-size: 12px;
-                        &.descriptions{
-                        }
                     }
                 }
                 & .socialMetricsCard {
                     & .cardbody {
-                        &>div{
-                            &:first-child{
-                            }
-                        }
-                        & .metrics, & .rate {
-                        }
-                        & .metrics{
-                        }
                         & .rate{
                             font-size: 14px;
                         }
@@ -682,8 +423,6 @@
     .categoryCard {
         min-width: 150px;
         max-width: 150px;
-        &:hover {
-        }
         & .card_body {
             padding: 8px 16px;
             gap: 4px;
@@ -691,12 +430,6 @@
                 min-width: 35px;
                 width: 35px;
                 height: 35px;
-                & img {
-                }
-                &.grayimg{
-                    & img {
-                    }
-                }
             }
             & .valu {
                 font-size: 22px;
@@ -712,18 +445,10 @@
 
     .userDistentCard{
         & .listItem {
-            &:hover{
-            }
-            &.active{
-                &:hover{
-                }
-            }
             & .user_img {
                 width: 32px;
                 height: 32px;
                 min-width: 32px;
-                & img {
-                }
             }
             & .userDetails {
                 & .username {
@@ -737,8 +462,6 @@
                     }
                 }
             }
-            & .userside {
-            }
         }
         & .times {
             font-size: 12px;
@@ -747,54 +470,28 @@
             & .timing_value {
                 min-height: 22px;
                 font-size: 12px;
-                &.active{
-                }
-            }
-        }
-        &.nonhover{
-            & .listItem{
-                &:hover{
-                }
-            }
-        }
-        & .sourcegroup  {
-        }
-        & .actorelistitem {
-            &>div{
-                &:first-child{
-                    & .tmgroup {
-                    }
-                }
             }
         }
     }
     .scriptVideo_section{
-        & .durationHeadingGroup {
-            // min-height: 24px;
-        }
-        & .durationHeading{
-            &.duration {
-                // min-width: 48px;
-            }
-            &.startTime, &.endTime{
-                // min-width: 64px;
-            }
-        }
+        // & .durationHeadingGroup {
+        //     min-height: 24px;
+        // }
+        // & .durationHeading{
+        //     &.duration {
+        //         min-width: 48px;
+        //     }
+        //     &.startTime, &.endTime{
+        //         min-width: 64px;
+        //     }
+        // }
         & .script_item {
             & .script {
                 font-size: 12px;
             }
-            &.active{
-                & .durationHeading{
-                }
-            }
         }
     }
     .post_table {
-        &.minidatatable{
-            &.fb_post_minidatatable{
-            }
-        }
         & .table {
             & tr {
                 & td, & th {
@@ -807,11 +504,6 @@
                     & th {
                         height: 35px;
                         padding: 8px;
-                        // text-align: center;
-                        &:first-child{
-                        }
-                        &:last-child{
-                        }
                     }
                 }
             }
@@ -819,10 +511,6 @@
                 & tr {
                     & td, & th {
                         height: 30px;
-                    }
-                    &.selected{
-                        & td, & th {
-                        }
                     }
                 }
                 & .icon {
@@ -832,57 +520,11 @@
                     &.closeIcon {
                         width: 22px;
                         height: 22px;
-                        &:hover {
-                        }
-                        &.scope{
-                            & img {
-                            }
-                        }
                     }
                     &.eyes{
                         width: 22px;
                         height: 22px;
                         min-width: 22px;
-                    }
-                }
-                & .view, & .icon {
-                }
-                & .view {
-                }
-            }
-            &.post{
-                & tbody {
-                    & tr {
-                        & td {
-                            &:nth-child(2) {
-                            }
-                            &:nth-child(3) {
-                                & .icon {
-                                    & img {
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        &.actore_table{
-            & .table {
-                & tbody {
-                    & tr {
-                        & th {
-                            &:first-child{
-                            }
-                        }
-                        & td {
-                            &:nth-child(2) {
-                                & .icon {
-                                    & img {
-                                    }
-                                }
-                            }
-                        }
                     }
                 }
             }
@@ -908,8 +550,6 @@
                         & img {
                             width: 28px;
                         }
-                        &:hover, &.active{
-                        }
                     }
                 }
             }
@@ -918,43 +558,15 @@
     //! **** Aside Bar Css End *******
     .account_datatable {
         & .table {
-            & thead {
-                & tr {
-                    & th {
-                        &:first-child {
-                            // height: 48px;
-                            // width: 48px;
-                            & .form-check {
-                            }
-                        }
-                    }
-                }
-            }
             & tbody {
                 & tr {
                     & td {
-                        &:first-child {
-                            & .form-check {
-                            }
-                        }
-                        &:nth-child(2) {
-                            // max-width: 180px;
-                            & a {
-                            }
-                        }
-                        &:last-child {
-                            // max-width: 96px;
-                        }
                         & .source {
                             font-size: 12px;
                             & .logoimg {
                                 display: flex;
                                 min-width: 27px;
                                 height: 27px;
-                                & img {
-                                }
-                            }
-                            & .sourceName {
                             }
                         }
                         & .view{
@@ -962,16 +574,10 @@
                                 width: 22px;
                                 height: 22px;
                             }
-                            & .eye {
-                                & img {
-                                }
-                            }
                             & .scope {
                                 width: 22px;
                                 height: 22px;
                                 min-width: 22px;
-                                & img {
-                                }
                             }
                         }
                     }
@@ -988,21 +594,15 @@
             &.fboverview{
                 max-width: 420px;
             }
-            &.ytubemainPost{
-                // max-width: 676px;
-            }
-            &.ytubeAnalysisPost{
-                // max-width: 420px;
-            }
-            &.ytubemainVideoPost {
-                // max-width: 859PX;
-            }
-        }
-        & .commentcard {
-            &.ytubeOverComment {
-            }
-        }
-        & .postdetailmediacard{
+            // &.ytubemainPost{
+            //     max-width: 676px;
+            // }
+            // &.ytubeAnalysisPost{
+            //     max-width: 420px;
+            // }
+            // &.ytubemainVideoPost {
+            //     max-width: 859PX;
+            // }
         }
         & .post_detailsMaping_crad{
             max-width: 340px;
@@ -1013,16 +613,8 @@
     }
     .mainpostcard {
         & .informationCard{
-            & .postImg {
-                & img {
-                }
-                &.vidoPost {
-                }
-            }
             & .postDetails{
                 font-size: 14px;
-                & span{
-                }
                 &.postDetails_sm {
                     font-size: 12px;
                 }
@@ -1035,8 +627,6 @@
                 & .detailImg {
                     // height: 16px;
                     // width: 16px;
-                    & img {
-                    }
                     &.ytubeVideoDetailsImg {
                         height: 18px;
                         width: 18px;
@@ -1046,8 +636,6 @@
             }
             & .socialMetricsCard {
                 & .cardbody {
-                    & .items {
-                    }
                     & .socialmetrics{
                         font-size: 12px;
                     }
@@ -1058,19 +646,9 @@
                             & .tredingImg {
                                 height: 16px;
                                 width: 16px;
-                                & img {
-                                }
                             }
                             & span {
                                 font-size: 10px;
-                            }
-                            &.greenzone{
-                                & span {
-                                }
-                            }
-                            &.grayzone{
-                                & span {
-                                }
                             }
                         }
                         &.lowvalue{
@@ -1084,16 +662,14 @@
             }
             & .violatinTag {
                 padding: 10px;
-                &.bluetag{
-                }
             }
             & .card-body {
                 & .innerbody  {
                     & .posted  {
                         & .accountUser {
-                            width: 27px;
-                            height: 27px;
-                            min-width: 27px;
+                            // width: 27px;
+                            // height: 27px;
+                            // min-width: 27px;
                             &.videoAccountUser{
                                 width: 35px;
                                 min-width: 35px;
@@ -1161,15 +737,9 @@
                                     height: 16px;
                                     width: 16px;
                                 }
-                                &:hover{
-                                }
-                            }
-                            & input {
                             }
                         }
                     }
-                }
-                .input_wrapper :where(.title, li, li i, .details) {
                 }
             }
         }
@@ -1182,17 +752,7 @@
         &.geomapfilter{
             max-width: 230px;
         }
-        &.acc_filter_Sm{
-        }
         & .card-body {
-            & .innerBody {
-                & .filterTitle {
-                }
-                & .keyword_category {
-                    & .keywordkey {
-                    }
-                }
-            }
             & .vietnamese_Group {
                 & .groupItem_check {
                     & .form-check {
@@ -1202,13 +762,7 @@
                             & .logoimg {
                                 width: 27px;
                                 height: 27px;
-                                & img {
-                                }
                             }
-                            & .sourceName, & .languageName  {
-                            }
-                        }
-                        &:hover {
                         }
                     }
                 }
@@ -1217,14 +771,10 @@
     }
     .comment_card {
         & .comment_item_Body {
-            &:hover{
-            }
             & .commitUser {
                 height: 30px;
                 min-width: 30px;
                 width: 30px;
-                & img {
-                }
                 &.commitUsersm{
                     width: 26px;
                     height: 26px;
@@ -1232,23 +782,11 @@
                 }
             }
             & .content_side {
-                & .userName, & .commitcontent{
-                }
                 & .userName, & .commitcontent, & .tag{
                     font-size: 12px;
                 }
-                & .userName{
-                }
-                & .tag {
-                }
             }
             
-        }
-        &.commitAnswer{
-            &::before{
-            }
-            & .comment_item_Body {
-            }
         }
     }
     .topheader{
@@ -1265,19 +803,13 @@
                     }
                     & .n_Body {
                         & .n_item{
-                            &:hover{
-                            }
                             & .logoimg {
                                 height: 38px;
                                 min-width: 38px;
-                                & img {
-                                }
                             }
                             & .n_message {
                                 & .directMessage {
                                     font-size: 12px;
-                                    & span {
-                                    }
                                 }
                                 & .date{
                                     font-size: 10px;
@@ -1298,8 +830,6 @@
                 width: 30px;
                 height: 30px;
             }
-            & .user{
-            }
         }
     }
 
@@ -1309,8 +839,6 @@
             & .flage {
                 width: 27px;
                 height: 27px;
-                & img {
-                }
                 &.small{
                     width: 25px;
                     height: 25px;
@@ -1323,17 +851,7 @@
             padding: 4px;
         }
         & .mediaImg {
-            & img {
-            }
-            &:hover{
-                & img {
-                }
-            }
             &.videos{
-                &::before, &::after{
-                }
-                &::before{
-                }
                 &::after{
                     width: 45px;
                     height: 45px;
@@ -1362,8 +880,6 @@
                 & .downloadicon {
                     width: 45px;
                     height: 45px;
-                    & img {
-                    }
                 }
                 & .downloadtext {
                     font-size: 12px;
@@ -1392,10 +908,6 @@
             margin: 0px;
             & .breadcrumb-item {
                 font-size: 12px;
-                & .page_link {
-                    &:hover{
-                    }
-                }
                 &::before{
                     font-size: 16px;
                 }
@@ -1419,29 +931,6 @@
             & span {
                 width: 50px;
                 height: 40px;
-                & img {
-                }
-            }
-            &.tiktok{
-                & span {
-                    & img {
-                    }
-                }
-            }
-            &:hover,
-            &.active {
-                & span {
-                    & img {
-                    }
-                }
-                &.facebook {
-                }
-                &.tiktok {
-                }
-                &.youtube {
-                }
-                &.news {
-                }
             }
         }
     }
@@ -1449,8 +938,6 @@
     
 
 }
-
-
 @media screen and (max-width: 1560px) {
     .maincontent .manin_content_Body .navigationBar .card-body .tred_card {
         padding: 0px 12px;
@@ -1474,18 +961,6 @@
                 }
             }
             // ****
-            & .pichart {
-                & .card-body {
-                    & .chartvalue{
-                        & .ratingUser {
-                        }
-                    }
-                    & .innerbody {
-                    }
-                }
-            }
-            // ***
-            // ****
             & .informationCard {
                 & .card-body {
                     & .innerbody {
@@ -1495,9 +970,9 @@
                                     font-size: 8px;
                                     letter-spacing: 0.3px;
                                 }
-                                & .rate{
-                                    font-size: 14px;
-                                }
+                                // & .rate{
+                                //     font-size: 14px;
+                                // }
                             }
                         }
                     }
@@ -1506,29 +981,10 @@
         }
     }
 }
-
-
 @media screen and (max-width: 1500px) {
 
     .maincontent{
         & .manin_content_Body {
-            // ***
-            & .levelCard  {
-                & .card-body{
-                }
-            }
-            // ****
-            & .pichart {
-                & .card-body {
-                    & .chartvalue{
-                        & .ratingUser {
-                        }
-                    }
-                    & .innerbody {
-                    }
-                }
-            }
-            // ***
             // ****
             & .informationCard {
                 & .card-body {
@@ -1537,21 +993,6 @@
                             & .accountedPosted {
                                 max-width: 110px;
                             }
-                            & .accountPost {
-                                
-                            }
-                            & .accounts {
-                                & .userName {
-                                }
-                            }
-                            & .accountUser {
-                                & img {
-                                }
-                            }
-                            & .socialImg {
-                                & img {
-                                }
-                            }
                         }
                         & .socialMetricsCard {
                             & .cardbody {
@@ -1559,9 +1000,9 @@
                                     font-size: 8px;
                                     letter-spacing: 0.3px;
                                 }
-                                & .rate{
-                                    font-size: 14px;
-                                }
+                                // & .rate{
+                                //     font-size: 14px;
+                                // }
                             }
                         }
                     }
@@ -1569,12 +1010,8 @@
             }
             & .navigationBar {
                 & .card-body{
-                    & .innerbody {
-                    }
                     & .timeing {
                         padding: 0px 0px 0px 22px;
-                        & .volatility, & .timingBtn{
-                        }
                         & .volatility {
                             font-size: 22px;
                         }
@@ -1591,8 +1028,6 @@
                                     font-size: 14px;
                                     line-height: 16px;
                                     padding: 6px 4px;
-                                    &:hover, &:active, &:focus{
-                                    }
                                 }
                             }
                         }
@@ -1602,8 +1037,6 @@
                         & .tredImg{
                             width: 30px;
                             height: 30px;
-                            & img {
-                            }
                         }
                         & .trdPoint{
                             font-size: 18px;
@@ -1615,17 +1048,9 @@
                             & .tredingImg {
                                 height: 22px;
                                 width: 22px;
-                                & img {
-                                }
                             }
                             & span {
                                 font-size: 14px;
-                            }
-                        }
-                        &.redzone {
-                            & .tredMap {
-                                & span {
-                                }
                             }
                         }
                     }
@@ -1644,15 +1069,11 @@
                             }
                             & .comment_card {
                                 max-width: 330px;
-                                & .comment_item_Body {
-                                }
                             }
                         }
                         & .leftItemList {
                             min-width: 330px;
                         }
-                    }
-                    & .violationContent{
                     }
                 }
                 & .comment_card{
@@ -1662,7 +1083,6 @@
         }
     }
 }
-
 @media screen and (max-width: 1439.98px) {
     .maincontent{
         padding: 24px;
@@ -1758,27 +1178,13 @@
     }
     .userDistentCard{
         & .listItem {
-            &:hover{
-            }
-            &.active{
-                &:hover{
-                }
-            }
-            & .user_img {
-                & img {
-                }
-            }
             & .userDetails {
                 & .username {
                     font-size: 14px;
                 }
                 & .userAge{
                     font-size: 11px;
-                    & .genderImg {
-                    }
                 }
-            }
-            & .userside {
             }
         }
         & .times {
@@ -1787,30 +1193,10 @@
         & .tmgroup{
             & .timing_value {
                 font-size: 11px;
-                &.active{
-                }
-            }
-        }
-        &.nonhover{
-            & .listItem{
-                &:hover{
-                }
-            }
-        }
-        & .sourcegroup  {
-        }
-        & .actorelistitem {
-            &>div{
-                &:first-child{
-                    & .tmgroup {
-                    }
-                }
             }
         }
     }
 }
-
-
 @media screen and (max-width: 1400px) {
     .facebook-postDetails-overview{
         & .mainpostcard{
@@ -1818,27 +1204,15 @@
             &.ytubeAnalysisPost{
             max-width: 320px;
             }
-            &.fboverview{
-            }
-            &.ytubemainPost{
-                // max-width: 676px;
-            }
-            &.ytubeAnalysisPost{
-                // max-width: 420px;
-            }
-            &.ytubemainVideoPost {
-                // max-width: 859PX;
-            }
-        }
-        & .commentcard {
-            &.ytubeOverComment {
-            }
-        }
-        & .postdetailmediacard{
-        }
-        & .post_detailsMaping_crad{
-        }
-        & .actorListCard{
+            // &.ytubemainPost{
+            //     max-width: 676px;
+            // }
+            // &.ytubeAnalysisPost{
+            //     max-width: 420px;
+            // }
+            // &.ytubemainVideoPost {
+            //     max-width: 859PX;
+            // }
         }
         & .analysisCommentBox{
             &.sm_an_commentBoxs{
@@ -1850,15 +1224,11 @@
                             }
                             & .comment_card {
                                 max-width: 300px;
-                                & .comment_item_Body {
-                                }
                             }
                         }
                         & .leftItemList {
                             min-width: 300px;
                         }
-                    }
-                    & .violationContent{
                     }
                 }
                 & .comment_card{
@@ -1873,15 +1243,11 @@
                         }
                         & .comment_card {
                             max-width: 450px;
-                            & .comment_item_Body {
-                            }
                         }
                     }
                     & .leftItemList {
                         min-width: 450px;
                     }
-                }
-                & .violationContent{
                 }
             }
             & .comment_card{
@@ -1889,7 +1255,17 @@
             }
         }
     }
-
+    .socialInformation{
+        & .socialImg {
+            width: 65px;
+            height: 65px;
+            border-width: 3px;
+            & .socialIcon {
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
     .overviewTabs {
         &.sm_overview{
             gap: 8px !important;

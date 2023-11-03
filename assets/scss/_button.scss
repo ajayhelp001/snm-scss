@@ -448,14 +448,6 @@
         margin-top: -2px;
         width: 15px;
         height: 15px;
-        & img {
-        }
-    }
-    &:hover{
-        & .moreImg {
-            & img {
-            }
-        }
     }
 }
 
@@ -466,28 +458,9 @@
 
 .appendBtn {
     height: 35px;
-    &:hover{
-    }
-    &.categorieAppend{
-        // width: 34px;
-        // height: 34px;
-    }
-    &.smallappend{
-        // width: 37px;
-        // height: 24px;
-        & span {
-            // width: 14px;
-            & img {
-            }
-        }
-    }
     &.moniter{
         & img{
             width: 22px;
-        }
-    }
-    &.lightbg{
-        &:hover{
         }
     }
     &.conectBtn {
@@ -499,16 +472,6 @@
     }
 }
 
-.postbutoon {
-    &::before{
-    }
-    &.longBorder{
-        &::after{
-        }
-        &::before{
-        }
-    }
-}
 .post_Btn {
     font-size: 14px;
     padding: 2px 8px;
@@ -517,34 +480,16 @@
         width: 12px;
         min-width: 12px;
         height: 12px;
-        & img {
-        }
-        &.closebtn{
-            & img{
-            }
-        }
     }
     &.small_post_Btn{
         padding: 4px 10px;
         font-size: 10px;
-        & span{
-        }
-    }
-    &.bluePost_btn{
-    }
-    &.warning{
     }
 }
 
 .sourcesBtn {
     width: 54px;
     padding: 4px 12px;
-    &:hover{
-    }
-    &.lightbg{
-        &:hover{
-        }
-    }
 }
 
 // * dropdowns
@@ -561,28 +506,10 @@
             padding: 4px;
             font-size: 10px;
             line-height: 125%; /* 125% */
-            &:hover, &:active, &:focus{
-            }
-        }
-    }
-    &.timingBtn{
-        & .dropdown-menu{
         }
     }
 }
 .radiobutton_group{
-    & .btn-check{
-        &:checked+.radiobutton_label{
-        }
-        &:checked+.languageradio{
-            &::before{
-            }
-        }
-    }
-    & .radiobutton_label{
-        &:hover{
-        }
-    }
     & .languageradio {
         padding: 30px;
         font-size: 22px;
@@ -590,8 +517,6 @@
         & .images {
             width: 200px;
             height: 200px;
-        }
-        &::before{
         }
     }
 }
@@ -608,14 +533,10 @@
         padding: 4px 0px;
         width: 64px;
         font-size: 11px;
-        &:hover{
-        }
     }
 }
 
 .form-check{
-    & .form-check-label, & .form-check-input {
-    }
     & .form-check-input {
         margin-top: -1.5px;
         height: 15px;
@@ -625,25 +546,9 @@
         font-size: 11px;
     }
     &.scopcheck{
-        & .form-check-input{
-            &:checked+label{
-                & .icon{
-                    &.scope {
-                        & img {
-                        }
-                    }
-                }
-            }
-        }
         & label{
             cursor: pointer;
             // padding: 0px 6px;
-            & .icon{
-                &.scope {
-                    & img {
-                    }
-                }
-            }
         }
     }
 }

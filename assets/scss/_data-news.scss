@@ -520,286 +520,6 @@
 
 
 
-// ? ******** [ Responsive ] *****
-// * -----list_post_Table0-----
-@media screen and (max-width: 1850px) {
-    .list_post_Table {
-        & .list {
-            & .posttableSide {
-                &.post_listTable {
-                    & .post_table {
-                        & .table {
-                            & tbody {
-                                & tr {
-                                    & td {
-                                        &:first-child {
-                                            & .form-check {
-                                            }
-                                        }
-                                        // &:nth-child(2) {
-                                        //     max-width: 180px;
-                                        // }
-                                        // &:last-child {
-                                        //     max-width: 96px;
-                                        // }
-                                    }
-                                    &:nth-child(2) {
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-    
-}
-
-// @media screen and (max-width: 1750px){
-//     .fbpostlistTable, .treacking_acclistPage{
-//         & .post_table {
-//             & .table {
-//                 & tbody {
-//                     & tr {
-//                         & .source {
-//                             max-width: 130px;
-//                             width: 100%;
-//                         }
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// }
-
-
-@media screen and (max-width: 1600px) {
-    .list_post_Table {
-        & .list {
-            & .posttableSide {
-                &.post_listTable {
-                    & .post_table {
-                        & .table {
-                            & thead {
-                                & tr {
-                                    & th {
-                                        &:first-child {
-                                            height: 35px;
-                                            width: 40px;
-                                            & .form-check {
-                                            }
-                                        }
-                                        &:nth-child(4) {
-                                            // max-width: 500px;
-                                        }
-                                        padding: 3px 8px;
-                                    }
-                                }
-                            }
-                            & tbody {
-                                & tr {
-                                    & td {
-                                        &:first-child {
-                                            & .form-check {
-                                            }
-                                        }
-                                        &:nth-child(2) {
-                                            max-width: 130px;
-                                        }
-                                        &:last-child {
-                                        }
-                                        & .source {
-                                            font-size: 12px;
-                                            & .logoimg {
-                                                min-width: 27px;
-                                                height: 27px;
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-    .data-news-postList{
-        .midtableGroup{
-            max-width: calc(100% - 546px);
-        }
-        .newsFilterCard{
-            width: 265px;
-        }
-    }
-
-    .apendDataTable{
-        & .list_post_Table {
-            & .list {
-                & .posttableSide {
-                    &.post_listTable {
-                        & .post_table {
-                            & .table {
-                                & thead {
-                                    & tr {
-                                        & th {
-                                            &:last-child {
-                                            }
-                                        }
-                                    }
-                                }
-                                & tbody {
-                                    & tr {
-                                        &:nth-child(2) {
-                                        }
-                                        & td {
-                                            & .view {
-                                                & .icon {
-                                                    width: 22px;
-                                                    height: 22px;
-                                                    min-width: 22px;
-                                                    &:hover {
-                                                    }
-                                                    &.scope{
-                                                        & img {
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                                &.table-hover {
-                                    & > tbody {
-                                        & > tr {
-                                            &:hover {
-                                                & td {
-                                                    & .view{
-                                                        & .icon{
-                                                            &.scope {
-                                                                & img {
-                                                                    // filter: brightness(1);
-                                                                }
-                                                            }
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 1500px) {
-    .list_post_Table {
-        & .list {
-            & .posttableSide {
-                &.post_listTable {
-                    & .post_table {
-                        & .table {
-                            & tbody {
-                                & tr {
-                                    & td {
-                                        &:nth-child(2) {
-                                            max-width: 80px;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-@media screen and (max-width: 1450px) {
-    .list_post_Table {
-        & .list {
-            & .posttableSide {
-                &.post_listTable {
-                    & .post_table {
-                        & .table {
-                            & tbody {
-                                & tr {
-                                    & td {
-                                        &:nth-child(2) {
-                                            max-width: 70px;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-
-@media screen and (max-width: 1400px){
-    // *** Source -Tabs ***
-    .sourcetab_table{
-        max-width: 400px;
-    }
-    // ** Keyword Tab**
-    .keyword_category_name {
-        width: calc(100% - 600px);
-        max-width: 300px;
-    }
-    .keyword_category_KEY {
-        max-width: 600px;
-    }
-    .list_post_Table {
-        & .list {
-            & .posttableSide {
-                &.post_listTable {
-                    & .post_table {
-                        & .table {
-                            & thead{
-                                & tr {
-                                    & th {
-                                        &:last-child{
-                                            color: transparent;
-                                            max-width: 40px;
-                                            white-space: nowrap;
-                                            overflow: hidden;
-                                        }
-                                    }
-                                }
-                            }
-                            & tbody {
-                                & tr {
-                                    & td {
-                                        &:nth-child(2) {
-                                            max-width: 70px;
-                                        }
-                                        &:last-child{
-                                            max-width: 40px;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-
-
-
 
 // *******************************************************  [ Fb Post-List  Css Start ] ***********************************************
 .account_datatable {
@@ -1201,11 +921,15 @@
         & .card-body {
             & .innerbody  {
                 & .posted  {
+                    & .accountedPosted{
+                        & .accountUser{
+                            width: 32px;
+                            height: 32px;
+                            min-width: 32px;
+                            border-radius: 50%;
+                        }
+                    }
                     & .accountUser {
-                        width: 32px;
-                        height: 32px;
-                        min-width: 32px;
-                        border-radius: 50%;
                         &.videoAccountUser{
                             width: 40px;
                             min-width: 40px;
@@ -1298,12 +1022,15 @@
 }
 
 .mapingCard {
-    height: calc(40% - 4px);
+    height: calc(50% - 4px);
     & .mapImg {
         cursor: pointer;
     }
+    // &.slidercard{
+    //     height: 323px;
+    // }
     &.table_mapingcard{
-    height: calc(50% - 4px);
+        height: calc(50% - 4px);
     }
 }
 
@@ -1498,69 +1225,6 @@
     }
 }
 
-
-
-
-
-@media screen and (min-width: 1800px) {
-    .informationCard{
-        &.youtubeVideoOverview{
-            & .ytubeVideoOverview_socialM{
-                &.socialMetricsCard{
-                    & .cardbody {
-                        & .items {
-                            & .rate {
-                                font-size: 20px;
-                                & .tredMap  {
-                                    & .tredingImg {
-                                        width: 24px;
-                                        height: 24px;
-                                    }
-                                    & span {
-                                        font-size: 16px;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        &.tiktokvideo_overview{
-            & .cardbody {
-                & .items {
-                    & .rate {
-                        font-size: 20px;
-                    }
-                }
-            }
-        }
-    }
-}
-@media screen and (max-width: 1799.98px){
-    .informationCard{
-        &.youtubeVideoOverview{
-            & .ytubeVideoOverview_socialM{
-                &.socialMetricsCard{
-                    & .cardbody {
-                        & .items {
-                            min-width: 33%;
-                            &:first-child, &:nth-child(2), &:nth-child(3){
-                                border-bottom: 1px solid var(--balck--light) !important;
-                            }
-                            &.liftBorder-0{
-                                border-left: 0px;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-
-
 // *******************************************************  [ YouTube Post-Details  Css End ] ***********************************************
 
 
@@ -1678,8 +1342,108 @@
     }
 }
 
+// *******************************************************  [ TikTok Post-Details  Css End ] ***********************************************
+
+
+
+
+
+// *******************************************************  [ System Setting  Css Start ] ***********************************************
+.settingTable{
+    &.table {
+        & tbody {
+            & tr {
+                & td {
+                    &:first-child{
+                        width: 30%;
+                    }
+                }
+            }
+        }
+    }
+    & .datadownloadcard {
+        border-radius: 32px;
+        max-width: 300px;
+        min-height: 148px;
+        background-color: var(--balck--light);
+        & .card-body{
+            & .downloadicon {
+                width: 48px;
+                height: 48px;
+                & img {
+                    filter: brightness(100);
+                }
+            }
+            & .downloadtext {
+                color: var(--white);
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 140%; /* 19.6px */
+            }
+        }
+    }
+    &.nonhover{
+        &.table{
+            &.table-hover{  
+                & > tbody{
+                    & > tr{
+                        &:last-child{
+                            &:hover > td{
+                                background-color: #292929 !important;
+                                border-bottom-width: 0px !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// *******************************************************  [ System Setting  Css End ] ***********************************************
+
+
+
+
+
+// ? ******** [ Responsive ] *****
+// * -----list_post_Table0-----
+
+
+
 @media screen and (min-width: 1850px) {
     .informationCard{
+        &.youtubeVideoOverview{
+            & .ytubeVideoOverview_socialM{
+                &.socialMetricsCard{
+                    & .cardbody {
+                        & .items {
+                            & .rate {
+                                font-size: 20px;
+                                & .tredMap  {
+                                    & .tredingImg {
+                                        width: 24px;
+                                        height: 24px;
+                                    }
+                                    & span {
+                                        font-size: 16px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.tikokvideo_overview{
+            & .cardbody {
+                & .items {
+                    & .rate {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
         & .socialMetricsCard{
             &.tiktokvideo_overview{
                 & .cardbody {
@@ -1702,18 +1466,12 @@
                                 & tbody {
                                     & tr {
                                         & td {
-                                            &:first-child {
-                                                & .form-check {
-                                                }
-                                            }
                                             &:nth-child(2) {
                                                 max-width: 180px;
                                             }
                                             &:last-child {
                                                 max-width: 96px;
                                             }
-                                        }
-                                        &:nth-child(2) {
                                         }
                                     }
                                 }
@@ -1733,8 +1491,6 @@
                     & .items {
                         & .socialmetrics {
                             font-size: 13px;
-                        }
-                        & .rate {
                         }
                     }
                 }
@@ -1785,49 +1541,27 @@
         }
     }
 }
-
-@media screen and (max-width: 1750px) {
-    .lg_news_data_table{
-        & .list_post_Table {
-            & .list {
-                & .posttableSide {
-                    &.post_listTable {
-                        & .post_table {
-                            & .table {
-                                & tbody {
-                                    & tr {
-                                        & td {
-                                            &:first-child {
-                                                & .form-check {
-                                                }
-                                            }
-                                            &:nth-child(2) {
-                                                // max-width: 180px;
-                                            }
-                                            &:last-child {
-                                                // max-width: 96px;
-                                            }
-                                        }
-                                        &:nth-child(2) {
-                                        }
-                                    }
-                                }
-                            }
+@media screen and (max-width: 1799.98px){
+    .informationCard{
+        &.youtubeVideoOverview{
+            & .ytubeVideoOverview_socialM{
+                &.socialMetricsCard{
+                    & .cardbody {
+                        & .items {
+                            // min-width: 33%;
+                            // &:first-child, &:nth-child(2), &:nth-child(3){
+                            //     border-bottom: 1px solid var(--balck--light) !important;
+                            // }
+                            // &.liftBorder-0{
+                            //     border-left: 0px;
+                            // }
                         }
                     }
                 }
             }
         }
-        & .newsFilterCard {
-            &.sourcecards{
-            }
-        }
-        & .midtableGroup {
-        }
     }
 }
-
-
 @media screen and (max-width: 1700px) {
     .informationCard{
         & .socialMetricsCard  {
@@ -1882,6 +1616,77 @@
     }
 }
 @media screen and (max-width: 1600px) {
+    .list_post_Table {
+        & .list {
+            & .posttableSide {
+                &.post_listTable {
+                    & .post_table {
+                        & .table {
+                            & thead {
+                                & tr {
+                                    & th {
+                                        &:first-child {
+                                            height: 35px;
+                                            width: 40px;
+                                        }
+                                        padding: 3px 8px;
+                                    }
+                                }
+                            }
+                            & tbody {
+                                & tr {
+                                    & td {
+                                        & .source {
+                                            font-size: 12px;
+                                            & .logoimg {
+                                                min-width: 27px;
+                                                height: 27px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .data-news-postList{
+        .midtableGroup{
+            max-width: calc(100% - 546px);
+        }
+        .newsFilterCard{
+            width: 265px;
+        }
+    }
+    .apendDataTable{
+        & .list_post_Table {
+            & .list {
+                & .posttableSide {
+                    &.post_listTable {
+                        & .post_table {
+                            & .table {
+                                & tbody {
+                                    & tr {
+                                        & td {
+                                            & .view {
+                                                & .icon {
+                                                    width: 22px;
+                                                    height: 22px;
+                                                    min-width: 22px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
     .informationCard{
         & .socialMetricsCard  {
             &.tiktokvideo_overview{
@@ -1917,12 +1722,6 @@
     }
     .tiktok_video{
         & .mainpostcard {
-            &.ytubemainVideoPost{
-                & .videoSide {
-                }
-                & .contentSide {
-                }
-            }
             & .countingGroup {
                 gap: 12px;
                 & .countItem {
@@ -1932,14 +1731,6 @@
                     }
                     & .counting {
                         font-size: 10px;
-                    }
-                }
-            }
-        }
-        & .socialCategoery {
-            & .socialMetricsCard {
-                & .cardbody {
-                    & .categoryes {
                     }
                 }
             }
@@ -1983,6 +1774,11 @@
             }
         }
     }
+    // .mapingCard {
+    //     &.slidercard{
+    //         height: 290px;
+    //     }
+    // }
 }
 @media screen and (max-width: 1500px) {
     .maincontent{
@@ -2085,66 +1881,27 @@
             max-width: calc(100% - 406px);
         }
     }
-}
-// *******************************************************  [ TikTok Post-Details  Css End ] ***********************************************
-
-
-
-
-
-// *******************************************************  [ System Setting  Css Start ] ***********************************************
-.settingTable{
-    &.table {
-        & tbody {
-            & tr {
-                & td {
-                    &:first-child{
-                        width: 30%;
-                    }
-                }
-            }
-        }
+    // .mapingCard {
+    //     &.slidercard{
+    //         height: 280px;
+    //     }
+    //     &.table_mapingcard{
+    //         height: calc(48.5% - 8px);
+    //     }
+    // }
+    // *** Source -Tabs ***
+    .sourcetab_table{
+        max-width: 400px;
     }
-    & .datadownloadcard {
-        border-radius: 32px;
+    // ** Keyword Tab**
+    .keyword_category_name {
+        width: calc(100% - 600px);
         max-width: 300px;
-        min-height: 148px;
-        background-color: var(--balck--light);
-        & .card-body{
-            & .downloadicon {
-                width: 48px;
-                height: 48px;
-                & img {
-                    filter: brightness(100);
-                }
-            }
-            & .downloadtext {
-                color: var(--white);
-                font-size: 14px;
-                font-style: normal;
-                font-weight: 500;
-                line-height: 140%; /* 19.6px */
-            }
-        }
     }
-    &.nonhover{
-        &.table{
-            &.table-hover{  
-                & > tbody{
-                    & > tr{
-                        &:last-child{
-                            &:hover > td{
-                                background-color: #292929 !important;
-                                border-bottom-width: 0px !important;
-                            }
-                        }
-                    }
-                }
-            }
-        }
+    .keyword_category_KEY {
+        max-width: 600px;
     }
 }
-// *******************************************************  [ System Setting  Css End ] ***********************************************
 
 
 
