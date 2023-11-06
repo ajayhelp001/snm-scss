@@ -857,7 +857,6 @@
                 </div>
             </div>
             <!--! * Main DashBoard Start -->
-
         </div>
     </main>
 
@@ -893,6 +892,14 @@
                 element.classList.add('above1080');
             } else {
                 element.classList.remove('above1080');
+            }
+        }
+        function checkHeight() {
+            const element2 = document.querySelector('.stacked_chartGroup');
+            if (window.innerHeight < 1000) {
+                element2.classList.add('above1000');
+            } else {
+                element2.classList.remove('above1000');
             }
         }
         checkHeight();
