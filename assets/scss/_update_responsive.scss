@@ -237,6 +237,12 @@
         }
     }
 }
+.yourElementClassName{
+    display: none;
+    &.above1080{
+        display: block;
+    }
+}
 
 // ? ******** [ Responsive ] *****
 

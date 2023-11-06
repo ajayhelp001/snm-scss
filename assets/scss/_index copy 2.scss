@@ -422,9 +422,6 @@
         }
         & .bootompicharts{
             height: 61.69%;
-            & .picharts{
-                margin-top: -2px;
-            }
         }
         // & .d_chartgroups{
         //     min-height: 613px;
@@ -516,7 +513,7 @@
                     margin-bottom: 1.5%;
                 }
                 & .innerbody {
-                    gap: 16px;
+                    gap: 1%;
                     & .cardSubTitle {
                         color: var(--white);
                         font-style: normal;
@@ -526,13 +523,10 @@
                         align-items: center;
                         gap: 16px;
                         font-size: 18px;
-                        margin-bottom: 1%;
+                        margin-bottom: 2%;
                         &.tablet{
                             display: none;
                         }
-                    }
-                    & .chartgroups {
-                        height: calc(50% - 8px);
                     }
                     & .tredMap {
                         display: inline-flex;
@@ -541,7 +535,6 @@
                         & .tredingImg {
                             height: 24px;
                             width: 24px;
-                            display: flex;
                             & img {
                                 object-fit: contain;
                             }
@@ -1355,55 +1348,6 @@
             }
         }
     }
-    // **** Top Header Css Start*****
-.topheader{
-    & .userSide {
-        & .notificationDropDown {
-            & .dropdown-menu {
-                padding: 12px 16px;
-            }
-        }
-        & .notification {
-            margin-left: 10px;
-            height: 40px;
-            width: 40px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-            & span{
-                position: absolute;
-                top: 0;
-                right: 0;
-                width: 16px;
-                height: 16px;
-                display: inline-flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                gap: 2px;
-                border-radius: 16px;
-                padding: 2px;
-                background-color: var(--theme-red);
-                color: var(--white);
-                font-size: 14px;
-                font-style: normal;
-                font-weight: 500;
-                line-height: 140%; /* 22.4px */
-                letter-spacing: -0.25px;
-            }
-        }
-        & .bell, .user {
-            width: 32px;
-            height: 32px;
-            border-radius: 50%;
-            cursor: pointer;
-        }
-        & .user{
-            margin-right: 15px;
-        }
-    }
-}
 }
 @media screen and (min-width: 1600px) {
     .homepage{

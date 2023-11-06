@@ -351,7 +351,7 @@ var options = {
     plotOptions: {
         bar: {
             horizontal: true,
-            barHeight: '75%',
+            barHeight: '80%',
             dataLabels: {
                 total: {
                     enabled: true,
