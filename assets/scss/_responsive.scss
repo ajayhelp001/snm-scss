@@ -1083,14 +1083,14 @@
                 &.stackedChartCard {
                     & .stackedChart {
                         & .linechart_group{
-                            margin-top: -3%;
+                            margin-top: -2px;
                         }
                     }
                     & .card-body{
                         & .chartlable {
-                            margin: 27% 0px 0px 0px;
+                            // margin: 27% 0px 0px 0px;
                             & li {
-                                height: 8.8%;
+                                height: 8.1%;
                                 & .keyBtn {
                                     border-radius: 6px;
                                     font-size: 10px;
@@ -1281,6 +1281,33 @@
             & .nav-item {
                 & .nav-link {
                     font-size: 12px;
+                }
+            }
+        }
+    }
+    .maincontent{
+        & .manin_content_Body{
+            & .levelCard  {
+                &.stackedChartCard {
+                    & .stackedChart {
+                        & .linechart_group{
+                            // margin-top: -2px;
+                        }
+                    }
+                    & .card-body{
+                        & .stacked_chartGroup{
+                            bottom: -14px;
+                        }
+                        & .chartlable {
+                            & li {
+                                height: 8.25%;
+                                & .keyBtn {
+                                    border-radius: 6px;
+                                    font-size: 10px;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

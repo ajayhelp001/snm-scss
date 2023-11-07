@@ -323,35 +323,20 @@ var options = {
             colors: ['#000']
         }
     },
-    // responsive: [
-    //     {
-    //         breakpoint: 1699.98,
-    //         options: {
-    //             chart: {
-    //                 height: 314
-    //             },
-    //         }
-    //     },
-    //     {
-    //         breakpoint: 1400.98, 
-    //         options: {
-    //             chart: {
-    //                 height: 320
-    //             },
-    //         },
-    //     }
-    // ],
-    // plotOptions: {
-    //     bar: {
-    //         horizontal: true,
-    //         borderRadius: 0,
-    //         barHeight: '70%',
-    //     },
-    // },
+    responsive: [
+        {
+            breakpoint: 1400.98, 
+            options: {
+                chart: {
+                    height: 290
+                },
+            },
+        }
+    ],
     plotOptions: {
         bar: {
             horizontal: true,
-            barHeight: '80%',
+            barHeight: '75%',
             dataLabels: {
                 total: {
                     enabled: true,
