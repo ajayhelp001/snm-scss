@@ -47,21 +47,32 @@
                 &.stackedChartCard {
                     & .card-body{
                         & .chartlable {
-                            gap: 1.33%;
+                            gap: 1.6%;
                             & li {
-                                height: 8.2% !important;
+                                height: 8% !important;
                                 & .keyBtn {
                                 }
                             }
                         }
                         & .stacked_chartGroup {
+                            bottom: -15px;
+                            // min-height: 435px;
+                            // bottom: -14px;
                             &.above1000{
+                                bottom: -10px;
+                                min-height: 350px !important;
+                                height: 100%;
                                 & .chartlable {
+                                    gap: 1.4% !important;
                                     & li {
-                                        height: 7.85% !important;
+                                        height: 7.43% !important;
                                         & .keyBtn {
                                         }
                                     }
+                                }
+                                & .stackedChart {
+                                    // height: 330px;
+                                    // min-height: unset !important;
                                 }
                             }
                         }
@@ -71,5 +82,8 @@
         }
     }
     
-
 }    
+
+// .stackedChart{
+// height: 100% !important;
+// }

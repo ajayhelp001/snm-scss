@@ -941,7 +941,7 @@
                 &.stackedChartCard {
                     & .stackedChart {
                         & .linechart_group{
-                            margin-top: -1.2%;
+                            // margin-top: -1.2%;
                         }
                     }
                 }
@@ -1090,7 +1090,7 @@
                         & .chartlable {
                             // margin: 27% 0px 0px 0px;
                             & li {
-                                height: 8.1%;
+                                height: 7.7%;
                                 & .keyBtn {
                                     border-radius: 6px;
                                     font-size: 10px;
@@ -1296,11 +1296,13 @@
                     }
                     & .card-body{
                         & .stacked_chartGroup{
-                            bottom: -14px;
+                            bottom: -6px;
+                            min-height: 300px;
                         }
                         & .chartlable {
+                            gap: 1.26%;
                             & li {
-                                height: 8.25%;
+                                // height: 8.25%;
                                 & .keyBtn {
                                     border-radius: 6px;
                                     font-size: 10px;

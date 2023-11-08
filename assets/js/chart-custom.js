@@ -324,14 +324,22 @@ var options = {
         }
     },
     responsive: [
-        {
-            breakpoint: 1400.98, 
-            options: {
-                chart: {
-                    height: 290
-                },
-            },
-        }
+        // {
+        //     breakpoint: 1920, 
+        //     options: {
+        //         chart: {
+        //             height: 430
+        //         },
+        //     },
+        // },
+        // {
+        //     breakpoint: 1400.98, 
+        //     options: {
+        //         chart: {
+        //             height: 290
+        //         },
+        //     },
+        // }
     ],
     plotOptions: {
         bar: {
@@ -384,6 +392,8 @@ var options = {
 var chart = new ApexCharts(document.querySelector("#chart"), options);
 chart.render();
 
+window.onresize = setChartHeight;
+window.onload = setChartHeight;
 
 
 
