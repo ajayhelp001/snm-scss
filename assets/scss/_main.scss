@@ -152,3 +152,43 @@ img {
         }
     }
 }
+
+@media screen and (max-width: 1335.98px){
+    .gap-12 {
+        gap: 10px !important;
+    }
+    .gap-10 {
+        gap: 8px;
+    }
+    .gap-8{
+        gap: 6px !important;
+    }
+    .main-dashboard {
+        & .maininner_Dashboard {
+            & .asideBar{
+                width: 80px;
+            }
+            & .dashboard_Side {
+                width: calc(100% - 80px);
+            }
+        }
+    }
+    // *** Search Bar ****
+    .search_bar {
+        & .input-group {
+            // padding: 0px 12px;
+            & .input-group-text{
+                & img{
+                    width: 14px;
+                    height: 14px;
+                }
+            }
+            & .form-control {
+                font-size: 10px;
+            }
+        }
+        &.darkbar {
+            min-height: unset;
+        }
+    }
+}

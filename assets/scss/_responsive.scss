@@ -240,9 +240,6 @@
     }
 }
 @media screen and (max-width: 1600px) {
-    .all_sources{
-        padding: 0px 30px;
-    }
     .maincontent{
         padding: 30px;
         & .manin_content_Body {
@@ -383,7 +380,9 @@
         }
     }
     .all_sources {
+        padding: 0px 30px;
         & .all_data {
+            padding: 10px 0px;
             gap: 14px;
             & .data {
                 font-size: 22px;
@@ -723,6 +722,9 @@
                                     height: 16px;
                                     width: 16px;
                                 }
+                                & input{
+                                    font-size: 14px;
+                                }
                             }
                         }
                     }
@@ -900,15 +902,7 @@
             }
         }
     }
-    .all_sources {
-        & .all_data {
-            padding: 10px 0px;
-            gap: 15px;
-            & .data {
-                font-size: 22px;
-            }
-        }
-    }
+    
     // *---------pageLinks Start---------*
     .pageLinks {
         & .socialLinkLink {
@@ -968,7 +962,6 @@
     }
 }
 @media screen and (max-width: 1500px) {
-
     .maincontent{
         & .manin_content_Body {
             // ****
@@ -1307,6 +1300,516 @@
                                     border-radius: 6px;
                                     font-size: 10px;
                                 }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1335.98px){
+    .maincontent{
+        padding: 20px;
+        & .manin_content_Body{
+            & .levelCard  {
+                & .card-body{
+                    padding: 8px 12px;
+                    & .card_title  {
+                        font-size: 15px;
+                        margin-bottom: 4px;
+                    }
+                }
+                // &.stackedChartCard {
+                //     & .stackedChart {
+                //         & .linechart_group{
+                //         }
+                //     }
+                //     & .card-body{
+                //         & .chartlable {
+                //             & li {
+                //                 height: 7.7%;
+                //                 & .keyBtn {
+                //                     border-radius: 6px;
+                //                     font-size: 10px;
+                //                 }
+                //             }
+                //         }
+                //     }
+                // }
+            }
+            // ****
+            // & .pichart {
+            //     & .card-body {
+            //         & .sourcetitle{
+            //             display: none;
+            //         }
+            //         & .innerbody {
+            //             & .picharts{
+            //                 & canvas{
+            //                     width: 110px;
+            //                     height: 110px;
+            //                 }
+            //             }
+            //             & .tredMap {
+            //                 & .tredingImg {
+            //                     height: 20px;
+            //                     width: 20px;
+            //                 }
+            //                 & span {
+            //                     font-size: 14px;
+            //                 }
+            //                 &.pichartmap {
+            //                     & .tredingImg {
+            //                         height: 16px;
+            //                         width: 16px;
+            //                     }
+            //                     & span {
+            //                         font-size: 11px;
+            //                     }
+            //                 }
+            //             }
+            //             & .chartvalue {
+            //                 & .chartbody {
+            //                     & .point {
+            //                         width: 11px;
+            //                         height: 11px;
+            //                     }
+            //                     & .ratingUser {
+            //                         font-size: 14px;
+            //                     }
+            //                     & .amount{
+            //                         font-size: 12px;
+            //                     }
+            //                 }
+            //             }
+            //             & .totalresult {
+            //                 font-size: 12px;
+            //             }
+            //         }
+            //     }
+            // }
+            & .posttableSide {
+                gap: 8px;
+            }
+        }
+    }
+    // **** Aside Bar Css Start *******
+    .asideBar{
+        & .logo_top {
+            & .logo {
+                width: 48px;
+                height: 48px;
+            }
+            & .logoname {
+                width: 60px;
+                // margin: 12px auto 8px;
+            }
+        }
+        & .asideBody {
+            & .nav_link {
+                & li{
+                    & .navlinks{
+                        height: 64px;
+                        & img {
+                            width: 23px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // *---------pageLinks Start---------*
+    .pageLinks {
+        & .socialLinkLink {
+            gap: 13px;
+            font-size: 11px;
+            & span {
+                width: 40px;
+                height: 32px;
+            }
+        }
+    }
+    .topheader{
+        // height: 48px;
+        & .socialNetwork {
+            padding: 10px 0px 10px 18px;
+            font-size: 15px;
+        }
+        & .userSide {
+            & .notificationDropDown {
+                & .dropdown-menu {
+                    min-width: 330px;
+                    padding: 10px 12px;
+                    & .n_title {
+                        font-size: 14px;
+                        margin-bottom: 8px;
+                    }
+                    & .n_Body {
+                        & .n_item{
+                            padding: 6px;
+                            & .logoimg {
+                                height: 24px;
+                                min-width: 24px;
+                            }
+                        }
+                    }
+                }
+            }
+            & .notification {
+                height: 24px;
+                width: 24px;
+                & span {
+                    font-size: 8px;
+                    width: 13px;
+                    height: 13px;
+                }
+            }
+            & .bell, .user {
+                width: 18px;
+                height: 18px;
+            }
+        }
+    }
+    .breadcrumb_Bar{
+        height: 36px;
+        padding: 6px 0px 6px 20px;
+        & .breadcrumb {
+            margin: 0px;
+            & .breadcrumb-item {
+                font-size: 10px;
+                &::before{
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+    .all_sources {
+        padding: 0px 20px;
+        & .all_data {
+            padding: 8px 0px;
+            gap: 10px;
+            & .data {
+                font-size: 18px;
+            }
+        }
+    }
+    .overviewTabs {
+        gap: 8px !important;
+        &.trackingsocial{
+            gap: 4px !important;
+        }
+        & .nav-item {
+            & .nav-link {
+                font-size: 11px;
+                padding: 6px 20px 6px 0px;
+            }
+        }
+    }
+    .categoryCard {
+        min-width: 120px;
+        max-width: 120px;
+        & .card_body {
+            padding: 8px 12px;
+            & .categoryImg {
+                min-width: 28px;
+                width: 28px;
+                height: 28px;
+            }
+            & .valu {
+                font-size: 17px;
+                padding: 0px 8px;
+                & span {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+    .post_table {
+        & .table {
+            & tr {
+                & td, & th {
+                    padding: 1px 6px;
+                    font-size: 10px;
+                }
+            }
+            & thead{
+                & tr{
+                    & th {
+                        height: 30px;
+                        padding: 5px;
+                    }
+                }
+            }
+            & tbody{
+                & tr {
+                    & td, & th {
+                        height: 25px;
+                    }
+                }
+                & .view{
+                    gap: 4px;
+                }
+                & .icon {
+                    height: 14px;
+                    width: 14px;
+                    min-width: 14px;
+                    &.closeIcon {
+                        width: 18px;
+                        height: 18px;
+                    }
+                    &.eyes{
+                        width: 18px;
+                        height: 18px;
+                        min-width: 18px;
+                    }
+                }
+            }
+        }
+    }
+    .newsFilterCard {
+        // &.geomapfilter{
+        //     max-width: 230px;
+        // }
+        & .card-body {
+            & .innerBody {
+                gap: 10px;
+                & .filterTitle {
+                    font-size: 10px;
+                    margin-bottom: 2px;
+                }
+                & .keywordkey {
+                    gap: 4px;
+                }
+                & .btn-group {
+                    & > div {
+                        gap: 5px !important;
+                        & > div {
+                            display: flex;
+                        }
+                    }
+                }
+            }
+            & .vietnamese_Group {
+                & .groupItem_check {
+                    & .form-check {
+                        // padding: 4px 8px;
+                        & .form-check-label {
+                            font-size: 10px;
+                            width: 100%;
+                            padding-right: 20px;
+                            & .logoimg {
+                                width: 21px;
+                                height: 21px;
+                                min-width: 21px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.sourcecards {
+            & .sourcebody {
+                padding: 0px 5px;
+            }
+        }
+    }
+    .informationCard {
+        & .card-body {
+            padding: 8px 10px !important;
+            & .innerbody {
+                & .card_title {
+                    font-size: 12px !important;
+                    
+                }
+                & .posted {
+                    & .accountPost {
+                        font-size: 10px;
+                        margin-bottom: 3px;
+                    }
+                    & .accounts {
+                        gap: 6px;
+                        font-size: 10px;
+                        & .userName {
+                            font-size: 10px;
+                        }
+                    }
+                    & .accountUser {
+                        width: 20px;
+                        height: 20px;
+                        &.mainaccount{
+                            min-width: 20px;
+                            min-height: 20px;
+                        }
+                    }
+                    & .content{
+                        font-size: 10px;
+    
+                    }
+                    & .containtHeading{
+                        font-size: 10px;
+                    }
+                }
+                & .socialMetricsCard {
+                    & .cardbody {
+                        & .rate{
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .account_datatable {
+        & .table {
+            & tbody {
+                & tr {
+                    & td {
+                        & .source {
+                            font-size: 10px;
+                            & .logoimg {
+                                min-width: 22px;
+                                height: 22px;
+                            }
+                        }
+                        & .view{
+                            & .type_icon {
+                                width: 18px;
+                                height: 18px;
+                            }
+                            & .scope {
+                                width: 18px;
+                                height: 18px;
+                                min-width: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // *** Source -Tabs ***
+    .card_title {
+        & .cuntryflage {
+            & .flage {
+                width: 21px;
+                height: 21px;
+                &.small{
+                    width: 19px;
+                    height: 19px;
+                }
+            }
+        }
+    }
+    .settingTable{
+        & .datadownloadcard {
+            border-radius: 18px;
+            max-width:220px;
+            min-height: 115px;
+            & .card-body{
+                & .downloadicon {
+                    width: 36px;
+                    height: 36px;
+                }
+                & .downloadtext {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+    // ** Keyword Tab**
+    .keyword_category_name {
+        & .top_post {
+            & .posttableSide {
+                & .categoryLink {
+                    font-size: 12px;
+                    height: 30px;
+                }
+            }
+        }
+    }
+    .keyword_category_KEY {
+        & .posttableSide {
+            & .post_table {
+                & .input_wrapper {
+                    padding: 12px;
+                    & .content {
+                        & ul {
+                            & li {
+                                padding: 3px 8px;
+                                font-size: 12px;
+                                & i {
+                                    height: 12px;
+                                    width: 12px;
+                                }
+                            }
+                            & input {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .applybtn {
+            max-width: 130px;
+        }
+    }
+    .homepage{
+        & .manin_content_Body {
+            & .navigationBar {
+                & .card-body{
+                    padding:8px 0px;
+                    & .innerbody {
+                        gap: 8px;
+                    }
+                    & .timeing {
+                        padding: 0px 0px 0px 16px;
+                        & .volatility {
+                            font-size: 18px;
+                        }
+                        & .timingBtn {
+                            & button{
+                                font-size: 12px;
+                                & span{
+                                    display: flex;
+                                    width: 18px;
+                                    height: 18px;
+                                }
+                            }
+                            & .dropdown-menu {
+                                min-width: 100px;
+                                border-radius: 8px;
+                                & .dropdown-item {
+                                    padding: 4px;
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                    }
+                    & .tred_card {
+                        padding: 0px 8px;
+                        & .tredImg{
+                            width: 24px;
+                            height: 24px;
+                        }
+                        & .trdPoint{
+                            font-size: 14px;
+                            & span {
+                                font-size: 12px;
+                            }
+                        }
+                        & .tredMap {
+                            display: flex;
+                            align-items: center;
+                            gap: 4px;
+                            & .tredingImg {
+                                height: 20px;
+                                width: 20px;
+                            }
+                            & span {
+                                font-size: 14px;
                             }
                         }
                     }

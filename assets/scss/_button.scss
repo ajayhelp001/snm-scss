@@ -571,3 +571,147 @@
         }
     }
 }
+
+
+@media screen and (max-width: 1335.98px){
+
+    // **** Buttons****
+    .applybtn {
+        font-size: 12px;
+        height: 25px;
+    }
+    
+    .viewDetailsBtn {
+        font-size: 10px;
+        & .moreImg {
+            margin-top: -1.4px;
+            width: 13px;
+            height: 13px;
+        }
+    }
+    
+    .categoryBtn {
+        padding: 3px 10px;
+        font-size: 10px;
+        border-radius: 5px;
+    }
+    
+    .appendBtn {
+        height: 28px;
+        width: 28px;
+        border-radius: 5px;
+        &.moniter{
+            & img{
+                width: 18px;
+            }
+        }
+        &.conectBtn {
+            width: 30px;
+            height: 30px;
+            & img{
+                width: 15px;
+            }
+        }
+        &.categorieAppend{
+            width: 30px;
+            height: 30px;
+        }
+        // &.smallappend{
+        //     width: 37px;
+        //     height: 24px;
+        //     & span {
+        //         width: 14px;
+        //         & img {
+        //             width: 100%;
+        //             object-fit: contain;
+        //         }
+        //     }
+        // }
+    }
+    .post_Btn {
+        font-size: 12px;
+        padding: 1px 6px;
+        margin: 8px;
+        border-radius: 5px;
+        & span {
+            width: 10px;
+            min-width: 10px;
+            height: 10px;
+        }
+        // &.small_post_Btn{
+        //     padding: 4px 10px;
+        //     font-size: 10px;
+        // }
+    }
+    
+    .sourcesBtn {
+        width: 42px;
+        padding: 5px 7px;
+        border-radius: 8px;
+    }
+    
+    // * dropdowns
+    // .dropdowns{
+    //     & .dropdownBtn {
+    //         padding: 6px 12px;
+    //         font-size: 12px;
+    //         min-height: 35px;
+    //         & .arrowImg {
+    //         }
+    //     }
+    //     & .dropdown-menu {
+    //         & .dropdown-item {
+    //             padding: 4px;
+    //             font-size: 10px;
+    //             line-height: 125%; /* 125% */
+    //         }
+    //     }
+    // }
+    .radiobutton_group{
+        & .languageradio {
+            padding: 20px;
+            font-size: 16px;
+            
+            & .images {
+                width: 160px;
+                height: 160px;
+            }
+        }
+    }
+    
+    
+    // *** -----------------Radio & Checkbox btn-group ------------
+    .btn-group {
+        & .btn-check {
+            &:checked+.radioBtn{
+                font-size: 10px;
+            }
+        }
+        & .radioBtn {
+            border-radius: 5px;
+            font-size: 10px;
+        }
+    }
+    
+    .form-check{
+        min-height: unset !important;
+        // &.scopcheck{
+        // }
+        & .form-check-input {
+            margin-top: -1px;
+            height: 14px;
+            width: 14px;
+            border-radius: 3px;
+        }
+        & .form-check-label {
+            font-size: 10px;
+        }
+        &.scopcheck{
+            & label{
+                cursor: pointer;
+                // padding: 0px 6px;
+            }
+        }
+    }
+    
+    }

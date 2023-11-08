@@ -1819,7 +1819,6 @@
             }
         }
         & .newsFilterCard {
-            width: 200px;
             &.sourcecards{
                 width: 240px;
             }
@@ -1903,7 +1902,131 @@
     }
 }
 
-
+@media screen and (max-width: 1335.98px) {
+    .maincontent{
+        &.lg_data_table{
+            &.facebook-postlist-data{
+                & .newsFilterCard {
+                    width: 130px;
+                }
+                & .insteractionCard{
+                    width: 190px;
+                }
+                & .midtableGroup {
+                    max-width: calc(100% - 341px);
+                }
+            }
+        }
+    }
+    .lg_data_table{
+        & .top_post {
+            & .post_table{
+                &.smcontent{
+                    & .table{
+                        & tr {
+                            & th {
+                                padding: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .lg_news_data_table{
+        & .newsFilterCard {
+            width: 130px;
+            &.sourcecards{
+                width: 190px;
+            }
+        }
+        & .midtableGroup {
+            max-width: calc(100% - 336px);
+        }
+    }
+    .list_post_Table {
+        & .list {
+            gap: 8px;
+            & .posttableSide {
+                &.post_listTable {
+                    & .post_table {
+                        & .table {
+                            & thead {
+                                & tr {
+                                    & th {
+                                        &:first-child {
+                                            height: 30px;
+                                            width: 30px;
+                                        }
+                                        padding: 3px 8px;
+                                    }
+                                }
+                            }
+                            & tbody {
+                                & tr {
+                                    & td {
+                                        & .source {
+                                            font-size: 10px;
+                                            & .logoimg {
+                                                min-width: 21px;
+                                                height: 21px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .apendDataTable{
+        & .list_post_Table {
+            & .list {
+                & .posttableSide {
+                    &.post_listTable {
+                        & .post_table {
+                            & .table {
+                                & tbody {
+                                    & tr {
+                                        & td {
+                                            & .view {
+                                                & .icon {
+                                                    width: 18px;
+                                                    height: 18px;
+                                                    min-width: 18px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // .mapingCard {
+    //     &.slidercard{
+    //         height: 280px;
+    //     }
+    //     &.table_mapingcard{
+    //         height: calc(48.5% - 8px);
+    //     }
+    // }
+    // .sourcetab_table{
+    //     max-width: 400px;
+    // }
+    // .keyword_category_name {
+    //     width: calc(100% - 600px);
+    //     max-width: 300px;
+    // }
+    // .keyword_category_KEY {
+    //     max-width: 600px;
+    // }
+}
 
 
 

@@ -882,11 +882,13 @@
         }
     }
 }
-// .active_data_show{
-//     & .fb_most_bottomBody {
-//         height: calc(100% - 336px);
-//     }
-// }
+.lg_data_table {
+    .active_data_show{
+        & .fb_most_bottomBody {
+            height: calc(100% - 336px);
+        }
+    }
+}
 
 .top_post {
     & .card-body{
@@ -1564,18 +1566,20 @@
             }
         }
     }
-    // .post_table{
-    //     &.minidatatable{
-    //         &.fb_post_minidatatable{
-    //             max-height: 300px;
-    //         }
-    //     }
-    // }
-    // .active_data_show{
-    //     & .fb_most_bottomBody {
-    //         height: calc(100% - 316px);
-    //     }
-    // }
+    .lg_data_table {
+        .post_table{
+            &.minidatatable{
+                &.fb_post_minidatatable{
+                    max-height: 300px;
+                }
+            }
+        }
+        .active_data_show{
+            & .fb_most_bottomBody {
+                height: calc(100% - 316px);
+            }
+        }
+    }
 }
 @media screen and (max-width: 1500px){
     .informationCard {
@@ -1746,16 +1750,45 @@
             }
         }
     }
-    // .post_table{
-    //     &.minidatatable{
-    //         &.fb_post_minidatatable{
-    //             max-height: 240px;
-    //         }
-    //     }
-    // }
-    // .active_data_show{
-    //     & .fb_most_bottomBody {
-    //         height: calc(100% - 256px);
-    //     }
-    // }
+    .lg_data_table {
+        .post_table{
+            &.minidatatable{
+                &.fb_post_minidatatable{
+                    max-height: 240px;
+                }
+            }
+        }
+        .active_data_show{
+            & .fb_most_bottomBody {
+                height: calc(100% - 256px);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1335.98px) {
+    .lg_data_table {
+        .post_table{
+            &.minidatatable{
+                &.fb_post_minidatatable{
+                    max-height: 250px;
+                }
+            }
+        }
+        .active_data_show{
+            & .fb_most_bottomBody {
+                height: calc(100% - 266px);
+            }
+        }
+    }
+    .top_post {
+        & .card-body{
+            & .card_title {
+            }
+            & .overviewTabs {
+                margin-bottom: 10px;
+            }
+        }
+    }
+  
 }

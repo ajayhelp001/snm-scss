@@ -296,7 +296,7 @@
             max-width: 300px;
         }
         // & .script_Video_Top_Section {
-        //     max-height: 567px;
+        //     max-height: 567p2;
         //     height: 100%;
         //     height: calc(100% - 285px - 8px);
         // }
@@ -551,5 +551,59 @@
             }
         }
     
+    }
+}
+
+@media screen and (max-width: 1335.98px) {
+    .facebook-postlist-data {
+        & .fixedtableheader {
+            & table {
+                & thead{
+                    & tr {
+                        & th{
+                            &:first-child{
+                                width: calc(100% - 63px);
+                            }
+                            &:last-child{
+                                width: 62px;
+                            }
+                        }
+                    }
+                }
+                & tbody{
+                    & tr {
+                        & td{
+                            &:first-child{
+                                width: calc(100% - 63px);
+                            }
+                            &:last-child{
+                                width: 62px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .deepinquiryPage{
+        & .listmap  {
+            & .geoInfoCard {
+                & .newsFilterCard  {
+                    &.geomapfilter {
+                        width: 180px;
+                        & .card-body {
+                            & .card_title {
+                                font-size: 13px;
+                            }
+                            & .innerBody {
+                                & > div{
+                                    gap: 3px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }

@@ -414,3 +414,111 @@ div[data-tippy-root] {
         }
     }
 }
+
+@media screen and (max-width: 1335.98px) {
+    .deepinquiryPage {
+        & .accordionbodypart {
+            & .sourceheading {
+                & .source_Img {
+                    width: 15px;
+                    height: 15px;
+                    min-width: 15px;
+                    &.scope {
+                        width: 14px;
+                        height: 14px;
+                        min-width: 14px;
+                    }
+                }
+                font-size: 11px;
+            }
+            & .accordion-body {
+                padding-left: 40px !important;
+            }
+        }
+    }
+    .datapoolCard{
+        width: 260px;
+    }
+    .mapsides {
+        & .topnavtabs {
+            height: 30px;
+        }
+        & .deepMapcard {
+            height: calc(100% - 38px);
+        }
+        width: calc(100% - 268px);
+    }
+    .topnavtabs {
+        & .nav{
+            & .nav-link {
+                padding: 4px 10px;
+                border-radius: 5px 5px 0px 0px;
+                font-size: 10px;
+                & .closeicon {
+                    width: 21px;
+                    height: 21px;
+                    min-width: 21px;
+                }
+            }
+        }
+    }
+    .geomapfilter {
+        &.card{
+            & .card-body {
+                & .userItem {
+                    & .source_Img {
+                        width: 15px;
+                        height: 15px;
+                        min-width: 15px;
+                    }
+                    & .username {
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    }
+    .bottomtabs {
+        border-radius: 8px;
+        // padding: 4px;
+        // gap: 4px;
+        & .items {
+            & .eventImg {
+                width: 25px;
+                height: 25px;
+                // padding: 3px;
+            }
+            & span {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1249.98px){
+    .bottomtabs {
+        padding: 8px;
+        // gap: 4px;
+        & .items {
+            & .eventImg {
+                width: 21px;
+                height: 21px;
+                padding: 3px;
+            }
+            & span {
+                font-size: 11px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1162.98px){
+    .bottomtabs {
+        padding: 7px;
+        gap: 5px;
+        & .items {
+            & span {
+                font-size: 10px;
+            }
+        }
+    }
+}
