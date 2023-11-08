@@ -1790,5 +1790,27 @@
             }
         }
     }
-  
+}
+@media screen and (max-width: 1299.98px){
+    .informationCard {
+        & .card-body {
+            // padding: 8px 10px 12px 10px !important;
+            & .innerbody {
+                & .posted {
+                    & .bottomcategory {
+                        gap: 8px;
+                        & .info_Imtems {
+                            & .timedate {
+                                font-size: 10px;
+                            }
+                        }
+                        & .accountUser {
+                            width: 22px;
+                            height: 22px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

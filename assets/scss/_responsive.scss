@@ -1393,6 +1393,133 @@
             & .posttableSide {
                 gap: 8px;
             }
+            & .navigationBar {
+                & .card-body{
+                    padding:8px 0px;
+                    & .innerbody {
+                        gap: 8px;
+                    }
+                    & .timeing {
+                        padding: 0px 0px 0px 16px;
+                        & .volatility {
+                            font-size: 18px;
+                        }
+                        & .timingBtn {
+                            & button{
+                                font-size: 12px;
+                                & span{
+                                    display: flex;
+                                    width: 18px;
+                                    height: 18px;
+                                }
+                            }
+                            & .dropdown-menu {
+                                min-width: 100px;
+                                border-radius: 8px;
+                                & .dropdown-item {
+                                    padding: 4px;
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                    }
+                    & .tred_card {
+                        padding: 0px 8px;
+                        & .tredImg{
+                            width: 24px;
+                            height: 24px;
+                        }
+                        & .trdPoint{
+                            font-size: 14px;
+                            & span {
+                                font-size: 12px;
+                            }
+                        }
+                        & .tredMap {
+                            display: flex;
+                            align-items: center;
+                            gap: 4px;
+                            & .tredingImg {
+                                height: 20px;
+                                width: 20px;
+                            }
+                            & span {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+            & .pichart {
+                & .card-body {
+                    & .innerbody {
+                        gap: 8px;
+                    
+                        & .picharts{
+                            & canvas{
+                                width: 100px;
+                                height: 100px;
+                            }
+                        }
+                        & .tredMap {
+                            & .tredingImg {
+                                height: 16px;
+                                width: 16px;
+                            }
+                            & span {
+                                font-size: 12px;
+                            }
+                            &.pichartmap {
+                                & .tredingImg {
+                                    height: 13px;
+                                    width: 13px;
+                                }
+                                & span {
+                                    font-size: 10px;
+                                }
+                            }
+                        }
+                        & .chartvalue {
+                            & .chartbody {
+                                gap: 10px;
+                                & .point {
+                                    width: 10px;
+                                    height: 10px;
+                                }
+                                & .ratingUser {
+                                    font-size: 12px;
+                                }
+                                & .amount{
+                                    font-size: 10px;
+                                }
+                            }
+                        }
+                        & .totalresult {
+                            font-size: 10px;
+                        }
+                        & .chartgroups {
+                            // height: calc(50% - 8px - 10.5px);
+                            & .cardSubTitle {
+                                font-size: 15px;
+                            }
+                        }
+                        .bootomtreackchart {
+                            & > div {
+                                margin: auto 0px 0px 0px;
+                                justify-content: space-between;
+                                & .chartvalue  {
+                                    padding: 0px;
+                                    & .chartbody {
+                                        & > div{
+                                            gap: 10px !important;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
     // **** Aside Bar Css Start *******
@@ -1754,67 +1881,6 @@
         }
         & .applybtn {
             max-width: 130px;
-        }
-    }
-    .homepage{
-        & .manin_content_Body {
-            & .navigationBar {
-                & .card-body{
-                    padding:8px 0px;
-                    & .innerbody {
-                        gap: 8px;
-                    }
-                    & .timeing {
-                        padding: 0px 0px 0px 16px;
-                        & .volatility {
-                            font-size: 18px;
-                        }
-                        & .timingBtn {
-                            & button{
-                                font-size: 12px;
-                                & span{
-                                    display: flex;
-                                    width: 18px;
-                                    height: 18px;
-                                }
-                            }
-                            & .dropdown-menu {
-                                min-width: 100px;
-                                border-radius: 8px;
-                                & .dropdown-item {
-                                    padding: 4px;
-                                    font-size: 12px;
-                                }
-                            }
-                        }
-                    }
-                    & .tred_card {
-                        padding: 0px 8px;
-                        & .tredImg{
-                            width: 24px;
-                            height: 24px;
-                        }
-                        & .trdPoint{
-                            font-size: 14px;
-                            & span {
-                                font-size: 12px;
-                            }
-                        }
-                        & .tredMap {
-                            display: flex;
-                            align-items: center;
-                            gap: 4px;
-                            & .tredingImg {
-                                height: 20px;
-                                width: 20px;
-                            }
-                            & span {
-                                font-size: 14px;
-                            }
-                        }
-                    }
-                }
-            }
         }
     }
 }
